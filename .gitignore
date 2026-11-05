@@ -1,0 +1,14 @@
+# Local uv environments, caches and kernel registrations
+.venv-*/
+.uv/
+.kernels/
+.autodl/
+
+# Notebook and Python runtime caches
+.ipynb_checkpoints/
+__pycache__/
+.pytest_cache/
+
+# Optional model evaluation outputs (generated locally, not source data)
+data/processed/baseline_results.jsonl
+data/processed/baseline_summary.json

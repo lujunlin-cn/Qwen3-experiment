@@ -1,0 +1,19 @@
+{
+  "mode": "smoke",
+  "generated": 3,
+  "verified_answer_and_trace": 2,
+  "accepted": 1,
+  "rejected": 2,
+  "by_task": {
+    "gravity": 1,
+    "bit_manipulation": 1,
+    "equation_numeric": 1
+  },
+  "rejection_reasons": {
+    "identifiability_not_evaluable": 1,
+    "missing_equation_numeric_rule_library": 1
+  },
+  "artifacts": {
+    "screening": "data/processed/synthetic_pilot_screening.csv"
+  }
+}

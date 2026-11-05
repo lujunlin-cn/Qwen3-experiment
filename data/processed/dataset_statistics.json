@@ -1,0 +1,202 @@
+{
+  "schema_version": "nemotron-course-dataset/v1",
+  "source": {
+    "path": "train.csv",
+    "dataset": "NVIDIA Nemotron Model Reasoning Challenge / train.csv",
+    "sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa"
+  },
+  "seed": 42,
+  "raw_profile": {
+    "sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa",
+    "rows": 9500,
+    "columns": [
+      "source_row",
+      "id",
+      "prompt",
+      "answer",
+      "source_dataset"
+    ],
+    "dtypes": {
+      "source_row": "int64",
+      "id": "str",
+      "prompt": "str",
+      "answer": "str",
+      "source_dataset": "str"
+    },
+    "empty_counts": {
+      "id": 0,
+      "prompt": 0,
+      "answer": 0
+    },
+    "null_counts": {
+      "source_row": 0,
+      "id": 0,
+      "prompt": 0,
+      "answer": 0,
+      "source_dataset": 0
+    },
+    "duplicate_id_rows": 0,
+    "duplicate_id_repeats": 0,
+    "duplicate_prompt_rows": 0,
+    "duplicate_prompt_repeats": 0
+  },
+  "classification_counts": {
+    "bit_manipulation": 1602,
+    "gravity": 1597,
+    "unit_conversion": 1594,
+    "encryption": 1576,
+    "numeral_system": 1576,
+    "equation_symbolic": 823,
+    "equation_numeric": 732
+  },
+  "cleaned_counts": {
+    "bit_manipulation": 1602,
+    "gravity": 1597,
+    "equation_numeric": 732
+  },
+  "split_counts": {
+    "holdout_test": {
+      "bit_manipulation": 160,
+      "equation_numeric": 73,
+      "gravity": 160
+    },
+    "train": {
+      "bit_manipulation": 1282,
+      "equation_numeric": 586,
+      "gravity": 1277
+    },
+    "validation": {
+      "bit_manipulation": 160,
+      "equation_numeric": 73,
+      "gravity": 160
+    }
+  },
+  "rule_distribution": {
+    "task_type": {
+      "bit_manipulation": 1602,
+      "gravity": 1597,
+      "equation_numeric": 732
+    },
+    "equation_subtype": {
+      "deduce": 596,
+      "guess": 136
+    },
+    "equation_query_operator": {
+      "-": 121,
+      "+": 116,
+      "*": 102,
+      "/": 24,
+      "$": 23,
+      "\"": 22,
+      "!": 22,
+      "[": 22,
+      "@": 20,
+      "^": 20,
+      "`": 19,
+      "}": 19,
+      ":": 19,
+      "{": 19,
+      "%": 17,
+      "?": 16,
+      "]": 15,
+      "<": 15,
+      "&": 15,
+      "#": 14,
+      ")": 14,
+      ">": 13,
+      "\\": 13,
+      "(": 13,
+      "'": 12,
+      "|": 7
+    }
+  },
+  "length_summary": {
+    "holdout_test": {
+      "rows": 393,
+      "prompt_char_mean": 361.59541984732823,
+      "prompt_token_proxy_mean": 88.3384223918575,
+      "answer_char_mean": 5.918575063613232
+    },
+    "train": {
+      "rows": 3145,
+      "prompt_char_mean": 361.4381558028617,
+      "prompt_token_proxy_mean": 88.3691573926868,
+      "answer_char_mean": 5.856597774244833
+    },
+    "validation": {
+      "rows": 393,
+      "prompt_char_mean": 360.6819338422392,
+      "prompt_token_proxy_mean": 88.17557251908397,
+      "answer_char_mean": 5.8396946564885495
+    }
+  },
+  "leakage_audit": {
+    "exact_id": {
+      "key": "id",
+      "duplicate_keys": 0,
+      "rows_in_cross_split_keys": 0,
+      "examples": []
+    },
+    "exact_prompt": {
+      "key": "prompt_hash",
+      "duplicate_keys": 0,
+      "rows_in_cross_split_keys": 0,
+      "examples": []
+    },
+    "normalized_prompt": {
+      "key": "normalized_prompt_hash",
+      "duplicate_keys": 38,
+      "rows_in_cross_split_keys": 3359,
+      "examples": [
+        {
+          "key": "0952dfc71ec596adfaacd1874dc46ea0b8c5503cbabb2e527ce37160ba12edc6",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "0bf5753b1d22c8bb81778c3cd799f0c70257f2694ae62d18db28f5fb37089a70",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "1567066527dec784bbcfb05c00566d2d61b02d3c109fcd2d4adb6e8d6aa60059",
+          "splits": [
+            "holdout_test",
+            "train"
+          ]
+        },
+        {
+          "key": "1b625bc14d40ce0514913951021e5e3ef07ce8ca7df4d9e4b41419268314e17c",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "1e0f777b42328948349d01339f71ea144736858f911ca01e06ee7efb7db78364",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        }
+      ]
+    },
+    "group_aware_split": {
+      "status": "not_available",
+      "reason": "原始 CSV 未提供可靠的规则实例、生成种子或结构家族字段；规范化 Prompt 只能用于审计，不能作为同源组的充分证明。"
+    }
+  },
+  "limitations": [
+    "prompt_token_proxy 不是 Qwen3 Tokenizer 的真实 token 数；真实 token 统计需在官方训练环境加载 tokenizer 后补充。",
+    "没有可靠的规则实例/结构家族键，因此当前只提供 IID Holdout，不宣称 Structural OOD 已完成。",
+    "规范化 Prompt 重复是风险信号，不等同于同源题目证明。"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "nemotron-course-split/v1",
+  "seed": 42,
+  "ratios_requested": {
+    "train": 0.8,
+    "validation": 0.1,
+    "holdout_test": 0.1
+  },
+  "method": "per-task stratified IID split",
+  "structural_ood": "not_available_without_reliable_group_key",
+  "files": {
+    "train": "data/processed/splits/train.csv",
+    "validation": "data/processed/splits/validation.csv",
+    "holdout_test": "data/processed/splits/holdout_test.csv"
+  },
+  "leakage_audit": {
+    "exact_id": {
+      "key": "id",
+      "duplicate_keys": 0,
+      "rows_in_cross_split_keys": 0,
+      "examples": []
+    },
+    "exact_prompt": {
+      "key": "prompt_hash",
+      "duplicate_keys": 0,
+      "rows_in_cross_split_keys": 0,
+      "examples": []
+    },
+    "normalized_prompt": {
+      "key": "normalized_prompt_hash",
+      "duplicate_keys": 38,
+      "rows_in_cross_split_keys": 3359,
+      "examples": [
+        {
+          "key": "0952dfc71ec596adfaacd1874dc46ea0b8c5503cbabb2e527ce37160ba12edc6",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "0bf5753b1d22c8bb81778c3cd799f0c70257f2694ae62d18db28f5fb37089a70",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "1567066527dec784bbcfb05c00566d2d61b02d3c109fcd2d4adb6e8d6aa60059",
+          "splits": [
+            "holdout_test",
+            "train"
+          ]
+        },
+        {
+          "key": "1b625bc14d40ce0514913951021e5e3ef07ce8ca7df4d9e4b41419268314e17c",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "1e0f777b42328948349d01339f71ea144736858f911ca01e06ee7efb7db78364",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        }
+      ]
+    },
+    "group_aware_split": {
+      "status": "not_available",
+      "reason": "原始 CSV 未提供可靠的规则实例、生成种子或结构家族字段；规范化 Prompt 只能用于审计，不能作为同源组的充分证明。"
+    }
+  }
+}
