@@ -1,0 +1,51 @@
+{
+  "records": 393,
+  "overall_accuracy_sample_weighted": 0.015267175572519083,
+  "macro_accuracy": 0.012499999999999999,
+  "by_task": {
+    "bit_manipulation": {
+      "records": 160,
+      "accuracy": 0.03125,
+      "answer_extraction_success_rate": 1.0,
+      "invalid_output_rate": 0.0,
+      "average_generation_tokens": 512.0,
+      "average_inference_time_seconds": 0.07280468272457596,
+      "total_inference_time_seconds": 11.648749235932154
+    },
+    "equation_numeric": {
+      "records": 73,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 1.0,
+      "invalid_output_rate": 0.0,
+      "average_generation_tokens": 512.0,
+      "average_inference_time_seconds": 0.07280468272457596,
+      "total_inference_time_seconds": 5.3147418388940455
+    },
+    "gravity": {
+      "records": 160,
+      "accuracy": 0.00625,
+      "answer_extraction_success_rate": 1.0,
+      "invalid_output_rate": 0.0,
+      "average_generation_tokens": 512.0,
+      "average_inference_time_seconds": 0.07280468272457596,
+      "total_inference_time_seconds": 11.648749235932154
+    }
+  },
+  "model_id": "Qwen/Qwen3-4B-Thinking-2507",
+  "model_source": "/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507",
+  "max_model_len": 4096,
+  "max_new_tokens": 512,
+  "load_time_seconds": 16.372032579034567,
+  "total_generation_time_seconds": 28.612240310758352,
+  "total_output_tokens": 201216,
+  "throughput_output_tokens_per_second": 7032.514679542298,
+  "truncation_rate": 1.0,
+  "peak_memory_allocated_mib": 0.0,
+  "initial_gpu_memory_used_mib": 3.0,
+  "peak_gpu_memory_used_mib": 27959.0,
+  "peak_gpu_memory_delta_mib": 27956.0,
+  "verification_standard": {
+    "numeric": "math.isclose(rel_tol=1e-2, abs_tol=1e-5)",
+    "bit": "exact_8bit"
+  }
+}

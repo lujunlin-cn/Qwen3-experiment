@@ -1,28 +1,36 @@
 {
-  "schema_version": "nemotron-course-synthetic/v2",
+  "schema_version": "nemotron-course-synthetic/v3",
   "seed": 42,
-  "generated_at_utc": "2026-11-05T06:59:24.803504+00:00",
+  "generated_at_utc": "2026-11-05T11:16:06.497860+00:00",
   "requested_candidates_per_task": 100,
   "task_order": [
     "gravity",
     "equation_numeric",
     "bit_manipulation"
   ],
-  "generator_version": "nemotron-synthetic-v2",
+  "generator_version": "nemotron-synthetic-v3",
+  "generator_is_one_shot": true,
   "train_prior_only": true,
   "validation_or_holdout_used": false,
+  "generation_failures": [],
   "data_designer": {
-    "status": "skipped_by_default",
-    "reason": "RUN_DATA_DESIGNER_PREVIEW=False"
+    "status": "completed_local_vllm",
+    "endpoint": "http://127.0.0.1:8000/v1",
+    "served_model": "Qwen3-4B-Thinking-2507",
+    "seed_counts": {
+      "gravity": 3,
+      "equation_numeric": 3,
+      "bit_manipulation": 3
+    },
+    "records": 9,
+    "verified_records": 5,
+    "merge_status": "preview_only_never_ground_truth"
   },
   "data_designer_official_api": {
     "package": "data-designer",
-    "imports": [
-      "data_designer.config",
-      "data_designer.interface.DataDesigner"
-    ],
+    "model_provider": "ModelProvider(provider_type='openai', endpoint='http://127.0.0.1:8000/v1', api_key=None)",
     "seed_api": "LocalFileSeedSource + DataDesignerConfigBuilder.with_seed_dataset",
-    "preview_api": "DataDesigner.preview(builder, num_records=...)"
+    "preview_api": "DataDesigner.preview(config_builder=..., num_records=...)"
   },
-  "generation_failures": []
+  "raw_candidate_artifact": "data/processed/synthetic/synthetic_candidates.jsonl"
 }

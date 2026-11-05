@@ -1,0 +1,36 @@
+{
+  "candidate_count": 300,
+  "exact_prompt_matches": 0,
+  "normalized_prompt_matches": 0,
+  "structure_matches": 0,
+  "by_task": {
+    "bit_manipulation": {
+      "candidates": 100,
+      "exact_prompt_matches": 0,
+      "normalized_prompt_matches": 0,
+      "structure_matches": 0
+    },
+    "equation_numeric": {
+      "candidates": 100,
+      "exact_prompt_matches": 0,
+      "normalized_prompt_matches": 0,
+      "structure_matches": 0
+    },
+    "gravity": {
+      "candidates": 100,
+      "exact_prompt_matches": 0,
+      "normalized_prompt_matches": 0,
+      "structure_matches": 0
+    }
+  },
+  "source_split_counts": {
+    "holdout_test": 393,
+    "train": 3145,
+    "validation": 393
+  },
+  "limitations": [
+    "Synthetic generation uses only the real Train split profile and does not read Validation/Holdout answers.",
+    "Normalized and structure matches are risk indicators; they do not prove same-source leakage.",
+    "No original source_row is attached to deterministic synthetic candidates, so augmentation lineage is recorded as unavailable."
+  ]
+}
