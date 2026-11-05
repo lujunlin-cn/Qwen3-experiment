@@ -1,0 +1,22 @@
+{
+  "model_id": "Qwen/Qwen3-4B-Thinking-2507",
+  "model_path": "/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507",
+  "download_acceleration": {
+    "method": "AutoDL academic acceleration",
+    "config": "/etc/network_turbo",
+    "http_proxy": "http://10.37.1.23:12798",
+    "https_proxy": "http://10.37.1.23:12798",
+    "hf_endpoint": "https://huggingface.co",
+    "model_files_local": true
+  },
+  "status": "ok",
+  "torch": "2.8.0+cu128",
+  "torch_cuda": "12.8",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "vllm": "0.11.0",
+  "prompt": "<|im_start|>user\nCompute the answer: A car travels at 20 m/s for 3 seconds. Return only the numeric answer.<|im_end|>\n<|im_start|>assistant\n<think>\n",
+  "text": "Okay, let's see. The problem says a car travels at 20 m/s for 3 seconds. I need to find the answer. Hmm,",
+  "output_token_ids": 32,
+  "elapsed_seconds": 96.779
+}

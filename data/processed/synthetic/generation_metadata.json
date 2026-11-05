@@ -1,0 +1,28 @@
+{
+  "schema_version": "nemotron-course-synthetic/v2",
+  "seed": 42,
+  "generated_at_utc": "2026-11-05T06:59:24.803504+00:00",
+  "requested_candidates_per_task": 100,
+  "task_order": [
+    "gravity",
+    "equation_numeric",
+    "bit_manipulation"
+  ],
+  "generator_version": "nemotron-synthetic-v2",
+  "train_prior_only": true,
+  "validation_or_holdout_used": false,
+  "data_designer": {
+    "status": "skipped_by_default",
+    "reason": "RUN_DATA_DESIGNER_PREVIEW=False"
+  },
+  "data_designer_official_api": {
+    "package": "data-designer",
+    "imports": [
+      "data_designer.config",
+      "data_designer.interface.DataDesigner"
+    ],
+    "seed_api": "LocalFileSeedSource + DataDesignerConfigBuilder.with_seed_dataset",
+    "preview_api": "DataDesigner.preview(builder, num_records=...)"
+  },
+  "generation_failures": []
+}
