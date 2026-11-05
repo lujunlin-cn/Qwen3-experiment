@@ -72,4 +72,29 @@ Gravity 分布审计使用 Train 的 1,277 条题、5,180 个示例：每题示�
 - 当前 Bit Generator 是课程规定的 8-bit 有限 DSL（NOT、SHL/SHR、ROTL/ROTR、AND/OR/XOR，最大深度 2），不宣称覆盖比赛全部位操作规则。
 - Gravity 的经验分布来自当前 Train IID 划分；规范化 Prompt 的跨集合重复仍是数据审计风险，尚未获得可靠同源组键，不能据此声称无泄漏或完成 Structural OOD。
 - Baseline 所有样本达到 `max_new_tokens=512`，后续若需比较完整思考链，应另行评估更合适的生成长度；本 Notebook 默认仍不自动运行 Baseline。
-- 后续五个 Notebook 尚未开发。
+- 03--06 Notebook 的真实 Qwen3 GPU 训练、显存、吞吐和能力提升尚未运行；所有未运行项均保留为 `Not Run`，不能据 CPU Fixture 推断模型效果。
+
+# 后训练 Notebook 实现记录（03--06）
+
+## 03_SFT.ipynb
+
+- 已写入 Direct Full-Trace、Joint、Two-stage（Memorization → Execution）和可选 Targeted Drill 的数据审计与手写 token-level Cross Entropy。
+- CPU Smoke Test 通过：8 条可审计轨迹、Prompt/ Padding mask 不计入 Loss、Loss 有限且完成一次优化器更新；BF16 LoRA 与 NF4 QLoRA 仅提供配置入口，未在当前 DGX Spark 加载模型。
+
+## 04_DPO.ipynb
+
+- 已写入多回答 Rollout Schema、独立 Verifier 偏好对构造、Hard Negative 审计、冻结 Reference Policy 和手写 DPO Loss。
+- CPU Smoke Test 通过：16 条 Fixture Rollout、4 个有效偏好对、DPO Loss 有限、Policy 有梯度；vLLM Rollout 和真实 DPO 更新未运行。
+
+## 05_PPO.ipynb
+
+- 已写入共享 Backbone + Value Head 的 Actor--Critic、终止状态不 bootstrap 的 GAE、PPO-Clip、Value Loss、Entropy 和 KL 诊断。
+- CPU Smoke Test 通过：GAE 形状与 Mask、终止奖励、有限 Loss 和反向传播均通过；真实 Qwen3 PPO 未运行。
+
+## 06_GRPO.ipynb
+
+- 已写入 `G=8` Group Rollout 协议、All-correct/Mixed/All-wrong 分类、Group Advantage、Clipped Objective、KL 诊断、CausalLM 更新入口和 RL Readiness Audit。
+- vLLM 入口保留 Prompt/Completion Token IDs、Response Mask、采样参数、策略版本、`finish_reason` 和行为策略 Logprob；Verifier 通过独立适配器注入 Reward，禁止用 Generator 或模型自评提供答案。
+- 新增输入审计：缺字段、非法 Reward、行为 Logprob 长度错位、不完整 Group 均 fail closed；新增数值/Bit 错误答案负样本测试。
+- CPU Smoke Test 通过，报告保存于 `data/processed/grpo/cpu_readiness_audit.json` 和 `data/processed/grpo/cpu_grpo_smoke_report.json`；Tiny Policy 与 CausalLM-shaped Update 均得到有限 Loss 和梯度。Fixture 明确覆盖三类 Group，All-correct 与 All-wrong 的零方差比例为 `2/3`；该数值只用于公式测试，不代表模型实验。
+- `RUN_GRPO=False`，当前未运行 GPU Rollout、真实 Verifier、训练更新、显存和吞吐测量。RTX 5090 阶段应先用最佳 SFT Checkpoint 对 Equation Numeric/Bit 进行 `G=8` Smoke，再决定是否进入 Mixed Group 训练池。
