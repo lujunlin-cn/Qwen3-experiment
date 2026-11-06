@@ -4,7 +4,7 @@
   "run_mode": "smoke",
   "validation_samples_per_task": 3,
   "baseline_status": "skipped_by_default",
-  "verifier_version": "official_nvidia_metric_v2",
+  "verifier_version": "official_nvidia_metric_v3",
   "synthetic_mode": "reused_existing_pilot",
   "synthetic_candidates": 300,
   "synthetic_accepted": 275,

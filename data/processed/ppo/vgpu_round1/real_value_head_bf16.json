@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "fixture": false,
+  "optimizer_steps": 0,
+  "value_head_device": "cuda:0",
+  "value_head_dtype": "torch.float32",
+  "hidden_compute_dtype": "torch.bfloat16",
+  "value_head_gradient": true,
+  "adapter_gradient": true,
+  "loss": 0.7875917553901672,
+  "scope": "real-model mechanism probe; no outcome or performance claim"
+}

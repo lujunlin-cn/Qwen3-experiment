@@ -1,0 +1,44 @@
+{
+  "schema_version": "nemotron-sft-checkpoint/v1",
+  "status": "completed",
+  "stage": "stage2_full_trace",
+  "base_model": {
+    "id": "Qwen/Qwen3-4B-Thinking-2507",
+    "path": "/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507"
+  },
+  "tokenizer_path": "/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507",
+  "policy_version": "sft:two_stage:nf4_qlora:seed42",
+  "adapter_path": "data/processed/checkpoints/vgpu_round1/sft_two_stage_nf4_qlora",
+  "quantization": {
+    "mode": "nf4_qlora",
+    "load_in_4bit": true,
+    "quant_type": "nf4",
+    "double_quant": true,
+    "compute_dtype": "bfloat16"
+  },
+  "lora": {
+    "r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "bias": "none",
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "task_type": "CAUSAL_LM"
+  },
+  "training": {
+    "strategy": "two_stage",
+    "data_version": "d5841a3eefcf6b1cd3a380a87caed28957cc194cc5aa437ae685b881bc34d8ce",
+    "records": 24,
+    "token_budget_proxy": 922,
+    "seed": 42,
+    "epochs": 1,
+    "profile": "official-q-qlora-or-pt-sft-cuda"
+  }
+}

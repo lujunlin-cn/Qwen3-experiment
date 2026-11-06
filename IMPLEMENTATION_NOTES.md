@@ -2,6 +2,25 @@
 
 本仓库交付六个阶段 Notebook 的集成修订；所有教学实现仍直接位于 Notebook Code Cell，没有新增教学用 `.py` 文件，也没有修改原始 `train.csv`。Notebook 默认关闭模型、vLLM 和 GPU 执行；模型路径统一通过 `QWEN3_MODEL_PATH` 等环境变量提供。
 
+## 本轮真实 GPU Smoke 与截断诊断
+
+本节补充此前 CPU 阶段和历史 RTX 5090 记录；本轮设备并非已验证的 RTX 5090。当前运行方法、逐阶段通过条件、硬件和阻塞见 [VGPU_SMOKE_GUIDE.md](docs/VGPU_SMOKE_GUIDE.md)，真实产物集中在 `data/processed/vgpu_smoke/` 与各算法的 `vgpu_round1/` 子目录。下面历史章节的 `Not Run` 表示当时状态，不能覆盖本节的新证据。
+
+- Notebook 01：加入固定三道官方 Validation 题的预算诊断，原始基座与原始 Prompt，不加载合成数据或 Adapter。贪心 4096/8192 均三题截断；模型随附采样配置在 8192 下两题截断，Equation 正常结束但答错。因而 2048 预算不足有直接证据；合成训练不能解释基座现象，预算增加也不保证规则执行正确。完整原始输出与 Token IDs 均保留。
+- 追加同题 16384 Token 对照：Gravity 在 8637 Token 正常结束且正确；Equation 仍在 7976 Token 结束、答错；Bit 用满 16384 Token，仍未结束 Thinking。区别记录预算不足、规则执行错误和未收敛搜索，不把这三道诊断题当作总体性能评测。
+- Notebook 01/02：截断回答不再计正常答案；明确标记原始历史提取结果，离线重评分另存文件，不覆盖原始实验。01 的任意 CoT 数字回退改为明确答案标记或独立答案行，与 02/04/05/06 一致。CPU 回归覆盖“CoT 含正确 Boxed 数字但因 length 结束仍拒绝”。
+- 更新后的提取与完成状态协议标记为 `official_nvidia_metric_v3`，数值容差保持不变；历史 GPU 原始记录保留实际 `v2` 标记。Baseline、Prompt 及 52 条 RL 原始回答的离线 v3 重评分单独保存，不冒充新一轮推理。
+- Notebook 03：真实 Two-stage NF4 SFT 完成 24 条、1 Epoch，Stage 1/2 实际优化步 5/8，训练约 28.01 秒，设备显存峰值 5578 MiB；Stage 1 中间保存、最终 Adapter 重载和共享 Manifest 通过。后续发现预留 Recall 后的顺序截取令 Stage 2 缺 Bit；已改为 5/5/5 分层并补 CPU 回归。该修复不回写历史训练结果，也不替换第一轮 RL 已使用的父 Adapter。
+- Notebook 04：16 条真实 Rollout 全部截断，偏好对为 0，状态 `blocked_no_preference_pairs`、优化步 0。Policy/Reference 的 GPU Update 和更新后 Adapter 重载仍未验证。
+- Notebook 05：修复真实 Train 入口漏导入 pandas；保留首轮失败记录。修复 Transformers 5 `apply_chat_template()` 默认返回 `BatchEncoding` 的兼容处理，实际 Token IDs 与 vLLM 一致，没有放宽校验。真实 BF16/NF4 Actor-Value Head 前后向通过；4 条回答全截断，PPO 更新为 0。现有 RL 环境缺 bitsandbytes，NF4 诊断复用已有 Q-QLORA 环境，没有安装新依赖。
+- Logprob 证据：4096 个真实行为 Token 上，BF16 跨引擎平均绝对差 0.011777、P99 0.131516；NF4 相对 BF16 平均差 0.121896、P99 1.251460、最大差 3.951513。工程门槛通过不等于策略相同；保留原始行为分母，量化差异单独报告。
+- Notebook 04/05/06：独立 Rollout/Training 开关、JSONL/Manifest、Train 原始 ID/Prompt/答案核验、SFT 指纹和 Token/Mask 审计生效；新增筛查后的逐条 Rollout 持久化。预算可通过 `RL_MAX_NEW_TOKENS`/`RL_MAX_MODEL_LEN` 修改，默认仍为 2048/8192。GRPO 保持 G=8，Micro-batch=1、Gradient Accumulation=32；GPU 没有真实 Mixed Group 时不制造奖励、不执行 Update。
+- 真实 Tokenizer 审计：33 条教师记录最长 398 Token，均含 Thinking 结束标记和 EOS，1024 上限没有截断教师 Completion。该检查不等于合成数据质量全面验证，也没有证明 24 条 Smoke 已教会规则。
+- 现有合成产物重新独立验证 275/275 通过：Gravity 100、Equation 89、Bit 86；`synthetic_artifact_reverification.json` 逐条保留答案、轨迹、可识别性、来源状态与原文件 SHA256，没有修改或重生成既有数据。
+- GRPO 真实执行 32 条、4 组 G=8 Rollout 与 Readiness，四组均 All-wrong，Mixed Ratio=0、Zero-Variance Ratio=1，更新次数 0。状态 `blocked_no_mixed_groups`，Rollout 约 456.57 秒，设备峰值 25841 MiB。全部截断的零奖励不代表正常完成后的真实正确率为 0。
+
+GPU 阶段以每阶段状态 JSON 为准，不能把 Notebook 所有 Cell 执行结束视为训练成功。当前有效 DPO/PPO/GRPO Update、三种 RL 更新后重载、标准 RTX 4090 24GB 可运行性尚未通过。
+
 ## 本轮六 Notebook 全链路集成修订（基于 `4c28ae2`）
 
 - 统一模型接口：固定 `Qwen/Qwen3-4B-Thinking-2507`；Notebook 3 是唯一 SFT 初始化来源。正式 SFT 完成后写入 `data/processed/checkpoints/sft_manifest.json`，包含 Base Model、Tokenizer、Adapter、LoRA/QLoRA、数据版本、策略、Token Budget、Epoch 和 Seed。Notebook 4/5/6 通过 `PeftModel.from_pretrained()` 从该 Manifest 加载同一个 SFT Adapter，不把 Adapter 目录直接传给 `AutoModelForCausalLM.from_pretrained()`。
@@ -151,5 +170,5 @@ Gravity 分布审计使用 Train 的 1,277 条题、5,180 个示例：每题示�
 - DPO/PPO/GRPO 均拆成可跨 Kernel 续跑的 Rollout/Training 阶段。Rollout 保存 JSONL 和阶段 Manifest；Training 只读取持久化 Rollout，不重新采样。训练阶段失败、无偏好对或无 Mixed Group 时返回阻塞状态并保留日志。
 - SFT Stage 1 只保存中间 Adapter Manifest，不覆盖共享 `sft_manifest.json`；Stage 2/最终 Adapter 完成磁盘重载检查后才发布共享 Manifest。DPO/PPO/GRPO 从该 Manifest 平行初始化。
 - PPO 的 Value Head 固定与基座设备对齐，输入 Hidden State 在 Value Head 前显式转换到 FP32；保存 PPO Adapter 时同时保存 Value Head，并在报告完成前实际重载。
-- GRPO 保留每题 `G=8` 的组优势，在更新时使用 `GRPO_MICRO_BATCH_SIZE=4`、`GRPO_GRAD_ACCUMULATION_STEPS=2` 的微批次/梯度累积，避免把 32 条长回答一次性建图。当前 `policy_logprob_change` 仍不是 Reference KL，`KL_COEF=0`。
-- 本地 CPU JSON/AST 与五个修改 Notebook 的顺序 Smoke 已通过；第六 Notebook 的最大 Code Cell 仍需在交付前拆到 100 行以内。目标机实测硬件是云平台标称 32 GiB 的 NVIDIA GeForce RTX 4080 SUPER vGPU，不按 RTX 5090 预算推断，真实 GPU Smoke 结果只在目标机生成后记录。
+- GRPO 保留每题 `G=8` 的组优势，在更新时使用 `GRPO_MICRO_BATCH_SIZE=1`、`GRPO_GRAD_ACCUMULATION_STEPS=32` 的微批次/梯度累积，避免把 32 条长回答一次性建图。当前 `policy_logprob_change` 仍不是 Reference KL，`KL_COEF=0`。
+- 本地六 Notebook 的 JSON、nbformat、Code AST 与顺序 CPU Smoke 已检查；Code Cell 均不超过 100 行。目标机自报 RTX 4080 SUPER / 32760 MiB，虚拟化细节尚不能确认，不按 RTX 5090 预算推断。

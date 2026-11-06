@@ -1,0 +1,49 @@
+{
+  "status": "completed",
+  "scope": "three fixed official Validation prompts; no synthetic data, no SFT",
+  "budgets": [
+    16384
+  ],
+  "max_model_len": 20480,
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "device": "NVIDIA GeForce RTX 4080 SUPER",
+  "wall_time_seconds": 307.88355029188097,
+  "by_sample": [
+    {
+      "id": "00ed1836",
+      "task_type": "gravity",
+      "max_new_tokens": 16384,
+      "generation_tokens": 8637,
+      "finish_reason": "stop",
+      "think_end_token_seen": true,
+      "correct": true,
+      "max_repeated_32gram": 3
+    },
+    {
+      "id": "01e09228",
+      "task_type": "bit_manipulation",
+      "max_new_tokens": 16384,
+      "generation_tokens": 16384,
+      "finish_reason": "length",
+      "think_end_token_seen": false,
+      "correct": false,
+      "max_repeated_32gram": 3
+    },
+    {
+      "id": "04171e29",
+      "task_type": "equation_numeric",
+      "max_new_tokens": 16384,
+      "generation_tokens": 7976,
+      "finish_reason": "stop",
+      "think_end_token_seen": true,
+      "correct": false,
+      "max_repeated_32gram": 3
+    }
+  ],
+  "still_truncated_ids": [
+    "01e09228"
+  ],
+  "decision": "Length diagnostic only; not a full accuracy evaluation"
+}

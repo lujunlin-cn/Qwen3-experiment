@@ -1,0 +1,21 @@
+{
+  "status": "failed",
+  "error": "ImportError('Using `bitsandbytes` 4-bit quantization requires bitsandbytes: `pip install -U bitsandbytes>=0.46.1`')",
+  "traceback": "Traceback (most recent call last):\n  File \"05_PPO.ipynb#cell37\", line 42, in _gpu_stage\n  File \"05_PPO.ipynb#cell30\", line 42, in operation\n  File \"05_PPO.ipynb#cell20\", line 8, in _load_sft_actor_critic\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py\", line 409, in from_pretrained\n    return model_class.from_pretrained(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/modeling_utils.py\", line 4233, in from_pretrained\n    hf_quantizer, config, device_map = get_hf_quantizer(\n                                       ^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/quantizers/auto.py\", line 378, in get_hf_quantizer\n    hf_quantizer.validate_environment(\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/quantizers/quantizer_bnb_4bit.py\", line 62, in validate_environment\n    raise ImportError(\nImportError: Using `bitsandbytes` 4-bit quantization requires bitsandbytes: `pip install -U bitsandbytes>=0.46.1`\n",
+  "stage": "ppo_training",
+  "wall_time_seconds": 11.447322364896536,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2"
+    }
+  },
+  "peak_memory_allocated_mib": 8483.62451171875,
+  "peak_device_memory_mib": 9200.0
+}

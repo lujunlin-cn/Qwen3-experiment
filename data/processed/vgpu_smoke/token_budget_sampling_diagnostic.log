@@ -1,0 +1,719 @@
+{'raw_path': '/root/autodl-tmp/Qwen3-experiment/train.csv', 'output_dir': '/root/autodl-tmp/Qwen3-experiment/data/processed', 'model_id': 'Qwen/Qwen3-4B-Thinking-2507', 'run_baseline': False}
+{
+  "sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa",
+  "rows": 9500,
+  "columns": [
+    "source_row",
+    "id",
+    "prompt",
+    "answer",
+    "source_dataset"
+  ],
+  "dtypes": {
+    "source_row": "int64",
+    "id": "str",
+    "prompt": "str",
+    "answer": "str",
+    "source_dataset": "str"
+  },
+  "empty_counts": {
+    "id": 0,
+    "prompt": 0,
+    "answer": 0
+  },
+  "null_counts": {
+    "source_row": 0,
+    "id": 0,
+    "prompt": 0,
+    "answer": 0,
+    "source_dataset": 0
+  },
+  "duplicate_id_rows": 0,
+  "duplicate_id_repeats": 0,
+  "duplicate_prompt_rows": 0,
+  "duplicate_prompt_repeats": 0
+}
+
+首行字段： {'id': '00066667', 'prompt': "In Alice's Wonderland, a secret bit manipulation rule transforms 8-bit binary numbers. The transformation involves operations like bit shifts, rotations, XOR, AND, OR, NOT, and possibly majority or choice functions.\n\nHere are some examples of input -> output:\n01010001 -> 11011101\n00001001 -> 01101101\n00010101 -> 01010101\n11111111 -> 10000001\n10011101 -> 01000101\n00111011 -> 00001001\n10111101 -> 00000101\n00100110 -> 10110011\n\nNow, determine the output for: 00110100", 'answer': '10010111'}
+task_type
+bit_manipulation     1602
+gravity              1597
+unit_conversion      1594
+encryption           1576
+numeral_system       1576
+equation_symbolic     823
+equation_numeric      732
+
+Equation Numeric subtype:
+equation_subtype
+deduce    596
+guess     136
+各分类抽样（只显示 Prompt 首句和答案，不修改原始数据）：
+
+### bit_manipulation: n=1602
+{'id': '54d2b3b0', 'prompt_head': "In Alice's Wonderland, a secret bit manipulation rule transforms 8-bit binary numbers. The transformation involves operations like bit shifts, rotations, XOR, AND, OR, NOT, and possibly majority or choice functions.", 'answer': '00000000'}
+{'id': 'b80795b4', 'prompt_head': "In Alice's Wonderland, a secret bit manipulation rule transforms 8-bit binary numbers. The transformation involves operations like bit shifts, rotations, XOR, AND, OR, NOT, and possibly majority or choice functions.", 'answer': '00010000'}
+
+### encryption: n=1576
+{'id': 'c86663f4', 'prompt_head': "In Alice's Wonderland, secret encryption rules are used on text. Here are some examples:", 'answer': 'knight draws the golden key'}
+{'id': '85b9bc03', 'prompt_head': "In Alice's Wonderland, secret encryption rules are used on text. Here are some examples:", 'answer': 'the dark wizard explores'}
+
+### equation_numeric: n=732
+{'id': 'd21c7677', 'prompt_head': "In Alice's Wonderland, a secret set of transformation rules is applied to equations. Below are a few examples:", 'answer': '8544'}
+{'id': '11f62c83', 'prompt_head': "In Alice's Wonderland, a secret set of transformation rules is applied to equations. Below are a few examples:", 'answer': '951'}
+
+### equation_symbolic: n=823
+{'id': 'bcff7dbe', 'prompt_head': "In Alice's Wonderland, a secret set of transformation rules is applied to equations. Below are a few examples:", 'answer': '>['}
+{'id': '339c28e1', 'prompt_head': "In Alice's Wonderland, a secret set of transformation rules is applied to equations. Below are a few examples:", 'answer': '&:&'}
+
+### gravity: n=1597
+{'id': '805242d9', 'prompt_head': "In Alice's Wonderland, the gravitational constant has been secretly changed. Here are some example observations:", 'answer': '63.85'}
+{'id': '136ffda9', 'prompt_head': "In Alice's Wonderland, the gravitational constant has been secretly changed. Here are some example observations:", 'answer': '87.42'}
+
+### numeral_system: n=1576
+{'id': 'c9eac667', 'prompt_head': "In Alice's Wonderland, numbers are secretly converted into a different numeral system. Some examples are given below:", 'answer': 'LXII'}
+{'id': '859d8041', 'prompt_head': "In Alice's Wonderland, numbers are secretly converted into a different numeral system. Some examples are given below:", 'answer': 'XII'}
+
+### unit_conversion: n=1594
+{'id': '94934452', 'prompt_head': "In Alice's Wonderland, a secret unit conversion is applied to measurements. For example:", 'answer': '53.82'}
+{'id': 'b2e7ee08', 'prompt_head': "In Alice's Wonderland, a secret unit conversion is applied to measurements. For example:", 'answer': '33.02'}
+
+没有未知模板；仍保留 unknown 分类路径以防数据版本改变。
+01_Baseline_Evaluation_and_Dataset_Preparation.ipynb#cell11:1: Pandas4Warning: The 'lsuffix' and 'rsuffix' keywords in DataFrame.join are deprecated and will be removed in a future version. Use the 'suffixes' keyword instead.
+{
+  "raw_rows": 9500,
+  "kept_rows": 3931,
+  "removed_rows": 5569,
+  "kept_counts": {
+    "bit_manipulation": 1602,
+    "gravity": 1597,
+    "equation_numeric": 732
+  },
+  "removed_counts": {
+    "unit_conversion": 1594,
+    "encryption": 1576,
+    "numeral_system": 1576,
+    "equation_symbolic": 823
+  },
+  "audit_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/classification_audit.csv",
+  "cleaned_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/real_cleaned.csv"
+}
+task_type     bit_manipulation  equation_numeric  gravity
+split
+holdout_test               160                73      160
+train                     1282               586     1277
+validation                 160                73      160
+{
+  "exact_id": {
+    "key": "id",
+    "duplicate_keys": 0,
+    "rows_in_cross_split_keys": 0,
+    "examples": []
+  },
+  "exact_prompt": {
+    "key": "prompt_hash",
+    "duplicate_keys": 0,
+    "rows_in_cross_split_keys": 0,
+    "examples": []
+  },
+  "normalized_prompt": {
+    "key": "normalized_prompt_hash",
+    "duplicate_keys": 38,
+    "rows_in_cross_split_keys": 3359,
+    "examples": [
+      {
+        "key": "0952dfc71ec596adfaacd1874dc46ea0b8c5503cbabb2e527ce37160ba12edc6",
+        "splits": [
+          "holdout_test",
+          "train",
+          "validation"
+        ]
+      },
+      {
+        "key": "0bf5753b1d22c8bb81778c3cd799f0c70257f2694ae62d18db28f5fb37089a70",
+        "splits": [
+          "holdout_test",
+          "train",
+          "validation"
+        ]
+      },
+      {
+        "key": "1567066527dec784bbcfb05c00566d2d61b02d3c109fcd2d4adb6e8d6aa60059",
+        "splits": [
+          "holdout_test",
+          "train"
+        ]
+      },
+      {
+        "key": "1b625bc14d40ce0514913951021e5e3ef07ce8ca7df4d9e4b41419268314e17c",
+        "splits": [
+          "holdout_test",
+          "train",
+          "validation"
+        ]
+      },
+      {
+        "key": "1e0f777b42328948349d01339f71ea144736858f911ca01e06ee7efb7db78364",
+        "splits": [
+          "holdout_test",
+          "train",
+          "validation"
+        ]
+      }
+    ]
+  },
+  "group_aware_split": {
+    "status": "not_available",
+    "reason": "原始 CSV 未提供可靠的规则实例、生成种子或结构家族字段；规范化 Prompt 只能用于审计，不能作为同源组的充分证明。"
+  }
+}
+{
+  "statistics": "/root/autodl-tmp/Qwen3-experiment/data/processed/dataset_statistics.json",
+  "split_manifest": "/root/autodl-tmp/Qwen3-experiment/data/processed/split_manifest.json"
+}
+{
+  "status": "skipped_by_default",
+  "reason": "RUN_BASELINE=False；未下载模型、未占用 GPU、未生成虚构分数。",
+  "next_action": "在官方 vLLM Profile 和 RTX 5090 可用时改为 True，并先运行 Validation smoke。"
+}
+{
+  "gravity_prior": {
+    "formula": "distance = 0.5 * g * t^2",
+    "units": {
+      "t": "seconds",
+      "distance": "meters",
+      "g": "m/s^2"
+    },
+    "sampling_source": "train_split_empirical_profile",
+    "answer_precision": "observed_decimal_places_with_official_tolerance",
+    "observed_train_profile": {
+      "example_count_distribution": {
+        "5": 455,
+        "3": 383,
+        "4": 439
+      },
+      "t": {
+        "count": 5180,
+        "min": 1.0,
+        "q01": 1.03,
+        "q05": 1.1894999999999998,
+        "q25": 1.99,
+        "median": 3.0,
+        "q75": 4.03,
+        "q95": 4.81,
+        "q99": 4.96,
+        "max": 5.0,
+        "mean": 3.002293436293436,
+        "std": 1.1665194206196425
+      },
+      "distance": {
+        "count": 5180,
+        "min": 2.76,
+        "q01": 4.237900000000001,
+        "q05": 7.38,
+        "q25": 21.94,
+        "median": 48.875,
+        "q75": 90.7325,
+        "q95": 166.0325,
+        "q99": 207.19,
+        "max": 236.52,
+        "mean": 62.56144980694981,
+        "std": 50.06306410565672
+      },
+      "g_i": {
+        "count": 5180,
+        "min": 4.908357968288095,
+        "q01": 4.997294858926939,
+        "q05": 5.619268866219393,
+        "q25": 8.440937502874188,
+        "median": 12.147201000267033,
+        "q75": 15.694001457972675,
+        "q95": 18.698360583247663,
+        "q99": 19.406935259536034,
+        "max": 19.576480056335196,
+        "mean": 12.094704717294347,
+        "std": 4.1832456417872095
+      },
+      "g_ols": {
+        "count": 1277,
+        "min": 4.909495984321679,
+        "q01": 5.001912104401879,
+        "q05": 5.6191845723787095,
+        "q25": 8.430448133528417,
+        "median": 12.123054626202176,
+        "q75": 15.67888865220054,
+        "q95": 18.691233163256086,
+        "q99": 19.409758724044494,
+        "max": 19.574184820992077,
+        "mean": 12.068056331619648,
+        "std": 4.179130136595713
+      },
+      "g_median": {
+        "count": 1277,
+        "min": 4.9099535567509776,
+        "q01": 5.001531846277882,
+        "q05": 5.619239216999039,
+        "q25": 8.430453636379696,
+        "median": 12.123021518969628,
+        "q75": 15.678947087349162,
+        "q95": 18.691092924042344,
+        "q99": 19.409910488262728,
+        "max": 19.57420222991157,
+        "mean": 12.068045494876651,
+        "std": 4.179150401598073
+      },
+      "residual": {
+        "count": 5180,
+        "min": -0.006339626629589645,
+        "q01": -0.005048085527181065,
+        "q05": -0.004146137931055805,
+        "q25": -0.0019101838512227687,
+        "median": -3.3231967321967204e-05,
+        "q75": 0.001904130553493033,
+        "q95": 0.004152491726998164,
+        "q99": 0.005061686502142599,
+        "max": 0.006362439774434847,
+        "mean": -1.5403107795940575e-05,
+        "std": 0.002531743570457052
+      },
+      "distance_decimal_places": {
+        "2": 4655,
+        "1": 525
+      }
+    }
+  },
+  "bit_prior": {
+    "width": 8,
+    "operations": [
+      "SHL",
+      "SHR",
+      "ROTL",
+      "ROTR",
+      "AND",
+      "OR",
+      "XOR",
+      "NOT"
+    ],
+    "expression_language": "x is the input byte; unary and binary trees have maximum depth 2",
+    "mask": 255
+  },
+  "equation_numeric_rules": 24,
+  "pilot_candidates_per_task": 100
+}
+{
+  "mode": "reused_existing_pilot",
+  "reason": "RUN_SYNTHETIC=False；复用已生成的 300 条 Pilot，不重复生成。",
+  "generated": 300,
+  "accepted": 275,
+  "rejected": 25,
+  "statistics_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/synthetic/synthetic_statistics.json"
+}
+{
+  "artifact_count": 19,
+  "missing": [],
+  "cleaned_rows": 3931,
+  "baseline_status": "skipped_by_default",
+  "synthetic_candidates": 300,
+  "synthetic_accepted": 275,
+  "synthetic_rejected": 25,
+  "synthetic_by_task": {
+    "bit_manipulation": {
+      "count": 100,
+      "sum": 86
+    },
+    "equation_numeric": {
+      "count": 100,
+      "sum": 89
+    },
+    "gravity": {
+      "count": 100,
+      "sum": 100
+    }
+  },
+  "rejection_reasons": {
+    "bit_manipulation": [
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable"
+    ],
+    "equation_numeric": [
+      "answer_verification_failed;answer_not_identifiable",
+      "answer_verification_failed;answer_not_identifiable;guess_answer_ambiguous",
+      "answer_verification_failed;answer_not_identifiable;guess_answer_ambiguous",
+      "answer_verification_failed;answer_not_identifiable;guess_answer_ambiguous",
+      "answer_verification_failed;answer_not_identifiable;guess_answer_ambiguous",
+      "answer_verification_failed;answer_not_identifiable;guess_answer_ambiguous",
+      "answer_verification_failed;answer_not_identifiable;guess_answer_ambiguous",
+      "answer_verification_failed;answer_not_identifiable;guess_answer_ambiguous",
+      "answer_verification_failed;answer_not_identifiable;guess_answer_ambiguous",
+      "answer_verification_failed;answer_not_identifiable;guess_answer_ambiguous",
+      "answer_verification_failed;answer_not_identifiable;guess_answer_ambiguous"
+    ]
+  },
+  "guess_subtypes": {
+    "deduce": 80,
+    "guess_answer_equivalent": 10,
+    "guess_answer_ambiguous": 10
+  },
+  "data_designer_status": null
+}
+{
+  "cases": [
+    {
+      "case": "gravity_wrong_answer",
+      "task_type": "gravity",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": true,
+        "identifiability": {
+          "candidate_g_count": 2,
+          "candidate_g_values": [
+            8.683390389690091,
+            8.68317568285684
+          ],
+          "query_output_count": 1,
+          "query_outputs": [
+            104.67002192684386
+          ],
+          "answer_unique": true
+        },
+        "example_checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "query_prediction": 104.67002192684386,
+        "difficulty_ok": true,
+        "solver_status": "independent_ols_verifier"
+      }
+    },
+    {
+      "case": "gravity_wrong_trace",
+      "task_type": "gravity",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": true,
+        "trace_ok": false,
+        "identifiability": {
+          "candidate_g_count": 2,
+          "candidate_g_values": [
+            8.683390389690091,
+            8.68317568285684
+          ],
+          "query_output_count": 1,
+          "query_outputs": [
+            104.67002192684386
+          ],
+          "answer_unique": true
+        },
+        "example_checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "query_prediction": 104.67002192684386,
+        "difficulty_ok": true,
+        "solver_status": "independent_ols_verifier"
+      }
+    },
+    {
+      "case": "gravity_unidentifiable_prompt",
+      "task_type": "gravity",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": false,
+        "identifiability": {
+          "candidate_g_count": 0,
+          "query_output_count": 0,
+          "query_outputs": [],
+          "answer_unique": false
+        },
+        "example_checks": [],
+        "query_prediction": null,
+        "difficulty_ok": true,
+        "solver_status": "independent_ols_verifier"
+      }
+    },
+    {
+      "case": "equation_wrong_answer",
+      "task_type": "equation_numeric",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": true,
+        "identifiability": {
+          "valid_assignment_count": 3,
+          "query_output_count": 1,
+          "query_outputs": [
+            "37"
+          ],
+          "answer_unique": true,
+          "rule_assignment_unique": false
+        },
+        "guess_subtype": "deduce",
+        "difficulty_ok": true,
+        "solver_status": "independent_24_rule_verifier"
+      }
+    },
+    {
+      "case": "equation_wrong_trace",
+      "task_type": "equation_numeric",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": true,
+        "trace_ok": false,
+        "identifiability": {
+          "valid_assignment_count": 3,
+          "query_output_count": 1,
+          "query_outputs": [
+            "37"
+          ],
+          "answer_unique": true,
+          "rule_assignment_unique": false
+        },
+        "guess_subtype": "deduce",
+        "difficulty_ok": true,
+        "solver_status": "independent_24_rule_verifier"
+      }
+    },
+    {
+      "case": "equation_invalid_example_output",
+      "task_type": "equation_numeric",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": false,
+        "identifiability": {
+          "valid_assignment_count": 0,
+          "query_output_count": 0,
+          "query_outputs": [],
+          "answer_unique": false,
+          "rule_assignment_unique": false
+        },
+        "guess_subtype": "deduce",
+        "difficulty_ok": true,
+        "solver_status": "independent_24_rule_verifier"
+      }
+    },
+    {
+      "case": "bit_wrong_answer",
+      "task_type": "bit_manipulation",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": true,
+        "identifiability": {
+          "raw_candidate_count": 74,
+          "semantic_candidate_count": 1,
+          "query_output_count": 1,
+          "query_outputs": [
+            "01000000"
+          ],
+          "expression_unique": false,
+          "answer_unique": true
+        },
+        "difficulty_ok": true,
+        "solver_status": "independent_parser_and_finite_enumeration"
+      }
+    },
+    {
+      "case": "bit_invalid_expression",
+      "task_type": "bit_manipulation",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": false,
+        "identifiability": {
+          "raw_candidate_count": 74,
+          "semantic_candidate_count": 1,
+          "query_output_count": 1,
+          "query_outputs": [
+            "01000000"
+          ],
+          "expression_unique": false,
+          "answer_unique": true
+        },
+        "difficulty_ok": true,
+        "solver_status": "independent_parser_and_finite_enumeration"
+      }
+    },
+    {
+      "case": "bit_unidentifiable_prompt",
+      "task_type": "bit_manipulation",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": true,
+        "identifiability": {
+          "raw_candidate_count": 84,
+          "semantic_candidate_count": 5,
+          "query_output_count": 2,
+          "query_outputs": [
+            "00000000",
+            "01000000"
+          ],
+          "expression_unique": false,
+          "answer_unique": false
+        },
+        "difficulty_ok": true,
+        "solver_status": "independent_parser_and_finite_enumeration"
+      }
+    },
+    {
+      "case": "duplicate_prompt",
+      "task_type": "gravity",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "candidate_id": "gravity-0000",
+        "candidate_index": "gravity-0000",
+        "task_type": "gravity",
+        "source": "deterministic_prior_generator",
+        "generator_version": "nemotron-synthetic-v3",
+        "generation_status": "generated",
+        "generation_error": null,
+        "deduce_or_guess": "deduce",
+        "guess_subtype": "deduce",
+        "prompt_hash": "64bbc76efdcee7ac5ce6d16ab75a6b64ffa958c6b811655e765b955457facb92",
+        "normalized_prompt_hash": "d95784bd05f4dae2cc19cd0bd4e5bc8ce94fe0fdaf4b983e42d735b2ceee0b65",
+        "structure_fingerprint": "55cdba100d21b16710032181f32991dd44625f30e571da99d53adad6d78ce3a1",
+        "structure_duplicate_within_synthetic": true,
+        "schema_ok": true,
+        "answer_ok": true,
+        "trace_ok": true,
+        "identifiability": "{\"answer_unique\": true, \"candidate_g_count\": 2, \"candidate_g_values\": [8.683390389690091, 8.68317568285684], \"query_output_count\": 1, \"query_outputs\": [104.67002192684386]}",
+        "difficulty": "examples_5",
+        "accepted": false,
+        "verification_status": "rejected",
+        "verifier_version": "synthetic_independent_verifier_v3",
+        "rejection_reasons": "duplicate_prompt;near_duplicate_prompt"
+      }
+    }
+  ],
+  "passed": 10,
+  "total": 10,
+  "all_passed": true
+}
+INFO 11-06 16:15:07 [__init__.py:216] Automatically detected platform cuda.
+INFO 11-06 16:15:09 [utils.py:233] non-default args: {'tokenizer': '/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507', 'dtype': 'bfloat16', 'seed': 42, 'max_model_len': 12288, 'gpu_memory_utilization': 0.8, 'disable_log_stats': True, 'enforce_eager': True, 'generation_config': 'vllm', 'model': '/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507'}
+INFO 11-06 16:15:09 [model.py:547] Resolved architecture: Qwen3ForCausalLM
+`torch_dtype` is deprecated! Use `dtype` instead!
+INFO 11-06 16:15:09 [model.py:1510] Using max model len 12288
+INFO 11-06 16:15:11 [scheduler.py:205] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 11-06 16:15:11 [__init__.py:381] Cudagraph is disabled under eager mode
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:11 [core.py:644] Waiting for init message from front-end.
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:11 [core.py:77] Initializing a V1 LLM engine (v0.11.0) with config: model='/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507', speculative_config=None, tokenizer='/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=12288, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=42, served_model_name=/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507, enable_prefix_caching=True, chunked_prefill_enabled=True, pooler_config=None, compilation_config={"level":0,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":null,"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":0,"use_cudagraph":true,"cudagraph_num_of_warmups":0,"cudagraph_capture_sizes":[],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"use_inductor_graph_partition":false,"pass_config":{},"max_capture_size":0,"local_cache_dir":null}
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:14 [parallel_state.py:1208] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+[1;36m(EngineCore_DP0 pid=29859)[0;0m WARNING 11-06 16:15:14 [topk_topp_sampler.py:66] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:15 [gpu_model_runner.py:2602] Starting to load model /root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507...
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:15 [gpu_model_runner.py:2634] Loading model from scratch...
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:15 [cuda.py:366] Using Flash Attention backend on V1 engine.
+[1;36m(EngineCore_DP0 pid=29859)[0;0m
+Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+[1;36m(EngineCore_DP0 pid=29859)[0;0m
+Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:00<00:01,  1.51it/s]
+[1;36m(EngineCore_DP0 pid=29859)[0;0m
+Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:01<00:00,  1.42it/s]
+[1;36m(EngineCore_DP0 pid=29859)[0;0m
+Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  2.05it/s]
+[1;36m(EngineCore_DP0 pid=29859)[0;0m
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:17 [default_loader.py:267] Loading weights took 1.47 seconds
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:17 [gpu_model_runner.py:2653] Model loading took 7.6065 GiB and 1.611236 seconds
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:19 [gpu_worker.py:298] Available KV cache memory: 16.11 GiB
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:19 [kv_cache_utils.py:1087] GPU KV cache size: 117,312 tokens
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:19 [kv_cache_utils.py:1091] Maximum concurrency for 12,288 tokens per request: 9.55x
+[1;36m(EngineCore_DP0 pid=29859)[0;0m WARNING 11-06 16:15:19 [cudagraph_dispatcher.py:106] cudagraph dispatching keys are not initialized. No cudagraph will be used.
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:19 [core.py:210] init engine (profile, create kv cache, warmup model) took 2.00 seconds
+[1;36m(EngineCore_DP0 pid=29859)[0;0m INFO 11-06 16:15:20 [__init__.py:381] Cudagraph is disabled under eager mode
+INFO 11-06 16:15:20 [llm.py:306] Supported_tasks: ['generate']
+
+Adding requests:   0%|          | 0/3 [00:00<?, ?it/s]
+Adding requests: 100%|██████████| 3/3 [00:00<00:00, 431.71it/s]
+
+Processed prompts:   0%|          | 0/3 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]
+Processed prompts:  33%|███▎      | 1/3 [02:25<04:50, 145.08s/it, est. speed input: 0.69 toks/s, output: 54.97 toks/s]
+Processed prompts:  67%|██████▋   | 2/3 [02:29<01:02, 62.19s/it, est. speed input: 1.72 toks/s, output: 108.32 toks/s]
+Processed prompts: 100%|██████████| 3/3 [02:29<00:00, 62.19s/it, est. speed input: 3.25 toks/s, output: 163.19 toks/s]
+Processed prompts: 100%|██████████| 3/3 [02:29<00:00, 49.76s/it, est. speed input: 3.25 toks/s, output: 163.19 toks/s]
+{
+  "status": "completed",
+  "scope": "three fixed official Validation prompts; no synthetic data, no SFT",
+  "budgets": [
+    8192
+  ],
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "device": "NVIDIA GeForce RTX 4080 SUPER",
+  "wall_time_seconds": 160.40483886376023,
+  "by_sample": [
+    {
+      "id": "00ed1836",
+      "task_type": "gravity",
+      "max_new_tokens": 8192,
+      "generation_tokens": 8192,
+      "finish_reason": "length",
+      "think_end_token_seen": true,
+      "correct": false,
+      "max_repeated_32gram": 3
+    },
+    {
+      "id": "01e09228",
+      "task_type": "bit_manipulation",
+      "max_new_tokens": 8192,
+      "generation_tokens": 8192,
+      "finish_reason": "length",
+      "think_end_token_seen": false,
+      "correct": false,
+      "max_repeated_32gram": 3
+    },
+    {
+      "id": "04171e29",
+      "task_type": "equation_numeric",
+      "max_new_tokens": 8192,
+      "generation_tokens": 7976,
+      "finish_reason": "stop",
+      "think_end_token_seen": true,
+      "correct": false,
+      "max_repeated_32gram": 3
+    }
+  ],
+  "still_truncated_ids": [
+    "00ed1836",
+    "01e09228"
+  ],
+  "decision": "Length diagnostic only; not a full accuracy evaluation"
+}
+GPU_NOTEBOOK_COMPLETED 01_Baseline_Evaluation_and_Dataset_Preparation.ipynb seconds 169.29583370313048

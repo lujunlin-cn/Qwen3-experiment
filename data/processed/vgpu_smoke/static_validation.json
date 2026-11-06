@@ -1,0 +1,50 @@
+{
+  "01_Baseline_Evaluation_and_Dataset_Preparation.ipynb": {
+    "json": "passed",
+    "nbformat": "passed",
+    "code_ast": "passed",
+    "cells": 100,
+    "max_code_lines": 98,
+    "notebook_sha256": "c3809347925c7a0460afa73deebd3f608d101dbeb1a5f0da54a19af90312e2e0"
+  },
+  "02_Prompt_Engineering.ipynb": {
+    "json": "passed",
+    "nbformat": "passed",
+    "code_ast": "passed",
+    "cells": 28,
+    "max_code_lines": 99,
+    "notebook_sha256": "b2fb91460c62e301c4d690f755f75217779e4d49e88d9eeeca930c7c9b2635d5"
+  },
+  "03_SFT.ipynb": {
+    "json": "passed",
+    "nbformat": "passed",
+    "code_ast": "passed",
+    "cells": 45,
+    "max_code_lines": 92,
+    "notebook_sha256": "3ab4f471bbaaebb3ea0f3c0b6dbd5aa22fad276662e3261b51510107f712ca55"
+  },
+  "04_DPO.ipynb": {
+    "json": "passed",
+    "nbformat": "passed",
+    "code_ast": "passed",
+    "cells": 52,
+    "max_code_lines": 100,
+    "notebook_sha256": "95880ffe0851bdbcc22cffb677e40948431de66879320160251e0e744fde3f9c"
+  },
+  "05_PPO.ipynb": {
+    "json": "passed",
+    "nbformat": "passed",
+    "code_ast": "passed",
+    "cells": 54,
+    "max_code_lines": 83,
+    "notebook_sha256": "9dad218fc11c12a1798cf429ad1b4ecb87955691d98a31888472af0881e12a38"
+  },
+  "06_GRPO.ipynb": {
+    "json": "passed",
+    "nbformat": "passed",
+    "code_ast": "passed",
+    "cells": 59,
+    "max_code_lines": 98,
+    "notebook_sha256": "6efca6ecf36e67050d506041a2b883d8e0bb462d925b684188458352a50e8373"
+  }
+}

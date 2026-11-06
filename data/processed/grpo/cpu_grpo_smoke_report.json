@@ -41,7 +41,7 @@
     "prompt_mask_zero": true,
     "response_mask_one": true,
     "old_logprob_shape_aligned": true,
-    "verifier_version": "official_nvidia_metric_v2"
+    "verifier_version": "official_nvidia_metric_v3"
   },
   "causal_lm_update_finite": true,
   "gpu_rollout": "not_run",

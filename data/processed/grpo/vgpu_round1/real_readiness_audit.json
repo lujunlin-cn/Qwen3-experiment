@@ -1,0 +1,25 @@
+{
+  "groups": 4,
+  "invalid_groups": 0,
+  "categories": {
+    "all_wrong": 4
+  },
+  "all_correct_ratio": 0.0,
+  "mixed_ratio": 0.0,
+  "all_wrong_ratio": 1.0,
+  "mean_reward_variance": 0.0,
+  "zero_variance_ratio": 1.0,
+  "correct_count_histogram": {
+    "0": 4
+  },
+  "fixture_only": false,
+  "status": "ok",
+  "validation": {
+    "valid": true,
+    "record_errors": [],
+    "bad_group_sizes": {},
+    "records": 32,
+    "groups": 4
+  },
+  "reward_definition": "binary_outcome_reward"
+}

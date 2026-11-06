@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "training_mode": "nf4_qlora",
+  "rollout_mode": "bf16",
+  "scope": "one_actual_rollout_per_task",
+  "tokens_compared": 4096,
+  "mean_abs_logprob_delta": 0.12189613282680511,
+  "p99_abs_logprob_delta": 1.251460075378418,
+  "max_abs_logprob_delta": 3.9515132904052734,
+  "signed_mean_logprob_delta": -0.04694376885890961,
+  "mean_limit": 0.5,
+  "p99_limit": 3.0,
+  "quantization_difference_expected": true,
+  "checks": [
+    {
+      "sample_id": "5a763686",
+      "task_type": "equation_numeric",
+      "response_tokens": 2048,
+      "prompt_tokens": 77,
+      "first_response_action_index": 76,
+      "token_mask_alignment": true,
+      "vllm_first_raw_logprob": -0.006942791398614645,
+      "training_first_raw_logprob": -0.0011234283447265625
+    },
+    {
+      "sample_id": "07d61ec8",
+      "task_type": "bit_manipulation",
+      "response_tokens": 2048,
+      "prompt_tokens": 248,
+      "first_response_action_index": 247,
+      "token_mask_alignment": true,
+      "vllm_first_raw_logprob": -0.011055524460971355,
+      "training_first_raw_logprob": -0.029880523681640625
+    }
+  ]
+}

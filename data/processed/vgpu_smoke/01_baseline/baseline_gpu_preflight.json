@@ -1,0 +1,8 @@
+{
+  "status": "ready",
+  "stage": "baseline",
+  "device": "NVIDIA GeForce RTX 4080 SUPER",
+  "free_memory_mib": 31720.375,
+  "total_memory_mib": 32230.8125,
+  "model_source": "/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507"
+}

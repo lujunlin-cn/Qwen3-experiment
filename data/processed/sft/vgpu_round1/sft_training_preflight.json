@@ -1,0 +1,7 @@
+{
+  "status": "ready",
+  "stage": "sft_training",
+  "device": "NVIDIA GeForce RTX 4080 SUPER",
+  "free_memory_mib": 31973.6875,
+  "total_memory_mib": 32230.8125
+}

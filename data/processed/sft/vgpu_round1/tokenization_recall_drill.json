@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "records": 9,
+  "max_sequence_tokens": 74,
+  "assistant_tokens": 387,
+  "supervised_tokens_after_shift": 387,
+  "completion_truncation": "forbidden",
+  "source": "Train-side screened synthetic + course Recall Drill"
+}

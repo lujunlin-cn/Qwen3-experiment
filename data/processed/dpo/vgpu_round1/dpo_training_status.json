@@ -1,0 +1,26 @@
+{
+  "status": "blocked_no_preference_pairs",
+  "optimizer_steps": 0,
+  "preference_audit": {
+    "input_pairs": 0,
+    "valid_pairs": 0,
+    "rejection_reasons": {},
+    "fixture_pairs": 0
+  },
+  "stage": "dpo_training",
+  "wall_time_seconds": 0.5887519549578428,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2"
+    }
+  },
+  "peak_memory_allocated_mib": 0.0,
+  "peak_device_memory_mib": 258.0
+}

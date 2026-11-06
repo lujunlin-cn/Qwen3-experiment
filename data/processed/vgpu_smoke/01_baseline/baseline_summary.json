@@ -1,0 +1,54 @@
+{
+  "records": 9,
+  "overall_accuracy_sample_weighted": 0.0,
+  "macro_accuracy": 0.0,
+  "by_task": {
+    "bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 1.0,
+      "invalid_output_rate": 0.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.029589624040657,
+      "total_inference_time_seconds": 12.088768872121971
+    },
+    "equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 1.0,
+      "invalid_output_rate": 0.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.029589624040657,
+      "total_inference_time_seconds": 12.088768872121971
+    },
+    "gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 1.0,
+      "invalid_output_rate": 0.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.029589624040657,
+      "total_inference_time_seconds": 12.088768872121971
+    }
+  },
+  "model_id": "Qwen/Qwen3-4B-Thinking-2507",
+  "model_source": "/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507",
+  "max_model_len": 8192,
+  "max_new_tokens": 2048,
+  "load_time_seconds": 25.14197677373886,
+  "total_generation_time_seconds": 36.26630661636591,
+  "total_output_tokens": 18432,
+  "throughput_output_tokens_per_second": 508.2403398553462,
+  "truncation_rate": 1.0,
+  "peak_memory_allocated_mib": 0.0,
+  "initial_gpu_memory_used_mib": 258.0,
+  "peak_gpu_memory_used_mib": 26431.0,
+  "peak_gpu_memory_delta_mib": 26173.0,
+  "verification_standard": {
+    "numeric": "math.isclose(rel_tol=1e-2, abs_tol=1e-5)",
+    "bit": "exact_8bit"
+  },
+  "status": "completed",
+  "gpu_device": "NVIDIA GeForce RTX 4080 SUPER",
+  "wall_time_seconds": 61.79146217927337
+}

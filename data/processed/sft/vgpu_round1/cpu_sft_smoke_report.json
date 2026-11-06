@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "smoke_records": 24,
+  "manifest": "data/processed/sft/vgpu_round1/cpu_checkpoint_manifest.json",
+  "adapter_reload": "GPU_not_run_artifact_reload_not_run",
+  "qlora_prepare": "configuration_checked",
+  "gradient_accumulation": {
+    "optimizer_steps": 3,
+    "window_microbatches": [
+      2,
+      2,
+      1
+    ],
+    "window_valid_tokens": [
+      4,
+      6,
+      1
+    ]
+  },
+  "gpu_training": "not_run"
+}

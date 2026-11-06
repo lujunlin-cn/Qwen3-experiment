@@ -1,0 +1,136 @@
+{'model_id': 'Qwen/Qwen3-4B-Thinking-2507', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 2048, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{
+  "status": "passed",
+  "gae_shape_and_mask": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v2",
+  "terminal_bootstrap_disabled": true,
+  "ppo_loss_finite": true,
+  "policy_gradient": true,
+  "clip_fraction": 1.0,
+  "approx_kl": 3.585691452026367,
+  "gpu_rollout": "not_run",
+  "gpu_training": "not_run"
+}
+{
+  "status": "passed",
+  "smoke_prompts_per_task": 2,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "sft_manifest": "available",
+  "gae_padding_mask_test": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v2",
+  "gpu": "not_run"
+}
+{'train_selection': 'passed', 'records': 4}
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   6%|▋         | 25/398 [00:00<00:01, 245.47it/s]
+Loading weights:  13%|█▎        | 50/398 [00:00<00:01, 216.73it/s]
+Loading weights:  18%|█▊        | 72/398 [00:00<00:01, 208.44it/s]
+Loading weights:  23%|██▎       | 93/398 [00:00<00:01, 200.35it/s]
+Loading weights:  29%|██▉       | 115/398 [00:00<00:01, 203.28it/s]
+Loading weights:  34%|███▍      | 137/398 [00:00<00:01, 201.99it/s]
+Loading weights:  40%|███▉      | 159/398 [00:00<00:01, 202.41it/s]
+Loading weights:  45%|████▌     | 181/398 [00:00<00:01, 200.09it/s]
+Loading weights:  51%|█████     | 203/398 [00:00<00:00, 199.56it/s]
+Loading weights:  57%|█████▋    | 225/398 [00:01<00:00, 200.08it/s]
+Loading weights:  62%|██████▏   | 247/398 [00:01<00:00, 198.90it/s]
+Loading weights:  67%|██████▋   | 268/398 [00:01<00:00, 200.41it/s]
+Loading weights:  73%|███████▎  | 290/398 [00:01<00:00, 199.42it/s]
+Loading weights:  78%|███████▊  | 312/398 [00:01<00:00, 197.72it/s]
+Loading weights:  84%|████████▍ | 334/398 [00:01<00:00, 199.10it/s]
+Loading weights:  89%|████████▉ | 355/398 [00:01<00:00, 201.56it/s]
+Loading weights:  94%|█████████▍| 376/398 [00:01<00:00, 203.16it/s]
+Loading weights: 100%|█████████▉| 397/398 [00:01<00:00, 203.12it/s]
+Loading weights: 100%|██████████| 398/398 [00:01<00:00, 202.91it/s]
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<00:48,  8.11it/s]
+Loading weights:   6%|▋         | 25/398 [00:00<00:02, 131.15it/s]
+Loading weights:  14%|█▍        | 55/398 [00:00<00:01, 200.84it/s]
+Loading weights:  21%|██        | 82/398 [00:00<00:01, 223.29it/s]
+Loading weights:  29%|██▊       | 114/398 [00:00<00:01, 251.33it/s]
+Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 268.88it/s]
+Loading weights:  44%|████▎     | 174/398 [00:00<00:00, 271.96it/s]
+Loading weights:  51%|█████     | 203/398 [00:00<00:00, 271.12it/s]
+Loading weights:  59%|█████▉    | 235/398 [00:00<00:00, 281.53it/s]
+Loading weights:  67%|██████▋   | 267/398 [00:01<00:00, 288.91it/s]
+Loading weights:  74%|███████▍  | 296/398 [00:01<00:00, 288.70it/s]
+Loading weights:  82%|████████▏ | 325/398 [00:01<00:00, 282.42it/s]
+Loading weights:  89%|████████▉ | 356/398 [00:01<00:00, 285.96it/s]
+Loading weights:  97%|█████████▋| 388/398 [00:01<00:00, 290.61it/s]
+Loading weights: 100%|██████████| 398/398 [00:01<00:00, 263.09it/s]
+{
+  "status": "blocked_all_responses_truncated",
+  "records": 4,
+  "optimizer_steps": 0,
+  "value_head_probe": {
+    "status": "passed",
+    "fixture": false,
+    "optimizer_steps": 0,
+    "value_head_device": "cuda:0",
+    "value_head_dtype": "torch.float32",
+    "hidden_compute_dtype": "torch.float32",
+    "value_head_gradient": true,
+    "adapter_gradient": true,
+    "loss": 1.4316686391830444,
+    "scope": "real-model mechanism probe; no outcome or performance claim"
+  },
+  "alignment": {
+    "status": "passed",
+    "training_mode": "nf4_qlora",
+    "rollout_mode": "bf16",
+    "scope": "one_actual_rollout_per_task",
+    "tokens_compared": 4096,
+    "mean_abs_logprob_delta": 0.12189613282680511,
+    "p99_abs_logprob_delta": 1.251460075378418,
+    "max_abs_logprob_delta": 3.9515132904052734,
+    "signed_mean_logprob_delta": -0.04694376885890961,
+    "mean_limit": 0.5,
+    "p99_limit": 3.0,
+    "quantization_difference_expected": true,
+    "checks": [
+      {
+        "sample_id": "5a763686",
+        "task_type": "equation_numeric",
+        "response_tokens": 2048,
+        "prompt_tokens": 77,
+        "first_response_action_index": 76,
+        "token_mask_alignment": true,
+        "vllm_first_raw_logprob": -0.006942791398614645,
+        "training_first_raw_logprob": -0.0011234283447265625
+      },
+      {
+        "sample_id": "07d61ec8",
+        "task_type": "bit_manipulation",
+        "response_tokens": 2048,
+        "prompt_tokens": 248,
+        "first_response_action_index": 247,
+        "token_mask_alignment": true,
+        "vllm_first_raw_logprob": -0.011055524460971355,
+        "training_first_raw_logprob": -0.029880523681640625
+      }
+    ]
+  },
+  "stage": "ppo_training",
+  "wall_time_seconds": 21.926249127835035,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "peak_memory_allocated_mib": 8483.62451171875,
+  "peak_device_memory_mib": 9200.0
+}
+GPU_NOTEBOOK_COMPLETED 05_PPO.ipynb seconds 24.746600423008204

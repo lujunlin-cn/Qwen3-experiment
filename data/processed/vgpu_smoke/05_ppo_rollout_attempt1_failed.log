@@ -1,0 +1,47 @@
+{'model_id': 'Qwen/Qwen3-4B-Thinking-2507', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 2048, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{
+  "status": "passed",
+  "gae_shape_and_mask": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v2",
+  "terminal_bootstrap_disabled": true,
+  "ppo_loss_finite": true,
+  "policy_gradient": true,
+  "clip_fraction": 1.0,
+  "approx_kl": 3.585691452026367,
+  "gpu_rollout": "not_run",
+  "gpu_training": "not_run"
+}
+{
+  "status": "passed",
+  "smoke_prompts_per_task": 2,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "sft_manifest": "available",
+  "gae_padding_mask_test": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v2",
+  "gpu": "not_run"
+}
+{
+  "status": "failed",
+  "error": "NameError(\"name 'pd' is not defined\")",
+  "traceback": "Traceback (most recent call last):\n  File \"05_PPO.ipynb#cell37\", line 42, in _gpu_stage\n  File \"05_PPO.ipynb#cell30\", line 23, in operation\n  File \"05_PPO.ipynb#cell28\", line 3, in select_ppo_smoke_prompts\nNameError: name 'pd' is not defined\n",
+  "stage": "ppo_rollout",
+  "wall_time_seconds": 0.38784060440957546,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "12.8",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.8.0",
+      "transformers": "4.57.1",
+      "vllm": "0.11.0"
+    }
+  },
+  "peak_memory_allocated_mib": 0.0,
+  "peak_device_memory_mib": 258.0
+}
+GPU_NOTEBOOK_COMPLETED 05_PPO.ipynb seconds 2.729405352845788

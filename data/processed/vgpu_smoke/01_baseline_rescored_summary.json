@@ -1,0 +1,44 @@
+{
+  "records": 9,
+  "overall_accuracy_sample_weighted": 0.0,
+  "macro_accuracy": 0.0,
+  "by_task": {
+    "bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.029589624040657,
+      "total_inference_time_seconds": 12.088768872121971
+    },
+    "equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.029589624040657,
+      "total_inference_time_seconds": 12.088768872121971
+    },
+    "gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.029589624040657,
+      "total_inference_time_seconds": 12.088768872121971
+    }
+  },
+  "status": "completed_offline_rescoring",
+  "model_rerun": false,
+  "original_source": "data/processed/vgpu_smoke/01_baseline/baseline_results.jsonl",
+  "original_sha256": "d319400831b017b91aca1f422de7934cc2ab2e623529d8bb7cec66131febb0c6",
+  "truncation_rate": 1.0,
+  "capability_conclusion": "inconclusive_due_to_all_truncated_outputs",
+  "scoring_policy": "length-finished outputs count as invalid; historical original files retained"
+}

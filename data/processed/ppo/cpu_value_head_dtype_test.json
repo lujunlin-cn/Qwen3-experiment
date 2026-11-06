@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "input_dtype": "bfloat16",
+  "value_dtype": "float32",
+  "backward": true
+}

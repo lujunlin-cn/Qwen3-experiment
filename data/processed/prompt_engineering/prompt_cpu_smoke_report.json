@@ -13,7 +13,7 @@
   "few_shot_source": "train_only",
   "prior_hidden_rule_isolation": true,
   "answer_extraction_and_verifier": "passed",
-  "verifier_version": "official_nvidia_metric_v2",
+  "verifier_version": "official_nvidia_metric_v3",
   "extraction_policy": "strict_marker_first_prompt_eval",
   "gpu_eval": "disabled",
   "run_mode": "smoke",

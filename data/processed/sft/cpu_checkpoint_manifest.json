@@ -36,7 +36,7 @@
     "strategy": "two_stage",
     "data_version": "d5841a3eefcf6b1cd3a380a87caed28957cc194cc5aa437ae685b881bc34d8ce",
     "records": 24,
-    "token_budget_proxy": 922,
+    "token_budget_proxy": 958,
     "seed": 42,
     "epochs": 1,
     "profile": "official-q-qlora-or-pt-sft-cuda"

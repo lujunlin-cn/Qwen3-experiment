@@ -1,0 +1,107 @@
+{
+  "id": "04171e29",
+  "official_answer": "32",
+  "solver": {
+    "status": "solved",
+    "query_operator": "-",
+    "query_operator_in_examples": true,
+    "candidates_by_operator": {
+      "-": [
+        "flip_absdiff",
+        "flip_maxmodmin",
+        "flip_sub_prefix"
+      ],
+      "*": [
+        "flip_mul"
+      ]
+    },
+    "valid_assignment_count": 3,
+    "valid_assignments": [
+      {
+        "mode": "flip",
+        "rules": {
+          "-": "flip_absdiff",
+          "*": "flip_mul"
+        }
+      },
+      {
+        "mode": "flip",
+        "rules": {
+          "-": "flip_maxmodmin",
+          "*": "flip_mul"
+        }
+      },
+      {
+        "mode": "flip",
+        "rules": {
+          "-": "flip_sub_prefix",
+          "*": "flip_mul"
+        }
+      }
+    ],
+    "query_outputs": [
+      "32"
+    ],
+    "answer_unique": true,
+    "selected_assignment": {
+      "mode": "flip",
+      "rules": {
+        "-": "flip_absdiff",
+        "*": "flip_mul"
+      }
+    }
+  },
+  "verifier": {
+    "status": "solved",
+    "query_operator": "-",
+    "query_operator_in_examples": true,
+    "candidates_by_operator": {
+      "-": [
+        "flip_absdiff",
+        "flip_maxmodmin",
+        "flip_sub_prefix"
+      ],
+      "*": [
+        "flip_mul"
+      ]
+    },
+    "valid_assignment_count": 3,
+    "valid_assignments": [
+      {
+        "mode": "flip",
+        "rules": {
+          "-": "flip_absdiff",
+          "*": "flip_mul"
+        }
+      },
+      {
+        "mode": "flip",
+        "rules": {
+          "-": "flip_maxmodmin",
+          "*": "flip_mul"
+        }
+      },
+      {
+        "mode": "flip",
+        "rules": {
+          "-": "flip_sub_prefix",
+          "*": "flip_mul"
+        }
+      }
+    ],
+    "query_outputs": [
+      "32"
+    ],
+    "answer_unique": true,
+    "selected_assignment": {
+      "mode": "flip",
+      "rules": {
+        "-": "flip_absdiff",
+        "*": "flip_mul"
+      }
+    }
+  },
+  "source_split": "validation",
+  "model_answer": "23",
+  "scope": "independent CPU validation of one raw Base-model diagnostic case"
+}

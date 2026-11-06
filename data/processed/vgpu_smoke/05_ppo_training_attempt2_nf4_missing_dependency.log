@@ -1,0 +1,70 @@
+{'model_id': 'Qwen/Qwen3-4B-Thinking-2507', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 2048, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{
+  "status": "passed",
+  "gae_shape_and_mask": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v2",
+  "terminal_bootstrap_disabled": true,
+  "ppo_loss_finite": true,
+  "policy_gradient": true,
+  "clip_fraction": 1.0,
+  "approx_kl": 3.585691452026367,
+  "gpu_rollout": "not_run",
+  "gpu_training": "not_run"
+}
+{
+  "status": "passed",
+  "smoke_prompts_per_task": 2,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "sft_manifest": "available",
+  "gae_padding_mask_test": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v2",
+  "gpu": "not_run"
+}
+{'train_selection': 'passed', 'records': 4}
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   1%|          | 3/398 [00:00<00:14, 26.47it/s]
+Loading weights:   7%|▋         | 26/398 [00:00<00:02, 131.55it/s]
+Loading weights:  12%|█▏        | 48/398 [00:00<00:02, 164.06it/s]
+Loading weights:  18%|█▊        | 70/398 [00:00<00:01, 178.62it/s]
+Loading weights:  23%|██▎       | 92/398 [00:00<00:01, 191.21it/s]
+Loading weights:  29%|██▊       | 114/398 [00:00<00:01, 195.04it/s]
+Loading weights:  34%|███▍      | 136/398 [00:00<00:01, 198.99it/s]
+Loading weights:  40%|███▉      | 158/398 [00:00<00:01, 191.08it/s]
+Loading weights:  45%|████▌     | 181/398 [00:00<00:01, 195.78it/s]
+Loading weights:  51%|█████     | 203/398 [00:01<00:00, 197.37it/s]
+Loading weights:  57%|█████▋    | 225/398 [00:01<00:00, 197.24it/s]
+Loading weights:  62%|██████▏   | 247/398 [00:01<00:00, 198.48it/s]
+Loading weights:  68%|██████▊   | 269/398 [00:01<00:00, 198.70it/s]
+Loading weights:  73%|███████▎  | 291/398 [00:01<00:00, 200.55it/s]
+Loading weights:  79%|███████▊  | 313/398 [00:01<00:00, 200.46it/s]
+Loading weights:  84%|████████▍ | 335/398 [00:01<00:00, 201.34it/s]
+Loading weights:  90%|████████▉ | 357/398 [00:01<00:00, 199.72it/s]
+Loading weights:  95%|█████████▌| 379/398 [00:01<00:00, 199.35it/s]
+Loading weights: 100%|██████████| 398/398 [00:02<00:00, 193.92it/s]
+{
+  "status": "failed",
+  "error": "ImportError('Using `bitsandbytes` 4-bit quantization requires bitsandbytes: `pip install -U bitsandbytes>=0.46.1`')",
+  "traceback": "Traceback (most recent call last):\n  File \"05_PPO.ipynb#cell37\", line 42, in _gpu_stage\n  File \"05_PPO.ipynb#cell30\", line 42, in operation\n  File \"05_PPO.ipynb#cell20\", line 8, in _load_sft_actor_critic\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py\", line 409, in from_pretrained\n    return model_class.from_pretrained(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/modeling_utils.py\", line 4233, in from_pretrained\n    hf_quantizer, config, device_map = get_hf_quantizer(\n                                       ^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/quantizers/auto.py\", line 378, in get_hf_quantizer\n    hf_quantizer.validate_environment(\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/quantizers/quantizer_bnb_4bit.py\", line 62, in validate_environment\n    raise ImportError(\nImportError: Using `bitsandbytes` 4-bit quantization requires bitsandbytes: `pip install -U bitsandbytes>=0.46.1`\n",
+  "stage": "ppo_training",
+  "wall_time_seconds": 11.447322364896536,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2"
+    }
+  },
+  "peak_memory_allocated_mib": 8483.62451171875,
+  "peak_device_memory_mib": 9200.0
+}
+GPU_NOTEBOOK_COMPLETED 05_PPO.ipynb seconds 13.961544116958976

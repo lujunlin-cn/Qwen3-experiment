@@ -1,0 +1,24 @@
+{
+  "schema_version": "nemotron-rollout/v2",
+  "status": "completed",
+  "records": 32,
+  "rollout_path": "data/processed/grpo/vgpu_round1/grpo_smoke_rollouts.jsonl",
+  "rollout_sha256": "05e012a8661b81493f586bc9dfbad22b5f412ab9ccb19d7affc2207a4787ecb1",
+  "sft_fingerprint": {
+    "base_model_id": "Qwen/Qwen3-4B-Thinking-2507",
+    "policy_version": "sft:two_stage:nf4_qlora:seed42",
+    "manifest_sha256": "25c357d7dad0d621eab873e93f5cf3ee6d430f3797767cf238002977604540d4",
+    "adapter_files": {
+      "adapter_config.json": "d2ffaf13b3d181b77ff2215cb740248465d7157a5d24ea93b30672d1ee288460",
+      "adapter_model.safetensors": "b9dcc296e429ea38536fca4dc264ab7de0a6e4a339eecd98f3792deca17bb4ec"
+    }
+  },
+  "source_split": "train",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "top_k": -1,
+  "logprobs_mode": "raw_logprobs",
+  "quantization": "bf16",
+  "max_new_tokens": 2048,
+  "max_model_len": 8192
+}

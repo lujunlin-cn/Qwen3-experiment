@@ -1,0 +1,29 @@
+{
+  "groups": 3,
+  "invalid_groups": 0,
+  "categories": {
+    "all_correct": 1,
+    "mixed": 1,
+    "all_wrong": 1
+  },
+  "all_correct_ratio": 0.3333333333333333,
+  "mixed_ratio": 0.3333333333333333,
+  "all_wrong_ratio": 0.3333333333333333,
+  "mean_reward_variance": 0.08333333333333333,
+  "zero_variance_ratio": 0.6666666666666666,
+  "correct_count_histogram": {
+    "8": 1,
+    "4": 1,
+    "0": 1
+  },
+  "fixture_only": true,
+  "status": "ok",
+  "validation": {
+    "valid": true,
+    "record_errors": [],
+    "bad_group_sizes": {},
+    "records": 24,
+    "groups": 3
+  },
+  "reward_definition": "binary_outcome_reward"
+}

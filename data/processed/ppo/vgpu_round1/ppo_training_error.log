@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "05_PPO.ipynb#cell37", line 42, in _gpu_stage
+  File "05_PPO.ipynb#cell30", line 42, in operation
+  File "05_PPO.ipynb#cell20", line 8, in _load_sft_actor_critic
+  File "/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 409, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4233, in from_pretrained
+    hf_quantizer, config, device_map = get_hf_quantizer(
+                                       ^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/quantizers/auto.py", line 378, in get_hf_quantizer
+    hf_quantizer.validate_environment(
+  File "/root/autodl-tmp/Qwen3-experiment/.venv-pt-rl-cu128/lib/python3.12/site-packages/transformers/quantizers/quantizer_bnb_4bit.py", line 62, in validate_environment
+    raise ImportError(
+ImportError: Using `bitsandbytes` 4-bit quantization requires bitsandbytes: `pip install -U bitsandbytes>=0.46.1`

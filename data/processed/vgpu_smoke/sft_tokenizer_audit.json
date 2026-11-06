@@ -1,0 +1,305 @@
+{
+  "status": "passed",
+  "fixture": false,
+  "model_loaded": false,
+  "train_records": 33,
+  "rows": [
+    {
+      "source_id": "gravity-0000",
+      "task": "gravity",
+      "trace_type": "full_trace",
+      "full_tokens": 282,
+      "completion_tokens": 129,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "gravity-0001",
+      "task": "gravity",
+      "trace_type": "full_trace",
+      "full_tokens": 236,
+      "completion_tokens": 126,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "gravity-0002",
+      "task": "gravity",
+      "trace_type": "full_trace",
+      "full_tokens": 244,
+      "completion_tokens": 130,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "gravity-0003",
+      "task": "gravity",
+      "trace_type": "full_trace",
+      "full_tokens": 255,
+      "completion_tokens": 125,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "gravity-0004",
+      "task": "gravity",
+      "trace_type": "full_trace",
+      "full_tokens": 285,
+      "completion_tokens": 129,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "gravity-0005",
+      "task": "gravity",
+      "trace_type": "full_trace",
+      "full_tokens": 280,
+      "completion_tokens": 129,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "gravity-0006",
+      "task": "gravity",
+      "trace_type": "full_trace",
+      "full_tokens": 260,
+      "completion_tokens": 127,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "gravity-0007",
+      "task": "gravity",
+      "trace_type": "full_trace",
+      "full_tokens": 242,
+      "completion_tokens": 128,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_numeric-0000",
+      "task": "equation_numeric",
+      "trace_type": "full_trace",
+      "full_tokens": 398,
+      "completion_tokens": 128,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_numeric-0001",
+      "task": "equation_numeric",
+      "trace_type": "full_trace",
+      "full_tokens": 391,
+      "completion_tokens": 124,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_numeric-0003",
+      "task": "equation_numeric",
+      "trace_type": "full_trace",
+      "full_tokens": 394,
+      "completion_tokens": 125,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_numeric-0004",
+      "task": "equation_numeric",
+      "trace_type": "full_trace",
+      "full_tokens": 396,
+      "completion_tokens": 131,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_numeric-0005",
+      "task": "equation_numeric",
+      "trace_type": "full_trace",
+      "full_tokens": 394,
+      "completion_tokens": 126,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_numeric-0006",
+      "task": "equation_numeric",
+      "trace_type": "full_trace",
+      "full_tokens": 386,
+      "completion_tokens": 121,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_numeric-0007",
+      "task": "equation_numeric",
+      "trace_type": "full_trace",
+      "full_tokens": 396,
+      "completion_tokens": 130,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_numeric-0008",
+      "task": "equation_numeric",
+      "trace_type": "full_trace",
+      "full_tokens": 384,
+      "completion_tokens": 128,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "bit_manipulation-0000",
+      "task": "bit_manipulation",
+      "trace_type": "full_trace",
+      "full_tokens": 326,
+      "completion_tokens": 143,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "bit_manipulation-0002",
+      "task": "bit_manipulation",
+      "trace_type": "full_trace",
+      "full_tokens": 326,
+      "completion_tokens": 143,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "bit_manipulation-0003",
+      "task": "bit_manipulation",
+      "trace_type": "full_trace",
+      "full_tokens": 333,
+      "completion_tokens": 150,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "bit_manipulation-0004",
+      "task": "bit_manipulation",
+      "trace_type": "full_trace",
+      "full_tokens": 329,
+      "completion_tokens": 146,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "bit_manipulation-0005",
+      "task": "bit_manipulation",
+      "trace_type": "full_trace",
+      "full_tokens": 327,
+      "completion_tokens": 144,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "bit_manipulation-0006",
+      "task": "bit_manipulation",
+      "trace_type": "full_trace",
+      "full_tokens": 316,
+      "completion_tokens": 133,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "bit_manipulation-0007",
+      "task": "bit_manipulation",
+      "trace_type": "full_trace",
+      "full_tokens": 326,
+      "completion_tokens": 143,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "bit_manipulation-0008",
+      "task": "bit_manipulation",
+      "trace_type": "full_trace",
+      "full_tokens": 325,
+      "completion_tokens": 142,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_parse",
+      "task": "equation_numeric",
+      "trace_type": "recall_drill",
+      "full_tokens": 67,
+      "completion_tokens": 41,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_global_constraint",
+      "task": "equation_numeric",
+      "trace_type": "recall_drill",
+      "full_tokens": 71,
+      "completion_tokens": 44,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_guess",
+      "task": "equation_numeric",
+      "trace_type": "recall_drill",
+      "full_tokens": 70,
+      "completion_tokens": 44,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "equation_join",
+      "task": "equation_numeric",
+      "trace_type": "recall_drill",
+      "full_tokens": 65,
+      "completion_tokens": 39,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "bit_mask",
+      "task": "bit_manipulation",
+      "trace_type": "recall_drill",
+      "full_tokens": 66,
+      "completion_tokens": 39,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "bit_rotate",
+      "task": "bit_manipulation",
+      "trace_type": "recall_drill",
+      "full_tokens": 71,
+      "completion_tokens": 44,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "bit_boolean",
+      "task": "bit_manipulation",
+      "trace_type": "recall_drill",
+      "full_tokens": 67,
+      "completion_tokens": 40,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "gravity_formula",
+      "task": "gravity",
+      "trace_type": "recall_drill",
+      "full_tokens": 74,
+      "completion_tokens": 50,
+      "think_end_present": true,
+      "eos_present": true
+    },
+    {
+      "source_id": "gravity_ols",
+      "task": "gravity",
+      "trace_type": "recall_drill",
+      "full_tokens": 71,
+      "completion_tokens": 46,
+      "think_end_present": true,
+      "eos_present": true
+    }
+  ]
+}

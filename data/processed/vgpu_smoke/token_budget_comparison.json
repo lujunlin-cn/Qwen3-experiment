@@ -1,0 +1,38 @@
+{
+  "scope": "same three official Validation prompts; base model; fixed sampling parameters and seed",
+  "results": [
+    {
+      "id": "00ed1836",
+      "task_type": "gravity",
+      "tokens_8k": 8192,
+      "tokens_16k": 8637,
+      "common_token_prefix_length": 8192,
+      "shorter_prefix_exact_match": true,
+      "finish_8k": "length",
+      "finish_16k": "stop",
+      "correct_16k": true
+    },
+    {
+      "id": "01e09228",
+      "task_type": "bit_manipulation",
+      "tokens_8k": 8192,
+      "tokens_16k": 16384,
+      "common_token_prefix_length": 8192,
+      "shorter_prefix_exact_match": true,
+      "finish_8k": "length",
+      "finish_16k": "length",
+      "correct_16k": false
+    },
+    {
+      "id": "04171e29",
+      "task_type": "equation_numeric",
+      "tokens_8k": 7976,
+      "tokens_16k": 7976,
+      "common_token_prefix_length": 7976,
+      "shorter_prefix_exact_match": true,
+      "finish_8k": "stop",
+      "finish_16k": "stop",
+      "correct_16k": false
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "records": 54,
+  "by_prompt_task": {
+    "P0/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.037250274171432,
+      "total_inference_time_seconds": 12.111750822514296
+    },
+    "P0/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.037250274171432,
+      "total_inference_time_seconds": 12.111750822514296
+    },
+    "P0/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.3333333333333333,
+      "invalid_output_rate": 0.6666666666666666,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.037250274171432,
+      "total_inference_time_seconds": 12.111750822514296
+    },
+    "P1/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.117100630990333,
+      "total_inference_time_seconds": 12.351301892970998
+    },
+    "P1/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.117100630990333,
+      "total_inference_time_seconds": 12.351301892970998
+    },
+    "P1/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.6666666666666666,
+      "invalid_output_rate": 0.3333333333333333,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.117100630990333,
+      "total_inference_time_seconds": 12.351301892970998
+    },
+    "P2/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.3333333333333333,
+      "invalid_output_rate": 0.6666666666666666,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.139356702359186,
+      "total_inference_time_seconds": 12.418070107077558
+    },
+    "P2/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.6666666666666666,
+      "invalid_output_rate": 0.3333333333333333,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.139356702359186,
+      "total_inference_time_seconds": 12.418070107077558
+    },
+    "P2/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.6666666666666666,
+      "invalid_output_rate": 0.3333333333333333,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.139356702359186,
+      "total_inference_time_seconds": 12.418070107077558
+    },
+    "P3/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.207443517115381,
+      "total_inference_time_seconds": 12.622330551346144
+    },
+    "P3/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.3333333333333333,
+      "invalid_output_rate": 0.6666666666666666,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.207443517115381,
+      "total_inference_time_seconds": 12.622330551346144
+    },
+    "P3/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.3333333333333333,
+      "invalid_output_rate": 0.6666666666666666,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.207443517115381,
+      "total_inference_time_seconds": 12.622330551346144
+    },
+    "P4/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.367968887297644,
+      "total_inference_time_seconds": 13.103906661892932
+    },
+    "P4/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.367968887297644,
+      "total_inference_time_seconds": 13.103906661892932
+    },
+    "P4/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.367968887297644,
+      "total_inference_time_seconds": 13.103906661892932
+    },
+    "P5/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.328942208861311,
+      "total_inference_time_seconds": 12.986826626583934
+    },
+    "P5/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.328942208861311,
+      "total_inference_time_seconds": 12.986826626583934
+    },
+    "P5/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.328942208861311,
+      "total_inference_time_seconds": 12.986826626583934
+    }
+  },
+  "overall_accuracy_sample_weighted": {
+    "P0": 0.0,
+    "P1": 0.0,
+    "P2": 0.0,
+    "P3": 0.0,
+    "P4": 0.0,
+    "P5": 0.0
+  },
+  "macro_accuracy": {
+    "P0": 0.0,
+    "P1": 0.0,
+    "P2": 0.0,
+    "P3": 0.0,
+    "P4": 0.0,
+    "P5": 0.0
+  },
+  "status": "completed",
+  "gpu_device": "NVIDIA GeForce RTX 4080 SUPER",
+  "peak_memory_allocated_mib": 0.0,
+  "model_id": "Qwen/Qwen3-4B-Thinking-2507",
+  "model_source": "/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507",
+  "selection_split": "validation",
+  "run_mode": "smoke",
+  "max_new_tokens": 2048,
+  "max_model_len": 8192,
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "prompt_versions": [
+    "P0",
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5"
+  ],
+  "batch_metrics": {
+    "P0": {
+      "batch_wall_time_seconds": 36.33525246754289,
+      "batch_size": 9,
+      "batch_output_tokens": 18432
+    },
+    "P1": {
+      "batch_wall_time_seconds": 37.053905678913,
+      "batch_size": 9,
+      "batch_output_tokens": 18432
+    },
+    "P2": {
+      "batch_wall_time_seconds": 37.25421032123268,
+      "batch_size": 9,
+      "batch_output_tokens": 18432
+    },
+    "P3": {
+      "batch_wall_time_seconds": 37.86699165403843,
+      "batch_size": 9,
+      "batch_output_tokens": 18432
+    },
+    "P4": {
+      "batch_wall_time_seconds": 39.31171998567879,
+      "batch_size": 9,
+      "batch_output_tokens": 18432
+    },
+    "P5": {
+      "batch_wall_time_seconds": 38.9604798797518,
+      "batch_size": 9,
+      "batch_output_tokens": 18432
+    }
+  },
+  "warmup": "one P0 request excluded from timings",
+  "result_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/prompt_engineering/prompt_engineering_smoke_results.jsonl",
+  "wall_time_seconds": 279.9798369407654
+}

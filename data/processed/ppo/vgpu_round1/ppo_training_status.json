@@ -1,0 +1,70 @@
+{
+  "status": "blocked_all_responses_truncated",
+  "records": 4,
+  "optimizer_steps": 0,
+  "value_head_probe": {
+    "status": "passed",
+    "fixture": false,
+    "optimizer_steps": 0,
+    "value_head_device": "cuda:0",
+    "value_head_dtype": "torch.float32",
+    "hidden_compute_dtype": "torch.float32",
+    "value_head_gradient": true,
+    "adapter_gradient": true,
+    "loss": 1.4316686391830444,
+    "scope": "real-model mechanism probe; no outcome or performance claim"
+  },
+  "alignment": {
+    "status": "passed",
+    "training_mode": "nf4_qlora",
+    "rollout_mode": "bf16",
+    "scope": "one_actual_rollout_per_task",
+    "tokens_compared": 4096,
+    "mean_abs_logprob_delta": 0.12189613282680511,
+    "p99_abs_logprob_delta": 1.251460075378418,
+    "max_abs_logprob_delta": 3.9515132904052734,
+    "signed_mean_logprob_delta": -0.04694376885890961,
+    "mean_limit": 0.5,
+    "p99_limit": 3.0,
+    "quantization_difference_expected": true,
+    "checks": [
+      {
+        "sample_id": "5a763686",
+        "task_type": "equation_numeric",
+        "response_tokens": 2048,
+        "prompt_tokens": 77,
+        "first_response_action_index": 76,
+        "token_mask_alignment": true,
+        "vllm_first_raw_logprob": -0.006942791398614645,
+        "training_first_raw_logprob": -0.0011234283447265625
+      },
+      {
+        "sample_id": "07d61ec8",
+        "task_type": "bit_manipulation",
+        "response_tokens": 2048,
+        "prompt_tokens": 248,
+        "first_response_action_index": 247,
+        "token_mask_alignment": true,
+        "vllm_first_raw_logprob": -0.011055524460971355,
+        "training_first_raw_logprob": -0.029880523681640625
+      }
+    ]
+  },
+  "stage": "ppo_training",
+  "wall_time_seconds": 21.926249127835035,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "peak_memory_allocated_mib": 8483.62451171875,
+  "peak_device_memory_mib": 9200.0
+}

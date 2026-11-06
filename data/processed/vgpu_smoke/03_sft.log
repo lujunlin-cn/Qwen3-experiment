@@ -1,0 +1,213 @@
+{'model_id': 'Qwen/Qwen3-4B-Thinking-2507', 'device_for_cpu_smoke': 'cpu', 'run_sft': True, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3145}
+{'screened_synthetic_available': 275, 'full_trace_records_after_audit': 24, 'by_task': {'gravity': 8, 'equation_numeric': 8, 'bit_manipulation': 8}}
+[
+  {
+    "strategy": "direct",
+    "records": 24,
+    "trace_type_counts": {
+      "full_trace": 24
+    },
+    "token_budget_proxy": 1344,
+    "task_counts": {
+      "gravity": 8,
+      "equation_numeric": 8,
+      "bit_manipulation": 8
+    }
+  },
+  {
+    "strategy": "joint",
+    "records": 24,
+    "trace_type_counts": {
+      "recall_drill": 9,
+      "full_trace": 15
+    },
+    "token_budget_proxy": 922,
+    "task_counts": {
+      "equation_numeric": 11,
+      "bit_manipulation": 3,
+      "gravity": 10
+    }
+  },
+  {
+    "strategy": "memorization",
+    "records": 9,
+    "trace_type_counts": {
+      "recall_drill": 9
+    },
+    "token_budget_proxy": 115,
+    "task_counts": {
+      "equation_numeric": 4,
+      "bit_manipulation": 3,
+      "gravity": 2
+    }
+  },
+  {
+    "strategy": "execution",
+    "records": 24,
+    "trace_type_counts": {
+      "full_trace": 24
+    },
+    "token_budget_proxy": 1344,
+    "task_counts": {
+      "gravity": 8,
+      "equation_numeric": 8,
+      "bit_manipulation": 8
+    }
+  },
+  {
+    "strategy": "two_stage",
+    "records": 24,
+    "trace_type_counts": {
+      "recall_drill": 9,
+      "full_trace": 15
+    },
+    "token_budget_proxy": 922,
+    "task_counts": {
+      "equation_numeric": 11,
+      "bit_manipulation": 3,
+      "gravity": 10
+    }
+  }
+]
+{'gpu_sft': 'deferred_to_final_execution_cell', 'run_sft': True}
+{
+  "status": "passed",
+  "trace_records_checked": 20,
+  "trace_audit": {
+    "full_trace": 20,
+    "accepted": 20
+  },
+  "label_masking": "prompt_and_padding_ignored",
+  "loss_finite": true,
+  "optimizer_update": true,
+  "gpu_training": "not_run",
+  "qlora": "configuration_only_not_run"
+}
+{
+  "status": "passed",
+  "smoke_records": 24,
+  "manifest": "data/processed/sft/vgpu_round1/cpu_checkpoint_manifest.json",
+  "adapter_reload": "GPU_not_run_artifact_reload_not_run",
+  "qlora_prepare": "configuration_checked",
+  "gradient_accumulation": {
+    "optimizer_steps": 3,
+    "window_microbatches": [
+      2,
+      2,
+      1
+    ],
+    "window_valid_tokens": [
+      4,
+      6,
+      1
+    ]
+  },
+  "gpu_training": "not_run"
+}
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<00:49,  8.09it/s]
+Loading weights:   4%|▎         | 14/398 [00:00<00:05, 71.53it/s]
+Loading weights:  11%|█         | 44/398 [00:00<00:02, 167.80it/s]
+Loading weights:  18%|█▊        | 71/398 [00:00<00:01, 204.21it/s]
+Loading weights:  26%|██▌       | 103/398 [00:00<00:01, 241.66it/s]
+Loading weights:  34%|███▍      | 135/398 [00:00<00:00, 264.41it/s]
+Loading weights:  41%|████▏     | 165/398 [00:00<00:00, 272.74it/s]
+Loading weights:  48%|████▊     | 193/398 [00:00<00:00, 272.91it/s]
+Loading weights:  56%|█████▋    | 224/398 [00:00<00:00, 280.89it/s]
+Loading weights:  64%|██████▍   | 256/398 [00:01<00:00, 289.58it/s]
+Loading weights:  72%|███████▏  | 286/398 [00:01<00:00, 290.50it/s]
+Loading weights:  79%|███████▉  | 316/398 [00:01<00:00, 289.78it/s]
+Loading weights:  87%|████████▋ | 346/398 [00:01<00:00, 284.22it/s]
+Loading weights:  95%|█████████▍| 378/398 [00:01<00:00, 291.08it/s]
+Loading weights: 100%|██████████| 398/398 [00:01<00:00, 259.11it/s]
+trainable params: 16,515,072 || all params: 4,038,983,168 || trainable%: 0.4089
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<00:48,  8.12it/s]
+Loading weights:   7%|▋         | 27/398 [00:00<00:02, 141.14it/s]
+Loading weights:  15%|█▍        | 59/398 [00:00<00:01, 212.72it/s]
+Loading weights:  23%|██▎       | 91/398 [00:00<00:01, 249.00it/s]
+Loading weights:  30%|███       | 121/398 [00:00<00:01, 263.24it/s]
+Loading weights:  37%|███▋      | 148/398 [00:00<00:00, 262.29it/s]
+Loading weights:  45%|████▌     | 180/398 [00:00<00:00, 276.01it/s]
+Loading weights:  53%|█████▎    | 212/398 [00:00<00:00, 285.81it/s]
+Loading weights:  61%|██████    | 242/398 [00:00<00:00, 286.95it/s]
+Loading weights:  68%|██████▊   | 271/398 [00:01<00:00, 285.03it/s]
+Loading weights:  76%|███████▌  | 301/398 [00:01<00:00, 285.27it/s]
+Loading weights:  84%|████████▎ | 333/398 [00:01<00:00, 291.97it/s]
+Loading weights:  91%|█████████ | 363/398 [00:01<00:00, 290.25it/s]
+Loading weights:  99%|█████████▊| 393/398 [00:01<00:00, 288.10it/s]
+Loading weights: 100%|██████████| 398/398 [00:01<00:00, 267.16it/s]
+trainable params: 16,515,072 || all params: 4,038,983,168 || trainable%: 0.4089
+
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]
+Loading weights:   0%|          | 1/398 [00:00<00:48,  8.12it/s]
+Loading weights:   7%|▋         | 27/398 [00:00<00:02, 141.27it/s]
+Loading weights:  15%|█▍        | 59/398 [00:00<00:01, 213.66it/s]
+Loading weights:  23%|██▎       | 91/398 [00:00<00:01, 249.56it/s]
+Loading weights:  30%|███       | 121/398 [00:00<00:01, 263.55it/s]
+Loading weights:  37%|███▋      | 148/398 [00:00<00:00, 261.76it/s]
+Loading weights:  45%|████▌     | 180/398 [00:00<00:00, 276.44it/s]
+Loading weights:  53%|█████▎    | 212/398 [00:00<00:00, 285.81it/s]
+Loading weights:  61%|██████    | 242/398 [00:00<00:00, 286.94it/s]
+Loading weights:  68%|██████▊   | 271/398 [00:01<00:00, 284.97it/s]
+Loading weights:  76%|███████▌  | 301/398 [00:01<00:00, 284.92it/s]
+Loading weights:  84%|████████▎ | 333/398 [00:01<00:00, 291.34it/s]
+Loading weights:  91%|█████████ | 363/398 [00:01<00:00, 291.58it/s]
+Loading weights:  99%|█████████▊| 393/398 [00:01<00:00, 289.28it/s]
+Loading weights: 100%|██████████| 398/398 [00:01<00:00, 267.53it/s]
+trainable params: 16,515,072 || all params: 4,038,983,168 || trainable%: 0.4089
+{
+  "status": "completed",
+  "stage": "sft_training",
+  "strategy": "two_stage",
+  "mode": "nf4_qlora",
+  "records": 24,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 5.37978779006682,
+      "optimizer_steps": 5,
+      "valid_tokens": 387
+    },
+    {
+      "epoch": 1,
+      "loss": 3.302007023393483,
+      "optimizer_steps": 8,
+      "valid_tokens": 1908
+    }
+  ],
+  "training_time_seconds": 28.006822891533375,
+  "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/vgpu_round1/sft_two_stage_nf4_qlora",
+  "manifest_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/vgpu_round1/sft_manifest.json",
+  "peak_memory_allocated_mib": 4626.82275390625,
+  "gpu_preflight": {
+    "status": "ready",
+    "stage": "sft_training",
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "free_memory_mib": 31973.6875,
+    "total_memory_mib": 32230.8125
+  },
+  "adapter_reload": {
+    "status": "passed",
+    "trainable_parameter_tensors": 504
+  },
+  "wall_time_seconds": 28.34013727493584,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "peak_device_memory_mib": 5578.0
+}
+GPU_NOTEBOOK_COMPLETED 03_SFT.ipynb seconds 30.778157580643892

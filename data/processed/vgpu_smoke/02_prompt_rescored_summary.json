@@ -1,0 +1,208 @@
+{
+  "records": 54,
+  "by_prompt_task": {
+    "P0/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.037250274171432,
+      "total_inference_time_seconds": 12.111750822514296
+    },
+    "P0/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.037250274171432,
+      "total_inference_time_seconds": 12.111750822514296
+    },
+    "P0/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.037250274171432,
+      "total_inference_time_seconds": 12.111750822514296
+    },
+    "P1/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.117100630990333,
+      "total_inference_time_seconds": 12.351301892970998
+    },
+    "P1/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.117100630990333,
+      "total_inference_time_seconds": 12.351301892970998
+    },
+    "P1/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.117100630990333,
+      "total_inference_time_seconds": 12.351301892970998
+    },
+    "P2/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.139356702359186,
+      "total_inference_time_seconds": 12.418070107077558
+    },
+    "P2/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.139356702359186,
+      "total_inference_time_seconds": 12.418070107077558
+    },
+    "P2/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.139356702359186,
+      "total_inference_time_seconds": 12.418070107077558
+    },
+    "P3/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.207443517115381,
+      "total_inference_time_seconds": 12.622330551346144
+    },
+    "P3/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.207443517115381,
+      "total_inference_time_seconds": 12.622330551346144
+    },
+    "P3/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.207443517115381,
+      "total_inference_time_seconds": 12.622330551346144
+    },
+    "P4/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.367968887297644,
+      "total_inference_time_seconds": 13.103906661892932
+    },
+    "P4/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.367968887297644,
+      "total_inference_time_seconds": 13.103906661892932
+    },
+    "P4/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.367968887297644,
+      "total_inference_time_seconds": 13.103906661892932
+    },
+    "P5/bit_manipulation": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.328942208861311,
+      "total_inference_time_seconds": 12.986826626583934
+    },
+    "P5/equation_numeric": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.328942208861311,
+      "total_inference_time_seconds": 12.986826626583934
+    },
+    "P5/gravity": {
+      "records": 3,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 2048.0,
+      "average_inference_time_seconds": 4.328942208861311,
+      "total_inference_time_seconds": 12.986826626583934
+    }
+  },
+  "overall_accuracy_sample_weighted": {
+    "P0": 0.0,
+    "P1": 0.0,
+    "P2": 0.0,
+    "P3": 0.0,
+    "P4": 0.0,
+    "P5": 0.0
+  },
+  "macro_accuracy": {
+    "P0": 0.0,
+    "P1": 0.0,
+    "P2": 0.0,
+    "P3": 0.0,
+    "P4": 0.0,
+    "P5": 0.0
+  },
+  "status": "completed_offline_rescoring",
+  "model_rerun": false,
+  "original_source": "data/processed/vgpu_smoke/02_prompt_results_original.jsonl",
+  "original_sha256": "4d20cc9af3327c5a7c2b976fab4778d049ab72cc637b9867c3a1d52cf6f018a7",
+  "truncation_rate": 1.0,
+  "capability_conclusion": "inconclusive_due_to_all_truncated_outputs",
+  "scoring_policy": "length-finished outputs count as invalid; historical original files retained"
+}

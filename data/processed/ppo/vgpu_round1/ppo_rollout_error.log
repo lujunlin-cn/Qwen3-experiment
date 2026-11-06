@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "05_PPO.ipynb#cell37", line 42, in _gpu_stage
+  File "05_PPO.ipynb#cell30", line 23, in operation
+  File "05_PPO.ipynb#cell28", line 3, in select_ppo_smoke_prompts
+NameError: name 'pd' is not defined

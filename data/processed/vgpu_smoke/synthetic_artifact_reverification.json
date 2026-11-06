@@ -1,0 +1,3600 @@
+{
+  "status": "passed",
+  "model_loaded": false,
+  "records": 275,
+  "by_task": {
+    "bit_manipulation": {
+      "records": 86,
+      "passed": 86
+    },
+    "equation_numeric": {
+      "records": 89,
+      "passed": 89
+    },
+    "gravity": {
+      "records": 100,
+      "passed": 100
+    }
+  },
+  "source": "data/processed/synthetic/synthetic_accepted.jsonl",
+  "source_sha256": "aef9adf924c9f0c2c3acb9b913ff9f0bd4ee6415d9fbb3751013714e90bfb12a",
+  "verifier_version": "synthetic_independent_verifier_v3",
+  "scope": "existing screened synthetic artifact; finite course prior only",
+  "rows": [
+    {
+      "candidate_id": "gravity-0000",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0001",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0002",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0003",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0004",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0005",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0006",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0007",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0008",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0009",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0010",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0011",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0012",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0013",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0014",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0015",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0016",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0017",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0018",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0019",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0020",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0021",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0022",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0023",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0024",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0025",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0026",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0027",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0028",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0029",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0030",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0031",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0032",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0033",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0034",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0035",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0036",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0037",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0038",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0039",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0040",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0041",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0042",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0043",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0044",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0045",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0046",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0047",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0048",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0049",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0050",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0051",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0052",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0053",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0054",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0055",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0056",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0057",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0058",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0059",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0060",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0061",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0062",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0063",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0064",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0065",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0066",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0067",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0068",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0069",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0070",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0071",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0072",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0073",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0074",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0075",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0076",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0077",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0078",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0079",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0080",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0081",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0082",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0083",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0084",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0085",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0086",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0087",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0088",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0089",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0090",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0091",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0092",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0093",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0094",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0095",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0096",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0097",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0098",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "gravity-0099",
+      "task_type": "gravity",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0000",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0001",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0003",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0004",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0005",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0006",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0007",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0008",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0009",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0010",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0011",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0012",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0013",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0014",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0015",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0016",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0017",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0018",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0019",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0020",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0021",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0022",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0023",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0024",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0025",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0026",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0027",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0028",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0029",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0030",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0031",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0032",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0033",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0034",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0035",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0036",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0037",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0038",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0039",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0040",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0041",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0042",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0043",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0044",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0045",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0046",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0047",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0048",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0049",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0050",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0051",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0052",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0053",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0054",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0055",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0056",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0057",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0058",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0059",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0060",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0061",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0062",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0063",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0064",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0065",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0066",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0067",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0068",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0069",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0070",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0071",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0072",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0073",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0074",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0075",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0076",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0077",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0078",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0079",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0080",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0081",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0082",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0083",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0084",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0085",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0086",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0087",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0088",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "equation_numeric-0089",
+      "task_type": "equation_numeric",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0000",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0002",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0003",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0004",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0005",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0006",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0007",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0008",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0009",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0010",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0011",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0012",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0013",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0014",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0015",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0016",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0017",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0018",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0019",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0020",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0023",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0024",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0025",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0026",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0027",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0028",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0029",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0030",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0031",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0032",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0033",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0034",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0035",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0037",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0038",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0039",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0040",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0041",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0042",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0043",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0044",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0045",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0046",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0047",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0050",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0052",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0053",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0054",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0055",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0056",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0057",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0058",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0060",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0061",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0062",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0063",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0064",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0065",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0066",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0067",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0068",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0069",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0070",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0071",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0073",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0074",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0076",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0077",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0079",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0080",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0081",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0082",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0084",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0085",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0086",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0087",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0088",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0089",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0090",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0091",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0092",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0094",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0095",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0096",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0098",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    },
+    {
+      "candidate_id": "bit_manipulation-0099",
+      "task_type": "bit_manipulation",
+      "checks": {
+        "answer_ok": true,
+        "trace_ok": true,
+        "answer_unique": true,
+        "accepted_source": true,
+        "train_prior_source": true
+      },
+      "status": "passed",
+      "failed_checks": []
+    }
+  ]
+}

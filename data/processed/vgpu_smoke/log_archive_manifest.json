@@ -1,0 +1,113 @@
+{
+  "logs": [
+    {
+      "path": "data/processed/vgpu_smoke/05_ppo_nf4_diagnostic.log",
+      "remote_original_sha256": "81e022fa2a626e6287dab66ee4bb176ba70964fb83d9dce50bf9799250869f9d",
+      "archive_sha256": "64435e2c0e606597bd0b3ed1b0494d9eb742d0d6e33de4e378fde0392159da95",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/06_grpo_training.log",
+      "remote_original_sha256": "92e6913f6e49cd01376122a4111279e7cd76936d8931217cb402b77c6c8cefeb",
+      "archive_sha256": "92e6913f6e49cd01376122a4111279e7cd76936d8931217cb402b77c6c8cefeb",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/01_baseline.log",
+      "remote_original_sha256": "d36ee5653947f03723d27355a26c22f5c51f485d6a066788935e99e57813aacf",
+      "archive_sha256": "b049ee20fd22e218589d9d76fa5d33f4fb34bf0b60d59fe13dc16378a9fb0720",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/token_budget_sampling_diagnostic.log",
+      "remote_original_sha256": "3705a3827351d784eed7ff0b549caf64a5edde07db4af2a0cec2d2bccb59465a",
+      "archive_sha256": "c059e64db094b278d41a25e407809e4306b1759f3d147d98cd0ca2434f5d4206",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/05_ppo_rollout_attempt1_failed.log",
+      "remote_original_sha256": "52932e15234266668d89cec87cde092257102c82d1d16b44cc83f9036ea64e70",
+      "archive_sha256": "52932e15234266668d89cec87cde092257102c82d1d16b44cc83f9036ea64e70",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/04_dpo_training.log",
+      "remote_original_sha256": "39dae4b90979e76b98305dc9f71f8332bb5b77dd41de722f0cd45c717230abdf",
+      "archive_sha256": "39dae4b90979e76b98305dc9f71f8332bb5b77dd41de722f0cd45c717230abdf",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/03_sft.log",
+      "remote_original_sha256": "7a526445383cad8ea6d9537182d88116624288bcb761e79dd3773ba96c0d5ad3",
+      "archive_sha256": "ac4cbffb5cbf50470cee45fec4b537743107a1dde6f1a943af2f168641e3fe52",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/token_budget_16k_diagnostic.log",
+      "remote_original_sha256": "9aaefacfc9347590d8bdb7c12a2e02532861ced94b1c122b9aab5b6cf9f112d5",
+      "archive_sha256": "8674d2abf22542823d27e4af506a960c27faff308e30065b3bda4ef2ab497de9",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/05_ppo_rollout.log",
+      "remote_original_sha256": "8ee32176a6910d85f6d2a84a6107f815d9c37f529ba82b29bf58d015e4e7d490",
+      "archive_sha256": "3eff558652cce5f751c17b7a12ec64d4842485d3676fd93615ce2a9138f06073",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/token_budget_diagnostic.log",
+      "remote_original_sha256": "accf21c707695bbbd891634eb90732c7bbc967bdecaf21aaf46fb40e7655e850",
+      "archive_sha256": "a58a72656b9d1494e605774b97fc783493d00007052b6ab4c4774fe87126eeaa",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/06_grpo_rollout.log",
+      "remote_original_sha256": "b378a3c710a6f9e6ae8e1dfe5481a137a634f5f4e28fb524c7f468b4397c7cca",
+      "archive_sha256": "2652fee26b86d4285cac172e2a9eb34b3178cdfb2690e42c2d8a30eebe8f2039",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/05_ppo_training_attempt1_failed.log",
+      "remote_original_sha256": "5dc03a43889de8677f3c1871fd534014f358bd1fc37c532e02f0f6d4d3610cc8",
+      "archive_sha256": "efa9cd0a7c4945e346919d355ccb226f876fa247d42eace01317094b60b84ca8",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/05_ppo_training_attempt2_nf4_missing_dependency.log",
+      "remote_original_sha256": "cbef4bc96ab5809a316dbf5a8904cbb09d03a570cd9dec4a19c3dd88cfa911cb",
+      "archive_sha256": "789dcb700415c9d0515f21ffbdfb99ba744776f0e23ef784ad4fdf7121073073",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/05_ppo_training.log",
+      "remote_original_sha256": "76557e6422138bbddefe74fd77050a08d011041be2cff28e64e4c3e2e16e60f8",
+      "archive_sha256": "7a67f5c20800e49a50bf55f0cfbe4edd33d9360f07253ef0508c756334dad0a2",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/02_prompt.log",
+      "remote_original_sha256": "d1079161bff8328f6d6f4377eb38150472f7c1e434a81b23218e3f89b9fbd8b4",
+      "archive_sha256": "cdb58c2960458c1181fb91a8b6a4af89cf59ac5eec1a776cd70d2232e9916fd9",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/vgpu_smoke/04_dpo_rollout.log",
+      "remote_original_sha256": "56b0f9bd5f062385bdfaebe222ee287eea0213b56842351da9f8d34acbeb5b62",
+      "archive_sha256": "acaee3971b6e8a5d78beb4d4e5e07f9101145b9d1588ebf2dff92ed897f3f4d3",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/ppo/vgpu_round1/ppo_training_error.log",
+      "remote_original_sha256": "b90e3f94bcdaeb90bdd2d0f5cd871de58bb2d46f5800f076da8fd8b00dc55ba6",
+      "archive_sha256": "b90e3f94bcdaeb90bdd2d0f5cd871de58bb2d46f5800f076da8fd8b00dc55ba6",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    },
+    {
+      "path": "data/processed/ppo/vgpu_round1/ppo_rollout_error.log",
+      "remote_original_sha256": "9712636d54c461603716b03899b04a0d067441aa79c90124fb3746d645a1bdec",
+      "archive_sha256": "9712636d54c461603716b03899b04a0d067441aa79c90124fb3746d645a1bdec",
+      "normalization": "line-end whitespace and CR progress lines normalized for git; original remote file retained"
+    }
+  ],
+  "jsonl_results_modified": false
+}

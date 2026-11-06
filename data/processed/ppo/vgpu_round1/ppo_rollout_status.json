@@ -1,0 +1,38 @@
+{
+  "schema_version": "nemotron-rollout/v2",
+  "status": "completed",
+  "records": 4,
+  "rollout_path": "data/processed/ppo/vgpu_round1/ppo_smoke_rollouts.jsonl",
+  "rollout_sha256": "435e1becfdfd57ec01178e5f0f6e485c20520c6d028753dd88ed06ad7ffb2f0e",
+  "sft_fingerprint": {
+    "base_model_id": "Qwen/Qwen3-4B-Thinking-2507",
+    "policy_version": "sft:two_stage:nf4_qlora:seed42",
+    "manifest_sha256": "25c357d7dad0d621eab873e93f5cf3ee6d430f3797767cf238002977604540d4",
+    "adapter_files": {
+      "adapter_config.json": "d2ffaf13b3d181b77ff2215cb740248465d7157a5d24ea93b30672d1ee288460",
+      "adapter_model.safetensors": "b9dcc296e429ea38536fca4dc264ab7de0a6e4a339eecd98f3792deca17bb4ec"
+    }
+  },
+  "source_split": "train",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "top_k": -1,
+  "logprobs_mode": "raw_logprobs",
+  "quantization": "bf16",
+  "stage": "ppo_rollout",
+  "wall_time_seconds": 130.4969260059297,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "12.8",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.8.0",
+      "transformers": "4.57.1",
+      "vllm": "0.11.0"
+    }
+  },
+  "peak_memory_allocated_mib": 0.0,
+  "peak_device_memory_mib": 25839.0
+}

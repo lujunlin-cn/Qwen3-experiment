@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "training_mode": "bf16_lora",
+  "rollout_mode": "bf16",
+  "scope": "one_actual_rollout_per_task",
+  "tokens_compared": 4096,
+  "mean_abs_logprob_delta": 0.011776753701269627,
+  "p99_abs_logprob_delta": 0.13151608407497406,
+  "max_abs_logprob_delta": 0.2496476173400879,
+  "signed_mean_logprob_delta": -0.00018596525478642434,
+  "mean_limit": 0.1,
+  "p99_limit": 0.6,
+  "quantization_difference_expected": false,
+  "checks": [
+    {
+      "sample_id": "5a763686",
+      "task_type": "equation_numeric",
+      "response_tokens": 2048,
+      "prompt_tokens": 77,
+      "first_response_action_index": 76,
+      "token_mask_alignment": true,
+      "vllm_first_raw_logprob": -0.006942791398614645,
+      "training_first_raw_logprob": -0.00763702392578125
+    },
+    {
+      "sample_id": "07d61ec8",
+      "task_type": "bit_manipulation",
+      "response_tokens": 2048,
+      "prompt_tokens": 248,
+      "first_response_action_index": 247,
+      "token_mask_alignment": true,
+      "vllm_first_raw_logprob": -0.011055524460971355,
+      "training_first_raw_logprob": -0.01604461669921875
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   "reference_frozen": true,
   "reference_initialization_match": true,
   "sequence_logprob_is_sum": true,
-  "verifier_version": "official_nvidia_metric_v2",
+  "verifier_version": "official_nvidia_metric_v3",
   "sft_manifest": "not_run_sft_manifest_missing",
   "gpu": "not_run"
 }
