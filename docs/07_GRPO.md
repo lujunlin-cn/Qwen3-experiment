@@ -163,3 +163,9 @@ Loss、训练日志、SFT vs GRPO 分任务对照、正向与失败案例分析�
     实验代码](https://github.com/the-submitter/nvidia-nemotron)
 -   [Datawhale GRPO
     Notebook](https://github.com/datawhalechina/llm-algo-leetcode/blob/main/02_PyTorch_Algorithms/18_GRPO_Loss_Tutorial.ipynb)
+
+## 14. 本轮实现核对：任务 Verifier 与 Adapter 交接
+
+Notebook 06 的正式 Rollout 使用 Notebook 01 兼容的任务专用答案验证器，并记录 `verifier_version`、`correct`、`reward`、`expected_answer`、Token IDs、Response Mask 和行为策略 Logprob。截断回答、非法格式、Prompt/Completion Mask 长度错位和不完整 Group 均 fail closed。CPU Fixture 仅用于机制测试，不是模型结果。
+
+每个 Prompt 必须恰好 `G=8`；All-correct、Mixed、All-wrong 和 Zero-Variance 由真实 Reward 分类，不能人为改写标签。当前 `policy_logprob_change` 是行为策略到更新策略的 Logprob 变化，不是 Reference KL；因此 Reference KL 尚未实现，`KL_COEF=0`。GRPO 输出 Manifest 保存 Parent SFT Adapter、Base Model、Tokenizer 和新的 `policy_version`，不会默认保存完整 4B 模型。

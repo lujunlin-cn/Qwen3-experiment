@@ -166,3 +166,11 @@ Update，先验证数值正确性、梯度方向和显存，再扩大训练。
 说明：比赛报告用于说明任务、Verifier 和 RL 训练的工程约束；本模块的 PPO
 算法采用标准 Actor-Critic PPO / GAE 设计，不声称来自某个获奖选手的 PPO
 实现。
+
+## 13. 本轮实现核对：Value 与 Action 时间轴
+
+Notebook 05 采用如下明确约定：隐藏状态位置 `t` 是预测 token `t+1` 的动作前状态。于是 `token_logprobs` 的动作轴是 `logits[:, :-1]`，Value 轴是 `values[:, :-1]`，Reward、Done 和 Response Mask 对齐到 token 位置 `[:, 1:]`。GAE、Return、Policy Loss、Value Loss、Entropy 和 Approx KL 均使用这个同一动作轴；Prompt、Padding 和 EOS 后位置不参与计算。
+
+Rollout 的行为 Log Probability 必须与 vLLM 实际采样 Token IDs 一一对应；若缺失或长度不一致则 fail closed。截断回答没有观察到 EOS，Verifier 不给正确奖励。CPU Smoke 增加短序列 Value/Token 对齐断言；真实 Qwen3 PPO、Value Head 训练和显存仍为 `Not Run`。
+
+本 Notebook 当前只记录 Old Policy Logprob 的 Approx KL 诊断，未实现 Reference Policy KL 正则；不能将该诊断解释成 Reference KL。

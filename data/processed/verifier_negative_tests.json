@@ -241,6 +241,7 @@
         "difficulty": "examples_5",
         "accepted": false,
         "verification_status": "rejected",
+        "verifier_version": "synthetic_independent_verifier_v3",
         "rejection_reasons": "duplicate_prompt;near_duplicate_prompt"
       }
     }

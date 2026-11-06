@@ -151,3 +151,9 @@ Rollout 数据、Verifier 结果、Chosen / Rejected
 -   [第八十名方案](https://www.kaggle.com/competitions/nvidia-nemotron-model-reasoning-challenge/writeups/breaking-the-sft-ceiling-on-nemotron-3-nano-30b)
 -   [Datawhale DPO
     Notebook](https://github.com/datawhalechina/llm-algo-leetcode/blob/main/02_PyTorch_Algorithms/17_DPO_Loss_Tutorial.ipynb)
+
+## 13. 本轮实现核对：Verifier 与 Reference Policy
+
+Notebook 04 的 Rollout 使用与 Notebook 01 相同的 `official_nvidia_metric_v2` 提取和判定协议：先识别 `boxed` / `<final>` / `<answer>`，再按任务回退到 8-bit 或数值格式；数值采用 `math.isclose(rel_tol=1e-2, abs_tol=1e-5)`，截断回答直接拒绝。Chosen 和 Rejected 都必须未截断，并且标签来自独立 Verifier。
+
+DPO Policy 与 Reference 都从同一个 SFT Manifest 的 Base Model 和 Adapter 初始化；Reference 参数冻结，标准序列 Log Probability 仍按 Response Token 求和，长度平均只是另行消融。DPO 输出 Manifest 保存 Parent SFT Adapter、Base Model、Tokenizer 和新的 `policy_version`。当前 GPU Rollout、DPO Update 和 Adapter Reload 仍为 `Not Run`。

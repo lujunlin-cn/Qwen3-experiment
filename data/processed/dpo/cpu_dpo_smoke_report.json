@@ -3,6 +3,10 @@
   "smoke_prompts": 4,
   "candidates_per_prompt": 4,
   "preference_pairs": 4,
+  "reference_frozen": true,
+  "reference_initialization_match": true,
+  "sequence_logprob_is_sum": true,
+  "verifier_version": "official_nvidia_metric_v2",
   "sft_manifest": "not_run_sft_manifest_missing",
   "gpu": "not_run"
 }

@@ -121,3 +121,7 @@ P0--P5 模板、三任务评测结果、错误案例、最佳 Prompt 及其适�
 -   [第九名方案](https://www.kaggle.com/competitions/nvidia-nemotron-model-reasoning-challenge/writeups/9th-place-solution-human-auditable-cot)
 -   [NVIDIA
     官方比赛总结](https://developer.nvidia.com/blog/lessons-from-the-leaderboard-what-5000-kagglers-taught-us-about-improving-ai-reasoning/)
+
+## 11. 本轮实现核对：答案提取策略
+
+Prompt 对照阶段记录 `official_nvidia_metric_v2` 版本，并采用 `strict_marker_first_prompt_eval` 提取策略：优先 `\boxed{}`、`<final>`/`<answer>`、明确答案标签和独立答案行；未标记 Thinking 文本中的数字不作为答案。这样可以把 Prompt 结构对输出格式的影响和模型“碰巧生成最后一个数字”区分开。每条 GPU 记录保留 `verifier_version`、截断状态和 Token 数；当前 GPU 评测仍为 `Not Run`。

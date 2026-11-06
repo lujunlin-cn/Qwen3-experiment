@@ -7,6 +7,7 @@
     "path": "Qwen/Qwen3-4B-Thinking-2507"
   },
   "tokenizer_path": "Qwen/Qwen3-4B-Thinking-2507",
+  "policy_version": "sft:two_stage:nf4_qlora:seed42",
   "adapter_path": "data/processed/checkpoints/cpu_fixture_adapter",
   "quantization": {
     "mode": "nf4_qlora",

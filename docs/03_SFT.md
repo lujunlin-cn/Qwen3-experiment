@@ -137,3 +137,13 @@ Direct SFT 基线、Joint / Two-stage 对照、可选 Drill
     名方案](https://www.kaggle.com/competitions/nvidia-nemotron-model-reasoning-challenge/writeups/trace-format-engineering-and-svd-downsampled-lora)
 -   [第二名方案](https://www.kaggle.com/competitions/nvidia-nemotron-model-reasoning-challenge/writeups/2nd-place-solution)
 -   [第十名方案](https://www.kaggle.com/competitions/nvidia-nemotron-model-reasoning-challenge/writeups/10th-place-solution)
+
+## 11. 本轮实现核对：Token Mean 与梯度累积
+
+Notebook 03 的 `masked_sft_loss_stats` 先返回一个 microbatch 的有效 Assistant Token Loss Sum 和有效 Token 数。`run_sft_epoch` 在每个梯度累积窗口内累加二者，窗口结束时用该窗口的实际 Token 数缩放梯度，再执行裁剪和 `optimizer.step()`。
+
+因此最后一个不足 `grad_accumulation_steps` 的窗口不会被固定步数稀释；不同 Completion 长度也按有效 Token 数参与 Token Mean。Prompt、Padding 和 Label Shift 仍通过 `-100` 与 `labels[:, 1:]` 排除。CPU Smoke 明确覆盖 5 个 microbatch、累积步数 2 的 `[2, 2, 1]` 窗口；真实 Qwen3 SFT、显存和吞吐仍为 `Not Run`。
+
+## 12. Checkpoint 交接
+
+Notebook 03 是唯一的 SFT 初始化来源。正式完成后写入 `data/processed/checkpoints/sft_manifest.json`，其中的 `policy_version`、Base Model、Tokenizer、Adapter、量化和训练配置供 DPO、PPO、GRPO 读取。CPU 阶段只写 `cpu_checkpoint_manifest.json` Fixture，不伪造可加载 Adapter。

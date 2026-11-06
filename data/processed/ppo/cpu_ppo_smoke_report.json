@@ -5,5 +5,7 @@
   "top_p": 1.0,
   "sft_manifest": "not_run_sft_manifest_missing",
   "gae_padding_mask_test": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v2",
   "gpu": "not_run"
 }

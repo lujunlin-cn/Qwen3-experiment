@@ -120,3 +120,19 @@ Gravity 分布审计使用 Train 的 1,277 条题、5,180 个示例：每题示�
 - 新增输入审计：缺字段、非法 Reward、行为 Logprob 长度错位、不完整 Group 均 fail closed；新增数值/Bit 错误答案负样本测试。
 - CPU Smoke Test 通过，报告保存于 `data/processed/grpo/cpu_readiness_audit.json` 和 `data/processed/grpo/cpu_grpo_smoke_report.json`；Tiny Policy 与 CausalLM-shaped Update 均得到有限 Loss 和梯度。Fixture 明确覆盖三类 Group，All-correct 与 All-wrong 的零方差比例为 `2/3`；该数值只用于公式测试，不代表模型实验。
 - `RUN_GRPO=False`，当前未运行 GPU Rollout、真实 Verifier、训练更新、显存和吞吐测量。RTX 5090 阶段应先用最佳 SFT Checkpoint 对 Equation Numeric/Bit 进行 `G=8` Smoke，再决定是否进入 Mixed Group 训练池。
+
+## 第二轮审查修订（`docs/writing-block.md`）
+
+- **SFT 梯度累积**：`run_sft_epoch` 现在累加每个 microbatch 的有效 Assistant Token Loss Sum，在窗口结束时按实际有效 Token 数缩放梯度；最后不足累积步数的窗口不再使用固定分母。CPU 机制测试覆盖 5 个 microbatch、累积步数 2 和不同有效 Token 数。
+- **PPO 对齐**：明确隐藏状态 `t` 预测 token `t+1`。Policy Logprob、Value、Reward、Done、Response Mask 和 GAE 统一到动作轴；增加短序列人工 Value/Token 对齐测试。截断样本不声明 EOS，也不获得正确奖励。
+- **统一 Verifier**：Notebook 04/05/06 使用 Notebook 01 的 `official_nvidia_metric_v2` marker-first、任务专用格式和数值容差；Rollout 记录 `verifier_version`，错误答案、非法格式和截断输出均有负样本测试。Notebook 01 的合成 Screening 记录 `synthetic_independent_verifier_v3`。
+- **DPO Reference**：Policy 与 Reference 均从 SFT Manifest 的同一 Base Model/Adapter 初始化；Reference 冻结；标准 DPO 使用 Response Token Log Probability 求和；截断 Chosen/Rejected 均排除。
+- **Adapter 交接**：SFT Manifest 增加 `policy_version`，DPO/PPO/GRPO Manifest 保存 Parent SFT Adapter、Base Model、Tokenizer 和自身 Policy Version。RL 入口要求 SFT Manifest 状态为 `completed` 且 Adapter 目录存在；不会把 DPO 输出作为 PPO/GRPO 默认初始化。
+- **CPU 回归**：六个 Notebook 已重新通过 JSON/AST 和顺序 CPU Smoke；本轮新增的 SFT 累积窗口、DPO 序列长度/截断、PPO Value/Action 对齐、GRPO Mask/Verifier 机制测试均通过。SFT 机制测试显式固定在 CPU，即使主机可见 CUDA 设备也不会误占用 GPU。所有 Qwen3、vLLM、RTX 5090 训练和 Adapter 实际重载仍标记为 `Not Run`。
+
+### 当前未解决问题
+
+1. 仍未在 RTX 5090 上验证 QLoRA Adapter 被 Transformers 和 vLLM 交替加载的实际兼容性。
+2. PPO/GRPO 当前没有实现 Reference Policy KL；仅保留行为策略 Logprob 变化诊断，KL 系数为 0。
+3. Rollout 的真实 vLLM 0.11 Token IDs/Logprob 返回格式、显存峰值和吞吐尚待目标环境实测；若字段缺失，入口会 fail closed。
+4. 规范化 Prompt 的跨集合重复仍是数据风险，原始数据没有可靠同源组键，Structural OOD 尚未宣称无泄漏。
