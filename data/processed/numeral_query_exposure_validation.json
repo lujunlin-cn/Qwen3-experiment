@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "scenarios": [
+    {
+      "scenario": "mixed",
+      "status": "passed"
+    },
+    {
+      "scenario": "invalid_only",
+      "status": "passed"
+    },
+    {
+      "scenario": "no_numeral",
+      "status": "passed"
+    }
+  ],
+  "generator_outputs_unchanged": 15,
+  "seconds": 1.96,
+  "historical_artifacts_unchanged": 237,
+  "notebook_sha256": "f1354352aeefd1a7307f34b2a1487576fc752e57ef073f83dee103357345facd",
+  "run_path": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1",
+  "cpu_only": true,
+  "scope": "01 Numeral Query mapping exposure; independent CPU kernels, no GPU or training",
+  "independent_kernel_scenarios": [
+    {
+      "scenario": "00-cleaned-input-only",
+      "status": "passed",
+      "seconds": 1.87,
+      "code_cells": 18
+    },
+    {
+      "scenario": "00-idempotent-rerun",
+      "status": "passed",
+      "seconds": 1.67,
+      "code_cells": 17
+    },
+    {
+      "scenario": "existing_artifacts_byte_identical",
+      "status": "passed",
+      "artifacts": 10
+    },
+    {
+      "scenario": "01-independent-optional-default",
+      "status": "passed",
+      "seconds": 1.73,
+      "code_cells": 40
+    },
+    {
+      "scenario": "01-independent-audited-pilot",
+      "status": "passed",
+      "seconds": 1.85,
+      "code_cells": 41
+    }
+  ],
+  "checks": [
+    "synthetic_query_in_real_examples",
+    "same_query_in_real_targets",
+    "real_queries_in_synthetic_examples",
+    "query_in_own_examples",
+    "valid_unexposed_query",
+    "invalid_mapping_rejected",
+    "non_numeral_not_applicable",
+    "candidates_and_accepted_denominators",
+    "no_valid_query_rate_is_null",
+    "manifest_hashes",
+    "existing_artifact_reverification"
+  ],
+  "policy": "report_only; invalid Numeral mappings rejected; sample/lineage duplicate rejection retained",
+  "algorithm_preservation": {
+    "generator_solver_verifier_functions_unchanged": [
+      "verify_roman_number",
+      "generate_numeral_sample",
+      "solve_numeral_prompt",
+      "verify_numeral_sample",
+      "solve_gravity_prompt",
+      "gravity_identifiability",
+      "generate_gravity_sample",
+      "verify_gravity_sample",
+      "solve_bit_prompt",
+      "generate_bit_sample",
+      "_verify_bit_value",
+      "_verify_parse_bit_expression",
+      "_verify_evaluate_bit_expression",
+      "_verify_bit_identifiability",
+      "verify_bit_sample",
+      "solve_equation_numeric_prompt",
+      "generate_equation_numeric_sample",
+      "_numeric_verify_output",
+      "verify_equation_numeric_prompt",
+      "verify_equation_numeric_sample",
+      "_solve_candidate"
+    ],
+    "existing_functions_changed_only_for_audit_integration": [
+      "screen_synthetic_sample",
+      "build_real_index",
+      "audit_synthetic_leakage",
+      "_real_synthetic_cross_audit",
+      "run_synthetic_pilot",
+      "audit_existing_synthetic_artifact"
+    ]
+  },
+  "artifact_sha256": {
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/accepted_manifest.json": "2c3677df5a808c09aa58ef4710011bdb3515aa5978c5b88e1169bd75be0296a0",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/equation_operator_inventory.json": "3bb0e384d4038326740eb51a337e47773e5115441d733767a18b91a7a60c8a58",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/generation_metadata.json": "cfa4393daf4d7a508da77dbb25f24fcb680e7913a2ad2517b732f72e158ee53b",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/gravity_distribution_audit.json": "0bc6f6fe8a95852c5b517919881d336acbe8caea08e890f62c540881c55046bd",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/gravity_distribution_comparison.png": "76c5edba3a75e4e5c3aaa94ca7972daf6fc9945362aed5a1c5234fdbd7b95068",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/numeral_query_exposure.csv": "24c7a17f661f9838089afdbb66a7be4f01952e58e9fd70fbc2d4abfc1f5b9909",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/numeral_query_exposure.json": "1b8d1a5ea2233304d26369c9d4f3544c0841980dedfc45bc0d62b70ab04ac080",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/synthetic_accepted.jsonl": "f178449b5b05ca013f08c9640c6be9dd5a531025b1f69f6513a405a39b34d536",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/synthetic_artifact_reverification.json": "4cd79a92db6f5c0440f40863cbad91a29715c17ddef4b9571e0824dc82919551",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/synthetic_candidates.jsonl": "f178449b5b05ca013f08c9640c6be9dd5a531025b1f69f6513a405a39b34d536",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/synthetic_real_leakage_audit.csv": "ecb0fe5ed93115a7ff3ccfbd95f95d5279555c45675ab2a668ce60c80c92779d",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/synthetic_real_leakage_audit.json": "06b567b400f31f953d1a9a5b0a8791d20c9ab3932e5c32ac772cfc4b1d093100",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/synthetic_rejected.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/synthetic_screening.csv": "24166bb5c08170fcdb4fd9ca4cd75588d7fba3146c5bdec7b829edfda0dfe4e2",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/synthetic_statistics.json": "5607779b1c73540f5a519f1d1571995677d9f8478198d7cbd9c381629ee8f8c2",
+    "data/processed/tasksets/roman_gravity_equation_v1/synthetic/query_exposure_v1/verifier_negative_tests.json": "251297490411099c0045f262ce82ed52ebeed75f75f7f8aa518473454cd2e609"
+  },
+  "preservation_scope": "existing processed artifacts unchanged during integration run; validation metadata refreshed afterward"
+}

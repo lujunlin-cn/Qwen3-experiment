@@ -10,13 +10,13 @@
     {
       "scenario": "00-cleaned-input-only",
       "status": "passed",
-      "seconds": 1.67,
+      "seconds": 1.87,
       "code_cells": 18
     },
     {
       "scenario": "00-idempotent-rerun",
       "status": "passed",
-      "seconds": 1.57,
+      "seconds": 1.67,
       "code_cells": 17
     },
     {
@@ -27,14 +27,14 @@
     {
       "scenario": "01-independent-optional-default",
       "status": "passed",
-      "seconds": 1.78,
-      "code_cells": 37
+      "seconds": 1.73,
+      "code_cells": 40
     },
     {
       "scenario": "01-independent-audited-pilot",
       "status": "passed",
-      "seconds": 1.78,
-      "code_cells": 38
+      "seconds": 1.85,
+      "code_cells": 41
     }
   ],
   "split_counts": {
@@ -48,7 +48,7 @@
   "gpu_rerun": false,
   "source_sha256": {
     "00_Baseline_Diagnosis.ipynb": "1b66da8f549c585d627983ef7e1a52377350baba27856a03ddcf56532ebb2e5e",
-    "01_Synthetic_Data_Engineering.ipynb": "b003cc920607154b4d5d69393562c5921298aeb735918834138ab60057c24d0e",
+    "01_Synthetic_Data_Engineering.ipynb": "f1354352aeefd1a7307f34b2a1487576fc752e57ef073f83dee103357345facd",
     "utils/prepare_official_dataset.py": "0a8310b0023c540ca388f71174f4ed55bff12065465ebc6c309e6cc29201a61c"
   },
   "legacy_sft_checks": [
@@ -106,11 +106,12 @@
     "04_DPO.ipynb": "4dd61624570eeff6221acdc8b9ffc663dad118f31c633adb780a30e82d05f702",
     "00_Baseline_Diagnosis.ipynb": "1b66da8f549c585d627983ef7e1a52377350baba27856a03ddcf56532ebb2e5e",
     "05_PPO.ipynb": "9dad218fc11c12a1798cf429ad1b4ecb87955691d98a31888472af0881e12a38",
-    "01_Synthetic_Data_Engineering.ipynb": "b003cc920607154b4d5d69393562c5921298aeb735918834138ab60057c24d0e",
+    "01_Synthetic_Data_Engineering.ipynb": "f1354352aeefd1a7307f34b2a1487576fc752e57ef073f83dee103357345facd",
     "02_Prompt_Engineering.ipynb": "474ab17e1bfb6185dc1db66c722b53f3842425b19bb68d63a1e7c9130bcd8be6",
     "06_GRPO.ipynb": "6efca6ecf36e67050d506041a2b883d8e0bb462d925b684188458352a50e8373"
   },
   "maintainer_manifest_sha256": "66a9d68637a127609c563e00a51ddc8e8b52ccdbd46ea8262b2870f894d7b964",
   "official_source_sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa",
-  "concurrent_version_decision": "User confirmed Numeral taskset; only official preprocessing moved out of 00"
+  "concurrent_version_decision": "User confirmed Numeral taskset; only official preprocessing moved out of 00",
+  "numeral_query_exposure_validation": "data/processed/numeral_query_exposure_validation.json"
 }
