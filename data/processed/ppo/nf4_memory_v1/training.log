@@ -1,0 +1,159 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+{'model_id': 'Qwen/Qwen3-4B-Thinking-2507', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{
+  "status": "passed",
+  "gae_shape_and_mask": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "terminal_bootstrap_disabled": true,
+  "ppo_loss_finite": true,
+  "policy_gradient": true,
+  "clip_fraction": 1.0,
+  "approx_kl": 3.585691452026367,
+  "gpu_rollout": "not_run",
+  "gpu_training": "not_run"
+}
+{
+  "status": "passed",
+  "smoke_prompts_per_task": 2,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "sft_manifest": "available",
+  "gae_padding_mask_test": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "gpu": "not_run"
+}
+{'train_selection': 'passed', 'records': 4}
+{'chunk_equivalence': 'passed', 'checks': 36}
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   6%|▋         | 25/398 [00:00<00:01, 238.91it/s]Loading weights:  12%|█▏        | 49/398 [00:00<00:01, 197.43it/s]Loading weights:  18%|█▊        | 71/398 [00:00<00:01, 198.14it/s]Loading weights:  23%|██▎       | 93/398 [00:00<00:01, 199.62it/s]Loading weights:  29%|██▉       | 115/398 [00:00<00:01, 200.70it/s]Loading weights:  34%|███▍      | 137/398 [00:00<00:01, 202.41it/s]Loading weights:  40%|███▉      | 159/398 [00:00<00:01, 204.29it/s]Loading weights:  45%|████▌     | 181/398 [00:00<00:01, 202.72it/s]Loading weights:  51%|█████     | 203/398 [00:01<00:00, 201.01it/s]Loading weights:  57%|█████▋    | 225/398 [00:01<00:00, 201.16it/s]Loading weights:  62%|██████▏   | 247/398 [00:01<00:00, 202.25it/s]Loading weights:  67%|██████▋   | 268/398 [00:01<00:00, 202.93it/s]Loading weights:  73%|███████▎  | 291/398 [00:01<00:00, 207.46it/s]Loading weights:  81%|████████  | 322/398 [00:01<00:00, 232.68it/s]Loading weights:  87%|████████▋ | 346/398 [00:01<00:00, 221.51it/s]Loading weights:  93%|█████████▎| 372/398 [00:01<00:00, 230.62it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 215.01it/s]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:49,  8.09it/s]Loading weights:   7%|▋         | 26/398 [00:00<00:02, 131.90it/s]Loading weights:  15%|█▍        | 58/398 [00:00<00:01, 209.23it/s]Loading weights:  22%|██▏       | 88/398 [00:00<00:01, 241.99it/s]Loading weights:  29%|██▉       | 115/398 [00:00<00:01, 250.43it/s]Loading weights:  37%|███▋      | 147/398 [00:00<00:00, 270.66it/s]Loading weights:  45%|████▍     | 179/398 [00:00<00:00, 283.19it/s]Loading weights:  53%|█████▎    | 209/398 [00:00<00:00, 287.53it/s]Loading weights:  60%|█████▉    | 238/398 [00:00<00:00, 286.20it/s]Loading weights:  67%|██████▋   | 268/398 [00:01<00:00, 288.40it/s]Loading weights:  75%|███████▌  | 300/398 [00:01<00:00, 295.69it/s]Loading weights:  83%|████████▎ | 330/398 [00:01<00:00, 295.33it/s]Loading weights:  90%|█████████ | 360/398 [00:01<00:00, 293.84it/s]Loading weights:  98%|█████████▊| 390/398 [00:01<00:00, 282.47it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 268.16it/s]
+{
+  "status": "completed",
+  "micro_steps": 2,
+  "logs": [
+    {
+      "forward_seconds": 2.36468568071723,
+      "backward_seconds": 3.8777021653950214,
+      "total_loss": 2.1024343967437744,
+      "policy_loss": 0.03170748054981232,
+      "value_loss": 4.150800704956055,
+      "entropy": 0.4673424959182739,
+      "approx_kl": 0.05012279748916626,
+      "clip_fraction": 0.2071552276611328,
+      "advantage_mean": -0.004580376669764519,
+      "advantage_std": 1.0201170444488525,
+      "explained_variance": -11.786450386047363,
+      "action_tokens": 6932.0
+    },
+    {
+      "forward_seconds": 2.4244015403091908,
+      "backward_seconds": 4.0001824628561735,
+      "total_loss": 1.9581291675567627,
+      "policy_loss": 0.030771557241678238,
+      "value_loss": 3.86431622505188,
+      "entropy": 0.48006048798561096,
+      "approx_kl": 0.056557752192020416,
+      "clip_fraction": 0.20008471608161926,
+      "advantage_mean": 0.004483312834054232,
+      "advantage_std": 0.9799092411994934,
+      "explained_variance": -8.166765213012695,
+      "action_tokens": 7082.0
+    }
+  ],
+  "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/nf4_memory_v1/ppo_nf4_qlora",
+  "value_head_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/nf4_memory_v1/ppo_nf4_qlora/value_head.pt",
+  "manifest_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/nf4_memory_v1/ppo_nf4_qlora/ppo_manifest.json",
+  "optimizer_steps": 1,
+  "adapter_reload": {
+    "status": "passed",
+    "method": "PEFT load_adapter from saved disk weights, compare real-model logits",
+    "max_abs_logit_difference": 0.0
+  },
+  "value_head_reload": "passed",
+  "micro_batch": 1,
+  "chunk_size": 128,
+  "training_mode": "nf4_qlora",
+  "nf4_runtime_contract": {
+    "loaded_in_4bit": true,
+    "nf4": true,
+    "double_quant": true,
+    "bf16_compute": true,
+    "gradient_checkpointing": true,
+    "use_cache_disabled": true,
+    "value_head_fp32": true
+  },
+  "max_abs_parameter_update": {
+    "lora": 1.0001473128795624e-05,
+    "value_head": 1.000240445137024e-05
+  },
+  "sequence_lengths": [
+    7009,
+    7185
+  ],
+  "records": 4,
+  "usable_records": 2,
+  "ineligible_records": 2,
+  "truncated_excluded": 2,
+  "verifier_failed_nontruncated": 0,
+  "alignment": {
+    "status": "passed",
+    "training_mode": "nf4_qlora",
+    "rollout_mode": "bf16",
+    "audit_autocast_dtype": "bfloat16",
+    "scope": "one_actual_rollout_per_task",
+    "tokens_compared": 23068,
+    "mean_abs_logprob_delta": 0.13444727659225464,
+    "p99_abs_logprob_delta": 1.519217848777771,
+    "max_abs_logprob_delta": 8.099620819091797,
+    "signed_mean_logprob_delta": -0.05276786535978317,
+    "mean_limit": 0.5,
+    "p99_limit": 3.0,
+    "quantization_difference_expected": true,
+    "checks": [
+      {
+        "sample_id": "5a763686",
+        "task_type": "equation_numeric",
+        "response_tokens": 6932,
+        "prompt_tokens": 77,
+        "first_response_action_index": 76,
+        "token_mask_alignment": true,
+        "vllm_first_raw_logprob": -0.007715425454080105,
+        "training_first_raw_logprob": -0.0013446807861328125
+      },
+      {
+        "sample_id": "07d61ec8",
+        "task_type": "bit_manipulation",
+        "response_tokens": 16136,
+        "prompt_tokens": 248,
+        "first_response_action_index": 247,
+        "token_mask_alignment": true,
+        "vllm_first_raw_logprob": -0.016045961529016495,
+        "training_first_raw_logprob": -0.0300140380859375
+      }
+    ]
+  },
+  "stage": "ppo_training",
+  "wall_time_seconds": 37.31554122827947,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "peak_memory_allocated_mib": 9447.7060546875,
+  "peak_memory_reserved_mib": 11450.0,
+  "peak_device_memory_mib": 11764.0,
+  "device_sampling_interval_seconds": 0.1,
+  "device_peak_target_gib": 20.0,
+  "device_peak_within_target": true,
+  "functional_memory_target_pass": true
+}
+GPU_NOTEBOOK_COMPLETED 05_PPO.ipynb seconds 39.915854504331946

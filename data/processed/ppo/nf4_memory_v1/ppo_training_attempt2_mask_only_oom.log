@@ -1,0 +1,60 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+{'model_id': 'Qwen/Qwen3-4B-Thinking-2507', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{
+  "status": "passed",
+  "gae_shape_and_mask": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "terminal_bootstrap_disabled": true,
+  "ppo_loss_finite": true,
+  "policy_gradient": true,
+  "clip_fraction": 1.0,
+  "approx_kl": 3.585691452026367,
+  "gpu_rollout": "not_run",
+  "gpu_training": "not_run"
+}
+{
+  "status": "passed",
+  "smoke_prompts_per_task": 2,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "sft_manifest": "available",
+  "gae_padding_mask_test": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "gpu": "not_run"
+}
+{'train_selection': 'passed', 'records': 4}
+{'chunk_equivalence': 'passed', 'checks': 36}
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   6%|▋         | 25/398 [00:00<00:01, 223.61it/s]Loading weights:  12%|█▏        | 48/398 [00:00<00:01, 201.61it/s]Loading weights:  18%|█▊        | 70/398 [00:00<00:01, 203.78it/s]Loading weights:  23%|██▎       | 92/398 [00:00<00:01, 203.87it/s]Loading weights:  29%|██▊       | 114/398 [00:00<00:01, 205.11it/s]Loading weights:  34%|███▍      | 136/398 [00:00<00:01, 203.92it/s]Loading weights:  40%|███▉      | 158/398 [00:00<00:01, 203.23it/s]Loading weights:  45%|████▌     | 180/398 [00:00<00:01, 202.85it/s]Loading weights:  51%|█████     | 201/398 [00:00<00:00, 199.21it/s]Loading weights:  56%|█████▋    | 224/398 [00:01<00:00, 203.32it/s]Loading weights:  62%|██████▏   | 246/398 [00:01<00:00, 202.51it/s]Loading weights:  67%|██████▋   | 268/398 [00:01<00:00, 200.26it/s]Loading weights:  73%|███████▎  | 290/398 [00:01<00:00, 202.71it/s]Loading weights:  78%|███████▊  | 312/398 [00:01<00:00, 202.86it/s]Loading weights:  84%|████████▍ | 334/398 [00:01<00:00, 201.67it/s]Loading weights:  89%|████████▉ | 355/398 [00:01<00:00, 202.09it/s]Loading weights:  95%|█████████▍| 377/398 [00:01<00:00, 200.86it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 203.70it/s]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:49,  8.08it/s]Loading weights:   6%|▋         | 25/398 [00:00<00:02, 131.84it/s]Loading weights:  14%|█▍        | 55/398 [00:00<00:01, 203.39it/s]Loading weights:  21%|██        | 82/398 [00:00<00:01, 226.48it/s]Loading weights:  29%|██▊       | 114/398 [00:00<00:01, 256.56it/s]Loading weights:  37%|███▋      | 146/398 [00:00<00:00, 273.02it/s]Loading weights:  44%|████▍     | 176/398 [00:00<00:00, 279.98it/s]Loading weights:  52%|█████▏    | 205/398 [00:00<00:00, 280.93it/s]Loading weights:  59%|█████▉    | 235/398 [00:00<00:00, 284.22it/s]Loading weights:  67%|██████▋   | 267/398 [00:01<00:00, 292.23it/s]Loading weights:  75%|███████▍  | 297/398 [00:01<00:00, 293.42it/s]Loading weights:  82%|████████▏ | 327/398 [00:01<00:00, 292.46it/s]Loading weights:  90%|████████▉ | 357/398 [00:01<00:00, 285.09it/s]Loading weights:  98%|█████████▊| 389/398 [00:01<00:00, 291.97it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 267.67it/s]
+{
+  "status": "oom",
+  "error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 32.00 GiB. GPU 0 has a total capacity of 31.48 GiB of which 19.79 GiB is free. Including non-PyTorch memory, this process has 11.68 GiB memory in use. Of the allocated memory 5.18 GiB is allocated by PyTorch, and 6.20 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')",
+  "traceback": "Traceback (most recent call last):\n  File \"05_PPO.ipynb#cell39\", line 43, in _gpu_stage\n  File \"05_PPO.ipynb#cell32\", line 45, in operation\n  File \"05_PPO.ipynb#cell43\", line 26, in audit_policy_logprobs\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/transformers/utils/generic.py\", line 1068, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/transformers/utils/output_capturing.py\", line 287, in wrapper\n    outputs = func(self, *args, **kwargs)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py\", line 413, in forward\n    hidden_states = decoder_layer(\n                    ^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/transformers/modeling_layers.py\", line 110, in __call__\n    return super().__call__(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py\", line 307, in forward\n    hidden_states, _ = self.self_attn(\n                       ^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py\", line 266, in forward\n    attn_output, attn_weights = attention_interface(\n                                ^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/transformers/integrations/sdpa_attention.py\", line 158, in sdpa_attention_forward\n    attn_output = torch.nn.functional.scaled_dot_product_attention(\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 32.00 GiB. GPU 0 has a total capacity of 31.48 GiB of which 19.79 GiB is free. Including non-PyTorch memory, this process has 11.68 GiB memory in use. Of the allocated memory 5.18 GiB is allocated by PyTorch, and 6.20 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n",
+  "optimizer_steps": 0,
+  "stage": "ppo_training",
+  "wall_time_seconds": 19.763897877186537,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "peak_memory_allocated_mib": 16975.654296875,
+  "peak_memory_reserved_mib": 17716.0,
+  "peak_device_memory_mib": 18030.0,
+  "device_sampling_interval_seconds": 0.1,
+  "chunk_size": 128,
+  "micro_batch": 1,
+  "device_peak_target_gib": 20.0,
+  "device_peak_within_target": true
+}
+GPU_NOTEBOOK_COMPLETED 05_PPO.ipynb seconds 22.398010285571218

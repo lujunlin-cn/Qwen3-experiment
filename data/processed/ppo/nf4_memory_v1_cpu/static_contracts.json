@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "unchanged_algorithm_functions": {
+    "masked_mean": true,
+    "compute_gae": true,
+    "normalize_masked": true,
+    "ppo_clip_loss": true,
+    "value_loss": true,
+    "approx_kl": true,
+    "explained_variance": true,
+    "outcome_reward": true,
+    "align_ppo_action_axis": true,
+    "_verify_rollout": true,
+    "_chosen_logprob_values": true
+  },
+  "code_cells": 28,
+  "gpu_execution": "not_run_in_cpu_check",
+  "nbformat_schema": "passed",
+  "code_cell_ast": "passed",
+  "gpu_executed_code_ast_matches_final": true,
+  "code_ast_sha256": "150918be0f7178b5c2792428a56347dd64dd24c144ebc4ce0000c165cc31e6e3",
+  "local_checkpoint_sha256_matches_remote": true,
+  "local_value_head_shape": [
+    1,
+    2560
+  ],
+  "local_value_head_dtype": "float32"
+}

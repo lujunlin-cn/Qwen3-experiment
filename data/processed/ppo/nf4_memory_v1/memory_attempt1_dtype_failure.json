@@ -1,0 +1,26 @@
+{
+  "status": "failed",
+  "error": "RuntimeError('expected mat1 and mat2 to have the same dtype, but got: float != c10::BFloat16')",
+  "traceback": "Traceback (most recent call last):\n  File \"05_PPO.ipynb#cell39\", line 42, in _gpu_stage\n  File \"05_PPO.ipynb#cell57\", line 39, in operation\n  File \"05_PPO.ipynb#cell47\", line 9, in actual_adapter_reload\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/peft/peft_model.py\", line 2120, in forward\n    return self.base_model(\n           ^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/peft/tuners/tuners_utils.py\", line 359, in forward\n    return self.model(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/transformers/utils/generic.py\", line 939, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py\", line 490, in forward\n    logits = self.lm_head(hidden_states[:, slice_indices, :])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/linear.py\", line 134, in forward\n    return F.linear(input, self.weight, self.bias)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: expected mat1 and mat2 to have the same dtype, but got: float != c10::BFloat16\n",
+  "stage": "ppo_memory_mechanism",
+  "wall_time_seconds": 45.712996846064925,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "peak_memory_allocated_mib": 13401.1611328125,
+  "peak_memory_reserved_mib": 15440.0,
+  "peak_device_memory_mib": 15764.0,
+  "device_sampling_interval_seconds": 0.1,
+  "chunk_size": 128,
+  "micro_batch": 1
+}

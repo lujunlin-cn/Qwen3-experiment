@@ -1,0 +1,122 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+{'model_id': 'Qwen/Qwen3-4B-Thinking-2507', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{
+  "status": "passed",
+  "gae_shape_and_mask": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "terminal_bootstrap_disabled": true,
+  "ppo_loss_finite": true,
+  "policy_gradient": true,
+  "clip_fraction": 1.0,
+  "approx_kl": 3.585691452026367,
+  "gpu_rollout": "not_run",
+  "gpu_training": "not_run"
+}
+{
+  "status": "passed",
+  "smoke_prompts_per_task": 2,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "sft_manifest": "available",
+  "gae_padding_mask_test": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "gpu": "not_run"
+}
+{'train_selection': 'passed', 'records': 4}
+{'chunk_equivalence': 'passed', 'checks': 36}
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:49,  8.08it/s]Loading weights:   4%|▎         | 14/398 [00:00<00:05, 72.66it/s]Loading weights:  11%|█         | 44/398 [00:00<00:02, 168.12it/s]Loading weights:  18%|█▊        | 71/398 [00:00<00:01, 203.76it/s]Loading weights:  26%|██▌       | 103/398 [00:00<00:01, 239.64it/s]Loading weights:  34%|███▍      | 135/398 [00:00<00:01, 262.31it/s]Loading weights:  41%|████      | 163/398 [00:00<00:00, 267.83it/s]Loading weights:  48%|████▊     | 192/398 [00:00<00:00, 267.86it/s]Loading weights:  56%|█████▋    | 224/398 [00:00<00:00, 280.55it/s]Loading weights:  64%|██████▍   | 256/398 [00:01<00:00, 289.15it/s]Loading weights:  72%|███████▏  | 286/398 [00:01<00:00, 290.24it/s]Loading weights:  79%|███████▉  | 316/398 [00:01<00:00, 289.91it/s]Loading weights:  87%|████████▋ | 346/398 [00:01<00:00, 283.20it/s]Loading weights:  95%|█████████▍| 378/398 [00:01<00:00, 290.03it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 257.77it/s]
+{
+  "status": "mechanism_passed",
+  "scope": "real NF4 model + artificial full-length input; NOT a real PPO Update",
+  "fixture": true,
+  "sequence_length": 16384,
+  "active_attention_tokens": 16384,
+  "response_tokens": 16128,
+  "micro_batch": 1,
+  "gradient_accumulation_micro_steps": 2,
+  "optimizer_steps": 0,
+  "ppo_update_status": "Not Run: requires verified real Rollout",
+  "chunk_size": 128,
+  "training_mode": "nf4_qlora",
+  "nf4_runtime_contract": {
+    "loaded_in_4bit": true,
+    "nf4": true,
+    "double_quant": true,
+    "bf16_compute": true,
+    "gradient_checkpointing": true,
+    "use_cache_disabled": true,
+    "value_head_fp32": true
+  },
+  "value_head_dtype": "torch.float32",
+  "hidden_dtype": "torch.float32",
+  "gradients": {
+    "value_head": true,
+    "lora": true
+  },
+  "gradient_norms": {
+    "value_head": 31.52311897277832,
+    "lora": 2.2077035903930664
+  },
+  "logs": [
+    {
+      "forward_seconds": 6.057557448744774,
+      "backward_seconds": 10.635162902995944,
+      "total_loss": 0.695461630821228,
+      "policy_loss": 4.789658891724002e-09,
+      "value_loss": 1.391124963760376,
+      "entropy": 0.010082969442009926,
+      "approx_kl": 0.0,
+      "clip_fraction": 0.0,
+      "advantage_mean": -4.789658891724002e-09,
+      "advantage_std": 0.9999998807907104,
+      "explained_variance": -104.82817077636719,
+      "action_tokens": 16128.0
+    },
+    {
+      "forward_seconds": 6.034354725852609,
+      "backward_seconds": 10.608395213261247,
+      "total_loss": 0.695461630821228,
+      "policy_loss": 4.789658891724002e-09,
+      "value_loss": 1.391124963760376,
+      "entropy": 0.010082969442009926,
+      "approx_kl": 0.0,
+      "clip_fraction": 0.0,
+      "advantage_mean": -4.789658891724002e-09,
+      "advantage_std": 0.9999998807907104,
+      "explained_variance": -104.82817077636719,
+      "action_tokens": 16128.0
+    }
+  ],
+  "adapter_reload": {
+    "status": "passed",
+    "method": "PEFT load_adapter from saved disk weights, compare real-model logits",
+    "max_abs_logit_difference": 0.0
+  },
+  "value_head_reload": "passed",
+  "snapshot_scope": "unchanged initialized weights, not a trained checkpoint",
+  "stage": "ppo_memory_mechanism",
+  "wall_time_seconds": 46.56736674718559,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "peak_memory_allocated_mib": 13401.1611328125,
+  "peak_memory_reserved_mib": 15534.0,
+  "peak_device_memory_mib": 15858.0,
+  "device_sampling_interval_seconds": 0.1,
+  "device_peak_target_gib": 20.0,
+  "device_peak_within_target": true,
+  "functional_memory_target_pass": true
+}
+GPU_NOTEBOOK_COMPLETED 05_PPO.ipynb seconds 49.212666880339384

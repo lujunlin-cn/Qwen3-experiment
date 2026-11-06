@@ -171,6 +171,67 @@ Update，先验证数值正确性、梯度方向和显存，再扩大训练。
 
 Notebook 05 采用如下明确约定：隐藏状态位置 `t` 是预测 token `t+1` 的动作前状态。于是 `token_logprobs` 的动作轴是 `logits[:, :-1]`，Value 轴是 `values[:, :-1]`，Reward、Done 和 Response Mask 对齐到 token 位置 `[:, 1:]`。GAE、Return、Policy Loss、Value Loss、Entropy 和 Approx KL 均使用这个同一动作轴；Prompt、Padding 和 EOS 后位置不参与计算。
 
-Rollout 的行为 Log Probability 必须与 vLLM 实际采样 Token IDs 一一对应；若缺失或长度不一致则 fail closed。截断回答没有观察到 EOS，Verifier 不给正确奖励。CPU Smoke 增加短序列 Value/Token 对齐断言；真实 Qwen3 PPO、Value Head 训练和显存仍为 `Not Run`。
+Rollout 的行为 Log Probability 必须与 vLLM 实际采样 Token IDs 一一对应；若缺失或长度不一致则 fail closed。截断回答没有观察到 EOS，Verifier 不给正确奖励。CPU Smoke 增加短序列 Value/Token 对齐断言；此前 CPU 阶段的真实 Qwen3 PPO、Value Head 训练和显存标记为 `Not Run`；本轮实测见第 15 节。
 
 本 Notebook 当前只记录 Old Policy Logprob 的 Approx KL 诊断，未实现 Reference Policy KL 正则；不能将该诊断解释成 Reference KL。
+
+## 14. 16K NF4 QLoRA 显存维护实现
+
+PPO **Training 仅接受 NF4 QLoRA**。Notebook 校验父 SFT Manifest 的 `mode=nf4_qlora`、4-bit NF4、Double Quant 和 BF16 Compute；不符合时直接报错。Micro-batch 固定为 1，启用 Gradient Checkpointing，关闭 KV Cache。BF16 模型仅用于只读 Rollout/Logprob 审计。Value Head 保持 FP32，只有 LoRA 参数和 Value Head 参与更新。
+
+概率使用 `selected_logit - logsumexp(logits)`；Entropy 使用 `logZ - sum(exp(z-logZ)*z)`。两者均按序列分块进行 FP32 归约，默认 `PPO_TOKEN_CHUNK_SIZE=128`。训练路径同时 checkpoint LM Head 投影，避免先物化整个 `[1,16384,151936]` logits。冻结的 tied embedding/LM Head 以 BF16 存储，Value Head 与概率归约保持 FP32。重载检查也显式使用 BF16 autocast。
+
+这些是维护者提供的完整辅助函数，不设置学生 TODO。GAE、Advantage 标准化、Ratio、Clip、Value Loss、Entropy 系数、Reward 和 KL 诊断均保留。每个 Micro-batch 按 `有效 Response Token 数 / 累积窗口有效 Token 总数` 加权；Entropy 只用全局有效 Token 总数归一化，不能取 Chunk Mean 的平均。
+
+### 执行入口
+
+先在项目目录设置父 Manifest 和独立输出版本，避免覆盖历史结果：
+
+```bash
+export PPO_SFT_MANIFEST=data/processed/checkpoints/vgpu_round1/sft_manifest.json
+export PPO_RUN_ID=nf4_memory_v1
+export PPO_TOKEN_CHUNK_SIZE=128
+export QWEN3_MODEL_PATH=/path/to/Qwen3-4B-Thinking-2507
+```
+
+三个入口互斥，均默认关闭。在 Jupyter 中设置环境变量后，从头顺序执行 Notebook：
+
+1. 训练 Profile（已有 bitsandbytes）：只启用 `RUN_PPO_MEMORY_TEST=1`。用真实 4B 模型、16,384 个有效 Attention Token、Micro-batch=1 测量两次前后向和梯度累积。人工拼接的输入仅用于显存机制，不是有效 Rollout；`optimizer_steps=0`。会保存、重载未更新的 Adapter/Value Head 快照，不能将快照作为训练成果。
+2. 独立 vLLM 0.11 Profile：只启用 `RUN_PPO_ROLLOUT=1`。总上下文 16,384，`max_num_seqs=2`，显式 KV Cache 预算 4.5 GiB。每题 Completion 上限为 `min(RL_MAX_NEW_TOKENS, 16384 - prompt_tokens)`。Qwen3 的 36 层、8 KV Heads、Head Dim 128、BF16，在两条满长序列下理论 KV 为 `2(K/V)*36*8*128*2(bytes)*16384*2(seqs)=4.5 GiB`，不含模型和执行开销。
+3. 退出 vLLM 进程并确认显存释放后，切换训练 Profile，只启用 `RUN_PPO_TRAINING=1`。保存的真实 Train Rollout 先通过来源、Token/Mask 和 Logprob 审计，且至少存在一个未截断、Verifier 正确的回答，才执行一次真实 Optimizer Update。否则明确返回 `Not Run`/阻塞状态，不制造奖励或替换行为 Logprob。
+
+本轮不修改旧 PPO 分支的任务及数据路径。Logprob 审计阈值保留：BF16 Mean/P99 ≤ 0.10/0.60，NF4 ≤ 0.50/3.0；记录 BF16 Rollout 与 NF4 Training 的分布差异，不将二者声称为完全相同策略。
+
+### 检查与测量
+
+CPU 小 Tensor 参考实现覆盖 Logprob、Entropy、两者对 logits 的梯度、完整 PPO Loss 和梯度、投影重算、Padding/Response Mask，以及 Token 加权累积。使用 `torch.testing.assert_close(rtol=3e-5, atol=3e-6)`，不是仅检查 Loss 有限。
+
+GPU 阶段分别保存 PyTorch Peak Allocated/Reserved、`nvidia-smi` 每 0.1 秒采样的 Device Peak、前后向耗时、Chunk Size、Sequence Length 和实际 Optimizer Steps。Device Peak 是采样高水位，不保证捕捉采样间的瞬时峰值。OOM、审计失败、重载失败都保留错误状态，不能把进程正常结束视为 PPO 成功。16K 机制测试与真实 PPO Update 的结果分别报告。
+
+
+## 15. 本轮真实 vGPU 结果（2026-11-06）
+
+设备上报 RTX 4080 SUPER，PyTorch 可见 31.48 GiB；不等同于物理 5090。未安装新依赖，训练复用现有 Q-QLORA 环境：PyTorch 2.11.0 / CUDA 13.0、Transformers 5.18.0、PEFT 0.21.2、bitsandbytes 0.50.2；Rollout 使用独立 vLLM 0.11.0 环境。
+
+| 验收 | 有效序列长度 | Micro-steps / Optimizer Steps | Peak Allocated | Peak Reserved | Device Peak | 阶段耗时 |
+|---|---|---|---|---|---|---|
+| 真实 NF4 模型机制测试，人工输入 | 16,384 | 2 / **0** | 13.09 GiB | 15.17 GiB | **15.49 GiB** | 46.57 s |
+| 真实 Verifier 合格 Rollout 的 PPO 更新 | 7,009 / 7,185 | 2 / **1** | 9.23 GiB | 11.18 GiB | **11.49 GiB** | 37.32 s |
+
+两者均为 Micro-batch=1、Chunk=128，Device Peak 为 0.1 秒间隔采样高水位。16K 机制测试每次前向约 6.04–6.06 秒、反向约 10.61–10.64 秒；真实 PPO 两次前向为 2.36 / 2.42 秒、反向为 3.88 / 4.00 秒。阶段耗时包含加载、审计和保存重载，不含独立进程的 BF16 Rollout 成本。
+
+4 条真实 Train Rollout 中，2 条 Equation 回答完成且正确；2 条 Bit 回答在总长 16,384 截断，已保留输出并排除。两条合格回答的有效 Response Token 数为 6,932 / 7,082，按 Token 数加权累积后执行一次 AdamW Step。LoRA / Value Head 最大参数变化分别约 `1.00015e-5 / 1.00024e-5`。Adapter 从磁盘重载后 logits 最大差异为 0，FP32 Value Head 重载通过。二进制备份保存在本地 git 忽略目录 `.autodl/checkpoints/nf4_memory_v1/ppo_nf4_qlora`；仓库保存清单、SHA256 和实验报告。
+
+CPU JSON / AST / Smoke 通过，36 项数值与配置断言通过，最大数值差异 `4.76837e-7`。BF16 Logprob 审计 Mean / P99 为 `0.01152 / 0.12065`；NF4 为 `0.13445 / 1.51922`。阈值保持原值，NF4 最大绝对差异仍达 `8.09962`，因此不能将 BF16 Rollout 与 NF4 Training 声称为同一个精确分布。
+
+失败记录同样保留：首次快照重载缺少 BF16 autocast 导致 dtype 冲突；训练审计的 NF4 Backbone 前向缺少 BF16 autocast，FP32 SDPA 尝试分配 32 GiB 后 OOM。单独移除全 1 Mask 的实验未解决 OOM；补齐审计 autocast 后才完成更新。所有真实 NF4 前向必须包含 BF16 autocast，只有 Value Head 和概率归约显式保持 FP32。
+
+**验证边界**：当前尚无未截断且 Verifier 合格的满 16K 真实轨迹；实际更新使用 7,009 / 7,185 Token，没有静默裁短。16K 结果证明真实模型前后向及累积可运行，未将人工输入冒充真实 PPO 更新。未测更新后的准确率或其他 GPU，不能据此声称提分或普遍的显存保证。
+
+原始记录与汇总：
+
+- [完整显存报告](../data/processed/ppo/nf4_memory_v1/ppo_memory_optimization_report.json)
+- [16K 机制结果](../data/processed/ppo/nf4_memory_v1/ppo_memory_mechanism_status.json)
+- [真实 PPO Update](../data/processed/ppo/nf4_memory_v1/ppo_training_status.json)
+- [CPU 等价性](../data/processed/ppo/nf4_memory_v1_cpu/chunk_numerical_equivalence.json)
+- [Checkpoint 清单](../data/processed/ppo/nf4_memory_v1/checkpoint_inventory.json)

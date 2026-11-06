@@ -1,0 +1,56 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+{'model_id': 'Qwen/Qwen3-4B-Thinking-2507', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{
+  "status": "passed",
+  "gae_shape_and_mask": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "terminal_bootstrap_disabled": true,
+  "ppo_loss_finite": true,
+  "policy_gradient": true,
+  "clip_fraction": 1.0,
+  "approx_kl": 3.585691452026367,
+  "gpu_rollout": "not_run",
+  "gpu_training": "not_run"
+}
+{
+  "status": "passed",
+  "smoke_prompts_per_task": 2,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "sft_manifest": "available",
+  "gae_padding_mask_test": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "gpu": "not_run"
+}
+{'train_selection': 'passed', 'records': 4}
+{'chunk_equivalence': 'passed', 'checks': 34}
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:49,  8.01it/s]Loading weights:   4%|▍         | 15/398 [00:00<00:04, 76.94it/s]Loading weights:  12%|█▏        | 47/398 [00:00<00:01, 177.83it/s]Loading weights:  19%|█▉        | 77/398 [00:00<00:01, 221.36it/s]Loading weights:  26%|██▌       | 104/398 [00:00<00:01, 235.23it/s]Loading weights:  34%|███▍      | 136/398 [00:00<00:01, 259.67it/s]Loading weights:  42%|████▏     | 168/398 [00:00<00:00, 275.55it/s]Loading weights:  50%|████▉     | 198/398 [00:00<00:00, 281.14it/s]Loading weights:  57%|█████▋    | 227/398 [00:00<00:00, 280.84it/s]Loading weights:  65%|██████▍   | 257/398 [00:01<00:00, 282.16it/s]Loading weights:  73%|███████▎  | 289/398 [00:01<00:00, 289.96it/s]Loading weights:  80%|████████  | 319/398 [00:01<00:00, 291.28it/s]Loading weights:  88%|████████▊ | 349/398 [00:01<00:00, 289.19it/s]Loading weights:  95%|█████████▍| 378/398 [00:01<00:00, 287.52it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 260.20it/s]
+{
+  "status": "failed",
+  "error": "RuntimeError('expected mat1 and mat2 to have the same dtype, but got: float != c10::BFloat16')",
+  "traceback": "Traceback (most recent call last):\n  File \"05_PPO.ipynb#cell39\", line 42, in _gpu_stage\n  File \"05_PPO.ipynb#cell57\", line 39, in operation\n  File \"05_PPO.ipynb#cell47\", line 9, in actual_adapter_reload\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/peft/peft_model.py\", line 2120, in forward\n    return self.base_model(\n           ^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/peft/tuners/tuners_utils.py\", line 359, in forward\n    return self.model(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/transformers/utils/generic.py\", line 939, in wrapper\n    output = func(self, *args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/transformers/models/qwen3/modeling_qwen3.py\", line 490, in forward\n    logits = self.lm_head(hidden_states[:, slice_indices, :])\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/root/autodl-tmp/Qwen3-experiment/.venv-q-qlora-cu128/lib/python3.12/site-packages/torch/nn/modules/linear.py\", line 134, in forward\n    return F.linear(input, self.weight, self.bias)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: expected mat1 and mat2 to have the same dtype, but got: float != c10::BFloat16\n",
+  "stage": "ppo_memory_mechanism",
+  "wall_time_seconds": 45.712996846064925,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "peak_memory_allocated_mib": 13401.1611328125,
+  "peak_memory_reserved_mib": 15440.0,
+  "peak_device_memory_mib": 15764.0,
+  "device_sampling_interval_seconds": 0.1,
+  "chunk_size": 128,
+  "micro_batch": 1
+}
+GPU_NOTEBOOK_COMPLETED 05_PPO.ipynb seconds 48.281504448503256

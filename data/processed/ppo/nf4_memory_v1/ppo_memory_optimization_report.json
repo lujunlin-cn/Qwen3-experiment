@@ -1,0 +1,266 @@
+{
+  "schema_version": "nemotron-ppo-memory-report/v1",
+  "model_id": "Qwen/Qwen3-4B-Thinking-2507",
+  "device": "NVIDIA GeForce RTX 4080 SUPER",
+  "scope": "NF4 memory optimization only; no dataset/SFT/DPO/GRPO changes",
+  "chunk_size": 128,
+  "micro_batch": 1,
+  "cpu": {
+    "status": "passed",
+    "checks": 36,
+    "max_absolute_difference": 4.76837158203125e-07,
+    "rtol": 3e-05,
+    "atol": 3e-06
+  },
+  "full_16k_mechanism": {
+    "status": "mechanism_passed",
+    "sequence_length": 16384,
+    "active_attention_tokens": 16384,
+    "response_tokens": 16128,
+    "gradient_accumulation_micro_steps": 2,
+    "optimizer_steps": 0,
+    "peak_memory_allocated_mib": 13401.1611328125,
+    "peak_memory_reserved_mib": 15534.0,
+    "peak_device_memory_mib": 15858.0,
+    "wall_time_seconds": 46.56736674718559,
+    "nf4_runtime_contract": {
+      "loaded_in_4bit": true,
+      "nf4": true,
+      "double_quant": true,
+      "bf16_compute": true,
+      "gradient_checkpointing": true,
+      "use_cache_disabled": true,
+      "value_head_fp32": true
+    },
+    "adapter_reload": {
+      "status": "passed",
+      "method": "PEFT load_adapter from saved disk weights, compare real-model logits",
+      "max_abs_logit_difference": 0.0
+    },
+    "value_head_reload": "passed",
+    "logs": [
+      {
+        "forward_seconds": 6.057557448744774,
+        "backward_seconds": 10.635162902995944,
+        "total_loss": 0.695461630821228,
+        "policy_loss": 4.789658891724002e-09,
+        "value_loss": 1.391124963760376,
+        "entropy": 0.010082969442009926,
+        "approx_kl": 0.0,
+        "clip_fraction": 0.0,
+        "advantage_mean": -4.789658891724002e-09,
+        "advantage_std": 0.9999998807907104,
+        "explained_variance": -104.82817077636719,
+        "action_tokens": 16128.0
+      },
+      {
+        "forward_seconds": 6.034354725852609,
+        "backward_seconds": 10.608395213261247,
+        "total_loss": 0.695461630821228,
+        "policy_loss": 4.789658891724002e-09,
+        "value_loss": 1.391124963760376,
+        "entropy": 0.010082969442009926,
+        "approx_kl": 0.0,
+        "clip_fraction": 0.0,
+        "advantage_mean": -4.789658891724002e-09,
+        "advantage_std": 0.9999998807907104,
+        "explained_variance": -104.82817077636719,
+        "action_tokens": 16128.0
+      }
+    ]
+  },
+  "real_ppo_training": {
+    "status": "completed",
+    "sequence_lengths": [
+      7009,
+      7185
+    ],
+    "records": 4,
+    "usable_records": 2,
+    "truncated_excluded": 2,
+    "optimizer_steps": 1,
+    "micro_steps": 2,
+    "peak_memory_allocated_mib": 9447.7060546875,
+    "peak_memory_reserved_mib": 11450.0,
+    "peak_device_memory_mib": 11764.0,
+    "wall_time_seconds": 37.31554122827947,
+    "max_abs_parameter_update": {
+      "lora": 1.0001473128795624e-05,
+      "value_head": 1.000240445137024e-05
+    },
+    "adapter_reload": {
+      "status": "passed",
+      "method": "PEFT load_adapter from saved disk weights, compare real-model logits",
+      "max_abs_logit_difference": 0.0
+    },
+    "value_head_reload": "passed",
+    "logs": [
+      {
+        "forward_seconds": 2.36468568071723,
+        "backward_seconds": 3.8777021653950214,
+        "total_loss": 2.1024343967437744,
+        "policy_loss": 0.03170748054981232,
+        "value_loss": 4.150800704956055,
+        "entropy": 0.4673424959182739,
+        "approx_kl": 0.05012279748916626,
+        "clip_fraction": 0.2071552276611328,
+        "advantage_mean": -0.004580376669764519,
+        "advantage_std": 1.0201170444488525,
+        "explained_variance": -11.786450386047363,
+        "action_tokens": 6932.0
+      },
+      {
+        "forward_seconds": 2.4244015403091908,
+        "backward_seconds": 4.0001824628561735,
+        "total_loss": 1.9581291675567627,
+        "policy_loss": 0.030771557241678238,
+        "value_loss": 3.86431622505188,
+        "entropy": 0.48006048798561096,
+        "approx_kl": 0.056557752192020416,
+        "clip_fraction": 0.20008471608161926,
+        "advantage_mean": 0.004483312834054232,
+        "advantage_std": 0.9799092411994934,
+        "explained_variance": -8.166765213012695,
+        "action_tokens": 7082.0
+      }
+    ]
+  },
+  "logprob_audit": {
+    "bf16": {
+      "status": "passed",
+      "training_mode": "bf16_lora",
+      "rollout_mode": "bf16",
+      "audit_autocast_dtype": "bfloat16",
+      "scope": "one_actual_rollout_per_task",
+      "tokens_compared": 23068,
+      "mean_abs_logprob_delta": 0.011890718713402748,
+      "p99_abs_logprob_delta": 0.12339357286691666,
+      "max_abs_logprob_delta": 0.7177844047546387,
+      "signed_mean_logprob_delta": -0.0006744710844941437,
+      "mean_limit": 0.1,
+      "p99_limit": 0.6,
+      "quantization_difference_expected": false,
+      "checks": [
+        {
+          "sample_id": "5a763686",
+          "task_type": "equation_numeric",
+          "response_tokens": 6932,
+          "prompt_tokens": 77,
+          "first_response_action_index": 76,
+          "token_mask_alignment": true,
+          "vllm_first_raw_logprob": -0.007715425454080105,
+          "training_first_raw_logprob": -0.008119583129882812
+        },
+        {
+          "sample_id": "07d61ec8",
+          "task_type": "bit_manipulation",
+          "response_tokens": 16136,
+          "prompt_tokens": 248,
+          "first_response_action_index": 247,
+          "token_mask_alignment": true,
+          "vllm_first_raw_logprob": -0.016045961529016495,
+          "training_first_raw_logprob": -0.014171600341796875
+        }
+      ]
+    },
+    "nf4": {
+      "status": "passed",
+      "training_mode": "nf4_qlora",
+      "rollout_mode": "bf16",
+      "audit_autocast_dtype": "bfloat16",
+      "scope": "one_actual_rollout_per_task",
+      "tokens_compared": 23068,
+      "mean_abs_logprob_delta": 0.13444727659225464,
+      "p99_abs_logprob_delta": 1.519217848777771,
+      "max_abs_logprob_delta": 8.099620819091797,
+      "signed_mean_logprob_delta": -0.05276786535978317,
+      "mean_limit": 0.5,
+      "p99_limit": 3.0,
+      "quantization_difference_expected": true,
+      "checks": [
+        {
+          "sample_id": "5a763686",
+          "task_type": "equation_numeric",
+          "response_tokens": 6932,
+          "prompt_tokens": 77,
+          "first_response_action_index": 76,
+          "token_mask_alignment": true,
+          "vllm_first_raw_logprob": -0.007715425454080105,
+          "training_first_raw_logprob": -0.0013446807861328125
+        },
+        {
+          "sample_id": "07d61ec8",
+          "task_type": "bit_manipulation",
+          "response_tokens": 16136,
+          "prompt_tokens": 248,
+          "first_response_action_index": 247,
+          "token_mask_alignment": true,
+          "vllm_first_raw_logprob": -0.016045961529016495,
+          "training_first_raw_logprob": -0.0300140380859375
+        }
+      ]
+    },
+    "thresholds_changed": false
+  },
+  "rollout_screening": [
+    {
+      "sample_id": "5a763686",
+      "task_type": "equation_numeric",
+      "finish_reason": "stop",
+      "sequence_length": 7009,
+      "correct": true,
+      "training_eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "sample_id": "8321a400",
+      "task_type": "equation_numeric",
+      "finish_reason": "stop",
+      "sequence_length": 7185,
+      "correct": true,
+      "training_eligible": true,
+      "rejection_reasons": []
+    },
+    {
+      "sample_id": "07d61ec8",
+      "task_type": "bit_manipulation",
+      "finish_reason": "length",
+      "sequence_length": 16384,
+      "correct": false,
+      "training_eligible": false,
+      "rejection_reasons": [
+        "truncated",
+        "non_stop_finish",
+        "verifier_failed"
+      ]
+    },
+    {
+      "sample_id": "2aa6ce6a",
+      "task_type": "bit_manipulation",
+      "finish_reason": "length",
+      "sequence_length": 16384,
+      "correct": false,
+      "training_eligible": false,
+      "rejection_reasons": [
+        "truncated",
+        "non_stop_finish",
+        "verifier_failed"
+      ]
+    }
+  ],
+  "failures_preserved": [
+    "memory_attempt1_dtype_failure.json",
+    "ppo_training_attempt1_oom.json",
+    "ppo_training_attempt2_mask_only_oom.json"
+  ],
+  "diagnosis": "Chunking must include LM projection. NF4 audit backbone also requires BF16 autocast; removing the redundant all-ones mask alone did not fix FP32 SDPA OOM.",
+  "device_peak_measurement": "nvidia-smi sampled high-water mark, nominal 0.1s interval, includes driver/cache; not an instantaneous hardware maximum",
+  "checkpoint": "data/processed/checkpoints/nf4_memory_v1/ppo_nf4_qlora",
+  "local_checkpoint_backup": ".autodl/checkpoints/nf4_memory_v1/ppo_nf4_qlora (git-ignored binary artifacts)",
+  "not_verified": [
+    "No untruncated verified 16384-token trajectory was available: real PPO Update lengths were 7009 and 7185; full 16K result is a real-model mechanism test with artificial input and zero optimizer steps.",
+    "No post-update accuracy/improvement experiment.",
+    "Other GPU hardware and sequence distributions not measured.",
+    "NF4/BF16 policies differ; NF4 maximum absolute sampled-token logprob delta was 8.0996 despite passing unchanged mean/P99 engineering gates."
+  ]
+}

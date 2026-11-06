@@ -1,0 +1,78 @@
+{
+  "status": "mechanism_passed",
+  "scope": "real NF4 model + artificial full-length input; NOT a real PPO Update",
+  "fixture": true,
+  "sequence_length": 16384,
+  "active_attention_tokens": 16384,
+  "response_tokens": 16128,
+  "micro_batch": 1,
+  "gradient_accumulation_micro_steps": 2,
+  "optimizer_steps": 0,
+  "ppo_update_status": "Not Run: requires verified real Rollout",
+  "chunk_size": 128,
+  "training_mode": "nf4_qlora",
+  "value_head_dtype": "torch.float32",
+  "hidden_dtype": "torch.float32",
+  "gradients": {
+    "value_head": true,
+    "lora": true
+  },
+  "logs": [
+    {
+      "forward_seconds": 5.972142733633518,
+      "backward_seconds": 10.62936695665121,
+      "total_loss": 0.6774836182594299,
+      "policy_loss": -1.2062844945148754e-08,
+      "value_loss": 1.3551689386367798,
+      "entropy": 0.010082969442009926,
+      "approx_kl": 0.0,
+      "clip_fraction": 0.0,
+      "advantage_mean": 1.2062844945148754e-08,
+      "advantage_std": 1.0,
+      "explained_variance": -44.946529388427734,
+      "action_tokens": 16128.0
+    },
+    {
+      "forward_seconds": 5.958519164472818,
+      "backward_seconds": 10.605361569672823,
+      "total_loss": 0.6774836182594299,
+      "policy_loss": -1.2062844945148754e-08,
+      "value_loss": 1.3551689386367798,
+      "entropy": 0.010082969442009926,
+      "approx_kl": 0.0,
+      "clip_fraction": 0.0,
+      "advantage_mean": 1.2062844945148754e-08,
+      "advantage_std": 1.0,
+      "explained_variance": -44.946529388427734,
+      "action_tokens": 16128.0
+    }
+  ],
+  "adapter_reload": {
+    "status": "passed",
+    "method": "PEFT load_adapter from saved disk weights, compare real-model logits",
+    "max_abs_logit_difference": 0.0
+  },
+  "value_head_reload": "passed",
+  "snapshot_scope": "unchanged initialized weights, not a trained checkpoint",
+  "stage": "ppo_memory_mechanism",
+  "wall_time_seconds": 46.184855902567506,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "peak_memory_allocated_mib": 13401.1611328125,
+  "peak_memory_reserved_mib": 15534.0,
+  "peak_device_memory_mib": 15858.0,
+  "device_sampling_interval_seconds": 0.1,
+  "device_peak_target_gib": 20.0,
+  "device_peak_within_target": true
+}

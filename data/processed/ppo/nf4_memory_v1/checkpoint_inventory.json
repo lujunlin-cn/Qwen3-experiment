@@ -1,0 +1,31 @@
+{
+  "status": "saved_and_reloaded",
+  "optimizer_steps": 1,
+  "files": [
+    {
+      "path": "data/processed/checkpoints/nf4_memory_v1/ppo_nf4_qlora/README.md",
+      "bytes": 5270,
+      "sha256": "0a767036cce4f40841faaeb8ce31f1b09cba48510aa5ffa3e09501272ba60fbe"
+    },
+    {
+      "path": "data/processed/checkpoints/nf4_memory_v1/ppo_nf4_qlora/adapter_config.json",
+      "bytes": 1213,
+      "sha256": "ec44576e5007cf90d24f1144dddfb474133c4b61cba839071d9f488c039dd617"
+    },
+    {
+      "path": "data/processed/checkpoints/nf4_memory_v1/ppo_nf4_qlora/adapter_model.safetensors",
+      "bytes": 66126768,
+      "sha256": "7e2c67f7d7000f2d6c04250b7036cc58332444ae6163faf91b4d66412396784b"
+    },
+    {
+      "path": "data/processed/checkpoints/nf4_memory_v1/ppo_nf4_qlora/ppo_manifest.json",
+      "bytes": 1659,
+      "sha256": "743b0408f099a2d840918985f958b5a813ff38789aff0a2cd37f99525cdbffdb"
+    },
+    {
+      "path": "data/processed/checkpoints/nf4_memory_v1/ppo_nf4_qlora/value_head.pt",
+      "bytes": 11902,
+      "sha256": "180b545297dc071311bb81c8d4779eab40d5611aa93b76d7dda86fa8e0157c89"
+    }
+  ]
+}
