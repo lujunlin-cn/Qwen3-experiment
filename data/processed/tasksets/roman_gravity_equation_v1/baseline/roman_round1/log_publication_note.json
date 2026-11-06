@@ -1,0 +1,5 @@
+{
+  "raw_model_output_jsonl_modified": false,
+  "logs": "ANSI escapes removed and machine-specific paths replaced with environment placeholders",
+  "original_logs": "retained on execution host and in local temporary archive"
+}

@@ -1,5 +1,11 @@
 # Nemotron SFT-RL Notebook 集成实现说明
 
+## 本轮 GPU 最终核验结果
+
+- 本轮真实 vGPU Baseline 完成 150/150 条（Validation 每类 50）：Numeral 46/50（92%，截断 8%）、Gravity 34/50（68%，截断 32%）、Equation Numeric 19/50（38%，截断 24%）；Overall/Macro 均 66%，总体截断 21.33%。正式预算分别为 4096/8192/16384；峰值设备显存 27,659 MiB，生成吞吐约 312.89 output tokens/s，GPU 阶段约 56.73 分钟。118 条正常结束，32 条截断，不从 Thinking 中补计答案；未将该结果宣称为不受预算限制的能力。GPU 已释放。
+- 交付的两个 Notebook 及当前并行修改后的工作区版本均通过 JSON/AST 和顺序 CPU 测试；150 条真实输出重新评分、Token IDs 长度/预算、文件哈希和固定 Validation ID 核验通过。本轮提交保留其他工作区修改，未将其混入提交。
+
+
 ## 2026-11-06：三档任务替换与独立 Baseline（本轮）
 
 正式默认任务改为 Numeral System（`numeral_system`，Easy）、Gravity（Medium）、Equation Numeric（Hard）。Bit 保留高级扩展和历史记录，不进入新版数据或默认 Baseline。三类都计划参加 SFT；SFT 后再判断各类是否值得进入 RL，本轮未更改任何 RL 入口、算法或 Reward。02–06 和旧数据接口保持冻结，不自动读取本轮新版本。

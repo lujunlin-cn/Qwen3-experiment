@@ -110,5 +110,11 @@ Overall Accuracy（按样本加权）：**66.00%**。Macro Accuracy（三类等�
 - CPU：`00_Baseline_Diagnosis.ipynb` 默认 `BASELINE_PHASE=off`；顺序执行数据重建、Verifier 和现有结果复核。数据文件按内容写一次，拒绝覆盖不同字节。
 - GPU：复用现有独立 vLLM Profile，环境变量 `QWEN3_MODEL_PATH` 指向已存在的本地权重。每阶段新 Kernel，依次设置 `BASELINE_PHASE=calibration`、`calibration_extension`、`evaluation`；同一实验使用同一个 `BASELINE_RUN_ID`。复现实验另选新 Run ID，避免覆盖 `roman_round1`。
 - 三个 CSV、Manifest、统计、Roman 映射/跨集合暴露表和泄漏报告均在本版本目录根部或 `splits/`。GPU JSONL、阶段状态、预算协议、指标 CSV、显存报告和失败样本均在 `baseline/roman_round1/`。
-- 本轮两个 Notebook 的 JSON、nbformat、AST 和顺序 CPU 检查通过；GPU 生成/评分函数与实际执行源的 AST 一致性另有报告。未创建教学 `.py` 文件。
+- 本轮两个 Notebook 的 JSON、nbformat、AST 和顺序 CPU 检查通过；GPU 生成/评分函数在四个配置变量名称规范化后与实际执行源的 AST 一致，差异报告单独保存。本轮没有抽离教学算法。
 - 训练实验、完整 Validation、Holdout、RTX 5090/4090 对照和 Data Designer 均未在本轮执行。不从当前 vGPU 测量推断其他设备性能。
+
+## 并行架构提交的接口说明
+
+GPU 实验使用本轮从原始 CSV 重建数据的 Notebook 执行版本。实验完成期间，另一个架构提交 `e7e8d39` 已将原始 CSV 维护者预处理移至 `utils/prepare_official_dataset.py`，当前 00 读取带哈希的清洗产物和 `official_preparation_manifest.json`。本轮保留该并行修改，没有回退到旧架构；该入口与本轮最初“在 00 内读取原始 CSV”的要求存在边界差异，后续应统一确认。已验证当前集成版本可顺序执行 CPU 数据/评分流程，Dataset Manifest、固定 Validation ID 与全部 GPU 原始分数未变。
+
+本轮补充提交只修复结果审计单元的变量名称、记录最终实测分数、清理公开日志路径并保存审计记录，不改动并行提交的 SFT/DPO/PPO/GRPO 内容。

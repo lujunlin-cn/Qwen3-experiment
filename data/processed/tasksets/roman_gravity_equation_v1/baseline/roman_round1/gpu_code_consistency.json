@@ -1,76 +1,96 @@
 {
   "status": "passed",
-  "scope": "GPU generation and scoring functions unchanged since actual run; only CPU boundary tests and report display appended",
+  "scope": "Latest integrated Notebook; generation/scoring AST matches execution after canonicalizing four global configuration variable names. Data preparation was separately refactored in concurrent commit.",
+  "normalization": {
+    "run_dir": "RUN_DIR",
+    "dataset_version": "DATASET_VERSION",
+    "baseline_phase": "RUN_GPU_PHASE",
+    "run_id": "RUN_ID"
+  },
   "functions": [
     {
       "function": "render_qwen3_prompt",
-      "same_ast": true,
-      "sha256": "1e3386caf935f0465b60120d5fee0326e6efe3ded6e25b45dfaed468dc42b32b"
+      "exact_ast_match": true,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "1e3386caf935f0465b60120d5fee0326e6efe3ded6e25b45dfaed468dc42b32b"
     },
     {
       "function": "result_record",
-      "same_ast": true,
-      "sha256": "eae329d3bf7316eb25cfed2dabac11ea92ab34968499574d02b0cb98c0811c45"
+      "exact_ast_match": false,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "eae329d3bf7316eb25cfed2dabac11ea92ab34968499574d02b0cb98c0811c45"
     },
     {
       "function": "_execute_batches",
-      "same_ast": true,
-      "sha256": "d471387e3161dbd6d926bad6200c54cbe24cec861c6a67b95cc1c64a7132da71"
+      "exact_ast_match": true,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "d471387e3161dbd6d926bad6200c54cbe24cec861c6a67b95cc1c64a7132da71"
     },
     {
       "function": "_inference_plan",
-      "same_ast": true,
-      "sha256": "b33585d4cfdcfda52887a4a666b835fc196f0a3974318f9ca8084310a49b510a"
+      "exact_ast_match": false,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "b33585d4cfdcfda52887a4a666b835fc196f0a3974318f9ca8084310a49b510a"
     },
     {
       "function": "run_gpu_phase",
-      "same_ast": true,
-      "sha256": "9810815474317feb27d266fc23bf1ae4d73b3239af1f1b3a476dac3fff9c3944"
+      "exact_ast_match": false,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "9810815474317feb27d266fc23bf1ae4d73b3239af1f1b3a476dac3fff9c3944"
     },
     {
       "function": "metric_group",
-      "same_ast": true,
-      "sha256": "34dfd93fbcd80c8169086f2de2b61e9de3e81a6900789d2220fa6a76ac21c069"
+      "exact_ast_match": true,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "34dfd93fbcd80c8169086f2de2b61e9de3e81a6900789d2220fa6a76ac21c069"
     },
     {
       "function": "summarize_baseline_records",
-      "same_ast": true,
-      "sha256": "2c929002fda6817929c948823f838f2da0d077f15191034862e41d068fb5c505"
+      "exact_ast_match": true,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "2c929002fda6817929c948823f838f2da0d077f15191034862e41d068fb5c505"
     },
     {
       "function": "verify_completed_output",
-      "same_ast": true,
-      "sha256": "490ecbb79a1991fcd0557aac38168434812e8467d630fe61d46687a86352b1b7"
+      "exact_ast_match": true,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "490ecbb79a1991fcd0557aac38168434812e8467d630fe61d46687a86352b1b7"
     },
     {
       "function": "verify_answer",
-      "same_ast": true,
-      "sha256": "fda2f89a05bf3e1f8c5cafce8317229a1dffb857cfb0647b80bff99e7aad6258"
+      "exact_ast_match": true,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "fda2f89a05bf3e1f8c5cafce8317229a1dffb857cfb0647b80bff99e7aad6258"
     },
     {
       "function": "normalize_answer_text",
-      "same_ast": true,
-      "sha256": "7404a46916042ab07cf0c5750940e063a9cd5517e6246fda34e7e8c653cd814c"
+      "exact_ast_match": true,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "7404a46916042ab07cf0c5750940e063a9cd5517e6246fda34e7e8c653cd814c"
     },
     {
       "function": "extract_final_answer",
-      "same_ast": true,
-      "sha256": "bc7453015a668a7069e23cb3f68e88c019ac9b639abd5371843d158aee4e1728"
+      "exact_ast_match": true,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "bc7453015a668a7069e23cb3f68e88c019ac9b639abd5371843d158aee4e1728"
     },
     {
       "function": "boxed_values",
-      "same_ast": true,
-      "sha256": "f2ec8d0e89c31a27c91bdaf4d81bdecf29fdd51398389bf4d172292f390636e4"
+      "exact_ast_match": true,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "f2ec8d0e89c31a27c91bdaf4d81bdecf29fdd51398389bf4d172292f390636e4"
     },
     {
       "function": "canonical_roman_to_int",
-      "same_ast": true,
-      "sha256": "949469b8c505d502c1b1ad45ab8c3b37223752548d0d1b0bb8ec3421fa1ce568"
+      "exact_ast_match": true,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "949469b8c505d502c1b1ad45ab8c3b37223752548d0d1b0bb8ec3421fa1ce568"
     },
     {
       "function": "parse_numeral_prompt",
-      "same_ast": true,
-      "sha256": "4560ffe63bf2256790a8163c15d7ec774222e00a305553b379dbab32a6617810"
+      "exact_ast_match": true,
+      "match_after_global_name_normalization": true,
+      "executed_ast_sha256": "4560ffe63bf2256790a8163c15d7ec774222e00a305553b379dbab32a6617810"
     }
   ]
 }

@@ -23,5 +23,9 @@
   },
   "training_algorithms_edited": false,
   "original_csv_sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa",
-  "gpu_claimed_by_cpu_report": false
+  "gpu_claimed_by_cpu_report": false,
+  "delivery_notebook_json_ast_sequential_cpu": "passed",
+  "raw_gpu_records_rescored": 150,
+  "delivery_notebook_source": "Integrated working-tree version and preserved raw-input GPU-execution snapshot both CPU-verified; concurrent architecture changes retained",
+  "concurrent_architecture_commit": "e7e8d39"
 }
