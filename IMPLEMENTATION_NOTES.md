@@ -136,3 +136,11 @@ Gravity 分布审计使用 Train 的 1,277 条题、5,180 个示例：每题示�
 2. PPO/GRPO 当前没有实现 Reference Policy KL；仅保留行为策略 Logprob 变化诊断，KL 系数为 0。
 3. Rollout 的真实 vLLM 0.11 Token IDs/Logprob 返回格式、显存峰值和吞吐尚待目标环境实测；若字段缺失，入口会 fail closed。
 4. 规范化 Prompt 的跨集合重复仍是数据风险，原始数据没有可靠同源组键，Structural OOD 尚未宣称无泄漏。
+
+## 第三轮教学颗粒度重构
+
+- 六个 Notebook 保留原有公式、模型、数据、超参数和实验结果；仅按单一教学目标拆分代码单元，并在数据准备、核心算法、模型加载、训练调度、结果保存和测试之间增加 Markdown 说明。
+- Notebook 01 将 Baseline 的 Chat Template、显存采样、单条结果记录、汇总保存和 vLLM 调度分开；合成数据按 Prior、Gravity、Bit、Equation、Screening、Leakage Audit、Data Designer 和 Pilot 导出分段。
+- Notebook 03 将 Teacher Trace、Label Mask/Loss、LoRA/QLoRA、Manifest、训练调度和 CPU 测试分开；Notebook 04/05 分别拆分 Rollout、Adapter 加载、张量转换、训练更新和保存入口。
+- Notebook 06 将 Rollout 审计、任务 Verifier、Reward/Batch、CausalLM Update、Adapter 交接和负样本测试分开，并修正第 9 节与第 10 节的教学顺序。
+- 重构后所有 Code Cell 不超过 100 行；六个 Notebook JSON/AST 检查和顺序 CPU Smoke 均通过。GPU、vLLM 和真实 Qwen3 训练仍为 `Not Run`。
