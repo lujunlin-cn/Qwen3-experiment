@@ -1,11 +1,11 @@
 {
   "model_id": "Qwen/Qwen3-4B-Thinking-2507",
-  "model_path": "/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507",
+  "model_path": "${QWEN3_MODEL_PATH}",
   "download_acceleration": {
-    "method": "AutoDL academic acceleration",
-    "config": "/etc/network_turbo",
-    "http_proxy": "http://10.37.1.23:12798",
-    "https_proxy": "http://10.37.1.23:12798",
+    "method": "target-machine official network acceleration",
+    "config": "environment-specific (redacted)",
+    "http_proxy": "redacted",
+    "https_proxy": "redacted",
     "hf_endpoint": "https://huggingface.co",
     "model_files_local": true
   },

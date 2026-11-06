@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "smoke_records": 24,
+  "manifest": "data/processed/sft/cpu_checkpoint_manifest.json",
+  "adapter_reload": "GPU_not_run",
+  "qlora_prepare": "configuration_checked",
+  "gpu_training": "not_run"
+}

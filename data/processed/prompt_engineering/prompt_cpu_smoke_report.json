@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "validation_samples": 393,
+  "prompt_records": 2358,
+  "prompt_versions": [
+    "P0",
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5"
+  ],
+  "few_shot_source": "train_only",
+  "prior_hidden_rule_isolation": true,
+  "answer_extraction_and_verifier": "passed",
+  "gpu_eval": "disabled",
+  "run_mode": "smoke",
+  "max_new_tokens": 2048
+}

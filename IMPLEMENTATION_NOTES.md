@@ -1,6 +1,28 @@
-# 第一个 Notebook 实现说明
+# Nemotron SFT-RL Notebook 集成实现说明
 
-交付文件为 [`01_Baseline_Evaluation_and_Dataset_Preparation.ipynb`](01_Baseline_Evaluation_and_Dataset_Preparation.ipynb)。本轮只修订第一个 Notebook 的验证、合成数据和 Baseline 相关部分，没有新增教学用 `.py` 文件，也没有修改原始 `train.csv` 或第二个 Notebook。Notebook 默认 `RUN_BASELINE=False`；合成 Pilot 仍固定使用种子 42，每类请求 100 个单次候选。
+本仓库交付六个阶段 Notebook 的集成修订；所有教学实现仍直接位于 Notebook Code Cell，没有新增教学用 `.py` 文件，也没有修改原始 `train.csv`。Notebook 默认关闭模型、vLLM 和 GPU 执行；模型路径统一通过 `QWEN3_MODEL_PATH` 等环境变量提供。
+
+## 本轮六 Notebook 全链路集成修订（基于 `4c28ae2`）
+
+- 统一模型接口：固定 `Qwen/Qwen3-4B-Thinking-2507`；Notebook 3 是唯一 SFT 初始化来源。正式 SFT 完成后写入 `data/processed/checkpoints/sft_manifest.json`，包含 Base Model、Tokenizer、Adapter、LoRA/QLoRA、数据版本、策略、Token Budget、Epoch 和 Seed。Notebook 4/5/6 通过 `PeftModel.from_pretrained()` 从该 Manifest 加载同一个 SFT Adapter，不把 Adapter 目录直接传给 `AutoModelForCausalLM.from_pretrained()`。
+- Notebook 3：NF4、Double Quant、BF16 Compute 和 `prepare_model_for_kbit_training()` 已接入；Two-stage 真实执行 Recall Drill → Full Trace，并从 Stage 1 Adapter 继续。Smoke 固定 24 条训练轨迹、1 Epoch、NF4 QLoRA。
+- Notebook 4：移除无条件 GPU 阻断；Rollout → 独立 Verifier → Chosen/Rejected → 手写 DPO Loss → Adapter 保存/重载入口已串通。Smoke 选 Equation Numeric/Bit 各 2 道 Train 题，每题 4 个候选；Chosen 和 Rejected 均排除截断回答。Reference Policy 与 Policy 使用同一个 SFT Adapter，Reference 冻结。
+- Notebook 5：移除无条件 GPU 阻断；vLLM 行为 Logprob、Response Mask、EOS/Done、Outcome Reward、旧 Value、GAE、PPO-Clip 和 Value Head 入口已串通。Smoke 选 Equation Numeric/Bit 各 2 道 Train 题，采样参数为 Temperature 1.0、Top-p 1.0；Rollout 完成后释放 vLLM，再加载训练 Actor-Critic。
+- Notebook 6：移除无条件 GPU 阻断；每个 Prompt 严格保留 G=8，Rollout 后执行独立 Verifier 并附加 Reward、Correct、Verifier Version。Mixed Group Ratio 为 0 时 fail closed，不人为制造方差。当前指标 `policy_logprob_change` 只表示行为策略到更新策略的 Logprob 变化，不冒充 Reference KL，因此 `KL_COEF=0`。
+- 六个 Notebook 均已在 DGX Spark 顺序执行 CPU Smoke：JSON/AST 检查、数据接口、Label Mask/Loss、QLoRA 配置、Preference Pair、PPO GAE/Reward/Mask、GRPO Group/Verifier/Advantage 和 Manifest 检查均通过。报告文件分别为 `data/processed/baseline_cpu_smoke_report.json`、`data/processed/prompt_engineering/prompt_cpu_smoke_report.json`、`data/processed/sft/cpu_sft_smoke_report.json`、`data/processed/dpo/cpu_dpo_smoke_report.json`、`data/processed/ppo/cpu_ppo_smoke_report.json`、`data/processed/grpo/cpu_grpo_smoke_report.json` 和 `data/processed/grpo/cpu_readiness_audit.json`。
+- 本轮未运行 Qwen3 权重、vLLM 或 GPU 训练；CPU Fixture 不作为模型效果结果。由于 CPU 阶段不伪造正式 Adapter，`data/processed/checkpoints/sft_manifest.json` 只有明天 SFT QLoRA Smoke 成功后才会出现；当前仅保存 `data/processed/sft/cpu_checkpoint_manifest.json`。
+- 已清理公开 Notebook 和结果 JSON 中的机器专属路径，历史模型来源统一写为 `${QWEN3_MODEL_PATH}` 或环境相关占位符。
+
+### RTX 5090 明日 Smoke 顺序
+
+1. Notebook 1：Validation 每类 3 条 Baseline Smoke，确认生成长度和截断率。
+2. Notebook 2：Validation 每类 3 条，P0–P5 共用相同样本和解码预算。
+3. Notebook 3：官方 SFT/QLoRA Profile，`RUN_SFT=1`、`RUN_MODE=smoke`、NF4 QLoRA；检查 Adapter 保存、Manifest 和 Reload。
+4. Notebook 4：官方 RL Profile，先 vLLM Rollout，再关闭 vLLM，使用各任务 2 题 × 4 候选构造偏好对并执行一次 DPO Update。
+5. Notebook 5：重新启动独立 vLLM Rollout，关闭后加载同一 SFT Adapter，执行各任务 2 题的一次 PPO Rollout、GAE 和 Update。
+6. Notebook 6：执行各任务 2 题、每题 G=8 的真实 Rollout 和 Readiness Audit；只有出现真实 Mixed Group 才执行一次 GRPO Update。
+
+每一步记录样本数、Rollout 数、Reward、Loss、Peak GPU Memory、Wall Time、Adapter Path 和成功状态。三种 RL 方法均从 Notebook 3 的同一个 SFT Adapter 平行初始化；GPU 阶段若某一步失败，保留错误日志并停止该阶段，不用 CPU Fixture 替代。
 
 ## P0：数据正确性与可追踪性
 
@@ -43,8 +65,8 @@ Gravity 分布审计使用 Train 的 1,277 条题、5,180 个示例：每题示�
 
 ## P1：NeMo Data Designer + 本地 vLLM
 
-- 目标机为 AutoDL `connect.westd.seetacloud.com:48510`，项目和环境位于 `/root/autodl-tmp/Qwen3-experiment` 数据盘；模型位于 `/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507`。
-- AutoDL 数据盘上的 uv 环境包括 `.venv-pt-sft-cu128`、`.venv-q-qlora-cu128`、`.venv-pt-rl-cu128` 和 `.venv-vllm-cu128`；官方训练 Profile 已执行 `uv pip check`，vLLM Profile 实际使用 PyTorch `2.8.0+cu128`。模型权重已完整下载到数据盘；后续下载优先执行 `source /etc/network_turbo` 使用 AutoDL 学术加速，避免本地中转。
+- 远端验证使用 GPU 数据盘；项目、环境和模型均通过环境变量或官方 Profile 配置，不把机器专属路径写入教程。
+- 远端 uv 环境按官方训练 Profile 分离管理；训练 Profile 和 vLLM Profile 均已完成依赖检查。模型下载使用目标机的官方网络加速和数据盘，不通过本地中转。
 - 实际环境版本：vLLM `0.11.0`（`.venv-vllm-cu128`），Data Designer `0.10.0`（`.venv-data-designer`）。模型服务使用本地 OpenAI-compatible vLLM `http://127.0.0.1:8000/v1`，served model 为 `Qwen3-4B-Thinking-2507`，没有使用 `NVIDIA_API_KEY`、`build.nvidia.com`、OpenAI 或 OpenRouter。
 - Data Designer 采用官方 `ModelProvider(provider_type="openai", endpoint=..., api_key=None)`、`LocalFileSeedSource`、`DataDesignerConfigBuilder.with_seed_dataset` 和 `DataDesigner.preview`。Preview Seed 严格分层为 Gravity/Equation Numeric/Bit 各 3 条，只发送 `task_type` 和 `prompt`，不发送 Ground Truth、Hidden Rule 或 Teacher Trace。
 - 9 条 Seed 产生 9 条 Preview 记录，18 次本地请求全部成功；5 条通过独立 Solver/Verifier。Preview 仅保存在 `data_designer_preview.jsonl` 和 `data_designer_preview_screening.csv`，状态为 `preview_only_never_ground_truth`，没有合并到正式训练数据。

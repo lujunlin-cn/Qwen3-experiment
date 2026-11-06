@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "smoke_prompts": 4,
+  "candidates_per_prompt": 4,
+  "preference_pairs": 4,
+  "sft_manifest": "not_run_sft_manifest_missing",
+  "gpu": "not_run"
+}

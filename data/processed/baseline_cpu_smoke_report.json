@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "run_baseline": false,
+  "run_mode": "smoke",
+  "validation_samples_per_task": 3,
+  "baseline_status": "skipped_by_default",
+  "synthetic_mode": "reused_existing_pilot",
+  "synthetic_candidates": 300,
+  "synthetic_accepted": 275,
+  "synthetic_rejected": 25
+}
