@@ -52,7 +52,7 @@ INFO 11-06 20:24:29 [__init__.py:216] Automatically detected platform cuda.
 [1;36m(EngineCore_DP0 pid=73903)[0;0m Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:00<00:01,  1.51it/s]
 [1;36m(EngineCore_DP0 pid=73903)[0;0m Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:01<00:00,  1.44it/s]
 [1;36m(EngineCore_DP0 pid=73903)[0;0m Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  2.08it/s]
-[1;36m(EngineCore_DP0 pid=73903)[0;0m 
+[1;36m(EngineCore_DP0 pid=73903)[0;0m
 [1;36m(EngineCore_DP0 pid=73903)[0;0m INFO 11-06 20:24:36 [default_loader.py:267] Loading weights took 1.44 seconds
 [1;36m(EngineCore_DP0 pid=73903)[0;0m INFO 11-06 20:24:36 [punica_selector.py:19] Using PunicaWrapperGPU.
 [1;36m(EngineCore_DP0 pid=73903)[0;0m INFO 11-06 20:24:36 [gpu_model_runner.py:2653] Model loading took 7.6684 GiB and 1.603371 seconds
