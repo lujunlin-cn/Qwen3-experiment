@@ -1,0 +1,37 @@
+{
+  "rows": 3931,
+  "split_counts": {
+    "holdout_test": {
+      "bit_manipulation": 160,
+      "equation_numeric": 73,
+      "gravity": 160
+    },
+    "train": {
+      "bit_manipulation": 1282,
+      "equation_numeric": 586,
+      "gravity": 1277
+    },
+    "validation": {
+      "bit_manipulation": 160,
+      "equation_numeric": 73,
+      "gravity": 160
+    }
+  },
+  "length_summary": {
+    "holdout_test": {
+      "prompt_char_mean": 361.59541984732823,
+      "answer_char_mean": 5.918575063613232,
+      "prompt_token_proxy_mean": 88.3384223918575
+    },
+    "train": {
+      "prompt_char_mean": 361.4381558028617,
+      "answer_char_mean": 5.856597774244833,
+      "prompt_token_proxy_mean": 88.3691573926868
+    },
+    "validation": {
+      "prompt_char_mean": 360.6819338422392,
+      "answer_char_mean": 5.8396946564885495,
+      "prompt_token_proxy_mean": 88.17557251908397
+    }
+  }
+}

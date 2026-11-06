@@ -1,0 +1,405 @@
+{
+  "rows": 9500,
+  "columns": [
+    "id",
+    "prompt",
+    "answer"
+  ],
+  "dtypes": {
+    "id": "str",
+    "prompt": "str",
+    "answer": "str"
+  },
+  "missing": {
+    "id": 0,
+    "prompt": 0,
+    "answer": 0
+  },
+  "empty": {
+    "id": 0,
+    "prompt": 0,
+    "answer": 0
+  },
+  "duplicate_id_rows": 0,
+  "duplicate_prompt_rows": 0,
+  "sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa"
+}
+task_type          kept_for_course
+bit_manipulation   False              1602
+encryption         False              1576
+equation_numeric   True                732
+equation_symbolic  False               823
+gravity            True               1597
+numeral_system     True               1576
+unit_conversion    False              1594
+dtype: int64
+CLASSIFICATION SAMPLE bit_manipulation 00066667 "In Alice's Wonderland, a secret bit manipulation rule transforms 8-bit binary numbers. The transformation involves operations like bit shifts, rotations, XOR, AND, OR, NOT, and possibly majority or choice functions.\n\nHere are some examples of input -> output:\n01010001 -> 11011101\n00001001 -> 01101101\n00010101 -> 01010101\n11111111 -> 10000001\n10011101 -> 01000101\n00111011 -> 00001001\n10111101 -> 00000101\n00100110 -> 10110011\n\nNow, determine the output for: 00110100" '10010111'
+CLASSIFICATION SAMPLE encryption 00189f6a "In Alice's Wonderland, secret encryption rules are used on text. Here are some examples:\nucoov pwgtfyoqg vorq yrjjoe -> queen discovers near valley\npqrsfv pqorzg wvgwpo trgbjo -> dragon dreams inside castle\ngbcpovb tqorbog bxo zrswtrj pffq -> student creates the magical door\nbxo sfjpov pqrsfv dfjjfig -> the golden dragon follows\nnqwvtogg qorpg bxo zegboqwfcg gotqob -> princess reads the mysterious secret\nNow, decrypt the following text: trb wzrswvog hffk" 'cat imagines book'
+CLASSIFICATION SAMPLE equation_numeric 00d8b3db "In Alice's Wonderland, a secret set of transformation rules is applied to equations. Below are a few examples:\n34/44 = 1\n41/32 = 9\n34|25 = 69\n87\\64 = 8853\nNow, determine the result for: 69/52" '17/'
+CLASSIFICATION SAMPLE equation_symbolic 00457d26 'In Alice\'s Wonderland, a secret set of transformation rules is applied to equations. Below are a few examples:\n`!*[{ = \'"[`\n\\\'*\'> = ![@\n\\\'-!` = \\\\\n`!*\\& = \'@\'{\nNow, determine the result for: [[-!\'' '@&'
+CLASSIFICATION SAMPLE gravity 0040ff76 "In Alice's Wonderland, the gravitational constant has been secretly changed. Here are some example observations:\nFor t = 1.37s, distance = 14.92 m\nFor t = 4.27s, distance = 144.96 m\nFor t = 3.28s, distance = 85.54 m\nFor t = 3.67s, distance = 107.09 m\nFor t = 1.78s, distance = 25.19 m\nNow, determine the falling distance for t = 4.41s given d = 0.5*g*t^2." '154.62'
+CLASSIFICATION SAMPLE numeral_system 001b24c4 "In Alice's Wonderland, numbers are secretly converted into a different numeral system. Some examples are given below:\n11 -> XI\n15 -> XV\n94 -> XCIV\n19 -> XIX\nNow, write the number 38 in the Wonderland numeral system." 'XXXVIII'
+CLASSIFICATION SAMPLE unit_conversion 00208201 "In Alice's Wonderland, a secret unit conversion is applied to measurements. For example:\n10.08 m becomes 6.69\n17.83 m becomes 11.83\n35.85 m becomes 23.79\n17.06 m becomes 11.32\n31.54 m becomes 20.93\nNow, convert the following measurement: 25.09 m" '16.65'
+              rows  valid  minimum  maximum
+kind                                       
+example       6222   6222        1      100
+query_answer  1576   1576        1      100
+task_type     equation_numeric  gravity  numeral_system
+split                                                  
+holdout_test                73      160             158
+train                      586     1277            1260
+validation                  73      160             158
+   source_split   other_split  ...  exposure_rate  same_query_in_other_targets
+0  holdout_test         train  ...            1.0                          158
+1  holdout_test    validation  ...            1.0                          119
+2         train  holdout_test  ...            1.0                          975
+3         train    validation  ...            1.0                          906
+4    validation  holdout_test  ...            1.0                          126
+5    validation         train  ...            1.0                          158
+
+[6 rows x 6 columns]
+{'calibration': {'equation_numeric': 3, 'gravity': 3, 'numeral_system': 3}, 'evaluation': {'equation_numeric': 50, 'gravity': 50, 'numeral_system': 50}}
+INFO 11-06 18:06:52 [__init__.py:216] Automatically detected platform cuda.
+INFO 11-06 18:06:54 [arg_utils.py:504] HF_HUB_OFFLINE is True, replace model_id [/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507] to model_path [/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507]
+INFO 11-06 18:06:54 [arg_utils.py:504] HF_HUB_OFFLINE is True, replace model_id [/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507] to model_path [/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507]
+INFO 11-06 18:06:54 [utils.py:233] non-default args: {'tokenizer': '/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507', 'dtype': 'bfloat16', 'seed': 42, 'max_model_len': 20480, 'gpu_memory_utilization': 0.85, 'max_num_seqs': 16, 'disable_log_stats': True, 'enforce_eager': True, 'generation_config': 'vllm', 'model': '/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507'}
+INFO 11-06 18:06:54 [model.py:547] Resolved architecture: Qwen3ForCausalLM
+`torch_dtype` is deprecated! Use `dtype` instead!
+INFO 11-06 18:06:54 [model.py:1510] Using max model len 20480
+INFO 11-06 18:06:56 [scheduler.py:205] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 11-06 18:06:56 [__init__.py:381] Cudagraph is disabled under eager mode
+WARNING 11-06 18:06:56 [__init__.py:3036] We must use the `spawn` multiprocessing start method. Overriding VLLM_WORKER_MULTIPROC_METHOD to 'spawn'. See https://docs.vllm.ai/en/latest/usage/troubleshooting.html#python-multiprocessing for more information. Reasons: CUDA is initialized
+INFO 11-06 18:07:00 [__init__.py:216] Automatically detected platform cuda.
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:01 [core.py:644] Waiting for init message from front-end.
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:01 [core.py:77] Initializing a V1 LLM engine (v0.11.0) with config: model='/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507', speculative_config=None, tokenizer='/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=20480, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=True, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=42, served_model_name=/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507, enable_prefix_caching=True, chunked_prefill_enabled=True, pooler_config=None, compilation_config={"level":0,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":null,"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":0,"use_cudagraph":true,"cudagraph_num_of_warmups":0,"cudagraph_capture_sizes":[],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"use_inductor_graph_partition":false,"pass_config":{},"max_capture_size":0,"local_cache_dir":null}
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:05 [parallel_state.py:1208] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+[1;36m(EngineCore_DP0 pid=40120)[0;0m WARNING 11-06 18:07:05 [topk_topp_sampler.py:66] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:05 [gpu_model_runner.py:2602] Starting to load model /root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507...
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:05 [gpu_model_runner.py:2634] Loading model from scratch...
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:05 [cuda.py:366] Using Flash Attention backend on V1 engine.
+[1;36m(EngineCore_DP0 pid=40120)[0;0m Loading safetensors checkpoint shards:   0% Completed | 0/3 [00:00<?, ?it/s]
+[1;36m(EngineCore_DP0 pid=40120)[0;0m Loading safetensors checkpoint shards:  33% Completed | 1/3 [00:00<00:01,  1.51it/s]
+[1;36m(EngineCore_DP0 pid=40120)[0;0m Loading safetensors checkpoint shards:  67% Completed | 2/3 [00:01<00:00,  1.42it/s]
+[1;36m(EngineCore_DP0 pid=40120)[0;0m Loading safetensors checkpoint shards: 100% Completed | 3/3 [00:01<00:00,  2.04it/s]
+[1;36m(EngineCore_DP0 pid=40120)[0;0m 
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:07 [default_loader.py:267] Loading weights took 1.47 seconds
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:07 [gpu_model_runner.py:2653] Model loading took 7.6065 GiB and 1.606640 seconds
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:09 [gpu_worker.py:298] Available KV cache memory: 18.50 GiB
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:09 [kv_cache_utils.py:1087] GPU KV cache size: 134,720 tokens
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:09 [kv_cache_utils.py:1091] Maximum concurrency for 20,480 tokens per request: 6.58x
+[1;36m(EngineCore_DP0 pid=40120)[0;0m WARNING 11-06 18:07:09 [cudagraph_dispatcher.py:106] cudagraph dispatching keys are not initialized. No cudagraph will be used.
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:09 [core.py:210] init engine (profile, create kv cache, warmup model) took 1.81 seconds
+[1;36m(EngineCore_DP0 pid=40120)[0;0m INFO 11-06 18:07:09 [__init__.py:381] Cudagraph is disabled under eager mode
+INFO 11-06 18:07:10 [llm.py:306] Supported_tasks: ['generate']
+Adding requests:   0%|          | 0/3 [00:00<?, ?it/s]Adding requests: 100%|██████████| 3/3 [00:00<00:00, 913.66it/s]
+Processed prompts:   0%|          | 0/3 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  33%|███▎      | 1/3 [00:08<00:17,  8.65s/it, est. speed input: 7.40 toks/s, output: 59.19 toks/s]Processed prompts: 100%|██████████| 3/3 [00:08<00:00,  8.65s/it, est. speed input: 24.69 toks/s, output: 177.23 toks/s]Processed prompts: 100%|██████████| 3/3 [00:08<00:00,  2.89s/it, est. speed input: 24.69 toks/s, output: 177.23 toks/s]
+BATCH_SAVED calibration 0 3
+Adding requests:   0%|          | 0/3 [00:00<?, ?it/s]Adding requests: 100%|██████████| 3/3 [00:00<00:00, 1027.60it/s]
+Processed prompts:   0%|          | 0/3 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  33%|███▎      | 1/3 [00:18<00:36, 18.06s/it, est. speed input: 3.54 toks/s, output: 56.69 toks/s]Processed prompts: 100%|██████████| 3/3 [00:18<00:00, 18.06s/it, est. speed input: 11.83 toks/s, output: 169.88 toks/s]Processed prompts: 100%|██████████| 3/3 [00:18<00:00,  6.03s/it, est. speed input: 11.83 toks/s, output: 169.88 toks/s]
+BATCH_SAVED calibration 1 6
+Adding requests:   0%|          | 0/3 [00:00<?, ?it/s]Adding requests: 100%|██████████| 3/3 [00:00<00:00, 1341.03it/s]
+Processed prompts:   0%|          | 0/3 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  33%|███▎      | 1/3 [01:09<02:19, 69.99s/it, est. speed input: 1.66 toks/s, output: 58.52 toks/s]Processed prompts: 100%|██████████| 3/3 [01:10<00:00, 69.99s/it, est. speed input: 4.93 toks/s, output: 175.53 toks/s]Processed prompts: 100%|██████████| 3/3 [01:10<00:00, 23.34s/it, est. speed input: 4.93 toks/s, output: 175.53 toks/s]
+BATCH_SAVED calibration 2 9
+Adding requests:   0%|          | 0/3 [00:00<?, ?it/s]Adding requests: 100%|██████████| 3/3 [00:00<00:00, 660.17it/s]
+Processed prompts:   0%|          | 0/3 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  33%|███▎      | 1/3 [01:13<02:27, 73.89s/it, est. speed input: 1.57 toks/s, output: 57.26 toks/s]Processed prompts:  67%|██████▋   | 2/3 [01:41<00:46, 46.40s/it, est. speed input: 2.29 toks/s, output: 99.12 toks/s]Processed prompts: 100%|██████████| 3/3 [02:07<00:00, 37.25s/it, est. speed input: 2.71 toks/s, output: 136.79 toks/s]Processed prompts: 100%|██████████| 3/3 [02:07<00:00, 37.25s/it, est. speed input: 2.71 toks/s, output: 136.79 toks/s]Processed prompts: 100%|██████████| 3/3 [02:07<00:00, 42.47s/it, est. speed input: 2.71 toks/s, output: 136.79 toks/s]
+BATCH_SAVED calibration 3 12
+Adding requests:   0%|          | 0/3 [00:00<?, ?it/s]Adding requests: 100%|██████████| 3/3 [00:00<00:00, 904.79it/s]
+Processed prompts:   0%|          | 0/3 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  33%|███▎      | 1/3 [01:12<02:25, 72.53s/it, est. speed input: 1.60 toks/s, output: 58.33 toks/s]Processed prompts:  67%|██████▋   | 2/3 [01:39<00:45, 45.78s/it, est. speed input: 2.32 toks/s, output: 100.57 toks/s]Processed prompts: 100%|██████████| 3/3 [01:53<00:00, 31.03s/it, est. speed input: 3.05 toks/s, output: 147.44 toks/s]Processed prompts: 100%|██████████| 3/3 [01:53<00:00, 31.03s/it, est. speed input: 3.05 toks/s, output: 147.44 toks/s]Processed prompts: 100%|██████████| 3/3 [01:53<00:00, 37.69s/it, est. speed input: 3.05 toks/s, output: 147.44 toks/s]
+BATCH_SAVED calibration 4 15
+Adding requests:   0%|          | 0/3 [00:00<?, ?it/s]Adding requests: 100%|██████████| 3/3 [00:00<00:00, 1347.50it/s]
+Processed prompts:   0%|          | 0/3 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  33%|███▎      | 1/3 [01:09<02:19, 69.95s/it, est. speed input: 1.30 toks/s, output: 58.55 toks/s]Processed prompts: 100%|██████████| 3/3 [01:09<00:00, 69.95s/it, est. speed input: 3.93 toks/s, output: 175.61 toks/s]Processed prompts: 100%|██████████| 3/3 [01:09<00:00, 23.32s/it, est. speed input: 3.93 toks/s, output: 175.61 toks/s]
+BATCH_SAVED calibration 5 18
+Adding requests:   0%|          | 0/3 [00:00<?, ?it/s]Adding requests: 100%|██████████| 3/3 [00:00<00:00, 1042.93it/s]
+Processed prompts:   0%|          | 0/3 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  33%|███▎      | 1/3 [02:10<04:21, 130.88s/it, est. speed input: 0.70 toks/s, output: 55.42 toks/s]Processed prompts:  67%|██████▋   | 2/3 [02:28<01:04, 64.21s/it, est. speed input: 1.21 toks/s, output: 104.06 toks/s]Processed prompts: 100%|██████████| 3/3 [02:28<00:00, 64.21s/it, est. speed input: 1.85 toks/s, output: 159.26 toks/s]Processed prompts: 100%|██████████| 3/3 [02:28<00:00, 49.47s/it, est. speed input: 1.85 toks/s, output: 159.26 toks/s]
+BATCH_SAVED calibration 6 21
+Adding requests:   0%|          | 0/3 [00:00<?, ?it/s]Adding requests: 100%|██████████| 3/3 [00:00<00:00, 801.51it/s]
+Processed prompts:   0%|          | 0/3 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts:  33%|███▎      | 1/3 [02:11<04:22, 131.09s/it, est. speed input: 0.69 toks/s, output: 55.33 toks/s]Processed prompts:  67%|██████▋   | 2/3 [03:21<01:35, 95.67s/it, est. speed input: 0.89 toks/s, output: 90.06 toks/s] Processed prompts: 100%|██████████| 3/3 [03:41<00:00, 60.85s/it, est. speed input: 1.24 toks/s, output: 136.76 toks/s]Processed prompts: 100%|██████████| 3/3 [03:41<00:00, 60.85s/it, est. speed input: 1.24 toks/s, output: 136.76 toks/s]Processed prompts: 100%|██████████| 3/3 [03:41<00:00, 73.79s/it, est. speed input: 1.24 toks/s, output: 136.76 toks/s]
+BATCH_SAVED calibration 7 24
+[rank0]:[W1106 18:20:08.289071970 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+{
+  "status": "completed",
+  "phase": "calibration",
+  "records": 24,
+  "accuracy": 0.3333333333333333,
+  "answer_extraction_success_rate": 0.4166666666666667,
+  "invalid_output_rate": 0.5833333333333334,
+  "truncation_rate": 0.5833333333333334,
+  "average_generation_tokens": 4883.166666666667,
+  "average_amortized_inference_time_seconds": 32.37687735414753,
+  "generation_wall_time_seconds": 777.0450564995408,
+  "output_tokens": 117196,
+  "output_token_throughput": 150.82265696142326,
+  "overall_accuracy_sample_weighted": 0.3333333333333333,
+  "macro_accuracy": 0.2962962962962963,
+  "by_task": {
+    "numeral_system": {
+      "records": 6,
+      "accuracy": 0.0,
+      "answer_extraction_success_rate": 0.0,
+      "invalid_output_rate": 1.0,
+      "truncation_rate": 1.0,
+      "average_generation_tokens": 768.0,
+      "average_amortized_inference_time_seconds": 4.4600788506989675,
+      "generation_wall_time_seconds": 26.760473104193807,
+      "output_tokens": 4608,
+      "output_token_throughput": 172.1942651035512
+    },
+    "gravity": {
+      "records": 9,
+      "accuracy": 0.6666666666666666,
+      "answer_extraction_success_rate": 0.6666666666666666,
+      "invalid_output_rate": 0.3333333333333333,
+      "truncation_rate": 0.3333333333333333,
+      "average_generation_tokens": 5154.111111111111,
+      "average_amortized_inference_time_seconds": 34.49994247758554,
+      "generation_wall_time_seconds": 310.49948229826987,
+      "output_tokens": 46387,
+      "output_token_throughput": 149.39477404809338
+    },
+    "equation_numeric": {
+      "records": 9,
+      "accuracy": 0.2222222222222222,
+      "answer_extraction_success_rate": 0.4444444444444444,
+      "invalid_output_rate": 0.5555555555555556,
+      "truncation_rate": 0.5555555555555556,
+      "average_generation_tokens": 7355.666666666667,
+      "average_amortized_inference_time_seconds": 48.86501123300857,
+      "generation_wall_time_seconds": 439.78510109707713,
+      "output_tokens": 66201,
+      "output_token_throughput": 150.53033819212294
+    }
+  },
+  "load_seconds": 15.479059971868992,
+  "warmup_seconds": 0.5604904964566231,
+  "model_id": "Qwen/Qwen3-4B-Thinking-2507",
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "free_mib": 31973.6875,
+    "total_mib": 32230.8125,
+    "torch_cuda": "12.8",
+    "versions": {
+      "torch": "2.8.0",
+      "transformers": "4.57.1",
+      "vllm": "0.11.0"
+    },
+    "fixture": false
+  },
+  "protocol": {
+    "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+    "model_id": "Qwen/Qwen3-4B-Thinking-2507",
+    "calibration_ids": {
+      "equation_numeric": [
+        "d46df3b0",
+        "f333b67f",
+        "fe393711"
+      ],
+      "gravity": [
+        "2a55bb8d",
+        "7a895e9c",
+        "3a77dee7"
+      ],
+      "numeral_system": [
+        "d8053ec2",
+        "4e177b84",
+        "e5318535"
+      ]
+    },
+    "evaluation_ids": {
+      "equation_numeric": [
+        "42d4dcf7",
+        "04322d27",
+        "d64a6578",
+        "7d8fe3a8",
+        "a04ecffd",
+        "963e85bb",
+        "759cbdde",
+        "b7ad0671",
+        "9ff6e9d2",
+        "e70d5739",
+        "71e02000",
+        "23f98595",
+        "6e6f8d9c",
+        "940df3f4",
+        "2af7134e",
+        "8321a400",
+        "d8b3310a",
+        "21519be7",
+        "68b9b9a8",
+        "7d9f6c40",
+        "4cb5e927",
+        "2e044d8e",
+        "9d68ef62",
+        "427ba852",
+        "3013265c",
+        "17c98340",
+        "3c424916",
+        "cbe4288b",
+        "b4a5076f",
+        "743a293d",
+        "9610985a",
+        "d096a492",
+        "4350015c",
+        "d8bc44b3",
+        "d008b0b6",
+        "8dea05d7",
+        "aa8c76a1",
+        "2cf587f6",
+        "4d92de08",
+        "794f71ed",
+        "93d1c7eb",
+        "abbb5d43",
+        "2fb20366",
+        "7ac90433",
+        "592107c3",
+        "5d055504",
+        "75032b65",
+        "e102a09d",
+        "88fe5a52",
+        "42cb233d"
+      ],
+      "gravity": [
+        "c83ef461",
+        "00662ac2",
+        "a4a5fe71",
+        "f8aa53b8",
+        "39fafc6b",
+        "697f134b",
+        "ce2df062",
+        "9db0f169",
+        "5ddaa052",
+        "9a919910",
+        "177d60f2",
+        "58e63752",
+        "3a1ae7b5",
+        "4b39e8d5",
+        "e43520a7",
+        "02beaa05",
+        "1bde7dfb",
+        "34f49b7d",
+        "22151c0e",
+        "1ca8e087",
+        "f61f3d46",
+        "a0e44f72",
+        "8e438ef9",
+        "6eb182f1",
+        "d3f8c793",
+        "b303bb5a",
+        "6b3f1b31",
+        "01714be2",
+        "c3e8c44f",
+        "f83e6ef3",
+        "c50cd56e",
+        "26e2d26a",
+        "90afd579",
+        "ae6c8cf6",
+        "6b01cc50",
+        "8ed96b4b",
+        "ffe680c2",
+        "e5bebe50",
+        "da0c7a5e",
+        "60274ab3",
+        "7bc77ef3",
+        "9bee3f4d",
+        "1021cb76",
+        "8ec8d10c",
+        "d26230fc",
+        "e8f32d12",
+        "9846834b",
+        "5ea6d59c",
+        "2d1d1cea",
+        "66df03f5"
+      ],
+      "numeral_system": [
+        "fb23edcb",
+        "8ec53c10",
+        "354e4fb6",
+        "9734f792",
+        "98f3c5cf",
+        "972ef18a",
+        "eaf49e67",
+        "29f63642",
+        "5ca7d798",
+        "25d6c521",
+        "71cd0e14",
+        "2fa6c2b5",
+        "359ecbe4",
+        "cf54a8d8",
+        "a9b4f1ba",
+        "92ef466f",
+        "68cb31d7",
+        "f7074a8f",
+        "29806da8",
+        "21115993",
+        "1970e965",
+        "3e6d976b",
+        "81c48679",
+        "53f02109",
+        "e8deeee0",
+        "d0dd8e4e",
+        "f194560a",
+        "ef032cce",
+        "7851d905",
+        "e6a0585e",
+        "586d246b",
+        "d79d0cfd",
+        "87312ffc",
+        "fa995fce",
+        "479e567f",
+        "6dac7e49",
+        "bda83bcd",
+        "32fffab2",
+        "e6491c2b",
+        "7f4262a6",
+        "f6a7fc15",
+        "42c48e76",
+        "7de78987",
+        "2e94ea17",
+        "e4af1185",
+        "eb9963a8",
+        "1ba0e448",
+        "7fcfe0db",
+        "706381a3",
+        "d076d135"
+      ]
+    },
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "seed": 42,
+    "max_model_len": 20480,
+    "budget_grid": {
+      "numeral_system": [
+        512,
+        1024
+      ],
+      "gravity": [
+        4096,
+        8192,
+        16384
+      ],
+      "equation_numeric": [
+        4096,
+        8192,
+        16384
+      ]
+    },
+    "evaluation_per_task": 50,
+    "evaluation_split": "validation",
+    "holdout_used_for_budget_selection": false,
+    "calibration_evaluation_disjoint": true,
+    "prompt": "original official prompt + official Qwen Chat Template, Thinking enabled; no priors / SFT / synthetic"
+  },
+  "results_sha256": "14c3a1c4cf298934a2065ce8e5a910179170db222c0e0de5ed5738d5aea41356",
+  "wall_time_seconds": 794.3375470731407,
+  "gpu_device_peak_memory_mib": 27573.0,
+  "peak_torch_allocated_mib": 0.0,
+  "resource_scope": "entire phase incl model load and warmup; device memory sampled every 0.25s"
+}
+{'status': 'passed', 'dataset_version': 'roman_gravity_equation_v1', 'rows': 3905, 'tasks': ['numeral_system', 'gravity', 'equation_numeric'], 'by_task': {'gravity': 1597, 'numeral_system': 1576, 'equation_numeric': 732}, 'numeral_verifier': 'passed', 'completion_rules': 'passed', 'no_bit_rows': True, 'raw_sha256': 'd204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa', 'gpu_enabled': True}
+GPU_NOTEBOOK_COMPLETED 00_Baseline_Diagnosis.ipynb seconds 801.1543288845569

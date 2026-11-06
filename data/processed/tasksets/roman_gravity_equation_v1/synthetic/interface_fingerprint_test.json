@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "rows": 3905,
+  "tasks": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "cross_notebook_fingerprint_equal": true,
+  "latest_cpu_pilot": "synthetic/cpu_pilot_v2",
+  "candidates": 15,
+  "accepted": 15,
+  "negative_tests_passed": 20,
+  "earlier_cpu_pilot_preserved": "synthetic/cpu_pilot_v1",
+  "gpu_baseline_depends_on_synthetic": false
+}

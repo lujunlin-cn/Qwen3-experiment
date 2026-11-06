@@ -1,0 +1,18 @@
+{
+  "source": "exact Query operator membership in example operators",
+  "counts": {
+    "train": {
+      "deduce": 475,
+      "guess": 111
+    },
+    "validation": {
+      "deduce": 63,
+      "guess": 10
+    },
+    "holdout_test": {
+      "deduce": 58,
+      "guess": 15
+    }
+  },
+  "used_for_filtering_or_budget_selection": false
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "nemotron-course-leakage/v2",
+  "status": "passed",
+  "checks": {
+    "exact_id": {
+      "key": "id",
+      "duplicate_keys": 0,
+      "rows_in_cross_split_keys": 0,
+      "examples": []
+    },
+    "exact_prompt": {
+      "key": "prompt_hash",
+      "duplicate_keys": 0,
+      "rows_in_cross_split_keys": 0,
+      "examples": []
+    },
+    "normalized_prompt": {
+      "key": "normalized_prompt_hash",
+      "duplicate_keys": 0,
+      "rows_in_cross_split_keys": 0,
+      "examples": []
+    },
+    "structure_fingerprint": {
+      "key": "structure_fingerprint",
+      "duplicate_keys": 9,
+      "rows_in_cross_split_keys": 3203,
+      "examples": [
+        {
+          "key": "0bf5753b1d22c8bb81778c3cd799f0c70257f2694ae62d18db28f5fb37089a70",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "1b625bc14d40ce0514913951021e5e3ef07ce8ca7df4d9e4b41419268314e17c",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "1e0f777b42328948349d01339f71ea144736858f911ca01e06ee7efb7db78364",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "5eca1c2e174f84e6c7aa1d9ee4a4d9e7d9383c0adc9ae78a3412a0d6a17c9ad2",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "986486eb0ad9504e886157e6d1dbc74e27d5bbee59bf66ac1f5b2f9deb97f339",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        }
+      ]
+    },
+    "group_aware_split": {
+      "status": "not_available",
+      "reason": "原始 CSV 未提供可靠的规则实例、生成种子或结构家族字段；规范化 Prompt 只能用于审计，不能作为同源组的充分证明。"
+    }
+  },
+  "normalization": "NFKC + casefold + whitespace; literal values preserved",
+  "policy": "ID/exact/normalized cross-split duplicates fail; structure similarity is reported only",
+  "structural_ood": "not_available_without_reliable_group_key"
+}

@@ -1,6 +1,20 @@
 # Nemotron SFT-RL Notebook 集成实现说明
 
-本仓库交付六个阶段 Notebook 的集成修订；所有教学实现仍直接位于 Notebook Code Cell，没有新增教学用 `.py` 文件，也没有修改原始 `train.csv`。Notebook 默认关闭模型、vLLM 和 GPU 执行；模型路径统一通过 `QWEN3_MODEL_PATH` 等环境变量提供。
+## 2026-11-06：三档任务替换与独立 Baseline（本轮）
+
+正式默认任务改为 Numeral System（`numeral_system`，Easy）、Gravity（Medium）、Equation Numeric（Hard）。Bit 保留高级扩展和历史记录，不进入新版数据或默认 Baseline。三类都计划参加 SFT；SFT 后再判断各类是否值得进入 RL，本轮未更改任何 RL 入口、算法或 Reward。02–06 和旧数据接口保持冻结，不自动读取本轮新版本。
+
+- `utils/prepare_official_dataset.py` 提前只读处理官方 `train.csv`，分发 `real_cleaned.csv` 和 `official_preparation_manifest.json`。`00_Baseline_Diagnosis.ipynb` 只读取维护者已清洗数据，负责三集合划分、泄漏审计与 Validation Baseline。新产物位于 `data/processed/tasksets/roman_gravity_equation_v1/`。重新计算保留 3,905 条：Numeral 1,576、Gravity 1,597、Equation Numeric 732；Train/Validation/Holdout 为 3,123/391/391，种子 42。数量来自实际文件。
+- Numeral 独立规范解析验证全部 6,222 条示例映射和 1,576 条目标答案；全部符合标准 Roman，观察范围 1–100。CPU 另穷举 1–3999 并覆盖非法/错值负样本。Numeric24 的符号前后缀保留，数值仍用官方容差；统一完成状态为 `official_nvidia_metric_v3`，截断回答不得取 Thinking 中间结果计分。
+- 跨集合 ID、精确/规范化 Prompt 重复均为 0。结构指纹碰撞单独报告；Numeral 的 Validation 158/158 Query 映射曾在 Train 示例中出现，另有 62 道题的 Query 映射在自身示例出现。此 IID 划分不声称未见映射泛化或完全无泄漏。
+- `01_Synthetic_Data_Engineering.ipynb` 默认关闭生成，按新版 Manifest 仅调度三类任务；独立版本目录保存小型 CPU Pilot，每类 5 条，15/15 通过，20/20 负样本与泄漏机制检查通过。该 Pilot 不进入 Baseline。Data Designer 本轮未运行。
+- GPU 预算校准与每类 50 条 Validation 的正式结果、完整输出、Token IDs、完成状态和设备显存记录集中在新版目录的 `baseline/roman_round1/`。本轮职责拆分及验收见 [修改报告](NOTEBOOK_REFACTOR_REPORT.md)，本次没有重跑 GPU。以阶段状态文件为准，历史 512-Token 截断结果继续保留，不作为本轮模型能力结论。
+
+以下为历史阶段记录，其旧任务集合、数据路径和未运行状态只适用于对应时间点。
+
+本仓库当前交付 `00_Baseline_Diagnosis.ipynb`、可选的 `01_Synthetic_Data_Engineering.ipynb` 及原编号的 02–06。核心教学算法继续位于 Notebook 中；官方 CSV 的维护者清洗工具迁至 `utils/prepare_official_dataset.py`。原始 `train.csv` 保持不变。Notebook 默认关闭模型、vLLM 和 GPU 执行；模型路径统一通过 `QWEN3_MODEL_PATH` 等环境变量提供。
+
+2026-11-06 的架构拆分与验收见 [NOTEBOOK_REFACTOR_REPORT.md](NOTEBOOK_REFACTOR_REPORT.md)。默认主线为 00 → 02 → 03 → 04–06；03 使用已验证真实 Train 轨迹，只有显式设置 `USE_SYNTHETIC_DATA=1` 才读取 `synthetic/audited/` 的 Accepted。下文保留拆分前的实验记录；其中历史 Notebook 01 同时承担的数据准备、Baseline 与合成职责，现分别由 00 和 01 承接。历史实验结果不代表本轮重跑了 GPU。
 
 ## 本轮真实 GPU Smoke 与截断诊断
 

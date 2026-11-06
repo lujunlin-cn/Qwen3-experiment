@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "dataset_version": "roman_gravity_equation_v1",
+  "rows": 3905,
+  "tasks": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "by_task": {
+    "gravity": 1597,
+    "numeral_system": 1576,
+    "equation_numeric": 732
+  },
+  "numeral_verifier": "passed",
+  "completion_rules": "passed",
+  "no_bit_rows": true,
+  "raw_sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa",
+  "gpu_enabled": false,
+  "scope": "CPU data and mechanisms only; GPU status stored separately"
+}

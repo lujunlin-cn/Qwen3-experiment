@@ -1,3 +1,5 @@
+> 架构更新（2026-11-06）：Baseline 已移至 `00_Baseline_Diagnosis.ipynb`；合成 Verifier 与 `RUN_TRAIN_ARTIFACT_AUDIT=1` 入口位于可选 `01_Synthetic_Data_Engineering.ipynb`，新复核报告保存于 `synthetic/audited/`。本指南中的历史 GPU 产物继续保留，不代表本轮重跑 GPU。
+
 # 第一轮 GPU Smoke：运行入口与诊断记录
 
 本轮设备由平台标称为 RTX 4080 32GB vGPU。实际查询得到 `NVIDIA GeForce RTX 4080 SUPER`、32760 MiB、Compute Capability 8.9，驱动 595.71.05，`Virtualization Mode: None`。这些信息不能确认物理改卡或平台虚拟化细节，也不能用于宣称 RTX 5090 性能。

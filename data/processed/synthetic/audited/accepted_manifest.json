@@ -1,0 +1,15 @@
+{
+  "schema_version": "nemotron-synthetic-accepted/v1",
+  "status": "passed",
+  "accepted_sha256": "b93872654e075e49698c4c1204e2a746aa9e334a7270ee6118f4f24e2a2fcd2a",
+  "accepted_rows": 275,
+  "audit_sha256": "e6154369d8ad545bf181301b735b8d3fa4cb9e2d646325b7976dd166c9e055f9",
+  "dataset_manifest_sha256": "f02fe5b9888150cf6a43547de308117cf368c6f4cded5068fa7f0708a493ba4b",
+  "split_sha256": {
+    "train": "0709833d0eb41c205e65b6d0b5a66cf3ec70cee80865b212e82d439b04d49da2",
+    "validation": "90e481bb5eebc6cc1637d355cd7b33f437398dea12a87151f953a5abb707bc12",
+    "holdout_test": "aebb7747271821d531ded5bf1de8fb497caac912dc78d01fb6c26ea10dabc9df"
+  },
+  "verifier_version": "synthetic_independent_verifier_v3",
+  "all_accepted_verified_and_audited": true
+}

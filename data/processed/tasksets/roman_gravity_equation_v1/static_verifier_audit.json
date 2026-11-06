@@ -1,0 +1,50 @@
+{
+  "00_Baseline_Diagnosis.ipynb": {
+    "code_cells": 17,
+    "verifier_direct_calls": {
+      "canonical_roman_to_int": [
+        "ValueError",
+        "enumerate",
+        "isinstance",
+        "len",
+        "sum"
+      ],
+      "verify_roman_number": [
+        "canonical_roman_to_int",
+        "int"
+      ],
+      "verify_completed_output": [
+        "bool",
+        "extract_final_answer",
+        "parse_numeral_prompt",
+        "verify_answer"
+      ]
+    },
+    "imports_vllm_at_top_level": false
+  },
+  "01_Synthetic_Data_Engineering.ipynb": {
+    "code_cells": 37,
+    "verifier_direct_calls": {
+      "canonical_roman_to_int": [
+        "ValueError",
+        "enumerate",
+        "isinstance",
+        "len",
+        "sum"
+      ],
+      "verify_roman_number": [
+        "canonical_roman_to_int",
+        "int"
+      ],
+      "verify_numeral_sample": [
+        "all",
+        "bool",
+        "parse_numeral_prompt",
+        "str",
+        "sum",
+        "verify_roman_number"
+      ]
+    },
+    "imports_vllm_at_top_level": false
+  }
+}

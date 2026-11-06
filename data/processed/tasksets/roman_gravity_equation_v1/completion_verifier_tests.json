@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "verifier_version": "official_nvidia_metric_v3",
+  "cases": [
+    {
+      "task": "numeral_system",
+      "finish_reason": "stop",
+      "expected_correct": true,
+      "passed": true
+    },
+    {
+      "task": "numeral_system",
+      "finish_reason": "length",
+      "expected_correct": false,
+      "passed": true
+    },
+    {
+      "task": "numeral_system",
+      "finish_reason": "stop",
+      "expected_correct": false,
+      "passed": true
+    },
+    {
+      "task": "gravity",
+      "finish_reason": "length",
+      "expected_correct": false,
+      "passed": true
+    },
+    {
+      "task": "gravity",
+      "finish_reason": "stop",
+      "expected_correct": true,
+      "passed": true
+    },
+    {
+      "task": "equation_numeric",
+      "finish_reason": "stop",
+      "expected_correct": true,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "mode": "pilot",
+  "seed": 42,
+  "requested_candidates_per_task": 5,
+  "generated": 15,
+  "accepted": 15,
+  "rejected": 0,
+  "generation_failures": 0,
+  "by_task": {
+    "equation_numeric": {
+      "candidates": 5,
+      "accepted": 5,
+      "rejected": 0,
+      "acceptance_rate": 1.0,
+      "rejection_reasons": {}
+    },
+    "gravity": {
+      "candidates": 5,
+      "accepted": 5,
+      "rejected": 0,
+      "acceptance_rate": 1.0,
+      "rejection_reasons": {}
+    },
+    "numeral_system": {
+      "candidates": 5,
+      "accepted": 5,
+      "rejected": 0,
+      "acceptance_rate": 1.0,
+      "rejection_reasons": {}
+    }
+  },
+  "deduce_guess_counts": {
+    "deduce": 15
+  },
+  "deduce_guess_by_task": {
+    "equation_numeric": {
+      "deduce": 5
+    },
+    "gravity": {
+      "deduce": 5
+    },
+    "numeral_system": {
+      "deduce": 5
+    }
+  },
+  "guess_subtype_counts": {
+    "deduce": 15
+  },
+  "rule_coverage": {
+    "equation_numeric": {
+      "absdiff": 2,
+      "add_m1": 2,
+      "mul_p1": 2,
+      "join": 1,
+      "flip_sub_prefix": 1,
+      "flip_add_m1": 1,
+      "flip_mul": 1,
+      "join_swap": 4,
+      "mul": 1,
+      "maxmodmin": 1,
+      "add": 1,
+      "flip_maxmodmin": 1,
+      "flip_add_p1": 1,
+      "flip_mul_p1": 1
+    },
+    "bit_operations": {},
+    "gravity_g_unique": [
+      "10.019530219076534",
+      "13.12043757710489",
+      "5.4286581785972405",
+      "6.482255453548239",
+      "8.724868862100394"
+    ]
+  },
+  "rejection_reasons": {},
+  "duplicate_audit": {
+    "exact_duplicate_rows": 0,
+    "normalized_duplicate_rows": 0,
+    "structure_duplicate_rows": 4
+  },
+  "real_cross_collection_audit": {
+    "schema_version": "nemotron-synthetic-leakage/v2",
+    "candidate_count": 15,
+    "passed": 15,
+    "rejected": 0,
+    "source_split_counts": {
+      "holdout_test": 391,
+      "train": 3123,
+      "validation": 391
+    },
+    "by_split": {
+      "train": {
+        "exact": 0,
+        "normalized": 0,
+        "source_id": 0,
+        "source_row": 0,
+        "structure": 0
+      },
+      "validation": {
+        "exact": 0,
+        "normalized": 0,
+        "source_id": 0,
+        "source_row": 0,
+        "structure": 0
+      },
+      "holdout_test": {
+        "exact": 0,
+        "normalized": 0,
+        "source_id": 0,
+        "source_row": 0,
+        "structure": 0
+      }
+    },
+    "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+    "split_sha256": {
+      "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+      "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+      "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+    },
+    "policy": "real duplicate or declared real lineage rejected; structure similarity reported only",
+    "validation_holdout_answers_read": false,
+    "lineage_unavailable": 15
+  },
+  "data_designer": {
+    "status": "skipped_by_default",
+    "reason": "RUN_DATA_DESIGNER_PREVIEW=False"
+  },
+  "artifacts": {
+    "synthetic_candidates.jsonl": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/cpu_pilot_v2/synthetic_candidates.jsonl",
+    "synthetic_accepted.jsonl": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/cpu_pilot_v2/synthetic_accepted.jsonl",
+    "synthetic_rejected.jsonl": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/cpu_pilot_v2/synthetic_rejected.jsonl",
+    "synthetic_screening.csv": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/cpu_pilot_v2/synthetic_screening.csv",
+    "synthetic_real_leakage_audit.json": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/cpu_pilot_v2/synthetic_real_leakage_audit.json",
+    "synthetic_real_leakage_audit.csv": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/cpu_pilot_v2/synthetic_real_leakage_audit.csv",
+    "generation_metadata.json": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/cpu_pilot_v2/generation_metadata.json"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "scope": "CPU only; separate GPU phase status files hold model results",
+  "notebooks": {
+    "00": {
+      "json": "passed",
+      "ast": "passed",
+      "sequential_cpu": "passed"
+    },
+    "01": {
+      "json": "passed",
+      "ast": "passed",
+      "sequential_default": "passed",
+      "pilot_candidates_per_task": 5,
+      "pilot_total": 15,
+      "pilot_accepted": 15,
+      "negative_tests_passed": 20,
+      "negative_tests_total": 20,
+      "latest_pilot_path": "synthetic/cpu_pilot_v2",
+      "fingerprint_alignment_rows": 3905,
+      "verifier_version": "synthetic_independent_verifier_v4"
+    }
+  },
+  "training_algorithms_edited": false,
+  "original_csv_sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa",
+  "gpu_claimed_by_cpu_report": false
+}

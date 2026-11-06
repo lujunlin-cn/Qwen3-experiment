@@ -1,0 +1,116 @@
+{
+  "status": "passed",
+  "scope": "Numeral taskset; official data preparation outside 00; CPU kernels only",
+  "tasks": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "scenarios": [
+    {
+      "scenario": "00-cleaned-input-only",
+      "status": "passed",
+      "seconds": 1.67,
+      "code_cells": 18
+    },
+    {
+      "scenario": "00-idempotent-rerun",
+      "status": "passed",
+      "seconds": 1.57,
+      "code_cells": 17
+    },
+    {
+      "scenario": "existing_artifacts_byte_identical",
+      "status": "passed",
+      "artifacts": 10
+    },
+    {
+      "scenario": "01-independent-optional-default",
+      "status": "passed",
+      "seconds": 1.78,
+      "code_cells": 37
+    },
+    {
+      "scenario": "01-independent-audited-pilot",
+      "status": "passed",
+      "seconds": 1.78,
+      "code_cells": 38
+    }
+  ],
+  "split_counts": {
+    "train": 3123,
+    "validation": 391,
+    "holdout_test": 391
+  },
+  "maintainer_prepared_files_byte_identical": true,
+  "existing_split_manifest_protocol_byte_identical": true,
+  "raw_csv_or_utils_available_to_notebook": false,
+  "gpu_rerun": false,
+  "source_sha256": {
+    "00_Baseline_Diagnosis.ipynb": "1b66da8f549c585d627983ef7e1a52377350baba27856a03ddcf56532ebb2e5e",
+    "01_Synthetic_Data_Engineering.ipynb": "b003cc920607154b4d5d69393562c5921298aeb735918834138ab60057c24d0e",
+    "utils/prepare_official_dataset.py": "0a8310b0023c540ca388f71174f4ed55bff12065465ebc6c309e6cc29201a61c"
+  },
+  "legacy_sft_checks": [
+    {
+      "scenario": "03-legacy-real_only",
+      "status": "passed",
+      "seconds": 3.53,
+      "source_sha256": "edb0484998ba4ecb34850359277984f68c7a28da8355a2695ab1721e2dcbd28a"
+    },
+    {
+      "scenario": "03-legacy-augmented",
+      "status": "passed",
+      "seconds": 3.19,
+      "source_sha256": "edb0484998ba4ecb34850359277984f68c7a28da8355a2695ab1721e2dcbd28a"
+    }
+  ],
+  "preservation": {
+    "retained_function_count": 28,
+    "retained_functions": [
+      "_execute_batches",
+      "_inference_plan",
+      "_sample_nvidia_smi_memory",
+      "arabic_to_roman",
+      "boxed_values",
+      "canonical_roman_to_int",
+      "choose_task_budgets",
+      "cross_split_duplicate_counts",
+      "extract_final_answer",
+      "jsonl_text",
+      "make_stratified_split",
+      "metric_group",
+      "normalize_answer_text",
+      "normalize_prompt",
+      "official_numeric_match",
+      "parse_numeral_prompt",
+      "prompt_hash",
+      "render_qwen3_prompt",
+      "result_record",
+      "run_gpu_phase",
+      "save_json_once",
+      "sha256",
+      "structure_fingerprint",
+      "summarize_baseline_records",
+      "verify_answer",
+      "verify_completed_output",
+      "verify_roman_number",
+      "write_once"
+    ],
+    "classifier_unchanged": true,
+    "old_artifacts_checked": 217,
+    "old_artifacts_changed": []
+  },
+  "notebook_sha256": {
+    "03_SFT.ipynb": "edb0484998ba4ecb34850359277984f68c7a28da8355a2695ab1721e2dcbd28a",
+    "04_DPO.ipynb": "4dd61624570eeff6221acdc8b9ffc663dad118f31c633adb780a30e82d05f702",
+    "00_Baseline_Diagnosis.ipynb": "1b66da8f549c585d627983ef7e1a52377350baba27856a03ddcf56532ebb2e5e",
+    "05_PPO.ipynb": "9dad218fc11c12a1798cf429ad1b4ecb87955691d98a31888472af0881e12a38",
+    "01_Synthetic_Data_Engineering.ipynb": "b003cc920607154b4d5d69393562c5921298aeb735918834138ab60057c24d0e",
+    "02_Prompt_Engineering.ipynb": "474ab17e1bfb6185dc1db66c722b53f3842425b19bb68d63a1e7c9130bcd8be6",
+    "06_GRPO.ipynb": "6efca6ecf36e67050d506041a2b883d8e0bb462d925b684188458352a50e8373"
+  },
+  "maintainer_manifest_sha256": "66a9d68637a127609c563e00a51ddc8e8b52ccdbd46ea8262b2870f894d7b964",
+  "official_source_sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa",
+  "concurrent_version_decision": "User confirmed Numeral taskset; only official preprocessing moved out of 00"
+}

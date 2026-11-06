@@ -1,0 +1,28 @@
+{
+  "schema_version": "nemotron-course-synthetic/v3",
+  "seed": 42,
+  "generated_at_utc": "2026-11-06T09:56:38.324765+00:00",
+  "requested_candidates_per_task": 100,
+  "task_order": [
+    "gravity",
+    "equation_numeric",
+    "bit_manipulation"
+  ],
+  "generator_version": "nemotron-synthetic-v3",
+  "generator_is_one_shot": true,
+  "train_prior_only": true,
+  "validation_or_holdout_used_for_generation": false,
+  "all_splits_used_for_leakage_audit": true,
+  "generation_failures": [],
+  "data_designer": {
+    "status": "skipped_by_default",
+    "reason": "RUN_DATA_DESIGNER_PREVIEW=False"
+  },
+  "data_designer_official_api": {
+    "package": "data-designer",
+    "model_provider": "ModelProvider(provider_type='openai', endpoint='http://127.0.0.1:8000/v1', api_key=None)",
+    "seed_api": "LocalFileSeedSource + DataDesignerConfigBuilder.with_seed_dataset",
+    "preview_api": "DataDesigner.preview(config_builder=..., num_records=...)"
+  },
+  "raw_candidate_artifact": "data/processed/synthetic/audited/synthetic_candidates.jsonl"
+}

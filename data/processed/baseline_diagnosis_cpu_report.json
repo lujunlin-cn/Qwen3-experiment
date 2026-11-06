@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "rows": 3931,
+  "baseline_split": "validation",
+  "run_baseline": false,
+  "baseline_status": "skipped_by_default",
+  "synthetic_required": false,
+  "verifier_version": "official_nvidia_metric_v3"
+}

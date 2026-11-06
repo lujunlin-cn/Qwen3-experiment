@@ -1,0 +1,52 @@
+{
+  "interpretation": "structure similarity only; not proof of shared source or answer leakage",
+  "preserved_information": "task words and Equation operators; numeric literal widths retained for Equation",
+  "group_key": "unavailable",
+  "structural_ood": "not_claimed",
+  "counts": {
+    "duplicate_keys": 8,
+    "rows_in_cross_split_keys": 3177,
+    "examples": [
+      {
+        "key": "0bf5753b1d22c8bb81778c3cd799f0c70257f2694ae62d18db28f5fb37089a70",
+        "splits": [
+          "holdout_test",
+          "train",
+          "validation"
+        ]
+      },
+      {
+        "key": "1ad5335972935395ff8e3f14d6e0389bfba3f4f2d4e9fe5ac664c1239a289e6f",
+        "splits": [
+          "holdout_test",
+          "train",
+          "validation"
+        ]
+      },
+      {
+        "key": "24fb1b6a04aafce453fbab840305602195b68e9266ea0f8c2adb9478c7289d8b",
+        "splits": [
+          "holdout_test",
+          "train",
+          "validation"
+        ]
+      },
+      {
+        "key": "5eca1c2e174f84e6c7aa1d9ee4a4d9e7d9383c0adc9ae78a3412a0d6a17c9ad2",
+        "splits": [
+          "holdout_test",
+          "train",
+          "validation"
+        ]
+      },
+      {
+        "key": "74c56117797d431d47211617d9fbe1867dc496e4556be4dd7d56a7ed1e19f3bb",
+        "splits": [
+          "holdout_test",
+          "train",
+          "validation"
+        ]
+      }
+    ]
+  }
+}

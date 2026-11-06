@@ -1,0 +1,61 @@
+{
+  "raw": {
+    "rows": 9500,
+    "columns": [
+      "id",
+      "prompt",
+      "answer"
+    ],
+    "dtypes": {
+      "id": "str",
+      "prompt": "str",
+      "answer": "str"
+    },
+    "missing": {
+      "id": 0,
+      "prompt": 0,
+      "answer": 0
+    },
+    "empty": {
+      "id": 0,
+      "prompt": 0,
+      "answer": 0
+    },
+    "duplicate_id_rows": 0,
+    "duplicate_prompt_rows": 0,
+    "sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa"
+  },
+  "classification_counts": {
+    "bit_manipulation": 1602,
+    "gravity": 1597,
+    "unit_conversion": 1594,
+    "encryption": 1576,
+    "numeral_system": 1576,
+    "equation_symbolic": 823,
+    "equation_numeric": 732
+  },
+  "cleaned_rows": 3905,
+  "cleaned_by_task": {
+    "gravity": 1597,
+    "numeral_system": 1576,
+    "equation_numeric": 732
+  },
+  "split_counts": {
+    "holdout_test": {
+      "equation_numeric": 73,
+      "gravity": 160,
+      "numeral_system": 158
+    },
+    "train": {
+      "equation_numeric": 586,
+      "gravity": 1277,
+      "numeral_system": 1260
+    },
+    "validation": {
+      "equation_numeric": 73,
+      "gravity": 160,
+      "numeral_system": 158
+    }
+  },
+  "unknown_rows": 0
+}

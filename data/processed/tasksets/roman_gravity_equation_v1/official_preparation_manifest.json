@@ -1,0 +1,66 @@
+{
+  "schema_version": "nemotron-official-preparation/v1",
+  "prepared_by": "maintainer",
+  "tasks": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "source": {
+    "path": "train.csv",
+    "sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa",
+    "rows": 9500
+  },
+  "raw": {
+    "rows": 9500,
+    "columns": [
+      "id",
+      "prompt",
+      "answer"
+    ],
+    "dtypes": {
+      "id": "str",
+      "prompt": "str",
+      "answer": "str"
+    },
+    "missing": {
+      "id": 0,
+      "prompt": 0,
+      "answer": 0
+    },
+    "empty": {
+      "id": 0,
+      "prompt": 0,
+      "answer": 0
+    },
+    "duplicate_id_rows": 0,
+    "duplicate_prompt_rows": 0,
+    "sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa"
+  },
+  "classification_counts": {
+    "bit_manipulation": 1602,
+    "gravity": 1597,
+    "unit_conversion": 1594,
+    "encryption": 1576,
+    "numeral_system": 1576,
+    "equation_symbolic": 823,
+    "equation_numeric": 732
+  },
+  "unknown_rows": 0,
+  "cleaned_rows": 3905,
+  "cleaned_by_task": {
+    "gravity": 1597,
+    "numeral_system": 1576,
+    "equation_numeric": 732
+  },
+  "numeral_mapping": {
+    "example_count": 6222,
+    "query_count": 1576,
+    "all_valid": true
+  },
+  "files": {
+    "real_cleaned.csv": "eecbf3a9ca58db6dbeaad3579a90342897ffadeb5a0954efa53306752cd16f50",
+    "classification_audit.csv": "21a15626849f3d8a194b4a8181a849f8e77e66642a1c2e4c2aa0d391d0d4442b",
+    "numeral_mapping_audit.csv": "45e6ef5a2baf76923e4f111a4969ebe669c25976525df4e5620326589c101887"
+  }
+}

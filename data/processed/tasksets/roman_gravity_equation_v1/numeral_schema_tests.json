@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "arabic": 1,
+      "roman": "I",
+      "expected_valid": true,
+      "passed": true
+    },
+    {
+      "arabic": "001",
+      "roman": "I",
+      "expected_valid": true,
+      "passed": true
+    },
+    {
+      "arabic": 1.2,
+      "roman": "I",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "arabic": true,
+      "roman": "I",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "arabic": -1,
+      "roman": "I",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "arabic": 0,
+      "roman": "",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "arabic": 4000,
+      "roman": "MMMM",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "arabic": 9,
+      "roman": "VIIII",
+      "expected_valid": false,
+      "passed": true
+    }
+  ]
+}

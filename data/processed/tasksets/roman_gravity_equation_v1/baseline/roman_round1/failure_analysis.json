@@ -1,0 +1,21 @@
+{
+  "scope": "all fixed evaluation records; no resampling or extra budget after evaluation",
+  "by_task": {
+    "numeral_system": {
+      "completed_correct": 46,
+      "truncated_before_think_end": 2,
+      "truncated_after_think_end": 2
+    },
+    "gravity": {
+      "truncated_before_think_end": 10,
+      "completed_correct": 34,
+      "truncated_after_think_end": 6
+    },
+    "equation_numeric": {
+      "completed_wrong": 19,
+      "completed_correct": 19,
+      "truncated_before_think_end": 9,
+      "truncated_after_think_end": 3
+    }
+  }
+}

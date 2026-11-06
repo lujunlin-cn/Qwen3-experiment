@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "verifier": "independent_canonical_parser",
+  "exhaustive_roundtrip_cases": 3999,
+  "official_examples": 6222,
+  "official_query_answers": 1576,
+  "all_official_mappings_valid": true,
+  "negative_cases": [
+    {
+      "case": "noncanonical",
+      "value": "",
+      "passed": true
+    },
+    {
+      "case": "noncanonical",
+      "value": "IIII",
+      "passed": true
+    },
+    {
+      "case": "noncanonical",
+      "value": "VV",
+      "passed": true
+    },
+    {
+      "case": "noncanonical",
+      "value": "IL",
+      "passed": true
+    },
+    {
+      "case": "noncanonical",
+      "value": "IC",
+      "passed": true
+    },
+    {
+      "case": "noncanonical",
+      "value": "VX",
+      "passed": true
+    },
+    {
+      "case": "noncanonical",
+      "value": "IIV",
+      "passed": true
+    },
+    {
+      "case": "noncanonical",
+      "value": "MMMM",
+      "passed": true
+    },
+    {
+      "case": "noncanonical",
+      "value": "xiv",
+      "passed": true
+    },
+    {
+      "case": "noncanonical",
+      "value": "12",
+      "passed": true
+    },
+    {
+      "case": "noncanonical",
+      "value": "X X",
+      "passed": true
+    },
+    {
+      "case": "wrong_number",
+      "value": "VI",
+      "passed": true
+    },
+    {
+      "case": "wrong_number",
+      "value": "XI",
+      "passed": true
+    },
+    {
+      "case": "wrong_number",
+      "value": "XC",
+      "passed": true
+    }
+  ]
+}

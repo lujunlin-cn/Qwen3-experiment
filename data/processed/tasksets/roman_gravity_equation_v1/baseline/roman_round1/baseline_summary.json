@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "records": 150,
+  "accuracy": 0.66,
+  "answer_extraction_success_rate": 0.7866666666666666,
+  "invalid_output_rate": 0.21333333333333335,
+  "truncation_rate": 0.21333333333333335,
+  "average_generation_tokens": 7056.38,
+  "average_amortized_inference_time_seconds": 22.55236004559944,
+  "generation_wall_time_seconds": 3382.854006839916,
+  "output_tokens": 1058457,
+  "output_token_throughput": 312.88876134171534,
+  "overall_accuracy_sample_weighted": 0.66,
+  "macro_accuracy": 0.66,
+  "by_task": {
+    "numeral_system": {
+      "records": 50,
+      "accuracy": 0.92,
+      "answer_extraction_success_rate": 0.92,
+      "invalid_output_rate": 0.08,
+      "truncation_rate": 0.08,
+      "average_generation_tokens": 2286.22,
+      "average_amortized_inference_time_seconds": 6.13553220629692,
+      "generation_wall_time_seconds": 306.77661031484604,
+      "output_tokens": 114311,
+      "output_token_throughput": 372.6196722842793
+    },
+    "gravity": {
+      "records": 50,
+      "accuracy": 0.68,
+      "answer_extraction_success_rate": 0.68,
+      "invalid_output_rate": 0.32,
+      "truncation_rate": 0.32,
+      "average_generation_tokens": 6884.92,
+      "average_amortized_inference_time_seconds": 18.620306166373194,
+      "generation_wall_time_seconds": 931.0153083186597,
+      "output_tokens": 344246,
+      "output_token_throughput": 369.7533186878325
+    },
+    "equation_numeric": {
+      "records": 50,
+      "accuracy": 0.38,
+      "answer_extraction_success_rate": 0.76,
+      "invalid_output_rate": 0.24,
+      "truncation_rate": 0.24,
+      "average_generation_tokens": 11998.0,
+      "average_amortized_inference_time_seconds": 42.90124176412821,
+      "generation_wall_time_seconds": 2145.0620882064104,
+      "output_tokens": 599900,
+      "output_token_throughput": 279.6655645998598
+    }
+  },
+  "gpu_device_peak_memory_mib": 27659.0,
+  "results_sha256": "bade1a1f889c9651a79ba55a9f5a606a3454939cd4dcd1b11d953bab8de28881",
+  "evaluation_split": "validation"
+}

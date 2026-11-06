@@ -1,0 +1,30 @@
+{
+  "schema_version": "nemotron-course-synthetic/v3",
+  "seed": 42,
+  "generated_at_utc": "2026-11-06T10:14:38.094824+00:00",
+  "dataset_version": "roman_gravity_equation_v1",
+  "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+  "requested_candidates_per_task": 5,
+  "task_order": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "generator_version": "nemotron-synthetic-taskset-v4",
+  "generator_is_one_shot": true,
+  "train_prior_only": true,
+  "validation_or_holdout_used_for_generation": false,
+  "all_splits_used_for_leakage_audit": true,
+  "generation_failures": [],
+  "data_designer": {
+    "status": "skipped_by_default",
+    "reason": "RUN_DATA_DESIGNER_PREVIEW=False"
+  },
+  "data_designer_official_api": {
+    "package": "data-designer",
+    "model_provider": "ModelProvider(provider_type='openai', endpoint='http://127.0.0.1:8000/v1', api_key=None)",
+    "seed_api": "LocalFileSeedSource + DataDesignerConfigBuilder.with_seed_dataset",
+    "preview_api": "DataDesigner.preview(config_builder=..., num_records=...)"
+  },
+  "raw_candidate_artifact": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/cpu_pilot_v1/synthetic_candidates.jsonl"
+}

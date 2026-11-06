@@ -1,0 +1,2133 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "answer": "17/",
+      "passed": true
+    },
+    {
+      "answer": "6644",
+      "passed": true
+    },
+    {
+      "answer": "631",
+      "passed": true
+    },
+    {
+      "answer": "61",
+      "passed": true
+    },
+    {
+      "answer": "32",
+      "passed": true
+    },
+    {
+      "answer": "2891",
+      "passed": true
+    },
+    {
+      "answer": "2596",
+      "passed": true
+    },
+    {
+      "answer": "1499",
+      "passed": true
+    },
+    {
+      "answer": "731",
+      "passed": true
+    },
+    {
+      "answer": "-35",
+      "passed": true
+    },
+    {
+      "answer": "*53",
+      "passed": true
+    },
+    {
+      "answer": "1031",
+      "passed": true
+    },
+    {
+      "answer": "-62",
+      "passed": true
+    },
+    {
+      "answer": "93",
+      "passed": true
+    },
+    {
+      "answer": "401",
+      "passed": true
+    },
+    {
+      "answer": "88",
+      "passed": true
+    },
+    {
+      "answer": "182",
+      "passed": true
+    },
+    {
+      "answer": "48",
+      "passed": true
+    },
+    {
+      "answer": "43",
+      "passed": true
+    },
+    {
+      "answer": "10",
+      "passed": true
+    },
+    {
+      "answer": "138",
+      "passed": true
+    },
+    {
+      "answer": "{17",
+      "passed": true
+    },
+    {
+      "answer": "9814",
+      "passed": true
+    },
+    {
+      "answer": "2376",
+      "passed": true
+    },
+    {
+      "answer": "159",
+      "passed": true
+    },
+    {
+      "answer": "1162",
+      "passed": true
+    },
+    {
+      "answer": "77",
+      "passed": true
+    },
+    {
+      "answer": "-47",
+      "passed": true
+    },
+    {
+      "answer": "0271",
+      "passed": true
+    },
+    {
+      "answer": "41",
+      "passed": true
+    },
+    {
+      "answer": "221",
+      "passed": true
+    },
+    {
+      "answer": "1",
+      "passed": true
+    },
+    {
+      "answer": "951",
+      "passed": true
+    },
+    {
+      "answer": "4447",
+      "passed": true
+    },
+    {
+      "answer": "-6",
+      "passed": true
+    },
+    {
+      "answer": "-85",
+      "passed": true
+    },
+    {
+      "answer": "-73",
+      "passed": true
+    },
+    {
+      "answer": "582",
+      "passed": true
+    },
+    {
+      "answer": "96",
+      "passed": true
+    },
+    {
+      "answer": "5935",
+      "passed": true
+    },
+    {
+      "answer": "671",
+      "passed": true
+    },
+    {
+      "answer": "2475",
+      "passed": true
+    },
+    {
+      "answer": "2322",
+      "passed": true
+    },
+    {
+      "answer": "35",
+      "passed": true
+    },
+    {
+      "answer": "1554",
+      "passed": true
+    },
+    {
+      "answer": "0782",
+      "passed": true
+    },
+    {
+      "answer": "851",
+      "passed": true
+    },
+    {
+      "answer": "52",
+      "passed": true
+    },
+    {
+      "answer": "134",
+      "passed": true
+    },
+    {
+      "answer": "0",
+      "passed": true
+    },
+    {
+      "answer": "3001",
+      "passed": true
+    },
+    {
+      "answer": "108",
+      "passed": true
+    },
+    {
+      "answer": "03!",
+      "passed": true
+    },
+    {
+      "answer": "993",
+      "passed": true
+    },
+    {
+      "answer": "8610",
+      "passed": true
+    },
+    {
+      "answer": "6314",
+      "passed": true
+    },
+    {
+      "answer": "6163",
+      "passed": true
+    },
+    {
+      "answer": "511",
+      "passed": true
+    },
+    {
+      "answer": "598",
+      "passed": true
+    },
+    {
+      "answer": "72",
+      "passed": true
+    },
+    {
+      "answer": "1332",
+      "passed": true
+    },
+    {
+      "answer": "31",
+      "passed": true
+    },
+    {
+      "answer": "483",
+      "passed": true
+    },
+    {
+      "answer": "8002",
+      "passed": true
+    },
+    {
+      "answer": "14",
+      "passed": true
+    },
+    {
+      "answer": "1564",
+      "passed": true
+    },
+    {
+      "answer": "051",
+      "passed": true
+    },
+    {
+      "answer": "23",
+      "passed": true
+    },
+    {
+      "answer": "2815",
+      "passed": true
+    },
+    {
+      "answer": "101",
+      "passed": true
+    },
+    {
+      "answer": "171",
+      "passed": true
+    },
+    {
+      "answer": "2976",
+      "passed": true
+    },
+    {
+      "answer": "-25",
+      "passed": true
+    },
+    {
+      "answer": "@9",
+      "passed": true
+    },
+    {
+      "answer": "081",
+      "passed": true
+    },
+    {
+      "answer": "7",
+      "passed": true
+    },
+    {
+      "answer": "4012",
+      "passed": true
+    },
+    {
+      "answer": "79",
+      "passed": true
+    },
+    {
+      "answer": "03",
+      "passed": true
+    },
+    {
+      "answer": "901",
+      "passed": true
+    },
+    {
+      "answer": "99",
+      "passed": true
+    },
+    {
+      "answer": "36",
+      "passed": true
+    },
+    {
+      "answer": "0374",
+      "passed": true
+    },
+    {
+      "answer": "140",
+      "passed": true
+    },
+    {
+      "answer": "55",
+      "passed": true
+    },
+    {
+      "answer": "92",
+      "passed": true
+    },
+    {
+      "answer": "6221",
+      "passed": true
+    },
+    {
+      "answer": "741",
+      "passed": true
+    },
+    {
+      "answer": "3341",
+      "passed": true
+    },
+    {
+      "answer": "835",
+      "passed": true
+    },
+    {
+      "answer": "7541",
+      "passed": true
+    },
+    {
+      "answer": "9302",
+      "passed": true
+    },
+    {
+      "answer": "75",
+      "passed": true
+    },
+    {
+      "answer": "20",
+      "passed": true
+    },
+    {
+      "answer": "16",
+      "passed": true
+    },
+    {
+      "answer": "701",
+      "passed": true
+    },
+    {
+      "answer": "&52",
+      "passed": true
+    },
+    {
+      "answer": "6821",
+      "passed": true
+    },
+    {
+      "answer": "9264",
+      "passed": true
+    },
+    {
+      "answer": "-05",
+      "passed": true
+    },
+    {
+      "answer": "5233",
+      "passed": true
+    },
+    {
+      "answer": "07",
+      "passed": true
+    },
+    {
+      "answer": "-15",
+      "passed": true
+    },
+    {
+      "answer": "3585",
+      "passed": true
+    },
+    {
+      "answer": "0621",
+      "passed": true
+    },
+    {
+      "answer": "1867",
+      "passed": true
+    },
+    {
+      "answer": "7141",
+      "passed": true
+    },
+    {
+      "answer": "01",
+      "passed": true
+    },
+    {
+      "answer": "147",
+      "passed": true
+    },
+    {
+      "answer": "041",
+      "passed": true
+    },
+    {
+      "answer": "76",
+      "passed": true
+    },
+    {
+      "answer": "\"12",
+      "passed": true
+    },
+    {
+      "answer": "3913",
+      "passed": true
+    },
+    {
+      "answer": "44",
+      "passed": true
+    },
+    {
+      "answer": "444",
+      "passed": true
+    },
+    {
+      "answer": "124",
+      "passed": true
+    },
+    {
+      "answer": "-72",
+      "passed": true
+    },
+    {
+      "answer": "0864",
+      "passed": true
+    },
+    {
+      "answer": "66",
+      "passed": true
+    },
+    {
+      "answer": "3",
+      "passed": true
+    },
+    {
+      "answer": "1171",
+      "passed": true
+    },
+    {
+      "answer": "98",
+      "passed": true
+    },
+    {
+      "answer": "04`",
+      "passed": true
+    },
+    {
+      "answer": "128",
+      "passed": true
+    },
+    {
+      "answer": "4284",
+      "passed": true
+    },
+    {
+      "answer": "421",
+      "passed": true
+    },
+    {
+      "answer": "2640",
+      "passed": true
+    },
+    {
+      "answer": "9525",
+      "passed": true
+    },
+    {
+      "answer": "4602",
+      "passed": true
+    },
+    {
+      "answer": "121",
+      "passed": true
+    },
+    {
+      "answer": "7560",
+      "passed": true
+    },
+    {
+      "answer": "2101",
+      "passed": true
+    },
+    {
+      "answer": "8483",
+      "passed": true
+    },
+    {
+      "answer": "0092",
+      "passed": true
+    },
+    {
+      "answer": "5146",
+      "passed": true
+    },
+    {
+      "answer": "5185",
+      "passed": true
+    },
+    {
+      "answer": "/19",
+      "passed": true
+    },
+    {
+      "answer": "5017",
+      "passed": true
+    },
+    {
+      "answer": "46",
+      "passed": true
+    },
+    {
+      "answer": "-9",
+      "passed": true
+    },
+    {
+      "answer": "'54",
+      "passed": true
+    },
+    {
+      "answer": "6651",
+      "passed": true
+    },
+    {
+      "answer": "8",
+      "passed": true
+    },
+    {
+      "answer": "0592",
+      "passed": true
+    },
+    {
+      "answer": "3285",
+      "passed": true
+    },
+    {
+      "answer": "501",
+      "passed": true
+    },
+    {
+      "answer": "641",
+      "passed": true
+    },
+    {
+      "answer": "1065",
+      "passed": true
+    },
+    {
+      "answer": "321",
+      "passed": true
+    },
+    {
+      "answer": "9351",
+      "passed": true
+    },
+    {
+      "answer": "615",
+      "passed": true
+    },
+    {
+      "answer": "2",
+      "passed": true
+    },
+    {
+      "answer": "601",
+      "passed": true
+    },
+    {
+      "answer": "-51",
+      "passed": true
+    },
+    {
+      "answer": "3964",
+      "passed": true
+    },
+    {
+      "answer": "696",
+      "passed": true
+    },
+    {
+      "answer": "1483",
+      "passed": true
+    },
+    {
+      "answer": "7963",
+      "passed": true
+    },
+    {
+      "answer": "3032",
+      "passed": true
+    },
+    {
+      "answer": "1243",
+      "passed": true
+    },
+    {
+      "answer": "127",
+      "passed": true
+    },
+    {
+      "answer": "9318",
+      "passed": true
+    },
+    {
+      "answer": "-92",
+      "passed": true
+    },
+    {
+      "answer": "2214",
+      "passed": true
+    },
+    {
+      "answer": "881",
+      "passed": true
+    },
+    {
+      "answer": "91",
+      "passed": true
+    },
+    {
+      "answer": "6461",
+      "passed": true
+    },
+    {
+      "answer": "4572",
+      "passed": true
+    },
+    {
+      "answer": "64",
+      "passed": true
+    },
+    {
+      "answer": "5913",
+      "passed": true
+    },
+    {
+      "answer": "5011",
+      "passed": true
+    },
+    {
+      "answer": "119",
+      "passed": true
+    },
+    {
+      "answer": "6",
+      "passed": true
+    },
+    {
+      "answer": "111",
+      "passed": true
+    },
+    {
+      "answer": "104",
+      "passed": true
+    },
+    {
+      "answer": "-12",
+      "passed": true
+    },
+    {
+      "answer": "22",
+      "passed": true
+    },
+    {
+      "answer": "4796",
+      "passed": true
+    },
+    {
+      "answer": "53",
+      "passed": true
+    },
+    {
+      "answer": "39",
+      "passed": true
+    },
+    {
+      "answer": "#52",
+      "passed": true
+    },
+    {
+      "answer": "1396",
+      "passed": true
+    },
+    {
+      "answer": "27",
+      "passed": true
+    },
+    {
+      "answer": "681",
+      "passed": true
+    },
+    {
+      "answer": "47",
+      "passed": true
+    },
+    {
+      "answer": "5705",
+      "passed": true
+    },
+    {
+      "answer": "17",
+      "passed": true
+    },
+    {
+      "answer": "1455",
+      "passed": true
+    },
+    {
+      "answer": "1913",
+      "passed": true
+    },
+    {
+      "answer": "67",
+      "passed": true
+    },
+    {
+      "answer": "0774",
+      "passed": true
+    },
+    {
+      "answer": "[4",
+      "passed": true
+    },
+    {
+      "answer": "63",
+      "passed": true
+    },
+    {
+      "answer": "-20",
+      "passed": true
+    },
+    {
+      "answer": "08",
+      "passed": true
+    },
+    {
+      "answer": "&42",
+      "passed": true
+    },
+    {
+      "answer": "7434",
+      "passed": true
+    },
+    {
+      "answer": "107",
+      "passed": true
+    },
+    {
+      "answer": "7601",
+      "passed": true
+    },
+    {
+      "answer": "819",
+      "passed": true
+    },
+    {
+      "answer": "611",
+      "passed": true
+    },
+    {
+      "answer": "83",
+      "passed": true
+    },
+    {
+      "answer": "1935",
+      "passed": true
+    },
+    {
+      "answer": "86",
+      "passed": true
+    },
+    {
+      "answer": "38",
+      "passed": true
+    },
+    {
+      "answer": "351",
+      "passed": true
+    },
+    {
+      "answer": "5022",
+      "passed": true
+    },
+    {
+      "answer": "6554",
+      "passed": true
+    },
+    {
+      "answer": "62",
+      "passed": true
+    },
+    {
+      "answer": "$85",
+      "passed": true
+    },
+    {
+      "answer": "931",
+      "passed": true
+    },
+    {
+      "answer": "-75",
+      "passed": true
+    },
+    {
+      "answer": "921",
+      "passed": true
+    },
+    {
+      "answer": "-22",
+      "passed": true
+    },
+    {
+      "answer": "@75",
+      "passed": true
+    },
+    {
+      "answer": "9732",
+      "passed": true
+    },
+    {
+      "answer": "-39",
+      "passed": true
+    },
+    {
+      "answer": "1292",
+      "passed": true
+    },
+    {
+      "answer": "81",
+      "passed": true
+    },
+    {
+      "answer": "5548",
+      "passed": true
+    },
+    {
+      "answer": "3064",
+      "passed": true
+    },
+    {
+      "answer": "1756",
+      "passed": true
+    },
+    {
+      "answer": "61%",
+      "passed": true
+    },
+    {
+      "answer": "2803",
+      "passed": true
+    },
+    {
+      "answer": "0685",
+      "passed": true
+    },
+    {
+      "answer": "711",
+      "passed": true
+    },
+    {
+      "answer": "^1",
+      "passed": true
+    },
+    {
+      "answer": "3104",
+      "passed": true
+    },
+    {
+      "answer": "9",
+      "passed": true
+    },
+    {
+      "answer": "5",
+      "passed": true
+    },
+    {
+      "answer": "/13",
+      "passed": true
+    },
+    {
+      "answer": "211",
+      "passed": true
+    },
+    {
+      "answer": "341",
+      "passed": true
+    },
+    {
+      "answer": "7495",
+      "passed": true
+    },
+    {
+      "answer": "4443",
+      "passed": true
+    },
+    {
+      "answer": "3985",
+      "passed": true
+    },
+    {
+      "answer": "1768",
+      "passed": true
+    },
+    {
+      "answer": "621",
+      "passed": true
+    },
+    {
+      "answer": "1755",
+      "passed": true
+    },
+    {
+      "answer": "8035",
+      "passed": true
+    },
+    {
+      "answer": "25",
+      "passed": true
+    },
+    {
+      "answer": "06",
+      "passed": true
+    },
+    {
+      "answer": "791",
+      "passed": true
+    },
+    {
+      "answer": "53@",
+      "passed": true
+    },
+    {
+      "answer": "0897",
+      "passed": true
+    },
+    {
+      "answer": "34",
+      "passed": true
+    },
+    {
+      "answer": "281",
+      "passed": true
+    },
+    {
+      "answer": "9411",
+      "passed": true
+    },
+    {
+      "answer": "1020",
+      "passed": true
+    },
+    {
+      "answer": "2572",
+      "passed": true
+    },
+    {
+      "answer": "936",
+      "passed": true
+    },
+    {
+      "answer": "69",
+      "passed": true
+    },
+    {
+      "answer": "\\93",
+      "passed": true
+    },
+    {
+      "answer": "031",
+      "passed": true
+    },
+    {
+      "answer": "1593",
+      "passed": true
+    },
+    {
+      "answer": "80",
+      "passed": true
+    },
+    {
+      "answer": "071",
+      "passed": true
+    },
+    {
+      "answer": "1321",
+      "passed": true
+    },
+    {
+      "answer": "9756",
+      "passed": true
+    },
+    {
+      "answer": "1793",
+      "passed": true
+    },
+    {
+      "answer": "4072",
+      "passed": true
+    },
+    {
+      "answer": "4734",
+      "passed": true
+    },
+    {
+      "answer": "4662",
+      "passed": true
+    },
+    {
+      "answer": "331",
+      "passed": true
+    },
+    {
+      "answer": "4472",
+      "passed": true
+    },
+    {
+      "answer": "59",
+      "passed": true
+    },
+    {
+      "answer": "1241",
+      "passed": true
+    },
+    {
+      "answer": "831",
+      "passed": true
+    },
+    {
+      "answer": "4046",
+      "passed": true
+    },
+    {
+      "answer": "+92",
+      "passed": true
+    },
+    {
+      "answer": "7241",
+      "passed": true
+    },
+    {
+      "answer": "-28",
+      "passed": true
+    },
+    {
+      "answer": "6253",
+      "passed": true
+    },
+    {
+      "answer": "6895",
+      "passed": true
+    },
+    {
+      "answer": "3268",
+      "passed": true
+    },
+    {
+      "answer": "2664",
+      "passed": true
+    },
+    {
+      "answer": "4643",
+      "passed": true
+    },
+    {
+      "answer": "9555",
+      "passed": true
+    },
+    {
+      "answer": "6745",
+      "passed": true
+    },
+    {
+      "answer": "445",
+      "passed": true
+    },
+    {
+      "answer": "3235",
+      "passed": true
+    },
+    {
+      "answer": "68",
+      "passed": true
+    },
+    {
+      "answer": "3767",
+      "passed": true
+    },
+    {
+      "answer": "3316",
+      "passed": true
+    },
+    {
+      "answer": "251",
+      "passed": true
+    },
+    {
+      "answer": "2432",
+      "passed": true
+    },
+    {
+      "answer": "49",
+      "passed": true
+    },
+    {
+      "answer": "7952",
+      "passed": true
+    },
+    {
+      "answer": "-55",
+      "passed": true
+    },
+    {
+      "answer": "2192",
+      "passed": true
+    },
+    {
+      "answer": "9402",
+      "passed": true
+    },
+    {
+      "answer": "6557",
+      "passed": true
+    },
+    {
+      "answer": "4922",
+      "passed": true
+    },
+    {
+      "answer": "5342",
+      "passed": true
+    },
+    {
+      "answer": "5432",
+      "passed": true
+    },
+    {
+      "answer": "8613",
+      "passed": true
+    },
+    {
+      "answer": "2370",
+      "passed": true
+    },
+    {
+      "answer": "361",
+      "passed": true
+    },
+    {
+      "answer": "1838",
+      "passed": true
+    },
+    {
+      "answer": "-23",
+      "passed": true
+    },
+    {
+      "answer": "13",
+      "passed": true
+    },
+    {
+      "answer": "2733",
+      "passed": true
+    },
+    {
+      "answer": "7644",
+      "passed": true
+    },
+    {
+      "answer": "461",
+      "passed": true
+    },
+    {
+      "answer": "5419",
+      "passed": true
+    },
+    {
+      "answer": "4361",
+      "passed": true
+    },
+    {
+      "answer": "180",
+      "passed": true
+    },
+    {
+      "answer": ">42",
+      "passed": true
+    },
+    {
+      "answer": ":64",
+      "passed": true
+    },
+    {
+      "answer": "6479",
+      "passed": true
+    },
+    {
+      "answer": "-1",
+      "passed": true
+    },
+    {
+      "answer": "8481",
+      "passed": true
+    },
+    {
+      "answer": "?14",
+      "passed": true
+    },
+    {
+      "answer": "64:",
+      "passed": true
+    },
+    {
+      "answer": "6915",
+      "passed": true
+    },
+    {
+      "answer": "5643",
+      "passed": true
+    },
+    {
+      "answer": "84",
+      "passed": true
+    },
+    {
+      "answer": "0814",
+      "passed": true
+    },
+    {
+      "answer": "24",
+      "passed": true
+    },
+    {
+      "answer": "6155",
+      "passed": true
+    },
+    {
+      "answer": "3395",
+      "passed": true
+    },
+    {
+      "answer": "-7",
+      "passed": true
+    },
+    {
+      "answer": "2271",
+      "passed": true
+    },
+    {
+      "answer": "047",
+      "passed": true
+    },
+    {
+      "answer": "5311",
+      "passed": true
+    },
+    {
+      "answer": "2842",
+      "passed": true
+    },
+    {
+      "answer": "8065",
+      "passed": true
+    },
+    {
+      "answer": "1@",
+      "passed": true
+    },
+    {
+      "answer": "7432",
+      "passed": true
+    },
+    {
+      "answer": "3388",
+      "passed": true
+    },
+    {
+      "answer": "-52",
+      "passed": true
+    },
+    {
+      "answer": "}30",
+      "passed": true
+    },
+    {
+      "answer": "1211",
+      "passed": true
+    },
+    {
+      "answer": "4",
+      "passed": true
+    },
+    {
+      "answer": "3907",
+      "passed": true
+    },
+    {
+      "answer": "527",
+      "passed": true
+    },
+    {
+      "answer": "885",
+      "passed": true
+    },
+    {
+      "answer": "4751",
+      "passed": true
+    },
+    {
+      "answer": "761",
+      "passed": true
+    },
+    {
+      "answer": "2615",
+      "passed": true
+    },
+    {
+      "answer": "103",
+      "passed": true
+    },
+    {
+      "answer": "15",
+      "passed": true
+    },
+    {
+      "answer": "3431",
+      "passed": true
+    },
+    {
+      "answer": "-84",
+      "passed": true
+    },
+    {
+      "answer": "170",
+      "passed": true
+    },
+    {
+      "answer": "5403",
+      "passed": true
+    },
+    {
+      "answer": "3511",
+      "passed": true
+    },
+    {
+      "answer": "04",
+      "passed": true
+    },
+    {
+      "answer": "14>",
+      "passed": true
+    },
+    {
+      "answer": "0154",
+      "passed": true
+    },
+    {
+      "answer": "5102",
+      "passed": true
+    },
+    {
+      "answer": "801",
+      "passed": true
+    },
+    {
+      "answer": "4560",
+      "passed": true
+    },
+    {
+      "answer": "651",
+      "passed": true
+    },
+    {
+      "answer": "9973",
+      "passed": true
+    },
+    {
+      "answer": "9372",
+      "passed": true
+    },
+    {
+      "answer": "5163",
+      "passed": true
+    },
+    {
+      "answer": "71",
+      "passed": true
+    },
+    {
+      "answer": "001",
+      "passed": true
+    },
+    {
+      "answer": "5846",
+      "passed": true
+    },
+    {
+      "answer": "/92",
+      "passed": true
+    },
+    {
+      "answer": "4415",
+      "passed": true
+    },
+    {
+      "answer": "^22",
+      "passed": true
+    },
+    {
+      "answer": "-56",
+      "passed": true
+    },
+    {
+      "answer": "151",
+      "passed": true
+    },
+    {
+      "answer": "5214",
+      "passed": true
+    },
+    {
+      "answer": "261",
+      "passed": true
+    },
+    {
+      "answer": "4419",
+      "passed": true
+    },
+    {
+      "answer": "1728",
+      "passed": true
+    },
+    {
+      "answer": "26",
+      "passed": true
+    },
+    {
+      "answer": "83(",
+      "passed": true
+    },
+    {
+      "answer": "89",
+      "passed": true
+    },
+    {
+      "answer": "4308",
+      "passed": true
+    },
+    {
+      "answer": "64]",
+      "passed": true
+    },
+    {
+      "answer": "7272",
+      "passed": true
+    },
+    {
+      "answer": "11",
+      "passed": true
+    },
+    {
+      "answer": "!32",
+      "passed": true
+    },
+    {
+      "answer": "87",
+      "passed": true
+    },
+    {
+      "answer": "2655",
+      "passed": true
+    },
+    {
+      "answer": "0001",
+      "passed": true
+    },
+    {
+      "answer": "2442",
+      "passed": true
+    },
+    {
+      "answer": "847",
+      "passed": true
+    },
+    {
+      "answer": "521",
+      "passed": true
+    },
+    {
+      "answer": ":46",
+      "passed": true
+    },
+    {
+      "answer": "-24",
+      "passed": true
+    },
+    {
+      "answer": "51",
+      "passed": true
+    },
+    {
+      "answer": "6854",
+      "passed": true
+    },
+    {
+      "answer": "4274",
+      "passed": true
+    },
+    {
+      "answer": "0131",
+      "passed": true
+    },
+    {
+      "answer": "%20",
+      "passed": true
+    },
+    {
+      "answer": "3212",
+      "passed": true
+    },
+    {
+      "answer": "0861",
+      "passed": true
+    },
+    {
+      "answer": "3201",
+      "passed": true
+    },
+    {
+      "answer": "78",
+      "passed": true
+    },
+    {
+      "answer": "8513",
+      "passed": true
+    },
+    {
+      "answer": "8362",
+      "passed": true
+    },
+    {
+      "answer": "-5",
+      "passed": true
+    },
+    {
+      "answer": "0091",
+      "passed": true
+    },
+    {
+      "answer": "74",
+      "passed": true
+    },
+    {
+      "answer": "2400",
+      "passed": true
+    },
+    {
+      "answer": "7289",
+      "passed": true
+    },
+    {
+      "answer": "3182",
+      "passed": true
+    },
+    {
+      "answer": "5983",
+      "passed": true
+    },
+    {
+      "answer": "9111",
+      "passed": true
+    },
+    {
+      "answer": "1773",
+      "passed": true
+    },
+    {
+      "answer": "301",
+      "passed": true
+    },
+    {
+      "answer": "57",
+      "passed": true
+    },
+    {
+      "answer": "5615",
+      "passed": true
+    },
+    {
+      "answer": "7946",
+      "passed": true
+    },
+    {
+      "answer": "8618",
+      "passed": true
+    },
+    {
+      "answer": "100",
+      "passed": true
+    },
+    {
+      "answer": "704",
+      "passed": true
+    },
+    {
+      "answer": "@25",
+      "passed": true
+    },
+    {
+      "answer": "0491",
+      "passed": true
+    },
+    {
+      "answer": "1881",
+      "passed": true
+    },
+    {
+      "answer": "2925",
+      "passed": true
+    },
+    {
+      "answer": "02",
+      "passed": true
+    },
+    {
+      "answer": "29",
+      "passed": true
+    },
+    {
+      "answer": "085",
+      "passed": true
+    },
+    {
+      "answer": "56",
+      "passed": true
+    },
+    {
+      "answer": "1807",
+      "passed": true
+    },
+    {
+      "answer": "1976",
+      "passed": true
+    },
+    {
+      "answer": "5850",
+      "passed": true
+    },
+    {
+      "answer": "6125",
+      "passed": true
+    },
+    {
+      "answer": "-01",
+      "passed": true
+    },
+    {
+      "answer": "0279",
+      "passed": true
+    },
+    {
+      "answer": "6831",
+      "passed": true
+    },
+    {
+      "answer": "33",
+      "passed": true
+    },
+    {
+      "answer": "85",
+      "passed": true
+    },
+    {
+      "answer": "5899",
+      "passed": true
+    },
+    {
+      "answer": "05",
+      "passed": true
+    },
+    {
+      "answer": "2024",
+      "passed": true
+    },
+    {
+      "answer": "429",
+      "passed": true
+    },
+    {
+      "answer": "8234",
+      "passed": true
+    },
+    {
+      "answer": "9421",
+      "passed": true
+    },
+    {
+      "answer": "2151",
+      "passed": true
+    },
+    {
+      "answer": "54",
+      "passed": true
+    },
+    {
+      "answer": "8007",
+      "passed": true
+    },
+    {
+      "answer": "114",
+      "passed": true
+    },
+    {
+      "answer": "411",
+      "passed": true
+    },
+    {
+      "answer": "4482",
+      "passed": true
+    },
+    {
+      "answer": "131",
+      "passed": true
+    },
+    {
+      "answer": "451",
+      "passed": true
+    },
+    {
+      "answer": "5293",
+      "passed": true
+    },
+    {
+      "answer": "2861",
+      "passed": true
+    },
+    {
+      "answer": "4281",
+      "passed": true
+    },
+    {
+      "answer": "233",
+      "passed": true
+    },
+    {
+      "answer": "-65",
+      "passed": true
+    },
+    {
+      "answer": "571",
+      "passed": true
+    },
+    {
+      "answer": "30",
+      "passed": true
+    },
+    {
+      "answer": "231",
+      "passed": true
+    },
+    {
+      "answer": "8544",
+      "passed": true
+    },
+    {
+      "answer": "*26",
+      "passed": true
+    },
+    {
+      "answer": "3922",
+      "passed": true
+    },
+    {
+      "answer": "3752",
+      "passed": true
+    },
+    {
+      "answer": "988",
+      "passed": true
+    },
+    {
+      "answer": "3955",
+      "passed": true
+    },
+    {
+      "answer": "139",
+      "passed": true
+    },
+    {
+      "answer": "45",
+      "passed": true
+    },
+    {
+      "answer": "2626",
+      "passed": true
+    },
+    {
+      "answer": "7847",
+      "passed": true
+    },
+    {
+      "answer": "157",
+      "passed": true
+    },
+    {
+      "answer": "7042",
+      "passed": true
+    },
+    {
+      "answer": "9099",
+      "passed": true
+    },
+    {
+      "answer": "5491",
+      "passed": true
+    },
+    {
+      "answer": "(1",
+      "passed": true
+    },
+    {
+      "answer": "/14",
+      "passed": true
+    },
+    {
+      "answer": "175",
+      "passed": true
+    },
+    {
+      "answer": "2945",
+      "passed": true
+    },
+    {
+      "answer": "1886",
+      "passed": true
+    },
+    {
+      "answer": "5631",
+      "passed": true
+    },
+    {
+      "answer": "4445",
+      "passed": true
+    },
+    {
+      "answer": "8742",
+      "passed": true
+    },
+    {
+      "answer": "1671",
+      "passed": true
+    },
+    {
+      "answer": "5544",
+      "passed": true
+    },
+    {
+      "answer": "8452",
+      "passed": true
+    },
+    {
+      "answer": "94",
+      "passed": true
+    },
+    {
+      "answer": "7682",
+      "passed": true
+    },
+    {
+      "answer": "9370",
+      "passed": true
+    },
+    {
+      "answer": "-02",
+      "passed": true
+    },
+    {
+      "answer": "1089",
+      "passed": true
+    },
+    {
+      "answer": "4968",
+      "passed": true
+    },
+    {
+      "answer": "-91",
+      "passed": true
+    },
+    {
+      "answer": "3075",
+      "passed": true
+    },
+    {
+      "answer": "6523",
+      "passed": true
+    },
+    {
+      "answer": "5554",
+      "passed": true
+    },
+    {
+      "answer": "7265",
+      "passed": true
+    },
+    {
+      "answer": "(35",
+      "passed": true
+    },
+    {
+      "answer": "669",
+      "passed": true
+    },
+    {
+      "answer": "113",
+      "passed": true
+    },
+    {
+      "answer": "821",
+      "passed": true
+    },
+    {
+      "answer": "*4",
+      "passed": true
+    },
+    {
+      "answer": "6257",
+      "passed": true
+    },
+    {
+      "answer": "9783",
+      "passed": true
+    },
+    {
+      "answer": "4699",
+      "passed": true
+    },
+    {
+      "answer": "771",
+      "passed": true
+    },
+    {
+      "answer": "}51",
+      "passed": true
+    },
+    {
+      "answer": "}13",
+      "passed": true
+    },
+    {
+      "answer": "911",
+      "passed": true
+    },
+    {
+      "answer": "141",
+      "passed": true
+    },
+    {
+      "answer": "9044",
+      "passed": true
+    },
+    {
+      "answer": "-82",
+      "passed": true
+    },
+    {
+      "answer": "-17",
+      "passed": true
+    },
+    {
+      "answer": "1261",
+      "passed": true
+    },
+    {
+      "answer": "1431",
+      "passed": true
+    },
+    {
+      "answer": "2629",
+      "passed": true
+    },
+    {
+      "answer": "3770",
+      "passed": true
+    },
+    {
+      "answer": "$55",
+      "passed": true
+    },
+    {
+      "answer": "4314",
+      "passed": true
+    },
+    {
+      "answer": "7992",
+      "passed": true
+    },
+    {
+      "answer": "6102",
+      "passed": true
+    },
+    {
+      "answer": "545",
+      "passed": true
+    },
+    {
+      "answer": "2639",
+      "passed": true
+    },
+    {
+      "answer": "162",
+      "passed": true
+    },
+    {
+      "answer": "0548",
+      "passed": true
+    },
+    {
+      "answer": "-74",
+      "passed": true
+    },
+    {
+      "answer": "7793",
+      "passed": true
+    },
+    {
+      "answer": "9819",
+      "passed": true
+    },
+    {
+      "answer": "5543",
+      "passed": true
+    },
+    {
+      "answer": "1592",
+      "passed": true
+    },
+    {
+      "answer": "1983",
+      "passed": true
+    },
+    {
+      "answer": ")2",
+      "passed": true
+    },
+    {
+      "answer": "8482",
+      "passed": true
+    },
+    {
+      "answer": "65",
+      "passed": true
+    },
+    {
+      "answer": "-21",
+      "passed": true
+    },
+    {
+      "answer": "021",
+      "passed": true
+    },
+    {
+      "answer": "42",
+      "passed": true
+    },
+    {
+      "answer": "19",
+      "passed": true
+    },
+    {
+      "answer": "825",
+      "passed": true
+    },
+    {
+      "answer": "1291",
+      "passed": true
+    },
+    {
+      "answer": "09",
+      "passed": true
+    },
+    {
+      "answer": "3910",
+      "passed": true
+    }
+  ]
+}

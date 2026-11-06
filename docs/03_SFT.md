@@ -2,6 +2,8 @@
 
 版本：v0.1 \| 对应 Notebook：`03_SFT`。LoRA / QLoRA 另见 `04_QLoRA.md`。
 
+当前数据入口：默认读取维护者分发的真实 Train 已验证轨迹 `data/processed/real_train_traces.jsonl`，与当前 Train ID/Prompt/Answer 核对；无需运行 01。只有 `USE_SYNTHETIC_DATA=1` 才读取 `data/processed/synthetic/audited/synthetic_accepted.jsonl`，并校验独立 Verifier、三集合泄漏审计及内容哈希。Direct / Joint / Two-stage 的训练算法保持不变。
+
 ## 1. 目标
 
 将课程提供的人类先验转化为模型可以记忆、检索和执行的监督信号。重点不是堆叠大量

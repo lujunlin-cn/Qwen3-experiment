@@ -1,0 +1,127 @@
+{
+  "schema_version": "nemotron-course-split/v2",
+  "seed": 42,
+  "ratios_requested": {
+    "train": 0.8,
+    "validation": 0.1,
+    "holdout_test": 0.1
+  },
+  "method": "per-task stratified IID split; nearest integer for validation/test within each task",
+  "source": {
+    "path": "data/processed/real_cleaned.csv",
+    "rows": 3931,
+    "sha256": "15b374fce4ca44cc9455dd72b6cedd6ddc9c6bcc77eebb0d33ba1dac8e1ebcbe",
+    "prepared_by": "maintainer"
+  },
+  "files": {
+    "train": "data/processed/splits/train.csv",
+    "validation": "data/processed/splits/validation.csv",
+    "holdout_test": "data/processed/splits/holdout_test.csv"
+  },
+  "artifacts": {
+    "train": {
+      "sha256": "0709833d0eb41c205e65b6d0b5a66cf3ec70cee80865b212e82d439b04d49da2",
+      "rows": 3145,
+      "ratio_actual": 0.8000508776392775,
+      "by_task": {
+        "bit_manipulation": 1282,
+        "gravity": 1277,
+        "equation_numeric": 586
+      }
+    },
+    "validation": {
+      "sha256": "90e481bb5eebc6cc1637d355cd7b33f437398dea12a87151f953a5abb707bc12",
+      "rows": 393,
+      "ratio_actual": 0.09997456118036123,
+      "by_task": {
+        "gravity": 160,
+        "bit_manipulation": 160,
+        "equation_numeric": 73
+      }
+    },
+    "holdout_test": {
+      "sha256": "aebb7747271821d531ded5bf1de8fb497caac912dc78d01fb6c26ea10dabc9df",
+      "rows": 393,
+      "ratio_actual": 0.09997456118036123,
+      "by_task": {
+        "bit_manipulation": 160,
+        "gravity": 160,
+        "equation_numeric": 73
+      }
+    }
+  },
+  "leakage_audit": {
+    "exact_id": {
+      "key": "id",
+      "duplicate_keys": 0,
+      "rows_in_cross_split_keys": 0,
+      "examples": []
+    },
+    "exact_prompt": {
+      "key": "prompt_hash",
+      "duplicate_keys": 0,
+      "rows_in_cross_split_keys": 0,
+      "examples": []
+    },
+    "normalized_prompt": {
+      "key": "normalized_prompt_hash",
+      "duplicate_keys": 0,
+      "rows_in_cross_split_keys": 0,
+      "examples": []
+    },
+    "structure_fingerprint": {
+      "key": "structure_fingerprint",
+      "duplicate_keys": 9,
+      "rows_in_cross_split_keys": 3203,
+      "examples": [
+        {
+          "key": "0bf5753b1d22c8bb81778c3cd799f0c70257f2694ae62d18db28f5fb37089a70",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "1b625bc14d40ce0514913951021e5e3ef07ce8ca7df4d9e4b41419268314e17c",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "1e0f777b42328948349d01339f71ea144736858f911ca01e06ee7efb7db78364",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "5eca1c2e174f84e6c7aa1d9ee4a4d9e7d9383c0adc9ae78a3412a0d6a17c9ad2",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        },
+        {
+          "key": "986486eb0ad9504e886157e6d1dbc74e27d5bbee59bf66ac1f5b2f9deb97f339",
+          "splits": [
+            "holdout_test",
+            "train",
+            "validation"
+          ]
+        }
+      ]
+    },
+    "group_aware_split": {
+      "status": "not_available",
+      "reason": "原始 CSV 未提供可靠的规则实例、生成种子或结构家族字段；规范化 Prompt 只能用于审计，不能作为同源组的充分证明。"
+    }
+  },
+  "leakage_report": "data/processed/leakage_audit_report.json",
+  "baseline_split": "validation",
+  "holdout_policy": "final_evaluation_only"
+}

@@ -1,0 +1,22 @@
+{
+  "base_protocol_sha256": "2721f99010a0c5df4e43cfd83b33d594dbbd1315ce50a76902793f5363a6086e",
+  "task": "numeral_system",
+  "ids": [
+    "d8053ec2",
+    "4e177b84",
+    "e5318535"
+  ],
+  "budget_grid": [
+    4096,
+    8192,
+    16384
+  ],
+  "reason": "both 512 and 1024 exhausted without final answer",
+  "temperature": 0.6,
+  "top_p": 0.95,
+  "top_k": 20,
+  "seed": 42,
+  "max_model_len": 20480,
+  "selection_uses_accuracy": false,
+  "upper_cap": 16384
+}

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "raw_output": "\\boxed{\\{17}",
+      "expected": "{17",
+      "passed": true
+    },
+    {
+      "raw_output": "\\boxed{\\$85}",
+      "expected": "$85",
+      "passed": true
+    },
+    {
+      "raw_output": "\\boxed{*53}",
+      "expected": "*53",
+      "passed": true
+    },
+    {
+      "raw_output": "Final Answer: 04`",
+      "expected": "04`",
+      "passed": true
+    },
+    {
+      "raw_output": "Final Answer: \\93",
+      "expected": "\\93",
+      "passed": true
+    }
+  ]
+}

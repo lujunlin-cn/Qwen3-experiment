@@ -1,0 +1,72 @@
+{
+  "schema_version": "nemotron-taskset/v3",
+  "dataset_version": "roman_gravity_equation_v1",
+  "seed": 42,
+  "tasks": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "difficulty": {
+    "numeral_system": "easy",
+    "gravity": "medium",
+    "equation_numeric": "hard"
+  },
+  "ratios_requested": {
+    "train": 0.8,
+    "validation": 0.1,
+    "holdout_test": 0.1
+  },
+  "method": "per-task IID, round 10% for validation and holdout",
+  "source": {
+    "path": "train.csv",
+    "sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa",
+    "rows": 9500
+  },
+  "files": {
+    "train": "data/processed/tasksets/roman_gravity_equation_v1/splits/train.csv",
+    "validation": "data/processed/tasksets/roman_gravity_equation_v1/splits/validation.csv",
+    "holdout_test": "data/processed/tasksets/roman_gravity_equation_v1/splits/holdout_test.csv"
+  },
+  "artifacts": {
+    "train": {
+      "sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+      "rows": 3123,
+      "by_task": {
+        "gravity": 1277,
+        "numeral_system": 1260,
+        "equation_numeric": 586
+      }
+    },
+    "validation": {
+      "sha256": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+      "rows": 391,
+      "by_task": {
+        "gravity": 160,
+        "numeral_system": 158,
+        "equation_numeric": 73
+      }
+    },
+    "holdout_test": {
+      "sha256": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc",
+      "rows": 391,
+      "by_task": {
+        "gravity": 160,
+        "numeral_system": 158,
+        "equation_numeric": 73
+      }
+    }
+  },
+  "baseline_split": "validation",
+  "holdout_policy": "audit_and_future_final_evaluation_only",
+  "bit_in_default_dataset": false,
+  "leakage_report": "data/processed/tasksets/roman_gravity_equation_v1/leakage_audit_report.json",
+  "all_tasks_participate_in_sft": true,
+  "rl_task_decision": "after SFT; not changed in this round",
+  "other_artifacts": {
+    "real_cleaned.csv": "eecbf3a9ca58db6dbeaad3579a90342897ffadeb5a0954efa53306752cd16f50",
+    "classification_audit.csv": "21a15626849f3d8a194b4a8181a849f8e77e66642a1c2e4c2aa0d391d0d4442b",
+    "numeral_mapping_audit.csv": "45e6ef5a2baf76923e4f111a4969ebe669c25976525df4e5620326589c101887",
+    "leakage_audit_report.json": "ab8b36c37e127515ad445ecac484d6013870f5eba5a882292c95128b8ee79120"
+  }
+}

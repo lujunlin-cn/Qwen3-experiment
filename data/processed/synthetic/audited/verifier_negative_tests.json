@@ -1,0 +1,320 @@
+{
+  "cases": [
+    {
+      "case": "gravity_wrong_answer",
+      "task_type": "gravity",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": true,
+        "identifiability": {
+          "candidate_g_count": 2,
+          "candidate_g_values": [
+            8.683390389690091,
+            8.68317568285684
+          ],
+          "query_output_count": 1,
+          "query_outputs": [
+            104.67002192684386
+          ],
+          "answer_unique": true
+        },
+        "example_checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "query_prediction": 104.67002192684386,
+        "difficulty_ok": true,
+        "solver_status": "independent_ols_verifier"
+      }
+    },
+    {
+      "case": "gravity_wrong_trace",
+      "task_type": "gravity",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": true,
+        "trace_ok": false,
+        "identifiability": {
+          "candidate_g_count": 2,
+          "candidate_g_values": [
+            8.683390389690091,
+            8.68317568285684
+          ],
+          "query_output_count": 1,
+          "query_outputs": [
+            104.67002192684386
+          ],
+          "answer_unique": true
+        },
+        "example_checks": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "query_prediction": 104.67002192684386,
+        "difficulty_ok": true,
+        "solver_status": "independent_ols_verifier"
+      }
+    },
+    {
+      "case": "gravity_unidentifiable_prompt",
+      "task_type": "gravity",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": false,
+        "identifiability": {
+          "candidate_g_count": 0,
+          "query_output_count": 0,
+          "query_outputs": [],
+          "answer_unique": false
+        },
+        "example_checks": [],
+        "query_prediction": null,
+        "difficulty_ok": true,
+        "solver_status": "independent_ols_verifier"
+      }
+    },
+    {
+      "case": "equation_wrong_answer",
+      "task_type": "equation_numeric",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": true,
+        "identifiability": {
+          "valid_assignment_count": 3,
+          "query_output_count": 1,
+          "query_outputs": [
+            "37"
+          ],
+          "answer_unique": true,
+          "rule_assignment_unique": false
+        },
+        "guess_subtype": "deduce",
+        "difficulty_ok": true,
+        "solver_status": "independent_24_rule_verifier"
+      }
+    },
+    {
+      "case": "equation_wrong_trace",
+      "task_type": "equation_numeric",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": true,
+        "trace_ok": false,
+        "identifiability": {
+          "valid_assignment_count": 3,
+          "query_output_count": 1,
+          "query_outputs": [
+            "37"
+          ],
+          "answer_unique": true,
+          "rule_assignment_unique": false
+        },
+        "guess_subtype": "deduce",
+        "difficulty_ok": true,
+        "solver_status": "independent_24_rule_verifier"
+      }
+    },
+    {
+      "case": "equation_invalid_example_output",
+      "task_type": "equation_numeric",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": false,
+        "identifiability": {
+          "valid_assignment_count": 0,
+          "query_output_count": 0,
+          "query_outputs": [],
+          "answer_unique": false,
+          "rule_assignment_unique": false
+        },
+        "guess_subtype": "deduce",
+        "difficulty_ok": true,
+        "solver_status": "independent_24_rule_verifier"
+      }
+    },
+    {
+      "case": "bit_wrong_answer",
+      "task_type": "bit_manipulation",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": true,
+        "identifiability": {
+          "raw_candidate_count": 74,
+          "semantic_candidate_count": 1,
+          "query_output_count": 1,
+          "query_outputs": [
+            "01000000"
+          ],
+          "expression_unique": false,
+          "answer_unique": true
+        },
+        "difficulty_ok": true,
+        "solver_status": "independent_parser_and_finite_enumeration"
+      }
+    },
+    {
+      "case": "bit_invalid_expression",
+      "task_type": "bit_manipulation",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": false,
+        "identifiability": {
+          "raw_candidate_count": 74,
+          "semantic_candidate_count": 1,
+          "query_output_count": 1,
+          "query_outputs": [
+            "01000000"
+          ],
+          "expression_unique": false,
+          "answer_unique": true
+        },
+        "difficulty_ok": true,
+        "solver_status": "independent_parser_and_finite_enumeration"
+      }
+    },
+    {
+      "case": "bit_unidentifiable_prompt",
+      "task_type": "bit_manipulation",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": true,
+        "identifiability": {
+          "raw_candidate_count": 84,
+          "semantic_candidate_count": 5,
+          "query_output_count": 2,
+          "query_outputs": [
+            "00000000",
+            "01000000"
+          ],
+          "expression_unique": false,
+          "answer_unique": false
+        },
+        "difficulty_ok": true,
+        "solver_status": "independent_parser_and_finite_enumeration"
+      }
+    },
+    {
+      "case": "duplicate_prompt",
+      "task_type": "gravity",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "candidate_id": "gravity-0000",
+        "candidate_index": "gravity-0000",
+        "task_type": "gravity",
+        "source": "deterministic_prior_generator",
+        "generator_version": "nemotron-synthetic-v3",
+        "generation_status": "generated",
+        "generation_error": null,
+        "deduce_or_guess": "deduce",
+        "guess_subtype": "deduce",
+        "prompt_hash": "64bbc76efdcee7ac5ce6d16ab75a6b64ffa958c6b811655e765b955457facb92",
+        "normalized_prompt_hash": "d95784bd05f4dae2cc19cd0bd4e5bc8ce94fe0fdaf4b983e42d735b2ceee0b65",
+        "structure_fingerprint": "55cdba100d21b16710032181f32991dd44625f30e571da99d53adad6d78ce3a1",
+        "structure_duplicate_within_synthetic": true,
+        "schema_ok": true,
+        "answer_ok": true,
+        "trace_ok": true,
+        "identifiability": "{\"answer_unique\": true, \"candidate_g_count\": 2, \"candidate_g_values\": [8.683390389690091, 8.68317568285684], \"query_output_count\": 1, \"query_outputs\": [104.67002192684386]}",
+        "difficulty": "examples_5",
+        "leakage_status": "passed",
+        "leakage_matches": "{\"exact\": [], \"normalized\": [], \"source_id\": [], \"source_row\": [], \"structure\": []}",
+        "accepted": false,
+        "verification_status": "rejected",
+        "verifier_version": "synthetic_independent_verifier_v3",
+        "rejection_reasons": "duplicate_prompt;near_duplicate_prompt"
+      }
+    },
+    {
+      "case": "train_exact_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_train_exact_duplicate",
+        "real_train_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "train_normalized_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_train_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "train_source_id_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_train_source_id_duplicate"
+      ]
+    },
+    {
+      "case": "validation_exact_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_validation_exact_duplicate",
+        "real_validation_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "validation_normalized_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_validation_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "validation_source_id_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_validation_source_id_duplicate"
+      ]
+    },
+    {
+      "case": "holdout_test_exact_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_holdout_test_exact_duplicate",
+        "real_holdout_test_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "holdout_test_normalized_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_holdout_test_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "holdout_test_source_id_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_holdout_test_source_id_duplicate"
+      ]
+    }
+  ],
+  "passed": 19,
+  "total": 19,
+  "all_passed": true
+}

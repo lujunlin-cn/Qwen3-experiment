@@ -1,0 +1,43 @@
+{
+  "schema_version": "nemotron-synthetic-leakage/v2",
+  "candidate_count": 300,
+  "passed": 300,
+  "rejected": 0,
+  "source_split_counts": {
+    "holdout_test": 393,
+    "train": 3145,
+    "validation": 393
+  },
+  "by_split": {
+    "train": {
+      "exact": 0,
+      "normalized": 0,
+      "source_id": 0,
+      "source_row": 0,
+      "structure": 0
+    },
+    "validation": {
+      "exact": 0,
+      "normalized": 0,
+      "source_id": 0,
+      "source_row": 0,
+      "structure": 0
+    },
+    "holdout_test": {
+      "exact": 0,
+      "normalized": 0,
+      "source_id": 0,
+      "source_row": 0,
+      "structure": 0
+    }
+  },
+  "dataset_manifest_sha256": "f02fe5b9888150cf6a43547de308117cf368c6f4cded5068fa7f0708a493ba4b",
+  "split_sha256": {
+    "train": "0709833d0eb41c205e65b6d0b5a66cf3ec70cee80865b212e82d439b04d49da2",
+    "validation": "90e481bb5eebc6cc1637d355cd7b33f437398dea12a87151f953a5abb707bc12",
+    "holdout_test": "aebb7747271821d531ded5bf1de8fb497caac912dc78d01fb6c26ea10dabc9df"
+  },
+  "policy": "real duplicate or declared real lineage rejected; structure similarity reported only",
+  "validation_holdout_answers_read": false,
+  "lineage_unavailable": 300
+}

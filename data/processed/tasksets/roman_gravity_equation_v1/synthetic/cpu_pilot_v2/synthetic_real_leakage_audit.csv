@@ -1,0 +1,16 @@
+candidate_id,task_type,status,matches,rejection_reasons,lineage_status,structure_similar_only
+numeral_system-0000,numeral_system,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+numeral_system-0001,numeral_system,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+numeral_system-0002,numeral_system,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+numeral_system-0003,numeral_system,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+numeral_system-0004,numeral_system,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+gravity-0000,gravity,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+gravity-0001,gravity,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+gravity-0002,gravity,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+gravity-0003,gravity,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+gravity-0004,gravity,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+equation_numeric-0000,equation_numeric,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+equation_numeric-0001,equation_numeric,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+equation_numeric-0002,equation_numeric,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+equation_numeric-0003,equation_numeric,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+equation_numeric-0004,equation_numeric,passed,"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False

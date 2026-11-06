@@ -1,3 +1,7 @@
+> **最新明确决策（2026-11-06，任务替换轮）**：默认正式任务调整为 Numeral System（Easy）、Gravity（Medium）、Equation Numeric（Hard）。Bit 只保留高级扩展，不进入新版数据及 Baseline。维护者工具预先清洗、分类与筛选官方 CSV；00 只读取已清洗数据，完成分层划分、泄漏审计与基线并写入独立版本 `tasksets/roman_gravity_equation_v1/`；01 合成工程完全可选。所有三类均计划参加 SFT；SFT 后分别判断 RL 必要性，本轮不更改 RL 入口、算法或 Reward，不修改 03–06 的模型/LoRA/QLoRA 配置。Validation 用于预算校准，Holdout 只做固定审计和未来最终评估。后文与此冲突的旧任务集合及路径视为历史记录。真实 Baseline 证据见 [修改报告](../NOTEBOOK_REFACTOR_REPORT.md)。
+
+> 架构修订（2026-11-06）：原 Baseline Notebook 拆为 `00_Baseline_Diagnosis.ipynb` 和完全可选的 `01_Synthetic_Data_Engineering.ipynb`，02–06 名称编号不变。00 使用维护者已清洗官方数据，负责 80/10/10 划分、四类泄漏审计与 Validation Baseline；03 默认 Real Only，显式 `USE_SYNTHETIC_DATA=1` 才追加通过 Verifier 和三集合泄漏审计的 Accepted。原官方 CSV 清洗代码保留在 `utils/prepare_official_dataset.py`。以下六阶段路线是历史设计记录，当前文件边界见 [文档索引](README_文档索引.md)。本轮不实施教学练习改造。
+
 # LeetCode 式 SFT & RL 课程大作业：项目设计总记录
 
 > 文档用途：保存项目讨论中已经确认的决定、当前建议、技术假设、待验证事项、Kaggle

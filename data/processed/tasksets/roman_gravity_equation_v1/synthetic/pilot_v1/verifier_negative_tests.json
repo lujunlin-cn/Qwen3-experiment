@@ -1,0 +1,135 @@
+{
+  "cases": [
+    {
+      "case": "numeral_wrong_answer",
+      "task_type": "numeral_system",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": false,
+        "identifiability": {
+          "answer_unique": true,
+          "scope": "public standard Roman prior, not arbitrary hidden numeral systems"
+        },
+        "difficulty_ok": true,
+        "examples_ok": true
+      }
+    },
+    {
+      "case": "numeral_wrong_trace",
+      "task_type": "numeral_system",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": true,
+        "trace_ok": false,
+        "identifiability": {
+          "answer_unique": true,
+          "scope": "public standard Roman prior, not arbitrary hidden numeral systems"
+        },
+        "difficulty_ok": true,
+        "examples_ok": true
+      }
+    },
+    {
+      "case": "numeral_bad_example",
+      "task_type": "numeral_system",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": false,
+        "identifiability": {
+          "answer_unique": false,
+          "scope": "public standard Roman prior, not arbitrary hidden numeral systems"
+        },
+        "difficulty_ok": true,
+        "examples_ok": false
+      }
+    },
+    {
+      "case": "numeral_missing_query",
+      "task_type": "numeral_system",
+      "expected": "reject",
+      "passed": true,
+      "result": {
+        "answer_ok": false,
+        "trace_ok": false,
+        "identifiability": {
+          "answer_unique": false
+        },
+        "difficulty_ok": false
+      }
+    },
+    {
+      "case": "train_exact_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_train_exact_duplicate",
+        "real_train_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "train_normalized_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_train_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "train_source_id_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_train_source_id_duplicate"
+      ]
+    },
+    {
+      "case": "validation_exact_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_validation_exact_duplicate",
+        "real_validation_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "validation_normalized_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_validation_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "validation_source_id_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_validation_source_id_duplicate"
+      ]
+    },
+    {
+      "case": "holdout_test_exact_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_holdout_test_exact_duplicate",
+        "real_holdout_test_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "holdout_test_normalized_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_holdout_test_normalized_duplicate"
+      ]
+    },
+    {
+      "case": "holdout_test_source_id_leakage",
+      "passed": true,
+      "rejection_reasons": [
+        "real_holdout_test_source_id_duplicate"
+      ]
+    }
+  ],
+  "passed": 13,
+  "total": 13,
+  "all_passed": true
+}
