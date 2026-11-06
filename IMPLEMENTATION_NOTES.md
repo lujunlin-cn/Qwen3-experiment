@@ -144,3 +144,12 @@ Gravity 分布审计使用 Train 的 1,277 条题、5,180 个示例：每题示�
 - Notebook 03 将 Teacher Trace、Label Mask/Loss、LoRA/QLoRA、Manifest、训练调度和 CPU 测试分开；Notebook 04/05 分别拆分 Rollout、Adapter 加载、张量转换、训练更新和保存入口。
 - Notebook 06 将 Rollout 审计、任务 Verifier、Reward/Batch、CausalLM Update、Adapter 交接和负样本测试分开，并修正第 9 节与第 10 节的教学顺序。
 - 重构后所有 Code Cell 不超过 100 行；六个 Notebook JSON/AST 检查和顺序 CPU Smoke 均通过。GPU、vLLM 和真实 Qwen3 训练仍为 `Not Run`。
+
+## vGPU Smoke 闭环修订（基于 b00cfb2ece）
+
+- Baseline、Prompt、SFT、DPO、PPO、GRPO 的 GPU 入口都保留安全默认关闭状态；显式开启时先写入 GPU Preflight，捕获 OOM/异常并在 `finally` 释放模型和显存。阶段返回 `completed` 前必须确认预期产物存在。
+- DPO/PPO/GRPO 均拆成可跨 Kernel 续跑的 Rollout/Training 阶段。Rollout 保存 JSONL 和阶段 Manifest；Training 只读取持久化 Rollout，不重新采样。训练阶段失败、无偏好对或无 Mixed Group 时返回阻塞状态并保留日志。
+- SFT Stage 1 只保存中间 Adapter Manifest，不覆盖共享 `sft_manifest.json`；Stage 2/最终 Adapter 完成磁盘重载检查后才发布共享 Manifest。DPO/PPO/GRPO 从该 Manifest 平行初始化。
+- PPO 的 Value Head 固定与基座设备对齐，输入 Hidden State 在 Value Head 前显式转换到 FP32；保存 PPO Adapter 时同时保存 Value Head，并在报告完成前实际重载。
+- GRPO 保留每题 `G=8` 的组优势，在更新时使用 `GRPO_MICRO_BATCH_SIZE=4`、`GRPO_GRAD_ACCUMULATION_STEPS=2` 的微批次/梯度累积，避免把 32 条长回答一次性建图。当前 `policy_logprob_change` 仍不是 Reference KL，`KL_COEF=0`。
+- 本地 CPU JSON/AST 与五个修改 Notebook 的顺序 Smoke 已通过；第六 Notebook 的最大 Code Cell 仍需在交付前拆到 100 行以内。目标机实测硬件是云平台标称 32 GiB 的 NVIDIA GeForce RTX 4080 SUPER vGPU，不按 RTX 5090 预算推断，真实 GPU Smoke 结果只在目标机生成后记录。
