@@ -1,0 +1,21 @@
+{
+  "schema_version": "nemotron-synthetic-accepted/v1",
+  "status": "passed",
+  "accepted_sha256": "add28f0827ce6b60ccf2deb08cf6595f4faab359eee5968d9bffa4c14f35c615",
+  "accepted_rows": 9,
+  "audit_sha256": "8af09193fc5c279023db5bd70a02b146cb440acb959160ffc7867096ccda4267",
+  "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+  "split_sha256": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+    "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+  },
+  "verifier_version": "synthetic_independent_verifier_v4",
+  "numeral_query_exposure_policy": "report_only",
+  "numeral_query_exposure_sha256": {
+    "numeral_query_exposure.json": "67994c74a7e38e45320749bb0e3b94486c99cd8a2015fcf63b81a98c309ed1d9",
+    "numeral_query_exposure.csv": "ba7b083096759c8f47dabc9962f7c70653009ccbc728962edcd0f8b8eff8b579"
+  },
+  "all_accepted_numeral_exposure_audited": true,
+  "all_accepted_verified_and_audited": true
+}

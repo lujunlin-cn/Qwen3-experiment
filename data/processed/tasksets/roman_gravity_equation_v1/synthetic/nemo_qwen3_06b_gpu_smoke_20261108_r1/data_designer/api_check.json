@@ -1,0 +1,13 @@
+{
+  "status": "passed_cpu_api_check",
+  "gpu_loaded": false,
+  "model_requests": 0,
+  "data_designer_version": "0.10.0",
+  "columns": [
+    "prompt_variant",
+    "trace_variant"
+  ],
+  "provider_endpoint": "http://127.0.0.1:18081/v1",
+  "seed_rows": 9,
+  "expected_outputs": 18
+}

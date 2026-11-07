@@ -1,0 +1,188 @@
+{
+  "status": "cpu_preparation_passed",
+  "date": "2026-11-07",
+  "gpu_generation_run": false,
+  "actual_qwen3_outputs": 0,
+  "actual_gpu_memory_verified": false,
+  "new_synthetic_run_id": "nemo_qwen3_06b_gpu_smoke_20261108_r1",
+  "seed_counts": {
+    "numeral_system": 3,
+    "gravity": 3,
+    "equation_numeric": 3
+  },
+  "seed_generation": "deterministic generator; public inputs omit answers and private traces",
+  "data_designer_version": "0.10.0",
+  "sdk_config_validation": "real package/compiler; no model requests",
+  "unit_tests": {
+    "passed": 6,
+    "model_backend": "mock localhost OpenAI HTTP server, not real vLLM/Qwen",
+    "actual_sdk_http_requests_in_mock_test": 18,
+    "mock_variants_verified": 18,
+    "coverage": [
+      "numbers/operators/math preservation",
+      "all intermediate trace fields",
+      "incorrect intermediate with correct final",
+      "Verifier independence from Solver",
+      "three-way leakage and Roman mapping audit",
+      "missing/duplicate/truncated output remains Preview",
+      "reasoning_content and extra prose remain Preview",
+      "empty Accepted is not passed",
+      "refuse overwrite"
+    ]
+  },
+  "full_notebook_cpu": {
+    "generated": 15,
+    "accepted": 15,
+    "negative_tests": 20,
+    "all_negative_passed": true
+  },
+  "existing_course_tests": {
+    "passed": 9,
+    "gpu_run": false
+  },
+  "notebook_format": "nbformat validated, code cells <=100 lines",
+  "existing_changed_functions": [
+    "_real_synthetic_cross_audit",
+    "_write_numeral_exposure_audit",
+    "_data_designer_preview",
+    "run_synthetic_pilot"
+  ],
+  "existing_generator_solver_verifier_unchanged": true,
+  "sft_rl_notebooks_changed": false,
+  "context_budget_audit": [
+    {
+      "seed_id": "numeral_system-seed1",
+      "column": "prompt_variant",
+      "prompt_tokens": 172,
+      "max_output_tokens": 1024,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "numeral_system-seed2",
+      "column": "prompt_variant",
+      "prompt_tokens": 170,
+      "max_output_tokens": 1024,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "numeral_system-seed3",
+      "column": "prompt_variant",
+      "prompt_tokens": 177,
+      "max_output_tokens": 1024,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "gravity-seed1",
+      "column": "prompt_variant",
+      "prompt_tokens": 248,
+      "max_output_tokens": 1024,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "gravity-seed2",
+      "column": "prompt_variant",
+      "prompt_tokens": 246,
+      "max_output_tokens": 1024,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "gravity-seed3",
+      "column": "prompt_variant",
+      "prompt_tokens": 266,
+      "max_output_tokens": 1024,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "equation_numeric-seed1",
+      "column": "prompt_variant",
+      "prompt_tokens": 385,
+      "max_output_tokens": 1024,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "equation_numeric-seed2",
+      "column": "prompt_variant",
+      "prompt_tokens": 382,
+      "max_output_tokens": 1024,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "equation_numeric-seed3",
+      "column": "prompt_variant",
+      "prompt_tokens": 389,
+      "max_output_tokens": 1024,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "numeral_system-seed1",
+      "column": "trace_variant",
+      "prompt_tokens": 181,
+      "max_output_tokens": 2048,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "numeral_system-seed2",
+      "column": "trace_variant",
+      "prompt_tokens": 179,
+      "max_output_tokens": 2048,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "numeral_system-seed3",
+      "column": "trace_variant",
+      "prompt_tokens": 186,
+      "max_output_tokens": 2048,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "gravity-seed1",
+      "column": "trace_variant",
+      "prompt_tokens": 297,
+      "max_output_tokens": 2048,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "gravity-seed2",
+      "column": "trace_variant",
+      "prompt_tokens": 295,
+      "max_output_tokens": 2048,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "gravity-seed3",
+      "column": "trace_variant",
+      "prompt_tokens": 315,
+      "max_output_tokens": 2048,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "equation_numeric-seed1",
+      "column": "trace_variant",
+      "prompt_tokens": 1117,
+      "max_output_tokens": 2048,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "equation_numeric-seed2",
+      "column": "trace_variant",
+      "prompt_tokens": 1114,
+      "max_output_tokens": 2048,
+      "context_budget": 8192
+    },
+    {
+      "seed_id": "equation_numeric-seed3",
+      "column": "trace_variant",
+      "prompt_tokens": 1121,
+      "max_output_tokens": 2048,
+      "context_budget": 8192
+    }
+  ],
+  "source_sha256": {
+    "01_Synthetic_Data_Engineering.ipynb": "111fd3d2562643bd36fd0bdbacd089976eff2904226d9e73a67828d1f7ecd340",
+    "utils/run_synthetic_smoke.py": "1f39e344980ad91044b193a0a5df22061c6f74e2896fc8bf99601cf91724205f",
+    "tests/test_nemo_smoke.py": "40195070bd35c33765bd0e10136028cdcf141fed66757e3602aa414d42f37829",
+    "configs/nemo_smoke.json": "ec9c193edaeae00a7859788dc34e4f74e7f711dd2463b5020574e4a73c6ab456",
+    "configs/nemo_smoke_requirements.in": "d98fd0139f7f43f0304b5874b622eaae13c3022862408f2e7ff0072c17b12bfc",
+    "configs/nemo_smoke_requirements.lock.txt": "c5f15c778c60841a2674bda7d7dd59fed0ffc193c9b65e9365519432569c3456"
+  }
+}

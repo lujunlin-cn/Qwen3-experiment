@@ -1,0 +1,44 @@
+{
+  "schema_version": "nemo-smoke-prepared/v1",
+  "status": "prepared_cpu_only",
+  "synthetic_run_id": "nemo_qwen3_06b_gpu_smoke_20261108_r1",
+  "gpu_generation_run": false,
+  "seed_counts": {
+    "numeral_system": 3,
+    "gravity": 3,
+    "equation_numeric": 3
+  },
+  "expected_outputs": 18,
+  "public_seed_fields": [
+    "seed_id",
+    "task_type",
+    "prompt"
+  ],
+  "frozen_files": {
+    "accepted_manifest.json": "7145194afb6c8499f3d4700ce9286ed50cab85b33c68e1e8df14719b60fe5a9c",
+    "data_designer/private_seeds.jsonl": "796708285ea638c3415266ed037a9f119c0c3403efe850cef0d9bfdcb20c0a12",
+    "data_designer/public_seeds.jsonl": "14642ea9f5acb0b831c2ef00f6723ae545ac6475e75a1ca2c83f16a368cc0c6a",
+    "data_designer/smoke_config.json": "0a9f3ab7107ad38fa9a9407d9f24fc0b99c7d9514acd553f680c9e44fbde9b43",
+    "generation_metadata.json": "b1405b1692d04393b04a4da4ea29902e2b73b665bb66a6dbdbfdfbbc473b7d88",
+    "numeral_query_exposure.csv": "ba7b083096759c8f47dabc9962f7c70653009ccbc728962edcd0f8b8eff8b579",
+    "numeral_query_exposure.json": "67994c74a7e38e45320749bb0e3b94486c99cd8a2015fcf63b81a98c309ed1d9",
+    "preparation_attempt.json": "73e513d7131624c3fd7c42a95f70b78824862ba24e4b71b62a6fe6facc86d96d",
+    "synthetic_accepted.jsonl": "add28f0827ce6b60ccf2deb08cf6595f4faab359eee5968d9bffa4c14f35c615",
+    "synthetic_candidates.jsonl": "add28f0827ce6b60ccf2deb08cf6595f4faab359eee5968d9bffa4c14f35c615",
+    "synthetic_real_leakage_audit.csv": "a68764c590ce4190410925202e55f91219fcd9d612b30dedcd3a921fbba6243e",
+    "synthetic_real_leakage_audit.json": "8af09193fc5c279023db5bd70a02b146cb440acb959160ffc7867096ccda4267",
+    "synthetic_rejected.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "synthetic_screening.csv": "ed899e69e44977864f494698b1a559a2a6834e93345c90cbea22faa80ff3ed5b",
+    "synthetic_statistics.json": "5ef0d5f436dc833bfe2cb65ee12e7a654208fdcd9b360de66bb7b8b4bf498887"
+  },
+  "sources": {
+    "01_Synthetic_Data_Engineering.ipynb": "111fd3d2562643bd36fd0bdbacd089976eff2904226d9e73a67828d1f7ecd340",
+    "utils/run_synthetic_smoke.py": "1f39e344980ad91044b193a0a5df22061c6f74e2896fc8bf99601cf91724205f",
+    "configs/nemo_smoke_requirements.lock.txt": "c5f15c778c60841a2674bda7d7dd59fed0ffc193c9b65e9365519432569c3456"
+  },
+  "config_sha256": "ec9c193edaeae00a7859788dc34e4f74e7f711dd2463b5020574e4a73c6ab456",
+  "generator_unchanged": true,
+  "solver_and_independent_verifier": true,
+  "all_three_splits_audited": true,
+  "merge_into_sft": false
+}

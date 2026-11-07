@@ -6,6 +6,8 @@
 
 下一轮统一执行入口见 [8 小时实验协议](QWEN3_0_6B_8H_PROTOCOL.md)：包含 max_tokens 基线、公开先验、SFT 及三种 RL 的多轮训练/验证、仅输出 Token 统计、显存守护和耗时报告。PPO/GRPO 只训练数学方程，Gravity 仅评测。
 
+Notebook 01 的首轮真实 GPU 合成测试已另行准备：[NeMo Data Designer Smoke](NEMO_DATA_DESIGNER_SMOKE.md)。每题型 3 条 Seed、两个生成列，预计 18 个输出；CPU 准备和真实 SDK 模拟接口联调不代表 GPU 验收，未经验证的 Trace 仅作 Preview。
+
 | Notebook | 职责 | 技术文档 |
 |---|---|---|
 | [00 Baseline Diagnosis](../00_Baseline_Diagnosis.ipynb) | 读取已清洗数据；80/10/10 划分、Manifest、泄漏审计、Validation 基线及错误分析 | [数据工程](01_数据工程.md) |

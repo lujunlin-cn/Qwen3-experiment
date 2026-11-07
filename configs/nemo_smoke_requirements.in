@@ -1,0 +1,3 @@
+# CPU control plane; vLLM runs in its existing separate CUDA environment.
+data-designer==0.10.0
+matplotlib==3.11.2

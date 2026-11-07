@@ -1,0 +1,67 @@
+CPU SDK integration with mock HTTP responses only; no real model or GPU.
+test_actual_sdk_18_outputs_over_mock_local_openai (test_nemo_smoke.SmokeTests.test_actual_sdk_18_outputs_over_mock_local_openai) ... [21:01:59] [INFO] ✅ Validation passed
+[21:01:59] [INFO] 🔭 Preview generation in progress
+[21:01:59] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[21:01:59] [INFO] ✅ Validation passed
+[21:01:59] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[21:01:59] [INFO] 🩺 Running health checks for models...
+[21:01:59] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[21:01:59] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[21:01:59] [INFO] ⚡ Using async task-queue preview
+[21:01:59] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[21:01:59] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[21:01:59] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[21:01:59] [INFO]   |-- model provider: 'local-vllm'
+[21:01:59] [INFO]   |-- inference parameters:
+[21:01:59] [INFO]   |  |-- generation_type=chat-completion
+[21:01:59] [INFO]   |  |-- max_parallel_requests=1
+[21:01:59] [INFO]   |  |-- timeout=180
+[21:01:59] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[21:01:59] [INFO]   |  |-- temperature=0.30
+[21:01:59] [INFO]   |  |-- top_p=0.90
+[21:01:59] [INFO]   |  |-- max_tokens=1024
+[21:01:59] [INFO] 📝 llm-text model config for column 'trace_variant'
+[21:01:59] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[21:01:59] [INFO]   |-- model alias: 'local-qwen3-trace'
+[21:01:59] [INFO]   |-- model provider: 'local-vllm'
+[21:01:59] [INFO]   |-- inference parameters:
+[21:01:59] [INFO]   |  |-- generation_type=chat-completion
+[21:01:59] [INFO]   |  |-- max_parallel_requests=1
+[21:01:59] [INFO]   |  |-- timeout=180
+[21:01:59] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[21:01:59] [INFO]   |  |-- temperature=0.30
+[21:01:59] [INFO]   |  |-- top_p=0.90
+[21:01:59] [INFO]   |  |-- max_tokens=2048
+[21:01:59] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 18 tasks across 1 row group(s)
+[21:01:59] [INFO] 🚀 (1/1) Dispatching with 9 records
+[21:01:59] [INFO] 🌱 (1/1) Sampling 9 records from seed dataset
+[21:01:59] [INFO]   |-- seed dataset size: 9 records
+[21:01:59] [INFO]   |-- sampling strategy: ordered
+[21:01:59] [INFO] 📊 Progress [0.2s]:
+[21:01:59] [INFO]   |-- 🦁 column 'prompt_variant': 9/9 (100%) 55.1 rec/s
+[21:01:59] [INFO]   |-- 🐔 column 'trace_variant': 9/9 (100%) 55.1 rec/s
+[21:01:59] [INFO] ✅ Async generation complete [0.2s]: 18 ok, 0 failed across 2 column(s)
+[21:01:59] [INFO] 📊 Model usage summary:
+[21:01:59] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[21:01:59] [INFO]   |-- tokens: input=900, output=180, total=1080, tps=6498
+[21:01:59] [INFO]   |-- requests: success=9, failed=0, total=9, rpm=3249
+[21:01:59] [INFO] 📐 Measuring dataset column statistics:
+[21:01:59] [INFO]   |-- 📝 column: 'prompt_variant'
+[21:01:59] [INFO]   |-- 📝 column: 'trace_variant'
+[21:01:59] [INFO]   |-- 🌱 column: 'seed_id'
+[21:01:59] [INFO]   |-- 🌱 column: 'task_type'
+[21:01:59] [INFO]   |-- 🌱 column: 'prompt'
+[21:01:59] [INFO] ✅ Preview complete!
+ok
+test_independent_verifier_does_not_use_solver (test_nemo_smoke.SmokeTests.test_independent_verifier_does_not_use_solver) ... ok
+test_preview_gate_missing_duplicate_reasoning_and_all_three_splits (test_nemo_smoke.SmokeTests.test_preview_gate_missing_duplicate_reasoning_and_all_three_splits) ... ok
+test_prompt_semantics_numbers_operators_and_negation (test_nemo_smoke.SmokeTests.test_prompt_semantics_numbers_operators_and_negation) ... ok
+test_seed_manifest_and_empty_accepted_status (test_nemo_smoke.SmokeTests.test_seed_manifest_and_empty_accepted_status) ... ok
+test_trace_full_process_and_correct_final_wrong_intermediate (test_nemo_smoke.SmokeTests.test_trace_full_process_and_correct_final_wrong_intermediate) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.483s
+
+OK
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}

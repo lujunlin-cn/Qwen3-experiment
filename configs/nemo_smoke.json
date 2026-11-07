@@ -1,0 +1,18 @@
+{
+  "schema_version": "nemo-qwen3-smoke/v1",
+  "synthetic_run_id": "nemo_qwen3_06b_gpu_smoke_20261108_r1",
+  "model_id": "Qwen/Qwen3-0.6B",
+  "taskset": "roman_gravity_equation_v1",
+  "seeds_per_task": 3,
+  "max_seed_attempts_per_task": 30,
+  "expected_seed_rows": 9,
+  "expected_model_outputs": 18,
+  "seed": 42,
+  "data_designer_version": "0.10.0",
+  "endpoint": "http://127.0.0.1:18081/v1",
+  "server": {"max_model_len": 8192, "kv_cache_gib": 2, "max_num_seqs": 1, "max_num_batched_tokens": 512},
+  "inference": {"enable_thinking": false, "temperature": 0.3, "top_p": 0.9, "prompt_max_tokens": 1024, "trace_max_tokens": 2048},
+  "prompt_policy": "allowlisted introduction followed by the complete unchanged original task",
+  "trace_policy": "closed structured proof; validate every field; all other outputs remain Preview",
+  "merge_into_sft": false
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": "nemotron-synthetic-leakage/v3",
+  "candidate_count": 9,
+  "passed": 9,
+  "rejected": 0,
+  "source_split_counts": {
+    "holdout_test": 391,
+    "train": 3123,
+    "validation": 391
+  },
+  "by_split": {
+    "train": {
+      "exact": 0,
+      "normalized": 0,
+      "source_id": 0,
+      "source_row": 0,
+      "structure": 0
+    },
+    "validation": {
+      "exact": 0,
+      "normalized": 0,
+      "source_id": 0,
+      "source_row": 0,
+      "structure": 0
+    },
+    "holdout_test": {
+      "exact": 0,
+      "normalized": 0,
+      "source_id": 0,
+      "source_row": 0,
+      "structure": 0
+    }
+  },
+  "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+  "split_sha256": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+    "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+  },
+  "policy": "real duplicate or declared real lineage rejected; structure similarity reported only",
+  "real_target_answers_used_for_exposure_audit": true,
+  "heldout_answer_usage": "Numeral mapping exposure audit only; never generation, solver inference, or tuning",
+  "numeral_query_exposure": {
+    "schema_version": "nemotron-synthetic-numeral-exposure/v1",
+    "policy": "report_only",
+    "interpretation": "finite mapping exposure; separate from full-sample duplicates and structural similarity",
+    "claims_no_mapping_leakage": false,
+    "populations": {
+      "candidates": {
+        "numeral_rows": 3,
+        "audited": 3,
+        "invalid": 0,
+        "query_already_in_own_examples": 0,
+        "by_split": {
+          "train": {
+            "synthetic_queries_audited": 3,
+            "query_in_real_examples": 3,
+            "query_in_real_examples_rate": 1.0,
+            "same_query_in_real_targets": 3,
+            "real_queries_covered_by_synthetic_examples": 120,
+            "real_query_count": 1260,
+            "real_query_coverage_rate": 0.09523809523809523
+          },
+          "validation": {
+            "synthetic_queries_audited": 3,
+            "query_in_real_examples": 3,
+            "query_in_real_examples_rate": 1.0,
+            "same_query_in_real_targets": 2,
+            "real_queries_covered_by_synthetic_examples": 18,
+            "real_query_count": 158,
+            "real_query_coverage_rate": 0.11392405063291139
+          },
+          "holdout_test": {
+            "synthetic_queries_audited": 3,
+            "query_in_real_examples": 3,
+            "query_in_real_examples_rate": 1.0,
+            "same_query_in_real_targets": 3,
+            "real_queries_covered_by_synthetic_examples": 10,
+            "real_query_count": 158,
+            "real_query_coverage_rate": 0.06329113924050633
+          }
+        }
+      },
+      "accepted": {
+        "numeral_rows": 3,
+        "audited": 3,
+        "invalid": 0,
+        "query_already_in_own_examples": 0,
+        "by_split": {
+          "train": {
+            "synthetic_queries_audited": 3,
+            "query_in_real_examples": 3,
+            "query_in_real_examples_rate": 1.0,
+            "same_query_in_real_targets": 3,
+            "real_queries_covered_by_synthetic_examples": 120,
+            "real_query_count": 1260,
+            "real_query_coverage_rate": 0.09523809523809523
+          },
+          "validation": {
+            "synthetic_queries_audited": 3,
+            "query_in_real_examples": 3,
+            "query_in_real_examples_rate": 1.0,
+            "same_query_in_real_targets": 2,
+            "real_queries_covered_by_synthetic_examples": 18,
+            "real_query_count": 158,
+            "real_query_coverage_rate": 0.11392405063291139
+          },
+          "holdout_test": {
+            "synthetic_queries_audited": 3,
+            "query_in_real_examples": 3,
+            "query_in_real_examples_rate": 1.0,
+            "same_query_in_real_targets": 3,
+            "real_queries_covered_by_synthetic_examples": 10,
+            "real_query_count": 158,
+            "real_query_coverage_rate": 0.06329113924050633
+          }
+        }
+      }
+    },
+    "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+    "split_sha256": {
+      "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+      "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+      "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+    },
+    "details_csv": "numeral_query_exposure.csv"
+  },
+  "lineage_unavailable": 9
+}
