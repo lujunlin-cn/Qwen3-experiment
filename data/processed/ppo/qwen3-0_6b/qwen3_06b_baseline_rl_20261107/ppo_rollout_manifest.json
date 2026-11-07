@@ -1,0 +1,24 @@
+{
+  "schema_version": "nemotron-rollout/v2",
+  "status": "completed",
+  "records": 6,
+  "rollout_path": "data/processed/ppo/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/ppo_smoke_rollouts.jsonl",
+  "rollout_sha256": "2280563691612e6ec6d8456cca4bd218e457326423590ae92759605b6efffaed",
+  "sft_fingerprint": {
+    "base_model_id": "Qwen/Qwen3-0.6B",
+    "policy_version": "sft:direct:nf4_qlora:seed42",
+    "manifest_sha256": "43d8da9dd4811a5474a9761d475b3b7c29512967182a4472d281512ae7a47c22",
+    "adapter_files": {
+      "adapter_config.json": "68a270f54dd313dc60b659056ee2684c57696e1e68e08986ec0c48b42c997fe6",
+      "adapter_model.safetensors": "49411d8e72a3c7db162785d4cf901a0e8b5b72170f59303c2288086d903fc775"
+    }
+  },
+  "source_split": "train",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "top_k": -1,
+  "logprobs_mode": "raw_logprobs",
+  "quantization": "bf16",
+  "max_new_tokens": 16384,
+  "max_model_len": 20480
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": "nemotron-sft-checkpoint/v1",
+  "status": "not_run",
+  "stage": "final",
+  "base_model": {
+    "id": "Qwen/Qwen3-0.6B",
+    "path": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B"
+  },
+  "tokenizer_path": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B",
+  "policy_version": "sft:two_stage:nf4_qlora:seed42",
+  "adapter_path": "data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/cpu_fixture_adapter",
+  "quantization": {
+    "mode": "nf4_qlora",
+    "load_in_4bit": true,
+    "quant_type": "nf4",
+    "double_quant": true,
+    "compute_dtype": "bfloat16"
+  },
+  "lora": {
+    "r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "bias": "none",
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "task_type": "CAUSAL_LM"
+  },
+  "training": {
+    "strategy": "two_stage",
+    "data_version": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "real_trace_sha256": "c7b6ba16bc3975b3ffb145df07a99976bc6d17db77c82d1e286e817f469387b9",
+    "use_synthetic_data": false,
+    "synthetic_accepted_sha256": null,
+    "source_counts": {
+      "course_prior_specification": 9,
+      "verified_real_train": 10
+    },
+    "records": 19,
+    "token_budget_proxy": 642,
+    "seed": 42,
+    "epochs": 1,
+    "profile": "official-q-qlora-or-pt-sft-cuda"
+  }
+}

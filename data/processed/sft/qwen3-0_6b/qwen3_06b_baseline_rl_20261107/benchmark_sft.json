@@ -1,0 +1,62 @@
+{
+  "tasks": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "train_sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+  "notebook": "03_SFT.ipynb",
+  "notebook_sha256": "f6bd99ead6720dca315833f6cd5111f58915d2e68d68e263aa23390ad46937c1",
+  "runner_sha256": "7764711f9358b9ad2af42209ecc54ce6d5bc6d800806d8b487bfec52a7f11cbb",
+  "run_id": "qwen3_06b_baseline_rl_20261107",
+  "stage": "sft",
+  "mode": "nf4_qlora",
+  "max_tokens": 16384,
+  "max_model_len": 20480,
+  "holdout_used": false,
+  "result": {
+    "status": "completed",
+    "stage": "sft_training",
+    "strategy": "direct",
+    "mode": "nf4_qlora",
+    "records": 24,
+    "history": [
+      {
+        "epoch": 1,
+        "loss": 2.838125979595576,
+        "optimizer_steps": 12,
+        "valid_tokens": 2777
+      }
+    ],
+    "training_time_seconds": 21.143865610007197,
+    "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/sft_direct_nf4_qlora",
+    "manifest_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/sft_manifest.json",
+    "peak_memory_allocated_mib": 1603.63525390625,
+    "gpu_preflight": {
+      "status": "ready",
+      "stage": "sft_training",
+      "device": "NVIDIA GeForce RTX 4080 SUPER",
+      "free_memory_mib": 31973.6875,
+      "total_memory_mib": 32230.8125
+    },
+    "adapter_reload": {
+      "status": "passed",
+      "trainable_parameter_tensors": 392
+    },
+    "wall_time_seconds": 21.463468364905566,
+    "preflight": {
+      "device": "NVIDIA GeForce RTX 4080 SUPER",
+      "total_mib": 32230.8125,
+      "free_mib": 31973.6875,
+      "torch_cuda": "13.0",
+      "bf16_supported": true,
+      "versions": {
+        "torch": "2.11.0",
+        "transformers": "5.18.0",
+        "peft": "0.21.2",
+        "bitsandbytes": "0.50.2"
+      }
+    },
+    "peak_device_memory_mib": 3090.0
+  }
+}

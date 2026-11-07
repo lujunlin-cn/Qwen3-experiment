@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "training_mode": "bf16_lora",
+  "rollout_mode": "bf16",
+  "audit_autocast_dtype": "bfloat16",
+  "scope": "one_actual_rollout_per_task",
+  "tokens_compared": 27515,
+  "mean_abs_logprob_delta": 0.016713274642825127,
+  "p99_abs_logprob_delta": 0.13790473341941833,
+  "max_abs_logprob_delta": 0.5096368789672852,
+  "signed_mean_logprob_delta": -0.0006397493416443467,
+  "mean_limit": 0.1,
+  "p99_limit": 0.6,
+  "quantization_difference_expected": false,
+  "checks": [
+    {
+      "sample_id": "0ed7056a",
+      "task_type": "numeral_system",
+      "response_tokens": 5529,
+      "prompt_tokens": 70,
+      "first_response_action_index": 69,
+      "token_mask_alignment": true,
+      "vllm_first_raw_logprob": -0.00048339602653868496,
+      "training_first_raw_logprob": -0.000461578369140625
+    },
+    {
+      "sample_id": "c6c03357",
+      "task_type": "gravity",
+      "response_tokens": 8525,
+      "prompt_tokens": 135,
+      "first_response_action_index": 134,
+      "token_mask_alignment": true,
+      "vllm_first_raw_logprob": -0.0007516896002925932,
+      "training_first_raw_logprob": -0.0007686614990234375
+    },
+    {
+      "sample_id": "6c402bb7",
+      "task_type": "equation_numeric",
+      "response_tokens": 13461,
+      "prompt_tokens": 87,
+      "first_response_action_index": 86,
+      "token_mask_alignment": true,
+      "vllm_first_raw_logprob": -0.0007849234389141202,
+      "training_first_raw_logprob": -0.000766754150390625
+    }
+  ]
+}

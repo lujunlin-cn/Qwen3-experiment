@@ -1,0 +1,40 @@
+{
+  "schema_version": "nemotron-rollout/v2",
+  "status": "completed",
+  "records": 24,
+  "rollout_path": "data/processed/dpo/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/dpo_smoke_rollouts.jsonl",
+  "rollout_sha256": "27d4dafceb3348b26fad89978d4715c2a28880ff22235d90d2765688da8e9891",
+  "sft_fingerprint": {
+    "base_model_id": "Qwen/Qwen3-0.6B",
+    "policy_version": "sft:direct:nf4_qlora:seed42",
+    "manifest_sha256": "43d8da9dd4811a5474a9761d475b3b7c29512967182a4472d281512ae7a47c22",
+    "adapter_files": {
+      "adapter_config.json": "68a270f54dd313dc60b659056ee2684c57696e1e68e08986ec0c48b42c997fe6",
+      "adapter_model.safetensors": "49411d8e72a3c7db162785d4cf901a0e8b5b72170f59303c2288086d903fc775"
+    }
+  },
+  "source_split": "train",
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "top_k": -1,
+  "logprobs_mode": "raw_logprobs",
+  "quantization": "bf16",
+  "max_new_tokens": 16384,
+  "max_model_len": 20480,
+  "stage": "dpo_rollout",
+  "wall_time_seconds": 2050.9044184768572,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "12.8",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.8.0",
+      "transformers": "4.57.1",
+      "vllm": "0.11.0"
+    }
+  },
+  "peak_memory_allocated_mib": 0.0,
+  "peak_device_memory_mib": 6273.0
+}

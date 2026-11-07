@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "recorded_at": "2026-11-07T08:48:30.594501+00:00",
+  "sha256_files_verified": 148,
+  "local_remote_files_identical": true,
+  "manifest_sha256": "1cb0670660db4865574105abb64dc3c286898291a2e024af940da2c7389a2f8b",
+  "summary_sha256": "4bd87829e99e4a7ea7a205241d2c8bd3a4af88c3e423edb3d7d0d10b06cd9b14",
+  "audit_status": "passed",
+  "all_training_completed": true,
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER, 32760 MiB, 1 MiB, 0 %",
+  "active_compute_pids": [],
+  "gpu_released": true
+}

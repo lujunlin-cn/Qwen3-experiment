@@ -1,0 +1,17 @@
+{
+  "tasks": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "train_sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+  "notebook": "04_DPO.ipynb",
+  "notebook_sha256": "af552f2f32ad41580b4ed2dc2e762116200115663a84d0a5472e69d69a73e8bb",
+  "runner_sha256": "d5a220b619a35fbc7cd6875ed449a6ca681c167cd877a3450962d81ae5780394",
+  "run_id": "qwen3_06b_baseline_rl_20261107",
+  "stage": "dpo_rollout",
+  "mode": "bf16_lora",
+  "max_tokens": 16384,
+  "max_model_len": 20480,
+  "holdout_used": false
+}

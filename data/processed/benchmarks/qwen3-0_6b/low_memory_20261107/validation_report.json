@@ -1,0 +1,42 @@
+{
+  "status": "local_checks_passed_gpu_not_run",
+  "recorded_at": "2026-11-07T09:14:13.267554+00:00",
+  "scope": "Local implementation, CPU numerical checks and memory planning only; remote machine is powered off",
+  "notebooks_sequential_cpu_passed": [
+    "04_DPO.ipynb",
+    "05_PPO.ipynb",
+    "06_GRPO.ipynb"
+  ],
+  "numerical_check_status": "passed",
+  "immutable_reuse_cli_check_status": "passed",
+  "gpu_memory_measured": false,
+  "historical_artifacts_unchanged_sha256_files": 133,
+  "current_source_sha256": {
+    "04_DPO.ipynb": "051c89d8c7505fd485f85f2355706f8ce71eefa2dc06fdbe2b0ecf23c56e3084",
+    "05_PPO.ipynb": "35bb15b4565859c5599742322dc192c9bb4e06b983e059e6052f64444e6755af",
+    "06_GRPO.ipynb": "55aed00ffcce0ef9c35a0bdc7dddf5f12b90acd88771f31b3b61e067e50fae3a",
+    "utils/benchmark_training.py": "4155aca95e3eb08ea1e645ac74a265dbc970df2f3df2053ceb04a953c9835e29",
+    "utils/low_memory_logprobs.py": "eb51145e7bf6ccb27d26484499e3a5bbf34ed2d9298f193f85dfad751789f619",
+    "utils/check_low_memory.py": "e92356af97264a63822cae912571a10202ae203bd50f25549ab4ab8eefd853f3",
+    "utils/budget_low_memory.py": "0348ad94b48028ec5d99a1fc2855592c6469e79dd1886bc25c7c9cf230e7ea7e"
+  },
+  "files": {
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/cpu_numerical_checks.json": "a8fb882b8f08f6b94b6f80644a84ff5b7f33db399bf8cf7c63a4dc6e38576172",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/memory_budget.json": "04387b990c036346c5d580d701695f7ea16f110ebab686766013692ca73c6aae",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/model_config.json": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/notebook_cpu_checks.log": "e4bcbb3fb94be0ecdd157fe49ad35b0888b056bd9f01166a02eb692165ec7bf9",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/reuse_cpu_checks.json": "92e30300b118b4519c1893e71f97b0ee0b57a7309a501f751c7177853bd58cde",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/04_DPO_051c89d8c750.ipynb": "051c89d8c7505fd485f85f2355706f8ce71eefa2dc06fdbe2b0ecf23c56e3084",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/04_DPO_e9443fbf636e.ipynb": "e9443fbf636e6a79605544ebff9ef72ffbb04f85dae9df41f209169ecdc044d7",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/05_PPO_35bb15b45658.ipynb": "35bb15b4565859c5599742322dc192c9bb4e06b983e059e6052f64444e6755af",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/05_PPO_ff01d521b7d1.ipynb": "ff01d521b7d1b9b9b331b894ecaabc16db9bdc7058101a1a69490c46c58291ee",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/06_GRPO_55aed00ffcce.ipynb": "55aed00ffcce0ef9c35a0bdc7dddf5f12b90acd88771f31b3b61e067e50fae3a",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/06_GRPO_ed199a5e1982.ipynb": "ed199a5e1982667759910d9355cfa32717d203b71a15308c55d17697b155bd40",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/benchmark_training_4155aca95e3e.py": "4155aca95e3eb08ea1e645ac74a265dbc970df2f3df2053ceb04a953c9835e29",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/benchmark_training_e706e37bf64d.py": "e706e37bf64da22a811037f755c00cfcbc04302109eb4e8599c0c5e714111cd0",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/budget_low_memory_0348ad94b480.py": "0348ad94b48028ec5d99a1fc2855592c6469e79dd1886bc25c7c9cf230e7ea7e",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/budget_low_memory_53e3a8e7f472.py": "53e3a8e7f4723762a1219a4d3cbec610b6b801c222113fc8cde593d1543fd35f",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/check_low_memory_e92356af9726.py": "e92356af97264a63822cae912571a10202ae203bd50f25549ab4ab8eefd853f3",
+    "data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/sources/low_memory_logprobs_eb51145e7bf6.py": "eb51145e7bf6ccb27d26484499e3a5bbf34ed2d9298f193f85dfad751789f619"
+  }
+}

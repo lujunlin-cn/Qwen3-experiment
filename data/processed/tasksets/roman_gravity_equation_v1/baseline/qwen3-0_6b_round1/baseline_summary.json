@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "records": 150,
+  "accuracy": 0.4866666666666667,
+  "answer_extraction_success_rate": 0.8333333333333334,
+  "invalid_output_rate": 0.29333333333333333,
+  "truncation_rate": 0.16666666666666666,
+  "average_generation_tokens": 8335.94,
+  "average_amortized_inference_time_seconds": 20.90008958572522,
+  "generation_wall_time_seconds": 3135.0134378587827,
+  "output_tokens": 1250391,
+  "output_token_throughput": 398.84709421023035,
+  "overall_accuracy_sample_weighted": 0.4866666666666667,
+  "macro_accuracy": 0.48666666666666664,
+  "by_task": {
+    "numeral_system": {
+      "records": 50,
+      "accuracy": 0.4,
+      "answer_extraction_success_rate": 0.84,
+      "invalid_output_rate": 0.54,
+      "truncation_rate": 0.16,
+      "average_generation_tokens": 3492.54,
+      "average_amortized_inference_time_seconds": 11.555654229279607,
+      "generation_wall_time_seconds": 577.7827114639804,
+      "output_tokens": 174627,
+      "output_token_throughput": 302.2364576425829
+    },
+    "gravity": {
+      "records": 50,
+      "accuracy": 0.94,
+      "answer_extraction_success_rate": 0.96,
+      "invalid_output_rate": 0.04,
+      "truncation_rate": 0.04,
+      "average_generation_tokens": 8020.88,
+      "average_amortized_inference_time_seconds": 22.56732936645858,
+      "generation_wall_time_seconds": 1128.366468322929,
+      "output_tokens": 401044,
+      "output_token_throughput": 355.41999098578725
+    },
+    "equation_numeric": {
+      "records": 50,
+      "accuracy": 0.12,
+      "answer_extraction_success_rate": 0.7,
+      "invalid_output_rate": 0.3,
+      "truncation_rate": 0.3,
+      "average_generation_tokens": 13494.4,
+      "average_amortized_inference_time_seconds": 28.577285161437466,
+      "generation_wall_time_seconds": 1428.8642580718733,
+      "output_tokens": 674720,
+      "output_token_throughput": 472.2072066596972
+    }
+  },
+  "gpu_device_peak_memory_mib": 27999.0,
+  "results_sha256": "9b458f70a3752b8a70582a9587a3723e8d3418e589c4fdba68bee95de4b0d7c7",
+  "evaluation_split": "validation"
+}

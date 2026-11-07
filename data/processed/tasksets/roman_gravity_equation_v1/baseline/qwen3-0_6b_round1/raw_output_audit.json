@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "records": 150,
+  "fixture": false,
+  "original_validation_ids_exact_match": true,
+  "calibration_disjoint": true,
+  "result_sha256_verified": true,
+  "scores_recomputed_from_raw_outputs": true,
+  "token_id_lengths_and_budgets_verified": true,
+  "finish_reason_counts": {
+    "stop": 125,
+    "length": 25
+  },
+  "completed_without_think_end": 0
+}

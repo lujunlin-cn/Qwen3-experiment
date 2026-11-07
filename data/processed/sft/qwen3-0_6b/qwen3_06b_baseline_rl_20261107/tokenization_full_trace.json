@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "records": 24,
+  "max_sequence_tokens": 288,
+  "assistant_tokens": 2777,
+  "supervised_tokens_after_shift": 2777,
+  "completion_truncation": "forbidden",
+  "source_counts": {
+    "verified_real_train": 24
+  }
+}

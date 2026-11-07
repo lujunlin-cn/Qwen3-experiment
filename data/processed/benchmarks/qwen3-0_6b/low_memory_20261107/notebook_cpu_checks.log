@@ -1,0 +1,486 @@
+CPU_CELL 04_DPO.ipynb 3
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3145, 'run_rollout': False, 'run_dpo': False}
+CPU_CELL 04_DPO.ipynb 5
+CPU_CELL 04_DPO.ipynb 7
+CPU_CELL 04_DPO.ipynb 9
+{'fixture_rollouts': 16, 'preference_pairs': 4, 'audit': {'input_pairs': 4, 'valid_pairs': 4, 'rejection_reasons': {}, 'fixture_pairs': 4}}
+CPU_CELL 04_DPO.ipynb 11
+{
+  "rl_readiness": {
+    "groups": 4,
+    "categories": {
+      "mixed": 4
+    },
+    "all_correct_ratio": 0.0,
+    "mixed_ratio": 1.0,
+    "all_wrong_ratio": 0.0,
+    "mean_reward_variance": 0.1875,
+    "fixture_only": true
+  }
+}
+CPU_CELL 04_DPO.ipynb 13
+CPU_CELL 04_DPO.ipynb 16
+CPU_CELL 04_DPO.ipynb 18
+CPU_CELL 04_DPO.ipynb 20
+CPU_CELL 04_DPO.ipynb 22
+CPU_CELL 04_DPO.ipynb 24
+CPU_CELL 04_DPO.ipynb 26
+CPU_CELL 04_DPO.ipynb 28
+CPU_CELL 04_DPO.ipynb 30
+CPU_CELL 04_DPO.ipynb 32
+{'rollout': 'disabled_by_default', 'dpo_training': 'disabled_by_default', 'reference_policy': 'same_sft_adapter'}
+CPU_CELL 04_DPO.ipynb 34
+{
+  "status": "passed",
+  "fixture_rollouts": 16,
+  "fixture_preference_pairs": 4,
+  "preference_audit": {
+    "input_pairs": 4,
+    "valid_pairs": 4,
+    "rejection_reasons": {},
+    "fixture_pairs": 4
+  },
+  "readiness_audit": {
+    "groups": 4,
+    "categories": {
+      "mixed": 4
+    },
+    "all_correct_ratio": 0.0,
+    "mixed_ratio": 1.0,
+    "all_wrong_ratio": 0.0,
+    "mean_reward_variance": 0.1875,
+    "fixture_only": true
+  },
+  "dpo_loss_finite": true,
+  "reference_frozen": true,
+  "reference_initialization_match": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "policy_gradient": true,
+  "gpu_rollout": "not_run",
+  "gpu_dpo": "not_run"
+}
+CPU_CELL 04_DPO.ipynb 37
+{
+  "status": "passed",
+  "smoke_prompts": 6,
+  "candidates_per_prompt": 4,
+  "preference_pairs": 4,
+  "reference_frozen": true,
+  "reference_initialization_match": true,
+  "sequence_logprob_is_sum": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "sft_manifest": "not_run_sft_manifest_missing",
+  "gpu": "not_run"
+}
+CPU_CELL 04_DPO.ipynb 39
+CPU_CELL 04_DPO.ipynb 41
+CPU_CELL 04_DPO.ipynb 43
+CPU_CELL 04_DPO.ipynb 45
+CPU_CELL 04_DPO.ipynb 47
+CPU_CELL 04_DPO.ipynb 49
+CPU_CELL 04_DPO.ipynb 51
+{
+  "status": "skipped_by_default"
+}
+NOTEBOOK_CPU_PASSED 04_DPO.ipynb
+CPU_CELL 05_PPO.ipynb 3
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric', 'bit_manipulation')}
+CPU_CELL 05_PPO.ipynb 5
+CPU_CELL 05_PPO.ipynb 7
+CPU_CELL 05_PPO.ipynb 9
+CPU_CELL 05_PPO.ipynb 11
+CPU_CELL 05_PPO.ipynb 13
+CPU_CELL 05_PPO.ipynb 16
+CPU_CELL 05_PPO.ipynb 18
+CPU_CELL 05_PPO.ipynb 20
+CPU_CELL 05_PPO.ipynb 22
+CPU_CELL 05_PPO.ipynb 24
+CPU_CELL 05_PPO.ipynb 26
+CPU_CELL 05_PPO.ipynb 28
+CPU_CELL 05_PPO.ipynb 30
+CPU_CELL 05_PPO.ipynb 32
+CPU_CELL 05_PPO.ipynb 34
+{
+  "status": "passed",
+  "gae_shape_and_mask": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "terminal_bootstrap_disabled": true,
+  "ppo_loss_finite": true,
+  "policy_gradient": true,
+  "clip_fraction": 1.0,
+  "approx_kl": 3.585690975189209,
+  "gpu_rollout": "not_run",
+  "gpu_training": "not_run"
+}
+CPU_CELL 05_PPO.ipynb 37
+{
+  "status": "passed",
+  "smoke_prompts_per_task": 2,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "sft_manifest": "not_run_sft_manifest_missing",
+  "gae_padding_mask_test": true,
+  "value_action_alignment": true,
+  "verifier_version": "official_nvidia_metric_v3",
+  "gpu": "not_run"
+}
+CPU_CELL 05_PPO.ipynb 39
+CPU_CELL 05_PPO.ipynb 41
+CPU_CELL 05_PPO.ipynb 43
+CPU_CELL 05_PPO.ipynb 45
+CPU_CELL 05_PPO.ipynb 47
+CPU_CELL 05_PPO.ipynb 49
+CPU_CELL 05_PPO.ipynb 51
+CPU_CELL_SKIPPED 05_PPO.ipynb 54 legacy Equation/Bit selection assertion; current Train-only selection is installed below
+CPU_CELL 05_PPO.ipynb 56
+{'chunk_equivalence': 'passed', 'checks': 36}
+CPU_CELL 05_PPO.ipynb 57
+CPU_CELL 05_PPO.ipynb 58
+{
+  "status": "skipped_by_default"
+}
+NOTEBOOK_CPU_PASSED 05_PPO.ipynb
+CPU_CELL 06_GRPO.ipynb 3
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric', 'bit_manipulation')}
+CPU_CELL 06_GRPO.ipynb 5
+CPU_CELL 06_GRPO.ipynb 7
+{
+  "readiness_audit_fixture": {
+    "groups": 3,
+    "invalid_groups": 0,
+    "categories": {
+      "all_correct": 1,
+      "mixed": 1,
+      "all_wrong": 1
+    },
+    "all_correct_ratio": 0.3333333333333333,
+    "mixed_ratio": 0.3333333333333333,
+    "all_wrong_ratio": 0.3333333333333333,
+    "mean_reward_variance": 0.08333333333333333,
+    "zero_variance_ratio": 0.6666666666666666,
+    "correct_count_histogram": {
+      "8": 1,
+      "4": 1,
+      "0": 1
+    },
+    "fixture_only": true
+  },
+  "theoretical_mixed_at_p_0_5": 0.9921875
+}
+CPU_CELL 06_GRPO.ipynb 9
+CPU_CELL 06_GRPO.ipynb 11
+CPU_CELL 06_GRPO.ipynb 13
+CPU_CELL 06_GRPO.ipynb 15
+{
+  "status": "passed",
+  "token_logprob_equivalence": [
+    {
+      "dtype": "torch.float32",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 5.960464477539063e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 2.9802322387695312e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 7.450580596923828e-09
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 5.960464477539063e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 11,
+      "vocab_size": 151936,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 2.9802322387695312e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 2.384185791015625e-07
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 11,
+      "vocab_size": 151936,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 1.4901161193847656e-08
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    }
+  ],
+  "readiness_audit": {
+    "groups": 3,
+    "invalid_groups": 0,
+    "categories": {
+      "all_correct": 1,
+      "mixed": 1,
+      "all_wrong": 1
+    },
+    "all_correct_ratio": 0.3333333333333333,
+    "mixed_ratio": 0.3333333333333333,
+    "all_wrong_ratio": 0.3333333333333333,
+    "mean_reward_variance": 0.08333333333333333,
+    "zero_variance_ratio": 0.6666666666666666,
+    "correct_count_histogram": {
+      "8": 1,
+      "4": 1,
+      "0": 1
+    },
+    "fixture_only": true
+  },
+  "zero_variance_advantage_zero": true,
+  "mixed_group_advantage_finite": true,
+  "grpo_loss_finite": true,
+  "policy_gradient": true,
+  "gpu_rollout": "not_run",
+  "gpu_training": "not_run"
+}
+CPU_CELL 06_GRPO.ipynb 19
+CPU_CELL 06_GRPO.ipynb 21
+CPU_CELL 06_GRPO.ipynb 23
+CPU_CELL 06_GRPO.ipynb 25
+CPU_CELL 06_GRPO.ipynb 27
+CPU_CELL 06_GRPO.ipynb 28
+CPU_CELL 06_GRPO.ipynb 30
+CPU_CELL 06_GRPO.ipynb 32
+CPU_CELL 06_GRPO.ipynb 34
+CPU_CELL 06_GRPO.ipynb 35
+CPU_CELL 06_GRPO.ipynb 37
+{'causal_lm_update': 'implemented', 'run_grpo_rollout': False, 'run_grpo_training': False, 'reference_kl': 'not_implemented; policy_logprob_change only', 'KL_COEF': 0.0, 'micro_batch_size': 1, 'gradient_accumulation_steps': 32}
+CPU_CELL 06_GRPO.ipynb 39
+{
+  "status": "passed",
+  "readiness_audit": {
+    "groups": 3,
+    "invalid_groups": 0,
+    "categories": {
+      "all_correct": 1,
+      "mixed": 1,
+      "all_wrong": 1
+    },
+    "all_correct_ratio": 0.3333333333333333,
+    "mixed_ratio": 0.3333333333333333,
+    "all_wrong_ratio": 0.3333333333333333,
+    "mean_reward_variance": 0.08333333333333333,
+    "zero_variance_ratio": 0.6666666666666666,
+    "correct_count_histogram": {
+      "8": 1,
+      "4": 1,
+      "0": 1
+    },
+    "fixture_only": true,
+    "status": "ok",
+    "validation": {
+      "valid": true,
+      "record_errors": [],
+      "bad_group_sizes": {},
+      "records": 24,
+      "groups": 3
+    },
+    "reward_definition": "binary_outcome_reward"
+  },
+  "negative_verifier_tests": {
+    "numeric_wrong_answer_rejected": true,
+    "bit_invalid_answer_rejected": true,
+    "missing_reward_rejected": true,
+    "logprob_alignment_rejected": true,
+    "out_of_range_reward_rejected": true,
+    "invalid_group_size_rejected": true
+  },
+  "alignment": {
+    "prompt_mask_zero": true,
+    "response_mask_one": true,
+    "old_logprob_shape_aligned": true,
+    "verifier_version": "official_nvidia_metric_v3"
+  },
+  "causal_lm_update_finite": true,
+  "token_logprob_equivalence": [
+    {
+      "dtype": "torch.float32",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 5.960464477539063e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 2.9802322387695312e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 7.450580596923828e-09
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 5.960464477539063e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 11,
+      "vocab_size": 151936,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 2.9802322387695312e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 2.384185791015625e-07
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 11,
+      "vocab_size": 151936,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 1.4901161193847656e-08
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    }
+  ],
+  "gpu_rollout": "not_run",
+  "gpu_training": "not_run",
+  "fixture_only": true
+}
+CPU_CELL 06_GRPO.ipynb 42
+{
+  "status": "passed",
+  "group_size": 8,
+  "smoke_prompts_per_task": 2,
+  "reference_kl": "not_implemented",
+  "policy_logprob_change_coefficient": 0.0,
+  "sft_manifest": "data/processed/checkpoints/qwen3-0_6b/low_memory_cpu_20261107/sft_manifest.json",
+  "gpu": "not_run"
+}
+CPU_CELL 06_GRPO.ipynb 44
+CPU_CELL 06_GRPO.ipynb 46
+CPU_CELL 06_GRPO.ipynb 48
+CPU_CELL 06_GRPO.ipynb 50
+CPU_CELL 06_GRPO.ipynb 52
+CPU_CELL 06_GRPO.ipynb 54
+06_GRPO.ipynb:cell54:12: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+CPU_CELL 06_GRPO.ipynb 56
+CPU_CELL 06_GRPO.ipynb 58
+{
+  "status": "skipped_by_default"
+}
+NOTEBOOK_CPU_PASSED 06_GRPO.ipynb

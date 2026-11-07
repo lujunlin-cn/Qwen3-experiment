@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "preference_audit": {
+    "input_pairs": 3,
+    "valid_pairs": 3,
+    "rejection_reasons": {},
+    "fixture_pairs": 0
+  },
+  "rollouts": 24,
+  "truncated": 1
+}

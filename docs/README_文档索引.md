@@ -1,6 +1,8 @@
 # Nemotron SFT-RL 教程：文档索引
 
-当前正式任务：**Numeral System（Easy）→ Gravity（Medium）→ Equation Numeric（Hard）**。模型为 `Qwen/Qwen3-4B-Thinking-2507`。
+当前正式任务：**Numeral System（Easy）→ Gravity（Medium）→ Equation Numeric（Hard）**。默认模型为 `Qwen/Qwen3-0.6B`（保留 Thinking）。150 题准确率与 Token 预算、SFT/DPO/PPO/GRPO 资源测试的当前结果见 [0.6B 基准报告](QWEN3_0_6B_BENCHMARK.md)；下载、路径与运行命令见 [0.6B 接入说明](QWEN3_0_6B_SETUP.md)。历史 4B 实测仅作为历史记录。
+
+8 GB 场景的本地实现、CPU 数值验证、显存预算与待运行命令见 [低显存说明](QWEN3_0_6B_LOW_MEMORY.md)，尚未测得新 GPU 峰值。
 
 | Notebook | 职责 | 技术文档 |
 |---|---|---|
@@ -21,7 +23,7 @@ python utils/prepare_official_dataset.py
 
 该命令只准备维护者数据，不执行划分、跨集合泄漏审计、模型推理或训练。00 的 Kernel 不导入该工具；它只通过磁盘读取准备好的数据。
 
-00、01 的新产物均位于 `data/processed/tasksets/roman_gravity_equation_v1/`。02–06 的编号、名称和原有训练数据接口保留，尚未自动切换至新版三任务数据；不能将旧训练结果当作新版 Numeral 任务结果。
+00、01 的新产物均位于 `data/processed/tasksets/roman_gravity_equation_v1/`。02–06 的编号、名称和原有交互式训练数据接口保留，尚未自动切换至新版三任务数据；本次资源测试由 `utils/benchmark_training.py` 显式绑定新版 Train 和 Verifier，旧训练结果不作为新版 Numeral 任务结果。
 
 01 完全可跳过。现有 03 默认使用 `data/processed/real_train_traces.jsonl` 中的非合成真实 Train 轨迹，合成目录不存在也能执行；只有 `USE_SYNTHETIC_DATA=1` 才读取其配置路径中通过审计的 Accepted。本轮未改变训练算法或开展学生练习改造。
 

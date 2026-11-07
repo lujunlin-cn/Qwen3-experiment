@@ -1,0 +1,45 @@
+{
+  "status": "completed",
+  "stage": "sft_training",
+  "strategy": "direct",
+  "mode": "nf4_qlora",
+  "records": 24,
+  "history": [
+    {
+      "epoch": 1,
+      "loss": 2.838125979595576,
+      "optimizer_steps": 12,
+      "valid_tokens": 2777
+    }
+  ],
+  "training_time_seconds": 21.143865610007197,
+  "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/sft_direct_nf4_qlora",
+  "manifest_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/sft_manifest.json",
+  "peak_memory_allocated_mib": 1603.63525390625,
+  "gpu_preflight": {
+    "status": "ready",
+    "stage": "sft_training",
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "free_memory_mib": 31973.6875,
+    "total_memory_mib": 32230.8125
+  },
+  "adapter_reload": {
+    "status": "passed",
+    "trainable_parameter_tensors": 392
+  },
+  "wall_time_seconds": 21.463468364905566,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "peak_device_memory_mib": 3090.0
+}

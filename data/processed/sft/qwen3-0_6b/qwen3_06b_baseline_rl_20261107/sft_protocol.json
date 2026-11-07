@@ -1,0 +1,17 @@
+{
+  "tasks": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "train_sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+  "notebook": "03_SFT.ipynb",
+  "notebook_sha256": "f6bd99ead6720dca315833f6cd5111f58915d2e68d68e263aa23390ad46937c1",
+  "runner_sha256": "7764711f9358b9ad2af42209ecc54ce6d5bc6d800806d8b487bfec52a7f11cbb",
+  "run_id": "qwen3_06b_baseline_rl_20261107",
+  "stage": "sft",
+  "mode": "nf4_qlora",
+  "max_tokens": 16384,
+  "max_model_len": 20480,
+  "holdout_used": false
+}

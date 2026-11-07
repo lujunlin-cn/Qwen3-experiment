@@ -1,0 +1,78 @@
+{
+  "status": "estimated_not_gpu_verified",
+  "config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+  "base_parameter_count_from_meta_model": 596049920,
+  "tied_embeddings": true,
+  "adapter_parameter_count": 5046272,
+  "kv_bytes_per_token_bf16": 114688,
+  "sequence_accounting": [
+    {
+      "tokens": 16384,
+      "bf16_dense_logits_gib": 4.63671875,
+      "fp32_dense_logits_gib": 9.2734375,
+      "one_bf16_checkpoint_boundary_per_layer_gib": 0.875,
+      "single_sequence_bf16_kv_gib": 1.75
+    },
+    {
+      "tokens": 20480,
+      "bf16_dense_logits_gib": 5.7958984375,
+      "fp32_dense_logits_gib": 11.591796875,
+      "one_bf16_checkpoint_boundary_per_layer_gib": 1.09375,
+      "single_sequence_bf16_kv_gib": 2.1875
+    }
+  ],
+  "projection_chunk_tokens": 128,
+  "single_bf16_projection_chunk_gib": 0.036224365234375,
+  "single_fp32_projection_chunk_gib": 0.07244873046875,
+  "rollout": {
+    "kv_cache_gib": 4,
+    "max_num_seqs": 2,
+    "max_num_batched_tokens": 1024,
+    "kv_cache_token_capacity_ideal": 37449,
+    "two_16384_responses_plus_1024_prompt_tokens_each_kv_gib": 3.71875,
+    "previous_dpo_non_kv_device_peak_gib": 2.1259765625,
+    "previous_dpo_peak_with_4gib_cache_gib": 6.1259765625,
+    "additional_planning_margin_gib": 0.75,
+    "planning_total_gib": 6.8759765625,
+    "validation": "Extrapolated from historical DPO; new PPO/GRPO configuration not GPU tested"
+  },
+  "training": {
+    "dpo": {
+      "components": {
+        "base_bf16_weights_gib": 1.1102294921875,
+        "adapter_fp32_weights_grads_adam_gib": 0.0751953125,
+        "retained_decoder_checkpoint_boundary_gib": 2.1875,
+        "decoder_recompute_backward_workspace_allowance_gib": 1.5,
+        "chunked_head_workspace_allowance_gib": 0.35,
+        "cuda_context_allocator_other_allowance_gib": 1.5
+      },
+      "planning_total_gib": 6.7229248046875,
+      "simultaneous_decoder_graphs": 2,
+      "validation": "GPU not run"
+    },
+    "grpo": {
+      "components": {
+        "base_bf16_weights_gib": 1.1102294921875,
+        "adapter_fp32_weights_grads_adam_gib": 0.0751953125,
+        "retained_decoder_checkpoint_boundary_gib": 1.09375,
+        "decoder_recompute_backward_workspace_allowance_gib": 1.5,
+        "chunked_head_workspace_allowance_gib": 0.35,
+        "cuda_context_allocator_other_allowance_gib": 1.5
+      },
+      "planning_total_gib": 5.6291748046875,
+      "simultaneous_decoder_graphs": 1,
+      "validation": "GPU not run"
+    }
+  },
+  "device_gib_8": 8,
+  "decimal_gb_8_in_gib": 7.450580596923828,
+  "assumptions": [
+    "BF16 model and efficient SDPA/Flash Attention, no quadratic attention fallback",
+    "Micro-batch=1, rank=8 LoRA, decoder gradient checkpointing and projection checkpointing",
+    "Full vocabulary exact softmax, output max_tokens=16384, max_model_len=20480",
+    "DPO may retain chosen+rejected decoder graphs together; reference is a scalar cache",
+    "GRPO preserves G=8 and processes one completion at a time",
+    "Allowances are engineering estimates, not proven allocation bounds or GPU measurements",
+    "No change to baseline accuracy claims or historical measured peaks"
+  ]
+}

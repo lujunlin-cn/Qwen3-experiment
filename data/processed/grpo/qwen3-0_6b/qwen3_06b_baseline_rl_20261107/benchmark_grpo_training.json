@@ -1,0 +1,136 @@
+{
+  "tasks": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "train_sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+  "notebook": "06_GRPO.ipynb",
+  "notebook_sha256": "cc46ea5afb7225a4d58540f42e24b507a9d4f8386fb7e713cb781b5de1303b65",
+  "runner_sha256": "ca5775a4fc6c438162b2feeed44503600792089d61b4cf75b2db10b56a520e1d",
+  "run_id": "qwen3_06b_baseline_rl_20261107",
+  "stage": "grpo_training",
+  "mode": "bf16_lora",
+  "max_tokens": 16384,
+  "max_model_len": 20480,
+  "max_num_seqs": 8,
+  "kv_cache_bytes": 17179869184,
+  "holdout_used": false,
+  "result": {
+    "status": "completed",
+    "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/grpo_bf16_lora",
+    "manifest_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/grpo_bf16_lora/grpo_manifest.json",
+    "optimizer_steps": 2.0,
+    "logs": {
+      "status": "completed",
+      "loss": 0.05568005849811336,
+      "policy_loss": 0.05568005849811336,
+      "policy_logprob_change": 0.000735836887894363,
+      "clip_fraction": 0.0027176400216139735,
+      "response_tokens": 377943.0,
+      "optimizer_steps": 2.0,
+      "token_logprob_chunk_size": 128,
+      "micro_batches": 48.0,
+      "micro_batch_size": 1.0,
+      "gradient_accumulation_steps": 32.0
+    },
+    "readiness_audit": {
+      "groups": 6,
+      "invalid_groups": 0,
+      "categories": {
+        "mixed": 3,
+        "all_correct": 2,
+        "all_wrong": 1
+      },
+      "all_correct_ratio": 0.3333333333333333,
+      "mixed_ratio": 0.5,
+      "all_wrong_ratio": 0.16666666666666666,
+      "mean_reward_variance": 0.08854166666666667,
+      "zero_variance_ratio": 0.5,
+      "correct_count_histogram": {
+        "7": 1,
+        "6": 1,
+        "8": 2,
+        "0": 1,
+        "3": 1
+      },
+      "fixture_only": false,
+      "status": "ok",
+      "validation": {
+        "valid": true,
+        "record_errors": [],
+        "bad_group_sizes": {},
+        "records": 48,
+        "groups": 6
+      },
+      "reward_definition": "binary_outcome_reward"
+    },
+    "alignment": {
+      "status": "passed",
+      "training_mode": "bf16_lora",
+      "rollout_mode": "bf16",
+      "scope": "one_actual_rollout_per_task",
+      "tokens_compared": 25435,
+      "mean_abs_logprob_delta": 0.015845125541090965,
+      "p99_abs_logprob_delta": 0.13055454194545746,
+      "max_abs_logprob_delta": 0.4479384422302246,
+      "signed_mean_logprob_delta": -0.0007792076794430614,
+      "mean_limit": 0.1,
+      "p99_limit": 0.6,
+      "quantization_difference_expected": false,
+      "checks": [
+        {
+          "sample_id": "0ed7056a",
+          "task_type": "numeral_system",
+          "response_tokens": 1600,
+          "prompt_tokens": 70,
+          "first_response_action_index": 69,
+          "token_mask_alignment": true,
+          "vllm_first_raw_logprob": -0.00048339602653868496,
+          "training_first_raw_logprob": -0.0004634857177734375
+        },
+        {
+          "sample_id": "6540cf61",
+          "task_type": "gravity",
+          "response_tokens": 7451,
+          "prompt_tokens": 155,
+          "first_response_action_index": 154,
+          "token_mask_alignment": true,
+          "vllm_first_raw_logprob": -0.0007161913090385497,
+          "training_first_raw_logprob": -0.0007648468017578125
+        },
+        {
+          "sample_id": "6c402bb7",
+          "task_type": "equation_numeric",
+          "response_tokens": 16384,
+          "prompt_tokens": 87,
+          "first_response_action_index": 86,
+          "token_mask_alignment": true,
+          "vllm_first_raw_logprob": -0.0007849234389141202,
+          "training_first_raw_logprob": -0.0007648468017578125
+        }
+      ]
+    },
+    "adapter_reload": {
+      "status": "passed",
+      "method": "PEFT load_adapter from saved disk weights, compare real-model logits",
+      "max_abs_logit_difference": 0.0
+    },
+    "stage": "grpo_training",
+    "wall_time_seconds": 88.15932198567316,
+    "preflight": {
+      "device": "NVIDIA GeForce RTX 4080 SUPER",
+      "total_mib": 32230.8125,
+      "free_mib": 31973.6875,
+      "torch_cuda": "13.0",
+      "bf16_supported": true,
+      "versions": {
+        "torch": "2.11.0",
+        "transformers": "5.18.0",
+        "peft": "0.21.2"
+      }
+    },
+    "peak_memory_allocated_mib": 11945.57470703125,
+    "peak_device_memory_mib": 20276.0
+  }
+}

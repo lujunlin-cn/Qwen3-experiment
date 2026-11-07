@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "train_sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+  "notebook": "06_GRPO.ipynb",
+  "notebook_sha256": "cc46ea5afb7225a4d58540f42e24b507a9d4f8386fb7e713cb781b5de1303b65",
+  "runner_sha256": "ca5775a4fc6c438162b2feeed44503600792089d61b4cf75b2db10b56a520e1d",
+  "run_id": "qwen3_06b_baseline_rl_20261107",
+  "stage": "grpo_training",
+  "mode": "bf16_lora",
+  "max_tokens": 16384,
+  "max_model_len": 20480,
+  "max_num_seqs": 8,
+  "kv_cache_bytes": 17179869184,
+  "holdout_used": false
+}

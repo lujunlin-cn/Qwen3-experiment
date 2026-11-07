@@ -1,0 +1,148 @@
+{
+  "status": "passed",
+  "readiness_audit": {
+    "groups": 3,
+    "invalid_groups": 0,
+    "categories": {
+      "all_correct": 1,
+      "mixed": 1,
+      "all_wrong": 1
+    },
+    "all_correct_ratio": 0.3333333333333333,
+    "mixed_ratio": 0.3333333333333333,
+    "all_wrong_ratio": 0.3333333333333333,
+    "mean_reward_variance": 0.08333333333333333,
+    "zero_variance_ratio": 0.6666666666666666,
+    "correct_count_histogram": {
+      "8": 1,
+      "4": 1,
+      "0": 1
+    },
+    "fixture_only": true,
+    "status": "ok",
+    "validation": {
+      "valid": true,
+      "record_errors": [],
+      "bad_group_sizes": {},
+      "records": 24,
+      "groups": 3
+    },
+    "reward_definition": "binary_outcome_reward"
+  },
+  "negative_verifier_tests": {
+    "numeric_wrong_answer_rejected": true,
+    "bit_invalid_answer_rejected": true,
+    "missing_reward_rejected": true,
+    "logprob_alignment_rejected": true,
+    "out_of_range_reward_rejected": true,
+    "invalid_group_size_rejected": true
+  },
+  "alignment": {
+    "prompt_mask_zero": true,
+    "response_mask_one": true,
+    "old_logprob_shape_aligned": true,
+    "verifier_version": "official_nvidia_metric_v3"
+  },
+  "causal_lm_update_finite": true,
+  "token_logprob_equivalence": [
+    {
+      "dtype": "torch.float32",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 5.960464477539063e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 2.9802322387695312e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 3.725290298461914e-09
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 5.960464477539063e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 11,
+      "vocab_size": 151936,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 2.9802322387695312e-08
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 2.384185791015625e-07
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 2,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 1,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 11,
+      "vocab_size": 151936,
+      "chunk_size": 4,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 2.9802322387695312e-08
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "length": 11,
+      "vocab_size": 37,
+      "chunk_size": 128,
+      "max_abs_value_difference": 0.0,
+      "max_abs_gradient_difference": 0.0
+    }
+  ],
+  "gpu_rollout": "not_run",
+  "gpu_training": "not_run",
+  "fixture_only": true
+}

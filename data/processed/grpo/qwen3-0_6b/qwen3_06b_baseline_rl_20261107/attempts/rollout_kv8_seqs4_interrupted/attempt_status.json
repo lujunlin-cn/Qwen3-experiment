@@ -1,0 +1,10 @@
+{
+  "status": "interrupted_for_resource_profile_change",
+  "recorded_at": "2026-11-07T07:54:25.491274+00:00",
+  "reason": "Unfinished max_num_seqs=4 attempt stopped to increase generation concurrency with a larger explicit KV cache; no rollout outputs or rewards were persisted. Final benchmark is a fresh generation, not a continuation or pooled measurement.",
+  "original_max_num_seqs": 4,
+  "original_kv_cache_gib": 8,
+  "replacement_max_num_seqs": 8,
+  "replacement_kv_cache_gib": 16,
+  "gpu_after_stop": "1 MiB, 0 %"
+}

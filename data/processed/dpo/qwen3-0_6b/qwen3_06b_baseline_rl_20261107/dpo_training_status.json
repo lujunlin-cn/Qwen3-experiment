@@ -1,0 +1,54 @@
+{
+  "status": "completed",
+  "optimizer_steps": 1,
+  "losses": [
+    0.6931471824645996
+  ],
+  "pairs": 3,
+  "reference_policy": "immutable logprob cache of identical initial SFT Adapter",
+  "reference_initialization_max_abs_diff": 0.0,
+  "parent_sft_fingerprint": {
+    "base_model_id": "Qwen/Qwen3-0.6B",
+    "policy_version": "sft:direct:nf4_qlora:seed42",
+    "manifest_sha256": "43d8da9dd4811a5474a9761d475b3b7c29512967182a4472d281512ae7a47c22",
+    "adapter_files": {
+      "adapter_config.json": "68a270f54dd313dc60b659056ee2684c57696e1e68e08986ec0c48b42c997fe6",
+      "adapter_model.safetensors": "49411d8e72a3c7db162785d4cf901a0e8b5b72170f59303c2288086d903fc775"
+    }
+  },
+  "parent_sft_adapter": "data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/sft_direct_nf4_qlora",
+  "base_model": {
+    "id": "Qwen/Qwen3-0.6B",
+    "path": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B"
+  },
+  "tokenizer_path": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B",
+  "adapter_path": "data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/dpo_bf16_lora",
+  "adapter_reload": {
+    "status": "passed",
+    "method": "PEFT load_adapter from saved disk weights, compare real-model logits",
+    "max_abs_logit_difference": 0.0
+  },
+  "mode": "bf16_lora",
+  "preference_audit": {
+    "input_pairs": 3,
+    "valid_pairs": 3,
+    "rejection_reasons": {},
+    "fixture_pairs": 0
+  },
+  "stage": "dpo_training",
+  "wall_time_seconds": 9.30907568987459,
+  "preflight": {
+    "device": "NVIDIA GeForce RTX 4080 SUPER",
+    "total_mib": 32230.8125,
+    "free_mib": 31973.6875,
+    "torch_cuda": "13.0",
+    "bf16_supported": true,
+    "versions": {
+      "torch": "2.11.0",
+      "transformers": "5.18.0",
+      "peft": "0.21.2"
+    }
+  },
+  "peak_memory_allocated_mib": 18075.158203125,
+  "peak_device_memory_mib": 29578.0
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "records": 150,
+  "by_task": {
+    "numeral_system": 50,
+    "gravity": 50,
+    "equation_numeric": 50
+  },
+  "id_set_matches_protocol": true,
+  "calibration_evaluation_disjoint": true,
+  "token_lengths_and_caps_match": true,
+  "rescore_matches_all_records": true,
+  "results_sha256": "9b458f70a3752b8a70582a9587a3723e8d3418e589c4fdba68bee95de4b0d7c7",
+  "holdout_used": false
+}

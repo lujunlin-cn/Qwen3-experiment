@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "records": 24,
+  "by_task": {
+    "numeral_system": 8,
+    "gravity": 8,
+    "equation_numeric": 8
+  },
+  "source_ids": [
+    "001b24c4",
+    "00600e6e",
+    "00d9f682",
+    "0106eb4a",
+    "0122d53a",
+    "015430cf",
+    "0162e157",
+    "018871ed",
+    "0040ff76",
+    "00463d04",
+    "00619cba",
+    "0073bcbb",
+    "00ec1c63",
+    "00ed1836",
+    "01a065bb",
+    "020d8b25",
+    "026106f5",
+    "04171e29",
+    "047c4111",
+    "0505ab22",
+    "0641ef58",
+    "07cbed38",
+    "0819520a",
+    "09302769"
+  ],
+  "train_sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+  "trace_sha256": "c7b6ba16bc3975b3ffb145df07a99976bc6d17db77c82d1e286e817f469387b9",
+  "synthetic_generation_used": false,
+  "scope": "Retrospective verification of the exact deterministic 24 records used by SFT"
+}

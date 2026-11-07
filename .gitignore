@@ -3,6 +3,7 @@
 .uv/
 .kernels/
 .autodl/
+models/
 
 # Notebook and Python runtime caches
 .ipynb_checkpoints/

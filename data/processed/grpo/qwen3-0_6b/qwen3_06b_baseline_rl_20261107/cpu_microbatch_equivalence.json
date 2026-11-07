@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "members": 8,
+  "max_parameter_difference": 0.0,
+  "optimizer_steps": 1,
+  "micro_batches": 8
+}

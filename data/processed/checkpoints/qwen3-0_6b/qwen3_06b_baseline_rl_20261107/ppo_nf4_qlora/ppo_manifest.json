@@ -1,0 +1,56 @@
+{
+  "schema_version": "nemotron-ppo-checkpoint/v1",
+  "status": "completed",
+  "parent_sft_manifest": "data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/sft_manifest.json",
+  "parent_sft_adapter": "data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/sft_direct_nf4_qlora",
+  "base_model": {
+    "id": "Qwen/Qwen3-0.6B",
+    "path": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B"
+  },
+  "tokenizer_path": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B",
+  "adapter_path": "data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/ppo_nf4_qlora",
+  "value_head_path": "data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/ppo_nf4_qlora/value_head.pt",
+  "mode": "nf4_qlora",
+  "quantization": {
+    "mode": "nf4_qlora",
+    "load_in_4bit": true,
+    "quant_type": "nf4",
+    "double_quant": true,
+    "compute_dtype": "bfloat16"
+  },
+  "micro_batch": 1,
+  "chunk_size": 128,
+  "gradient_checkpointing": true,
+  "use_cache": false,
+  "policy_version": "ppo:nf4_qlora:seed42",
+  "seed": 42,
+  "profile": "official-q-qlora",
+  "optimizer_steps": 1,
+  "adapter_reload": {
+    "status": "passed",
+    "method": "PEFT load_adapter from saved disk weights, compare real-model logits",
+    "max_abs_logit_difference": 0.0
+  },
+  "value_head_reload": "passed",
+  "training_mode": "nf4_qlora",
+  "nf4_runtime_contract": {
+    "loaded_in_4bit": true,
+    "nf4": true,
+    "double_quant": true,
+    "bf16_compute": true,
+    "gradient_checkpointing": true,
+    "use_cache_disabled": true,
+    "value_head_fp32": true
+  },
+  "max_abs_parameter_update": {
+    "lora": 1.000240445137024e-05,
+    "value_head": 1.000426709651947e-05
+  },
+  "sequence_lengths": [
+    5599,
+    4998,
+    8660,
+    8280,
+    8913
+  ]
+}

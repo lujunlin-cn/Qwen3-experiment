@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "training_mode": "bf16_lora",
+  "rollout_mode": "bf16",
+  "scope": "one_actual_rollout_per_task",
+  "tokens_compared": 25435,
+  "mean_abs_logprob_delta": 0.015845125541090965,
+  "p99_abs_logprob_delta": 0.13055454194545746,
+  "max_abs_logprob_delta": 0.4479384422302246,
+  "signed_mean_logprob_delta": -0.0007792076794430614,
+  "mean_limit": 0.1,
+  "p99_limit": 0.6,
+  "quantization_difference_expected": false,
+  "checks": [
+    {
+      "sample_id": "0ed7056a",
+      "task_type": "numeral_system",
+      "response_tokens": 1600,
+      "prompt_tokens": 70,
+      "first_response_action_index": 69,
+      "token_mask_alignment": true,
+      "vllm_first_raw_logprob": -0.00048339602653868496,
+      "training_first_raw_logprob": -0.0004634857177734375
+    },
+    {
+      "sample_id": "6540cf61",
+      "task_type": "gravity",
+      "response_tokens": 7451,
+      "prompt_tokens": 155,
+      "first_response_action_index": 154,
+      "token_mask_alignment": true,
+      "vllm_first_raw_logprob": -0.0007161913090385497,
+      "training_first_raw_logprob": -0.0007648468017578125
+    },
+    {
+      "sample_id": "6c402bb7",
+      "task_type": "equation_numeric",
+      "response_tokens": 16384,
+      "prompt_tokens": 87,
+      "first_response_action_index": 86,
+      "token_mask_alignment": true,
+      "vllm_first_raw_logprob": -0.0007849234389141202,
+      "training_first_raw_logprob": -0.0007648468017578125
+    }
+  ]
+}

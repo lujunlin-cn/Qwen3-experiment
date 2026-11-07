@@ -1,0 +1,59 @@
+{
+  "tasks": [
+    "numeral_system",
+    "gravity",
+    "equation_numeric"
+  ],
+  "train_sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+  "notebook": "06_GRPO.ipynb",
+  "notebook_sha256": "4e1c08619b995efc102c163d0706052907fe60930aa57c7d059db02e85da5076",
+  "runner_sha256": "ca5775a4fc6c438162b2feeed44503600792089d61b4cf75b2db10b56a520e1d",
+  "run_id": "qwen3_06b_baseline_rl_20261107",
+  "stage": "grpo_rollout",
+  "mode": "bf16_lora",
+  "max_tokens": 16384,
+  "max_model_len": 20480,
+  "max_num_seqs": 8,
+  "kv_cache_bytes": 17179869184,
+  "holdout_used": false,
+  "result": {
+    "schema_version": "nemotron-rollout/v2",
+    "status": "completed",
+    "records": 48,
+    "rollout_path": "data/processed/grpo/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/grpo_smoke_rollouts.jsonl",
+    "rollout_sha256": "ef55d77fd0a73c7ba3e0c13854648b8a70d148fd93bfca9d20c3a41d7f32a633",
+    "sft_fingerprint": {
+      "base_model_id": "Qwen/Qwen3-0.6B",
+      "policy_version": "sft:direct:nf4_qlora:seed42",
+      "manifest_sha256": "43d8da9dd4811a5474a9761d475b3b7c29512967182a4472d281512ae7a47c22",
+      "adapter_files": {
+        "adapter_config.json": "68a270f54dd313dc60b659056ee2684c57696e1e68e08986ec0c48b42c997fe6",
+        "adapter_model.safetensors": "49411d8e72a3c7db162785d4cf901a0e8b5b72170f59303c2288086d903fc775"
+      }
+    },
+    "source_split": "train",
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "logprobs_mode": "raw_logprobs",
+    "quantization": "bf16",
+    "max_new_tokens": 16384,
+    "max_model_len": 20480,
+    "stage": "grpo_rollout",
+    "wall_time_seconds": 2565.2185155521147,
+    "preflight": {
+      "device": "NVIDIA GeForce RTX 4080 SUPER",
+      "total_mib": 32230.8125,
+      "free_mib": 31973.6875,
+      "torch_cuda": "12.8",
+      "bf16_supported": true,
+      "versions": {
+        "torch": "2.8.0",
+        "transformers": "4.57.1",
+        "vllm": "0.11.0"
+      }
+    },
+    "peak_memory_allocated_mib": 0.0,
+    "peak_device_memory_mib": 18537.0
+  }
+}

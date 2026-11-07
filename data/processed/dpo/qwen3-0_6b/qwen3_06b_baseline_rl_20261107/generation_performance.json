@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "records": 24,
+  "generation_seconds": 2017.9246373809874,
+  "output_tokens": 205264,
+  "output_tokens_per_second": 101.72034980771475,
+  "max_tokens": 16384,
+  "max_model_len": 20480,
+  "max_num_seqs": 8,
+  "kv_cache_bytes": 4294967296,
+  "by_task": {
+    "numeral_system": 8,
+    "gravity": 8,
+    "equation_numeric": 8
+  }
+}

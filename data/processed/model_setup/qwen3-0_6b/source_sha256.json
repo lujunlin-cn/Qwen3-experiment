@@ -1,0 +1,12 @@
+{
+  "00_Baseline_Diagnosis.ipynb": "a78010a4b149aa0bc0273018217da67cf8978eae03df3c30dbfd1ea9a108f00e",
+  "01_Synthetic_Data_Engineering.ipynb": "01a8cdd819d8a74b8dda975d086f9e9c345493cca1f27cb1baa89ced4fd32e62",
+  "02_Prompt_Engineering.ipynb": "f0321958d915cedbb630ff5c8cacdca06668266b5e721f8203c5c1001239ed06",
+  "03_SFT.ipynb": "f6bd99ead6720dca315833f6cd5111f58915d2e68d68e263aa23390ad46937c1",
+  "04_DPO.ipynb": "af552f2f32ad41580b4ed2dc2e762116200115663a84d0a5472e69d69a73e8bb",
+  "05_PPO.ipynb": "5373d8e127841ad43adb953275f8788c0d2714f699a584bec2f98de0d67dd460",
+  "06_GRPO.ipynb": "4e1c08619b995efc102c163d0706052907fe60930aa57c7d059db02e85da5076",
+  "utils/download_qwen3.py": "d2afb84b5321f71ca8a7de34da838bb03d0a27cf9872e8256cecbcc19d9bf10b",
+  "utils/run_baseline.py": "099263f28a3e7b70b9a375694c04896bb6e3a5950bebd82158e6ef14e37f097e",
+  "utils/prepare_official_dataset.py": "0a8310b0023c540ca388f71174f4ed55bff12065465ebc6c309e6cc29201a61c"
+}

@@ -1,0 +1,1208 @@
+{
+  "audit_status": "passed",
+  "run_id": "qwen3_06b_baseline_rl_20261107",
+  "baseline_run_id": "qwen3-0_6b_round1",
+  "baseline": {
+    "status": "completed",
+    "phase": "evaluation",
+    "records": 150,
+    "accuracy": 0.4866666666666667,
+    "answer_extraction_success_rate": 0.8333333333333334,
+    "invalid_output_rate": 0.29333333333333333,
+    "truncation_rate": 0.16666666666666666,
+    "average_generation_tokens": 8335.94,
+    "average_amortized_inference_time_seconds": 20.90008958572522,
+    "generation_wall_time_seconds": 3135.0134378587827,
+    "output_tokens": 1250391,
+    "output_token_throughput": 398.84709421023035,
+    "overall_accuracy_sample_weighted": 0.4866666666666667,
+    "macro_accuracy": 0.48666666666666664,
+    "by_task": {
+      "numeral_system": {
+        "records": 50,
+        "accuracy": 0.4,
+        "answer_extraction_success_rate": 0.84,
+        "invalid_output_rate": 0.54,
+        "truncation_rate": 0.16,
+        "average_generation_tokens": 3492.54,
+        "average_amortized_inference_time_seconds": 11.555654229279607,
+        "generation_wall_time_seconds": 577.7827114639804,
+        "output_tokens": 174627,
+        "output_token_throughput": 302.2364576425829
+      },
+      "gravity": {
+        "records": 50,
+        "accuracy": 0.94,
+        "answer_extraction_success_rate": 0.96,
+        "invalid_output_rate": 0.04,
+        "truncation_rate": 0.04,
+        "average_generation_tokens": 8020.88,
+        "average_amortized_inference_time_seconds": 22.56732936645858,
+        "generation_wall_time_seconds": 1128.366468322929,
+        "output_tokens": 401044,
+        "output_token_throughput": 355.41999098578725
+      },
+      "equation_numeric": {
+        "records": 50,
+        "accuracy": 0.12,
+        "answer_extraction_success_rate": 0.7,
+        "invalid_output_rate": 0.3,
+        "truncation_rate": 0.3,
+        "average_generation_tokens": 13494.4,
+        "average_amortized_inference_time_seconds": 28.577285161437466,
+        "generation_wall_time_seconds": 1428.8642580718733,
+        "output_tokens": 674720,
+        "output_token_throughput": 472.2072066596972
+      }
+    },
+    "load_seconds": 15.456794057041407,
+    "warmup_seconds": 0.49126732582226396,
+    "model_id": "Qwen/Qwen3-0.6B",
+    "preflight": {
+      "device": "NVIDIA GeForce RTX 4080 SUPER",
+      "free_mib": 31973.6875,
+      "total_mib": 32230.8125,
+      "torch_cuda": "12.8",
+      "versions": {
+        "torch": "2.8.0",
+        "transformers": "4.57.1",
+        "vllm": "0.11.0"
+      },
+      "fixture": false
+    },
+    "protocol": {
+      "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+      "model_id": "Qwen/Qwen3-0.6B",
+      "calibration_ids": {
+        "equation_numeric": [
+          "d46df3b0",
+          "f333b67f",
+          "fe393711"
+        ],
+        "gravity": [
+          "2a55bb8d",
+          "7a895e9c",
+          "3a77dee7"
+        ],
+        "numeral_system": [
+          "d8053ec2",
+          "4e177b84",
+          "e5318535"
+        ]
+      },
+      "evaluation_ids": {
+        "equation_numeric": [
+          "42d4dcf7",
+          "04322d27",
+          "d64a6578",
+          "7d8fe3a8",
+          "a04ecffd",
+          "963e85bb",
+          "759cbdde",
+          "b7ad0671",
+          "9ff6e9d2",
+          "e70d5739",
+          "71e02000",
+          "23f98595",
+          "6e6f8d9c",
+          "940df3f4",
+          "2af7134e",
+          "8321a400",
+          "d8b3310a",
+          "21519be7",
+          "68b9b9a8",
+          "7d9f6c40",
+          "4cb5e927",
+          "2e044d8e",
+          "9d68ef62",
+          "427ba852",
+          "3013265c",
+          "17c98340",
+          "3c424916",
+          "cbe4288b",
+          "b4a5076f",
+          "743a293d",
+          "9610985a",
+          "d096a492",
+          "4350015c",
+          "d8bc44b3",
+          "d008b0b6",
+          "8dea05d7",
+          "aa8c76a1",
+          "2cf587f6",
+          "4d92de08",
+          "794f71ed",
+          "93d1c7eb",
+          "abbb5d43",
+          "2fb20366",
+          "7ac90433",
+          "592107c3",
+          "5d055504",
+          "75032b65",
+          "e102a09d",
+          "88fe5a52",
+          "42cb233d"
+        ],
+        "gravity": [
+          "c83ef461",
+          "00662ac2",
+          "a4a5fe71",
+          "f8aa53b8",
+          "39fafc6b",
+          "697f134b",
+          "ce2df062",
+          "9db0f169",
+          "5ddaa052",
+          "9a919910",
+          "177d60f2",
+          "58e63752",
+          "3a1ae7b5",
+          "4b39e8d5",
+          "e43520a7",
+          "02beaa05",
+          "1bde7dfb",
+          "34f49b7d",
+          "22151c0e",
+          "1ca8e087",
+          "f61f3d46",
+          "a0e44f72",
+          "8e438ef9",
+          "6eb182f1",
+          "d3f8c793",
+          "b303bb5a",
+          "6b3f1b31",
+          "01714be2",
+          "c3e8c44f",
+          "f83e6ef3",
+          "c50cd56e",
+          "26e2d26a",
+          "90afd579",
+          "ae6c8cf6",
+          "6b01cc50",
+          "8ed96b4b",
+          "ffe680c2",
+          "e5bebe50",
+          "da0c7a5e",
+          "60274ab3",
+          "7bc77ef3",
+          "9bee3f4d",
+          "1021cb76",
+          "8ec8d10c",
+          "d26230fc",
+          "e8f32d12",
+          "9846834b",
+          "5ea6d59c",
+          "2d1d1cea",
+          "66df03f5"
+        ],
+        "numeral_system": [
+          "fb23edcb",
+          "8ec53c10",
+          "354e4fb6",
+          "9734f792",
+          "98f3c5cf",
+          "972ef18a",
+          "eaf49e67",
+          "29f63642",
+          "5ca7d798",
+          "25d6c521",
+          "71cd0e14",
+          "2fa6c2b5",
+          "359ecbe4",
+          "cf54a8d8",
+          "a9b4f1ba",
+          "92ef466f",
+          "68cb31d7",
+          "f7074a8f",
+          "29806da8",
+          "21115993",
+          "1970e965",
+          "3e6d976b",
+          "81c48679",
+          "53f02109",
+          "e8deeee0",
+          "d0dd8e4e",
+          "f194560a",
+          "ef032cce",
+          "7851d905",
+          "e6a0585e",
+          "586d246b",
+          "d79d0cfd",
+          "87312ffc",
+          "fa995fce",
+          "479e567f",
+          "6dac7e49",
+          "bda83bcd",
+          "32fffab2",
+          "e6491c2b",
+          "7f4262a6",
+          "f6a7fc15",
+          "42c48e76",
+          "7de78987",
+          "2e94ea17",
+          "e4af1185",
+          "eb9963a8",
+          "1ba0e448",
+          "7fcfe0db",
+          "706381a3",
+          "d076d135"
+        ]
+      },
+      "temperature": 0.6,
+      "top_p": 0.95,
+      "top_k": 20,
+      "seed": 42,
+      "max_model_len": 20480,
+      "budget_grid": {
+        "numeral_system": [
+          512,
+          1024
+        ],
+        "gravity": [
+          4096,
+          8192,
+          16384
+        ],
+        "equation_numeric": [
+          4096,
+          8192,
+          16384
+        ]
+      },
+      "evaluation_per_task": 50,
+      "evaluation_split": "validation",
+      "holdout_used_for_budget_selection": false,
+      "calibration_evaluation_disjoint": true,
+      "prompt": "original official prompt + official Qwen Chat Template, Thinking enabled; no priors / SFT / synthetic"
+    },
+    "results_sha256": "9b458f70a3752b8a70582a9587a3723e8d3418e589c4fdba68bee95de4b0d7c7",
+    "model_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+    "model_source": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B",
+    "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "weights_dtype": "BF16",
+    "adapter": null,
+    "budget_decision_path": "data/processed/tasksets/roman_gravity_equation_v1/baseline/qwen3-0_6b_round1/final_budget_decision.json",
+    "wall_time_seconds": 3152.918451525271,
+    "gpu_device_peak_memory_mib": 27999.0,
+    "peak_torch_allocated_mib": 0.0,
+    "resource_scope": "entire phase incl model load and warmup; device memory sampled every 0.25s"
+  },
+  "task_budgets": {
+    "numeral_system": {
+      "max_new_tokens": 8192,
+      "status": "calibrated",
+      "trials": [
+        {
+          "max_new_tokens": 512,
+          "all_complete_and_valid": false,
+          "records": 3,
+          "accuracy": 0.0,
+          "answer_extraction_success_rate": 0.0,
+          "invalid_output_rate": 1.0,
+          "truncation_rate": 1.0,
+          "average_generation_tokens": 512.0,
+          "average_amortized_inference_time_seconds": 2.6435844134539366,
+          "generation_wall_time_seconds": 7.93075324036181,
+          "output_tokens": 1536,
+          "output_token_throughput": 193.6764331769735
+        },
+        {
+          "max_new_tokens": 1024,
+          "all_complete_and_valid": false,
+          "records": 3,
+          "accuracy": 0.3333333333333333,
+          "answer_extraction_success_rate": 0.3333333333333333,
+          "invalid_output_rate": 0.6666666666666666,
+          "truncation_rate": 0.6666666666666666,
+          "average_generation_tokens": 905.0,
+          "average_amortized_inference_time_seconds": 5.255311986276259,
+          "generation_wall_time_seconds": 15.765935958828777,
+          "output_tokens": 2715,
+          "output_token_throughput": 172.20671243939853
+        },
+        {
+          "max_new_tokens": 4096,
+          "all_complete_and_valid": false,
+          "records": 3,
+          "accuracy": 0.6666666666666666,
+          "answer_extraction_success_rate": 0.6666666666666666,
+          "invalid_output_rate": 0.3333333333333333,
+          "truncation_rate": 0.3333333333333333,
+          "average_generation_tokens": 2351.6666666666665,
+          "average_amortized_inference_time_seconds": 20.388716026674956,
+          "generation_wall_time_seconds": 61.16614808002487,
+          "output_tokens": 7055,
+          "output_token_throughput": 115.34157735042929
+        },
+        {
+          "max_new_tokens": 8192,
+          "all_complete_and_valid": true,
+          "records": 3,
+          "accuracy": 1.0,
+          "answer_extraction_success_rate": 1.0,
+          "invalid_output_rate": 0.0,
+          "truncation_rate": 0.0,
+          "average_generation_tokens": 2246.0,
+          "average_amortized_inference_time_seconds": 22.525466464770336,
+          "generation_wall_time_seconds": 67.57639939431101,
+          "output_tokens": 6738,
+          "output_token_throughput": 99.70936688537516
+        },
+        {
+          "max_new_tokens": 16384,
+          "all_complete_and_valid": false,
+          "records": 3,
+          "accuracy": 0.6666666666666666,
+          "answer_extraction_success_rate": 0.6666666666666666,
+          "invalid_output_rate": 0.3333333333333333,
+          "truncation_rate": 0.3333333333333333,
+          "average_generation_tokens": 6889.666666666667,
+          "average_amortized_inference_time_seconds": 76.34431797033176,
+          "generation_wall_time_seconds": 229.03295391099527,
+          "output_tokens": 20669,
+          "output_token_throughput": 90.2446553958877
+        }
+      ]
+    },
+    "gravity": {
+      "max_new_tokens": 16384,
+      "status": "calibrated",
+      "trials": [
+        {
+          "max_new_tokens": 4096,
+          "all_complete_and_valid": false,
+          "records": 3,
+          "accuracy": 0.0,
+          "answer_extraction_success_rate": 0.0,
+          "invalid_output_rate": 1.0,
+          "truncation_rate": 1.0,
+          "average_generation_tokens": 4096.0,
+          "average_amortized_inference_time_seconds": 22.01016649293403,
+          "generation_wall_time_seconds": 66.03049947880208,
+          "output_tokens": 12288,
+          "output_token_throughput": 186.09582082511497
+        },
+        {
+          "max_new_tokens": 8192,
+          "all_complete_and_valid": false,
+          "records": 3,
+          "accuracy": 0.6666666666666666,
+          "answer_extraction_success_rate": 0.6666666666666666,
+          "invalid_output_rate": 0.3333333333333333,
+          "truncation_rate": 0.3333333333333333,
+          "average_generation_tokens": 7094.0,
+          "average_amortized_inference_time_seconds": 41.96070871145154,
+          "generation_wall_time_seconds": 125.88212613435462,
+          "output_tokens": 21282,
+          "output_token_throughput": 169.06292142925528
+        },
+        {
+          "max_new_tokens": 16384,
+          "all_complete_and_valid": true,
+          "records": 3,
+          "accuracy": 1.0,
+          "answer_extraction_success_rate": 1.0,
+          "invalid_output_rate": 0.0,
+          "truncation_rate": 0.0,
+          "average_generation_tokens": 7414.0,
+          "average_amortized_inference_time_seconds": 48.9801067210113,
+          "generation_wall_time_seconds": 146.9403201630339,
+          "output_tokens": 22242,
+          "output_token_throughput": 151.3675754573146
+        }
+      ]
+    },
+    "equation_numeric": {
+      "max_new_tokens": 16384,
+      "status": "budget_cap_unresolved",
+      "trials": [
+        {
+          "max_new_tokens": 4096,
+          "all_complete_and_valid": false,
+          "records": 3,
+          "accuracy": 0.0,
+          "answer_extraction_success_rate": 0.0,
+          "invalid_output_rate": 1.0,
+          "truncation_rate": 1.0,
+          "average_generation_tokens": 4096.0,
+          "average_amortized_inference_time_seconds": 22.87041122963031,
+          "generation_wall_time_seconds": 68.61123368889093,
+          "output_tokens": 12288,
+          "output_token_throughput": 179.0960363097157
+        },
+        {
+          "max_new_tokens": 8192,
+          "all_complete_and_valid": false,
+          "records": 3,
+          "accuracy": 0.0,
+          "answer_extraction_success_rate": 0.0,
+          "invalid_output_rate": 1.0,
+          "truncation_rate": 1.0,
+          "average_generation_tokens": 8192.0,
+          "average_amortized_inference_time_seconds": 45.05657847831026,
+          "generation_wall_time_seconds": 135.16973543493077,
+          "output_tokens": 24576,
+          "output_token_throughput": 181.81584746705832
+        },
+        {
+          "max_new_tokens": 16384,
+          "all_complete_and_valid": false,
+          "records": 3,
+          "accuracy": 0.3333333333333333,
+          "answer_extraction_success_rate": 0.6666666666666666,
+          "invalid_output_rate": 0.3333333333333333,
+          "truncation_rate": 0.3333333333333333,
+          "average_generation_tokens": 12838.666666666666,
+          "average_amortized_inference_time_seconds": 82.31849931040779,
+          "generation_wall_time_seconds": 246.95549793122336,
+          "output_tokens": 38516,
+          "output_token_throughput": 155.96332263364565
+        }
+      ]
+    }
+  },
+  "stages": {
+    "sft_training": {
+      "status": "completed",
+      "stage": "sft_training",
+      "strategy": "direct",
+      "mode": "nf4_qlora",
+      "records": 24,
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 2.838125979595576,
+          "optimizer_steps": 12,
+          "valid_tokens": 2777
+        }
+      ],
+      "training_time_seconds": 21.143865610007197,
+      "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/sft_direct_nf4_qlora",
+      "manifest_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/sft_manifest.json",
+      "peak_memory_allocated_mib": 1603.63525390625,
+      "gpu_preflight": {
+        "status": "ready",
+        "stage": "sft_training",
+        "device": "NVIDIA GeForce RTX 4080 SUPER",
+        "free_memory_mib": 31973.6875,
+        "total_memory_mib": 32230.8125
+      },
+      "adapter_reload": {
+        "status": "passed",
+        "trainable_parameter_tensors": 392
+      },
+      "wall_time_seconds": 21.463468364905566,
+      "preflight": {
+        "device": "NVIDIA GeForce RTX 4080 SUPER",
+        "total_mib": 32230.8125,
+        "free_mib": 31973.6875,
+        "torch_cuda": "13.0",
+        "bf16_supported": true,
+        "versions": {
+          "torch": "2.11.0",
+          "transformers": "5.18.0",
+          "peft": "0.21.2",
+          "bitsandbytes": "0.50.2"
+        }
+      },
+      "peak_device_memory_mib": 3090.0
+    },
+    "dpo_rollout": {
+      "schema_version": "nemotron-rollout/v2",
+      "status": "completed",
+      "records": 24,
+      "rollout_path": "data/processed/dpo/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/dpo_smoke_rollouts.jsonl",
+      "rollout_sha256": "27d4dafceb3348b26fad89978d4715c2a28880ff22235d90d2765688da8e9891",
+      "sft_fingerprint": {
+        "base_model_id": "Qwen/Qwen3-0.6B",
+        "policy_version": "sft:direct:nf4_qlora:seed42",
+        "manifest_sha256": "43d8da9dd4811a5474a9761d475b3b7c29512967182a4472d281512ae7a47c22",
+        "adapter_files": {
+          "adapter_config.json": "68a270f54dd313dc60b659056ee2684c57696e1e68e08986ec0c48b42c997fe6",
+          "adapter_model.safetensors": "49411d8e72a3c7db162785d4cf901a0e8b5b72170f59303c2288086d903fc775"
+        }
+      },
+      "source_split": "train",
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "logprobs_mode": "raw_logprobs",
+      "quantization": "bf16",
+      "max_new_tokens": 16384,
+      "max_model_len": 20480,
+      "stage": "dpo_rollout",
+      "wall_time_seconds": 2050.9044184768572,
+      "preflight": {
+        "device": "NVIDIA GeForce RTX 4080 SUPER",
+        "total_mib": 32230.8125,
+        "free_mib": 31973.6875,
+        "torch_cuda": "12.8",
+        "bf16_supported": true,
+        "versions": {
+          "torch": "2.8.0",
+          "transformers": "4.57.1",
+          "vllm": "0.11.0"
+        }
+      },
+      "peak_memory_allocated_mib": 0.0,
+      "peak_device_memory_mib": 6273.0
+    },
+    "dpo_training": {
+      "status": "completed",
+      "optimizer_steps": 1,
+      "losses": [
+        0.6931471824645996
+      ],
+      "pairs": 3,
+      "reference_policy": "immutable logprob cache of identical initial SFT Adapter",
+      "reference_initialization_max_abs_diff": 0.0,
+      "parent_sft_fingerprint": {
+        "base_model_id": "Qwen/Qwen3-0.6B",
+        "policy_version": "sft:direct:nf4_qlora:seed42",
+        "manifest_sha256": "43d8da9dd4811a5474a9761d475b3b7c29512967182a4472d281512ae7a47c22",
+        "adapter_files": {
+          "adapter_config.json": "68a270f54dd313dc60b659056ee2684c57696e1e68e08986ec0c48b42c997fe6",
+          "adapter_model.safetensors": "49411d8e72a3c7db162785d4cf901a0e8b5b72170f59303c2288086d903fc775"
+        }
+      },
+      "parent_sft_adapter": "data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/sft_direct_nf4_qlora",
+      "base_model": {
+        "id": "Qwen/Qwen3-0.6B",
+        "path": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B"
+      },
+      "tokenizer_path": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B",
+      "adapter_path": "data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/dpo_bf16_lora",
+      "adapter_reload": {
+        "status": "passed",
+        "method": "PEFT load_adapter from saved disk weights, compare real-model logits",
+        "max_abs_logit_difference": 0.0
+      },
+      "mode": "bf16_lora",
+      "preference_audit": {
+        "input_pairs": 3,
+        "valid_pairs": 3,
+        "rejection_reasons": {},
+        "fixture_pairs": 0
+      },
+      "stage": "dpo_training",
+      "wall_time_seconds": 9.30907568987459,
+      "preflight": {
+        "device": "NVIDIA GeForce RTX 4080 SUPER",
+        "total_mib": 32230.8125,
+        "free_mib": 31973.6875,
+        "torch_cuda": "13.0",
+        "bf16_supported": true,
+        "versions": {
+          "torch": "2.11.0",
+          "transformers": "5.18.0",
+          "peft": "0.21.2"
+        }
+      },
+      "peak_memory_allocated_mib": 18075.158203125,
+      "peak_device_memory_mib": 29578.0
+    },
+    "ppo_rollout": {
+      "schema_version": "nemotron-rollout/v2",
+      "status": "completed",
+      "records": 6,
+      "rollout_path": "data/processed/ppo/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/ppo_smoke_rollouts.jsonl",
+      "rollout_sha256": "2280563691612e6ec6d8456cca4bd218e457326423590ae92759605b6efffaed",
+      "sft_fingerprint": {
+        "base_model_id": "Qwen/Qwen3-0.6B",
+        "policy_version": "sft:direct:nf4_qlora:seed42",
+        "manifest_sha256": "43d8da9dd4811a5474a9761d475b3b7c29512967182a4472d281512ae7a47c22",
+        "adapter_files": {
+          "adapter_config.json": "68a270f54dd313dc60b659056ee2684c57696e1e68e08986ec0c48b42c997fe6",
+          "adapter_model.safetensors": "49411d8e72a3c7db162785d4cf901a0e8b5b72170f59303c2288086d903fc775"
+        }
+      },
+      "source_split": "train",
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "logprobs_mode": "raw_logprobs",
+      "quantization": "bf16",
+      "max_new_tokens": 16384,
+      "max_model_len": 20480,
+      "stage": "ppo_rollout",
+      "wall_time_seconds": 935.7276462679729,
+      "preflight": {
+        "device": "NVIDIA GeForce RTX 4080 SUPER",
+        "total_mib": 32230.8125,
+        "free_mib": 31973.6875,
+        "torch_cuda": "12.8",
+        "bf16_supported": true,
+        "versions": {
+          "torch": "2.8.0",
+          "transformers": "4.57.1",
+          "vllm": "0.11.0"
+        }
+      },
+      "peak_memory_allocated_mib": 0.0,
+      "peak_memory_reserved_mib": 0.0,
+      "peak_device_memory_mib": 10359.0,
+      "device_sampling_interval_seconds": 0.1,
+      "chunk_size": 128,
+      "micro_batch": 1,
+      "device_peak_target_gib": 20.0,
+      "device_peak_within_target": true,
+      "functional_memory_target_pass": true
+    },
+    "ppo_training": {
+      "status": "completed",
+      "micro_steps": 5,
+      "logs": [
+        {
+          "forward_seconds": 1.1577526852488518,
+          "backward_seconds": 1.0157032441347837,
+          "total_loss": 0.962981104850769,
+          "policy_loss": 0.02324746735394001,
+          "value_loss": 1.896078109741211,
+          "entropy": 0.8305445313453674,
+          "approx_kl": 0.10818542540073395,
+          "clip_fraction": 0.3382166624069214,
+          "advantage_mean": 0.03019172139465809,
+          "advantage_std": 1.0074634552001953,
+          "explained_variance": -12.210891723632812,
+          "action_tokens": 5529.0
+        },
+        {
+          "forward_seconds": 1.0229915948584676,
+          "backward_seconds": 0.8405575701035559,
+          "total_loss": 0.9678534865379333,
+          "policy_loss": 0.029768504202365875,
+          "value_loss": 1.892988681793213,
+          "entropy": 0.8409400582313538,
+          "approx_kl": 0.10472697764635086,
+          "clip_fraction": 0.3448975384235382,
+          "advantage_mean": 0.030928779393434525,
+          "advantage_std": 1.0066367387771606,
+          "explained_variance": -7.260588645935059,
+          "action_tokens": 4929.0
+        },
+        {
+          "forward_seconds": 1.882574442308396,
+          "backward_seconds": 1.6693474831990898,
+          "total_loss": 0.950721800327301,
+          "policy_loss": 0.03590592369437218,
+          "value_loss": 1.8384240865707397,
+          "entropy": 0.43961310386657715,
+          "approx_kl": 0.08009270578622818,
+          "clip_fraction": 0.2028152495622635,
+          "advantage_mean": 0.009657908231019974,
+          "advantage_std": 0.9921648502349854,
+          "explained_variance": -9.174418449401855,
+          "action_tokens": 8525.0
+        },
+        {
+          "forward_seconds": 1.7527349651791155,
+          "backward_seconds": 1.5722181932069361,
+          "total_loss": 1.0137156248092651,
+          "policy_loss": 0.04014326632022858,
+          "value_loss": 1.9558907747268677,
+          "entropy": 0.43730485439300537,
+          "approx_kl": 0.09032217413187027,
+          "clip_fraction": 0.21193845570087433,
+          "advantage_mean": 0.0006971642142161727,
+          "advantage_std": 1.0234378576278687,
+          "explained_variance": -9.764135360717773,
+          "action_tokens": 8125.0
+        },
+        {
+          "forward_seconds": 1.8258938039653003,
+          "backward_seconds": 1.7309104660525918,
+          "total_loss": 0.9889363050460815,
+          "policy_loss": 0.10500296950340271,
+          "value_loss": 1.7813608646392822,
+          "entropy": 0.6747104525566101,
+          "approx_kl": 0.09806051850318909,
+          "clip_fraction": 0.2836429476737976,
+          "advantage_mean": -0.04614587873220444,
+          "advantage_std": 0.9770392775535583,
+          "explained_variance": -10.913981437683105,
+          "action_tokens": 8828.0
+        }
+      ],
+      "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/ppo_nf4_qlora",
+      "value_head_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/ppo_nf4_qlora/value_head.pt",
+      "manifest_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/ppo_nf4_qlora/ppo_manifest.json",
+      "optimizer_steps": 1,
+      "adapter_reload": {
+        "status": "passed",
+        "method": "PEFT load_adapter from saved disk weights, compare real-model logits",
+        "max_abs_logit_difference": 0.0
+      },
+      "value_head_reload": "passed",
+      "micro_batch": 1,
+      "chunk_size": 128,
+      "training_mode": "nf4_qlora",
+      "nf4_runtime_contract": {
+        "loaded_in_4bit": true,
+        "nf4": true,
+        "double_quant": true,
+        "bf16_compute": true,
+        "gradient_checkpointing": true,
+        "use_cache_disabled": true,
+        "value_head_fp32": true
+      },
+      "max_abs_parameter_update": {
+        "lora": 1.000240445137024e-05,
+        "value_head": 1.000426709651947e-05
+      },
+      "sequence_lengths": [
+        5599,
+        4998,
+        8660,
+        8280,
+        8913
+      ],
+      "records": 6,
+      "usable_records": 5,
+      "ineligible_records": 1,
+      "truncated_excluded": 0,
+      "verifier_failed_nontruncated": 1,
+      "alignment": {
+        "status": "passed",
+        "training_mode": "nf4_qlora",
+        "rollout_mode": "bf16",
+        "audit_autocast_dtype": "bfloat16",
+        "scope": "one_actual_rollout_per_task",
+        "tokens_compared": 27515,
+        "mean_abs_logprob_delta": 0.22528496384620667,
+        "p99_abs_logprob_delta": 2.164167642593384,
+        "max_abs_logprob_delta": 7.458895206451416,
+        "signed_mean_logprob_delta": -0.09926936775445938,
+        "mean_limit": 0.5,
+        "p99_limit": 3.0,
+        "quantization_difference_expected": true,
+        "checks": [
+          {
+            "sample_id": "0ed7056a",
+            "task_type": "numeral_system",
+            "response_tokens": 5529,
+            "prompt_tokens": 70,
+            "first_response_action_index": 69,
+            "token_mask_alignment": true,
+            "vllm_first_raw_logprob": -0.00048339602653868496,
+            "training_first_raw_logprob": -0.001178741455078125
+          },
+          {
+            "sample_id": "c6c03357",
+            "task_type": "gravity",
+            "response_tokens": 8525,
+            "prompt_tokens": 135,
+            "first_response_action_index": 134,
+            "token_mask_alignment": true,
+            "vllm_first_raw_logprob": -0.0007516896002925932,
+            "training_first_raw_logprob": -0.0015869140625
+          },
+          {
+            "sample_id": "6c402bb7",
+            "task_type": "equation_numeric",
+            "response_tokens": 13461,
+            "prompt_tokens": 87,
+            "first_response_action_index": 86,
+            "token_mask_alignment": true,
+            "vllm_first_raw_logprob": -0.0007849234389141202,
+            "training_first_raw_logprob": -0.0014057159423828125
+          }
+        ]
+      },
+      "stage": "ppo_training",
+      "wall_time_seconds": 32.42779425904155,
+      "preflight": {
+        "device": "NVIDIA GeForce RTX 4080 SUPER",
+        "total_mib": 32230.8125,
+        "free_mib": 31973.6875,
+        "torch_cuda": "13.0",
+        "bf16_supported": true,
+        "versions": {
+          "torch": "2.11.0",
+          "transformers": "5.18.0",
+          "peft": "0.21.2",
+          "bitsandbytes": "0.50.2"
+        }
+      },
+      "peak_memory_allocated_mib": 2528.18408203125,
+      "peak_memory_reserved_mib": 3038.0,
+      "peak_device_memory_mib": 3362.0,
+      "device_sampling_interval_seconds": 0.1,
+      "device_peak_target_gib": 20.0,
+      "device_peak_within_target": true,
+      "functional_memory_target_pass": true
+    },
+    "grpo_rollout": {
+      "schema_version": "nemotron-rollout/v2",
+      "status": "completed",
+      "records": 48,
+      "rollout_path": "data/processed/grpo/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/grpo_smoke_rollouts.jsonl",
+      "rollout_sha256": "ef55d77fd0a73c7ba3e0c13854648b8a70d148fd93bfca9d20c3a41d7f32a633",
+      "sft_fingerprint": {
+        "base_model_id": "Qwen/Qwen3-0.6B",
+        "policy_version": "sft:direct:nf4_qlora:seed42",
+        "manifest_sha256": "43d8da9dd4811a5474a9761d475b3b7c29512967182a4472d281512ae7a47c22",
+        "adapter_files": {
+          "adapter_config.json": "68a270f54dd313dc60b659056ee2684c57696e1e68e08986ec0c48b42c997fe6",
+          "adapter_model.safetensors": "49411d8e72a3c7db162785d4cf901a0e8b5b72170f59303c2288086d903fc775"
+        }
+      },
+      "source_split": "train",
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "logprobs_mode": "raw_logprobs",
+      "quantization": "bf16",
+      "max_new_tokens": 16384,
+      "max_model_len": 20480,
+      "stage": "grpo_rollout",
+      "wall_time_seconds": 2565.2185155521147,
+      "preflight": {
+        "device": "NVIDIA GeForce RTX 4080 SUPER",
+        "total_mib": 32230.8125,
+        "free_mib": 31973.6875,
+        "torch_cuda": "12.8",
+        "bf16_supported": true,
+        "versions": {
+          "torch": "2.8.0",
+          "transformers": "4.57.1",
+          "vllm": "0.11.0"
+        }
+      },
+      "peak_memory_allocated_mib": 0.0,
+      "peak_device_memory_mib": 18537.0
+    },
+    "grpo_training": {
+      "status": "completed",
+      "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/grpo_bf16_lora",
+      "manifest_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/checkpoints/qwen3-0_6b/qwen3_06b_baseline_rl_20261107/grpo_bf16_lora/grpo_manifest.json",
+      "optimizer_steps": 2.0,
+      "logs": {
+        "status": "completed",
+        "loss": 0.05568005849811336,
+        "policy_loss": 0.05568005849811336,
+        "policy_logprob_change": 0.000735836887894363,
+        "clip_fraction": 0.0027176400216139735,
+        "response_tokens": 377943.0,
+        "optimizer_steps": 2.0,
+        "token_logprob_chunk_size": 128,
+        "micro_batches": 48.0,
+        "micro_batch_size": 1.0,
+        "gradient_accumulation_steps": 32.0
+      },
+      "readiness_audit": {
+        "groups": 6,
+        "invalid_groups": 0,
+        "categories": {
+          "mixed": 3,
+          "all_correct": 2,
+          "all_wrong": 1
+        },
+        "all_correct_ratio": 0.3333333333333333,
+        "mixed_ratio": 0.5,
+        "all_wrong_ratio": 0.16666666666666666,
+        "mean_reward_variance": 0.08854166666666667,
+        "zero_variance_ratio": 0.5,
+        "correct_count_histogram": {
+          "7": 1,
+          "6": 1,
+          "8": 2,
+          "0": 1,
+          "3": 1
+        },
+        "fixture_only": false,
+        "status": "ok",
+        "validation": {
+          "valid": true,
+          "record_errors": [],
+          "bad_group_sizes": {},
+          "records": 48,
+          "groups": 6
+        },
+        "reward_definition": "binary_outcome_reward"
+      },
+      "alignment": {
+        "status": "passed",
+        "training_mode": "bf16_lora",
+        "rollout_mode": "bf16",
+        "scope": "one_actual_rollout_per_task",
+        "tokens_compared": 25435,
+        "mean_abs_logprob_delta": 0.015845125541090965,
+        "p99_abs_logprob_delta": 0.13055454194545746,
+        "max_abs_logprob_delta": 0.4479384422302246,
+        "signed_mean_logprob_delta": -0.0007792076794430614,
+        "mean_limit": 0.1,
+        "p99_limit": 0.6,
+        "quantization_difference_expected": false,
+        "checks": [
+          {
+            "sample_id": "0ed7056a",
+            "task_type": "numeral_system",
+            "response_tokens": 1600,
+            "prompt_tokens": 70,
+            "first_response_action_index": 69,
+            "token_mask_alignment": true,
+            "vllm_first_raw_logprob": -0.00048339602653868496,
+            "training_first_raw_logprob": -0.0004634857177734375
+          },
+          {
+            "sample_id": "6540cf61",
+            "task_type": "gravity",
+            "response_tokens": 7451,
+            "prompt_tokens": 155,
+            "first_response_action_index": 154,
+            "token_mask_alignment": true,
+            "vllm_first_raw_logprob": -0.0007161913090385497,
+            "training_first_raw_logprob": -0.0007648468017578125
+          },
+          {
+            "sample_id": "6c402bb7",
+            "task_type": "equation_numeric",
+            "response_tokens": 16384,
+            "prompt_tokens": 87,
+            "first_response_action_index": 86,
+            "token_mask_alignment": true,
+            "vllm_first_raw_logprob": -0.0007849234389141202,
+            "training_first_raw_logprob": -0.0007648468017578125
+          }
+        ]
+      },
+      "adapter_reload": {
+        "status": "passed",
+        "method": "PEFT load_adapter from saved disk weights, compare real-model logits",
+        "max_abs_logit_difference": 0.0
+      },
+      "stage": "grpo_training",
+      "wall_time_seconds": 88.15932198567316,
+      "preflight": {
+        "device": "NVIDIA GeForce RTX 4080 SUPER",
+        "total_mib": 32230.8125,
+        "free_mib": 31973.6875,
+        "torch_cuda": "13.0",
+        "bf16_supported": true,
+        "versions": {
+          "torch": "2.11.0",
+          "transformers": "5.18.0",
+          "peft": "0.21.2"
+        }
+      },
+      "peak_memory_allocated_mib": 11945.57470703125,
+      "peak_device_memory_mib": 20276.0
+    }
+  },
+  "rollouts": {
+    "dpo": {
+      "by_task": {
+        "numeral_system": 8,
+        "gravity": 8,
+        "equation_numeric": 8
+      },
+      "sha256": "27d4dafceb3348b26fad89978d4715c2a28880ff22235d90d2765688da8e9891",
+      "selected_prompt_ids": [
+        "0ed7056a",
+        "6540cf61",
+        "6c402bb7",
+        "7e2e8a95",
+        "c6c03357",
+        "cd944c7a"
+      ],
+      "outcomes_by_task": {
+        "numeral_system": {
+          "correct": 5,
+          "truncated": 0,
+          "total": 8
+        },
+        "gravity": {
+          "correct": 8,
+          "truncated": 0,
+          "total": 8
+        },
+        "equation_numeric": {
+          "correct": 2,
+          "truncated": 1,
+          "total": 8
+        }
+      },
+      "performance": {
+        "status": "completed",
+        "records": 24,
+        "generation_seconds": 2017.9246373809874,
+        "output_tokens": 205264,
+        "output_tokens_per_second": 101.72034980771475,
+        "max_tokens": 16384,
+        "max_model_len": 20480,
+        "max_num_seqs": 8,
+        "kv_cache_bytes": 4294967296,
+        "by_task": {
+          "numeral_system": 8,
+          "gravity": 8,
+          "equation_numeric": 8
+        }
+      }
+    },
+    "ppo": {
+      "by_task": {
+        "numeral_system": 2,
+        "gravity": 2,
+        "equation_numeric": 2
+      },
+      "sha256": "2280563691612e6ec6d8456cca4bd218e457326423590ae92759605b6efffaed",
+      "selected_prompt_ids": [
+        "0ed7056a",
+        "6540cf61",
+        "6c402bb7",
+        "7e2e8a95",
+        "c6c03357",
+        "cd944c7a"
+      ],
+      "outcomes_by_task": {
+        "numeral_system": {
+          "correct": 2,
+          "truncated": 0,
+          "total": 2
+        },
+        "gravity": {
+          "correct": 2,
+          "truncated": 0,
+          "total": 2
+        },
+        "equation_numeric": {
+          "correct": 1,
+          "truncated": 0,
+          "total": 2
+        }
+      },
+      "performance": {
+        "status": "completed",
+        "records": 6,
+        "generation_seconds": 913.3209801553749,
+        "output_tokens": 49397,
+        "output_tokens_per_second": 54.085038089890965,
+        "max_tokens": 16384,
+        "max_model_len": 20480,
+        "max_num_seqs": 4,
+        "kv_cache_bytes": 8589934592,
+        "by_task": {
+          "numeral_system": 2,
+          "gravity": 2,
+          "equation_numeric": 2
+        }
+      }
+    },
+    "grpo": {
+      "by_task": {
+        "numeral_system": 16,
+        "gravity": 16,
+        "equation_numeric": 16
+      },
+      "sha256": "ef55d77fd0a73c7ba3e0c13854648b8a70d148fd93bfca9d20c3a41d7f32a633",
+      "selected_prompt_ids": [
+        "0ed7056a",
+        "6540cf61",
+        "6c402bb7",
+        "7e2e8a95",
+        "c6c03357",
+        "cd944c7a"
+      ],
+      "outcomes_by_task": {
+        "numeral_system": {
+          "correct": 13,
+          "truncated": 0,
+          "total": 16
+        },
+        "gravity": {
+          "correct": 16,
+          "truncated": 0,
+          "total": 16
+        },
+        "equation_numeric": {
+          "correct": 3,
+          "truncated": 2,
+          "total": 16
+        }
+      },
+      "performance": {
+        "status": "completed",
+        "records": 48,
+        "generation_seconds": 2539.7886352231726,
+        "output_tokens": 377943,
+        "output_tokens_per_second": 148.808839742993,
+        "max_tokens": 16384,
+        "max_model_len": 20480,
+        "max_num_seqs": 8,
+        "kv_cache_bytes": 17179869184,
+        "by_task": {
+          "numeral_system": 16,
+          "gravity": 16,
+          "equation_numeric": 16
+        }
+      }
+    }
+  },
+  "saved_adapter_parameter_updates": {
+    "dpo": {
+      "method": "saved_safetensors_compared_on_cpu",
+      "parent_weights_sha256": "49411d8e72a3c7db162785d4cf901a0e8b5b72170f59303c2288086d903fc775",
+      "weights_sha256": "6557b5caa9eb182106663521e8b710001349c61a40b17e57caf072852bb81f87",
+      "tensor_count": 392,
+      "changed_tensors": 392,
+      "max_abs_parameter_difference": 1.000426709651947e-05
+    },
+    "ppo": {
+      "method": "saved_safetensors_compared_on_cpu",
+      "parent_weights_sha256": "49411d8e72a3c7db162785d4cf901a0e8b5b72170f59303c2288086d903fc775",
+      "weights_sha256": "37b5904da7780f5a074d06f9631f1b75f706b0eeef0879f6fbcb0413e2eb09fc",
+      "tensor_count": 392,
+      "changed_tensors": 392,
+      "max_abs_parameter_difference": 1.000240445137024e-05
+    },
+    "grpo": {
+      "method": "saved_safetensors_compared_on_cpu",
+      "parent_weights_sha256": "49411d8e72a3c7db162785d4cf901a0e8b5b72170f59303c2288086d903fc775",
+      "weights_sha256": "f3d3fd168de9637becf281d94dd9bcd5a1c9ca473c4aac69f17725c345cfe011",
+      "tensor_count": 392,
+      "changed_tensors": 392,
+      "max_abs_parameter_difference": 2.0013059838674963e-05
+    }
+  },
+  "source_snapshots": {
+    "sft": {
+      "runner": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/benchmark_training_7764711f9358.py",
+      "notebook": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/03_SFT_f6bd99ead672.ipynb",
+      "protocol_sha256": "a2864c15dedbcbfde4eebb9e8b90e7f8fb91f36ac7626bedc245e58a45f486ba"
+    },
+    "dpo_rollout": {
+      "runner": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/benchmark_training_d5a220b619a3.py",
+      "notebook": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/04_DPO_af552f2f32ad.ipynb",
+      "protocol_sha256": "53927b1cdc4100bc59c889a50ee26615cf0577cd82684709d317df460fe7742f"
+    },
+    "dpo_training": {
+      "runner": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/benchmark_training_ca5775a4fc6c.py",
+      "notebook": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/04_DPO_7f80e0843d51.ipynb",
+      "protocol_sha256": "fdcc96fce6f6e7e6070c8beaa95f373e4eec285bf0fc49b52ec7c8deb57abcb0"
+    },
+    "ppo_rollout": {
+      "runner": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/benchmark_training_ca5775a4fc6c.py",
+      "notebook": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/05_PPO_5373d8e12784.ipynb",
+      "protocol_sha256": "3909c30b2f7de48904b12132e6bf4d556a921ccbc4a64b107bf082fe2aa0b203"
+    },
+    "ppo_training": {
+      "runner": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/benchmark_training_ca5775a4fc6c.py",
+      "notebook": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/05_PPO_5373d8e12784.ipynb",
+      "protocol_sha256": "efd4faac2ad4cdf9420f2e4b2e3b091aece4ff035dbc846fc0a29e55a7db20f0"
+    },
+    "grpo_rollout": {
+      "runner": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/benchmark_training_ca5775a4fc6c.py",
+      "notebook": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/06_GRPO_4e1c08619b99.ipynb",
+      "protocol_sha256": "0084be073a745096fe2aac6fb99acebfa2ab00e37285f166389cc57ee75553d8"
+    },
+    "grpo_training": {
+      "runner": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/benchmark_training_ca5775a4fc6c.py",
+      "notebook": "data/processed/benchmarks/qwen3-0_6b/20261107/sources/06_GRPO_cc46ea5afb72.ipynb",
+      "protocol_sha256": "36081eb2d0cde2a617f8d00a205f2af2ddaf32f01991d4bd296c64353d578b60"
+    }
+  },
+  "calibration_results_sha256": "6ff9b519097b613640b1d30b4d9cfa4cfe0c176f07749cc25bf2e927433df8c8",
+  "calibration_extension_results_sha256": "3b1a6d206fdd5bcbae2c25749371c8c312919a0fb0d11b2b065c6b28d17119c3",
+  "all_training_completed": true,
+  "parent_sft_manifest_sha256": "43d8da9dd4811a5474a9761d475b3b7c29512967182a4472d281512ae7a47c22"
+}

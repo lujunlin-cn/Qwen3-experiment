@@ -1,6 +1,14 @@
 # Nemotron SFT-RL Notebook 集成实现说明
 
-## 本轮 GPU 最终核验结果
+## 2026-11-07：8 GB 显存本地改造与预算
+
+克隆机已关机。本地将 04–06 的 rollout 默认改为 4 GiB KV cache、2 路并发、1024 Token 分块预填充，输出上限 16384、上下文 20480。DPO/GRPO 的真实训练及 GRPO 对齐检查改为 Decoder 隐藏状态上分块投影、完整词表 Softmax 和反传重算，避免整段大词表 Logits。BF16 LoRA 不变；GRPO 保留 G=8、micro-batch=1。CPU Qwen3+PEFT 的 DPO/GRPO 数值、梯度与更新对照及三个 Notebook 完整检查通过；新 GPU 峰值/速度尚未验证。设备预算约为 rollout 6.9 GiB、DPO 6.7 GiB、GRPO 5.6 GiB，包含显式运行时余量，非严格上界。实现、计算项和复跑命令见 [低显存说明](docs/QWEN3_0_6B_LOW_MEMORY.md)。原 GPU 实测与源码快照保留。
+
+## 2026-11-07：Qwen3-0.6B 模型接入与 GPU 基准
+
+00–06 默认模型改为 `Qwen/Qwen3-0.6B`，保留 Thinking。Baseline 使用独立 `qwen3-0_6b_round1` Run 和协议，02–06 按模型隔离结果与 checkpoint；旧 4B 文件保留。下载固定 Revision 并核验每个文件，路径与命令见 [接入说明](docs/QWEN3_0_6B_SETUP.md)。本次在端口 30122 克隆机实测：Validation 各 50 题，Numeral 40%、Gravity 94%、Equation Numeric 12%，预算 8192/16384/16384；SFT、DPO、PPO、GRPO 均已完成真实更新、保存后重载和统一审计，优化步数为 12/1/1/2。GRPO 使用 128 Token 分块的完整词表 Logprob 与一阶梯度重算，实际训练全部 48 条回答，设备显存峰值 20276 MiB。完整速度、显存与限制见 [0.6B 基准报告](docs/QWEN3_0_6B_BENCHMARK.md)。本次 runner 将 Notebook 算法显式绑定新版三任务，但 02–06 的交互式旧任务入口尚未全面迁移。
+
+## 历史 4B GPU 最终核验结果
 
 - 本轮真实 vGPU Baseline 完成 150/150 条（Validation 每类 50）：Numeral 46/50（92%，截断 8%）、Gravity 34/50（68%，截断 32%）、Equation Numeric 19/50（38%，截断 24%）；Overall/Macro 均 66%，总体截断 21.33%。正式预算分别为 4096/8192/16384；峰值设备显存 27,659 MiB，生成吞吐约 312.89 output tokens/s，GPU 阶段约 56.73 分钟。118 条正常结束，32 条截断，不从 Thinking 中补计答案；未将该结果宣称为不受预算限制的能力。GPU 已释放。
 - 交付的两个 Notebook 及当前并行修改后的工作区版本均通过 JSON/AST 和顺序 CPU 测试；150 条真实输出重新评分、Token IDs 长度/预算、文件哈希和固定 Validation ID 核验通过。本轮提交保留其他工作区修改，未将其混入提交。

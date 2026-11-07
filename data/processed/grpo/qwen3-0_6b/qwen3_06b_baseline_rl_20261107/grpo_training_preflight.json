@@ -1,0 +1,12 @@
+{
+  "device": "NVIDIA GeForce RTX 4080 SUPER",
+  "total_mib": 32230.8125,
+  "free_mib": 31973.6875,
+  "torch_cuda": "13.0",
+  "bf16_supported": true,
+  "versions": {
+    "torch": "2.11.0",
+    "transformers": "5.18.0",
+    "peft": "0.21.2"
+  }
+}

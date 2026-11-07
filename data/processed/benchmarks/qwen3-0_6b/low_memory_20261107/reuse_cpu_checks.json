@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "scope": "CPU guard and immutable artifact copy; no GPU training",
+  "checks": [
+    {
+      "method": "dpo",
+      "status": "passed",
+      "gpu_status": "blocked_no_cuda",
+      "copied_artifacts": 3,
+      "parent_adapter": "original immutable source"
+    },
+    {
+      "method": "grpo",
+      "status": "passed",
+      "gpu_status": "blocked_no_cuda",
+      "copied_artifacts": 3,
+      "parent_adapter": "original immutable source"
+    }
+  ]
+}
