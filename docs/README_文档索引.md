@@ -4,6 +4,8 @@
 
 8 GB 场景的本地实现、CPU 数值验证、显存预算与待运行命令见 [低显存说明](QWEN3_0_6B_LOW_MEMORY.md)，尚未测得新 GPU 峰值。
 
+下一轮统一执行入口见 [8 小时实验协议](QWEN3_0_6B_8H_PROTOCOL.md)：包含 max_tokens 基线、公开先验、SFT 及三种 RL 的多轮训练/验证、仅输出 Token 统计、显存守护和耗时报告。PPO/GRPO 只训练数学方程，Gravity 仅评测。
+
 | Notebook | 职责 | 技术文档 |
 |---|---|---|
 | [00 Baseline Diagnosis](../00_Baseline_Diagnosis.ipynb) | 读取已清洗数据；80/10/10 划分、Manifest、泄漏审计、Validation 基线及错误分析 | [数据工程](01_数据工程.md) |
@@ -13,6 +15,7 @@
 | [04 DPO](../04_DPO.ipynb) | 离线偏好与 DPO | [DPO](05_DPO.md) |
 | [05 PPO](../05_PPO.ipynb) | Actor-Critic、GAE、PPO-Clip | [PPO](06_PPO.md) |
 | [06 GRPO](../06_GRPO.ipynb) | Group Rollout、相对奖励及 Readiness | [GRPO](07_GRPO.md) |
+| [07 Eight Hour Experiment](../07_Eight_Hour_Experiment.ipynb) | 三题型正式实验的冻结、8 小时调度、恢复与统一报告 | [8 小时协议](QWEN3_0_6B_8H_PROTOCOL.md) |
 
 00 的输入为维护者分发的 `data/processed/tasksets/roman_gravity_equation_v1/real_cleaned.csv` 和 `official_preparation_manifest.json`。
 学生无需读取原始 CSV。官方 CSV 核验、分类、筛选和 Numeral 映射核验统一放在 [维护者工具](../utils/prepare_official_dataset.py)：
@@ -23,8 +26,8 @@ python utils/prepare_official_dataset.py
 
 该命令只准备维护者数据，不执行划分、跨集合泄漏审计、模型推理或训练。00 的 Kernel 不导入该工具；它只通过磁盘读取准备好的数据。
 
-00、01 的新产物均位于 `data/processed/tasksets/roman_gravity_equation_v1/`。02–06 的编号、名称和原有交互式训练数据接口保留，尚未自动切换至新版三任务数据；本次资源测试由 `utils/benchmark_training.py` 显式绑定新版 Train 和 Verifier，旧训练结果不作为新版 Numeral 任务结果。
+00、01、02 使用 `data/processed/tasksets/roman_gravity_equation_v1/`。03–06 的原有交互式训练接口保留；07 的课程 runner 显式绑定新版三任务 Train、轨迹及 Notebook 00 Verifier，调用 03–06 的核心目标与新增奖励/偏好定义。`utils/benchmark_training.py` 保留为历史冒烟资源测试入口，不能用于判断多轮收敛或学习效果。
 
-01 完全可跳过。现有 03 默认使用 `data/processed/real_train_traces.jsonl` 中的非合成真实 Train 轨迹，合成目录不存在也能执行；只有 `USE_SYNTHETIC_DATA=1` 才读取其配置路径中通过审计的 Accepted。本轮未改变训练算法或开展学生练习改造。
+01 完全可跳过。现有 03 默认使用 `data/processed/real_train_traces.jsonl` 中的非合成真实 Train 轨迹，合成目录不存在也能执行；只有 `USE_SYNTHETIC_DATA=1` 才读取其配置路径中通过审计的 Accepted。07 则使用新版 taskset 内已经验证并冻结的真实轨迹，不需要重新执行 01。
 
 验证范围与产物说明见 [修改报告](../NOTEBOOK_REFACTOR_REPORT.md)。历史设计保留在 [设计记录](LeetCode_SFT_RL_Tutorial_Design_Record.md)；最新职责边界以本索引为准。

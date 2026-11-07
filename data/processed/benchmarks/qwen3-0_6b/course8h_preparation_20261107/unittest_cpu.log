@@ -1,0 +1,134 @@
+test_full_supervisor_protocol_and_idempotent_resume_without_gpu (test_course_experiment.ProtocolTests.test_full_supervisor_protocol_and_idempotent_resume_without_gpu) ... {'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+START base_reference (2699 seconds left in baseline)
+END base_reference: completed, peak 0.00 GiB
+PILOT_BUDGET {"observed_reference_tokens_per_second": 10, "estimated_final_output_tokens_for_5_models_2_prompts": 720, "estimated_final_generation_seconds": 72.0, "warning": "Planning extrapolation; training/prior prompts can change lengths. No sample size or cap silently reduced."}
+START base_cap512 (2699 seconds left in baseline)
+END base_cap512: completed, peak 0.00 GiB
+START base_cap2048 (2699 seconds left in baseline)
+END base_cap2048: completed, peak 0.00 GiB
+START base_cap8192 (2699 seconds left in baseline)
+END base_cap8192: completed, peak 0.00 GiB
+START base_cap16384 (2699 seconds left in baseline)
+END base_cap16384: completed, peak 0.00 GiB
+START prior_reference (2699 seconds left in prompt)
+END prior_reference: completed, peak 0.00 GiB
+START sft_r1_train (5399 seconds left in sft)
+END sft_r1_train: completed, peak 0.00 GiB
+START sft_r1_validation (5399 seconds left in sft)
+END sft_r1_validation: completed, peak 0.00 GiB
+START sft_r2_train (5399 seconds left in sft)
+END sft_r2_train: completed, peak 0.00 GiB
+START sft_r2_validation (5399 seconds left in sft)
+END sft_r2_validation: completed, peak 0.00 GiB
+START sft_r3_train (5399 seconds left in sft)
+END sft_r3_train: completed, peak 0.00 GiB
+START sft_r3_validation (5399 seconds left in sft)
+END sft_r3_validation: completed, peak 0.00 GiB
+START dpo_r1_rollout (5399 seconds left in dpo)
+END dpo_r1_rollout: completed, peak 0.00 GiB
+START dpo_r1_train (5399 seconds left in dpo)
+END dpo_r1_train: completed, peak 0.00 GiB
+START dpo_r1_validation (5399 seconds left in dpo)
+END dpo_r1_validation: completed, peak 0.00 GiB
+START dpo_r2_rollout (5399 seconds left in dpo)
+END dpo_r2_rollout: completed, peak 0.00 GiB
+START dpo_r2_train (5399 seconds left in dpo)
+END dpo_r2_train: completed, peak 0.00 GiB
+START dpo_r2_validation (5399 seconds left in dpo)
+END dpo_r2_validation: completed, peak 0.00 GiB
+START dpo_r3_rollout (5399 seconds left in dpo)
+END dpo_r3_rollout: completed, peak 0.00 GiB
+START dpo_r3_train (5399 seconds left in dpo)
+END dpo_r3_train: completed, peak 0.00 GiB
+START dpo_r3_validation (5399 seconds left in dpo)
+END dpo_r3_validation: completed, peak 0.00 GiB
+START ppo_r1_rollout (5399 seconds left in ppo)
+END ppo_r1_rollout: completed, peak 0.00 GiB
+START ppo_r1_train (5399 seconds left in ppo)
+END ppo_r1_train: completed, peak 0.00 GiB
+START ppo_r1_validation (5399 seconds left in ppo)
+END ppo_r1_validation: completed, peak 0.00 GiB
+START ppo_r2_rollout (5399 seconds left in ppo)
+END ppo_r2_rollout: completed, peak 0.00 GiB
+START ppo_r2_train (5399 seconds left in ppo)
+END ppo_r2_train: completed, peak 0.00 GiB
+START ppo_r2_validation (5399 seconds left in ppo)
+END ppo_r2_validation: completed, peak 0.00 GiB
+START ppo_r3_rollout (5399 seconds left in ppo)
+END ppo_r3_rollout: completed, peak 0.00 GiB
+START ppo_r3_train (5399 seconds left in ppo)
+END ppo_r3_train: completed, peak 0.00 GiB
+START ppo_r3_validation (5399 seconds left in ppo)
+END ppo_r3_validation: completed, peak 0.00 GiB
+START grpo_r1_rollout (5399 seconds left in grpo)
+END grpo_r1_rollout: completed, peak 0.00 GiB
+START grpo_r1_train (5399 seconds left in grpo)
+END grpo_r1_train: completed, peak 0.00 GiB
+START grpo_r1_validation (5399 seconds left in grpo)
+END grpo_r1_validation: completed, peak 0.00 GiB
+START grpo_r2_rollout (5399 seconds left in grpo)
+END grpo_r2_rollout: completed, peak 0.00 GiB
+START grpo_r2_train (5399 seconds left in grpo)
+END grpo_r2_train: completed, peak 0.00 GiB
+START grpo_r2_validation (5399 seconds left in grpo)
+END grpo_r2_validation: completed, peak 0.00 GiB
+START grpo_r3_rollout (5399 seconds left in grpo)
+END grpo_r3_rollout: completed, peak 0.00 GiB
+START grpo_r3_train (5399 seconds left in grpo)
+END grpo_r3_train: completed, peak 0.00 GiB
+START grpo_r3_validation (5399 seconds left in grpo)
+END grpo_r3_validation: completed, peak 0.00 GiB
+START final_base_original (28799 seconds left in final)
+END final_base_original: completed, peak 0.00 GiB
+START final_sft_original (28799 seconds left in final)
+END final_sft_original: completed, peak 0.00 GiB
+START final_dpo_original (28799 seconds left in final)
+END final_dpo_original: completed, peak 0.00 GiB
+START final_ppo_original (28799 seconds left in final)
+END final_ppo_original: completed, peak 0.00 GiB
+START final_grpo_original (28799 seconds left in final)
+END final_grpo_original: completed, peak 0.00 GiB
+START final_base_prior (28799 seconds left in final)
+END final_base_prior: completed, peak 0.00 GiB
+START final_sft_prior (28799 seconds left in final)
+END final_sft_prior: completed, peak 0.00 GiB
+START final_dpo_prior (28799 seconds left in final)
+END final_dpo_prior: completed, peak 0.00 GiB
+START final_ppo_prior (28799 seconds left in final)
+END final_ppo_prior: completed, peak 0.00 GiB
+START final_grpo_prior (28799 seconds left in final)
+END final_grpo_prior: completed, peak 0.00 GiB
+PILOT_BUDGET {"observed_reference_tokens_per_second": 10, "estimated_final_output_tokens_for_5_models_2_prompts": 720, "estimated_final_generation_seconds": 72.0, "warning": "Planning extrapolation; training/prior prompts can change lengths. No sample size or cap silently reduced."}
+ok
+test_guard_limit_and_deadline_use_only_child_group (test_course_experiment.ProtocolTests.test_guard_limit_and_deadline_use_only_child_group) ... ok
+test_panels_metrics_and_resume_immutability (test_course_experiment.ProtocolTests.test_panels_metrics_and_resume_immutability) ... ok
+test_priors_do_not_require_target_and_keep_format (test_course_experiment.ProtocolTests.test_priors_do_not_require_target_and_keep_format) ... ok
+test_stopping_is_validation_based (test_course_experiment.ProtocolTests.test_stopping_is_validation_based) ... ok
+test_dpo_sequential_backward_is_exact (test_course_experiment.TrainingTests.test_dpo_sequential_backward_is_exact) ... ok
+test_preference_and_reward_dominance (test_course_experiment.TrainingTests.test_preference_and_reward_dominance) ... ok
+test_sft_projection_matches_dense_loss_and_gradients (test_course_experiment.TrainingTests.test_sft_projection_matches_dense_loss_and_gradients) ... ok
+test_two_round_real_tiny_model_replay_all_methods (test_course_experiment.TrainingTests.test_two_round_real_tiny_model_replay_all_methods) ... 05_PPO.ipynb:cell24:25: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+05_PPO.ipynb:cell13:9: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+05_PPO.ipynb:cell24:25: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+05_PPO.ipynb:cell13:9: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.866s
+
+OK
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric', 'bit_manipulation')}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric', 'bit_manipulation')}
+<sys>:0: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

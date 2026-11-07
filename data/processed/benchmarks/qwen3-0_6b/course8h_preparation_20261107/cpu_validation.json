@@ -1,0 +1,64 @@
+{
+  "status": "cpu_preparation_checks_passed",
+  "date": "2026-11-07",
+  "gpu_experiments_run": false,
+  "new_gpu_peak_verified": false,
+  "learning_improvement_verified": false,
+  "tests": 9,
+  "coverage": [
+    "fixed Train and Validation panels; no Holdout",
+    "completion-only token count including truncated rows",
+    "public priors and operator-suffixed Equation answers",
+    "exact sequential DPO loss gradient",
+    "SFT projected-vocabulary loss/gradient equivalence",
+    "correctness-first preference and length reward",
+    "real tiny Qwen3 + PEFT two rounds per method, adapter/Adam/value-head reload",
+    "memory/deadline guards with mocked device readings",
+    "complete supervisor with mocked workers and idempotent resume"
+  ],
+  "notebooks_cpu_pass": [
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07"
+  ],
+  "legacy_cpu_scope": "03-06 through benchmark taskset binder, including its two documented legacy Bit-only assertion skips",
+  "notebook_format_validation": "nbformat passed; all changed code cells <=100 lines",
+  "teacher_token_audit": {
+    "tokenizer_source": "existing official Qwen3-0.6B SFT tokenizer artifact",
+    "input_plus_teacher_length": {
+      "numeral_system": {
+        "n": 64,
+        "max_total_tokens": 213,
+        "mean_total_tokens": 157.484375
+      },
+      "gravity": {
+        "n": 64,
+        "max_total_tokens": 287,
+        "mean_total_tokens": 268.203125
+      },
+      "equation_numeric": {
+        "n": 64,
+        "max_total_tokens": 269,
+        "mean_total_tokens": 213.421875
+      }
+    },
+    "max_length": 4096,
+    "teacher_truncation": false
+  },
+  "source_sha256": {
+    "02_Prompt_Engineering.ipynb": "afac5bd5b035891bd33b56b96b87c281040b05ae054cf78dd3ce1794fdac496f",
+    "03_SFT.ipynb": "9a1a56422b76988292484634bd960a7ce2aac66f46f04d94f87a9894f4562cc1",
+    "04_DPO.ipynb": "2a1bc58bede89c98c6b3cf89ed4fa1febdd1b55211e7182b4b2b6713c941aa7e",
+    "05_PPO.ipynb": "20fb01706133b80a679f3a85db02c8db3a4af21c41561bc9f89779839748fea5",
+    "06_GRPO.ipynb": "441b091e142b101bf5ed677b37be01c55ef42d0ebb5d30eeb4181e5b99e2ba0a",
+    "07_Eight_Hour_Experiment.ipynb": "0333a0ea55a6870934f40d0265501cde834a3f9e8ae63737660fa88accf4622c",
+    "configs/course_8h.json": "b6b271f8cb4beb62bb0b58ade8dd0185b4d492d7efd94edd5d8d8244a98e15ff",
+    "tests/test_course_experiment.py": "7f370f4286a3e9e0563ed30c67b3e3033d701f72a201a28e2cb52b94939e47dc",
+    "utils/course_protocol.py": "ee6de8df4bc38010c50f3965925b2f09acff3543276b25937fb6cce5355d0e5c",
+    "utils/course_run.py": "b9ea52fed0b387a66e95fdee9a430faf6893f885112842550adb58b5864ad506",
+    "utils/course_worker.py": "fb8c6c27c0451e8aa062448cba4a0159a04e6697aa3378731d4f6e960660c644"
+  }
+}

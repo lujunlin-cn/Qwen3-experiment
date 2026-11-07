@@ -13,3 +13,6 @@ __pycache__/
 # Optional model evaluation outputs (generated locally, not source data)
 data/processed/baseline_results.jsonl
 data/processed/baseline_summary.json
+
+# Eight-hour runs include checkpoints, optimizer states and raw token logs.
+data/processed/course_runs/
