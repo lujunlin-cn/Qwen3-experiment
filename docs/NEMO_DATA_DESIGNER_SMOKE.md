@@ -1,8 +1,16 @@
 # Notebook 01：首轮 NeMo Data Designer GPU Smoke
 
-2026-11-07 只做 CPU 准备、真实 SDK 配置编译和模拟接口联调；**尚未调用真实模型或 GPU**。明天使用 Qwen3-0.6B 和本地 vLLM。现有 Generator、Solver、Verifier 的实现保持不变，三集合 Leakage Audit 只增加输出目录参数，以便把 NeMo 结果与 Seed 产物分开保存；后续 SFT/RL 算法不变。
+2026-11-07 完成 CPU 准备、真实 SDK 配置编译和模拟接口联调。2026-11-09 已完成
+Qwen3-0.6B → 本地 vLLM → NeMo 的首轮真实生成，18 个输出全部留在 Preview，
+详见 [真实验证报告](REAL_GPU_VALIDATION_20261109.md)。现有 Generator、Solver、
+Verifier 的实现保持不变，三集合 Leakage Audit 只增加输出目录参数，以便把
+NeMo 结果与 Seed 产物分开保存；后续 SFT/RL 算法不变。
 
-新 Run ID：`nemo_qwen3_06b_gpu_smoke_20261108_r1`，固定配置见 [nemo_smoke.json](../configs/nemo_smoke.json)。已存在的 Run 不能重新 prepare 或覆盖 GPU 结果；若需要新一轮，显式使用新的 `--run-id`，重新注册。
+当前默认新 Run ID：`nemo_qwen3_06b_gpu_smoke_20261109_r2_exact`，固定配置见
+[nemo_smoke.json](../configs/nemo_smoke.json)，用于加固后的 Equation Trace 门槛。
+旧 CPU Run `nemo_qwen3_06b_gpu_smoke_20261108_r1` 和首轮真实 GPU Run
+`nemo_qwen3_06b_gpu_smoke_20261109_r1` 均保留，不在新源码下复用旧冻结清单。
+已存在的 Run 不能重新 prepare 或覆盖 GPU 结果；新一轮必须重新注册。
 
 ## 测试内容与验证门槛
 
@@ -77,7 +85,7 @@ uv pip sync --python .venv-data-designer/bin/python configs/nemo_smoke_requireme
 本次已准备的 Run 随 Git 提交，**不要重新 prepare 同名目录**。先复核哈希；`api-check` 若已有结果则拒绝覆盖，本地已完成的结果可直接读取：
 
 ```bash
-.venv-data-designer/bin/python -c 'from utils.run_synthetic_smoke import verify_prepared_run; from pathlib import Path; print(verify_prepared_run(Path("data/processed/tasksets/roman_gravity_equation_v1/synthetic/nemo_qwen3_06b_gpu_smoke_20261108_r1"))["status"])'
+.venv-data-designer/bin/python -c 'from utils.run_synthetic_smoke import verify_prepared_run; from pathlib import Path; print(verify_prepared_run(Path("data/processed/tasksets/roman_gravity_equation_v1/synthetic/nemo_qwen3_06b_gpu_smoke_20261109_r2_exact"))["status"])'
 ```
 
 在一张空闲 GPU 上启动专用本地 vLLM（先核对 `nvidia-smi`，不要与明天的训练同时驻留）。以下命令只生成启动命令文本；将打印的命令在独立终端执行，或直接使用下面的显式命令：

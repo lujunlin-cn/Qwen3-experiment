@@ -1,6 +1,6 @@
 {
   "schema_version": "nemo-qwen3-smoke/v1",
-  "synthetic_run_id": "nemo_qwen3_06b_gpu_smoke_20261108_r1",
+  "synthetic_run_id": "nemo_qwen3_06b_gpu_smoke_20261109_r2_exact",
   "model_id": "Qwen/Qwen3-0.6B",
   "taskset": "roman_gravity_equation_v1",
   "seeds_per_task": 3,

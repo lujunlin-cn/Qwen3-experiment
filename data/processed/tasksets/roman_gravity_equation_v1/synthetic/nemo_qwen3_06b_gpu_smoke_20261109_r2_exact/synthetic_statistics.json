@@ -1,0 +1,219 @@
+{
+  "mode": "pilot",
+  "seed": 42,
+  "requested_candidates_per_task": 5,
+  "generated": 9,
+  "accepted": 9,
+  "rejected": 0,
+  "generation_failures": 0,
+  "by_task": {
+    "equation_numeric": {
+      "candidates": 3,
+      "accepted": 3,
+      "rejected": 0,
+      "acceptance_rate": 1.0,
+      "rejection_reasons": {}
+    },
+    "gravity": {
+      "candidates": 3,
+      "accepted": 3,
+      "rejected": 0,
+      "acceptance_rate": 1.0,
+      "rejection_reasons": {}
+    },
+    "numeral_system": {
+      "candidates": 3,
+      "accepted": 3,
+      "rejected": 0,
+      "acceptance_rate": 1.0,
+      "rejection_reasons": {}
+    }
+  },
+  "deduce_guess_counts": {
+    "deduce": 9
+  },
+  "deduce_guess_by_task": {
+    "equation_numeric": {
+      "deduce": 3
+    },
+    "gravity": {
+      "deduce": 3
+    },
+    "numeral_system": {
+      "deduce": 3
+    }
+  },
+  "guess_subtype_counts": {
+    "deduce": 9
+  },
+  "rule_coverage": {
+    "equation_numeric": {
+      "flip_sub_prefix": 1,
+      "flip_add": 1,
+      "flip_mul": 2,
+      "join_swap": 2,
+      "flip_sub_suffix": 1,
+      "flip_add_p1": 1,
+      "absdiff": 1,
+      "add": 1,
+      "mul_p1": 1,
+      "join": 1
+    },
+    "bit_operations": {},
+    "gravity_g_unique": [
+      "13.330637300919742",
+      "15.304040316804862",
+      "5.178738499474081"
+    ]
+  },
+  "rejection_reasons": {},
+  "duplicate_audit": {
+    "exact_duplicate_rows": 0,
+    "normalized_duplicate_rows": 0,
+    "structure_duplicate_rows": 2
+  },
+  "real_cross_collection_audit": {
+    "schema_version": "nemotron-synthetic-leakage/v3",
+    "candidate_count": 9,
+    "passed": 9,
+    "rejected": 0,
+    "source_split_counts": {
+      "holdout_test": 391,
+      "train": 3123,
+      "validation": 391
+    },
+    "by_split": {
+      "train": {
+        "exact": 0,
+        "normalized": 0,
+        "source_id": 0,
+        "source_row": 0,
+        "structure": 0
+      },
+      "validation": {
+        "exact": 0,
+        "normalized": 0,
+        "source_id": 0,
+        "source_row": 0,
+        "structure": 0
+      },
+      "holdout_test": {
+        "exact": 0,
+        "normalized": 0,
+        "source_id": 0,
+        "source_row": 0,
+        "structure": 0
+      }
+    },
+    "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+    "split_sha256": {
+      "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+      "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+      "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+    },
+    "policy": "real duplicate or declared real lineage rejected; structure similarity reported only",
+    "real_target_answers_used_for_exposure_audit": true,
+    "heldout_answer_usage": "Numeral mapping exposure audit only; never generation, solver inference, or tuning",
+    "numeral_query_exposure": {
+      "schema_version": "nemotron-synthetic-numeral-exposure/v1",
+      "policy": "report_only",
+      "interpretation": "finite mapping exposure; separate from full-sample duplicates and structural similarity",
+      "claims_no_mapping_leakage": false,
+      "populations": {
+        "candidates": {
+          "numeral_rows": 3,
+          "audited": 3,
+          "invalid": 0,
+          "query_already_in_own_examples": 0,
+          "by_split": {
+            "train": {
+              "synthetic_queries_audited": 3,
+              "query_in_real_examples": 3,
+              "query_in_real_examples_rate": 1.0,
+              "same_query_in_real_targets": 3,
+              "real_queries_covered_by_synthetic_examples": 120,
+              "real_query_count": 1260,
+              "real_query_coverage_rate": 0.09523809523809523
+            },
+            "validation": {
+              "synthetic_queries_audited": 3,
+              "query_in_real_examples": 3,
+              "query_in_real_examples_rate": 1.0,
+              "same_query_in_real_targets": 2,
+              "real_queries_covered_by_synthetic_examples": 18,
+              "real_query_count": 158,
+              "real_query_coverage_rate": 0.11392405063291139
+            },
+            "holdout_test": {
+              "synthetic_queries_audited": 3,
+              "query_in_real_examples": 3,
+              "query_in_real_examples_rate": 1.0,
+              "same_query_in_real_targets": 3,
+              "real_queries_covered_by_synthetic_examples": 10,
+              "real_query_count": 158,
+              "real_query_coverage_rate": 0.06329113924050633
+            }
+          }
+        },
+        "accepted": {
+          "numeral_rows": 3,
+          "audited": 3,
+          "invalid": 0,
+          "query_already_in_own_examples": 0,
+          "by_split": {
+            "train": {
+              "synthetic_queries_audited": 3,
+              "query_in_real_examples": 3,
+              "query_in_real_examples_rate": 1.0,
+              "same_query_in_real_targets": 3,
+              "real_queries_covered_by_synthetic_examples": 120,
+              "real_query_count": 1260,
+              "real_query_coverage_rate": 0.09523809523809523
+            },
+            "validation": {
+              "synthetic_queries_audited": 3,
+              "query_in_real_examples": 3,
+              "query_in_real_examples_rate": 1.0,
+              "same_query_in_real_targets": 2,
+              "real_queries_covered_by_synthetic_examples": 18,
+              "real_query_count": 158,
+              "real_query_coverage_rate": 0.11392405063291139
+            },
+            "holdout_test": {
+              "synthetic_queries_audited": 3,
+              "query_in_real_examples": 3,
+              "query_in_real_examples_rate": 1.0,
+              "same_query_in_real_targets": 3,
+              "real_queries_covered_by_synthetic_examples": 10,
+              "real_query_count": 158,
+              "real_query_coverage_rate": 0.06329113924050633
+            }
+          }
+        }
+      },
+      "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+      "split_sha256": {
+        "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+        "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+        "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+      },
+      "details_csv": "numeral_query_exposure.csv"
+    },
+    "lineage_unavailable": 9
+  },
+  "data_designer": {
+    "status": "not_run",
+    "reason": "Run the separately prepared NeMo Smoke entrypoint"
+  },
+  "artifacts": {
+    "synthetic_candidates.jsonl": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/nemo_qwen3_06b_gpu_smoke_20261109_r2_exact/synthetic_candidates.jsonl",
+    "synthetic_accepted.jsonl": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/nemo_qwen3_06b_gpu_smoke_20261109_r2_exact/synthetic_accepted.jsonl",
+    "synthetic_rejected.jsonl": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/nemo_qwen3_06b_gpu_smoke_20261109_r2_exact/synthetic_rejected.jsonl",
+    "synthetic_screening.csv": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/nemo_qwen3_06b_gpu_smoke_20261109_r2_exact/synthetic_screening.csv",
+    "synthetic_real_leakage_audit.json": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/nemo_qwen3_06b_gpu_smoke_20261109_r2_exact/synthetic_real_leakage_audit.json",
+    "synthetic_real_leakage_audit.csv": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/nemo_qwen3_06b_gpu_smoke_20261109_r2_exact/synthetic_real_leakage_audit.csv",
+    "numeral_query_exposure.json": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/nemo_qwen3_06b_gpu_smoke_20261109_r2_exact/numeral_query_exposure.json",
+    "numeral_query_exposure.csv": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/nemo_qwen3_06b_gpu_smoke_20261109_r2_exact/numeral_query_exposure.csv",
+    "generation_metadata.json": "data/processed/tasksets/roman_gravity_equation_v1/synthetic/nemo_qwen3_06b_gpu_smoke_20261109_r2_exact/generation_metadata.json"
+  }
+}
