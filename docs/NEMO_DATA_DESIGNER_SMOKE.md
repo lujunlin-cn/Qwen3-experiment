@@ -124,10 +124,10 @@ CUDA_VISIBLE_DEVICES=0 .venv-vllm-cu128/bin/python -m vllm.entrypoints.openai.ap
 
 ```bash
 .venv-data-designer/bin/python utils/run_nemo_guarded.py \
-  --run-id nemo_qwen3_06b_gpu_smoke_20261109_r1 \
+  --run-id nemo_qwen3_06b_gpu_smoke_20261109_r2_exact \
   --model /root/autodl-tmp/huggingface/models/Qwen3-0.6B \
   --vllm-python .venv-vllm-cu128/bin/python \
-  --output .autodl/real_gpu_20261109/nemo_guard
+  --output .autodl/real_gpu_20261109/nemo_exact_guard
 ```
 
 该入口要求 GPU 空闲、端点未被使用、输出目录不存在。它自行启动并关闭本次专用
