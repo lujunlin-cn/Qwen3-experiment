@@ -1,0 +1,21 @@
+{
+  "status": "passed_real_tokenizer_cpu_check",
+  "truncated_teacher_records": 0,
+  "tasks": {
+    "numeral_system": {
+      "n": 64,
+      "max_full_tokens": 213,
+      "assistant_tokens": 5825
+    },
+    "gravity": {
+      "n": 64,
+      "max_full_tokens": 287,
+      "assistant_tokens": 8302
+    },
+    "equation_numeric": {
+      "n": 64,
+      "max_full_tokens": 269,
+      "assistant_tokens": 7955
+    }
+  }
+}

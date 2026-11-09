@@ -1,0 +1,9 @@
+{
+  "status": "passed_nonzero_lora_updates",
+  "tensor_count": 392,
+  "lora_B_tensors": 196,
+  "nonzero_B_tensors": 196,
+  "adapter_sha256": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371",
+  "optimizer_steps": 24,
+  "note": "Default LoRA B starts at zero; inspect trained B matrices on CPU"
+}

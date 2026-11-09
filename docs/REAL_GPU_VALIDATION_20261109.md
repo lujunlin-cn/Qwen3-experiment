@@ -62,6 +62,31 @@ Dropout 模块单独关闭。回归测试验证 Decoder 确实重算且梯度与
 
 ## 完整实验命令
 
+### 20:20 中间结果
+
+以下来自固定调参面板，每类四题，最终八题面板尚未评测。均使用 Thinking；
+平均 Token 只计输出，包含错误与截断样本。完整过程仍在运行，不是最终验收。
+
+| 题型 | 原始基线：正确率 / 截断率 / 平均输出 | 提示词先验 | SFT 第 1 轮 |
+|---|---|---|---|
+| Roman | 75% / 0% / 2137.50 | 100% / 0% / 1757.25 | 100% / 0% / 2225.50 |
+| Gravity | 100% / 0% / 9407.25 | 50% / 0% / 7821.75 | 100% / 0% / 7882.75 |
+| Equation | 25% / 25% / 12874.00 | 0% / 0% / 8696.00 | 25% / 0% / 9485.50 |
+
+输出上限扫描 512/2048/8192/16384 均已完成，峰值约 5.20 GB。512 时三题型
+全部截断且全部答错；2048 时 Gravity、Equation 同样全部截断且全部答错。
+降低输出上限的效果不能算作模型学会简洁推理。
+
+前两轮 SFT 均完成 192 条样本、22082 个 assistant Token、24 次优化器更新，
+每轮纯训练约 112 秒，整卡采样峰值约 1.72 GB。实际 Tokenizer 检查确认所有
+教师轨迹未截断，最长完整序列为 Roman 213 / Gravity 287 / Equation 269 Token。
+训练记录确认 `training_mode=true / gradient_checkpointing_enabled=true /
+use_cache=false`；第一轮 196 个 LoRA B 矩阵全部由零变为非零。
+
+SFT 第 1 轮已经减少 Equation 的截断，不能再声称“只有 RL 才能改善截断”。
+提示词先验在该小面板上也没有普遍提高正确率。原始中间记录见
+`progress_20261109_2020.json`、`sft_token_budget.json` 和 `sft_update_audit.json`。
+
 按 [课程协议](QWEN3_0_6B_8H_PROTOCOL.md) 的固定面板、样本数、各阶段预算和
 验证平台期规则运行。SFT 三题；DPO Gravity/Equation；PPO、GRPO 只训练
 Equation，Gravity 仅评测；三种 RL 独立从同一个选定 SFT checkpoint 开始。
