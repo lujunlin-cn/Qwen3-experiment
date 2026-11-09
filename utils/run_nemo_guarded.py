@@ -28,7 +28,8 @@ def worker(args):
     output = args.output.resolve()
     with (output / 'server.log').open('x') as log:
         server = subprocess.Popen(
-            server_command(config, args.vllm_python.resolve(), args.model.resolve()),
+            # Resolving this symlink would select the base Python and lose venv.
+            server_command(config, args.vllm_python.absolute(), args.model.resolve()),
             cwd=ROOT, stdout=log, stderr=subprocess.STDOUT,
         )
         try:
