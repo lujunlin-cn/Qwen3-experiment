@@ -61,6 +61,15 @@ def artifact_fingerprint(adapter):
     adapter = Path(adapter)
     return {p.name:digest(p) for p in sorted(adapter.glob('adapter_*')) if p.is_file()}
 
+def training_mode(policy):
+    """Keep decoder checkpointing active while retaining deterministic dropout."""
+    import torch
+    policy.train()
+    for module in policy.modules():
+        if isinstance(module, torch.nn.Dropout):
+            module.eval()
+    return policy
+
 def load_policy(model_path, mode, adapter=None):
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
@@ -84,7 +93,8 @@ def load_policy(model_path, mode, adapter=None):
             target_modules=['q_proj','k_proj','v_proj','o_proj','gate_proj','up_proj','down_proj'],task_type='CAUSAL_LM'))
     policy.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant':False})
     policy.enable_input_require_grads()
-    policy.eval()  # Gradients remain enabled; deterministic policy has no dropout.
+    # Transformers skips decoder checkpointing in eval mode even with gradients.
+    training_mode(policy)
     tokenizer=AutoTokenizer.from_pretrained(model_path,local_files_only=True)
     if tokenizer.pad_token_id is None: tokenizer.pad_token=tokenizer.eos_token
     return policy,tokenizer
@@ -233,6 +243,11 @@ def sft_epoch(job,c):
 
 def save_training(policy,tokenizer,optimizer,job,result,value_head=None):
     import torch
+    result['decoder_memory_settings'] = {
+        'training_mode': policy.get_base_model().model.training,
+        'gradient_checkpointing_enabled': bool(policy.is_gradient_checkpointing),
+        'use_cache': policy.config.use_cache,
+    }
     output=Path(job['output']); adapter=output/'adapter'
     policy.save_pretrained(adapter); tokenizer.save_pretrained(adapter)
     torch.save({'optimizer':optimizer.state_dict()},output/'trainer.pt')
@@ -267,7 +282,7 @@ def train_dpo(job,c):
     cached=[]
     with torch.no_grad():
         for p in pairs: cached.append([float(score(p[s])) for s in ('chosen','rejected')])
-    policy.set_adapter('default');policy.eval()
+    policy.set_adapter('default');training_mode(policy)
     for name,p in policy.named_parameters():
         if '.reference.' in name: p.requires_grad_(False)
     write(output/'reference_scores.json',{'reference_fingerprint':artifact_fingerprint(job['sft_adapter']),

@@ -52,6 +52,7 @@ RL 起始输出上限 4096；若 DPO 没有偏好信号、GRPO 组方差为零�
 
 - vLLM：固定 3 GiB KV cache、并发 1、chunked prefill 512、eager，无 CUDA Graph；G=8 分批生成。每 Token KV 理论值 112 KiB，3 GiB 理想约能容纳 28086 Token，足够一条 20480 上下文，仍需实测调度与工作区。
 - 训练：LoRA rank8、micro-batch=1、梯度累积、Decoder 非重入 checkpoint、`use_cache=False`；64 Token 一块计算完整词表投影及 Softmax，不构造整段 `[T,V]`。
+- Decoder 保持训练模式以实际启用 checkpoint，Dropout 模块单独关闭。`eval()` 会跳过 Decoder checkpoint，即使梯度开启也不能用于反传阶段；回归检查验证重算实际发生且梯度不变。
 - SFT 使用 NF4 QLoRA。DPO/PPO/GRPO 默认 BF16 LoRA，和 BF16 rollout 一致；这些是新课程 runner 的配置，不改变旧 PPO 冒烟入口的 NF4 契约。
 - DPO 顺序重算并反传 chosen/rejected，精确链式法则给出原 DPO 梯度；冻结 SFT reference 用共享基座的独立 LoRA 评分，只缓存标量，不再并存两套模型或两侧 Decoder 图。
 - PPO 保存并恢复 value head、Adam 状态；错误和截断样本也训练。`gamma=1, lambda=1`，按有限时域输出任务在预算结束处用零 bootstrap，不伪装观察到 EOS。PPO/GRPO 采用 Clip 目标，reference KL 系数为 0，不宣称实现了额外 reference-KL 正则。

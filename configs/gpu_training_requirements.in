@@ -1,0 +1,14 @@
+# Install into .venv using https://mirrors.aliyun.com/pypi/simple.
+# Torch matches the vLLM CUDA 12.8 stack; environments remain isolated.
+torch==2.8.0
+transformers==5.18.0
+peft==0.21.2
+bitsandbytes==0.50.2
+numpy==2.2.6
+pandas
+matplotlib
+seaborn
+scikit-learn
+nbformat
+nbclient
+ipykernel

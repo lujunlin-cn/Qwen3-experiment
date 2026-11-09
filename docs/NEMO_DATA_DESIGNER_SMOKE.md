@@ -103,6 +103,23 @@ CUDA_VISIBLE_DEVICES=0 .venv-vllm-cu128/bin/python -m vllm.entrypoints.openai.ap
 .venv-data-designer/bin/python utils/run_synthetic_smoke.py gpu --run-id nemo_qwen3_06b_gpu_smoke_round2
 ```
 
+2026-11-09 新增整卡显存守卫入口，适用于服务器上尚未启动 vLLM 的情况。先用上述
+`prepare` 和 `api-check` 注册新 Run，再执行：
+
+```bash
+.venv-data-designer/bin/python utils/run_nemo_guarded.py \
+  --run-id nemo_qwen3_06b_gpu_smoke_20261109_r1 \
+  --model /root/autodl-tmp/huggingface/models/Qwen3-0.6B \
+  --vllm-python .venv-vllm-cu128/bin/python \
+  --output .autodl/real_gpu_20261109/nemo_guard
+```
+
+该入口要求 GPU 空闲、端点未被使用、输出目录不存在。它自行启动并关闭本次专用
+vLLM，约每 0.25 秒记录整卡占用，达到 8,000,000,000 字节即终止自己的进程组。
+`guard.json`、`device_memory.jsonl`、`server.log` 和 `worker.log` 保存设备峰值及原始日志。
+这仍是采样上界检查；不能证明采样间绝无瞬时超限。部分输出留在 Preview 时，生成
+CLI 会非零退出，需结合 NeMo `summary.json` 判断内容验证结果，不能将其改记为通过。
+
 Notebook 01 也保留显式 `RUN_DATA_DESIGNER_SMOKE=1` 入口；必须设置本轮新 `SYNTHETIC_RUN_ID` 并先准备，关闭 `RUN_SYNTHETIC` 和旧 Preview 标志。CLI 是首轮推荐入口，避免交互式执行重写旁路诊断文件。
 
 ## 已完成的本地验证

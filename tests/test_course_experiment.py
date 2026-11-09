@@ -42,7 +42,7 @@ def tiny_policy(model_path=None,mode=None,adapter=None):
     else:
         model=get_peft_model(base,LoraConfig(r=2,lora_alpha=4,lora_dropout=0,target_modules=['q_proj','v_proj'],task_type='CAUSAL_LM'))
     model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant':False})
-    model.enable_input_require_grads();model.eval()
+    model.enable_input_require_grads();worker.training_mode(model)
     return model,Tokenizer()
 
 class ProtocolTests(unittest.TestCase):
@@ -141,6 +141,29 @@ class TrainingTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.ns={m:worker.notebook_api(m) for m in ('sft','dpo','ppo','grpo')}
+
+    def test_decoder_checkpointing_recomputes_without_changing_gradients(self):
+        model, _ = tiny_policy()
+        model.eval()
+        ids = torch.tensor([[2, 3, 4, 5, 6]])
+        calls = []
+        layer = model.get_base_model().model.layers[0].self_attn.q_proj
+        hook = layer.register_forward_pre_hook(lambda *args: calls.append(1))
+        try:
+            causal_policy_logprobs(model, ids, None, 8).sum().backward()
+            baseline_calls = len(calls)
+            grads = {n:p.grad.clone() for n,p in model.named_parameters()
+                     if p.requires_grad and p.grad is not None}
+            model.zero_grad(set_to_none=True)
+            calls.clear()
+            worker.training_mode(model)
+            causal_policy_logprobs(model, ids, None, 8).sum().backward()
+            self.assertGreater(len(calls), baseline_calls)
+            for name, parameter in model.named_parameters():
+                if name in grads:
+                    torch.testing.assert_close(parameter.grad, grads[name], rtol=1e-5, atol=1e-6)
+        finally:
+            hook.remove()
 
     def test_dpo_sequential_backward_is_exact(self):
         theta=torch.nn.Parameter(torch.tensor([.3,-.4],dtype=torch.float64))
