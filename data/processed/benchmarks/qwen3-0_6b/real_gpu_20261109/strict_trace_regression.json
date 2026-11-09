@@ -1,0 +1,9 @@
+{
+  "status": "regression_verified_cpu_only",
+  "case": "mul_m1 42(21 should compute881; claimed882 while final3955 is correct",
+  "before_incorrect_intermediate_accepted": true,
+  "after_incorrect_intermediate_accepted": false,
+  "official_final_scoring_unchanged": true,
+  "original_generator_solver_verifier_ast_unchanged": true,
+  "gpu_experiment_unchanged": true
+}

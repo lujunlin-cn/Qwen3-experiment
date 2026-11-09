@@ -1,0 +1,157 @@
+{
+  "scope": "independent existing 24-rule verifier, not an absolute claim about all possible hidden task rules",
+  "train_equation_categories": {
+    "multiple_officially_distinct_outputs_gold_matches_one": 180,
+    "verified_unique_under_official_tolerance": 406
+  },
+  "registered_rl_panels": {
+    "dpo_1": {
+      "verified_unique_under_official_tolerance": 3,
+      "multiple_officially_distinct_outputs_gold_matches_one": 1
+    },
+    "dpo_2": {
+      "verified_unique_under_official_tolerance": 4
+    },
+    "dpo_3": {
+      "multiple_officially_distinct_outputs_gold_matches_one": 2,
+      "verified_unique_under_official_tolerance": 2
+    },
+    "dpo_4": {
+      "verified_unique_under_official_tolerance": 3,
+      "multiple_officially_distinct_outputs_gold_matches_one": 1
+    },
+    "dpo_5": {
+      "verified_unique_under_official_tolerance": 3,
+      "multiple_officially_distinct_outputs_gold_matches_one": 1
+    },
+    "dpo_6": {
+      "verified_unique_under_official_tolerance": 4
+    },
+    "grpo_1": {
+      "multiple_officially_distinct_outputs_gold_matches_one": 1,
+      "verified_unique_under_official_tolerance": 1
+    },
+    "grpo_2": {
+      "multiple_officially_distinct_outputs_gold_matches_one": 1,
+      "verified_unique_under_official_tolerance": 1
+    },
+    "grpo_3": {
+      "verified_unique_under_official_tolerance": 2
+    },
+    "grpo_4": {
+      "verified_unique_under_official_tolerance": 2
+    },
+    "grpo_5": {
+      "verified_unique_under_official_tolerance": 1,
+      "multiple_officially_distinct_outputs_gold_matches_one": 1
+    },
+    "grpo_6": {
+      "multiple_officially_distinct_outputs_gold_matches_one": 1,
+      "verified_unique_under_official_tolerance": 1
+    },
+    "ppo_1": {
+      "multiple_officially_distinct_outputs_gold_matches_one": 2,
+      "verified_unique_under_official_tolerance": 6
+    },
+    "ppo_2": {
+      "verified_unique_under_official_tolerance": 6,
+      "multiple_officially_distinct_outputs_gold_matches_one": 2
+    },
+    "ppo_3": {
+      "verified_unique_under_official_tolerance": 5,
+      "multiple_officially_distinct_outputs_gold_matches_one": 3
+    },
+    "ppo_4": {
+      "verified_unique_under_official_tolerance": 6,
+      "multiple_officially_distinct_outputs_gold_matches_one": 2
+    },
+    "ppo_5": {
+      "verified_unique_under_official_tolerance": 7,
+      "multiple_officially_distinct_outputs_gold_matches_one": 1
+    },
+    "ppo_6": {
+      "verified_unique_under_official_tolerance": 6,
+      "multiple_officially_distinct_outputs_gold_matches_one": 2
+    }
+  },
+  "original_run_unchanged": true,
+  "tune_equation_independent_checks": [
+    {
+      "id": "65c52214",
+      "gold": "1593",
+      "solver_answer_unique": true,
+      "independent_identifiability": {
+        "valid_assignment_count": 1,
+        "query_output_count": 1,
+        "query_outputs": [
+          "1593"
+        ],
+        "answer_unique": true,
+        "rule_assignment_unique": true
+      },
+      "gold_literal_in_output_list": true,
+      "gold_passes_official_against_a_verifier_output": true
+    },
+    {
+      "id": "23f98595",
+      "gold": "03",
+      "solver_answer_unique": false,
+      "independent_identifiability": {
+        "valid_assignment_count": 11,
+        "query_output_count": 9,
+        "query_outputs": [
+          "'36",
+          "03",
+          "031",
+          "3369",
+          "36",
+          "36'",
+          "6933",
+          "821",
+          "921"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false
+      },
+      "gold_literal_in_output_list": true,
+      "gold_passes_official_against_a_verifier_output": true
+    },
+    {
+      "id": "8011cb24",
+      "gold": ":64",
+      "solver_answer_unique": true,
+      "independent_identifiability": {
+        "valid_assignment_count": 2,
+        "query_output_count": 1,
+        "query_outputs": [
+          ":64"
+        ],
+        "answer_unique": true,
+        "rule_assignment_unique": false
+      },
+      "gold_literal_in_output_list": true,
+      "gold_passes_official_against_a_verifier_output": true
+    },
+    {
+      "id": "d46df3b0",
+      "gold": "3955",
+      "solver_answer_unique": true,
+      "independent_identifiability": {
+        "valid_assignment_count": 3,
+        "query_output_count": 1,
+        "query_outputs": [
+          "3956"
+        ],
+        "answer_unique": true,
+        "rule_assignment_unique": false
+      },
+      "gold_literal_in_output_list": false,
+      "gold_passes_official_against_a_verifier_output": true
+    }
+  ],
+  "final_panel_not_inspected_for_this_audit": true,
+  "official_metric_numeric_relative_tolerance": 0.01,
+  "accepted_teacher_records": 2943,
+  "accepted_teachers_failing_official_metric": [],
+  "correction": "Literal differences are not official-label errors. All180 rejected Equation rows have multiple officially distinct outcomes, not missing gold coverage."
+}

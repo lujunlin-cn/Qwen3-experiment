@@ -18,9 +18,10 @@ def reference_proof(ns,seed):
         return {'task_type':task,'g_estimates':list(trace['g_estimates']),'g_ols':trace['g_ols'],
                 'query_t':trace['query_t'],'query_distance':trace['query_raw'],'answer':seed['answer']}
     examples,query=ns['_parse_numeric_prompt'](seed['prompt'])
-    rules=trace['selected_assignment']['rules']
+    rules=ns['_smoke_equation_resolution'](seed['prompt'])['selected_assignment']['rules']
+    output=ns['_numeric_verify_output'](rules[query[2]],query)
     return {'task_type':task,'rules':rules,'example_outputs':[ns['_numeric_verify_output'](rules[e[2]],e) for e,_ in examples],
-            'query_output':ns['_numeric_verify_output'](rules[query[2]],query),'answer':seed['answer']}
+            'query_output':output,'answer':output}
 
 
 class SmokeTests(unittest.TestCase):
@@ -89,6 +90,24 @@ class SmokeTests(unittest.TestCase):
             self.ns[fn]=forbidden
             try: self.assertTrue(self.ns['verify_smoke_trace'](seed,json.dumps(proof))['verified'])
             finally:self.ns[fn]=original
+
+    def test_equation_trace_requires_exact_intermediates_even_when_score_tolerates_error(self):
+        prompt=("In Alice's Wonderland, a secret set of transformation rules is applied to equations. "
+                "Below are a few examples:\n42(21 = 881\n96$83 = 9683\n38(69 = 2621\n15(42 = 629\n"
+                "Now, determine the result for: 86(46")
+        seed={'task_type':'equation_numeric','prompt':prompt,'answer':'3955'}
+        proof={'task_type':'equation_numeric','rules':{'(':'mul_m1','$':'join'},
+               'example_outputs':['881','9683','2621','629'],'query_output':'3955','answer':'3955'}
+        self.assertTrue(self.ns['numeric_or_text_match']('3955','3956'))
+        self.assertTrue(self.ns['verify_smoke_trace'](seed,json.dumps(proof))['verified'])
+        for key,value in [('example_outputs',['882','9683','2621','629']),
+                          ('query_output','3956'),('answer','3956'),
+                          ('example_outputs',[881,'9683','2621','629'])]:
+            bad=copy.deepcopy(proof);bad[key]=value
+            self.assertFalse(self.ns['verify_smoke_trace'](seed,json.dumps(bad))['verified'],key)
+        bad=copy.deepcopy(proof);bad['rules']['(']='mul'
+        bad.update(example_outputs=['882','9683','2622','630'],query_output='3956',answer='3956')
+        self.assertFalse(self.ns['verify_smoke_trace'](seed,json.dumps(bad))['verified'])
 
     def test_preview_gate_missing_duplicate_reasoning_and_all_three_splits(self):
         records=[{'seed_id':s['seed_id'],'task_type':s['task_type'],'prompt':s['prompt'],
