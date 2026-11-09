@@ -1,0 +1,36 @@
+{
+  "archive_sha256": "fc85f268dffb0c5f45f92fba43f84b39671b22e34c0504c3917861b59912c3a9",
+  "local_backup_verified": true,
+  "deleted": [
+    {
+      "path": "/root/autodl-tmp/mini-sglang",
+      "absent": true
+    },
+    {
+      "path": "/root/autodl-tmp/.venv",
+      "absent": true
+    },
+    {
+      "path": "/root/autodl-tmp/taskbench-20261108-run1",
+      "absent": true
+    },
+    {
+      "path": "/root/.cache/huggingface/hub/models--TinyLlama--TinyLlama-1.1B-Chat-v1.0",
+      "absent": true
+    },
+    {
+      "path": "/root/.cache/modelscope/models/Qwen--Qwen3-0.6B",
+      "absent": true
+    },
+    {
+      "path": "/root/.cache/sglang",
+      "absent": true
+    },
+    {
+      "path": "/root/.cache/flashinfer",
+      "absent": true
+    }
+  ],
+  "old_uv_cache_cleared": "19GB removed; uv recreated small metadata while creating new environments",
+  "time_unix": 1794223173.5141108
+}

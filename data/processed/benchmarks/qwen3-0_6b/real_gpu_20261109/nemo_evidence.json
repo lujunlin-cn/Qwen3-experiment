@@ -1,0 +1,15 @@
+{
+  "status": "content_gate_failed",
+  "transport_complete": true,
+  "accepted": 0,
+  "preview": 18,
+  "requests": 18,
+  "output_tokens": 2743,
+  "device_peak_sampled_bytes": 3808428032,
+  "memory_check": "sampled_pass",
+  "process_exit_code": 2,
+  "workload_exercised": true,
+  "generation_wall_seconds": 44.50193311460316,
+  "entire_job_wall_seconds": 71.0936427116394,
+  "training_and_full_rollout_validation": "pending_course8h_20261109_r2_cuda_graph"
+}

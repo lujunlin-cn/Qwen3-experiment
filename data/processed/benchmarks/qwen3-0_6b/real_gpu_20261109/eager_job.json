@@ -1,0 +1,14 @@
+{
+  "kind": "evaluation",
+  "run": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/gpu_eager_probe_20261109_r1",
+  "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/gpu_eager_probe_20261109_r1/base_eager_1024",
+  "model": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B",
+  "seed": 42,
+  "policy_version": "base",
+  "variant": "original",
+  "panel": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/gpu_eager_probe_20261109_r1/single_validation_probe.jsonl",
+  "cap": 1024,
+  "input_hashes": {
+    "panel": "29ee0ed51bdfd80be9fb55a864d20f9bf40954ebf580b3eede3ffc1251900144"
+  }
+}

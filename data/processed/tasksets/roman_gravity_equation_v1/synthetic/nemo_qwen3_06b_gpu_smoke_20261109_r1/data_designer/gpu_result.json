@@ -1,0 +1,35 @@
+{
+  "status": "empty_accepted",
+  "transport_complete": true,
+  "seed_rows": 9,
+  "expected_outputs": 18,
+  "received_seed_rows": 9,
+  "nonempty_outputs": 18,
+  "accepted": 0,
+  "preview": 18,
+  "merge_into_sft": false,
+  "by_task": {
+    "numeral_system": {
+      "accepted": 0,
+      "preview": 6
+    },
+    "gravity": {
+      "accepted": 0,
+      "preview": 6
+    },
+    "equation_numeric": {
+      "accepted": 0,
+      "preview": 6
+    }
+  },
+  "transport": {
+    "http_requests": 18,
+    "failed_requests": 0,
+    "completion_tokens": 2743
+  },
+  "gpu_generation_requested": true,
+  "wall_seconds": 44.50193311460316,
+  "model": "Qwen/Qwen3-0.6B",
+  "endpoint": "http://127.0.0.1:18081/v1",
+  "synthetic_run_id": "nemo_qwen3_06b_gpu_smoke_20261109_r1"
+}

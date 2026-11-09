@@ -1,0 +1,6 @@
+{
+  "status": "started",
+  "endpoint": "http://127.0.0.1:18081/v1",
+  "model": "Qwen/Qwen3-0.6B",
+  "started_at_utc": "2026-11-09T11:31:14.284136+00:00"
+}

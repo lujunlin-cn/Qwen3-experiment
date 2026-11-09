@@ -1,0 +1,9 @@
+{
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "python": "3.12.3",
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER, GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e, 32760 MiB, 595.71.05",
+  "index": "https://mirrors.aliyun.com/pypi/simple",
+  "source_commit": "eeb0cf3",
+  "raw_train_sha256": "d204af160633b638448723a437aa51c0db70fd0b64ff92f6ad6f52e5ac6377fa",
+  "nemo_version": "0.10.0"
+}

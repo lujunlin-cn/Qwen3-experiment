@@ -1,0 +1,23 @@
+{
+  "profiles": [
+    {
+      "profile": "base_eager_1024",
+      "tokens": 1024,
+      "tokens_per_second": 47.98188690714382,
+      "peak_bytes": 5141168128,
+      "guard": "completed",
+      "output_ids_sha256": "7924f9f25d1ef19987533ab9d9a86126ccafb8c8d0c93ea585a808fdb904ebe0"
+    },
+    {
+      "profile": "base_cuda_graph_1024",
+      "tokens": 1024,
+      "tokens_per_second": 256.68242084124563,
+      "peak_bytes": 5195694080,
+      "guard": "completed",
+      "output_ids_sha256": "7924f9f25d1ef19987533ab9d9a86126ccafb8c8d0c93ea585a808fdb904ebe0"
+    }
+  ],
+  "output_token_ids_equal": true,
+  "speedup": 5.349569126741226,
+  "purpose": "Single fixed validation prompt, seed42, cap1024, speed/memory probe only; not learning efficacy evidence"
+}
