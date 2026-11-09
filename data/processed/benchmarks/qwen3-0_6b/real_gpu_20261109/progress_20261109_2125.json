@@ -1,0 +1,2129 @@
+{
+  "status": "in_progress",
+  "snapshot_time_unix": 1794230769.8133266,
+  "run_id": "course8h_20261109_r2_cuda_graph",
+  "config_sha256": "6292e619854e7830a5767ee89d349e2826f7169c2751cf453387dab4065f02be",
+  "completed_jobs": [
+    {
+      "job": "base_reference",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 466.18309926986694,
+        "started_at_unix": 1794224071.5445921,
+        "device_peak_sampled_bytes": 5195694080,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1426,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 1,
+            "accuracy": 0.25,
+            "accuracy_wilson95": [
+              0.045586062644636216,
+              0.6993639475573634
+            ],
+            "truncated": 1,
+            "truncation_rate": 0.25,
+            "mean_output_tokens": 12874,
+            "total_output_tokens": 51496,
+            "mean_correct_output_tokens": 11671,
+            "max_output_tokens": 16384
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 1.0,
+            "accuracy_wilson95": [
+              0.5100999795960008,
+              1.0
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 9407.25,
+            "total_output_tokens": 37629,
+            "mean_correct_output_tokens": 9407.25,
+            "max_output_tokens": 13426
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 3,
+            "accuracy": 0.75,
+            "accuracy_wilson95": [
+              0.3006360524426366,
+              0.9544139373553637
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 2137.5,
+            "total_output_tokens": 8550,
+            "mean_correct_output_tokens": 1772.3333333333333,
+            "max_output_tokens": 3233
+          }
+        },
+        "records": 12,
+        "generation_seconds": 440.18657142296433,
+        "output_tokens_per_second": 221.8945473149078,
+        "policy_fingerprint": {
+          "kind": "base"
+        },
+        "worker_wall_seconds": 462.8277564244345,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "base_cap512",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 43.79915189743042,
+        "started_at_unix": 1794224537.8985043,
+        "device_peak_sampled_bytes": 5195694080,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 135,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 0,
+            "accuracy": 0.0,
+            "accuracy_wilson95": [
+              0.0,
+              0.48990002040399916
+            ],
+            "truncated": 4,
+            "truncation_rate": 1.0,
+            "mean_output_tokens": 512,
+            "total_output_tokens": 2048,
+            "mean_correct_output_tokens": null,
+            "max_output_tokens": 512
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 0,
+            "accuracy": 0.0,
+            "accuracy_wilson95": [
+              0.0,
+              0.48990002040399916
+            ],
+            "truncated": 4,
+            "truncation_rate": 1.0,
+            "mean_output_tokens": 512,
+            "total_output_tokens": 2048,
+            "mean_correct_output_tokens": null,
+            "max_output_tokens": 512
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 0,
+            "accuracy": 0.0,
+            "accuracy_wilson95": [
+              0.0,
+              0.48990002040399916
+            ],
+            "truncated": 4,
+            "truncation_rate": 1.0,
+            "mean_output_tokens": 512,
+            "total_output_tokens": 2048,
+            "mean_correct_output_tokens": null,
+            "max_output_tokens": 512
+          }
+        },
+        "records": 12,
+        "generation_seconds": 22.406926663592458,
+        "output_tokens_per_second": 274.2009242161256,
+        "policy_fingerprint": {
+          "kind": "base"
+        },
+        "worker_wall_seconds": 40.311667199246585,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "base_cap2048",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 110.3216507434845,
+        "started_at_unix": 1794224581.8664932,
+        "device_peak_sampled_bytes": 5195694080,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 338,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 0,
+            "accuracy": 0.0,
+            "accuracy_wilson95": [
+              0.0,
+              0.48990002040399916
+            ],
+            "truncated": 4,
+            "truncation_rate": 1.0,
+            "mean_output_tokens": 2048,
+            "total_output_tokens": 8192,
+            "mean_correct_output_tokens": null,
+            "max_output_tokens": 2048
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 0,
+            "accuracy": 0.0,
+            "accuracy_wilson95": [
+              0.0,
+              0.48990002040399916
+            ],
+            "truncated": 4,
+            "truncation_rate": 1.0,
+            "mean_output_tokens": 2048,
+            "total_output_tokens": 8192,
+            "mean_correct_output_tokens": null,
+            "max_output_tokens": 2048
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 2,
+            "accuracy": 0.5,
+            "accuracy_wilson95": [
+              0.15003570882017148,
+              0.8499642911798285
+            ],
+            "truncated": 2,
+            "truncation_rate": 0.5,
+            "mean_output_tokens": 1809,
+            "total_output_tokens": 7236,
+            "mean_correct_output_tokens": 1570,
+            "max_output_tokens": 2048
+          }
+        },
+        "records": 12,
+        "generation_seconds": 89.08270534314215,
+        "output_tokens_per_second": 265.14686446731645,
+        "policy_fingerprint": {
+          "kind": "base"
+        },
+        "worker_wall_seconds": 106.72291247546673,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "base_cap8192",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 325.28160429000854,
+        "started_at_unix": 1794224692.3423226,
+        "device_peak_sampled_bytes": 5195694080,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 997,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 0,
+            "accuracy": 0.0,
+            "accuracy_wilson95": [
+              0.0,
+              0.48990002040399916
+            ],
+            "truncated": 3,
+            "truncation_rate": 0.75,
+            "mean_output_tokens": 8088,
+            "total_output_tokens": 32352,
+            "mean_correct_output_tokens": null,
+            "max_output_tokens": 8192
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 2,
+            "accuracy": 0.5,
+            "accuracy_wilson95": [
+              0.15003570882017148,
+              0.8499642911798285
+            ],
+            "truncated": 2,
+            "truncation_rate": 0.5,
+            "mean_output_tokens": 7969.25,
+            "total_output_tokens": 31877,
+            "mean_correct_output_tokens": 7746.5,
+            "max_output_tokens": 8192
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 3,
+            "accuracy": 0.75,
+            "accuracy_wilson95": [
+              0.3006360524426366,
+              0.9544139373553637
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 2137.5,
+            "total_output_tokens": 8550,
+            "mean_correct_output_tokens": 1772.3333333333333,
+            "max_output_tokens": 3233
+          }
+        },
+        "records": 12,
+        "generation_seconds": 304.0244429670274,
+        "output_tokens_per_second": 239.38535760393827,
+        "policy_fingerprint": {
+          "kind": "base"
+        },
+        "worker_wall_seconds": 321.5928763737902,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "base_cap16384",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 463.39566135406494,
+        "started_at_unix": 1794225017.7633529,
+        "device_peak_sampled_bytes": 5195694080,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1418,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 1,
+            "accuracy": 0.25,
+            "accuracy_wilson95": [
+              0.045586062644636216,
+              0.6993639475573634
+            ],
+            "truncated": 1,
+            "truncation_rate": 0.25,
+            "mean_output_tokens": 12874,
+            "total_output_tokens": 51496,
+            "mean_correct_output_tokens": 11671,
+            "max_output_tokens": 16384
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 1.0,
+            "accuracy_wilson95": [
+              0.5100999795960008,
+              1.0
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 9407.25,
+            "total_output_tokens": 37629,
+            "mean_correct_output_tokens": 9407.25,
+            "max_output_tokens": 13426
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 3,
+            "accuracy": 0.75,
+            "accuracy_wilson95": [
+              0.3006360524426366,
+              0.9544139373553637
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 2137.5,
+            "total_output_tokens": 8550,
+            "mean_correct_output_tokens": 1772.3333333333333,
+            "max_output_tokens": 3233
+          }
+        },
+        "records": 12,
+        "generation_seconds": 443.0609972635284,
+        "output_tokens_per_second": 220.45497257323206,
+        "policy_fingerprint": {
+          "kind": "base"
+        },
+        "worker_wall_seconds": 460.2625433159992,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "prior_reference",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 338.40550088882446,
+        "started_at_unix": 1794225481.2938948,
+        "device_peak_sampled_bytes": 5195694080,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1036,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 0,
+            "accuracy": 0.0,
+            "accuracy_wilson95": [
+              0.0,
+              0.48990002040399916
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 8696,
+            "total_output_tokens": 34784,
+            "mean_correct_output_tokens": null,
+            "max_output_tokens": 10341
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 2,
+            "accuracy": 0.5,
+            "accuracy_wilson95": [
+              0.15003570882017148,
+              0.8499642911798285
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 7821.75,
+            "total_output_tokens": 31287,
+            "mean_correct_output_tokens": 10320,
+            "max_output_tokens": 11188
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 1.0,
+            "accuracy_wilson95": [
+              0.5100999795960008,
+              1.0
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 1757.25,
+            "total_output_tokens": 7029,
+            "mean_correct_output_tokens": 1757.25,
+            "max_output_tokens": 3396
+          }
+        },
+        "records": 12,
+        "generation_seconds": 315.4255161937326,
+        "output_tokens_per_second": 231.75043313586076,
+        "policy_fingerprint": {
+          "kind": "base"
+        },
+        "worker_wall_seconds": 334.06440271250904,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "sft_r1_train",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 123.8764181137085,
+        "started_at_unix": 1794225819.8610916,
+        "device_peak_sampled_bytes": 1721761792,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 378,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "optimizer_steps": 24,
+        "training_seconds": 112.23264668416232,
+        "mean_window_loss": 2.751043325894269,
+        "assistant_training_tokens": 22082,
+        "records": 192,
+        "decoder_memory_settings": {
+          "training_mode": true,
+          "gradient_checkpointing_enabled": true,
+          "use_cache": false
+        },
+        "checkpoint": {
+          "status": "completed",
+          "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/adapter",
+          "method": "sft",
+          "round": 1,
+          "parent_policy_version": "base",
+          "policy_version": "sft:round1:d565b67a4e09",
+          "parent_fingerprint": {
+            "kind": "base"
+          },
+          "weights": {
+            "adapter_config.json": "1d6c4b00f50a4880d3f68967edf8e314026bb0df1de0b8d4aedf07fa3cd5962c",
+            "adapter_model.safetensors": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+          },
+          "sft_reference": null,
+          "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+          "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/trainer.pt",
+          "value_head": null
+        },
+        "worker_wall_seconds": 119.50313300453126,
+        "torch_peak_allocated_bytes": 1161910272,
+        "torch_peak_reserved_bytes": 1721761792,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "5.18.0"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "sft_r1_validation",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 452.30714893341064,
+        "started_at_unix": 1794225943.9446306,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1381,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 1,
+            "accuracy": 0.25,
+            "accuracy_wilson95": [
+              0.045586062644636216,
+              0.6993639475573634
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 9485.5,
+            "total_output_tokens": 37942,
+            "mean_correct_output_tokens": 4730,
+            "max_output_tokens": 13359
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 1.0,
+            "accuracy_wilson95": [
+              0.5100999795960008,
+              1.0
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 7882.75,
+            "total_output_tokens": 31531,
+            "mean_correct_output_tokens": 7882.75,
+            "max_output_tokens": 9530
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 1.0,
+            "accuracy_wilson95": [
+              0.5100999795960008,
+              1.0
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 2225.5,
+            "total_output_tokens": 8902,
+            "mean_correct_output_tokens": 2225.5,
+            "max_output_tokens": 6018
+          }
+        },
+        "records": 12,
+        "generation_seconds": 428.87000899016857,
+        "output_tokens_per_second": 182.74768194806708,
+        "policy_fingerprint": {
+          "adapter_config.json": "1d6c4b00f50a4880d3f68967edf8e314026bb0df1de0b8d4aedf07fa3cd5962c",
+          "adapter_model.safetensors": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+        },
+        "worker_wall_seconds": 449.2198266806081,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "sft_r2_train",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 124.97814679145813,
+        "started_at_unix": 1794226396.5520175,
+        "device_peak_sampled_bytes": 1721761792,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 377,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "optimizer_steps": 24,
+        "training_seconds": 114.04403007775545,
+        "mean_window_loss": 2.029303419769526,
+        "assistant_training_tokens": 22082,
+        "records": 192,
+        "decoder_memory_settings": {
+          "training_mode": true,
+          "gradient_checkpointing_enabled": true,
+          "use_cache": false
+        },
+        "checkpoint": {
+          "status": "completed",
+          "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r2_train_attempt1/adapter",
+          "method": "sft",
+          "round": 2,
+          "parent_policy_version": "sft:round1:d565b67a4e09",
+          "policy_version": "sft:round2:a91dd2cf5f3f",
+          "parent_fingerprint": {
+            "adapter_config.json": "1d6c4b00f50a4880d3f68967edf8e314026bb0df1de0b8d4aedf07fa3cd5962c",
+            "adapter_model.safetensors": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+          },
+          "weights": {
+            "adapter_config.json": "40b02cb3210bd26960cc81ac356f623793de2202705417c4aa7cb9a06f328e4d",
+            "adapter_model.safetensors": "a91dd2cf5f3f349991a00a39e02d009d5d755b08afd43399573fbc6b72b7c2aa"
+          },
+          "sft_reference": null,
+          "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+          "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r2_train_attempt1/trainer.pt",
+          "value_head": null
+        },
+        "worker_wall_seconds": 120.72076390590519,
+        "torch_peak_allocated_bytes": 1161910272,
+        "torch_peak_reserved_bytes": 1721761792,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "5.18.0"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "sft_r2_validation",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 511.4667663574219,
+        "started_at_unix": 1794226521.770752,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1565,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 1,
+            "accuracy": 0.25,
+            "accuracy_wilson95": [
+              0.045586062644636216,
+              0.6993639475573634
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 11616.75,
+            "total_output_tokens": 46467,
+            "mean_correct_output_tokens": 7272,
+            "max_output_tokens": 15464
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 1.0,
+            "accuracy_wilson95": [
+              0.5100999795960008,
+              1.0
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 6888,
+            "total_output_tokens": 27552,
+            "mean_correct_output_tokens": 6888,
+            "max_output_tokens": 9308
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 2,
+            "accuracy": 0.5,
+            "accuracy_wilson95": [
+              0.15003570882017148,
+              0.8499642911798285
+            ],
+            "truncated": 1,
+            "truncation_rate": 0.25,
+            "mean_output_tokens": 4398.5,
+            "total_output_tokens": 17594,
+            "mean_correct_output_tokens": 1359,
+            "max_output_tokens": 8192
+          }
+        },
+        "records": 12,
+        "generation_seconds": 490.8861863780767,
+        "output_tokens_per_second": 186.62778163702572,
+        "policy_fingerprint": {
+          "adapter_config.json": "40b02cb3210bd26960cc81ac356f623793de2202705417c4aa7cb9a06f328e4d",
+          "adapter_model.safetensors": "a91dd2cf5f3f349991a00a39e02d009d5d755b08afd43399573fbc6b72b7c2aa"
+        },
+        "worker_wall_seconds": 507.9334326395765,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "sft_r3_train",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 122.60882210731506,
+        "started_at_unix": 1794227033.583105,
+        "device_peak_sampled_bytes": 1723858944,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 371,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "optimizer_steps": 24,
+        "training_seconds": 111.22430326417089,
+        "mean_window_loss": 1.395592436818405,
+        "assistant_training_tokens": 22082,
+        "records": 192,
+        "decoder_memory_settings": {
+          "training_mode": true,
+          "gradient_checkpointing_enabled": true,
+          "use_cache": false
+        },
+        "checkpoint": {
+          "status": "completed",
+          "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r3_train_attempt1/adapter",
+          "method": "sft",
+          "round": 3,
+          "parent_policy_version": "sft:round2:a91dd2cf5f3f",
+          "policy_version": "sft:round3:d39f0611a762",
+          "parent_fingerprint": {
+            "adapter_config.json": "40b02cb3210bd26960cc81ac356f623793de2202705417c4aa7cb9a06f328e4d",
+            "adapter_model.safetensors": "a91dd2cf5f3f349991a00a39e02d009d5d755b08afd43399573fbc6b72b7c2aa"
+          },
+          "weights": {
+            "adapter_config.json": "b892f0af45bc1ac42d16bcb0970a041d080fd56b1246c1bdf88897ef56c7bbe6",
+            "adapter_model.safetensors": "d39f0611a762badc27a21a74efc393f8f8de72a3877d81f941296ccb8c30d6a0"
+          },
+          "sft_reference": null,
+          "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+          "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r3_train_attempt1/trainer.pt",
+          "value_head": null
+        },
+        "worker_wall_seconds": 118.09728400222957,
+        "torch_peak_allocated_bytes": 1161910272,
+        "torch_peak_reserved_bytes": 1721761792,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "5.18.0"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "sft_r3_validation",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 377.9800446033478,
+        "started_at_unix": 1794227156.407212,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1152,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 0,
+            "accuracy": 0.0,
+            "accuracy_wilson95": [
+              0.0,
+              0.48990002040399916
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 7867.5,
+            "total_output_tokens": 31470,
+            "mean_correct_output_tokens": null,
+            "max_output_tokens": 10371
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 1.0,
+            "accuracy_wilson95": [
+              0.5100999795960008,
+              1.0
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 6209.5,
+            "total_output_tokens": 24838,
+            "mean_correct_output_tokens": 6209.5,
+            "max_output_tokens": 9092
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 1,
+            "accuracy": 0.25,
+            "accuracy_wilson95": [
+              0.045586062644636216,
+              0.6993639475573634
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 3233.25,
+            "total_output_tokens": 12933,
+            "mean_correct_output_tokens": 3125,
+            "max_output_tokens": 6171
+          }
+        },
+        "records": 12,
+        "generation_seconds": 356.9380191108212,
+        "output_tokens_per_second": 193.9860600237775,
+        "policy_fingerprint": {
+          "adapter_config.json": "b892f0af45bc1ac42d16bcb0970a041d080fd56b1246c1bdf88897ef56c7bbe6",
+          "adapter_model.safetensors": "d39f0611a762badc27a21a74efc393f8f8de72a3877d81f941296ccb8c30d6a0"
+        },
+        "worker_wall_seconds": 373.78008736204356,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "dpo_r1_rollout",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 596.8882691860199,
+        "started_at_unix": 1794227534.6267478,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1812,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 16,
+            "correct": 1,
+            "accuracy": 0.0625,
+            "accuracy_wilson95": [
+              0.01111905730833121,
+              0.2832926836802987
+            ],
+            "truncated": 15,
+            "truncation_rate": 0.9375,
+            "mean_output_tokens": 3847.1875,
+            "total_output_tokens": 61555,
+            "mean_correct_output_tokens": 115,
+            "max_output_tokens": 4096
+          },
+          "gravity": {
+            "n": 16,
+            "correct": 1,
+            "accuracy": 0.0625,
+            "accuracy_wilson95": [
+              0.01111905730833121,
+              0.2832926836802987
+            ],
+            "truncated": 12,
+            "truncation_rate": 0.75,
+            "mean_output_tokens": 3208.4375,
+            "total_output_tokens": 51335,
+            "mean_correct_output_tokens": 655,
+            "max_output_tokens": 4096
+          }
+        },
+        "records": 32,
+        "generation_seconds": 571.3332978505641,
+        "output_tokens_per_second": 197.59044401001654,
+        "policy_fingerprint": {
+          "adapter_config.json": "1d6c4b00f50a4880d3f68967edf8e314026bb0df1de0b8d4aedf07fa3cd5962c",
+          "adapter_model.safetensors": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+        },
+        "worker_wall_seconds": 593.0215680394322,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "dpo_r1_train",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 16.587512254714966,
+        "started_at_unix": 1794228131.7590127,
+        "device_peak_sampled_bytes": 2415919104,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 51,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "pairs": 2,
+        "optimizer_steps": 1,
+        "losses": [
+          0.6931471824645996,
+          0.6931471824645996
+        ],
+        "training_seconds": 2.7782951090484858,
+        "reference": "same frozen SFT for all rounds",
+        "logprob_backend": "sequential DPO backward; checkpointed full-vocabulary projection",
+        "decoder_memory_settings": {
+          "training_mode": true,
+          "gradient_checkpointing_enabled": true,
+          "use_cache": false
+        },
+        "checkpoint": {
+          "status": "completed",
+          "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r1_train_attempt1/adapter",
+          "method": "dpo",
+          "round": 1,
+          "parent_policy_version": "sft:round1:d565b67a4e09",
+          "policy_version": "dpo:round1:1245147bdc20",
+          "parent_fingerprint": {
+            "adapter_config.json": "1d6c4b00f50a4880d3f68967edf8e314026bb0df1de0b8d4aedf07fa3cd5962c",
+            "adapter_model.safetensors": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+          },
+          "weights": {
+            "adapter_config.json": "664247241e2e423bff6e397f735c937fef6534022f04fc7f73167c1374d1fa12",
+            "adapter_model.safetensors": "1245147bdc2061e2fb08238b0b11802b336ebb87c35e60da0b692ea758c2ff8e"
+          },
+          "sft_reference": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/adapter",
+          "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+          "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r1_train_attempt1/trainer.pt",
+          "value_head": null
+        },
+        "worker_wall_seconds": 12.362205223180354,
+        "torch_peak_allocated_bytes": 1939410432,
+        "torch_peak_reserved_bytes": 2078277632,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "5.18.0"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "dpo_r1_validation",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 456.84526538848877,
+        "started_at_unix": 1794228148.5646412,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1394,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 1,
+            "accuracy": 0.25,
+            "accuracy_wilson95": [
+              0.045586062644636216,
+              0.6993639475573634
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 10613.25,
+            "total_output_tokens": 42453,
+            "mean_correct_output_tokens": 8792,
+            "max_output_tokens": 15496
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 1.0,
+            "accuracy_wilson95": [
+              0.5100999795960008,
+              1.0
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 7750.25,
+            "total_output_tokens": 31001,
+            "mean_correct_output_tokens": 7750.25,
+            "max_output_tokens": 11120
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 3,
+            "accuracy": 0.75,
+            "accuracy_wilson95": [
+              0.3006360524426366,
+              0.9544139373553637
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 1895,
+            "total_output_tokens": 7580,
+            "mean_correct_output_tokens": 1742.3333333333333,
+            "max_output_tokens": 2353
+          }
+        },
+        "records": 12,
+        "generation_seconds": 435.1574692344293,
+        "output_tokens_per_second": 186.21764701077697,
+        "policy_fingerprint": {
+          "adapter_config.json": "664247241e2e423bff6e397f735c937fef6534022f04fc7f73167c1374d1fa12",
+          "adapter_model.safetensors": "1245147bdc2061e2fb08238b0b11802b336ebb87c35e60da0b692ea758c2ff8e"
+        },
+        "worker_wall_seconds": 453.2118997434154,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "dpo_r2_rollout",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 552.3350310325623,
+        "started_at_unix": 1794228605.629623,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1688,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 16,
+            "correct": 0,
+            "accuracy": 0.0,
+            "accuracy_wilson95": [
+              0.0,
+              0.19361341827271994
+            ],
+            "truncated": 14,
+            "truncation_rate": 0.875,
+            "mean_output_tokens": 3613.3125,
+            "total_output_tokens": 57813,
+            "mean_correct_output_tokens": null,
+            "max_output_tokens": 4096
+          },
+          "gravity": {
+            "n": 16,
+            "correct": 2,
+            "accuracy": 0.125,
+            "accuracy_wilson95": [
+              0.034976749337057134,
+              0.3602333143674828
+            ],
+            "truncated": 10,
+            "truncation_rate": 0.625,
+            "mean_output_tokens": 3140.6875,
+            "total_output_tokens": 50251,
+            "mean_correct_output_tokens": 3268,
+            "max_output_tokens": 4096
+          }
+        },
+        "records": 32,
+        "generation_seconds": 532.6530707832426,
+        "output_tokens_per_second": 202.8787703055888,
+        "policy_fingerprint": {
+          "adapter_config.json": "664247241e2e423bff6e397f735c937fef6534022f04fc7f73167c1374d1fa12",
+          "adapter_model.safetensors": "1245147bdc2061e2fb08238b0b11802b336ebb87c35e60da0b692ea758c2ff8e"
+        },
+        "worker_wall_seconds": 548.1838027937338,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "dpo_r2_train",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 15.682342052459717,
+        "started_at_unix": 1794229158.2862673,
+        "device_peak_sampled_bytes": 2340421632,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 48,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "pairs": 2,
+        "optimizer_steps": 1,
+        "losses": [
+          0.7025476098060608,
+          0.8362432718276978
+        ],
+        "training_seconds": 2.280286190100014,
+        "reference": "same frozen SFT for all rounds",
+        "logprob_backend": "sequential DPO backward; checkpointed full-vocabulary projection",
+        "decoder_memory_settings": {
+          "training_mode": true,
+          "gradient_checkpointing_enabled": true,
+          "use_cache": false
+        },
+        "checkpoint": {
+          "status": "completed",
+          "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r2_train_attempt1/adapter",
+          "method": "dpo",
+          "round": 2,
+          "parent_policy_version": "dpo:round1:1245147bdc20",
+          "policy_version": "dpo:round2:381e58f61889",
+          "parent_fingerprint": {
+            "adapter_config.json": "664247241e2e423bff6e397f735c937fef6534022f04fc7f73167c1374d1fa12",
+            "adapter_model.safetensors": "1245147bdc2061e2fb08238b0b11802b336ebb87c35e60da0b692ea758c2ff8e"
+          },
+          "weights": {
+            "adapter_config.json": "f0f68819d30b342cc233777bc227c888df79d2826890a2799cc8b0d7092ded81",
+            "adapter_model.safetensors": "381e58f6188954129f2315c720e28924d76e44852286188527e9732f64cf5692"
+          },
+          "sft_reference": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/adapter",
+          "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+          "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r2_train_attempt1/trainer.pt",
+          "value_head": null
+        },
+        "worker_wall_seconds": 11.512339380569756,
+        "torch_peak_allocated_bytes": 1934213632,
+        "torch_peak_reserved_bytes": 2002780160,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "5.18.0"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "dpo_r2_validation",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 467.81631541252136,
+        "started_at_unix": 1794229174.1474354,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1423,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 1,
+            "accuracy": 0.25,
+            "accuracy_wilson95": [
+              0.045586062644636216,
+              0.6993639475573634
+            ],
+            "truncated": 1,
+            "truncation_rate": 0.25,
+            "mean_output_tokens": 11570,
+            "total_output_tokens": 46280,
+            "mean_correct_output_tokens": 8285,
+            "max_output_tokens": 16384
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 3,
+            "accuracy": 0.75,
+            "accuracy_wilson95": [
+              0.3006360524426366,
+              0.9544139373553637
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 6926.25,
+            "total_output_tokens": 27705,
+            "mean_correct_output_tokens": 6693.333333333333,
+            "max_output_tokens": 8358
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 3,
+            "accuracy": 0.75,
+            "accuracy_wilson95": [
+              0.3006360524426366,
+              0.9544139373553637
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 2348.75,
+            "total_output_tokens": 9395,
+            "mean_correct_output_tokens": 2108,
+            "max_output_tokens": 3071
+          }
+        },
+        "records": 12,
+        "generation_seconds": 447.33825196139514,
+        "output_tokens_per_second": 186.3913931670561,
+        "policy_fingerprint": {
+          "adapter_config.json": "f0f68819d30b342cc233777bc227c888df79d2826890a2799cc8b0d7092ded81",
+          "adapter_model.safetensors": "381e58f6188954129f2315c720e28924d76e44852286188527e9732f64cf5692"
+        },
+        "worker_wall_seconds": 464.143855500035,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "dpo_r3_rollout",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 563.5131511688232,
+        "started_at_unix": 1794229642.1651564,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1719,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 16,
+            "correct": 2,
+            "accuracy": 0.125,
+            "accuracy_wilson95": [
+              0.034976749337057134,
+              0.3602333143674828
+            ],
+            "truncated": 13,
+            "truncation_rate": 0.8125,
+            "mean_output_tokens": 3582.125,
+            "total_output_tokens": 57314,
+            "mean_correct_output_tokens": 1958,
+            "max_output_tokens": 4096
+          },
+          "gravity": {
+            "n": 16,
+            "correct": 3,
+            "accuracy": 0.1875,
+            "accuracy_wilson95": [
+              0.06591478773586765,
+              0.4300935986845823
+            ],
+            "truncated": 11,
+            "truncation_rate": 0.6875,
+            "mean_output_tokens": 3312.25,
+            "total_output_tokens": 52996,
+            "mean_correct_output_tokens": 2056,
+            "max_output_tokens": 4096
+          }
+        },
+        "records": 32,
+        "generation_seconds": 543.7822018377483,
+        "output_tokens_per_second": 202.856951969373,
+        "policy_fingerprint": {
+          "adapter_config.json": "f0f68819d30b342cc233777bc227c888df79d2826890a2799cc8b0d7092ded81",
+          "adapter_model.safetensors": "381e58f6188954129f2315c720e28924d76e44852286188527e9732f64cf5692"
+        },
+        "worker_wall_seconds": 560.0470087481663,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "dpo_r3_train",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 20.213061094284058,
+        "started_at_unix": 1794230206.0179126,
+        "device_peak_sampled_bytes": 2401239040,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 63,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "pairs": 5,
+        "optimizer_steps": 2,
+        "losses": [
+          0.5749887228012085,
+          0.704021155834198,
+          0.6016440391540527,
+          0.6723237037658691,
+          0.44829821586608887
+        ],
+        "training_seconds": 6.488515266217291,
+        "reference": "same frozen SFT for all rounds",
+        "logprob_backend": "sequential DPO backward; checkpointed full-vocabulary projection",
+        "decoder_memory_settings": {
+          "training_mode": true,
+          "gradient_checkpointing_enabled": true,
+          "use_cache": false
+        },
+        "checkpoint": {
+          "status": "completed",
+          "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r3_train_attempt1/adapter",
+          "method": "dpo",
+          "round": 3,
+          "parent_policy_version": "dpo:round2:381e58f61889",
+          "policy_version": "dpo:round3:126989650b3a",
+          "parent_fingerprint": {
+            "adapter_config.json": "f0f68819d30b342cc233777bc227c888df79d2826890a2799cc8b0d7092ded81",
+            "adapter_model.safetensors": "381e58f6188954129f2315c720e28924d76e44852286188527e9732f64cf5692"
+          },
+          "weights": {
+            "adapter_config.json": "11e6558251fe478026679a841601ef5cde30768a5c9b7915802c8f4eca9a41c4",
+            "adapter_model.safetensors": "126989650b3aa13ccfa8cc0361fc92d9825b2d712bf533626e54523ece10f387"
+          },
+          "sft_reference": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/adapter",
+          "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+          "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r3_train_attempt1/trainer.pt",
+          "value_head": null
+        },
+        "worker_wall_seconds": 15.849313070997596,
+        "torch_peak_allocated_bytes": 1985435136,
+        "torch_peak_reserved_bytes": 2063597568,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "5.18.0"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    },
+    {
+      "job": "dpo_r3_validation",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 485.2423062324524,
+        "started_at_unix": 1794230226.467655,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 1477,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 4,
+            "correct": 1,
+            "accuracy": 0.25,
+            "accuracy_wilson95": [
+              0.045586062644636216,
+              0.6993639475573634
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 10927,
+            "total_output_tokens": 43708,
+            "mean_correct_output_tokens": 11404,
+            "max_output_tokens": 13679
+          },
+          "gravity": {
+            "n": 4,
+            "correct": 4,
+            "accuracy": 1.0,
+            "accuracy_wilson95": [
+              0.5100999795960008,
+              1.0
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 7117.25,
+            "total_output_tokens": 28469,
+            "mean_correct_output_tokens": 7117.25,
+            "max_output_tokens": 9839
+          },
+          "numeral_system": {
+            "n": 4,
+            "correct": 3,
+            "accuracy": 0.75,
+            "accuracy_wilson95": [
+              0.3006360524426366,
+              0.9544139373553637
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 3330.5,
+            "total_output_tokens": 13322,
+            "mean_correct_output_tokens": 2531.6666666666665,
+            "max_output_tokens": 5727
+          }
+        },
+        "records": 12,
+        "generation_seconds": 455.83237821329385,
+        "output_tokens_per_second": 187.56675498815304,
+        "policy_fingerprint": {
+          "adapter_config.json": "11e6558251fe478026679a841601ef5cde30768a5c9b7915802c8f4eca9a41c4",
+          "adapter_model.safetensors": "126989650b3aa13ccfa8cc0361fc92d9825b2d712bf533626e54523ece10f387"
+        },
+        "worker_wall_seconds": 481.6497181095183,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      }
+    }
+  ],
+  "methods": {
+    "sft": {
+      "history": [
+        {
+          "round": 1,
+          "status": "completed",
+          "validation_score": 0.7278043111165364,
+          "metrics": {
+            "equation_numeric": {
+              "n": 4,
+              "correct": 1,
+              "accuracy": 0.25,
+              "accuracy_wilson95": [
+                0.045586062644636216,
+                0.6993639475573634
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 9485.5,
+              "total_output_tokens": 37942,
+              "mean_correct_output_tokens": 4730,
+              "max_output_tokens": 13359
+            },
+            "gravity": {
+              "n": 4,
+              "correct": 4,
+              "accuracy": 1.0,
+              "accuracy_wilson95": [
+                0.5100999795960008,
+                1.0
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 7882.75,
+              "total_output_tokens": 31531,
+              "mean_correct_output_tokens": 7882.75,
+              "max_output_tokens": 9530
+            },
+            "numeral_system": {
+              "n": 4,
+              "correct": 4,
+              "accuracy": 1.0,
+              "accuracy_wilson95": [
+                0.5100999795960008,
+                1.0
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 2225.5,
+              "total_output_tokens": 8902,
+              "mean_correct_output_tokens": 2225.5,
+              "max_output_tokens": 6018
+            }
+          },
+          "optimizer_steps": 24
+        },
+        {
+          "round": 2,
+          "status": "completed",
+          "validation_score": 0.5430605570475261,
+          "metrics": {
+            "equation_numeric": {
+              "n": 4,
+              "correct": 1,
+              "accuracy": 0.25,
+              "accuracy_wilson95": [
+                0.045586062644636216,
+                0.6993639475573634
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 11616.75,
+              "total_output_tokens": 46467,
+              "mean_correct_output_tokens": 7272,
+              "max_output_tokens": 15464
+            },
+            "gravity": {
+              "n": 4,
+              "correct": 4,
+              "accuracy": 1.0,
+              "accuracy_wilson95": [
+                0.5100999795960008,
+                1.0
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 6888,
+              "total_output_tokens": 27552,
+              "mean_correct_output_tokens": 6888,
+              "max_output_tokens": 9308
+            },
+            "numeral_system": {
+              "n": 4,
+              "correct": 2,
+              "accuracy": 0.5,
+              "accuracy_wilson95": [
+                0.15003570882017148,
+                0.8499642911798285
+              ],
+              "truncated": 1,
+              "truncation_rate": 0.25,
+              "mean_output_tokens": 4398.5,
+              "total_output_tokens": 17594,
+              "mean_correct_output_tokens": 1359,
+              "max_output_tokens": 8192
+            }
+          },
+          "optimizer_steps": 24
+        },
+        {
+          "round": 3,
+          "status": "completed",
+          "validation_score": 0.39576873779296873,
+          "metrics": {
+            "equation_numeric": {
+              "n": 4,
+              "correct": 0,
+              "accuracy": 0.0,
+              "accuracy_wilson95": [
+                0.0,
+                0.48990002040399916
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 7867.5,
+              "total_output_tokens": 31470,
+              "mean_correct_output_tokens": null,
+              "max_output_tokens": 10371
+            },
+            "gravity": {
+              "n": 4,
+              "correct": 4,
+              "accuracy": 1.0,
+              "accuracy_wilson95": [
+                0.5100999795960008,
+                1.0
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 6209.5,
+              "total_output_tokens": 24838,
+              "mean_correct_output_tokens": 6209.5,
+              "max_output_tokens": 9092
+            },
+            "numeral_system": {
+              "n": 4,
+              "correct": 1,
+              "accuracy": 0.25,
+              "accuracy_wilson95": [
+                0.045586062644636216,
+                0.6993639475573634
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 3233.25,
+              "total_output_tokens": 12933,
+              "mean_correct_output_tokens": 3125,
+              "max_output_tokens": 6171
+            }
+          },
+          "optimizer_steps": 24
+        }
+      ],
+      "current_checkpoint": {
+        "status": "completed",
+        "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r3_train_attempt1/adapter",
+        "method": "sft",
+        "round": 3,
+        "parent_policy_version": "sft:round2:a91dd2cf5f3f",
+        "policy_version": "sft:round3:d39f0611a762",
+        "parent_fingerprint": {
+          "adapter_config.json": "40b02cb3210bd26960cc81ac356f623793de2202705417c4aa7cb9a06f328e4d",
+          "adapter_model.safetensors": "a91dd2cf5f3f349991a00a39e02d009d5d755b08afd43399573fbc6b72b7c2aa"
+        },
+        "weights": {
+          "adapter_config.json": "b892f0af45bc1ac42d16bcb0970a041d080fd56b1246c1bdf88897ef56c7bbe6",
+          "adapter_model.safetensors": "d39f0611a762badc27a21a74efc393f8f8de72a3877d81f941296ccb8c30d6a0"
+        },
+        "sft_reference": null,
+        "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+        "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r3_train_attempt1/trainer.pt",
+        "value_head": null
+      },
+      "best_checkpoint": {
+        "status": "completed",
+        "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/adapter",
+        "method": "sft",
+        "round": 1,
+        "parent_policy_version": "base",
+        "policy_version": "sft:round1:d565b67a4e09",
+        "parent_fingerprint": {
+          "kind": "base"
+        },
+        "weights": {
+          "adapter_config.json": "1d6c4b00f50a4880d3f68967edf8e314026bb0df1de0b8d4aedf07fa3cd5962c",
+          "adapter_model.safetensors": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+        },
+        "sft_reference": null,
+        "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+        "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/trainer.pt",
+        "value_head": null
+      },
+      "best_metrics": {
+        "equation_numeric": {
+          "n": 4,
+          "correct": 1,
+          "accuracy": 0.25,
+          "accuracy_wilson95": [
+            0.045586062644636216,
+            0.6993639475573634
+          ],
+          "truncated": 0,
+          "truncation_rate": 0.0,
+          "mean_output_tokens": 9485.5,
+          "total_output_tokens": 37942,
+          "mean_correct_output_tokens": 4730,
+          "max_output_tokens": 13359
+        },
+        "gravity": {
+          "n": 4,
+          "correct": 4,
+          "accuracy": 1.0,
+          "accuracy_wilson95": [
+            0.5100999795960008,
+            1.0
+          ],
+          "truncated": 0,
+          "truncation_rate": 0.0,
+          "mean_output_tokens": 7882.75,
+          "total_output_tokens": 31531,
+          "mean_correct_output_tokens": 7882.75,
+          "max_output_tokens": 9530
+        },
+        "numeral_system": {
+          "n": 4,
+          "correct": 4,
+          "accuracy": 1.0,
+          "accuracy_wilson95": [
+            0.5100999795960008,
+            1.0
+          ],
+          "truncated": 0,
+          "truncation_rate": 0.0,
+          "mean_output_tokens": 2225.5,
+          "total_output_tokens": 8902,
+          "mean_correct_output_tokens": 2225.5,
+          "max_output_tokens": 6018
+        }
+      },
+      "best_round": 1,
+      "time_until_best_seconds": 576.5515961647034,
+      "stop_reason": "validation_plateau",
+      "stop_at_unix": 1794227534.391339,
+      "time_until_stop_seconds": 1714.689410686493,
+      "coarse_convergence_observed": true
+    },
+    "dpo": {
+      "history": [
+        {
+          "round": 1,
+          "status": "completed",
+          "validation_score": 0.5969795227050781,
+          "metrics": {
+            "equation_numeric": {
+              "n": 4,
+              "correct": 1,
+              "accuracy": 0.25,
+              "accuracy_wilson95": [
+                0.045586062644636216,
+                0.6993639475573634
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 10613.25,
+              "total_output_tokens": 42453,
+              "mean_correct_output_tokens": 8792,
+              "max_output_tokens": 15496
+            },
+            "gravity": {
+              "n": 4,
+              "correct": 4,
+              "accuracy": 1.0,
+              "accuracy_wilson95": [
+                0.5100999795960008,
+                1.0
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 7750.25,
+              "total_output_tokens": 31001,
+              "mean_correct_output_tokens": 7750.25,
+              "max_output_tokens": 11120
+            },
+            "numeral_system": {
+              "n": 4,
+              "correct": 3,
+              "accuracy": 0.75,
+              "accuracy_wilson95": [
+                0.3006360524426366,
+                0.9544139373553637
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 1895,
+              "total_output_tokens": 7580,
+              "mean_correct_output_tokens": 1742.3333333333333,
+              "max_output_tokens": 2353
+            }
+          },
+          "optimizer_steps": 1
+        },
+        {
+          "round": 2,
+          "status": "completed",
+          "validation_score": 0.45302696228027345,
+          "metrics": {
+            "equation_numeric": {
+              "n": 4,
+              "correct": 1,
+              "accuracy": 0.25,
+              "accuracy_wilson95": [
+                0.045586062644636216,
+                0.6993639475573634
+              ],
+              "truncated": 1,
+              "truncation_rate": 0.25,
+              "mean_output_tokens": 11570,
+              "total_output_tokens": 46280,
+              "mean_correct_output_tokens": 8285,
+              "max_output_tokens": 16384
+            },
+            "gravity": {
+              "n": 4,
+              "correct": 3,
+              "accuracy": 0.75,
+              "accuracy_wilson95": [
+                0.3006360524426366,
+                0.9544139373553637
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 6926.25,
+              "total_output_tokens": 27705,
+              "mean_correct_output_tokens": 6693.333333333333,
+              "max_output_tokens": 8358
+            },
+            "numeral_system": {
+              "n": 4,
+              "correct": 3,
+              "accuracy": 0.75,
+              "accuracy_wilson95": [
+                0.3006360524426366,
+                0.9544139373553637
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 2348.75,
+              "total_output_tokens": 9395,
+              "mean_correct_output_tokens": 2108,
+              "max_output_tokens": 3071
+            }
+          },
+          "optimizer_steps": 1
+        },
+        {
+          "round": 3,
+          "status": "completed",
+          "validation_score": 0.5974666595458985,
+          "metrics": {
+            "equation_numeric": {
+              "n": 4,
+              "correct": 1,
+              "accuracy": 0.25,
+              "accuracy_wilson95": [
+                0.045586062644636216,
+                0.6993639475573634
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 10927,
+              "total_output_tokens": 43708,
+              "mean_correct_output_tokens": 11404,
+              "max_output_tokens": 13679
+            },
+            "gravity": {
+              "n": 4,
+              "correct": 4,
+              "accuracy": 1.0,
+              "accuracy_wilson95": [
+                0.5100999795960008,
+                1.0
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 7117.25,
+              "total_output_tokens": 28469,
+              "mean_correct_output_tokens": 7117.25,
+              "max_output_tokens": 9839
+            },
+            "numeral_system": {
+              "n": 4,
+              "correct": 3,
+              "accuracy": 0.75,
+              "accuracy_wilson95": [
+                0.3006360524426366,
+                0.9544139373553637
+              ],
+              "truncated": 0,
+              "truncation_rate": 0.0,
+              "mean_output_tokens": 3330.5,
+              "total_output_tokens": 13322,
+              "mean_correct_output_tokens": 2531.6666666666665,
+              "max_output_tokens": 5727
+            }
+          },
+          "optimizer_steps": 2
+        }
+      ],
+      "current_checkpoint": {
+        "status": "completed",
+        "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r3_train_attempt1/adapter",
+        "method": "dpo",
+        "round": 3,
+        "parent_policy_version": "dpo:round2:381e58f61889",
+        "policy_version": "dpo:round3:126989650b3a",
+        "parent_fingerprint": {
+          "adapter_config.json": "f0f68819d30b342cc233777bc227c888df79d2826890a2799cc8b0d7092ded81",
+          "adapter_model.safetensors": "381e58f6188954129f2315c720e28924d76e44852286188527e9732f64cf5692"
+        },
+        "weights": {
+          "adapter_config.json": "11e6558251fe478026679a841601ef5cde30768a5c9b7915802c8f4eca9a41c4",
+          "adapter_model.safetensors": "126989650b3aa13ccfa8cc0361fc92d9825b2d712bf533626e54523ece10f387"
+        },
+        "sft_reference": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/adapter",
+        "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+        "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r3_train_attempt1/trainer.pt",
+        "value_head": null
+      },
+      "best_checkpoint": {
+        "status": "completed",
+        "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r1_train_attempt1/adapter",
+        "method": "dpo",
+        "round": 1,
+        "parent_policy_version": "sft:round1:d565b67a4e09",
+        "policy_version": "dpo:round1:1245147bdc20",
+        "parent_fingerprint": {
+          "adapter_config.json": "1d6c4b00f50a4880d3f68967edf8e314026bb0df1de0b8d4aedf07fa3cd5962c",
+          "adapter_model.safetensors": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+        },
+        "weights": {
+          "adapter_config.json": "664247241e2e423bff6e397f735c937fef6534022f04fc7f73167c1374d1fa12",
+          "adapter_model.safetensors": "1245147bdc2061e2fb08238b0b11802b336ebb87c35e60da0b692ea758c2ff8e"
+        },
+        "sft_reference": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/adapter",
+        "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+        "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r1_train_attempt1/trainer.pt",
+        "value_head": null
+      },
+      "best_metrics": {
+        "equation_numeric": {
+          "n": 4,
+          "correct": 1,
+          "accuracy": 0.25,
+          "accuracy_wilson95": [
+            0.045586062644636216,
+            0.6993639475573634
+          ],
+          "truncated": 0,
+          "truncation_rate": 0.0,
+          "mean_output_tokens": 10613.25,
+          "total_output_tokens": 42453,
+          "mean_correct_output_tokens": 8792,
+          "max_output_tokens": 15496
+        },
+        "gravity": {
+          "n": 4,
+          "correct": 4,
+          "accuracy": 1.0,
+          "accuracy_wilson95": [
+            0.5100999795960008,
+            1.0
+          ],
+          "truncated": 0,
+          "truncation_rate": 0.0,
+          "mean_output_tokens": 7750.25,
+          "total_output_tokens": 31001,
+          "mean_correct_output_tokens": 7750.25,
+          "max_output_tokens": 11120
+        },
+        "numeral_system": {
+          "n": 4,
+          "correct": 3,
+          "accuracy": 0.75,
+          "accuracy_wilson95": [
+            0.3006360524426366,
+            0.9544139373553637
+          ],
+          "truncated": 0,
+          "truncation_rate": 0.0,
+          "mean_output_tokens": 1895,
+          "total_output_tokens": 7580,
+          "mean_correct_output_tokens": 1742.3333333333333,
+          "max_output_tokens": 2353
+        }
+      },
+      "best_round": 1,
+      "time_until_best_seconds": 1071.0201704502106,
+      "stop_reason": "validation_plateau",
+      "stop_at_unix": 1794230711.715331,
+      "time_until_stop_seconds": 3177.3215923309326,
+      "coarse_convergence_observed": true
+    },
+    "ppo": {
+      "history": []
+    }
+  },
+  "final_panel_evaluated": false
+}
