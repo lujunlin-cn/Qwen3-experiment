@@ -46,6 +46,17 @@ def tiny_policy(model_path=None,mode=None,adapter=None):
     return model,Tokenizer()
 
 class ProtocolTests(unittest.TestCase):
+    def test_graph_profile_keeps_the_learning_protocol(self):
+        eager = protocol.read(CONFIG)
+        graph = protocol.read(protocol.ROOT / 'configs/course_8h_cuda_graph.json')
+        protocol.validate_config(graph)
+        self.assertEqual({k for k in graph if graph[k] != eager.get(k)},
+                         {'enforce_eager', 'compilation_config'})
+        invalid = copy.deepcopy(graph)
+        invalid['compilation_config']['cudagraph_capture_sizes'] = [1, 8]
+        with self.assertRaises(AssertionError):
+            protocol.validate_config(invalid)
+
     def test_panels_metrics_and_resume_immutability(self):
         with tempfile.TemporaryDirectory() as directory:
             run=Path(directory)

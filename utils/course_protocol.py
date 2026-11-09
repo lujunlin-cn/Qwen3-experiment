@@ -60,6 +60,13 @@ def validate_config(c):
     assert set(c['sft']['tasks']) == set(TASKS)
     assert c['grpo']['candidates'] == 8
     assert c['training_prompt'] == 'original'
+    assert isinstance(c.get('enforce_eager', True), bool)
+    if c.get('compilation_config') is not None:
+        assert not c.get('enforce_eager', True)
+        assert c['compilation_config'] == {
+            'level': 0, 'cudagraph_mode': 'FULL_DECODE_ONLY',
+            'cudagraph_capture_sizes': [1], 'max_capture_size': 1,
+        }
     for method in ('sft', 'dpo', 'ppo', 'grpo'):
         assert c[method]['gradient_accumulation'] > 0
         assert c[method]['max_rounds'] >= c['stop']['minimum_rounds']

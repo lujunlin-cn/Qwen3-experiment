@@ -59,6 +59,8 @@ RL 起始输出上限 4096；若 DPO 没有偏好信号、GRPO 组方差为零�
 
 监督进程开跑前确认选定 GPU 没有其他计算进程；每约 0.25 秒采样整张 GPU 的 `memory.used`，包含上下文、保留 KV 等，达到阈值即终止**本任务进程组**。另设 PyTorch allocator 上限为设备限额的 90%，避免只看 `max_memory_allocated` 漏掉 vLLM/驱动占用。失败、超时和监控失效都会保留日志。
 
+2026-11-09 服务器增加独立的 [单并发 CUDA Graph 配置](../configs/course_8h_cuda_graph.json)，只捕获 batch=1 的完整解码图，不启用 Torch 编译；Prefill 仍为 eager。其余学习与评测设置和原配置相同。固定同题、Seed42、1024 输出 Token 的真实 GPU 对照：eager 47.98 Token/s、峰值 5,141,168,128 字节；Graph 256.68 Token/s、峰值 5,195,694,080 字节，1024 个输出 Token ID 完全一致。这只是速度与内存探针，不是学习效果或所有输入等价的证明。使用该配置必须传 `--config configs/course_8h_cuda_graph.json` 并另开 Run；正式长序列 rollout/训练仍需各自验证。
+
 显存报告写 `sampled_pass`：监控采样不是连续硬件上界证明，采样间的瞬时峰值仍不能排除。新设置只有在目标机器跑过对应实际训练/rollout 后才能报告通过；没有真实优化器更新的阶段会标明 `workload_exercised=false`。本地预算与更多背景见 [低显存说明](QWEN3_0_6B_LOW_MEMORY.md)。这套机制没有 1F1B 或多卡流水线。
 
 ## 明天开机后的命令

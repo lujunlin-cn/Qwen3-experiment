@@ -145,11 +145,14 @@ def generate(job, c):
     for text,cap in zip(rendered,caps):
         if len(tokenizer.encode(text,add_special_tokens=False))+cap > c['max_model_len']:
             raise ValueError('Context overflow: refuse silent prompt/completion truncation')
-    engine=LLM(model=job['model'],tokenizer=job['model'],dtype='bfloat16',tensor_parallel_size=1,
+    engine_options=dict(model=job['model'],tokenizer=job['model'],dtype='bfloat16',tensor_parallel_size=1,
         enable_lora=True,max_lora_rank=8,max_model_len=c['max_model_len'],max_num_seqs=c['max_num_seqs'],
         max_num_batched_tokens=c['max_num_batched_tokens'],kv_cache_memory_bytes=int(c['kv_cache_gib']*2**30),
-        gpu_memory_utilization=.70,enforce_eager=True,enable_chunked_prefill=True,
+        gpu_memory_utilization=.70,enforce_eager=c.get('enforce_eager',True),enable_chunked_prefill=True,
         generation_config='vllm',logprobs_mode='raw_logprobs',seed=job['seed'])
+    if c.get('compilation_config') is not None:
+        engine_options['compilation_config']=c['compilation_config']
+    engine=LLM(**engine_options)
     rollout=job['kind']=='rollout'
     params=[SamplingParams(n=job.get('candidates',1),temperature=1.0 if rollout else .6,
         top_p=1.0 if rollout else .95,top_k=-1 if rollout else 20,max_tokens=cap,
