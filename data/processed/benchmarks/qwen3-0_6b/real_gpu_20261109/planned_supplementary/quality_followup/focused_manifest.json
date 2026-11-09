@@ -1,0 +1,15 @@
+{
+  "status": "prepared_cpu_only",
+  "source_protocol_sha256": "f31cb2b1d858745d840c853c202fcaee9716aef352060bf8bdbd90fe2e36089e",
+  "script_sha256": "9b732c1f1a2bc1d6dce1d3ab4ead1e5601c64d09952c595a3c7cfc7869bf0880",
+  "prepared_before_source_final_evaluation": true,
+  "scope": "Focused SFT and DPO only; original four-method study remains unchanged. Same paired tune/final panels and shared already-measured base controls.",
+  "changes": {
+    "sft": "BF16 base,lr1e-4,up to3 epochs",
+    "dpo": "lr5e-5,microbatch1,accumulation1,2 prompts/task,4 candidates,cap16384,up to3 rounds"
+  },
+  "dpo_gate": "Tune macro accuracy >= selected original SFT, Equation accuracy >= selected original SFT, mean output <=4096 for both Gravity and Equation; otherwise skip DPO.",
+  "run_only_after_original_finished": true,
+  "maximum_trial_seconds": 3600,
+  "selection_on_final_panel": false
+}

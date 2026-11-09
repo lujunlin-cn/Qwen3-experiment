@@ -1,0 +1,117 @@
+{
+  "schema": "qwen3-course-8h/v1",
+  "seed": 42,
+  "total_seconds": 3600,
+  "device_limit_bytes": 8000000000,
+  "allocator_fraction_of_limit": 0.9,
+  "kv_cache_gib": 3.0,
+  "max_num_seqs": 1,
+  "max_num_batched_tokens": 512,
+  "max_model_len": 20480,
+  "projection_chunk_size": 64,
+  "poll_seconds": 0.25,
+  "panels": {
+    "tune_per_task": 4,
+    "final_per_task": 8
+  },
+  "baseline_caps": [
+    512,
+    2048,
+    8192,
+    16384
+  ],
+  "eval_caps": {
+    "numeral_system": 8192,
+    "gravity": 16384,
+    "equation_numeric": 16384
+  },
+  "training_prompt": "original",
+  "evaluation_variants": [
+    "original",
+    "prior"
+  ],
+  "stop": {
+    "minimum_rounds": 2,
+    "patience": 2,
+    "min_score_gain": 0.01
+  },
+  "budgets_seconds": {
+    "baseline": 0,
+    "prompt": 0,
+    "sft": 900,
+    "dpo": 1800,
+    "ppo": 0,
+    "grpo": 0,
+    "final": 900
+  },
+  "sft": {
+    "tasks": [
+      "numeral_system",
+      "gravity",
+      "equation_numeric"
+    ],
+    "per_task": 64,
+    "max_rounds": 3,
+    "learning_rate": 0.0001,
+    "gradient_accumulation": 8,
+    "max_length": 4096,
+    "mode": "bf16_lora"
+  },
+  "dpo": {
+    "tasks": [
+      "gravity",
+      "equation_numeric"
+    ],
+    "prompts_per_task": 2,
+    "candidates": 4,
+    "max_rounds": 3,
+    "learning_rate": 5e-05,
+    "gradient_accumulation": 1,
+    "rollout_caps": [
+      16384
+    ],
+    "mode": "bf16_lora"
+  },
+  "ppo": {
+    "tasks": [
+      "equation_numeric"
+    ],
+    "prompts_per_task": 8,
+    "candidates": 1,
+    "max_rounds": 6,
+    "learning_rate": 1e-05,
+    "gradient_accumulation": 8,
+    "rollout_caps": [
+      4096,
+      8192,
+      16384
+    ],
+    "mode": "bf16_lora",
+    "entropy_coef": 0.0
+  },
+  "grpo": {
+    "tasks": [
+      "equation_numeric"
+    ],
+    "prompts_per_task": 2,
+    "candidates": 8,
+    "max_rounds": 6,
+    "learning_rate": 1e-05,
+    "gradient_accumulation": 16,
+    "rollout_caps": [
+      4096,
+      8192,
+      16384
+    ],
+    "mode": "bf16_lora"
+  },
+  "enforce_eager": false,
+  "compilation_config": {
+    "level": 0,
+    "cudagraph_mode": "FULL_DECODE_ONLY",
+    "cudagraph_capture_sizes": [
+      1
+    ],
+    "max_capture_size": 1
+  }
+}
