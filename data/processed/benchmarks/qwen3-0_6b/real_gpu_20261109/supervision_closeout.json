@@ -1,0 +1,72 @@
+{
+  "schema": "qwen3-supervision-closeout/v1",
+  "recorded_on": "2026-11-10",
+  "run_id": "course8h_20261109_r2_cuda_graph",
+  "provenance": "Manually transcribed from successful remote tool outputs in this conversation; not a recovered raw server report.",
+  "server_refresh": {
+    "status": "connection_refused",
+    "ssh_host": "connect.westc.seetacloud.com",
+    "ssh_port": 13294
+  },
+  "last_observed_server_time": "2026-11-09 23:37:09 Asia/Shanghai",
+  "final_evaluation": {
+    "last_observed_job": "final_base_original",
+    "last_observed_status": "running",
+    "results_retrieved": false,
+    "subsequent_completion": "unknown"
+  },
+  "grpo": {
+    "selected_round": 2,
+    "optimizer_steps_observed_total": 2,
+    "device_peak_rollout_GB_rounded": 5.198,
+    "device_peak_train_GB_rounded": 4.412,
+    "total_stage_seconds": 5400.265268564224,
+    "stop_reason": "rollout_incomplete",
+    "round6_guard_status": "budget_exhausted",
+    "round6_wall_seconds": 658.1,
+    "round4_training": {
+      "status": "completed",
+      "optimizer_steps": 1,
+      "device_peak_GB_rounded": 4.412,
+      "group_stds": [
+        0.29939305782318115,
+        0.43389007449150085
+      ]
+    },
+    "round2_tune_metrics": {
+      "equation_numeric": {
+        "accuracy": 0.25,
+        "truncation_rate": 0,
+        "mean_output_tokens": 9197
+      },
+      "gravity": {
+        "accuracy": 0.75,
+        "truncation_rate": 0.25,
+        "mean_output_tokens": 8938.25
+      },
+      "numeral_system": {
+        "accuracy": 0.5,
+        "truncation_rate": 0.25,
+        "mean_output_tokens": 5010.5
+      }
+    },
+    "round3_and5_training": "no_group_signal; optimizer_steps=0"
+  },
+  "final_acceptance": {
+    "measured_memory_target": "sampled_pass_for_observed_workloads",
+    "three_task_effectiveness_target": "not_established",
+    "full_independent_evaluation": "results_not_retrieved",
+    "continuous_memory_bound_verified": false
+  },
+  "supplementary_gpu_trials_executed": false,
+  "recovery_update": {
+    "date": "2026-11-10",
+    "status": "raw_artifacts_retrieved_on_cpu_only_host",
+    "report_status": "incomplete",
+    "raw_evidence_directory": "recovered_course_r2",
+    "grpo_round6_raw_guard_status": "budget_exhausted",
+    "final_base_progress": "2/24; no rows or result file",
+    "stale_running_state_preserved": true,
+    "gpu_tasks_restarted": false
+  }
+}

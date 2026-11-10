@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "returncode": 0,
+  "wall_seconds": 463.39566135406494,
+  "started_at_unix": 1794225017.7633529,
+  "device_peak_sampled_bytes": 5195694080,
+  "memory_limit_bytes": 8000000000,
+  "memory_check": "sampled_pass",
+  "samples": 1418,
+  "poll_seconds": 0.25,
+  "device": {
+    "used_bytes": 1048576,
+    "uuid": "GPU-88d9547d-f3ea-74e9-64cf-72a165d5fa6e",
+    "name": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+}

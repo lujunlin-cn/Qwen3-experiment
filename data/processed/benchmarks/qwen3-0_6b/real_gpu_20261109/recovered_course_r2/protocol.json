@@ -1,0 +1,172 @@
+{
+  "schema": "qwen3-course-8h/v1",
+  "config": {
+    "schema": "qwen3-course-8h/v1",
+    "seed": 42,
+    "total_seconds": 28800,
+    "device_limit_bytes": 8000000000,
+    "allocator_fraction_of_limit": 0.9,
+    "kv_cache_gib": 3.0,
+    "max_num_seqs": 1,
+    "max_num_batched_tokens": 512,
+    "max_model_len": 20480,
+    "projection_chunk_size": 64,
+    "poll_seconds": 0.25,
+    "panels": {
+      "tune_per_task": 4,
+      "final_per_task": 8
+    },
+    "baseline_caps": [
+      512,
+      2048,
+      8192,
+      16384
+    ],
+    "eval_caps": {
+      "numeral_system": 8192,
+      "gravity": 16384,
+      "equation_numeric": 16384
+    },
+    "training_prompt": "original",
+    "evaluation_variants": [
+      "original",
+      "prior"
+    ],
+    "stop": {
+      "minimum_rounds": 2,
+      "patience": 2,
+      "min_score_gain": 0.01
+    },
+    "budgets_seconds": {
+      "baseline": 2700,
+      "prompt": 2700,
+      "sft": 5400,
+      "dpo": 5400,
+      "ppo": 5400,
+      "grpo": 5400,
+      "final": 1800
+    },
+    "sft": {
+      "tasks": [
+        "numeral_system",
+        "gravity",
+        "equation_numeric"
+      ],
+      "per_task": 64,
+      "max_rounds": 4,
+      "learning_rate": 2e-05,
+      "gradient_accumulation": 8,
+      "max_length": 4096,
+      "mode": "nf4_qlora"
+    },
+    "dpo": {
+      "tasks": [
+        "gravity",
+        "equation_numeric"
+      ],
+      "prompts_per_task": 4,
+      "candidates": 4,
+      "max_rounds": 6,
+      "learning_rate": 1e-05,
+      "gradient_accumulation": 4,
+      "rollout_caps": [
+        4096,
+        8192,
+        16384
+      ],
+      "mode": "bf16_lora"
+    },
+    "ppo": {
+      "tasks": [
+        "equation_numeric"
+      ],
+      "prompts_per_task": 8,
+      "candidates": 1,
+      "max_rounds": 6,
+      "learning_rate": 1e-05,
+      "gradient_accumulation": 8,
+      "rollout_caps": [
+        4096,
+        8192,
+        16384
+      ],
+      "mode": "bf16_lora",
+      "entropy_coef": 0.0
+    },
+    "grpo": {
+      "tasks": [
+        "equation_numeric"
+      ],
+      "prompts_per_task": 2,
+      "candidates": 8,
+      "max_rounds": 6,
+      "learning_rate": 1e-05,
+      "gradient_accumulation": 16,
+      "rollout_caps": [
+        4096,
+        8192,
+        16384
+      ],
+      "mode": "bf16_lora"
+    },
+    "enforce_eager": false,
+    "compilation_config": {
+      "level": 0,
+      "cudagraph_mode": "FULL_DECODE_ONLY",
+      "cudagraph_capture_sizes": [
+        1
+      ],
+      "max_capture_size": 1
+    }
+  },
+  "config_sha256": "6292e619854e7830a5767ee89d349e2826f7169c2751cf453387dab4065f02be",
+  "sources": {
+    "utils/course_protocol.py": "a27a894de6c8d6acb67aa9d8903c5192f21854ceb0ca9cc281411eb11ae0ec6c",
+    "utils/course_run.py": "b9ea52fed0b387a66e95fdee9a430faf6893f885112842550adb58b5864ad506",
+    "utils/course_worker.py": "740ef3c0b476f47b86e820a3eb52d2b5e36119755ab09ce9b4b5b4f6bde28a78",
+    "utils/low_memory_logprobs.py": "eb51145e7bf6ccb27d26484499e3a5bbf34ed2d9298f193f85dfad751789f619",
+    "utils/benchmark_training.py": "4155aca95e3eb08ea1e645ac74a265dbc970df2f3df2053ceb04a953c9835e29",
+    "00_Baseline_Diagnosis.ipynb": "af25cd9163558a2140c21c88f57f09467bf0c2c07558cb031acd8d070791477d",
+    "01_Synthetic_Data_Engineering.ipynb": "111fd3d2562643bd36fd0bdbacd089976eff2904226d9e73a67828d1f7ecd340",
+    "02_Prompt_Engineering.ipynb": "afac5bd5b035891bd33b56b96b87c281040b05ae054cf78dd3ce1794fdac496f",
+    "03_SFT.ipynb": "9a1a56422b76988292484634bd960a7ce2aac66f46f04d94f87a9894f4562cc1",
+    "04_DPO.ipynb": "2a1bc58bede89c98c6b3cf89ed4fa1febdd1b55211e7182b4b2b6713c941aa7e",
+    "05_PPO.ipynb": "20fb01706133b80a679f3a85db02c8db3a4af21c41561bc9f89779839748fea5",
+    "06_GRPO.ipynb": "441b091e142b101bf5ed677b37be01c55ef42d0ebb5d30eeb4181e5b99e2ba0a"
+  },
+  "frozen_files": {
+    "panels/dpo_1.jsonl": "60420564b114cbeec9ff0b45a4086f44931e71afade69ceff084b6a42cb4ce45",
+    "panels/dpo_2.jsonl": "44568260d37e020eadd43cb20066f0e2a1c18a1538a0f49bd92a69893b808187",
+    "panels/dpo_3.jsonl": "cc5711873f541ee7052db68a4b3066e326a2f7960287fbd4ba92be3380b2d1fd",
+    "panels/dpo_4.jsonl": "7a346e25424fbac7446087d59f846e43dca16dd2aa619b7780f2f3c14e3302fe",
+    "panels/dpo_5.jsonl": "677de6176d33c2e7b8d441e52ba6a2dbc8cb067f847087c1ca96aa567ff50180",
+    "panels/dpo_6.jsonl": "b7b807d5d9c75bb748bafaf231fde48cdd1f9cd4345642ce6af108526b771b92",
+    "panels/final.jsonl": "4be6ef5686e7a1b83ba8a8ed351972d26d83d15c931fbbbae48af78a452944ec",
+    "panels/grpo_1.jsonl": "60ed4b7a41b8dda31508eba8e1b56adb9635c731858f8c04ebeb434878d84fb7",
+    "panels/grpo_2.jsonl": "7756635e5f11eb518ab327c583f3bb187393e569b4990bbfe02b36861c4ee5d8",
+    "panels/grpo_3.jsonl": "3b4e61de938e1daf03dfbe57886d1793b899a7094e98425253d582977164ee61",
+    "panels/grpo_4.jsonl": "0b9f9568298f54db89a7e4f66770fd1a526ee0d774f581b2f64fec5545bef49f",
+    "panels/grpo_5.jsonl": "f6c051936118d7acb40e5cf6f83827f7f1160ef8fd059938b7cd9a854e3496d8",
+    "panels/grpo_6.jsonl": "c84ee30be8578b8c8d61c5bb079159bd0d6f9f22bf435e1c5e22e1c58a1c3d75",
+    "panels/ppo_1.jsonl": "40cf2e89a7cb6222ae18581498fa3d1902d3fb985e4df44fa9ebcc047f38f8f6",
+    "panels/ppo_2.jsonl": "a9ccdbd9b7ad06401c3898deb07d08d7ff345e32c535ce62c99cb5325cfa7b86",
+    "panels/ppo_3.jsonl": "1a898f3c297bdbe01f00b555c3a0b6ed69772af7a172d7cf659e08dcf82c188c",
+    "panels/ppo_4.jsonl": "cfc3d35f5fa9f49c17751f055966be22df9c78c77b145f666ab96db259814424",
+    "panels/ppo_5.jsonl": "a3131a748c5d61f202a54028b61cc70f07a84bdedcc54c4e90afee2d9ab88d8a",
+    "panels/ppo_6.jsonl": "f44c20bea55e2a7ee60ccbeb4f407cc625b60fd5e5675b9ec459bb9b423437b8",
+    "panels/sft.jsonl": "8cb8bb0ead433931b938de6c60f6a0de3db2e6b5c81da9766417948ba7892d30",
+    "panels/tune.jsonl": "8dd3a63f5b796d5800b88887493d9a47d50685ee78ba1a51bdc8c8be50d2fc71",
+    "public_priors.json": "29da7f7e333b396657b5d16f9bef73e367c63d7a1e7d04210288a121ed038057"
+  },
+  "split_sha256": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492"
+  },
+  "traces_sha256": "c7b6ba16bc3975b3ffb145df07a99976bc6d17db77c82d1e286e817f469387b9",
+  "holdout_used": false,
+  "final_panel_used_for_selection": false,
+  "memory_unit": "bytes; 8 GB = 8000000000 bytes",
+  "metrics": "All completions including truncated; output tokens include thinking and EOS, never prompt tokens",
+  "sft_showcase": "numeral_system",
+  "ppo_grpo_gravity_role": "evaluation_only"
+}

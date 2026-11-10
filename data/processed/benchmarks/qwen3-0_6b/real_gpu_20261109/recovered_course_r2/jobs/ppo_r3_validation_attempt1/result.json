@@ -1,0 +1,65 @@
+{
+  "status": "completed",
+  "metrics": {
+    "equation_numeric": {
+      "n": 4,
+      "correct": 1,
+      "accuracy": 0.25,
+      "accuracy_wilson95": [
+        0.045586062644636216,
+        0.6993639475573634
+      ],
+      "truncated": 0,
+      "truncation_rate": 0.0,
+      "mean_output_tokens": 10150,
+      "total_output_tokens": 40600,
+      "mean_correct_output_tokens": 4997,
+      "max_output_tokens": 15385
+    },
+    "gravity": {
+      "n": 4,
+      "correct": 4,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.5100999795960008,
+        1.0
+      ],
+      "truncated": 0,
+      "truncation_rate": 0.0,
+      "mean_output_tokens": 5999,
+      "total_output_tokens": 23996,
+      "mean_correct_output_tokens": 5999,
+      "max_output_tokens": 8414
+    },
+    "numeral_system": {
+      "n": 4,
+      "correct": 4,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.5100999795960008,
+        1.0
+      ],
+      "truncated": 0,
+      "truncation_rate": 0.0,
+      "mean_output_tokens": 1259.5,
+      "total_output_tokens": 5038,
+      "mean_correct_output_tokens": 1259.5,
+      "max_output_tokens": 1799
+    }
+  },
+  "records": 12,
+  "generation_seconds": 369.54430583678186,
+  "output_tokens_per_second": 188.4320740440675,
+  "policy_fingerprint": {
+    "adapter_config.json": "12627b770844063056a241d93cf8632bb242869d8b802aea042f1dcc16ba4da1",
+    "adapter_model.safetensors": "c2600693e4bd4de814446f5b05bc1014afe04e3ba2719742075df490e8841e57"
+  },
+  "worker_wall_seconds": 385.9656066438183,
+  "torch_peak_allocated_bytes": 0,
+  "torch_peak_reserved_bytes": 0,
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1"
+  },
+  "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+}

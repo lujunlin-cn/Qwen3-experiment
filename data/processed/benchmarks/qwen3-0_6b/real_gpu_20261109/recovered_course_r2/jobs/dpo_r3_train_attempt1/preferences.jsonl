@@ -1,0 +1,5 @@
+{"sample_id": "11dd396a", "task_type": "gravity", "preference_reason": "correctness", "chosen_group_index": 1, "rejected_group_index": 0}
+{"sample_id": "a5d2e952", "task_type": "gravity", "preference_reason": "correctness", "chosen_group_index": 1, "rejected_group_index": 2}
+{"sample_id": "a5d2e952", "task_type": "gravity", "preference_reason": "correct_short_over_correct_long", "chosen_group_index": 1, "rejected_group_index": 0}
+{"sample_id": "c7bcab48", "task_type": "equation_numeric", "preference_reason": "correctness", "chosen_group_index": 1, "rejected_group_index": 0}
+{"sample_id": "c7bcab48", "task_type": "equation_numeric", "preference_reason": "correct_short_over_correct_long", "chosen_group_index": 1, "rejected_group_index": 3}

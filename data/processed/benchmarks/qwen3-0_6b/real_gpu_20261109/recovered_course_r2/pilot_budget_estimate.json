@@ -1,0 +1,6 @@
+{
+  "observed_reference_tokens_per_second": 221.8945473149078,
+  "estimated_final_output_tokens_for_5_models_2_prompts": 1953500.0,
+  "estimated_final_generation_seconds": 8803.731428459287,
+  "warning": "Planning extrapolation; training/prior prompts can change lengths. No sample size or cap silently reduced."
+}

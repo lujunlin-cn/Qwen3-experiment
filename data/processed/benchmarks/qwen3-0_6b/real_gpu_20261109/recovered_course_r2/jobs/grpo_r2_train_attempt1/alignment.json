@@ -1,0 +1,106 @@
+{
+  "tokens": 122202,
+  "mean_abs_diff": 0.018701451165892953,
+  "max_abs_diff": 0.635554313659668,
+  "mean_signed_diff": -0.0008685376536399182,
+  "rows": [
+    {
+      "id": "8373daa8",
+      "group_index": 0,
+      "mean_abs_diff": 0.01799345389008522,
+      "max_abs_diff": 0.25677490234375
+    },
+    {
+      "id": "8373daa8",
+      "group_index": 1,
+      "mean_abs_diff": 0.01868402026593685,
+      "max_abs_diff": 0.3283226490020752
+    },
+    {
+      "id": "8373daa8",
+      "group_index": 2,
+      "mean_abs_diff": 0.017527278512716293,
+      "max_abs_diff": 0.3081228733062744
+    },
+    {
+      "id": "8373daa8",
+      "group_index": 3,
+      "mean_abs_diff": 0.0180584117770195,
+      "max_abs_diff": 0.4151288866996765
+    },
+    {
+      "id": "8373daa8",
+      "group_index": 4,
+      "mean_abs_diff": 0.01889847218990326,
+      "max_abs_diff": 0.2529768943786621
+    },
+    {
+      "id": "8373daa8",
+      "group_index": 5,
+      "mean_abs_diff": 0.018363093957304955,
+      "max_abs_diff": 0.635554313659668
+    },
+    {
+      "id": "8373daa8",
+      "group_index": 6,
+      "mean_abs_diff": 0.01919380947947502,
+      "max_abs_diff": 0.6217659711837769
+    },
+    {
+      "id": "8373daa8",
+      "group_index": 7,
+      "mean_abs_diff": 0.017420455813407898,
+      "max_abs_diff": 0.41849902272224426
+    },
+    {
+      "id": "b0d0dd45",
+      "group_index": 0,
+      "mean_abs_diff": 0.018665678799152374,
+      "max_abs_diff": 0.27996110916137695
+    },
+    {
+      "id": "b0d0dd45",
+      "group_index": 1,
+      "mean_abs_diff": 0.01875472627580166,
+      "max_abs_diff": 0.24145030975341797
+    },
+    {
+      "id": "b0d0dd45",
+      "group_index": 2,
+      "mean_abs_diff": 0.02818904258310795,
+      "max_abs_diff": 0.2879984974861145
+    },
+    {
+      "id": "b0d0dd45",
+      "group_index": 3,
+      "mean_abs_diff": 0.020046286284923553,
+      "max_abs_diff": 0.4482191801071167
+    },
+    {
+      "id": "b0d0dd45",
+      "group_index": 4,
+      "mean_abs_diff": 0.019241323694586754,
+      "max_abs_diff": 0.3479957580566406
+    },
+    {
+      "id": "b0d0dd45",
+      "group_index": 5,
+      "mean_abs_diff": 0.01755523681640625,
+      "max_abs_diff": 0.2460942268371582
+    },
+    {
+      "id": "b0d0dd45",
+      "group_index": 6,
+      "mean_abs_diff": 0.020354479551315308,
+      "max_abs_diff": 0.4259202480316162
+    },
+    {
+      "id": "b0d0dd45",
+      "group_index": 7,
+      "mean_abs_diff": 0.01945897750556469,
+      "max_abs_diff": 0.5126780867576599
+    }
+  ],
+  "behavior_denominator": "original raw sampled logprobs",
+  "status": "passed"
+}

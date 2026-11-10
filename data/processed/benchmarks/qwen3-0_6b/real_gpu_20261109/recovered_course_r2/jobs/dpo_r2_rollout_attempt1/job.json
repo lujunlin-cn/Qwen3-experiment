@@ -1,0 +1,22 @@
+{
+  "kind": "rollout",
+  "run": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph",
+  "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r2_rollout_attempt1",
+  "model": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+  "seed": 44,
+  "policy_version": "dpo:round1:1245147bdc20",
+  "variant": "original",
+  "method": "dpo",
+  "round": 2,
+  "panel": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/panels/dpo_2.jsonl",
+  "adapter": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r1_train_attempt1/adapter",
+  "cap": 4096,
+  "candidates": 4,
+  "adapter_fingerprint": {
+    "adapter_config.json": "664247241e2e423bff6e397f735c937fef6534022f04fc7f73167c1374d1fa12",
+    "adapter_model.safetensors": "1245147bdc2061e2fb08238b0b11802b336ebb87c35e60da0b692ea758c2ff8e"
+  },
+  "input_hashes": {
+    "panel": "44568260d37e020eadd43cb20066f0e2a1c18a1538a0f49bd92a69893b808187"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "status": "incomplete_workflow",
+  "evidence": "Recovered raw server artifacts on CPU-only host, 2026-11-10",
+  "device_limit_bytes": 8000000000,
+  "phase_memory": {
+    "sft": {
+      "training": {
+        "jobs": 3,
+        "device_peak_sampled_bytes": 1723858944,
+        "all_observed_samples_below_limit": true,
+        "optimizer_steps": 72,
+        "incomplete_jobs": []
+      }
+    },
+    "dpo": {
+      "rollout": {
+        "jobs": 3,
+        "device_peak_sampled_bytes": 5197791232,
+        "all_observed_samples_below_limit": true,
+        "optimizer_steps": 0,
+        "incomplete_jobs": []
+      },
+      "training": {
+        "jobs": 3,
+        "device_peak_sampled_bytes": 2415919104,
+        "all_observed_samples_below_limit": true,
+        "optimizer_steps": 4,
+        "incomplete_jobs": []
+      }
+    },
+    "ppo": {
+      "rollout": {
+        "jobs": 3,
+        "device_peak_sampled_bytes": 5197791232,
+        "all_observed_samples_below_limit": true,
+        "optimizer_steps": 0,
+        "incomplete_jobs": []
+      },
+      "training": {
+        "jobs": 3,
+        "device_peak_sampled_bytes": 4796186624,
+        "all_observed_samples_below_limit": true,
+        "optimizer_steps": 3,
+        "incomplete_jobs": []
+      }
+    },
+    "grpo": {
+      "rollout": {
+        "jobs": 6,
+        "device_peak_sampled_bytes": 5197791232,
+        "all_observed_samples_below_limit": true,
+        "optimizer_steps": 0,
+        "incomplete_jobs": [
+          {
+            "job": "grpo_r6_rollout",
+            "status": "budget_exhausted"
+          }
+        ]
+      },
+      "training": {
+        "jobs": 5,
+        "device_peak_sampled_bytes": 4412407808,
+        "all_observed_samples_below_limit": true,
+        "optimizer_steps": 2,
+        "incomplete_jobs": []
+      }
+    }
+  },
+  "completed_job_results_hash_verified": 42,
+  "independent_final_evaluations_completed": 0,
+  "expected_final_evaluations": 10,
+  "grpo_round6_termination": "budget_exhausted",
+  "final_base_status": "stale running entry with progress2/24; no completed result",
+  "continuous_memory_bound_verified": false,
+  "quality_acceptance": "not_met_or_not_established",
+  "gpu_work_restarted": false
+}

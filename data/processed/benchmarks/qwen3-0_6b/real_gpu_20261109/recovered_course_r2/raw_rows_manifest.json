@@ -1,0 +1,170 @@
+{
+  "dpo_r1_rollout_attempt1": {
+    "sha256": "28a89520d1f9f12a2ed821ba9997fcb733914b47eac46aa61ba350391b570850",
+    "bytes": 3416591,
+    "rows": 32,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "grpo_r5_rollout_attempt1": {
+    "sha256": "9b278ce36f37299ace280171ccfffb80b8db1b3da9e3d655a7aa9b4babc24b5b",
+    "bytes": 5466404,
+    "rows": 16,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "sft_r1_validation_attempt1": {
+    "sha256": "3ee7e936733e1679cb541d7db769f250475c149381c283fc5dc357da7f6d3064",
+    "bytes": 628807,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "prior_reference_attempt1": {
+    "sha256": "f6f09bb7f3aab693bb7b0723d99f975193fc1a27adfea3e62bf6a84c1f54eb6c",
+    "bytes": 610214,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "base_cap16384_attempt1": {
+    "sha256": "c259f025ecf45b7947702d4fa80e1a74de84a4ac3087e187c3c059d57679a6e4",
+    "bytes": 763283,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "base_reference_attempt1": {
+    "sha256": "821518482d4dc82a07d47323602aa7439e64fb82c63206df3a79e4cbbe9326d8",
+    "bytes": 763279,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "ppo_r3_rollout_attempt1": {
+    "sha256": "fd28d90a0c83c495b487add2876326f61f8f1992f218013a7a1dc1f80250130a",
+    "bytes": 2401366,
+    "rows": 8,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "grpo_r1_rollout_attempt1": {
+    "sha256": "659d0b536c954052888a26f5a35f516c4f08c4f7410e577ecf148d05cd377713",
+    "bytes": 1794742,
+    "rows": 16,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "dpo_r3_validation_attempt1": {
+    "sha256": "9b619de6ec5076f00ef50710776fd06812ebee934e006800e9350cb8accf807d",
+    "bytes": 673165,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "dpo_r2_rollout_attempt1": {
+    "sha256": "b9ea1a77d8a1e4c19e65239bf71c1cf787b07698dbf72c8e48977aa0be1b5b59",
+    "bytes": 3268569,
+    "rows": 32,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "dpo_r1_validation_attempt1": {
+    "sha256": "5e58d9e7e23a03f196fee4f8c37effd5abb08d358adaa9c56567acfd9aa17324",
+    "bytes": 640222,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "sft_r3_validation_attempt1": {
+    "sha256": "a6a517512be0b70c9011631779521a894d28efd74d14472d24503e7f182836cf",
+    "bytes": 553051,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "ppo_r3_validation_attempt1": {
+    "sha256": "dfd73269d2d07602053a7e6520f804a89d488b413cfd34ef798f3869be89ad0b",
+    "bytes": 547477,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "base_cap2048_attempt1": {
+    "sha256": "10637cf431dfad84ecdc0e33e240cc62c380c57c038e0aa6580b05bd265378dd",
+    "bytes": 202741,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "base_cap512_attempt1": {
+    "sha256": "f76455d7d95d99c15f50697a2da96ec0960e2e912f722e78e95ec7293cc90855",
+    "bytes": 67730,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "sft_r2_validation_attempt1": {
+    "sha256": "d49418192c8da95ec4c1a45262034c871259222c7f37490de7fab4b81a8a7b8d",
+    "bytes": 733911,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "ppo_r1_validation_attempt1": {
+    "sha256": "5a57d423cbcdacd2559aff509acdbdcd02f9130d4249cbe36f272c251ed5800d",
+    "bytes": 737078,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "dpo_r2_validation_attempt1": {
+    "sha256": "424e703cf0e025468d3de7a7512ac116bbf1696f7092b59af76710288e895848",
+    "bytes": 656644,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "base_cap8192_attempt1": {
+    "sha256": "b99f97d48d07910e392d8b6a9ba53fb579b73d7ccb9bc86e0f7cccc1ddf2a36a",
+    "bytes": 570578,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "grpo_r3_rollout_attempt1": {
+    "sha256": "2aa89d62f9220fd0b7c161f8427aa57de77cbddbfee0c85c703ea61eac1f98a2",
+    "bytes": 3718136,
+    "rows": 16,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "grpo_r2_validation_attempt1": {
+    "sha256": "61e40be7611d9dd485fe4a919b9dcdfbbabc8cab1670277bdf46b3630a0bd8f1",
+    "bytes": 721740,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "ppo_r2_validation_attempt1": {
+    "sha256": "3c7da6aff81c2865f49027def4d74b7b5dc2450dd297dbd944a12b0dcba4f9bf",
+    "bytes": 667407,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "grpo_r4_validation_attempt1": {
+    "sha256": "ab17986e5ac3fd50c1c1a2642df975b4b89cc895d39610118b969578c2453bf1",
+    "bytes": 654648,
+    "rows": 12,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "grpo_r4_rollout_attempt1": {
+    "sha256": "015d67c2e057b48f09cbd55de391b61acecc2a38d1d48b90d96e0c36cadffe91",
+    "bytes": 4794334,
+    "rows": 16,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "grpo_r2_rollout_attempt1": {
+    "sha256": "db37cee73e4d74df75c9286a6561d01dbad7abeda8645acc6b45b17a371b3280",
+    "bytes": 3675831,
+    "rows": 16,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "ppo_r2_rollout_attempt1": {
+    "sha256": "cb55532e6b25a708aa615dee380ad36f045111fd02dd13521b99d0e47343d300",
+    "bytes": 1727474,
+    "rows": 8,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "ppo_r1_rollout_attempt1": {
+    "sha256": "e8f11b18cf7248c001982b3278aefba72555f891e55989b7a9c62dadc1ab2e05",
+    "bytes": 983888,
+    "rows": 8,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  },
+  "dpo_r3_rollout_attempt1": {
+    "sha256": "fabd4677ad513ea94f0eb22ba661d49e13f6b329d79c15cb411635c63a1d2023",
+    "bytes": 3350950,
+    "rows": 32,
+    "recovery": "Original JSONL retained locally in ignored data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs; no final panel rows were produced."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "status": "completed",
+  "metrics": {
+    "equation_numeric": {
+      "n": 4,
+      "correct": 0,
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.48990002040399916
+      ],
+      "truncated": 3,
+      "truncation_rate": 0.75,
+      "mean_output_tokens": 8088,
+      "total_output_tokens": 32352,
+      "mean_correct_output_tokens": null,
+      "max_output_tokens": 8192
+    },
+    "gravity": {
+      "n": 4,
+      "correct": 2,
+      "accuracy": 0.5,
+      "accuracy_wilson95": [
+        0.15003570882017148,
+        0.8499642911798285
+      ],
+      "truncated": 2,
+      "truncation_rate": 0.5,
+      "mean_output_tokens": 7969.25,
+      "total_output_tokens": 31877,
+      "mean_correct_output_tokens": 7746.5,
+      "max_output_tokens": 8192
+    },
+    "numeral_system": {
+      "n": 4,
+      "correct": 3,
+      "accuracy": 0.75,
+      "accuracy_wilson95": [
+        0.3006360524426366,
+        0.9544139373553637
+      ],
+      "truncated": 0,
+      "truncation_rate": 0.0,
+      "mean_output_tokens": 2137.5,
+      "total_output_tokens": 8550,
+      "mean_correct_output_tokens": 1772.3333333333333,
+      "max_output_tokens": 3233
+    }
+  },
+  "records": 12,
+  "generation_seconds": 304.0244429670274,
+  "output_tokens_per_second": 239.38535760393827,
+  "policy_fingerprint": {
+    "kind": "base"
+  },
+  "worker_wall_seconds": 321.5928763737902,
+  "torch_peak_allocated_bytes": 0,
+  "torch_peak_reserved_bytes": 0,
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1"
+  },
+  "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+}

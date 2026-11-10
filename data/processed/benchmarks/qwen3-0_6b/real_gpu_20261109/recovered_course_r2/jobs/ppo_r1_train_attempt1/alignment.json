@@ -1,0 +1,58 @@
+{
+  "tokens": 32768,
+  "mean_abs_diff": 0.017673836322501302,
+  "max_abs_diff": 1.598278522491455,
+  "mean_signed_diff": -0.000667735261231428,
+  "rows": [
+    {
+      "id": "945c151e",
+      "group_index": 0,
+      "mean_abs_diff": 0.01674892008304596,
+      "max_abs_diff": 0.6321656703948975
+    },
+    {
+      "id": "43980e72",
+      "group_index": 0,
+      "mean_abs_diff": 0.017957832664251328,
+      "max_abs_diff": 0.2428908348083496
+    },
+    {
+      "id": "8373daa8",
+      "group_index": 0,
+      "mean_abs_diff": 0.016799721866846085,
+      "max_abs_diff": 0.24038958549499512
+    },
+    {
+      "id": "b0d0dd45",
+      "group_index": 0,
+      "mean_abs_diff": 0.018545454367995262,
+      "max_abs_diff": 0.3196401596069336
+    },
+    {
+      "id": "80d44fe3",
+      "group_index": 0,
+      "mean_abs_diff": 0.016413487493991852,
+      "max_abs_diff": 0.28007280826568604
+    },
+    {
+      "id": "d8a47cb7",
+      "group_index": 0,
+      "mean_abs_diff": 0.01889263466000557,
+      "max_abs_diff": 0.49431025981903076
+    },
+    {
+      "id": "febd3442",
+      "group_index": 0,
+      "mean_abs_diff": 0.01910199038684368,
+      "max_abs_diff": 0.27907443046569824
+    },
+    {
+      "id": "c613082a",
+      "group_index": 0,
+      "mean_abs_diff": 0.016930649057030678,
+      "max_abs_diff": 1.598278522491455
+    }
+  ],
+  "behavior_denominator": "original raw sampled logprobs",
+  "status": "passed"
+}

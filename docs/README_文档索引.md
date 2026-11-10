@@ -2,7 +2,7 @@
 
 当前正式任务：**Numeral System（Easy）→ Gravity（Medium）→ Equation Numeric（Hard）**。默认模型为 `Qwen/Qwen3-0.6B`（保留 Thinking）。150 题准确率与 Token 预算、SFT/DPO/PPO/GRPO 资源测试的当前结果见 [0.6B 基准报告](QWEN3_0_6B_BENCHMARK.md)；下载、路径与运行命令见 [0.6B 接入说明](QWEN3_0_6B_SETUP.md)。历史 4B 实测仅作为历史记录。
 
-8 GB 场景的本地实现、CPU 数值验证、显存预算与待运行命令见 [低显存说明](QWEN3_0_6B_LOW_MEMORY.md)，尚未测得新 GPU 峰值。
+最新真实验证见 [2026-11-10 实验总结](GPU_VALIDATION_SUMMARY_20261110.md)：四种方法均完成真实更新，已测 rollout/train 峰值低于 8 GB；数学正确率尚未证明改善，GRPO 末轮耗尽时间预算，独立最终评测未完成。无卡模式下已取回原始日志与 checkpoint；完整流程状态为 incomplete。实现原理与 CPU 验证见 [低显存说明](QWEN3_0_6B_LOW_MEMORY.md)。
 
 下一轮统一执行入口见 [8 小时实验协议](QWEN3_0_6B_8H_PROTOCOL.md)：包含 max_tokens 基线、公开先验、SFT 及三种 RL 的多轮训练/验证、仅输出 Token 统计、显存守护和耗时报告。PPO/GRPO 只训练数学方程，Gravity 仅评测。
 

@@ -1,0 +1,88 @@
+START base_reference (2699 seconds left in baseline)
+END base_reference: completed, peak 4.84 GiB
+PILOT_BUDGET {"observed_reference_tokens_per_second": 221.8945473149078, "estimated_final_output_tokens_for_5_models_2_prompts": 1953500.0, "estimated_final_generation_seconds": 8803.731428459287, "warning": "Planning extrapolation; training/prior prompts can change lengths. No sample size or cap silently reduced."}
+START base_cap512 (2233 seconds left in baseline)
+END base_cap512: completed, peak 4.84 GiB
+START base_cap2048 (2189 seconds left in baseline)
+END base_cap2048: completed, peak 4.84 GiB
+START base_cap8192 (2079 seconds left in baseline)
+END base_cap8192: completed, peak 4.84 GiB
+START base_cap16384 (1753 seconds left in baseline)
+END base_cap16384: completed, peak 4.84 GiB
+START prior_reference (2699 seconds left in prompt)
+END prior_reference: completed, peak 4.84 GiB
+START sft_r1_train (5399 seconds left in sft)
+END sft_r1_train: completed, peak 1.60 GiB
+START sft_r1_validation (5275 seconds left in sft)
+END sft_r1_validation: completed, peak 4.84 GiB
+START sft_r2_train (4823 seconds left in sft)
+END sft_r2_train: completed, peak 1.60 GiB
+START sft_r2_validation (4698 seconds left in sft)
+END sft_r2_validation: completed, peak 4.84 GiB
+START sft_r3_train (4186 seconds left in sft)
+END sft_r3_train: completed, peak 1.61 GiB
+START sft_r3_validation (4063 seconds left in sft)
+END sft_r3_validation: completed, peak 4.84 GiB
+START dpo_r1_rollout (5399 seconds left in dpo)
+END dpo_r1_rollout: completed, peak 4.84 GiB
+START dpo_r1_train (4802 seconds left in dpo)
+END dpo_r1_train: completed, peak 2.25 GiB
+START dpo_r1_validation (4785 seconds left in dpo)
+END dpo_r1_validation: completed, peak 4.84 GiB
+START dpo_r2_rollout (4328 seconds left in dpo)
+END dpo_r2_rollout: completed, peak 4.84 GiB
+START dpo_r2_train (3776 seconds left in dpo)
+END dpo_r2_train: completed, peak 2.18 GiB
+START dpo_r2_validation (3760 seconds left in dpo)
+END dpo_r2_validation: completed, peak 4.84 GiB
+START dpo_r3_rollout (3292 seconds left in dpo)
+END dpo_r3_rollout: completed, peak 4.84 GiB
+START dpo_r3_train (2728 seconds left in dpo)
+END dpo_r3_train: completed, peak 2.24 GiB
+START dpo_r3_validation (2708 seconds left in dpo)
+END dpo_r3_validation: completed, peak 4.84 GiB
+START ppo_r1_rollout (5399 seconds left in ppo)
+END ppo_r1_rollout: completed, peak 4.84 GiB
+START ppo_r1_train (5217 seconds left in ppo)
+END ppo_r1_train: completed, peak 2.22 GiB
+START ppo_r1_validation (5189 seconds left in ppo)
+END ppo_r1_validation: completed, peak 4.84 GiB
+START ppo_r2_rollout (4644 seconds left in ppo)
+END ppo_r2_rollout: completed, peak 4.84 GiB
+START ppo_r2_train (4318 seconds left in ppo)
+END ppo_r2_train: completed, peak 2.89 GiB
+START ppo_r2_validation (4275 seconds left in ppo)
+END ppo_r2_validation: completed, peak 4.84 GiB
+START ppo_r3_rollout (3801 seconds left in ppo)
+END ppo_r3_rollout: completed, peak 4.84 GiB
+START ppo_r3_train (3334 seconds left in ppo)
+END ppo_r3_train: completed, peak 4.47 GiB
+START ppo_r3_validation (3277 seconds left in ppo)
+END ppo_r3_validation: completed, peak 4.84 GiB
+START grpo_r1_rollout (5399 seconds left in grpo)
+END grpo_r1_rollout: completed, peak 4.84 GiB
+START grpo_r1_train (5083 seconds left in grpo)
+END grpo_r1_train: completed, peak 1.90 GiB
+START grpo_r2_rollout (5068 seconds left in grpo)
+END grpo_r2_rollout: completed, peak 4.84 GiB
+START grpo_r2_train (4398 seconds left in grpo)
+END grpo_r2_train: completed, peak 2.98 GiB
+START grpo_r2_validation (4355 seconds left in grpo)
+END grpo_r2_validation: completed, peak 4.84 GiB
+START grpo_r3_rollout (3830 seconds left in grpo)
+END grpo_r3_rollout: completed, peak 4.84 GiB
+START grpo_r3_train (3151 seconds left in grpo)
+END grpo_r3_train: completed, peak 1.90 GiB
+START grpo_r4_rollout (3132 seconds left in grpo)
+END grpo_r4_rollout: completed, peak 4.84 GiB
+START grpo_r4_train (2228 seconds left in grpo)
+END grpo_r4_train: completed, peak 4.11 GiB
+START grpo_r4_validation (2174 seconds left in grpo)
+END grpo_r4_validation: completed, peak 4.84 GiB
+START grpo_r5_rollout (1717 seconds left in grpo)
+END grpo_r5_rollout: completed, peak 4.84 GiB
+START grpo_r5_train (678 seconds left in grpo)
+END grpo_r5_train: completed, peak 2.29 GiB
+START grpo_r6_rollout (657 seconds left in grpo)
+END grpo_r6_rollout: budget_exhausted, peak 4.84 GiB
+START final_base_original (14243 seconds left in final)

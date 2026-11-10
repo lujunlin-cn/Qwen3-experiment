@@ -1,0 +1,185 @@
+{
+  "status": "completed",
+  "optimizer_steps": 1,
+  "losses": [
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    -0.0,
+    0.37797021865844727,
+    0.3778258264064789,
+    0.3760475814342499,
+    0.37782126665115356,
+    -2.6465229988098145,
+    0.37791207432746887,
+    0.37763357162475586,
+    0.3781810700893402
+  ],
+  "group_stds": [
+    0.0,
+    0.28350305557250977
+  ],
+  "training_seconds": 22.712562477216125,
+  "alignment": {
+    "tokens": 122202,
+    "mean_abs_diff": 0.018701451165892953,
+    "max_abs_diff": 0.635554313659668,
+    "mean_signed_diff": -0.0008685376536399182,
+    "rows": [
+      {
+        "id": "8373daa8",
+        "group_index": 0,
+        "mean_abs_diff": 0.01799345389008522,
+        "max_abs_diff": 0.25677490234375
+      },
+      {
+        "id": "8373daa8",
+        "group_index": 1,
+        "mean_abs_diff": 0.01868402026593685,
+        "max_abs_diff": 0.3283226490020752
+      },
+      {
+        "id": "8373daa8",
+        "group_index": 2,
+        "mean_abs_diff": 0.017527278512716293,
+        "max_abs_diff": 0.3081228733062744
+      },
+      {
+        "id": "8373daa8",
+        "group_index": 3,
+        "mean_abs_diff": 0.0180584117770195,
+        "max_abs_diff": 0.4151288866996765
+      },
+      {
+        "id": "8373daa8",
+        "group_index": 4,
+        "mean_abs_diff": 0.01889847218990326,
+        "max_abs_diff": 0.2529768943786621
+      },
+      {
+        "id": "8373daa8",
+        "group_index": 5,
+        "mean_abs_diff": 0.018363093957304955,
+        "max_abs_diff": 0.635554313659668
+      },
+      {
+        "id": "8373daa8",
+        "group_index": 6,
+        "mean_abs_diff": 0.01919380947947502,
+        "max_abs_diff": 0.6217659711837769
+      },
+      {
+        "id": "8373daa8",
+        "group_index": 7,
+        "mean_abs_diff": 0.017420455813407898,
+        "max_abs_diff": 0.41849902272224426
+      },
+      {
+        "id": "b0d0dd45",
+        "group_index": 0,
+        "mean_abs_diff": 0.018665678799152374,
+        "max_abs_diff": 0.27996110916137695
+      },
+      {
+        "id": "b0d0dd45",
+        "group_index": 1,
+        "mean_abs_diff": 0.01875472627580166,
+        "max_abs_diff": 0.24145030975341797
+      },
+      {
+        "id": "b0d0dd45",
+        "group_index": 2,
+        "mean_abs_diff": 0.02818904258310795,
+        "max_abs_diff": 0.2879984974861145
+      },
+      {
+        "id": "b0d0dd45",
+        "group_index": 3,
+        "mean_abs_diff": 0.020046286284923553,
+        "max_abs_diff": 0.4482191801071167
+      },
+      {
+        "id": "b0d0dd45",
+        "group_index": 4,
+        "mean_abs_diff": 0.019241323694586754,
+        "max_abs_diff": 0.3479957580566406
+      },
+      {
+        "id": "b0d0dd45",
+        "group_index": 5,
+        "mean_abs_diff": 0.01755523681640625,
+        "max_abs_diff": 0.2460942268371582
+      },
+      {
+        "id": "b0d0dd45",
+        "group_index": 6,
+        "mean_abs_diff": 0.020354479551315308,
+        "max_abs_diff": 0.4259202480316162
+      },
+      {
+        "id": "b0d0dd45",
+        "group_index": 7,
+        "mean_abs_diff": 0.01945897750556469,
+        "max_abs_diff": 0.5126780867576599
+      }
+    ],
+    "behavior_denominator": "original raw sampled logprobs",
+    "status": "passed"
+  },
+  "reference_kl_coef": 0,
+  "reward_definition": "correct complete: 1-.15*length/cap; otherwise 0",
+  "outcomes": {
+    "equation_numeric": {
+      "n": 16,
+      "correct": 1,
+      "accuracy": 0.0625,
+      "accuracy_wilson95": [
+        0.01111905730833121,
+        0.2832926836802987
+      ],
+      "truncated": 13,
+      "truncation_rate": 0.8125,
+      "mean_output_tokens": 7637.625,
+      "total_output_tokens": 122202,
+      "mean_correct_output_tokens": 7797,
+      "max_output_tokens": 8192
+    }
+  },
+  "decoder_memory_settings": {
+    "training_mode": true,
+    "gradient_checkpointing_enabled": true,
+    "use_cache": false
+  },
+  "checkpoint": {
+    "status": "completed",
+    "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/grpo_r2_train_attempt1/adapter",
+    "method": "grpo",
+    "round": 2,
+    "parent_policy_version": "sft:round1:d565b67a4e09",
+    "policy_version": "grpo:round2:14c50499bb6c",
+    "parent_fingerprint": {
+      "adapter_config.json": "1d6c4b00f50a4880d3f68967edf8e314026bb0df1de0b8d4aedf07fa3cd5962c",
+      "adapter_model.safetensors": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+    },
+    "weights": {
+      "adapter_config.json": "0717cda6120eaa23d4f58bb91b0ef352f5ddb8f2c90115ce07619ac7a4b07d59",
+      "adapter_model.safetensors": "14c50499bb6ce24035116fb5089e06ed7e36848a3b73c9570ae3b15c76e43d53"
+    },
+    "sft_reference": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/adapter",
+    "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+    "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/grpo_r2_train_attempt1/trainer.pt",
+    "value_head": null
+  },
+  "worker_wall_seconds": 36.914422338828444,
+  "torch_peak_allocated_bytes": 2566635520,
+  "torch_peak_reserved_bytes": 2860515328,
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "5.18.0"
+  },
+  "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+}

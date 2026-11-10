@@ -1,0 +1,16 @@
+{
+  "kind": "training",
+  "run": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph",
+  "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1",
+  "model": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+  "seed": 43,
+  "policy_version": "base",
+  "variant": "original",
+  "method": "sft",
+  "round": 1,
+  "adapter": null,
+  "trainer_state": null,
+  "value_head": null,
+  "sft_adapter": null,
+  "input_hashes": {}
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "evaluation",
+  "run": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph",
+  "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r2_validation_attempt1",
+  "model": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+  "seed": 42,
+  "policy_version": "dpo:round2:381e58f61889",
+  "variant": "original",
+  "panel": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/panels/tune.jsonl",
+  "adapter": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/dpo_r2_train_attempt1/adapter",
+  "cap": null,
+  "adapter_fingerprint": {
+    "adapter_config.json": "f0f68819d30b342cc233777bc227c888df79d2826890a2799cc8b0d7092ded81",
+    "adapter_model.safetensors": "381e58f6188954129f2315c720e28924d76e44852286188527e9732f64cf5692"
+  },
+  "input_hashes": {
+    "panel": "8dd3a63f5b796d5800b88887493d9a47d50685ee78ba1a51bdc8c8be50d2fc71"
+  }
+}
