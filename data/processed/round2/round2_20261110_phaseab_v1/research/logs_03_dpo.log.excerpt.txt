@@ -1,0 +1,19 @@
+28: train: source order=['nvidia-nemotron-model-reasoning-challenge', 'dgxchen/nemotron-cot-tong', 'qwedsacf/competition_math', 'open-r1/OpenR1-Math-220k', 'EleutherAI/drop', 'tasksource/proofwriter', 'AI-MO/NuminaMath-1.5', 'openai/gsm8k', 'yale-nlp/FOLIO', 'BytedTsinghua-SIA/Enigmata-Eval', 'nvidia/OpenMathReasoning', 'WildEval/ZebraLogic', 'EleutherAI/asdiv', 'renma/ProntoQA', 'ChilleD/SVAMP']; retained=78,868
+29: train: keep complete preferences (num_proc=8): 100%
+30:  78868/78868 [00:03<00:00, 29904.21 examples/s]
+31: train: keep high-quality examples (num_proc=8): 100%
+32:  175/175 [00:03<00:00, 61.07 examples/s]
+33: train: HQ filter retained 162/175 examples
+34: train: apply DPO chat template (num_proc=8): 100%
+35:  162/162 [00:05<00:00, 37.33 examples/s]
+36: train: retained 162/78,868 examples
+37: train: selected [0, 100) (100 examples)
+38: 
+39: Extracting prompt in train dataset (num_proc=8): 100%
+40:  100/100 [00:00<00:00, 45.99 examples/s]
+46: Train dataset reference log probs: 100%
+47:  100/100 [03:24<00:00,  2.02s/it]
+48: Unsloth: Will smartly offload gradients to save VRAM!
+49: wandb: ERROR Unable to load kaggle notebook.
+50:  [75/75 23:29, Epoch 3/3]
+51: Step	Training Loss	rewards / chosen	rewards / rejected	rewards / accuracies	rewards / margins	logps / chosen	logps / rejected	logits / chosen	logits / rejected

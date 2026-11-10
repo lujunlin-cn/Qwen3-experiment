@@ -1,0 +1,167 @@
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+START base_reference (2699 seconds left in baseline)
+END base_reference: completed, peak 0.00 GiB
+PILOT_BUDGET {"observed_reference_tokens_per_second": 10, "estimated_final_output_tokens_for_5_models_2_prompts": 720, "estimated_final_generation_seconds": 72.0, "warning": "Planning extrapolation; training/prior prompts can change lengths. No sample size or cap silently reduced."}
+START base_cap512 (2699 seconds left in baseline)
+END base_cap512: completed, peak 0.00 GiB
+START base_cap2048 (2699 seconds left in baseline)
+END base_cap2048: completed, peak 0.00 GiB
+START base_cap8192 (2699 seconds left in baseline)
+END base_cap8192: completed, peak 0.00 GiB
+START base_cap16384 (2699 seconds left in baseline)
+END base_cap16384: completed, peak 0.00 GiB
+START prior_reference (2699 seconds left in prompt)
+END prior_reference: completed, peak 0.00 GiB
+START sft_r1_train (5399 seconds left in sft)
+END sft_r1_train: completed, peak 0.00 GiB
+START sft_r1_validation (5399 seconds left in sft)
+END sft_r1_validation: completed, peak 0.00 GiB
+START sft_r2_train (5399 seconds left in sft)
+END sft_r2_train: completed, peak 0.00 GiB
+START sft_r2_validation (5399 seconds left in sft)
+END sft_r2_validation: completed, peak 0.00 GiB
+START sft_r3_train (5399 seconds left in sft)
+END sft_r3_train: completed, peak 0.00 GiB
+START sft_r3_validation (5399 seconds left in sft)
+END sft_r3_validation: completed, peak 0.00 GiB
+START dpo_r1_rollout (5399 seconds left in dpo)
+END dpo_r1_rollout: completed, peak 0.00 GiB
+START dpo_r1_train (5399 seconds left in dpo)
+END dpo_r1_train: completed, peak 0.00 GiB
+START dpo_r1_validation (5399 seconds left in dpo)
+END dpo_r1_validation: completed, peak 0.00 GiB
+START dpo_r2_rollout (5399 seconds left in dpo)
+END dpo_r2_rollout: completed, peak 0.00 GiB
+START dpo_r2_train (5399 seconds left in dpo)
+END dpo_r2_train: completed, peak 0.00 GiB
+START dpo_r2_validation (5399 seconds left in dpo)
+END dpo_r2_validation: completed, peak 0.00 GiB
+START dpo_r3_rollout (5399 seconds left in dpo)
+END dpo_r3_rollout: completed, peak 0.00 GiB
+START dpo_r3_train (5399 seconds left in dpo)
+END dpo_r3_train: completed, peak 0.00 GiB
+START dpo_r3_validation (5399 seconds left in dpo)
+END dpo_r3_validation: completed, peak 0.00 GiB
+START ppo_r1_rollout (5399 seconds left in ppo)
+END ppo_r1_rollout: completed, peak 0.00 GiB
+START ppo_r1_train (5399 seconds left in ppo)
+END ppo_r1_train: completed, peak 0.00 GiB
+START ppo_r1_validation (5399 seconds left in ppo)
+END ppo_r1_validation: completed, peak 0.00 GiB
+START ppo_r2_rollout (5399 seconds left in ppo)
+END ppo_r2_rollout: completed, peak 0.00 GiB
+START ppo_r2_train (5399 seconds left in ppo)
+END ppo_r2_train: completed, peak 0.00 GiB
+START ppo_r2_validation (5399 seconds left in ppo)
+END ppo_r2_validation: completed, peak 0.00 GiB
+START ppo_r3_rollout (5399 seconds left in ppo)
+END ppo_r3_rollout: completed, peak 0.00 GiB
+START ppo_r3_train (5399 seconds left in ppo)
+END ppo_r3_train: completed, peak 0.00 GiB
+START ppo_r3_validation (5399 seconds left in ppo)
+END ppo_r3_validation: completed, peak 0.00 GiB
+START grpo_r1_rollout (5399 seconds left in grpo)
+END grpo_r1_rollout: completed, peak 0.00 GiB
+START grpo_r1_train (5399 seconds left in grpo)
+END grpo_r1_train: completed, peak 0.00 GiB
+START grpo_r1_validation (5399 seconds left in grpo)
+END grpo_r1_validation: completed, peak 0.00 GiB
+START grpo_r2_rollout (5399 seconds left in grpo)
+END grpo_r2_rollout: completed, peak 0.00 GiB
+START grpo_r2_train (5399 seconds left in grpo)
+END grpo_r2_train: completed, peak 0.00 GiB
+START grpo_r2_validation (5399 seconds left in grpo)
+END grpo_r2_validation: completed, peak 0.00 GiB
+START grpo_r3_rollout (5399 seconds left in grpo)
+END grpo_r3_rollout: completed, peak 0.00 GiB
+START grpo_r3_train (5399 seconds left in grpo)
+END grpo_r3_train: completed, peak 0.00 GiB
+START grpo_r3_validation (5399 seconds left in grpo)
+END grpo_r3_validation: completed, peak 0.00 GiB
+START final_base_original (28799 seconds left in final)
+END final_base_original: completed, peak 0.00 GiB
+START final_sft_original (28799 seconds left in final)
+END final_sft_original: completed, peak 0.00 GiB
+START final_dpo_original (28799 seconds left in final)
+END final_dpo_original: completed, peak 0.00 GiB
+START final_ppo_original (28799 seconds left in final)
+END final_ppo_original: completed, peak 0.00 GiB
+START final_grpo_original (28799 seconds left in final)
+END final_grpo_original: completed, peak 0.00 GiB
+START final_base_prior (28799 seconds left in final)
+END final_base_prior: completed, peak 0.00 GiB
+START final_sft_prior (28799 seconds left in final)
+END final_sft_prior: completed, peak 0.00 GiB
+START final_dpo_prior (28799 seconds left in final)
+END final_dpo_prior: completed, peak 0.00 GiB
+START final_ppo_prior (28799 seconds left in final)
+END final_ppo_prior: completed, peak 0.00 GiB
+START final_grpo_prior (28799 seconds left in final)
+END final_grpo_prior: completed, peak 0.00 GiB
+PILOT_BUDGET {"observed_reference_tokens_per_second": 10, "estimated_final_output_tokens_for_5_models_2_prompts": 720, "estimated_final_generation_seconds": 72.0, "warning": "Planning extrapolation; training/prior prompts can change lengths. No sample size or cap silently reduced."}
+........F.E
+======================================================================
+ERROR: test_two_round_real_tiny_model_replay_all_methods (test_course_experiment.TrainingTests.test_two_round_real_tiny_model_replay_all_methods)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hajimi2025/Qwen3-experiment/tests/test_course_experiment.py", line 240, in test_two_round_real_tiny_model_replay_all_methods
+    sft=worker.sft_epoch(job('sft',2,sft1),c)['checkpoint']
+        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/course_worker.py", line 228, in sft_epoch
+    policy,tokenizer=load_policy(job['model'],settings['mode'],job.get('adapter'))
+                     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/miniforge3/lib/python3.13/unittest/mock.py", line 1169, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/miniforge3/lib/python3.13/unittest/mock.py", line 1173, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/miniforge3/lib/python3.13/unittest/mock.py", line 1234, in _execute_mock_call
+    result = effect(*args, **kwargs)
+  File "/home/hajimi2025/Qwen3-experiment/tests/test_course_experiment.py", line 41, in tiny_policy
+    model=PeftModel.from_pretrained(base,str(adapter),is_trainable=True)
+  File "/home/hajimi2025/Qwen3-experiment/.venv-low-memory/lib/python3.13/site-packages/peft/peft_model.py", line 601, in from_pretrained
+    load_result = model.load_adapter(
+        model_id,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/home/hajimi2025/Qwen3-experiment/.venv-low-memory/lib/python3.13/site-packages/peft/peft_model.py", line 1499, in load_adapter
+    adapters_weights = load_peft_weights(
+        model_id, device=torch_device, key_mapping=key_mapping, **hf_hub_download_kwargs
+    )
+  File "/home/hajimi2025/Qwen3-experiment/.venv-low-memory/lib/python3.13/site-packages/peft/utils/save_and_load.py", line 774, in load_peft_weights
+    adapters_weights = safe_load_file(filename, device=device)
+  File "/home/hajimi2025/miniforge3/lib/python3.13/site-packages/safetensors/torch.py", line 360, in load_file
+    return f.get_tensors()
+           ~~~~~~~~~~~~~^^
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+======================================================================
+FAIL: test_preference_and_reward_dominance (test_course_experiment.TrainingTests.test_preference_and_reward_dominance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hajimi2025/Qwen3-experiment/tests/test_course_experiment.py", line 198, in test_preference_and_reward_dominance
+    self.assertEqual({p['preference_reason'] for p in pairs},{'correctness','correct_short_over_correct_long'})
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Items in the second set but not the first:
+'correctness'
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.503s
+
+FAILED (failures=1, errors=1)
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}

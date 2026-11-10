@@ -1,0 +1,171 @@
+{
+  "schema": "qwen3-round2-design/v1",
+  "status": "awaiting_human_review_before_phase_c",
+  "gpu_execution_enabled": false,
+  "prepared_run_id": "round2_20261110_phaseab_v1",
+  "model_id": "Qwen/Qwen3-0.6B",
+  "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "parent_run": "course8h_20261109_r2_cuda_graph",
+  "parent_sft_round": 1,
+  "parent_sft_adapter_sha256": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371",
+  "parent_sft_precision": "NF4-trained adapter; BF16 policy evaluation and RL training",
+  "independent_initialization": true,
+  "seed": 20261110,
+  "device_limit_bytes": 8000000000,
+  "poll_seconds": 0.25,
+  "lora": {
+    "r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0
+  },
+  "runtime": {
+    "mode": "bf16_lora",
+    "microbatch": 1,
+    "decoder_gradient_checkpointing": true,
+    "use_cache_training": false,
+    "projection_chunk_size": 64,
+    "max_model_len": 20480,
+    "max_num_seqs": 1,
+    "max_num_batched_tokens": 512,
+    "kv_cache_gib": 3.0,
+    "enforce_eager": false,
+    "compilation_config": {
+      "level": 0,
+      "cudagraph_mode": "FULL_DECODE_ONLY",
+      "cudagraph_capture_sizes": [
+        1
+      ],
+      "max_capture_size": 1
+    }
+  },
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "enable_thinking": true
+  },
+  "evaluation": {
+    "panels_manifest": "data/processed/round2/round2_20261110_phaseab_v1/panels/manifest.json",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "enable_thinking": true,
+    "caps": {
+      "numeral_system": 8192,
+      "gravity": 16384,
+      "equation_numeric": 16384
+    },
+    "contracts": [
+      "original",
+      "closed_trace_v1"
+    ],
+    "final_models": [
+      "base",
+      "sft",
+      "dpo",
+      "ppo",
+      "grpo"
+    ],
+    "same_questions_and_settings_per_contract": true,
+    "mcnemar_exact": true,
+    "wilson95": true,
+    "paired_bootstrap_draws": 10000,
+    "primary_holm_family": [
+      "dpo_gravity",
+      "ppo_equation",
+      "grpo_equation"
+    ],
+    "holdout_used_for_tuning": false,
+    "report_reward_ablation": "P3"
+  },
+  "dpo": {
+    "tasks": [
+      "gravity"
+    ],
+    "output_contract": "closed_trace_v1",
+    "independent_arms": [
+      "B"
+    ],
+    "candidates": 4,
+    "smoke_train_prompts": 16,
+    "rollout_cap": 16384,
+    "beta": 0.1,
+    "learning_rate": 2e-06,
+    "gradient_accumulation": 4,
+    "epochs": 2,
+    "reference": "frozen_initial_sft_adapter",
+    "reject_truncated": true,
+    "chosen_requires_exact_trace": true,
+    "length_gap_min_tokens": 64,
+    "length_gap_min_fraction": 0.2,
+    "preference_mode": "B",
+    "both_sides_require_exact_trace": true
+  },
+  "ppo": {
+    "tasks": [
+      "equation_numeric"
+    ],
+    "output_contract": "closed_trace_v1",
+    "independent_reward_ablations": [
+      "P0",
+      "P1",
+      "P2",
+      "P3"
+    ],
+    "smoke_train_prompts": 8,
+    "candidates": 1,
+    "rollout_cap": 16384,
+    "learning_rate": 1e-05,
+    "gradient_accumulation": 8,
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "clip_eps": 0.2,
+    "value_coef": 0.5,
+    "entropy_coef": 0.0,
+    "reference_kl_coef": 0.0,
+    "on_policy_update_epochs": 1
+  },
+  "grpo": {
+    "tasks": [
+      "equation_numeric"
+    ],
+    "output_contract": "closed_trace_v1",
+    "independent_reward_ablations": [
+      "P0",
+      "P1",
+      "P2",
+      "P3"
+    ],
+    "smoke_train_prompts": 4,
+    "candidates": 8,
+    "rollout_cap": 16384,
+    "learning_rate": 1e-05,
+    "gradient_accumulation": 32,
+    "clip_eps": 0.2,
+    "reference_kl_coef": 0.0,
+    "reward_normalization": "population_std_plus_epsilon",
+    "advantage_epsilon": 1e-06,
+    "on_policy_update_epochs": 1,
+    "loss_reduction": "sequence_mean"
+  },
+  "reward_weights": {
+    "final": 1.0,
+    "format_P1_only": 0.05,
+    "process_P2_P3": 0.2,
+    "length_P3_only": 0.05
+  },
+  "phase_c_budget_seconds_estimate": [
+    14400,
+    21600
+  ],
+  "phase_d_budget_status": "reestimate_after_phase_c_measured_tokens_and_throughput; no promise of 8h total",
+  "phase_d_gates": [
+    "human_review",
+    "phase_a_b_pass",
+    "phase_c_all_methods_real_updates",
+    "phase_c_sampled_memory_below_limit",
+    "phase_c_quality_and_provenance_audits"
+  ],
+  "formal_runner_registration": "separate per algorithm and arm; old course_8h schema deliberately rejects this design file",
+  "phase_c_train_manifest": "data/processed/round2/round2_20261110_phaseab_v1/phase_c_train_panels/manifest.json"
+}

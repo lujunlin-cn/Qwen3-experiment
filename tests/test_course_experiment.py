@@ -38,7 +38,7 @@ def tiny_policy(model_path=None,mode=None,adapter=None):
     base=Qwen3ForCausalLM(cfg)
     base.config.use_cache=False
     if adapter:
-        model=PeftModel.from_pretrained(base,str(adapter),is_trainable=True)
+        model=PeftModel.from_pretrained(base,str(adapter),is_trainable=True,torch_device='cpu')
     else:
         model=get_peft_model(base,LoraConfig(r=2,lora_alpha=4,lora_dropout=0,target_modules=['q_proj','v_proj'],task_type='CAUSAL_LM'))
     model.gradient_checkpointing_enable(gradient_checkpointing_kwargs={'use_reentrant':False})
@@ -193,10 +193,10 @@ class TrainingTests(unittest.TestCase):
         def row(k,n,good=True,trunc=False):
             return {'sample_id':'x','task_type':'gravity','completion_token_ids':[k]*n,'completion':str(k),
                     'prompt_token_ids':[1,2],'correct':good,'truncated':trunc,'max_tokens':512}
-        rows=[row(3,100),row(4,300),row(5,512,False,True)]
+        rows=[row(3,100),row(4,300),row(5,512,False,True),row(6,200,False,False)]
         pairs=self.ns['dpo']['course_preference_pairs'](rows)
         self.assertEqual({p['preference_reason'] for p in pairs},{'correctness','correct_short_over_correct_long'})
-        self.assertTrue(any(p['rejected']['truncated'] for p in pairs))
+        self.assertFalse(any(p['rejected']['truncated'] for p in pairs))
         reward=self.ns['grpo']['course_efficiency_reward']
         self.assertGreater(reward(rows[0]),reward(rows[1]));self.assertEqual(reward(rows[2]),0)
         advantages,_,std=self.ns['grpo']['group_advantage'](torch.tensor([[reward(r) for r in rows[:2]]]))
@@ -249,8 +249,8 @@ class TrainingTests(unittest.TestCase):
                         response=[4,5,6,7] if i%2 else [8,9,10]
                         r={'sample_id':'fixture','prompt_id':'fixture','task_type':'equation_numeric','prompt':'Toy only',
                            'expected_answer':'4','completion':str(i),'prompt_token_ids':[2,3],
-                           'completion_token_ids':response,'correct':bool(i%2),'truncated':not bool(i%2),
-                           'finish_reason':'stop' if i%2 else 'length','source_split':'train',
+                           'completion_token_ids':response,'correct':bool(i%2),'truncated':False,
+                           'finish_reason':'stop','source_split':'train',
                            'source':'vllm_rollout','fixture':False,'max_tokens':16,'group_index':i,
                            'policy_version':j['policy_version']}
                         ids=torch.tensor([r['prompt_token_ids']+response])

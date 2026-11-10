@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/unittest/__main__.py", line 18, in <module>
+    main(module=None)
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/unittest/main.py", line 102, in __init__
+    self.runTests()
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/unittest/main.py", line 274, in runTests
+    self.result = testRunner.run(self.test)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/unittest/runner.py", line 217, in run
+    test(result)
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/unittest/suite.py", line 122, in run
+    test(result)
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/unittest/suite.py", line 122, in run
+    test(result)
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/unittest/suite.py", line 122, in run
+    test(result)
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/unittest/case.py", line 678, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'PosixPath' object is not callable
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}

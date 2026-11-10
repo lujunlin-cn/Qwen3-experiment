@@ -22,7 +22,7 @@ from utils.course_protocol import (TASKSET, check_protocol, digest, metrics, pro
 
 NOTEBOOKS = {'sft':'03_SFT.ipynb', 'dpo':'04_DPO.ipynb', 'ppo':'05_PPO.ipynb', 'grpo':'06_GRPO.ipynb'}
 
-def notebook_api(method, chunk_size=64):
+def notebook_api(method, chunk_size=64, settings=None):
     """Execute config and selected definitions, never notebook smoke/GPU entrypoints."""
     module = types.ModuleType('course_' + method)
     sys.modules[module.__name__] = module
@@ -33,17 +33,19 @@ def notebook_api(method, chunk_size=64):
         '"data" / "processed" / "splits"',
         '"data" / "processed" / "tasksets" / "roman_gravity_equation_v1" / "splits"')
     exec(compile(config_source, NOTEBOOKS[method]+':config', 'exec'), ns)
-    ns.update({'OFFICIAL_VERIFIER_VERSION':'official_nvidia_metric_v3', 'GAMMA':1.0, 'GAE_LAMBDA':1.0,
+    settings = settings or {}
+    ns.update({'OFFICIAL_VERIFIER_VERSION':'official_nvidia_metric_v3', 'GAMMA':settings.get('gamma',1.0),
+               'GAE_LAMBDA':settings.get('gae_lambda',1.0), 'DPO_BETA':settings.get('beta',0.1),
                'TOKEN_CHUNK_SIZE':chunk_size})
     wanted = {
         'sft':{'_format_trace','make_trace_record','encode_chat_example','collate_causal_examples','course_sft_loss_sum'},
-        'dpo':{'_completion_length','course_preference_pairs','course_dpo_backward'},
+        'dpo':{'_completion_length','course_preference_pairs','course_dpo_backward','gravity_preference_pairs'},
         'ppo':{'PPORollout','validate_rollout_alignment','outcome_reward','_recompute','_effective_attention_mask',
                '_selected_logprob','_token_entropy','token_logprobs','entropy_from_logits','projected_policy_statistics',
                'masked_mean','compute_gae','normalize_masked','ppo_clip_loss','value_loss','approx_kl','explained_variance',
                'CausalLMValueHead','align_response_mask','align_ppo_action_axis','ppo_update',
                'build_ppo_rollout_from_records','course_ppo_outcome'},
-        'grpo':{'group_advantage','grpo_clip_loss','policy_logprob_change','course_efficiency_reward'},
+        'grpo':{'group_advantage','grpo_clip_loss','policy_logprob_change','course_efficiency_reward','equation_reward_components'},
     }[method]
     loaded = set()
     for i,cell in enumerate(notebook['cells']):
@@ -54,6 +56,8 @@ def notebook_api(method, chunk_size=64):
             exec(compile(ast.Module(body=definitions,type_ignores=[]), NOTEBOOKS[method]+f':cell{i}', 'exec'), ns)
             loaded.update(node.name for node in definitions)
     assert loaded == wanted, wanted-loaded
+    if method == 'ppo':
+        ns['equation_reward_components'] = notebook_api('grpo')['equation_reward_components']
     return ns
 
 def artifact_fingerprint(adapter):
@@ -132,15 +136,40 @@ def verify_rows(rows):
                  verifier_version='official_nvidia_metric_v3')
     return rows
 
+def attach_proof_audits(rows):
+    """Data processing only; independent mathematics stays in Notebook 01."""
+    from utils.run_synthetic_smoke import load_notebook
+    ns=load_notebook('round2_worker_verifier_cpu_definitions')
+    for row in rows:
+        seed={'prompt':row['prompt'],'task_type':row['task_type'],'answer':row['expected_answer']}
+        audit=ns['audit_closed_completion'](seed,row['completion'])
+        complete=not row['truncated'] and row['finish_reason']=='stop'
+        row.update(proof_audit=audit,format_valid=audit['format_valid'],
+            exact_trace_pass=bool(complete and audit['exact_trace_pass']),
+            correct=bool(complete and audit['final_correct']),predicted=audit.get('predicted'),
+            proof_verifier_version='round2-closed-proof-v1',proof_scope='closed final JSON; thinking is not process-certified')
+    return rows
+
 def generate(job, c):
     from transformers import AutoTokenizer
     from vllm import LLM, SamplingParams
     from vllm.lora.request import LoRARequest
     rows=read_rows(job['panel']); prior=read(Path(job['run'])/'public_priors.json')
+    rollout=job['kind']=='rollout'
+    decoding=c.get('sampling' if rollout else 'evaluation',{})
+    temperature=decoding.get('temperature',1.0 if rollout else .6)
+    top_p=decoding.get('top_p',1.0 if rollout else .95)
+    top_k=decoding.get('top_k',-1 if rollout else 20)
     tokenizer=AutoTokenizer.from_pretrained(job['model'],local_files_only=True)
     prompts=[prompt_text(r['prompt'],r['task_type'],job['variant'],prior) for r in rows]
+    contract=job.get('output_contract') or c.get(job.get('method'),{}).get('output_contract')
+    if contract:
+        if contract!='closed_trace_v1': raise ValueError('Unknown output contract')
+        from utils.run_synthetic_smoke import load_notebook
+        proof_ns=load_notebook('round2_worker_prompt_cpu_definitions')
+        prompts=[p+'\n\n'+proof_ns['SMOKE_TRACE_INSTRUCTIONS'][r['task_type']] for p,r in zip(prompts,rows)]
     rendered=[tokenizer.apply_chat_template([{'role':'user','content':p}],tokenize=False,
-                    add_generation_prompt=True,enable_thinking=True) for p in prompts]
+                    add_generation_prompt=True,enable_thinking=decoding.get('enable_thinking',True)) for p in prompts]
     caps=[job.get('cap') or c['eval_caps'][r['task_type']] for r in rows]
     for text,cap in zip(rendered,caps):
         if len(tokenizer.encode(text,add_special_tokens=False))+cap > c['max_model_len']:
@@ -153,9 +182,8 @@ def generate(job, c):
     if c.get('compilation_config') is not None:
         engine_options['compilation_config']=c['compilation_config']
     engine=LLM(**engine_options)
-    rollout=job['kind']=='rollout'
-    params=[SamplingParams(n=job.get('candidates',1),temperature=1.0 if rollout else .6,
-        top_p=1.0 if rollout else .95,top_k=-1 if rollout else 20,max_tokens=cap,
+    params=[SamplingParams(n=job.get('candidates',1),temperature=temperature,
+        top_p=top_p,top_k=top_k,max_tokens=cap,
         logprobs=1 if rollout else None,seed=job['seed'],skip_special_tokens=False) for cap in caps]
     adapter=LoRARequest('course_policy',1,job['adapter']) if job.get('adapter') else None
     start=time.perf_counter()
@@ -176,9 +204,18 @@ def generate(job, c):
                 'behavior_logprobs':lps,'finish_reason':out.finish_reason,'stop_reason':out.stop_reason,
                 'truncated':out.finish_reason=='length','max_tokens':cap,'group_index':k,
                 'policy_version':job['policy_version'],'source':'vllm_rollout' if rollout else 'vllm_evaluation',
-                'fixture':False,'temperature':1.0 if rollout else .6,'top_p':1.0 if rollout else .95,
-                'top_k':-1 if rollout else 20,'variant':job['variant']})
+                'fixture':False,'temperature':temperature,'top_p':top_p,
+                'top_k':top_k,'variant':job['variant'],'seed':job['seed'],
+                'output_contract':contract})
     result=verify_rows(result)
+    if contract:
+        result=attach_proof_audits(result)
+        report_reward=c.get('evaluation',{}).get('report_reward_ablation') if not rollout else None
+        if report_reward:
+            reward_api=notebook_api('grpo')['equation_reward_components']
+            for row in result:
+                if row['task_type']=='equation_numeric':
+                    row['reward_components']=reward_api(row,row['proof_audit'],report_reward)
     write_rows(Path(job['output'])/'rows.jsonl',result)
     seconds=time.perf_counter()-start
     return {'status':'completed','metrics':metrics(result),'records':len(result),
@@ -190,6 +227,8 @@ def optimizer_for(model, job, settings):
     optimizer=torch.optim.AdamW([p for p in model.parameters() if p.requires_grad],lr=settings['learning_rate'])
     if job.get('trainer_state'):
         state=torch.load(job['trainer_state'],map_location='cpu',weights_only=True)
+        if state.get('method') and state['method']!=job.get('method'):
+            raise ValueError('Optimizer checkpoint belongs to a different algorithm')
         optimizer.load_state_dict(state['optimizer'])
     return optimizer
 
@@ -253,26 +292,50 @@ def save_training(policy,tokenizer,optimizer,job,result,value_head=None):
     }
     output=Path(job['output']); adapter=output/'adapter'
     policy.save_pretrained(adapter); tokenizer.save_pretrained(adapter)
-    torch.save({'optimizer':optimizer.state_dict()},output/'trainer.pt')
+    previous_steps=0
+    if job.get('trainer_state'):
+        previous_steps=torch.load(job['trainer_state'],map_location='cpu',weights_only=True).get('optimizer_steps_total',0)
+    total_steps=previous_steps+result.get('optimizer_steps',0)
+    torch.save({'optimizer':optimizer.state_dict(),'optimizer_steps_total':total_steps,
+                'method':job['method'],'parent_policy_version':job['policy_version']},output/'trainer.pt')
     if value_head is not None: torch.save(value_head.state_dict(),output/'value_head.pt')
     manifest={'status':'completed','adapter_path':str(adapter),'method':job['method'],
         'round':job['round'],'parent_policy_version':job['policy_version'],
         'policy_version':f"{job['method']}:round{job['round']}:{artifact_fingerprint(adapter)['adapter_model.safetensors'][:12]}",
         'parent_fingerprint':artifact_fingerprint(job.get('adapter')),'weights':artifact_fingerprint(adapter),
         'sft_reference':job.get('sft_adapter'),'base_model_path':job['model'],
-        'trainer_state':str(output/'trainer.pt'),'value_head':str(output/'value_head.pt') if value_head is not None else None}
+        'trainer_state':str(output/'trainer.pt'),'value_head':str(output/'value_head.pt') if value_head is not None else None,
+        'trainer_state_sha256':digest(output/'trainer.pt'),
+        'value_head_sha256':digest(output/'value_head.pt') if value_head is not None else None,
+        'optimizer_steps_total':total_steps,
+        'optimizer_learning_rates':[g['lr'] for g in optimizer.param_groups],
+        'effective_lora':{name:{'r':cfg.r,'lora_alpha':cfg.lora_alpha,
+            'lora_dropout':cfg.lora_dropout,'target_modules':sorted(cfg.target_modules or [])}
+            for name,cfg in policy.peft_config.items()}}
     write(output/'checkpoint.json',manifest)
     return dict(result,checkpoint=manifest)
 
 def train_dpo(job,c):
     import torch
     from utils.low_memory_logprobs import causal_sequence_logprob
-    ns=notebook_api('dpo'); settings=c['dpo']; output=Path(job['output'])
-    rows=read_rows(job['rollout']); pairs=ns['course_preference_pairs'](rows)
+    settings=c['dpo']; ns=notebook_api('dpo',c['projection_chunk_size'],settings); output=Path(job['output'])
+    rows=read_rows(job['rollout'])
+    if settings.get('preference_mode'):
+        rows=attach_proof_audits(rows)
+        pairs=ns['gravity_preference_pairs'](rows,settings['preference_mode'])
+    else:
+        pairs=ns['course_preference_pairs'](rows)
     validate_training_rows(rows,job,c)
     write_rows(output/'preferences.jsonl',[{'sample_id':p['sample_id'],'task_type':p['task_type'],
         'preference_reason':p['preference_reason'],'chosen_group_index':p['chosen']['group_index'],
         'rejected_group_index':p['rejected']['group_index']} for p in pairs])
+    prompt_count=len({r['sample_id'] for r in rows})
+    write(output/'preference_coverage.json',{'rollout_sha256':digest(job['rollout']),
+        'prompts':prompt_count,'pairs':len(pairs),'covered_prompts':len({p['sample_id'] for p in pairs}),
+        'coverage_rate':len({p['sample_id'] for p in pairs})/prompt_count if prompt_count else 0,
+        'pairs_by_prompt':{key:sum(p['sample_id']==key for p in pairs) for key in sorted({r['sample_id'] for r in rows})},
+        'preference_mode':settings.get('preference_mode','legacy_correctness_plus_length'),
+        'truncated_candidates_excluded':sum(bool(r['truncated']) for r in rows)})
     if not pairs: return {'status':'no_preference_signal','optimizer_steps':0}
     policy,tokenizer=load_policy(job['model'],settings['mode'],job['adapter'])
     # Two small LoRA adapters share one frozen base. Reference remains original SFT in every round.
@@ -291,17 +354,19 @@ def train_dpo(job,c):
     write(output/'reference_scores.json',{'reference_fingerprint':artifact_fingerprint(job['sft_adapter']),
         'reference_mode':settings['mode'],'rows':cached})
     optimizer=optimizer_for(policy,job,settings); steps=0;losses=[];start=time.perf_counter()
-    for k in range(0,len(pairs),settings['gradient_accumulation']):
-        window=pairs[k:k+settings['gradient_accumulation']];optimizer.zero_grad(set_to_none=True)
-        for i,pair in enumerate(window,k):
-            with torch.no_grad(): values=[score(pair[s]) for s in ('chosen','rejected')]
-            refs=[values[0].new_tensor([v]) for v in cached[i]]
-            loss=ns['course_dpo_backward'](policy,values,refs,lambda side:score(pair[side]),scale=1/len(window))
-            if not __import__('math').isfinite(loss): raise ValueError('Nonfinite DPO')
-            losses.append(loss)
-        torch.nn.utils.clip_grad_norm_(policy.parameters(),1.0);optimizer.step();steps+=1
+    for epoch in range(settings.get('epochs',1)):
+        for k in range(0,len(pairs),settings['gradient_accumulation']):
+            window=pairs[k:k+settings['gradient_accumulation']];optimizer.zero_grad(set_to_none=True)
+            for i,pair in enumerate(window,k):
+                with torch.no_grad(): values=[score(pair[s]) for s in ('chosen','rejected')]
+                refs=[values[0].new_tensor([v]) for v in cached[i]]
+                loss=ns['course_dpo_backward'](policy,values,refs,lambda side:score(pair[side]),
+                    beta=settings.get('beta',0.1),scale=1/len(window))
+                if not __import__('math').isfinite(loss): raise ValueError('Nonfinite DPO')
+                losses.append(loss)
+            torch.nn.utils.clip_grad_norm_(policy.parameters(),1.0);optimizer.step();steps+=1
     # Save only the trainable default adapter; keep the immutable SFT reference separate.
-    result={'status':'completed','pairs':len(pairs),'optimizer_steps':steps,
+    result={'status':'completed','pairs':len(pairs),'optimizer_steps':steps,'epochs':settings.get('epochs',1),
             'losses':losses,'training_seconds':time.perf_counter()-start,'reference':'same frozen SFT for all rounds',
             'logprob_backend':'sequential DPO backward; checkpointed full-vocabulary projection'}
     policy.delete_adapter('reference')
@@ -310,13 +375,23 @@ def train_dpo(job,c):
 def train_on_policy(job,c):
     import torch
     from utils.low_memory_logprobs import causal_policy_logprobs
-    method=job['method']; settings=c[method];ns=notebook_api(method,c['projection_chunk_size']);output=Path(job['output'])
+    method=job['method']; settings=c[method];ns=notebook_api(method,c['projection_chunk_size'],settings);output=Path(job['output'])
+    if settings.get('reference_kl_coef',0)!=0:
+        raise ValueError('Reference KL has no implemented frozen-reference path; only coefficient 0 is supported')
     rows=read_rows(job['rollout'])
     validate_training_rows(rows,job,c)
+    reward_ablation=settings.get('reward_ablation')
+    if reward_ablation:
+        rows=attach_proof_audits(rows)
+        for row in rows:
+            row['reward_components']=ns['equation_reward_components'](row,row['proof_audit'],reward_ablation)
+        write_rows(output/'reward_audit.jsonl',rows)
     policy,tokenizer=load_policy(job['model'],settings['mode'],job['adapter']);device=policy.get_input_embeddings().weight.device
     ns['TOKEN_CHUNK_SIZE']=c['projection_chunk_size']
     audit=alignment(policy,rows,c['projection_chunk_size'],output)
     if method=='ppo':
+        if job.get('trainer_state') and not job.get('value_head'):
+            raise ValueError('PPO optimizer resume requires the matching Value Head')
         model=ns['CausalLMValueHead'](policy)
         if job.get('value_head'):
             model.value_head.load_state_dict(torch.load(job['value_head'],map_location=device,weights_only=True))
@@ -326,6 +401,9 @@ def train_on_policy(job,c):
         for row in rows:
             r=ns['build_ppo_rollout_from_records']([row],model,tokenizer.pad_token_id)
             r=ns['course_ppo_outcome'](r,row)
+            if reward_ablation:
+                last=int(torch.nonzero(r.response_mask[0],as_tuple=False)[-1])
+                r.rewards[0,last]=row['reward_components']['combined']
             rewards,values,dones,mask=ns['align_ppo_action_axis'](r.rewards,r.old_values,r.dones,r.response_mask)
             adv,_=ns['compute_gae'](rewards,values,dones,mask)
             all_adv.append(adv[mask.bool()].cpu());counts.append(int(mask.sum()))
@@ -342,7 +420,8 @@ def train_on_policy(job,c):
                 for key in ('input_ids','attention_mask','response_mask','old_logprobs','old_values','rewards','dones'):
                     setattr(r,key,getattr(r,key).to(device))
                 logs.append(ns['ppo_update'](model,optimizer,r,step_optimizer=False,
-                    loss_scale=counts[i]/denom,advantage_stats=stats,entropy_coef=settings['entropy_coef'],kl_coef=0.0))
+                    loss_scale=counts[i]/denom,advantage_stats=stats,entropy_coef=settings['entropy_coef'],kl_coef=0.0,
+                    clip_eps=settings.get('clip_eps',.2),value_coef=settings.get('value_coef',.5)))
                 for key in ('input_ids','attention_mask','response_mask','old_logprobs','old_values','rewards','dones'):
                     setattr(r,key,getattr(r,key).cpu())
             torch.nn.utils.clip_grad_norm_(model.parameters(),1.0);optimizer.step();steps+=1
@@ -352,14 +431,25 @@ def train_on_policy(job,c):
         return save_training(policy,tokenizer,optimizer,job,result,model.value_head)
     grouped={}
     for row in rows: grouped.setdefault(row['sample_id'],[]).append(row)
-    ordered=[];advantages=[];variances=[]
+    ordered=[];advantages=[];variances=[];group_audit=[]
     for group in grouped.values():
         group.sort(key=lambda r:r['group_index'])
         if len(group)!=settings['candidates'] or len({r['group_index'] for r in group})!=settings['candidates']:
             raise ValueError('Incomplete GRPO group')
-        rewards=torch.tensor([[ns['course_efficiency_reward'](r) for r in group]],dtype=torch.float32)
+        rewards=torch.tensor([[(r['reward_components']['combined'] if reward_ablation
+                               else ns['course_efficiency_reward'](r)) for r in group]],dtype=torch.float32)
         adv,_,std=ns['group_advantage'](rewards)
+        correct=sum(bool(r['correct']) for r in group)
+        group_audit.append({'sample_id':group[0]['sample_id'],
+            'group_type':'all_correct' if correct==len(group) else ('all_wrong' if not correct else 'mixed'),
+            'rewards':rewards.flatten().tolist(), 'advantages':adv.flatten().tolist(),
+            'reward_mean':float(rewards.mean()),'reward_variance':float(std[0]**2),
+            'reward_std_population':float(std[0]),'effective':bool(float(std[0])>1e-6),
+            'components':[r.get('reward_components') for r in group]})
         variances.append(float(std[0]));ordered+=group;advantages+=adv.flatten().tolist()
+    write(output/'group_reward_audit.json',{'groups':group_audit,
+        'effective_group_ratio':sum(g['effective'] for g in group_audit)/len(group_audit),
+        'normalization':'(reward-mean)/(population_std+1e-6); std<=1e-6 -> zero'})
     if not any(v>1e-6 for v in variances):
         return {'status':'no_group_signal','optimizer_steps':0,'group_stds':variances,'alignment':audit}
     optimizer=optimizer_for(policy,job,settings);logs=[];steps=0;start=time.perf_counter()
@@ -371,14 +461,17 @@ def train_on_policy(job,c):
             old=torch.zeros_like(ids[:,:-1],dtype=torch.float32)
             old[mask[:,1:].bool()]=torch.tensor(row['behavior_logprobs'],device=device)
             new=causal_policy_logprobs(policy,ids,None,c['projection_chunk_size'])
-            result=ns['grpo_clip_loss'](old,new,torch.tensor([advantages[i]],device=device),mask[:,1:])
+            result=ns['grpo_clip_loss'](old,new,torch.tensor([advantages[i]],device=device),mask[:,1:],
+                                       clip_eps=settings.get('clip_eps',.2))
             if not torch.isfinite(result['loss']): raise ValueError('Nonfinite GRPO')
-            (result['loss']*len(row['completion_token_ids'])/denom).backward()
+            weight=(1/len(window) if settings.get('loss_reduction')=='sequence_mean'
+                    else len(row['completion_token_ids'])/denom)
+            (result['loss']*weight).backward()
             logs.append(float(result['loss'].detach()));del new,result
         torch.nn.utils.clip_grad_norm_(policy.parameters(),1.0);optimizer.step();steps+=1
     result={'status':'completed','optimizer_steps':steps,'losses':logs,'group_stds':variances,
             'training_seconds':time.perf_counter()-start,'alignment':audit,'reference_kl_coef':0,
-            'reward_definition':'correct complete: 1-.15*length/cap; otherwise 0','outcomes':metrics(rows)}
+        'reward_definition':reward_ablation or 'correct complete: 1-.15*length/cap; otherwise 0','outcomes':metrics(rows)}
     return save_training(policy,tokenizer,optimizer,job,result)
 
 def main():

@@ -1,0 +1,356 @@
+[09:53:00] [INFO] ✅ Validation passed
+[09:53:00] [INFO] 🕵️ Preview generation in progress
+[09:53:00] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[09:53:00] [INFO] ✅ Validation passed
+[09:53:00] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[09:53:00] [INFO] 🩺 Running health checks for models...
+[09:53:00] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[09:53:00] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[09:53:00] [INFO] ⚡ Using async task-queue preview
+[09:53:00] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[09:53:00] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:00] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[09:53:00] [INFO]   |-- model provider: 'local-vllm'
+[09:53:00] [INFO]   |-- inference parameters:
+[09:53:00] [INFO]   |  |-- generation_type=chat-completion
+[09:53:00] [INFO]   |  |-- max_parallel_requests=1
+[09:53:00] [INFO]   |  |-- timeout=180
+[09:53:00] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[09:53:00] [INFO]   |  |-- temperature=0.30
+[09:53:00] [INFO]   |  |-- top_p=0.90
+[09:53:00] [INFO]   |  |-- max_tokens=1024
+[09:53:00] [INFO] 📝 llm-text model config for column 'trace_variant'
+[09:53:00] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:00] [INFO]   |-- model alias: 'local-qwen3-trace'
+[09:53:00] [INFO]   |-- model provider: 'local-vllm'
+[09:53:00] [INFO]   |-- inference parameters:
+[09:53:00] [INFO]   |  |-- generation_type=chat-completion
+[09:53:00] [INFO]   |  |-- max_parallel_requests=1
+[09:53:00] [INFO]   |  |-- timeout=180
+[09:53:00] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[09:53:00] [INFO]   |  |-- temperature=0.30
+[09:53:00] [INFO]   |  |-- top_p=0.90
+[09:53:00] [INFO]   |  |-- max_tokens=2048
+[09:53:00] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 18 tasks across 1 row group(s)
+[09:53:00] [INFO] 🚀 (1/1) Dispatching with 9 records
+[09:53:00] [INFO] 🌱 (1/1) Sampling 9 records from seed dataset
+[09:53:00] [INFO]   |-- seed dataset size: 9 records
+[09:53:00] [INFO]   |-- sampling strategy: ordered
+[09:53:00] [INFO] 📊 Progress [0.1s]:
+[09:53:00] [INFO]   |-- 🦁 column 'prompt_variant': 9/9 (100%) 81.1 rec/s
+[09:53:00] [INFO]   |-- 🐔 column 'trace_variant': 9/9 (100%) 81.1 rec/s
+[09:53:00] [INFO] ✅ Async generation complete [0.1s]: 18 ok, 0 failed across 2 column(s)
+[09:53:00] [INFO] 📊 Model usage summary:
+[09:53:00] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[09:53:00] [INFO]   |-- tokens: input=900, output=180, total=1080, tps=9196
+[09:53:00] [INFO]   |-- requests: success=9, failed=0, total=9, rpm=4598
+[09:53:00] [INFO] 📐 Measuring dataset column statistics:
+[09:53:00] [INFO]   |-- 📝 column: 'prompt_variant'
+[09:53:01] [INFO]   |-- 📝 column: 'trace_variant'
+[09:53:01] [INFO]   |-- 🌱 column: 'seed_id'
+[09:53:01] [INFO]   |-- 🌱 column: 'task_type'
+[09:53:01] [INFO]   |-- 🌱 column: 'prompt'
+[09:53:01] [INFO] 🙌 Preview complete!
+[09:53:01] [INFO] ✅ Validation passed
+[09:53:01] [INFO] 🕵️ Preview generation in progress
+[09:53:01] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[09:53:01] [INFO] ✅ Validation passed
+[09:53:01] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[09:53:01] [INFO] 🩺 Running health checks for models...
+[09:53:01] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[09:53:01] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[09:53:01] [INFO] ⚡ Using async task-queue preview
+[09:53:01] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[09:53:01] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:01] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[09:53:01] [INFO]   |-- model provider: 'local-vllm'
+[09:53:01] [INFO]   |-- inference parameters:
+[09:53:01] [INFO]   |  |-- generation_type=chat-completion
+[09:53:01] [INFO]   |  |-- max_parallel_requests=1
+[09:53:01] [INFO]   |  |-- timeout=180
+[09:53:01] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[09:53:01] [INFO]   |  |-- temperature=0.30
+[09:53:01] [INFO]   |  |-- top_p=0.90
+[09:53:01] [INFO]   |  |-- max_tokens=1024
+[09:53:01] [INFO] 📝 llm-text model config for column 'trace_variant'
+[09:53:01] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:01] [INFO]   |-- model alias: 'local-qwen3-trace'
+[09:53:01] [INFO]   |-- model provider: 'local-vllm'
+[09:53:01] [INFO]   |-- inference parameters:
+[09:53:01] [INFO]   |  |-- generation_type=chat-completion
+[09:53:01] [INFO]   |  |-- max_parallel_requests=1
+[09:53:01] [INFO]   |  |-- timeout=180
+[09:53:01] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[09:53:01] [INFO]   |  |-- temperature=0.30
+[09:53:01] [INFO]   |  |-- top_p=0.90
+[09:53:01] [INFO]   |  |-- max_tokens=2048
+[09:53:01] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 18 tasks across 1 row group(s)
+[09:53:01] [INFO] 🚀 (1/1) Dispatching with 9 records
+[09:53:01] [INFO] 🌱 (1/1) Sampling 9 records from seed dataset
+[09:53:01] [INFO]   |-- seed dataset size: 9 records
+[09:53:01] [INFO]   |-- sampling strategy: ordered
+[09:53:01] [INFO] 📊 Progress [0.1s]:
+[09:53:01] [INFO]   |-- 🐔 column 'prompt_variant': 9/9 (100%) 109.8 rec/s
+[09:53:01] [INFO]   |-- 🤩 column 'trace_variant': 9/9 (100%) 109.8 rec/s
+[09:53:01] [INFO] ✅ Async generation complete [0.1s]: 18 ok, 0 failed across 2 column(s)
+[09:53:01] [INFO] 📊 Model usage summary:
+[09:53:01] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[09:53:01] [INFO]   |-- tokens: input=900, output=180, total=1080, tps=12537
+[09:53:01] [INFO]   |-- requests: success=9, failed=0, total=9, rpm=6268
+[09:53:01] [INFO] 📐 Measuring dataset column statistics:
+[09:53:01] [INFO]   |-- 📝 column: 'prompt_variant'
+[09:53:01] [INFO]   |-- 📝 column: 'trace_variant'
+[09:53:01] [INFO]   |-- 🌱 column: 'seed_id'
+[09:53:01] [INFO]   |-- 🌱 column: 'task_type'
+[09:53:01] [INFO]   |-- 🌱 column: 'prompt'
+[09:53:01] [INFO] 👏 Preview complete!
+[09:53:02] [INFO] ✅ Validation passed
+[09:53:02] [INFO] 🕵️ Preview generation in progress
+[09:53:02] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[09:53:02] [INFO] ✅ Validation passed
+[09:53:02] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[09:53:02] [INFO] 🩺 Running health checks for models...
+[09:53:02] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[09:53:02] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[09:53:02] [INFO] ⚡ Using async task-queue preview
+[09:53:02] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[09:53:02] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:02] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[09:53:02] [INFO]   |-- model provider: 'local-vllm'
+[09:53:02] [INFO]   |-- inference parameters:
+[09:53:02] [INFO]   |  |-- generation_type=chat-completion
+[09:53:02] [INFO]   |  |-- max_parallel_requests=1
+[09:53:02] [INFO]   |  |-- timeout=180
+[09:53:02] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[09:53:02] [INFO]   |  |-- temperature=0.30
+[09:53:02] [INFO]   |  |-- top_p=0.90
+[09:53:02] [INFO]   |  |-- max_tokens=1024
+[09:53:02] [INFO] 🗂️ llm-structured model config for column 'trace_variant'
+[09:53:02] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:02] [INFO]   |-- model alias: 'local-qwen3-trace'
+[09:53:02] [INFO]   |-- model provider: 'local-vllm'
+[09:53:02] [INFO]   |-- inference parameters:
+[09:53:02] [INFO]   |  |-- generation_type=chat-completion
+[09:53:02] [INFO]   |  |-- max_parallel_requests=1
+[09:53:02] [INFO]   |  |-- timeout=180
+[09:53:02] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42, 'response_format': {'type': 'json_schema', 'json_schema': {'name': 'numeral_system_trace', 'strict': True, 'schema': {'type': 'object', 'properties': {'task_type': {'type': 'string', 'enum': ['numeral_system']}, 'answer': {'type': 'string'}, 'query': {'type': 'integer'}, 'components': {'type': 'array', 'minItems': 1, 'items': {'type': 'object', 'properties': {'arabic': {'type': 'integer', 'minimum': 1}, 'roman': {'type': 'string'}}, 'required': ['arabic', 'roman'], 'additionalProperties': False}}}, 'required': ['task_type', 'answer', 'query', 'components'], 'additionalProperties': False}}}}
+[09:53:02] [INFO]   |  |-- temperature=0.30
+[09:53:02] [INFO]   |  |-- top_p=0.90
+[09:53:02] [INFO]   |  |-- max_tokens=2048
+[09:53:02] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 6 tasks across 1 row group(s)
+[09:53:02] [INFO] 🚀 (1/1) Dispatching with 3 records
+[09:53:02] [INFO] 🌱 (1/1) Sampling 3 records from seed dataset
+[09:53:02] [INFO]   |-- seed dataset size: 3 records
+[09:53:02] [INFO]   |-- sampling strategy: ordered
+[09:53:02] [INFO] 📊 Progress [0.0s]:
+[09:53:02] [INFO]   |-- 🦁 column 'prompt_variant': 3/3 (100%) 70.3 rec/s
+[09:53:02] [INFO]   |-- 🦁 column 'trace_variant': 3/3 (100%) 70.3 rec/s
+[09:53:02] [INFO] ✅ Async generation complete [0.0s]: 6 ok, 0 failed across 2 column(s)
+[09:53:02] [INFO] 📊 Model usage summary:
+[09:53:02] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[09:53:02] [INFO]   |-- tokens: input=300, output=60, total=360, tps=7765
+[09:53:02] [INFO]   |-- requests: success=3, failed=0, total=3, rpm=3882
+[09:53:02] [INFO] 📐 Measuring dataset column statistics:
+[09:53:02] [INFO]   |-- 📝 column: 'prompt_variant'
+[09:53:02] [INFO]   |-- 🗂️ column: 'trace_variant'
+[09:53:02] [INFO]   |-- 🌱 column: 'seed_id'
+[09:53:02] [INFO]   |-- 🌱 column: 'task_type'
+[09:53:02] [INFO]   |-- 🌱 column: 'prompt'
+[09:53:02] [INFO] 👏 Preview complete!
+[09:53:02] [INFO] ✅ Validation passed
+[09:53:02] [INFO] 🔭 Preview generation in progress
+[09:53:02] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[09:53:02] [INFO] ✅ Validation passed
+[09:53:02] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[09:53:02] [INFO] 🩺 Running health checks for models...
+[09:53:02] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[09:53:02] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[09:53:02] [INFO] ⚡ Using async task-queue preview
+[09:53:02] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[09:53:02] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:02] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[09:53:02] [INFO]   |-- model provider: 'local-vllm'
+[09:53:02] [INFO]   |-- inference parameters:
+[09:53:02] [INFO]   |  |-- generation_type=chat-completion
+[09:53:02] [INFO]   |  |-- max_parallel_requests=1
+[09:53:02] [INFO]   |  |-- timeout=180
+[09:53:02] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[09:53:02] [INFO]   |  |-- temperature=0.30
+[09:53:02] [INFO]   |  |-- top_p=0.90
+[09:53:02] [INFO]   |  |-- max_tokens=1024
+[09:53:02] [INFO] 🗂️ llm-structured model config for column 'trace_variant'
+[09:53:02] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:02] [INFO]   |-- model alias: 'local-qwen3-trace'
+[09:53:02] [INFO]   |-- model provider: 'local-vllm'
+[09:53:02] [INFO]   |-- inference parameters:
+[09:53:02] [INFO]   |  |-- generation_type=chat-completion
+[09:53:02] [INFO]   |  |-- max_parallel_requests=1
+[09:53:02] [INFO]   |  |-- timeout=180
+[09:53:02] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42, 'response_format': {'type': 'json_schema', 'json_schema': {'name': 'gravity_trace', 'strict': True, 'schema': {'type': 'object', 'properties': {'task_type': {'type': 'string', 'enum': ['gravity']}, 'answer': {'type': 'string'}, 'g_estimates': {'type': 'array', 'items': {'type': 'number'}}, 'g_ols': {'type': 'number'}, 'query_t': {'type': 'string'}, 'query_distance': {'type': 'number'}}, 'required': ['task_type', 'answer', 'g_estimates', 'g_ols', 'query_t', 'query_distance'], 'additionalProperties': False}}}}
+[09:53:02] [INFO]   |  |-- temperature=0.30
+[09:53:02] [INFO]   |  |-- top_p=0.90
+[09:53:02] [INFO]   |  |-- max_tokens=2048
+[09:53:02] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 6 tasks across 1 row group(s)
+[09:53:02] [INFO] 🚀 (1/1) Dispatching with 3 records
+[09:53:02] [INFO] 🌱 (1/1) Sampling 3 records from seed dataset
+[09:53:02] [INFO]   |-- seed dataset size: 3 records
+[09:53:02] [INFO]   |-- sampling strategy: ordered
+[09:53:02] [INFO] 📊 Progress [0.0s]:
+[09:53:02] [INFO]   |-- 🤩 column 'prompt_variant': 3/3 (100%) 73.8 rec/s
+[09:53:02] [INFO]   |-- 🚀 column 'trace_variant': 3/3 (100%) 73.8 rec/s
+[09:53:02] [INFO] ✅ Async generation complete [0.0s]: 6 ok, 0 failed across 2 column(s)
+[09:53:02] [INFO] 📊 Model usage summary:
+[09:53:02] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[09:53:02] [INFO]   |-- tokens: input=300, output=60, total=360, tps=8087
+[09:53:02] [INFO]   |-- requests: success=3, failed=0, total=3, rpm=4043
+[09:53:02] [INFO] 📐 Measuring dataset column statistics:
+[09:53:02] [INFO]   |-- 📝 column: 'prompt_variant'
+[09:53:02] [INFO]   |-- 🗂️ column: 'trace_variant'
+[09:53:02] [INFO]   |-- 🌱 column: 'seed_id'
+[09:53:02] [INFO]   |-- 🌱 column: 'task_type'
+[09:53:02] [INFO]   |-- 🌱 column: 'prompt'
+[09:53:02] [INFO] ☀️ Preview complete!
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+                                                                                
+  🔎 Identified 1 validation issue in your Data Designer column definitions     
+                                                                                
+                                                                                
+ ─────────────────────────── Column: trace_variant ──────────────────────────── 
+                                                                                
+  ⚠️ WARNING | PARQUET_STORAGE                                                  
+                                                                                
+  Native Parquet storage at $['rules'] allows dynamic object keys that native   
+  struct storage may normalize or fail to serialize. Add                        
+  'x-data-designer-storage': 'json' to this field or an enclosing schema node,  
+  or set storage_encoding='json' on the column. This is a schema risk, not a    
+  prediction that every generated batch will fail.                              
+                                                                                
+ ────────────────────────────────────────────────────────────────────────────── 
+                                                                                
+[09:53:02] [INFO] 🔭 Preview generation in progress
+[09:53:02] [INFO]   |-- 🔒 Jinja rendering engine: secure
+                                                                                
+  🔎 Identified 1 validation issue in your Data Designer column definitions     
+                                                                                
+                                                                                
+ ─────────────────────────── Column: trace_variant ──────────────────────────── 
+                                                                                
+  ⚠️ WARNING | PARQUET_STORAGE                                                  
+                                                                                
+  Native Parquet storage at $['rules'] allows dynamic object keys that native   
+  struct storage may normalize or fail to serialize. Add                        
+  'x-data-designer-storage': 'json' to this field or an enclosing schema node,  
+  or set storage_encoding='json' on the column. This is a schema risk, not a    
+  prediction that every generated batch will fail.                              
+                                                                                
+ ────────────────────────────────────────────────────────────────────────────── 
+                                                                                
+[09:53:02] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[09:53:02] [INFO] 🩺 Running health checks for models...
+[09:53:02] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[09:53:02] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[09:53:02] [INFO] ⚡ Using async task-queue preview
+[09:53:02] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[09:53:02] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:02] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[09:53:02] [INFO]   |-- model provider: 'local-vllm'
+[09:53:02] [INFO]   |-- inference parameters:
+[09:53:02] [INFO]   |  |-- generation_type=chat-completion
+[09:53:02] [INFO]   |  |-- max_parallel_requests=1
+[09:53:02] [INFO]   |  |-- timeout=180
+[09:53:02] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[09:53:02] [INFO]   |  |-- temperature=0.30
+[09:53:02] [INFO]   |  |-- top_p=0.90
+[09:53:02] [INFO]   |  |-- max_tokens=1024
+[09:53:02] [INFO] 🗂️ llm-structured model config for column 'trace_variant'
+[09:53:02] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:02] [INFO]   |-- model alias: 'local-qwen3-trace'
+[09:53:02] [INFO]   |-- model provider: 'local-vllm'
+[09:53:02] [INFO]   |-- inference parameters:
+[09:53:02] [INFO]   |  |-- generation_type=chat-completion
+[09:53:02] [INFO]   |  |-- max_parallel_requests=1
+[09:53:02] [INFO]   |  |-- timeout=180
+[09:53:02] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42, 'response_format': {'type': 'json_schema', 'json_schema': {'name': 'equation_numeric_trace', 'strict': True, 'schema': {'type': 'object', 'properties': {'task_type': {'type': 'string', 'enum': ['equation_numeric']}, 'answer': {'type': 'string'}, 'rules': {'type': 'object', 'additionalProperties': {'type': 'string', 'enum': ['sub', 'absdiff', 'absdiff_prefix', 'join', 'join_swap', 'add', 'add_p1', 'add_m1', 'mul', 'mul_p1', 'mul_m1', 'maxmodmin', 'flip_add', 'flip_add_p1', 'flip_add_m1', 'flip_mul', 'flip_mul_p1', 'flip_mul_m1', 'flip_absdiff', 'flip_maxmodmin', 'flip_sub_prefix', 'flip_sub_suffix', 'flip_absdiff_prefix', 'flip_absdiff_suffix']}}, 'example_outputs': {'type': 'array', 'items': {'type': 'string'}}, 'query_output': {'type': 'string'}}, 'required': ['task_type', 'answer', 'rules', 'example_outputs', 'query_output'], 'additionalProperties': False}}}}
+[09:53:02] [INFO]   |  |-- temperature=0.30
+[09:53:02] [INFO]   |  |-- top_p=0.90
+[09:53:02] [INFO]   |  |-- max_tokens=2048
+[09:53:02] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 6 tasks across 1 row group(s)
+[09:53:02] [INFO] 🚀 (1/1) Dispatching with 3 records
+[09:53:02] [INFO] 🌱 (1/1) Sampling 3 records from seed dataset
+[09:53:02] [INFO]   |-- seed dataset size: 3 records
+[09:53:02] [INFO]   |-- sampling strategy: ordered
+[09:53:02] [INFO] 📊 Progress [0.0s]:
+[09:53:02] [INFO]   |-- 🚀 column 'prompt_variant': 3/3 (100%) 78.7 rec/s
+[09:53:02] [INFO]   |-- 🤩 column 'trace_variant': 3/3 (100%) 78.7 rec/s
+[09:53:02] [INFO] ✅ Async generation complete [0.0s]: 6 ok, 0 failed across 2 column(s)
+[09:53:02] [INFO] 📊 Model usage summary:
+[09:53:02] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[09:53:02] [INFO]   |-- tokens: input=300, output=60, total=360, tps=8991
+[09:53:02] [INFO]   |-- requests: success=3, failed=0, total=3, rpm=4495
+[09:53:02] [INFO] 📐 Measuring dataset column statistics:
+[09:53:02] [INFO]   |-- 📝 column: 'prompt_variant'
+[09:53:02] [INFO]   |-- 🗂️ column: 'trace_variant'
+[09:53:02] [INFO]   |-- 🌱 column: 'seed_id'
+[09:53:02] [INFO]   |-- 🌱 column: 'task_type'
+[09:53:02] [INFO]   |-- 🌱 column: 'prompt'
+[09:53:02] [INFO] 🙌 Preview complete!
+[09:53:02] [INFO] ✅ Validation passed
+[09:53:02] [INFO] 📺 Preview generation in progress
+[09:53:02] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[09:53:02] [INFO] ✅ Validation passed
+[09:53:02] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[09:53:02] [INFO] 🩺 Running health checks for models...
+[09:53:02] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[09:53:02] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[09:53:02] [INFO] ⚡ Using async task-queue preview
+[09:53:02] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[09:53:02] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:02] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[09:53:02] [INFO]   |-- model provider: 'local-vllm'
+[09:53:02] [INFO]   |-- inference parameters:
+[09:53:02] [INFO]   |  |-- generation_type=chat-completion
+[09:53:02] [INFO]   |  |-- max_parallel_requests=1
+[09:53:02] [INFO]   |  |-- timeout=180
+[09:53:02] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[09:53:02] [INFO]   |  |-- temperature=0.30
+[09:53:02] [INFO]   |  |-- top_p=0.90
+[09:53:02] [INFO]   |  |-- max_tokens=1024
+[09:53:02] [INFO] 📝 llm-text model config for column 'trace_variant'
+[09:53:02] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[09:53:02] [INFO]   |-- model alias: 'local-qwen3-trace'
+[09:53:02] [INFO]   |-- model provider: 'local-vllm'
+[09:53:02] [INFO]   |-- inference parameters:
+[09:53:02] [INFO]   |  |-- generation_type=chat-completion
+[09:53:02] [INFO]   |  |-- max_parallel_requests=1
+[09:53:02] [INFO]   |  |-- timeout=180
+[09:53:02] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[09:53:02] [INFO]   |  |-- temperature=0.30
+[09:53:02] [INFO]   |  |-- top_p=0.90
+[09:53:02] [INFO]   |  |-- max_tokens=2048
+[09:53:02] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 18 tasks across 1 row group(s)
+[09:53:02] [INFO] 🚀 (1/1) Dispatching with 9 records
+[09:53:02] [INFO] 🌱 (1/1) Sampling 9 records from seed dataset
+[09:53:02] [INFO]   |-- seed dataset size: 9 records
+[09:53:02] [INFO]   |-- sampling strategy: ordered
+[09:53:03] [INFO] 📊 Progress [0.1s]:
+[09:53:03] [INFO]   |-- 🦁 column 'prompt_variant': 9/9 (100%) 68.5 rec/s
+[09:53:03] [INFO]   |-- ☀️ column 'trace_variant': 9/9 (100%) 68.5 rec/s
+[09:53:03] [INFO] ✅ Async generation complete [0.1s]: 18 ok, 0 failed across 2 column(s)
+[09:53:03] [INFO] 📊 Model usage summary:
+[09:53:03] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[09:53:03] [INFO]   |-- tokens: input=900, output=180, total=1080, tps=8093
+[09:53:03] [INFO]   |-- requests: success=9, failed=0, total=9, rpm=4046
+[09:53:03] [INFO] 📐 Measuring dataset column statistics:
+[09:53:03] [INFO]   |-- 📝 column: 'prompt_variant'
+[09:53:03] [INFO]   |-- 📝 column: 'trace_variant'
+[09:53:03] [INFO]   |-- 🌱 column: 'seed_id'
+[09:53:03] [INFO]   |-- 🌱 column: 'task_type'
+[09:53:03] [INFO]   |-- 🌱 column: 'prompt'
+[09:53:03] [INFO]   |-- 🌱 column: 'solver_context'
+[09:53:03] [INFO] ☀️ Preview complete!
+..
+----------------------------------------------------------------------
+Ran 2 tests in 4.549s
+
+OK

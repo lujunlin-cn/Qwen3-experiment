@@ -1,0 +1,25 @@
+{
+  "synthetic_run_id": "nemo_round2_20261110_c_r1",
+  "status": "prepared_only_gpu_not_run",
+  "arm": "C",
+  "seeds": 9,
+  "expected_outputs": 18,
+  "temperature": 0.3,
+  "top_p": 0.9,
+  "seed": 42,
+  "prompt_max_tokens": 1024,
+  "trace_max_tokens": 2048,
+  "new_output_directory_required": true,
+  "merge_into_sft": false,
+  "max_correction_steps": 0,
+  "quality_metrics": [
+    "accepted_rate",
+    "schema_valid_rate",
+    "exact_trace_pass",
+    "leakage_rejections",
+    "output_tokens",
+    "wall_seconds",
+    "device_peak_sampled_bytes"
+  ],
+  "seed_hash": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8"
+}

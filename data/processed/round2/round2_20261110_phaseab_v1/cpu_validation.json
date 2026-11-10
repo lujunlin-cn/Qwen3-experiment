@@ -1,0 +1,189 @@
+{
+  "status": "passed_cpu_checks_only",
+  "prepared_run_id": "round2_20261110_phaseab_v1",
+  "recorded_at_utc": "2026-11-10T02:08:17.511833+00:00",
+  "source_git_base": "5059a3eb4d2b99f6649d9e861069440ab77c4dba",
+  "source_state": "Reviewed working tree on 5059a3e; exact hashes below. Publication is the containing Git commit.",
+  "source_hashes": {
+    "01_Synthetic_Data_Engineering.ipynb": "914465942505700f9f5ffa399f7b7a53a4358812e19c48e4913bedce32336cff",
+    "03_SFT.ipynb": "7b9130f9ef37bb574f930df75eff52933c46d144a39095c8fc653b4b38f13874",
+    "04_DPO.ipynb": "f1c0281b21af8d79df960d8d9036f398f2abeb1110297e789f24fe3febe57259",
+    "05_PPO.ipynb": "fcaa5f09385d0bf0315078296e8e5b382640c9c42aa5723fd05df325ba5ad2e7",
+    "06_GRPO.ipynb": "37807080d4912650cf2a9d4a9bc0b688db631139512aa05d2fb9d527b01536e1",
+    "utils/run_baseline.py": "099263f28a3e7b70b9a375694c04896bb6e3a5950bebd82158e6ef14e37f097e",
+    "utils/run_nemo_guarded.py": "b4e4aea9ef8977942ecbd4984e8a95f5568075e536530fbc5223847714dce7a8",
+    "utils/benchmark_training.py": "4155aca95e3eb08ea1e645ac74a265dbc970df2f3df2053ceb04a953c9835e29",
+    "utils/budget_low_memory.py": "0348ad94b48028ec5d99a1fc2855592c6469e79dd1886bc25c7c9cf230e7ea7e",
+    "utils/run_synthetic_smoke.py": "7aa90aa6e05e905e62ff89097057c2233663b10b24ff5c00780f88a7c300793e",
+    "utils/prepare_round2.py": "086dec2a54a23fa6c1d628d27f62c00ad3baf9afb86be07523f7cee8208108c8",
+    "utils/prepare_official_dataset.py": "0a8310b0023c540ca388f71174f4ed55bff12065465ebc6c309e6cc29201a61c",
+    "utils/check_low_memory.py": "60274a43b22707639b48a79b17440428a0a09e0b95f7d849e71e34ebb715ca57",
+    "utils/course_run.py": "d43b20ece8372644c6dbacbeaeee25b34242375fc2934e83c7ebbe21c13656c8",
+    "utils/audit_benchmark_results.py": "2f574c21c9c4c5b02c811ea15cc7d7c1ed3d00c2e84c2246f7341f6be9e87e25",
+    "utils/low_memory_logprobs.py": "eb51145e7bf6ccb27d26484499e3a5bbf34ed2d9298f193f85dfad751789f619",
+    "utils/download_qwen3.py": "d2afb84b5321f71ca8a7de34da838bb03d0a27cf9872e8256cecbcc19d9bf10b",
+    "utils/course_worker.py": "8dc0b5b02f1045b6bd3ff7f0f15ee279dc8dda37a58382fe520f21d1be28ae7f",
+    "utils/round2_evaluation.py": "5523f2b482a8a85c234ec15b92647c1994afcac91c06990ff84344d29fb50933",
+    "utils/course_protocol.py": "79fd5c7f27787a81325a075497494c7da4ab3adf8b8fe637f7472c832f5eba73",
+    "tests/test_round2_numerics.py": "5dc844edf324bb542f717473beb811b41870a32790b217917b58beb65dabb6b1",
+    "tests/test_nemo_guarded.py": "7b416e20c6987a9eeb24b180d15f8ec13f3e82c71ebe809a61664e46e20e276c",
+    "tests/test_round2_nemo.py": "5f4a82893a9717acb7019011fe3b493f5a51db109cac9bf02d1d51f3f95b1d78",
+    "tests/test_course_experiment.py": "7d898d6525e744a6f3bd8c5ca68a26ddbc89233bb0de7feedcbf56a4d3c66925",
+    "tests/test_nemo_smoke.py": "35b6ee04cf35a83002da51b6bfc1847bff09e53fc3b614ab8db509fdd8f49885",
+    "configs/round2_design.json": "67c230dc2a8efa8a77d45a226a679f4cb07c9b65ac8d487a8a04c7b90f9a7771"
+  },
+  "tests": [
+    {
+      "log": "course_tests_final_v2.log",
+      "tests": 11,
+      "seconds": 1.595,
+      "status": "passed",
+      "sha256": "77b0768cb33796dce534f4e19c9c66ab42d80e8ffdb3e1cafe77061752148565"
+    },
+    {
+      "log": "numerical_tests_final_v3.log",
+      "tests": 11,
+      "seconds": 4.324,
+      "status": "passed",
+      "sha256": "a2e2b789062475969d345441786d9613ef60c701e7a046160b5a7b2e991bda7b"
+    },
+    {
+      "log": "nemo_tests_final_v2.log",
+      "tests": 7,
+      "seconds": 3.041,
+      "status": "passed",
+      "sha256": "5a9a2950306950bbfcefdacc8973d1fda4340fc49e143bcd8c26fdc78fa8b6ed"
+    },
+    {
+      "log": "nemo_arms_tests_final_v2.log",
+      "tests": 2,
+      "seconds": 4.623,
+      "status": "passed",
+      "sha256": "d5386608474900f10313feff9a67d9e8f294100dfd94daa9ca99baa1e6a681f1"
+    },
+    {
+      "log": "nemo_guard_tests_final.log",
+      "tests": 1,
+      "seconds": 0.02,
+      "status": "passed",
+      "sha256": "0c1444824fd71eec878a61b61872df1e891b1aacd98843caec2dfe110aef03c8"
+    }
+  ],
+  "tests_passed": 32,
+  "numerical_cases": {
+    "status": "passed",
+    "scope": "CPU fixtures only; no pretrained weights or CUDA peak measurement",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.12.0",
+    "peft": "0.21.2",
+    "cases": [
+      {
+        "kind": "projection",
+        "vocab": 37,
+        "dtype": "torch.float32",
+        "chunk": 1,
+        "max_value_delta": 0.0,
+        "max_hidden_grad_delta": 0.0
+      },
+      {
+        "kind": "projection",
+        "vocab": 151936,
+        "dtype": "torch.float32",
+        "chunk": 4,
+        "max_value_delta": 0.0,
+        "max_hidden_grad_delta": 0.0
+      },
+      {
+        "kind": "projection",
+        "vocab": 151936,
+        "dtype": "torch.bfloat16",
+        "chunk": 4,
+        "max_value_delta": 0.0,
+        "max_hidden_grad_delta": 0.0
+      },
+      {
+        "kind": "real_qwen3_peft",
+        "checkpointing": false,
+        "padding": false,
+        "dpo_and_grpo_gradients": "passed",
+        "max_gradient_delta": 0.0,
+        "optimizer_max_parameter_update": 1.0013580322265625e-05
+      },
+      {
+        "kind": "real_qwen3_peft",
+        "checkpointing": false,
+        "padding": true,
+        "dpo_and_grpo_gradients": "passed",
+        "max_gradient_delta": 0.0,
+        "optimizer_max_parameter_update": 1.0013580322265625e-05
+      },
+      {
+        "kind": "real_qwen3_peft",
+        "checkpointing": true,
+        "padding": false,
+        "dpo_and_grpo_gradients": "passed",
+        "max_gradient_delta": 0.0,
+        "optimizer_max_parameter_update": 1.0013580322265625e-05
+      },
+      {
+        "kind": "real_qwen3_peft",
+        "checkpointing": true,
+        "padding": true,
+        "dpo_and_grpo_gradients": "passed",
+        "max_gradient_delta": 0.0,
+        "optimizer_max_parameter_update": 1.0013580322265625e-05
+      }
+    ],
+    "actual_head_projection_widths": [
+      4,
+      4,
+      2
+    ]
+  },
+  "training_environment": {
+    "python": "3.13.12",
+    "torch": "2.11.0+cu130",
+    "transformers": "5.12.0",
+    "peft": "0.21.2"
+  },
+  "nemo_environment": {
+    "python": "3.11.15",
+    "data-designer": "0.10.0",
+    "data-designer-engine": "0.10.0",
+    "data-designer-config": "0.10.0",
+    "litellm": null,
+    "openai": null
+  },
+  "cuda_visible_devices_for_all_final_tests": "",
+  "fixture_scope": "SDK mock responses/random tiny-Qwen numerical fixtures only; no real rollout accuracy or generated data quality claimed.",
+  "new_worker_fixture_scope": "One integration case bypasses production provenance explicitly for fixture=True inputs; real independent proof verifier, backward and optimizers execute.",
+  "historical_failures_retained": [
+    "course_failed_before_cpu_device_fix.log",
+    "nemo_arms_tests.log",
+    "nemo_arms_tests_attempt2.log",
+    "nemo_arms_tests_attempt3.log"
+  ],
+  "pre_fix_baseline_note": "before_course_tests.log was not forced CPU and is not part of the verified final CPU count.",
+  "notebook_validation": {
+    "nbformat": "passed",
+    "all_code_cells_parse": true,
+    "max_code_cell_lines": 100
+  },
+  "original_neMo_rescreen": {
+    "accepted": 0,
+    "preview": 18,
+    "status": "empty_accepted"
+  },
+  "accepted_manifest": "nemo_diagnosis/strict_rescreen/accepted_manifest.json",
+  "active_neMo_configs": "nemo_arms_v2",
+  "superseded_neMo_configs": "nemo_arms",
+  "evaluation_panel_manifest": "panels/manifest.json",
+  "phase_c_train_manifest": "phase_c_train_panels/manifest.json",
+  "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "gpu_phase_c_started": false,
+  "gpu_phase_d_started": false,
+  "awaiting_human_review": true,
+  "formal_runner_registration": "pending review; design schema intentionally not executable by legacy combined runner",
+  "holdout_used_for_tuning": false,
+  "dpo_preference": "Gravity DPO-B only"
+}

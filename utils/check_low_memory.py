@@ -30,7 +30,7 @@ def compare_gradients(reference, actual, atol=3e-6, rtol=3e-4):
     return max(differences)
 
 
-def main():
+def main(output):
     torch.set_num_threads(2)
     torch.manual_seed(317)
     cases = []
@@ -116,7 +116,9 @@ def main():
         causal_policy_logprobs(model, ids, torch.ones_like(ids), 4)
     handle.remove()
     assert widths == [4, 4, 2], widths
-    output = Path('data/processed/benchmarks/qwen3-0_6b/low_memory_20261107/cpu_numerical_checks.json')
+    output = Path(output)
+    if output.exists():
+        raise FileExistsError('Use a new output path; numerical evidence is immutable')
     payload = {'status': 'passed', 'scope': 'CPU fixtures only; no pretrained weights or CUDA peak measurement',
                'torch': torch.__version__, 'transformers': __import__('transformers').__version__,
                'peft': __import__('peft').__version__, 'cases': cases,
@@ -127,4 +129,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', type=Path, required=True)
+    main(parser.parse_args().output)

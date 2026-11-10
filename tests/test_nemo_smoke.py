@@ -159,6 +159,9 @@ class SmokeTests(unittest.TestCase):
                 text=request['messages'][-1]['content']
                 if isinstance(text,list): text=''.join(p.get('text','') for p in text)
                 seed_id=text.split('SEED_ID=',1)[1].splitlines()[0];seed=seeds[seed_id]
+                # Check the real SDK-rendered request, not only the fixture response.
+                if seed['prompt'] not in text or '{{' in text or '{%' in text:
+                    self.send_error(400, 'Seed fields were not rendered');return
                 if 'safe wording variant' in text: content=ns['SMOKE_PREFIXES'][0]+'\n'+seed['prompt']
                 else: content=json.dumps(reference_proof(ns,seed))
                 body={'id':'mock-only','object':'chat.completion','created':1,'model':'Qwen/Qwen3-0.6B',
@@ -187,6 +190,8 @@ class SmokeTests(unittest.TestCase):
                 self.assertEqual(summary['accepted'],18,summary)
                 self.assertEqual(transport['http_requests'],18)
                 self.assertEqual(transport['completion_tokens'],360)
+                captured=smoke.rows(capture)
+                self.assertTrue(all('request' in r for r in captured))
                 self.assertTrue(all(r['trace_variant__transport']['finish_reason']=='stop' for r in records))
                 self.assertTrue(all(r['chat_template_kwargs']=={'enable_thinking':False} for r in requests))
                 self.assertTrue(all(r['model']=='Qwen/Qwen3-0.6B' for r in requests))

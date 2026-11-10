@@ -1,0 +1,118 @@
+{
+  "submitter_commit": "c05e11ab0512617a675e9657c84df2841eb32acd",
+  "retrieved_date": "2026-11-10",
+  "snapshots": {
+    "README.md": {
+      "sha256": "cdf26f20f91abb63106c4d2dbaf9ef8015280cd213c7019520a4a28faf7c454c",
+      "url": "https://github.com/the-submitter/nvidia-nemotron/blob/c05e11ab0512617a675e9657c84df2841eb32acd/README.md",
+      "excerpt": "README.md.excerpt.txt",
+      "ranges": [
+        [
+          1,
+          20
+        ],
+        [
+          175,
+          198
+        ],
+        [
+          255,
+          273
+        ]
+      ]
+    },
+    "src/02_update_dataset.py": {
+      "sha256": "910335018969f1b10a065e35d404432ae8ed10fa22f94d6e9119075f59ef9151",
+      "url": "https://github.com/the-submitter/nvidia-nemotron/blob/c05e11ab0512617a675e9657c84df2841eb32acd/src/02_update_dataset.py",
+      "excerpt": "src_02_update_dataset.py.excerpt.txt",
+      "ranges": [
+        [
+          638,
+          686
+        ]
+      ]
+    },
+    "src/03_dpo.py": {
+      "sha256": "25e159d08c4eede6f2c9ef9964d300ebea15b95acc4ca0c9abe55f0b211a2e9b",
+      "url": "https://github.com/the-submitter/nvidia-nemotron/blob/c05e11ab0512617a675e9657c84df2841eb32acd/src/03_dpo.py",
+      "excerpt": "src_03_dpo.py.excerpt.txt",
+      "ranges": [
+        [
+          223,
+          248
+        ],
+        [
+          850,
+          906
+        ]
+      ]
+    },
+    "logs/02_update_dataset.log": {
+      "sha256": "7a0b2b35bf08f1819643a5b54adc7997c95dea4aee375df1866658fa9f54c599",
+      "url": "https://github.com/the-submitter/nvidia-nemotron/blob/c05e11ab0512617a675e9657c84df2841eb32acd/logs/02_update_dataset.log",
+      "excerpt": "logs_02_update_dataset.log.excerpt.txt",
+      "ranges": [
+        [
+          19,
+          34
+        ],
+        [
+          504,
+          518
+        ],
+        [
+          540,
+          550
+        ],
+        [
+          704,
+          718
+        ]
+      ]
+    },
+    "logs/03_dpo.log": {
+      "sha256": "5d310b2bbfdcae495515df7d8c184c4b2876ebf4c7102fefe9cbf6abc7c185a2",
+      "url": "https://github.com/the-submitter/nvidia-nemotron/blob/c05e11ab0512617a675e9657c84df2841eb32acd/logs/03_dpo.log",
+      "excerpt": "logs_03_dpo.log.excerpt.txt",
+      "ranges": [
+        [
+          28,
+          40
+        ],
+        [
+          46,
+          51
+        ]
+      ]
+    },
+    "rank251": {
+      "source_url": "https://www.kaggle.com/competitions/nvidia-nemotron-model-reasoning-challenge/writeups/trace-format-engineering-and-svd-downsampled-lora",
+      "retrieved_via": "https://r.jina.ai/https://www.kaggle.com/competitions/nvidia-nemotron-model-reasoning-challenge/writeups/trace-format-engineering-and-svd-downsampled-lora",
+      "direct_http_status": 404,
+      "sha256": "cd3fea52b58dba92ab3e0b422a80e919b6c09ee2887cdecaf0d13611ea1d6b84",
+      "file": "rank251_primary.txt"
+    },
+    "rank80": {
+      "source_url": "https://www.kaggle.com/competitions/nvidia-nemotron-model-reasoning-challenge/writeups/breaking-the-sft-ceiling-on-nemotron-3-nano-30b",
+      "retrieved_via": "https://r.jina.ai/https://www.kaggle.com/competitions/nvidia-nemotron-model-reasoning-challenge/writeups/breaking-the-sft-ceiling-on-nemotron-3-nano-30b",
+      "direct_http_status": 404,
+      "sha256": "91fe64a8afb3c4ef834474e8d48f9f1a89c021dcf2b17dbceb5d546b107ca352",
+      "file": "rank80_primary.txt"
+    },
+    "src/04_grpo_gspo_trl.py": {
+      "sha256": "62b8cfe78c00fe744abe970bbea95043a898d8cb64976adfd980de1914b4e719",
+      "url": "https://github.com/the-submitter/nvidia-nemotron/blob/c05e11ab0512617a675e9657c84df2841eb32acd/src/04_grpo_gspo_trl.py",
+      "excerpt": "src_04_grpo_gspo_trl.py.excerpt.txt",
+      "ranges": [
+        [
+          282,
+          288
+        ],
+        [
+          930,
+          1003
+        ]
+      ]
+    }
+  }
+}

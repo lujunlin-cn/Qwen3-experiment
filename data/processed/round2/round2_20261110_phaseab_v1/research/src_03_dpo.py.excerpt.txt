@@ -1,0 +1,83 @@
+223: PER_DEVICE_TRAIN_BATCH_SIZE = int(
+224:     os.environ.get("PER_DEVICE_TRAIN_BATCH_SIZE", "1")
+225: )
+226: PER_DEVICE_EVAL_BATCH_SIZE = int(os.environ.get("PER_DEVICE_EVAL_BATCH_SIZE", "1"))
+227: GRADIENT_ACCUMULATION_STEPS = int(
+228:     os.environ.get("GRADIENT_ACCUMULATION_STEPS", "4")
+229: )
+230: NUM_TRAIN_EPOCHS = float(os.environ.get("NUM_TRAIN_EPOCHS", "2"))
+231: MAX_STEPS = int(os.environ.get("MAX_STEPS", "-1"))
+232: LEARNING_RATE = float(os.environ.get("LEARNING_RATE", "2e-6"))
+233: WARMUP_RATIO = float(os.environ.get("WARMUP_RATIO", "0.03"))
+234: LOGGING_STEPS = int(os.environ.get("LOGGING_STEPS", "1"))
+235: SAVE_STEPS = int(os.environ.get("SAVE_STEPS", "5"))
+236: EVAL_STEPS = int(os.environ.get("EVAL_STEPS", str(SAVE_STEPS)))
+237: SAVE_TOTAL_LIMIT = int(os.environ.get("SAVE_TOTAL_LIMIT", "2"))
+238: LORA_R = int(os.environ.get("LORA_R", "32"))
+239: LORA_ALPHA = int(os.environ.get("LORA_ALPHA", "32"))
+240: 
+241: DPO_BETA = float(os.environ.get("DPO_BETA", "0.1"))
+242: DPO_LOSS_TYPE = os.environ.get("DPO_LOSS_TYPE", "sigmoid")
+243: PRECOMPUTE_REF_LOG_PROBS = os.environ.get(
+244:     "PRECOMPUTE_REF_LOG_PROBS",
+245:     "1",
+246: ).lower() in {"1", "true", "yes"}
+247: REPORT_TO = os.environ.get("REPORT_TO", "wandb")
+248: RESUME_FROM_CHECKPOINT = os.environ.get("RESUME_FROM_CHECKPOINT", "0")
+850:     train_dataset=train_dataset,
+851:     eval_dataset=eval_dataset,
+852:     args=DPOConfig(
+853:         output_dir=str(OUTPUT_DIR),
+854:         run_name=RUN_NAME,
+855:         max_length=MAX_SEQ_LENGTH,
+856:         max_prompt_length=MAX_PROMPT_LENGTH,
+857:         max_completion_length=MAX_COMPLETION_LENGTH,
+858:         dataset_num_proc=DATASET_WORKERS,
+859:         per_device_train_batch_size=PER_DEVICE_TRAIN_BATCH_SIZE,
+860:         per_device_eval_batch_size=PER_DEVICE_EVAL_BATCH_SIZE,
+861:         gradient_accumulation_steps=GRADIENT_ACCUMULATION_STEPS,
+862:         gradient_checkpointing=True,
+863:         gradient_checkpointing_kwargs={"use_reentrant": False},
+864:         num_train_epochs=NUM_TRAIN_EPOCHS,
+865:         max_steps=MAX_STEPS,
+866:         learning_rate=LEARNING_RATE,
+867:         warmup_ratio=WARMUP_RATIO,
+868:         logging_steps=LOGGING_STEPS,
+869:         logging_first_step=True,
+870:         save_strategy="steps",
+871:         save_steps=SAVE_STEPS,
+872:         save_total_limit=SAVE_TOTAL_LIMIT,
+873:         eval_strategy="steps" if has_eval else "no",
+874:         eval_steps=EVAL_STEPS if has_eval else None,
+875:         eval_accumulation_steps=GRADIENT_ACCUMULATION_STEPS if has_eval else None,
+876:         load_best_model_at_end=has_eval,
+877:         metric_for_best_model="eval_loss" if has_eval else None,
+878:         greater_is_better=False if has_eval else None,
+879:         optim="adamw_8bit",
+880:         adam_beta1=0.9,
+881:         adam_beta2=0.999,
+882:         adam_epsilon=1e-8,
+883:         weight_decay=0.0,
+884:         lr_scheduler_type="cosine",
+885:         seed=SEED,
+886:         data_seed=SEED,
+887:         report_to=REPORT_TO,
+888:         bf16=bf16,
+889:         fp16=not bf16,
+890:         tf32=None,
+891:         padding_free=False,
+892:         beta=DPO_BETA,
+893:         loss_type=[DPO_LOSS_TYPE],
+894:         precompute_ref_log_probs=PRECOMPUTE_REF_LOG_PROBS,
+895:         max_grad_norm=0.3,
+896:     ),
+897: )
+898: 
+899: 
+900: 
+901: # %% [markdown]
+902: # ## Runtime Sanity Checks
+903: # - Print representative samples, reward values, GPU details, or runtime metrics.
+904: # - Help catch formatting and resource issues before or after long-running work.
+905: 
+906: # %%

@@ -1,0 +1,49 @@
+638:     example: dict[str, Any],
+639:     trajectory_outputs: list[str],
+640: ) -> dict[str, Any]:
+641:     stored_answer = clean_text(example.get("final_answer"))
+642:     extracted_answers = [
+643:         extract_final_answers(output)
+644:         for output in trajectory_outputs
+645:     ]
+646:     correctness = [
+647:         any(verify(stored_answer, answer) for answer in answers)
+648:         for answers in extracted_answers
+649:     ]
+650: 
+651:     indexed_outputs = list(enumerate(trajectory_outputs))
+652:     correct_outputs = [
+653:         (index, output)
+654:         for index, output in indexed_outputs
+655:         if correctness[index]
+656:     ]
+657:     wrong_outputs = [
+658:         (index, output)
+659:         for index, output in indexed_outputs
+660:         if not correctness[index]
+661:     ]
+662:     correct_outputs.sort(key=lambda item: (len(item[1]), item[0]))
+663:     wrong_outputs.sort(key=lambda item: (len(item[1]), item[0]))
+664: 
+665:     existing_chosen = combine_reasoning_response(
+666:         example.get("reasoning"),
+667:         example.get("response"),
+668:     )
+669:     # chosen = (
+670:     #     existing_chosen
+671:     #     if existing_chosen is not None
+672:     #     else correct_outputs[0][1] if correct_outputs else None
+673:     # )
+674:     chosen = (
+675:         correct_outputs[0][1]
+676:         if correct_outputs
+677:         else existing_chosen if existing_chosen is not None else None
+678:     )
+679:     rejected = wrong_outputs[0][1] if wrong_outputs else None
+680:     return {
+681:         "chosen": chosen,
+682:         "rejected": rejected,
+683:         "trajectory_answers": extracted_answers,
+684:         "trajectory_correct": correctness,
+685:     }
+686: 

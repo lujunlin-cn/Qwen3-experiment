@@ -105,8 +105,9 @@ R = R_final + alpha * R_process
 
 其中 `R_process` 必须是可验证的中间步骤奖励，且最终答案正确性保持主导。
 
-第 251 名采用 Exact Match、Answer Similarity、Completion Similarity
-和格式奖励的组合。我们不直接照搬所有分量，因为模糊相似度可能让错误答案获得不合理奖励。
+第二轮原始来源复核更正：Exact Match、Answer Similarity、Completion Similarity
+和格式奖励的组合见 The Submitter 的实验性 GRPO 实现；第 251 名原文没有披露足以支持这一归属的细节。
+本轮采用独立程序验证的过程奖励，详见 [第二轮奖励设计](PPO_GRPO_EQUATION_REWARD.md)。
 
 ## 8. GRPO 核心实现
 

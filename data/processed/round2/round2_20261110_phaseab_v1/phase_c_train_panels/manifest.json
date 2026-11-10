@@ -1,0 +1,21 @@
+{
+  "status": "prepared_only_no_model_outputs",
+  "source_train_sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+  "panels": {
+    "dpo_b": {
+      "n": 16,
+      "sha256": "e83a6c743f2767673c97a41f0af039bbe5bc658f66fde76b89450798c7f124c1"
+    },
+    "ppo": {
+      "n": 8,
+      "sha256": "a8c747dfb187b23500bebbacf5440eb1b79e5ab57e572c036a9aca7f444646de"
+    },
+    "grpo": {
+      "n": 4,
+      "sha256": "c80294386ed25e8c4fc9d0fb2336b75836276560c9230fa2d045d5adee5a8958"
+    }
+  },
+  "selection": "Uniform fixed seed; GRPO is a subset of PPO; no validation/holdout selection",
+  "reward_ablation_panels_identical": true,
+  "dpo_preference_mode": "B"
+}

@@ -1,5 +1,7 @@
 # DPO 指导：Verifier-guided Offline Preference Optimization
 
+> 第二轮以 [Gravity DPO-B 设计](DPO_GRAVITY_DESIGN.md) 为准：只训练 Gravity 的正确短答/正确长答偏好；不运行 DPO-A。下文原实验路线保留为历史教学与来源说明，不能作为第二轮执行配置。
+
 版本：v0.1 \| 对应 Notebook：`04_DPO`
 
 ## 1. 目标

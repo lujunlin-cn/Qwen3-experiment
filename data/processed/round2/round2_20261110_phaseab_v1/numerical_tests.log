@@ -1,0 +1,9 @@
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.722s
+
+OK
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}

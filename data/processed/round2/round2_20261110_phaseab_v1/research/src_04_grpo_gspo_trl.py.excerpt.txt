@@ -1,0 +1,81 @@
+282: EXACT_MATCH_WEIGHT = float(os.environ.get("EXACT_MATCH_WEIGHT", "5.0"))
+283: ANSWER_FUZZY_WEIGHT = float(os.environ.get("ANSWER_FUZZY_WEIGHT", "3.0"))
+284: COMPLETION_FUZZY_WEIGHT = float(
+285:     os.environ.get("COMPLETION_FUZZY_WEIGHT", "0.15")
+286: )
+287: BOXED_WEIGHT = float(os.environ.get("BOXED_WEIGHT", "1.0"))
+288: THINK_WEIGHT = float(os.environ.get("THINK_WEIGHT", "0.25"))
+930: def unified_reward(
+931:     prompts,
+932:     completions,
+933:     response,
+934:     reasoning,
+935:     final_answer,
+936:     **kwargs,
+937: ) -> list[float]:
+938:     scores: list[float] = []
+939: 
+940:     for completion, reference_response, reference_reasoning, target in zip(
+941:         completions,
+942:         response,
+943:         reasoning,
+944:         final_answer,
+945:         strict=True,
+946:     ):
+947:         text = completion_text(completion)
+948:         normalized_text = text.casefold()
+949:         if "</think>" in normalized_text and "<think>" not in normalized_text:
+950:             text = f"<think>\n{text}"
+951: 
+952:         extracted_answers = extract_final_answers(text)
+953: 
+954:         if isinstance(extracted_answers, list):
+955:             boxed_answers = extracted_answers
+956:         else:
+957:             extracted_answers = [extracted_answers]
+958:             boxed_answers = [None]
+959: 
+960:         exact_score = max(
+961:             (
+962:                 1.0 if verify(target, extracted_answer) else 0.0
+963:                 for extracted_answer in extracted_answers
+964:             ),
+965:             default=0.0,
+966:         )
+967:         answer_fuzzy_score = max(
+968:             (
+969:                 normalized_fuzzy_score(target, extracted_answer)
+970:                 for extracted_answer in extracted_answers
+971:             ),
+972:             default=0.0,
+973:         )
+974:         boxed_score = max(
+975:             (
+976:                 1.0 if clean_text(extracted_answer) is not None else 0.0
+977:                 for extracted_answer in boxed_answers
+978:             ),
+979:             default=0.0,
+980:         )
+981:         reference_completion = combine_reasoning_response(
+982:             reference_reasoning,
+983:             reference_response,
+984:         )
+985:         completion_fuzzy_score = normalized_token_set_score(
+986:             reference_completion,
+987:             text,
+988:         )
+989:         think_matches = [
+990:             match.group(1).strip()
+991:             for match in THINK_RE.finditer(text)
+992:         ]
+993:         think_score = 1.0 if any(think_matches) else 0.0
+994: 
+995:         scores.append(
+996:             EXACT_MATCH_WEIGHT * exact_score
+997:             + ANSWER_FUZZY_WEIGHT * answer_fuzzy_score
+998:             + COMPLETION_FUZZY_WEIGHT * completion_fuzzy_score
+999:             + BOXED_WEIGHT * boxed_score
+1000:             + THINK_WEIGHT * think_score
+1001:         )
+1002:     return scores
+1003: 

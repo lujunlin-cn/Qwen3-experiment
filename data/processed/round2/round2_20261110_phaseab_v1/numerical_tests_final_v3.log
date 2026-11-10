@@ -1,0 +1,23 @@
+..........<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+05_PPO.ipynb:cell24:25: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+05_PPO.ipynb:cell13:11: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+.
+----------------------------------------------------------------------
+Ran 11 tests in 4.324s
+
+OK
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+<sys>:0: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

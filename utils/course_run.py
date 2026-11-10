@@ -258,8 +258,16 @@ class Experiment:
         for variant in self.c['evaluation_variants']:
             for method,adapter,version in policies:
                 self.evaluation(f'final_{method}_{variant}',adapter,variant,panel='final',version=version)
-        self.state['finished_at_unix']=time.time();self.persist()
-        report(self.run)
+        # Finishing the scheduling loop is not completing the experiment.
+        outcome=report(self.run)
+        self.state['status']=outcome['status']
+        self.state['execution_ended_at_unix']=time.time()
+        self.state['missing_final_evaluations']=outcome['missing_final_evaluations']
+        if outcome['status']=='complete':
+            self.state['finished_at_unix']=time.time()
+        else:
+            self.state.pop('finished_at_unix',None)
+        self.persist()
 
 
 def report(run):

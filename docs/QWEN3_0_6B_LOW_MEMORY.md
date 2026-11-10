@@ -85,7 +85,7 @@ Git 保存源码、固定模型配置、Manifest 和审计记录；模型与 Ada
 预算脚本可用固定配置和 LoRA Manifest 计算参数量，无需权重；重新核验实际 Adapter 参数或复跑训练时需已有的 checkpoint 文件。
 
 ```bash
-CUDA_VISIBLE_DEVICES='' .venv-low-memory/bin/python utils/check_low_memory.py
+CUDA_VISIBLE_DEVICES='' .venv-low-memory/bin/python utils/check_low_memory.py --output /tmp/qwen3_cpu_numerical_new_run.json
 CUDA_VISIBLE_DEVICES='' .venv-low-memory/bin/python utils/budget_low_memory.py
 ```
 

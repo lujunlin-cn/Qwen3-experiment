@@ -1,5 +1,7 @@
 # Nemotron SFT-RL 教程：文档索引
 
+第二轮审核材料（CPU 准备，GPU 未运行）：[诊断](ROUND2_DIAGNOSIS.md)、[NeMo 质量修复](NEMO_QUALITY_REPAIR.md)、[Gravity DPO-B](DPO_GRAVITY_DESIGN.md)、[Equation PPO/GRPO Reward](PPO_GRPO_EQUATION_REWARD.md)、[代码审查与回归](ROUND2_CODE_AUDIT.md)、[实验协议](ROUND2_EXPERIMENT_PROTOCOL.md)。DPO 仅训练 Gravity 的正确长答/正确短答偏好；PPO/GRPO 仅训练 Equation，等待人工审核后进入 Phase C。
+
 当前正式任务：**Numeral System（Easy）→ Gravity（Medium）→ Equation Numeric（Hard）**。默认模型为 `Qwen/Qwen3-0.6B`（保留 Thinking）。150 题准确率与 Token 预算、SFT/DPO/PPO/GRPO 资源测试的当前结果见 [0.6B 基准报告](QWEN3_0_6B_BENCHMARK.md)；下载、路径与运行命令见 [0.6B 接入说明](QWEN3_0_6B_SETUP.md)。历史 4B 实测仅作为历史记录。
 
 最新真实验证见 [2026-11-10 实验总结](GPU_VALIDATION_SUMMARY_20261110.md)：四种方法均完成真实更新，已测 rollout/train 峰值低于 8 GB；数学正确率尚未证明改善，GRPO 末轮耗尽时间预算，独立最终评测未完成。无卡模式下已取回原始日志与 checkpoint；完整流程状态为 incomplete。实现原理与 CPU 验证见 [低显存说明](QWEN3_0_6B_LOW_MEMORY.md)。

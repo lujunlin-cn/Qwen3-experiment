@@ -1,0 +1,8 @@
+{
+  "python": "3.11.15",
+  "data-designer": "0.10.0",
+  "data-designer-engine": "0.10.0",
+  "data-designer-config": "0.10.0",
+  "litellm": null,
+  "openai": null
+}

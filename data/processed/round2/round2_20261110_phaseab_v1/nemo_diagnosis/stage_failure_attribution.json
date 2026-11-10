@@ -1,0 +1,45 @@
+{
+  "stages": {
+    "seed": {
+      "n": 9,
+      "pass": 9,
+      "fail": 0
+    },
+    "generator_transport": {
+      "n": 18,
+      "pass": 18,
+      "fail": 0
+    },
+    "generator_prompt_contract": {
+      "n": 9,
+      "pass": 0,
+      "fail": 9
+    },
+    "trace_shape": {
+      "n": 9,
+      "pass": 5,
+      "fail": 4
+    },
+    "solver_original_seed_reference": {
+      "n": 9,
+      "pass": 9,
+      "fail": 0
+    },
+    "solver_on_protected_prompt_variants": {
+      "n": 9,
+      "attempted": 0,
+      "blocked_by_protection": 9
+    },
+    "verifier": {
+      "n": 18,
+      "pass": 0,
+      "fail": 18
+    },
+    "screening": {
+      "n": 18,
+      "accepted": 0,
+      "preview": 18
+    }
+  },
+  "overlap_note": "diagnostic checks overlap; counts must not be added as unique failures"
+}

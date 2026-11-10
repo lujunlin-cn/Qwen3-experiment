@@ -1,0 +1,59 @@
+{
+  "status": "diagnosed_cpu_only",
+  "original_run": "nemo_qwen3_06b_gpu_smoke_20261109_r1",
+  "stages": {
+    "seed_pass": 9,
+    "solver_pass": 9,
+    "generator_outputs": 18,
+    "verifier_pass": 0,
+    "verifier_fail": 18,
+    "screening_rejected": 18,
+    "accepted": 0
+  },
+  "by_task_rejections": {
+    "numeral_system": {
+      "variant_verification_failed": 6,
+      "numeral_exposure_audit_failed": 3
+    },
+    "gravity": {
+      "variant_verification_failed": 6
+    },
+    "equation_numeric": {
+      "variant_verification_failed": 6
+    }
+  },
+  "schema_shape_pass": 5,
+  "strict_rescreen": {
+    "status": "empty_accepted",
+    "transport_complete": true,
+    "seed_rows": 9,
+    "expected_outputs": 18,
+    "received_seed_rows": 9,
+    "nonempty_outputs": 18,
+    "accepted": 0,
+    "preview": 18,
+    "merge_into_sft": false,
+    "by_task": {
+      "numeral_system": {
+        "accepted": 0,
+        "preview": 6
+      },
+      "gravity": {
+        "accepted": 0,
+        "preview": 6
+      },
+      "equation_numeric": {
+        "accepted": 0,
+        "preview": 6
+      }
+    }
+  },
+  "new_model_calls": 0,
+  "gpu_experiments": 0,
+  "input_hashes": {
+    "private_seeds.jsonl": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+    "compiled_config.json": "844b617d85d941ca621dbcb824d7cb487aca970d4746f8efdbcdb6ddb0b16f1a",
+    "raw_model_outputs.jsonl": "00c565a7fa9b942952dad2d5f6c5ff702b798319c3be3be7a646d844bb8cb5e2",
+    "preview.jsonl": "e26047d96589277fd26683f1696d77409e7c11fb262bf780d16e91af2ad5465f"
+  }
+}

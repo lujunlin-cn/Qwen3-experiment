@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "scope": "CPU fixtures only; no pretrained weights or CUDA peak measurement",
+  "torch": "2.11.0+cu130",
+  "transformers": "5.12.0",
+  "peft": "0.21.2",
+  "cases": [
+    {
+      "kind": "projection",
+      "vocab": 37,
+      "dtype": "torch.float32",
+      "chunk": 1,
+      "max_value_delta": 0.0,
+      "max_hidden_grad_delta": 0.0
+    },
+    {
+      "kind": "projection",
+      "vocab": 151936,
+      "dtype": "torch.float32",
+      "chunk": 4,
+      "max_value_delta": 0.0,
+      "max_hidden_grad_delta": 0.0
+    },
+    {
+      "kind": "projection",
+      "vocab": 151936,
+      "dtype": "torch.bfloat16",
+      "chunk": 4,
+      "max_value_delta": 0.0,
+      "max_hidden_grad_delta": 0.0
+    },
+    {
+      "kind": "real_qwen3_peft",
+      "checkpointing": false,
+      "padding": false,
+      "dpo_and_grpo_gradients": "passed",
+      "max_gradient_delta": 0.0,
+      "optimizer_max_parameter_update": 1.0013580322265625e-05
+    },
+    {
+      "kind": "real_qwen3_peft",
+      "checkpointing": false,
+      "padding": true,
+      "dpo_and_grpo_gradients": "passed",
+      "max_gradient_delta": 0.0,
+      "optimizer_max_parameter_update": 1.0013580322265625e-05
+    },
+    {
+      "kind": "real_qwen3_peft",
+      "checkpointing": true,
+      "padding": false,
+      "dpo_and_grpo_gradients": "passed",
+      "max_gradient_delta": 0.0,
+      "optimizer_max_parameter_update": 1.0013580322265625e-05
+    },
+    {
+      "kind": "real_qwen3_peft",
+      "checkpointing": true,
+      "padding": true,
+      "dpo_and_grpo_gradients": "passed",
+      "max_gradient_delta": 0.0,
+      "optimizer_max_parameter_update": 1.0013580322265625e-05
+    }
+  ],
+  "actual_head_projection_widths": [
+    4,
+    4,
+    2
+  ]
+}

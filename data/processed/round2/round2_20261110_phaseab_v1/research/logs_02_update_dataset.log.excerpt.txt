@@ -1,0 +1,57 @@
+19: train: candidates=1,585/78,868 (missing=1,500/24,697, existing=85/36,833)
+20: validation: missing HQ filter retained 158/232 candidates
+21: validation: existing HQ filter retained 349/455 candidates
+22: validation: selected missing range [0, 50) (50 rows)
+23: validation: selected existing range [0, 5) (5 rows)
+24: validation: mark finalized candidates (num_proc=8): 100%
+25:  687/687 [00:00<00:00, 1713.65 examples/s]
+26: Creating parquet from Arrow format: 100%
+27:  1/1 [00:00<00:00, 134.19ba/s]
+28: validation: persisted incremental snapshot to /kaggle/working/nemotron-reasoning-incremental/validation.parquet
+29: validation: candidates=55/687 (missing=50/158, existing=5/349)
+30: test: missing HQ filter retained 154/232 candidates
+31: test: existing HQ filter retained 359/455 candidates
+32: test: selected missing range [0, 0) (0 rows)
+33: test: selected existing range [0, 0) (0 rows)
+34: test: candidates=0/687 (missing=0/154, existing=0/359)
+504: train: Chosen and Rejected = 87, Chosen Only = 1000, Rejected Only = 498
+505: validation: find non-empty `chosen` and `rejected`: 100%
+506:  687/687 [00:00<00:00, 18839.53 examples/s]
+507: validation: find non-empty `chosen` only`: 100%
+508:  687/687 [00:00<00:00, 21912.95 examples/s]
+509: validation: find non-empty `rejected` only: 100%
+510:  687/687 [00:00<00:00, 23642.19 examples/s]
+511: validation: Chosen and Rejected = 29, Chosen Only = 21, Rejected Only = 5
+512: test: find non-empty `chosen` and `rejected`: 100%
+513:  687/687 [00:00<00:00, 23111.24 examples/s]
+514: test: find non-empty `chosen` only`: 100%
+515:  687/687 [00:00<00:00, 26666.11 examples/s]
+516: test: find non-empty `rejected` only: 100%
+517:  687/687 [00:00<00:00, 24055.29 examples/s]
+518: test: Chosen and Rejected = 0, Chosen Only = 0, Rejected Only = 0
+540: train: candidates=529/77,283 (missing=500/23,197, existing=29/36,748)
+541: validation: missing HQ filter retained 108/182 candidates
+542: validation: existing HQ filter retained 344/450 candidates
+543: validation: selected missing range [0, 0) (0 rows)
+544: validation: selected existing range [0, 0) (0 rows)
+545: validation: candidates=0/632 (missing=0/108, existing=0/344)
+546: test: missing HQ filter retained 154/232 candidates
+547: test: existing HQ filter retained 359/455 candidates
+548: test: selected missing range [0, 0) (0 rows)
+549: test: selected existing range [0, 0) (0 rows)
+550: test: candidates=0/687 (missing=0/154, existing=0/359)
+704: train: Chosen and Rejected = 175, Chosen Only = 1314, Rejected Only = 625
+705: validation: find non-empty `chosen` and `rejected`: 100%
+706:  687/687 [00:00<00:00, 76739.38 examples/s]
+707: validation: find non-empty `chosen` only`: 100%
+708:  687/687 [00:00<00:00, 80019.07 examples/s]
+709: validation: find non-empty `rejected` only: 100%
+710:  687/687 [00:00<00:00, 82250.65 examples/s]
+711: validation: Chosen and Rejected = 29, Chosen Only = 21, Rejected Only = 5
+712: test: find non-empty `chosen` and `rejected`: 100%
+713:  687/687 [00:00<00:00, 82252.99 examples/s]
+714: test: find non-empty `chosen` only`: 100%
+715:  687/687 [00:00<00:00, 85483.77 examples/s]
+716: test: find non-empty `rejected` only: 100%
+717:  687/687 [00:00<00:00, 85514.21 examples/s]
+718: test: Chosen and Rejected = 0, Chosen Only = 0, Rejected Only = 0

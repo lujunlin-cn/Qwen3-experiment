@@ -1,0 +1,128 @@
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+START base_reference (2699 seconds left in baseline)
+END base_reference: completed, peak 0.00 GiB
+PILOT_BUDGET {"observed_reference_tokens_per_second": 10, "estimated_final_output_tokens_for_5_models_2_prompts": 720, "estimated_final_generation_seconds": 72.0, "warning": "Planning extrapolation; training/prior prompts can change lengths. No sample size or cap silently reduced."}
+START base_cap512 (2699 seconds left in baseline)
+END base_cap512: completed, peak 0.00 GiB
+START base_cap2048 (2699 seconds left in baseline)
+END base_cap2048: completed, peak 0.00 GiB
+START base_cap8192 (2699 seconds left in baseline)
+END base_cap8192: completed, peak 0.00 GiB
+START base_cap16384 (2699 seconds left in baseline)
+END base_cap16384: completed, peak 0.00 GiB
+START prior_reference (2699 seconds left in prompt)
+END prior_reference: completed, peak 0.00 GiB
+START sft_r1_train (5399 seconds left in sft)
+END sft_r1_train: completed, peak 0.00 GiB
+START sft_r1_validation (5399 seconds left in sft)
+END sft_r1_validation: completed, peak 0.00 GiB
+START sft_r2_train (5399 seconds left in sft)
+END sft_r2_train: completed, peak 0.00 GiB
+START sft_r2_validation (5399 seconds left in sft)
+END sft_r2_validation: completed, peak 0.00 GiB
+START sft_r3_train (5399 seconds left in sft)
+END sft_r3_train: completed, peak 0.00 GiB
+START sft_r3_validation (5399 seconds left in sft)
+END sft_r3_validation: completed, peak 0.00 GiB
+START dpo_r1_rollout (5399 seconds left in dpo)
+END dpo_r1_rollout: completed, peak 0.00 GiB
+START dpo_r1_train (5399 seconds left in dpo)
+END dpo_r1_train: completed, peak 0.00 GiB
+START dpo_r1_validation (5399 seconds left in dpo)
+END dpo_r1_validation: completed, peak 0.00 GiB
+START dpo_r2_rollout (5399 seconds left in dpo)
+END dpo_r2_rollout: completed, peak 0.00 GiB
+START dpo_r2_train (5399 seconds left in dpo)
+END dpo_r2_train: completed, peak 0.00 GiB
+START dpo_r2_validation (5399 seconds left in dpo)
+END dpo_r2_validation: completed, peak 0.00 GiB
+START dpo_r3_rollout (5399 seconds left in dpo)
+END dpo_r3_rollout: completed, peak 0.00 GiB
+START dpo_r3_train (5399 seconds left in dpo)
+END dpo_r3_train: completed, peak 0.00 GiB
+START dpo_r3_validation (5399 seconds left in dpo)
+END dpo_r3_validation: completed, peak 0.00 GiB
+START ppo_r1_rollout (5399 seconds left in ppo)
+END ppo_r1_rollout: completed, peak 0.00 GiB
+START ppo_r1_train (5399 seconds left in ppo)
+END ppo_r1_train: completed, peak 0.00 GiB
+START ppo_r1_validation (5399 seconds left in ppo)
+END ppo_r1_validation: completed, peak 0.00 GiB
+START ppo_r2_rollout (5399 seconds left in ppo)
+END ppo_r2_rollout: completed, peak 0.00 GiB
+START ppo_r2_train (5399 seconds left in ppo)
+END ppo_r2_train: completed, peak 0.00 GiB
+START ppo_r2_validation (5399 seconds left in ppo)
+END ppo_r2_validation: completed, peak 0.00 GiB
+START ppo_r3_rollout (5399 seconds left in ppo)
+END ppo_r3_rollout: completed, peak 0.00 GiB
+START ppo_r3_train (5399 seconds left in ppo)
+END ppo_r3_train: completed, peak 0.00 GiB
+START ppo_r3_validation (5399 seconds left in ppo)
+END ppo_r3_validation: completed, peak 0.00 GiB
+START grpo_r1_rollout (5399 seconds left in grpo)
+END grpo_r1_rollout: completed, peak 0.00 GiB
+START grpo_r1_train (5399 seconds left in grpo)
+END grpo_r1_train: completed, peak 0.00 GiB
+START grpo_r1_validation (5399 seconds left in grpo)
+END grpo_r1_validation: completed, peak 0.00 GiB
+START grpo_r2_rollout (5399 seconds left in grpo)
+END grpo_r2_rollout: completed, peak 0.00 GiB
+START grpo_r2_train (5399 seconds left in grpo)
+END grpo_r2_train: completed, peak 0.00 GiB
+START grpo_r2_validation (5399 seconds left in grpo)
+END grpo_r2_validation: completed, peak 0.00 GiB
+START grpo_r3_rollout (5399 seconds left in grpo)
+END grpo_r3_rollout: completed, peak 0.00 GiB
+START grpo_r3_train (5399 seconds left in grpo)
+END grpo_r3_train: completed, peak 0.00 GiB
+START grpo_r3_validation (5399 seconds left in grpo)
+END grpo_r3_validation: completed, peak 0.00 GiB
+START final_base_original (28799 seconds left in final)
+END final_base_original: completed, peak 0.00 GiB
+START final_sft_original (28799 seconds left in final)
+END final_sft_original: completed, peak 0.00 GiB
+START final_dpo_original (28799 seconds left in final)
+END final_dpo_original: completed, peak 0.00 GiB
+START final_ppo_original (28799 seconds left in final)
+END final_ppo_original: completed, peak 0.00 GiB
+START final_grpo_original (28799 seconds left in final)
+END final_grpo_original: completed, peak 0.00 GiB
+START final_base_prior (28799 seconds left in final)
+END final_base_prior: completed, peak 0.00 GiB
+START final_sft_prior (28799 seconds left in final)
+END final_sft_prior: completed, peak 0.00 GiB
+START final_dpo_prior (28799 seconds left in final)
+END final_dpo_prior: completed, peak 0.00 GiB
+START final_ppo_prior (28799 seconds left in final)
+END final_ppo_prior: completed, peak 0.00 GiB
+START final_grpo_prior (28799 seconds left in final)
+END final_grpo_prior: completed, peak 0.00 GiB
+PILOT_BUDGET {"observed_reference_tokens_per_second": 10, "estimated_final_output_tokens_for_5_models_2_prompts": 720, "estimated_final_generation_seconds": 72.0, "warning": "Planning extrapolation; training/prior prompts can change lengths. No sample size or cap silently reduced."}
+..........05_PPO.ipynb:cell24:25: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+05_PPO.ipynb:cell13:11: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+05_PPO.ipynb:cell24:25: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+05_PPO.ipynb:cell13:11: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+.
+----------------------------------------------------------------------
+Ran 11 tests in 1.657s
+
+OK
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+<sys>:0: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

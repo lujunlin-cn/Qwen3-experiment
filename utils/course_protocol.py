@@ -171,6 +171,13 @@ def metrics(rows):
             'mean_output_tokens':statistics.mean(tokens), 'total_output_tokens':sum(tokens),
             'mean_correct_output_tokens':statistics.mean(correct_tokens) if correct_tokens else None,
             'max_output_tokens':max(tokens)}
+        for field, metric in (('exact_trace_pass','exact_trace_pass_rate'), ('format_valid','format_valid_rate')):
+            available = [r for r in group if field in r]
+            out[task][metric] = sum(bool(r[field]) for r in available)/len(available) if available else None
+            out[task][metric+'_verified_n'] = len(available)
+        rewarded = [r for r in group if 'reward_components' in r]
+        out[task]['reward_mean'] = (statistics.mean(r['reward_components']['combined'] for r in rewarded)
+                                     if rewarded else None)
     return out
 
 def validation_score(m, tasks, caps):

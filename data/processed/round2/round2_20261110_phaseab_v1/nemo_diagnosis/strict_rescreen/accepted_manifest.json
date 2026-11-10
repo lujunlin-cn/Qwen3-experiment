@@ -1,0 +1,14 @@
+{
+  "schema_version": "nemo-smoke-accepted/v1",
+  "status": "empty_accepted",
+  "accepted_rows": 0,
+  "all_accepted_verified_and_audited": false,
+  "accepted_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "verifier_version": "nemo-smoke-proof-v1",
+  "split_sha256": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+    "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+  },
+  "merge_into_sft": false
+}

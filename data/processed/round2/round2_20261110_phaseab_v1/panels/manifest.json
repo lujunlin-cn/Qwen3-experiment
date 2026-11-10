@@ -1,0 +1,77 @@
+{
+  "status": "prepared_cpu_only_not_evaluated",
+  "inventory": {
+    "numeral_system": {
+      "validation_total": 158,
+      "excluded_previous_panel": 12,
+      "tune": 48,
+      "locked_final": 98,
+      "phase_c_smoke_subset_of_tune": 8
+    },
+    "gravity": {
+      "validation_total": 160,
+      "excluded_previous_panel": 12,
+      "tune": 48,
+      "locked_final": 100,
+      "phase_c_smoke_subset_of_tune": 8
+    },
+    "equation_numeric": {
+      "validation_total": 73,
+      "excluded_previous_panel": 12,
+      "tune": 24,
+      "locked_final": 37,
+      "phase_c_smoke_subset_of_tune": 8
+    }
+  },
+  "old_panel_ids_excluded": [
+    "03cb7b73",
+    "23f98595",
+    "285e5797",
+    "29806da8",
+    "2e044d8e",
+    "34f49b7d",
+    "359ecbe4",
+    "446fa429",
+    "52c19a82",
+    "65044291",
+    "65c52214",
+    "68cb31d7",
+    "697f134b",
+    "6c6f9519",
+    "6e6f8d9c",
+    "7233941f",
+    "75032b65",
+    "794f71ed",
+    "7bc77ef3",
+    "7f8b8c7c",
+    "8011cb24",
+    "8be3f8e3",
+    "8e438ef9",
+    "966c1f9f",
+    "979c0b0e",
+    "b4a5076f",
+    "cc4ee1b4",
+    "d0dd8e4e",
+    "d23b8633",
+    "d46df3b0",
+    "d83aa558",
+    "d8b3310a",
+    "e5318535",
+    "eaf49e67",
+    "eb9963a8",
+    "f4ecefa4"
+  ],
+  "holdout_used_for_selection": false,
+  "panel_hashes": {
+    "phase_c_smoke.jsonl": "980edfbc998d876ec75bfcd11872c405dec989a56feeb0eb88850fd3c7d5230c",
+    "locked_final.jsonl": "c7c9a713400bb91d6a34710f957ed746b1371c9254b5777b70fe58af9ae1405a",
+    "tune.jsonl": "eed3c8423d38a227ecdb7afb0844b9e3a501c85a87644ed019923dfbc5120cab"
+  },
+  "split_hashes": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+    "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+  },
+  "split_policy": "Official split unchanged. Holdout read only for integrity/leakage audit.",
+  "final_access_policy": "No final generation until configs, rewards and selected checkpoints frozen."
+}

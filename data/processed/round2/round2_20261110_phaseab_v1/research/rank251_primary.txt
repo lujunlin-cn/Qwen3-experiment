@@ -1,0 +1,211 @@
+Title: 251 Place Solution for the NVIDIA Nemotron Model Reasoning Challenge Competition | Kaggle
+
+URL Source: https://www.kaggle.com/competitions/nvidia-nemotron-model-reasoning-challenge/writeups/trace-format-engineering-and-svd-downsampled-lora
+
+Markdown Content:
+## Trace-Format Engineering and SVD-Downsampled LoRA for Nemotron Reasoning
+
+_A Kaggle competition write-up for the NVIDIA Nemotron Model Reasoning Challenge._
+
+* * *
+
+### Abstract
+
+The competition constrains every solution to a single fixed base model (Nemotron-3-Nano-30B) improved only through a LoRA adapter of rank at most 32, evaluated under deterministic greedy decoding on six reasoning task families, with the answer scored by exact or numeric match inside a `\boxed{}` block. Within these constraints the dominant lever was found to be the design of the supervised trace corpus rather than the LoRA hyperparameters. Each task family was first solved by a verified programmatic solver, the solver was then made to emit a chain-of-thought trace whose every line is reproducible by the model, and the resulting corpus was used for supervised fine-tuning followed by light reinforcement. Accuracy on the held-out validation split rose from a 50.7% no-adapter baseline to 93.6%, with the gains concentrated in the binary-transformation and symbol-transformation families, both of which had been near the floor under the base model. Two findings are reported as transferable: a discipline for writing _learnable_ traces (one mechanically derivable fact per line), and a rank-64 LoRA trained on the Mamba `in_proj` projection then SVD-downsampled to rank 32, which lifted the leaderboard by a reproducible 0.01. The hardest family, a coupled constraint-satisfaction cryptarithm, resisted every clean-derivation format and is treated separately in a companion write-up. The most consequential process lesson, surfaced only when the private leaderboard was released, is that a coarse public leaderboard ranks runs differently from a held-out validation set, and final-submission selection should trust the latter.
+
+* * *
+
+### 1. Introduction
+
+#### 1.1 Setting and constraints that shaped the approach
+
+Only the constraints that influenced design decisions are described here; the Nemotron architecture itself is treated only where it interacts with the method (Section 5). The relevant constraints are:
+
+*   **LoRA only, rank at most 32 on the saved adapter.** The base model is frozen; all capability is carried by a small adapter. The rank cap applies to what is submitted, not to what is trained, a distinction that later proved exploitable.
+*   **Deterministic evaluation.** Inference uses temperature 0.0 (greedy), `max_tokens=7680`, `max_model_len=8192`, vLLM, and `enable_thinking=True`. Greedy decoding removes sampling as a source of recovery, so any branch point a trace cannot resolve deterministically becomes a failure mode rather than an occasional miss.
+*   **A hard length budget.** The 7,680-token completion cap is a first-class corpus constraint: a trace that does not terminate within budget teaches the model never to terminate, and at inference such a model exhausts the budget mid-reasoning and emits nothing scorable.
+*   **Answer format.** Scoring is exact string match or numeric match with relative tolerance 1e-2 on the contents of `\boxed{}`, which makes a single transcription error at the final step as costly as a wrong derivation.
+
+#### 1.2 The central design decision
+
+The pipeline adopted was: for each task family, write a programmatic solver that is verified to be correct on the training data; have that solver emit a reasoning trace; filter the traces for length and learnability; train a LoRA adapter by supervised fine-tuning on the combined corpus; and optionally apply Group Relative Policy Optimization (GRPO) for error correction. Supervised fine-tuning was placed first because base-model reasoning traces are far longer than the GRPO completion budget, so completions truncate, the reward is uniformly zero, and no gradient is produced. Supervised fine-tuning teaches the target format and conciseness; reinforcement is reserved for the residual.
+
+#### 1.3 Contributions
+
+1.   A trace-format discipline under which every line is derivable by the model from information already present on the page, demonstrated in detail on the binary and symbol-transformation families.
+2.   An architecture lever within the rank-32 constraint: training the Mamba `in_proj` projection at rank 64 and SVD-downsampling to rank 32 before saving, worth a reproducible 0.01 on the leaderboard.
+3.   A set of empirical lessons on the role of held-out validation, the limits of reinforcement on tasks without a foothold of genuine successes, and the corpus guardrails whose violation caused measurable regressions.
+
+The constraint-satisfaction cryptarithm family was not solved by the methods reported here and is documented separately; only the guardrails it contributed, which generalize, are repeated in Section 4.
+
+* * *
+
+### 2. Method Overview
+
+The pipeline is uniform across task families and is summarized as: verified solver, trace emission, length and quality filtering, weighted supervised fine-tuning, and optional GRPO.
+
+The single governing principle, applied to every family, is that each emitted line must be a mechanical operation the model can reproduce from what is already written, never a recalled fact and never a multi-step leap. The corollary that organized much of the work is negative: no line may assert a conclusion ahead of the evidence that justifies it. The empirical signature of a violated principle is consistent across families: the model reproduces the surface format markers faithfully while the algorithmic middle is skipped, hallucinated, or run until the budget is exhausted.
+
+Two mechanical components support training. Per-sample loss weighting equalizes the gradient share across families so that a long-trace family such as binary does not crowd out short-trace families such as roman or unit conversion; the weight is the tier multiplier divided by the family count, mean-normalized to one. A length filter drops any trace whose tokenized chat-template text exceeds the 7,680-token budget before the dataset is built, on the evidence that truncated training samples teach non-termination, a regression confirmed during the v15 cycle.
+
+* * *
+
+### 3. Trace-Format Engineering
+
+This section is the core of the report, since the trace corpus was found to be the dominant accuracy lever.
+
+#### 3.1 What "learnable" means
+
+A trace format is called learnable when each step is a single mechanical operation the model can reproduce, and unlearnable when it requires the model to recall a fact, to make a multi-step leap, or to reproduce a quantity that depends on global state it cannot recompute. The distinction is not stylistic. The early history of the project is a sequence of formats that contained the right answer but were not reproducible step by step, and each one trained a model that emitted the format and then guessed.
+
+The clearest early demonstration is the first full supervised run. The base model scored 39.2% on cipher decryption; the v1 corpus, which displayed the final substitution mapping without deriving it, collapsed cipher to 7.6%, because the model learned to write down a plausible mapping rather than to recover the correct one. The same run collapsed symbol transformation from 20.6% to 3.2%, because the v1 symbol traces used modular-arithmetic formulas the model could not evaluate. Both collapses were caused by traces that asserted rather than derived, and both motivated the guardrails in Section 4.
+
+#### 3.2 Binary transformation
+
+The binary family asks for an eight-bit output produced from an eight-bit input by a per-bit boolean transformation that must be inferred from worked examples. It was the single hardest of the non-cryptarithm families and the one on which the most format iteration was spent.
+
+The obvious format failed durably. Per-bit truth tables and hypothesis-search formats plateaued between 12% and 17% across the v8 through v12 cycles, because at greedy decoding the branch points in a hypothesis search are resolved arbitrarily and the truth-table lookups are recalled rather than derived. The plateau was broken in the v13 cycle by replacing truth tables with **operation scanning and stride detection**: the trace scans candidate boolean operations per output section, detects the stride along which one operation governs a run of consecutive bits, and probes the run with an explicit failure marker at the position one past its end. Binary accuracy moved from the 12 to 17% plateau to 73.3% in a single format change, the largest single-step gain in the project.
+
+Subsequent iteration refined the same idea rather than replacing it. The v17 format added overlap resolution for the case where the left and right strides jointly claim more than eight bits, an unconditional gap-operation status line so that the absence of a covering operation is stated rather than left silent, and a deterministic tie-break ordering for fallback candidates; binary reached 84.5%. The format guardrails that proved causally load-bearing are worth stating precisely, because several plausible additions were found to be harmful:
+
+*   Only the negative check is load-bearing. The probe restates the matched run and marks the first failing position with an `x`; this `x` is the only acceptable verification mark in the trace. A blanket affirmative check was found to teach rubber-stamping and was never added.
+*   Length claims must be copied from evidence already on the page, never re-aggregated. The per-section enumeration of left and right candidates serves as a checksum anchor above the compact commit line. Collapsing the enumeration into a single aggregated line lost short strides and invited length overcounting, observed as a 2-point regression in the v18 to v19 comparison.
+*   A final transcription line, space-separated bits followed by their concatenation, precedes the `\boxed{}` so that the boxed answer is a trivial copy and not a re-derivation. This hardened the format against the apply-to-boxed transcription error.
+
+An instructive negative result occurred during the v18 cycle: an inline probe that the model could fabricate freely, without per-example numeric verification, was added and then removed, because the model invented longer probes as readily as it invented stride lengths. The lesson generalizes to the whole corpus: a verification step that the model can satisfy without computation teaches nothing and is removed.
+
+By the strongest supervised run the binary family reached 87.8% on validation, and a single GRPO iteration lifted it to 89.2%.
+
+#### 3.3 Symbol transformation (plain)
+
+The plain symbol-transformation family applies an arithmetic operation to two multi-digit operands under one of a small set of digit-pairing conventions, with the operation and pairing inferred from examples. It exhibited the project's most violent swings before stabilizing.
+
+The breakthrough idea was an **exhaustive combination scan**: rather than selectively testing the operations, the trace scans every candidate combination of pairing and operation for every example, in a fixed tabular order, with concrete arithmetic on each line. Selective testing had produced unlearnable traces, because the jump from the tested formulas to the declared winner was not reproducible; the exhaustive scan removes the jump. The same principle that fixed cipher and binary, show the complete search rather than its conclusion, fixed symbol transformation.
+
+The exhaustive scan alone was not sufficient, and the intermediate history is itself a lesson in cross-task interference. The v15 corpus introduced the exhaustive scan but regressed plain symbol transformation to 19.4%, because at a shared length budget the plain-symbol traces began to imitate the length of the much longer binary traces and ran far past their natural termination. The v16 binary format change relieved this contamination without any change to the symbol traces themselves, and plain symbol transformation recovered to 71.4%. This is direct evidence that families trained together interact through the shared length budget, and it justified the per-sample loss weighting described in Section 2.
+
+The format was then made both shorter and more uniform by an ablation of the solver's vocabulary. The combination library was pruned to the minimum that still covered every training task: two pairings, twelve operations, one output format, and five match modes, validated to retain all 687 combination-and-numeric tasks. The pruning is reported in full in the trace-format reference; its value as a method is general, in that ablating the solver vocabulary to the smallest set that preserves coverage shortens the scan the model must reproduce and therefore makes it more learnable. With the minimum toolkit and a pairing-as-header layout, plain symbol transformation reached 85.7%, and a single GRPO iteration lifted it to 89.3%.
+
+#### 3.4 The unifying principle: per-line density
+
+Across binary, symbol transformation, and the cryptarithm family, a single observation recurs and is stated here as the most transferable format finding. The model performs single arithmetic operations reliably when each line does exactly one job, and fails when a verdict, its justification, and a state commitment are emitted on the same line. In plain symbol transformation, where each scan line performs one multiplication and reports one comparison, arithmetic is reliable; in the cryptarithm brute-force scan, where a product, a comparison, a rejection reason, and a pin were once co-emitted on one line, the same model fails. The corollary adopted corpus-wide is to split arithmetic from verdict from commitment, one derivable fact per line.
+
+* * *
+
+### 4. The Constraint-Satisfaction Cryptarithm Family
+
+The `symbol_transform_cipher` family is a cryptarithm in which two-character cipher symbols stand for digits under a bijection, an operation family and a digit-pairing convention must be recovered jointly with all ten digit assignments, and the recovered mapping must be applied to a test line. It was the only family with meaningful headroom once the others were near ceiling, and it was not solved by the methods of this report.
+
+The bottom-line outcome is stated plainly: every clean-derivation trace format scored 0 of 15 on the held-out cryptarithm slice, across full algebraic derivations, asserted-conclusion compression, per-column survivor scans, and grounded inner-scan narrowing. The diagnosis is that the task requires joint constraint propagation, in which operation classification and digit mapping are a single entangled search rather than a forced left-to-right derivation. An operation whose results are all three digits long, for example, may be addition with carry or multiplication, and this ambiguity is resolvable only by solving the whole puzzle, which is a search with dead ends. A clean derivation that shows the answer after the search, never the search, teaches the model to guess locally and rubber-stamp.
+
+The guardrails learned on this family generalize to all corpus work and are repeated here: no asserted partial mappings; no oracle constraint-satisfaction state, meaning no candidate-set sizes or counts the model cannot recompute; concrete arithmetic only, never a closed-form or modular shortcut; and the rule that any state line shown must be the model's own derivable running mapping rather than an injected quantity. An early cryptarithm attempt that injected oracle counts collapsed to 0%, which is the direct evidence for the third and fourth of these.
+
+A final-day reversal of the project's own no-backtracking guardrail, training the model on the constraint search itself rather than on a clean derivation, produced the first genuinely learned searches on a held-out synthetic set and is treated in full in the companion write-up. That direction is referenced here and not reproduced.
+
+* * *
+
+### 5. The LoRA Architecture Lever: Rank-64 `in_proj` with SVD Downsampling
+
+The competition caps the saved adapter at rank 32, but the cap applies to what is submitted, not to what is trained. This distinction was the basis for the one architecture change that moved the leaderboard.
+
+Spectral inspection of a strong external adapter (public leaderboard 0.86) showed an unambiguous signature: every Mamba `in_proj` LoRA in that adapter had perfectly orthogonal factor rows and columns, the off-diagonals of the factor Gram matrices being zero to six decimal places, while no other module type, neither attention nor mixture-of-experts projections, showed this property. Orthogonal factors are the signature of a singular-value decomposition. The most consistent reconstruction is that the `in_proj` projection was trained as two independent rank-32 adapters and then merged by SVD into a single rank-32 adapter, so that the retained subspace was selected from an effective rank of up to 64 rather than trained directly at rank 32. The retained spectrum supports this: roughly 29 of 32 dimensions are needed to capture 99% of the delta energy, consistent with a top-32 truncation of an effective-rank-64 merge and inconsistent with a source rank of 128 or higher.
+
+The reproduction adopted was to train the unified `in_proj` projection at rank 64, via a rank pattern that overrides only that projection, and to SVD-downsample it to rank 32 before saving. This is competition-compliant because the saved adapter is rank 32. The effect was reproducible across two independent training corpora: the architecture change lifted the leaderboard by 0.01 on each, independently of a separate 0.01 attributable to corpus quality, and the two levers were found to stack additively at the leaderboard's resolution. This run was the first to break the 0.84 ceiling that five independent recipes had reached, landing at 0.85.
+
+The lever has a bound, and the bound is itself a finding. Increasing the training-time rank to 128 regressed the leaderboard to 0.84 with flat local accuracy, because the wider training spilled roughly 57% more energy into the SVD tail that the downsample discards, producing a worse rank-32 reconstruction. The sweet spot is twice the target rank, not more. The lever is also honestly second-order: a replica that matched a strong external adapter's all-linear LoRA configuration on a weaker corpus did not by itself beat the stronger corpus, which is the direct evidence that the trace corpus, not the LoRA configuration, is the primary driver.
+
+* * *
+
+### 6. Reinforcement Learning for Error Correction
+
+GRPO was used in a deliberately narrow role: small-scale error correction to recover the validation samples that supervised fine-tuning left just over the decision boundary. In that role it worked well. The first GRPO iteration on the v18 supervised adapter lifted binary from 88.7% to 91.5% and plain symbol transformation from 85.7% to 89.3% on validation, with every already-solved family held at ceiling. The strongest held-out validation in the project, 93.8%, was produced by a GRPO iteration on the v27 adapter, with binary at 89.2%. These gains came from a minority of informative groups; in the v18 iteration only 38% of completion groups carried reward variance, and the loss magnitudes were correspondingly tiny.
+
+The boundary of the method was found just as clearly. GRPO is a refinement tool, not a recovery tool. Applied to a weak supervised baseline (the v23 adapter, binary 75.7%), four GRPO iterations merely oscillated around the baseline with no recovery, because too many borderline cases flipped between runs to give the correctness reward a consistent gradient. Applied to the cryptarithm family, GRPO produced no lift across more than ten iterations, because the policy never solved a cryptarithm and reinforcement cannot grip a task with no foothold of genuine successes; a 2,240-sample audit confirmed that the apparent reward positives were trivial concatenation cases or lucky boxes rather than genuine algebraic solutions. The general statement is that reinforcement amplifies existing capability and does not create new capability, which is why it was scoped to error correction on families the supervised model already nearly solved.
+
+* * *
+
+### 7. Lessons Learned
+
+The following are reported as transferable, each tied to the evidence that produced it.
+
+1.   **A held-out validation set ranks runs better than a coarse public leaderboard, and final selection should trust it.** The public leaderboard's 0.01 resolution is coarser than the internal validation signal, and when the private leaderboard was released it ranked runs substantially differently from the public one. The top private score was held by two runs that had been de-prioritized on public score, while the publicly best adapter placed only mid-field on the private set. The selection rule that would have paid off is to pick the top runs by held-out validation rather than by public leaderboard.
+
+2.   **The trace corpus is the dominant lever; the LoRA configuration is second-order.** The same corpus under different LoRA architectures moved the leaderboard by at most 0.01, while corpus quality moved it more and more reliably, and a configuration replica on a weaker corpus did not beat a stronger corpus.
+
+3.   **Learnable beats complete.** A trace that contains the correct answer but is not reproducible step by step trains a model that emits the format markers and hallucinates the middle. This was observed in the v1 cipher and symbol collapses, in the binary truth-table plateau, and in every clean-derivation cryptarithm format.
+
+4.   **The corpus guardrails help a lot but also hinder creaitvity.** No asserted mappings; no oracle state; concrete arithmetic only, never modular or closed-form shortcuts; no retry or mismatch loops; exactly one derivable fact per line; and only a negative check is load-bearing for most problems. However, for more complex problems out-of-the-box thinking pointed to a solution the guardrails blocked. Even though each of them was adopted after a violation caused a measured regression.
+
+5.   **Ablate the solver vocabulary to the minimum that preserves coverage.** A shorter scan is a more learnable scan and is more likely to fit the budget; the symbol-transformation minimum toolkit retained full coverage while shortening every trace. It shortes also iterations and training time.
+
+6.   **The SVD downsample is a real working strategy.** Creating smaller, more efficient adapters is possible and performs very well.
+
+* * *
+
+### 8. Results
+
+#### 8.1 Training corpus
+
+The supervised corpus is roughly 10,800 traces across eight files, one file per task family except binary, which is split into solver-generated and synthetic sources, and the cryptarithm slot, which holds a single CSP file at a time. Every trace is produced by a verified solver, ends in a `\boxed{}` answer, and is checked against the ground truth before inclusion. Token counts below are measured with the Nemotron tokenizer; the length filter of Section 2 drops any trace whose chat-template text exceeds 7,680 tokens before the dataset is built.
+
+| Task family | Traces | Avg tokens | Max tokens |
+| --- | --- | --- | --- |
+| binary (solver) | 1,305 | 5,473 | 6,670 |
+| binary (synthetic) | 400 | — | — |
+| cipher | 1,497 | 2,162 | 4,454 |
+| gravity | 1,517 | 232 | 243 |
+| roman | 1,497 | 49 | 62 |
+| symbol_transform (plain) | 704 | 1,565 | 2,370 |
+| symbol_transform (CSP) | 2,334 | ~3,300 | 6,963 |
+| unit_conversion | 1,514 | 130 | 132 |
+| **Total** | **10,768** |  |  |
+
+The binary family is the only one trained on synthetic data. It was the only problem that improved with it enough to justify the longer training times.
+
+#### 8.2 Held-out validation by family
+
+A fixed 5% split (439 traces, held out by id and never trained on) is the internal validation set. Per-family counts are small, so they are reported alongside the accuracies; the families sum to 435 scored samples. The table gives the no-adapter base model, the strongest supervised adapter (the v27 supervised run, 92.6% overall), and the strongest adapter overall (one GRPO iteration on v27, 93.8% overall). The base-model column is the per-family baseline measured on a comparably sized probe; the cryptarithm slice was not scored separately under the base model.
+
+| Task family | N | Base model | v27 supervised | v27 + one GRPO iter |
+| --- | --- | --- | --- | --- |
+| binary | 74 | 7.6% | 87.8% | 89.2% |
+| cipher | 79 | 39.2% | 93.7% | 98.7% |
+| gravity | 80 | 62.5% | 100.0% | 100.0% |
+| roman | 79 | 100.0% | 100.0% | 100.0% |
+| symbol_transform (plain) | 28 | 20.6% | 89.3% | 89.3% |
+| symbol_transform_cipher (CSP) | 15 | — | 0/15 | 0/15 |
+| unit_conversion | 80 | 67.5% | 100.0% | 100.0% |
+| **Overall** | **435** | **50.7%** | **92.6%** | **93.8%** |
+
+The two families that carried the gains followed the trajectory below, with each entry the validation accuracy at the cited cycle.
+
+| Family | Base | First format break | Supervised best | After GRPO |
+| --- | --- | --- | --- | --- |
+| binary | 7.6% | 73.3% (stride scan, v13) | 87.8% | 89.2% |
+| symbol_transform | 20.6% | 71.4% (exhaustive scan, v16) | 85.7% | 89.3% |
+
+Overall validation accuracy rose from a 50.7% no-adapter baseline to a best of 93.8% (one GRPO iteration on v27); the supervised configuration later carried to the best private leaderboard score reached 93.6%. In every strong run cipher, gravity, roman, and unit conversion sit at or near ceiling and the cryptarithm family contributes nothing.
+
+The leaderboard outcome and its public-versus-private divergence are the headline process finding. The best public score, 0.85, was produced by the rank-64 SVD run on the strongest corpus, the first to break a 0.84 ceiling that five independent recipes had reached. When the private leaderboard was released it ranked runs differently: the best private score, 0.868, was held by two runs that had been de-prioritized on public score, while the public best placed only at 0.852 private. The candor required by this divergence is that public-leaderboard-driven conclusions are unreliable at the 0.01 grid, and the selection lesson of Section 7 follows directly from it.
+
+What was not solved is stated as plainly as what was. The cryptarithm family remained at 0 of 15 on its held-out slice under every method reported here, and roughly a fifth of that family is structurally impossible in any case, because the test symbols never appear in the examples and the answer is therefore not derivable. The cryptarithm family is the only remaining headroom on the leaderboard, and the direction that finally produced learned searches on it arrived too late to bank.
+
+* * *
+
+### 9. Conclusion and Future Work
+
+Two contributions are offered as transferable. The first is a trace-format discipline under which every line is mechanically derivable from what is already written, demonstrated to move the binary family from a 12-to-17% plateau to the high eighties and the symbol family from collapse to the high eighties, by replacing asserted conclusions and recalled facts with exhaustive, one-fact-per-line searches. The second is a rank-64 LoRA on the Mamba `in_proj` projection, SVD-downsampled to the rank-32 cap, worth a reproducible 0.01 and bounded at twice the target rank. Above both sits the process lesson that a held-out validation set should govern final selection when the public leaderboard is coarse, a lesson the private leaderboard release made concrete.
+
+The one direction left open is the constraint-satisfaction cryptarithm. The companion write-up reports that training on the search itself, with backtracking, dead ends, and carried state shown, produced the first genuinely learned searches on a held-out synthetic set, bounded only by trace length at a partially trained checkpoint. Finishing that run, and shortening its traces so that more searches fit the budget, is the natural continuation and is the only place on the leaderboard with headroom left to claim.
+
+* * *
+
+### Acknowledgements
+
+This work built directly on what others shared openly, and the debts are concrete.
+
+Tong Hui Kang's open Progress Prize winning solution and training notebook were a reference throughout. I studied his binary trace format closely. It helped to reach the second breakthrough in the binary traces from ~73% to >80%
+
+The working training loop on the Kaggle environment started from ALEXXXSEM's [simple offline working demo](https://www.kaggle.com/code/alexxxsem/nemotron-simple-offline-working-demo). The environment before had been running but the patches to it were far more verbose than his; his notebook gave a much cleaner foundation to build on.
+
+Finally, I wnat to thank the competition host and NVIDIA for providing the RTX PRO 6000 GPU hours. My participation would simply not have been possible without that compute.

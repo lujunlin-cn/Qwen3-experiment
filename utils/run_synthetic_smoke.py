@@ -189,7 +189,9 @@ def capture_local_requests(endpoint,destination):
                     if isinstance(text,list): text=''.join(p.get('text','') for p in text)
                     seed_id=text.split('SEED_ID=',1)[1].splitlines()[0]
                     kind='prompt_variant' if 'Produce a safe wording variant.' in text else 'trace_variant'
-                    entry.update(seed_id=seed_id,variant_kind=kind,model=payload['model'])
+                    # Local synthetic prompts contain no credentials. Retain the actual
+                    # rendered request: a hash alone cannot diagnose field injection.
+                    entry.update(seed_id=seed_id,variant_kind=kind,model=payload['model'],request=payload)
                     request=urllib.request.Request(endpoint.rstrip('/')+'/chat/completions',
                         data=json.dumps(payload).encode(),headers={'Content-Type':'application/json'})
                     with urllib.request.urlopen(request,timeout=180) as response:
@@ -219,8 +221,18 @@ def attach_transport(records,request_path):
             matches=by_key.get((record.get('seed_id'),kind),[])
             completed=[r for r in matches if r['status']=='completed']
             content=record.get(kind)
-            corresponding=[r for r in completed if r['response'].get('choices',[{}])[0].get('message',{}).get('content','').strip()==str(content).strip()]
+            def matches_content(request):
+                raw=request['response'].get('choices',[{}])[0].get('message',{}).get('content','')
+                if isinstance(content,dict):
+                    try: return json.loads(raw)==content
+                    except (ValueError,TypeError): return False
+                return raw.strip()==str(content).strip()
+            corresponding=[r for r in completed if matches_content(r)]
             last=corresponding[-1] if corresponding else {}
+            if last and isinstance(content,dict):
+                # Screen the exact raw response, never a repaired/filtered SDK object.
+                record[kind+'__structured_sdk_value']=content
+                record[kind]=last['response']['choices'][0]['message']['content']
             record[kind+'__transport']={'verified_response_match':bool(last),'request_count':len(matches),
                 'finish_reason':last.get('finish_reason'),'usage':last.get('usage'),
                 'latency_seconds':last.get('latency_seconds')}
