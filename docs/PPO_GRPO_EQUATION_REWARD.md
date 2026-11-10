@@ -1,4 +1,4 @@
-# Equation Numeric：PPO/GRPO Reward 与消融
+# Equation Numeric：PPO/GRPO 单一复合 Reward
 
 状态：设计与 CPU 数值验证；没有新 GPU 奖励分布、数学收益或显存结论。两个算法独立从相同 SFT r1 初始化，只训练 Equation；Roman、Gravity 只做跨任务评测。
 
@@ -18,7 +18,7 @@
 
 ## 2. 输入契约与独立裁判
 
-P0–P3 使用同一结构化输出契约，不能只给 Process 组额外格式提示：
+本轮统一使用同一结构化输出契约；原题-only条件另做相同模型配对，不能把格式提示收益冒充训练收益：
 
 ```json
 {"task_type":"equation_numeric","rules":{"+":"add"},"example_outputs":["17"],"query_output":"23","answer":"23"}
@@ -30,43 +30,41 @@ Notebook 01 的 `audit_equation_process` 只走独立 Numeric24 Verifier，不�
 
 Thinking 开启时，`audit_closed_completion` 只验证其后的闭合 JSON。它不认证任意自由 Thinking；报告 `proof_scope` 和 `thinking_present_unverified`。NeMo 数据仍不允许未经验证的外围 Trace 进入 Accepted。
 
-## 3. 可验证 Reward
+## 3. 本轮只实验一个复合奖励 R1
 
-记完整为 stop 且没有 truncation。所有截断样本的以下分量均为0。
+PPO、GRPO统一使用：`R1 = F + 0.20 P + 0.05 S`。不再安排P0–P3消融，也不采用纯二值奖励。长度只统计，暂不加入奖励。
 
-- F：完整且官方末答正确时1，否则0。错误答案不获得正确性奖励。
-- S：严格对象字段、规则名字/映射、列表长度、字符串类型可解析时1，否则0。它只表示格式。
-- E：所有示例中，“按声明规则独立算出的结果=声明输出=原示例输出”的比例，分母固定为完整示例数。漏例、重复字段和 Schema 错误不获得过程分。
-- G：整个声明映射符合 Numeric24 family/group 全局约束时1。
-- Q：只有规则合法且所有示例精确解释后，Query 的声明结果等于独立计算结果时1。
-- C：Q通过，且 answer 与 query_output 精确一致时1。
-- P=(E+G+Q+C)/4；格式不合法时P=0。
-- L：仅完整、F=1、全部必要闭合证明通过时，`1-min(output_tokens/cap,1)`；其余0。
+记完整为stop且没有truncation。所有截断回答的奖励分量均为0。
 
-`exact_trace_pass` 是合法全局映射、全部示例、Query计算、抄录一致性全部通过；最终官方答案是否正确另列。因此对歧义题，一个自洽但与标准答案不同的过程仍可能有过程分，F仍为0。报告歧义子组，防止将它当作已答对。
+- F：完整且官方末答正确时1，否则0。格式不合法但有合法显式最终答案时，仍独立按官方评分，不暗中把Schema通过作为F条件。
+- S：严格对象字段、规则名字/映射、全部示例列表长度、字符串类型合规时1，否则0。它只表示格式。
+- E：所有示例中，“按声明规则独立算出的结果=声明输出=原示例输出”的比例，分母固定为完整示例数。
+- G：声明映射符合Numeric24 family/group全局约束时1。
+- Q：只有规则合法且全部示例精确解释后，Query声明结果等于独立计算结果时1。
+- C：Q通过，且answer与query_output精确一致时1。
+- P=(E+G+Q+C)/4；格式不合法时P=0，避免漏例/不可解析片段凑过程分。
 
-| 消融 | Combined Reward | 目的 |
-|---|---|---|
-| P0 | F | Binary 对照 |
-| P1 | F+.05S | 仅格式变化 |
-| P2 | F+.20P | 可复算过程变化 |
-| P3 | F+.20P+.05L | 在必要过程完成后压缩长度 |
+错误完整回答最高.25，正确完整回答至少1；不能把.25过程分报告为“答对”。这保证单条回报的优先级，不保证任意策略的期望正确率单调上升。过程分只能来自程序复算，不使用模型自评或文本模糊相似度。
 
-组合在 Notebook 06 的 `equation_reward_components` 中直接展示；PPO 从同一教学定义读取。Worker 在 `reward_ablation` 显式启用后重新从原始输出验证、保存逐条分量，再进入目标函数；不把历史 `correct` 布尔值当作过程奖励证据。
+例：完整错误回答若Schema合规、全局映射合法、一半示例正确，但Query和抄录未通过，则P=(.5+1+0+0)/4=.375，R=.125，其中F=0。报告它是部分过程信号，不是正确性奖励。
 
-单条错误完整回答最高 .25，正确完整回答至少1；不等于任意策略期望 Reward 的提升都保证正确率提升。Format/Process 仍可能被优化偏向，必须以最终准确率门槛和消融控制。不得加入随机噪声、伪造正确标签或用模型自评分来制造梯度。
+本配方参考251名成功报告中的正确性精修方向，以及The Submitter实验代码中显式分离答案/格式的工程做法；后者没有已证实的GRPO成功结果。精确过程P和权重是本项目设计，**不声称是某位选手已经验证成功的原配方**。
+
+`equation_reward_components`在Notebook06直接展示，PPO读取同一函数；只接受当前R1版本，其他奖励ID报错。Worker在新Run中重新验证原始输出，保存F/S/P/Combined及Token诊断。长度差不会改变R1。
+
+`exact_trace_pass`指闭合JSON中合法映射、全部示例、Query及抄录全部通过；自由Thinking不被这个标志认证。官方Equation候选存在歧义时，一个自洽但不符合标准答案的过程可以有P，F仍为0，必须单列歧义子组。
 
 ## 4. 全对/全错/Mixed 组
 
 组类别按 F 划分，不按 Combined Reward；否则给格式分的全错组可能被错误称为 mixed。
 
-| 组 | Binary F | S | P | L |
+| 组 | F | S | P | 长度 |
 |---|---|---|---|---|
-| 全对 | 相同，GRPO优势0 | 完整格式若相同仍0方差 | 可能有必要证明通过程度差异 | 仅全部必要证明正确的回答可按长度区分 |
-| 全错 | 相同，GRPO优势0 | 结构有差异可有低权重信号 | 真正算对部分示例时可区分；无可验证步骤仍0 | 始终0 |
-| Mixed | 有真实正确/错误差异 | 辅助，不代替F | 辅助，不可掩盖错误末答 | 只作用于合格正确回答 |
+| 全对 | 相同，GRPO优势0 | 完整格式若相同仍0方差 | 可能有必要证明通过程度差异 | 只统计，不给分 |
+| 全错 | 相同，GRPO优势0 | 结构有差异可有低权重信号 | 真正算对部分示例时可区分；无可验证步骤仍0 | 只统计，不给分 |
+| Mixed | 有真实正确/错误差异 | 辅助，不代替F | 辅助，不可掩盖错误末答 | 只统计，不给分 |
 
-全错并不自动意味着 P>0；全对也不自动意味着一定有长度方差。每组实际保存 F/S/P/L/Combined、population variance/std、mean、advantage 向量、组类别、有效组标记、实际更新数。`group_reward_audit.json` 与 `reward_audit.jsonl` 已接入 Worker。
+全错并不自动意味着 P>0；长度即使不同也不影响本轮奖励。每组实际保存 F/S/P/Combined、population variance/std、mean、advantage 向量、组类别、有效组标记、实际更新数。`group_reward_audit.json` 与 `reward_audit.jsonl` 已接入 Worker。
 
 ## 5. GRPO 标准化与目标
 
@@ -100,6 +98,16 @@ Prompt/Padding 不进入任何均值；rollout batch 在更新前统一算并冻
 
 ## 7. 运行与验收
 
-Phase C 先在各自固定 Train 小面板上做 P0–P3，PPO每组8题×1、GRPO每组4题×8；每个算法/消融独立 Run、相同 SFT、相同题序/采样配置/Token cap。可以复用同一冻结 SFT 的首批 Rollout 检查奖励分量，但训练超过首轮后不可把旧策略样本称为 on-policy。
+Phase C每算法只运行一个R1配方：PPO固定8题×1、GRPO固定4题×8，独立Run、相同SFT、题单、采样设置与cap。先用SFT的4题×8候选检查实际F/S/P分布、每题正确次数、过程分方差及时间成本；不能根据结果临时挑有利题替换冻结面板。
 
-先记录真实更新数、非零梯度、Reward分布、方差、rollout/train时间及设备峰值；再评估三任务同题结果。消融选择仅用 Tune。PPO/GRPO 的最终验收需数学正确率的可信配对证据，截断、长度、证明与跨任务保持共同报告。不因一次小样本上涨宣布“已解决数学”。
+训练分叉后不可复用旧策略样本冒充on-policy。记录真实更新数、非零梯度、组方差、rollout/train时间与峰值；完整组仍可能全同分，必须承认0信号，不加噪声或提高错误答案的正确性标签。
+
+单一配方的结果不能解释“过程分或格式分单独有效”；本轮先验证复合机制和整体效果。若以后需要归因，再另行审核消融。最终看Equation准确率、截断和跨任务保持的逐题配对证据，不因短答或格式率提升宣布数学能力解决。
+
+## 8. Gravity中间过程：公式与代入分别检查
+
+Gravity确实可以用 `g=2d/t²` 审查关键步骤。Notebook01新增 `audit_gravity_formula`，以受限AST与精确有理数检查显式公式是否在代数上等价于 `2*d/t**2`，支持 `2d/(t^2)`、`d/(.5*t*t)`，拒绝 `2*d/t`、`2*d*t²` 和任意代码调用。没有执行eval。
+
+公式出现只证明关系式被写出，不证明变量取值或运算正确。该诊断明确 `substitutions_verified=false`、`whole_trace_verified=false`；DPO-B仍须通过每例g估计、OLS、原Query时间代入与最终位移的数值证明。不能仅搜到这条字符串就给高过程分或通过Accepted。
+
+这用于Gravity DPO-B质量检查/诊断；PPO、GRPO当前仍只训练Equation，不把Gravity公式条件塞进Equation的奖励。若将来增加Gravity RL，需单独注册公式、代入、结果的一致性过程分，不在本轮暗中扩大范围。

@@ -41,6 +41,16 @@ class Round2NeMoTests(unittest.TestCase):
         try:self.assertTrue(self.ns['audit_equation_process'](seed,json.dumps(proof))['exact_trace_pass'])
         finally:self.ns['solve_equation_numeric_prompt']=original
 
+    def test_gravity_formula_is_symbolically_checked_not_keyword_reward(self):
+        check=self.ns['audit_gravity_formula']
+        for formula in ('g=2d/(t^2)', 'g = 2*d/t²', 'g=d/(0.5*t*t)'):
+            audit=check(formula)
+            self.assertTrue(audit['formula_relation_found'],formula)
+            self.assertFalse(audit['substitutions_verified'])
+            self.assertFalse(audit['whole_trace_verified'])
+        for wrong in ('g=2*d/t','g=2*d*t^2','g=2.1*d/t^2','g=__import__("os")'):
+            self.assertFalse(check(wrong)['formula_relation_found'],wrong)
+
     def test_all_arms_actual_sdk_request_fields_schema_and_raw_screening(self):
         from data_designer.interface import DataDesigner
         seeds={r['seed_id']:r for r in self.seeds};ns=self.ns;requests=[];errors=[]

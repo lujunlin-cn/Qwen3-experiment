@@ -32,7 +32,13 @@ def notebook_api(method, chunk_size=64, settings=None):
     config_source=''.join(notebook['cells'][3]['source']).replace(
         '"data" / "processed" / "splits"',
         '"data" / "processed" / "tasksets" / "roman_gravity_equation_v1" / "splits"')
-    exec(compile(config_source, NOTEBOOKS[method]+':config', 'exec'), ns)
+    config_tree=ast.parse(config_source)
+    # Standalone notebooks seed their interactive session. Loading teaching APIs
+    # must not silently reset a worker's registered per-job RNG seed to 42.
+    config_tree.body=[node for node in config_tree.body if not (
+        isinstance(node,ast.Expr) and isinstance(node.value,ast.Call)
+        and ast.unparse(node.value.func) in {'np.random.seed','torch.manual_seed'})]
+    exec(compile(config_tree, NOTEBOOKS[method]+':config', 'exec'), ns)
     settings = settings or {}
     ns.update({'OFFICIAL_VERIFIER_VERSION':'official_nvidia_metric_v3', 'GAMMA':settings.get('gamma',1.0),
                'GAE_LAMBDA':settings.get('gae_lambda',1.0), 'DPO_BETA':settings.get('beta',0.1),
@@ -139,14 +145,24 @@ def verify_rows(rows):
 def attach_proof_audits(rows):
     """Data processing only; independent mathematics stays in Notebook 01."""
     from utils.run_synthetic_smoke import load_notebook
+    from utils.benchmark_training import verifier
     ns=load_notebook('round2_worker_verifier_cpu_definitions')
+    official=verifier()
     for row in rows:
         seed={'prompt':row['prompt'],'task_type':row['task_type'],'answer':row['expected_answer']}
         audit=ns['audit_closed_completion'](seed,row['completion'])
+        if row['task_type']=='gravity':
+            audit['formula_diagnostic']=ns['audit_gravity_formula'](row['completion'])
+        predicted=audit.get('predicted')
+        if predicted is None:
+            predicted,_=official['extract_final_answer'](row['completion'],row['task_type'])
+        correct,_=official['verify_answer'](row['task_type'],predicted,row['expected_answer'])
+        # Binary answer reward never silently becomes a schema reward.
+        audit['final_correct']=bool(correct)
         complete=not row['truncated'] and row['finish_reason']=='stop'
         row.update(proof_audit=audit,format_valid=audit['format_valid'],
             exact_trace_pass=bool(complete and audit['exact_trace_pass']),
-            correct=bool(complete and audit['final_correct']),predicted=audit.get('predicted'),
+            correct=bool(complete and audit['final_correct']),predicted=predicted,
             proof_verifier_version='round2-closed-proof-v1',proof_scope='closed final JSON; thinking is not process-certified')
     return rows
 

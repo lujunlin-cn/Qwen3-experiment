@@ -17,7 +17,7 @@
 
 ## 2. Phase A：已执行的诊断和设计
 
-已完成：原18个NeMo输出逐项诊断/严格重筛、四算法路径审查、DPO-B质量门控、P0–P3确定性奖励定义、实际Validation规模清点与面板Hash冻结。根因与逐条证据见 [诊断报告](ROUND2_DIAGNOSIS.md)。
+已完成：原18个NeMo输出逐项诊断/严格重筛、四算法路径审查、DPO-B质量门控、单一R1=F+.20P+.05S确定性奖励定义、实际Validation规模清点与面板Hash冻结。根因与逐条证据见 [诊断报告](ROUND2_DIAGNOSIS.md)。
 
 没有执行：新模型诊断API调用、新NeMo模型生成、真实第二轮rollout/train/final。所有计划配置明确Not Run。
 
@@ -27,7 +27,7 @@
 
 1. 标准sigmoid DPO，多个β的loss/梯度对照Dense。
 2. 手算GAE/Return，PPO Clip的解析梯度，Value零结果仍可校正；action轴/terminal/padding。
-3. 全对/全错/mixed的GRPO优势与梯度；不同长度sequence mean；完整证明才给长度分。
+3. 全对/全错/mixed的GRPO优势与梯度；不同长度sequence mean；格式/过程仅以固定权重加分，长度不参与奖励。
 4. 独立过程Verifier部分正确、错误Query和重复JSON键；不调用Solver也能验证。
 5. 完整151936词表投影与Dense、padding/checkpoint交叉条件的loss/梯度等价。
 6. 同算法Adam恢复等价于不断点两步；四方法各两轮真实参数更新、Adapter重载、PPO Value Head恢复。
@@ -41,17 +41,17 @@
 |---|---|---|---|
 | C0 | 环境/父权重/模型指纹、设备空闲与守卫检查 | 无长训 | 不覆盖历史、环境匹配、守卫有效 |
 | C1 | NeMo R0、A、B、C | 各9 Seed×2列，共72输出 | 传输、原题/证明/Audit可信，接受率如实；0Accepted可作为质量失败结果保留 |
-| C2 | 冻结SFT的真实Reward readiness probe | Equation 4题×8 | F/S/P/L、组方差、时间与输出长度可追溯，不要求强造mixed |
+| C2 | 冻结SFT的真实Reward readiness probe | Equation 4题×8 | F/S/P/Combined、组方差、时间与输出长度可追溯，不要求强造mixed |
 | C3 | Gravity DPO-B | 16题×4候选；至多16对、2epochs | 双侧正确完整/Trace合格、有真实optimizer.step、保存/重载、峰值<阈值 |
-| C4 | Equation PPO P0/P1/P2/P3 | 每消融8题×1；首轮同SFT | GAE/Value/terminal对齐、真实更新、分量可追溯、峰值<阈值 |
-| C5 | Equation GRPO P0/P1/P2/P3 | 每消融4题×8 | population std/优势正确，有效组与更新数如实、峰值<阈值 |
+| C4 | Equation PPO R1 | 8题×1；同一SFT | GAE/Value/terminal对齐、真实更新、分量可追溯、峰值<阈值 |
+| C5 | Equation GRPO R1 | 4题×8 | population std/优势正确，有效组与更新数如实、峰值<阈值 |
 | C6 | 相同Tune子集跨三任务能力评测 | 每类8题，Base/SFT及训练后模型 | 逐题结果齐全、同题配对、失败/截断不删 |
 
-Run命名样式分别为 `round2_dpo_gravity_b_*`、`round2_ppo_equation_p0_*`…、`round2_grpo_equation_p0_*`…；每算法/消融/重复分别建目录。不得把所有配置塞入同一个GPU Run并中途改权重。
+Run命名样式分别为 `round2_dpo_gravity_b_*`、`round2_ppo_equation_r1_*`、`round2_grpo_equation_r1_*`；每算法/重复分别建目录。不得把所有配置塞入同一个GPU Run并中途改权重。
 
-P0–P3只能复用“相同SFT行为策略的首批冻结Rollout”做分量比较；训练分叉后不得继续复用旧策略样本冒充on-policy。DPO reference固定为SFT，与PPO/GRPO无Reference KL是不同约定。
+本轮不做奖励消融，两个算法共用R1定义；训练分叉后不得继续复用旧策略样本冒充on-policy。DPO reference固定为SFT，与PPO/GRPO无Reference KL是不同约定。
 
-Phase C训练题ID也已冻结在 `phase_c_train_panels/`，Gravity16、PPO Equation8、GRPO Equation4（PPO子集），各消融复用同一题单；选择不查看Validation/Holdout结果。
+Phase C训练题ID也已冻结在 `phase_c_train_panels/`，Gravity16、PPO Equation8、GRPO Equation4（PPO子集），两个算法保留固定题单；选择不查看Validation/Holdout结果。
 
 任何方法0更新只说明没有练到训练路径，不能算显存训练通过。GRPO若全无信号则C失败/需重新设计；不补噪声。NeMo可接受0 Accepted，但此时不能声称已修好质量；Phase D使用新合成数据必须另行审核合格Manifest。
 
@@ -63,7 +63,9 @@ Phase C训练题ID也已冻结在 `phase_c_train_panels/`，Gravity16、PPO Equa
 
 原始cap不自适应降低：Roman8192、Gravity/Equation16384。训练和评测分别记录初始化、rollout、验证、forward/backward、optimizer、保存/重载及总墙钟时间；阶段停止原因区分预算耗尽、无信号、失败、预设轮数、Tune平台期。短程停止不能称充分收敛。
 
-预算先按第一轮吞吐作规划，再用C2实际长度/吞吐修订。当前配置给出4–6小时的中位规划区间，**不是完成保证**。仅DPO64+PPO32+GRPO128条训练候选，若全部到16384即3,670,016输出Token；两种契约、5模型×每类8题评测另最多3,276,800 Token。按200Token/s，上述生成上限已约9.65小时，尚未计NeMo、readiness、训练与启动。若只提供8小时，应分会话推进并保留未完成状态，不削减既定final、不偷改cap、不声称全阶段完成。
+预算先按第一轮吞吐作规划，再用C2实际长度/吞吐修订。只做一个复合奖励后，短程阶段的中位规划先列2–4小时，**不是完成保证**。DPO64+PPO8+GRPO32条训练候选若全到16384，共1,703,936输出Token；readiness另524,288；两个契约、5模型×每类8题评测最多3,276,800。按200Token/s，上述生成上限已约7.65小时，尚未计NeMo、训练、初始化与重载。8小时可能仍不足，需分会话保留未完成状态，不改cap或删final。
+
+正式235题final在两个契约、5模型全部达到各任务cap时为30,474,240输出Token，按200Token/s单生成上限约42.33小时。这是保守上限而非预计实跑时间；真正预算以C的逐任务长度和吞吐重估。不能再承诺第一轮8小时能够覆盖扩大后的全部正式实验。
 
 ## 6. Phase D：扩大评测与正式训练
 
@@ -79,7 +81,7 @@ Phase C训练题ID也已冻结在 `phase_c_train_panels/`，Gravity16、PPO Equa
 
 逐题保存：原题ID/任务/原split、prompt与token Hash、官方answer、raw completion、生成token IDs、finish/truncation、官方评分、Format、闭合证明验证与范围、Reward分量、policy/parent与Verifier版本。
 
-统一汇总Accuracy/Wilson95、Truncation Rate、Mean Output Tokens、Correct Output Mean Tokens、Exact Trace Pass Rate、Format Valid Rate、Reward Mean，以及GRPO Group Variance/有效组比例。Equation闭合证明条件下，所有模型另用相同P3诊断奖励汇总；训练时各P0–P3分量另列，不能直接拿不同定义的均值互比。不存在过程验证的原题输出记“未测/不可验证”及分母，不把缺字段伪报0%或100%。全部输出统计包含Thinking、错误、截断与EOS，不包含输入。
+统一汇总Accuracy/Wilson95、Truncation Rate、Mean Output Tokens、Correct Output Mean Tokens、Exact Trace Pass Rate、Format Valid Rate、Reward Mean，以及GRPO Group Variance/有效组比例。Equation闭合证明条件下，所有模型另用相同R1诊断奖励汇总，分列F/S/P与Combined；不开展其他奖励配方。不存在过程验证的原题输出记“未测/不可验证”及分母，不把缺字段伪报0%或100%。全部输出统计包含Thinking、错误、截断与EOS，不包含输入。
 
 统计采用 [round2_evaluation.py](../utils/round2_evaluation.py)：严格匹配题ID、prompt IDs、verifier、采样/seed、variant/cap；准确率与截断精确McNemar，长度全题配对bootstrap95和sign-flip检验，另报双方均正确子组。长度随机化检验依赖零假设下可交换/对称假设，小样本谨慎解释。主准确率家族为DPO Gravity、PPO Equation、GRPO Equation，Holm校正；其他指标标为次要/探索性，不择优报显著。
 

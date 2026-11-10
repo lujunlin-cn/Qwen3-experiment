@@ -22,6 +22,23 @@ class Round2Numerics(unittest.TestCase):
         cls.grpo=worker.notebook_api('grpo')
         cls.dpo=worker.notebook_api('dpo')
 
+    def test_notebook_api_loading_does_not_reset_registered_rng(self):
+        import numpy as np
+        torch.manual_seed(921);np.random.seed(921)
+        torch_state=torch.get_rng_state().clone();numpy_state=np.random.get_state()
+        worker.notebook_api('ppo')
+        torch.testing.assert_close(torch.get_rng_state(),torch_state)
+        self.assertTrue((np.random.get_state()[1]==numpy_state[1]).all())
+
+    def test_official_final_reward_is_independent_of_schema(self):
+        row={'task_type':'equation_numeric','prompt':'Unparsed fixture prompt',
+             'expected_answer':'17','completion':r'Final answer: \boxed{17}',
+             'finish_reason':'stop','truncated':False,'completion_token_ids':[1,2,3]}
+        verified=worker.attach_proof_audits([row])[0]
+        self.assertFalse(verified['format_valid']);self.assertTrue(verified['correct'])
+        reward=self.grpo['equation_reward_components'](verified,verified['proof_audit'])
+        self.assertEqual(reward['combined'],1.)
+
     def test_gae_matches_finite_horizon_returns_and_never_zeros_observed_value(self):
         values=torch.tensor([[19.,2.,3.,4.,29.]])
         rewards=torch.tensor([[0.,0.,0.,1.,0.]])
@@ -71,7 +88,7 @@ class Round2Numerics(unittest.TestCase):
             self.assertAlmostEqual(actual,float(loss.detach()),places=10)
             torch.testing.assert_close(theta.grad,expected)
 
-    def test_reward_priority_gates_and_all_group_structures(self):
+    def test_single_composite_reward_priority_gates_and_group_structures(self):
         reward=self.grpo['equation_reward_components']
         def sample(final,process,fmt=True,trunc=False,n=128):
             row={'task_type':'equation_numeric','completion_token_ids':[1]*n,'max_tokens':512,
@@ -79,22 +96,23 @@ class Round2Numerics(unittest.TestCase):
             audit={'final_correct':final,'format_valid':fmt,'exact_trace_pass':process==1,
                    'process_checks':dict.fromkeys(('example_fraction','legal_assignment','query_calculation','answer_consistency'),process)}
             return row,audit
-        for ablation in ('P0','P1','P2','P3'):
-            wrong=reward(*sample(False,1),ablation=ablation)
-            correct=reward(*sample(True,0,False),ablation=ablation)
-            self.assertGreater(correct['combined'],wrong['combined'])
-            self.assertEqual(wrong['final'],0);self.assertEqual(wrong['length'],0)
-            truncated=reward(*sample(True,1,trunc=True),ablation=ablation)
-            self.assertEqual(truncated['combined'],0)
+        self.assertEqual(reward(*sample(True,1))['combined'],1.25)
+        self.assertEqual(reward(*sample(False,1))['combined'],.25)
+        self.assertEqual(reward(*sample(True,1,False))['combined'],1.)
+        self.assertEqual(reward(*sample(True,1,trunc=True))['combined'],0.)
+        # No length incentive: changing token count cannot change the reward.
+        self.assertEqual(reward(*sample(True,1,n=8))['combined'],reward(*sample(True,1,n=512))['combined'])
+        with self.assertRaises(ValueError):reward(*sample(True,1),ablation='P0')
         for final in (False,True):
-            rewards=torch.tensor([[reward(*sample(final,0),'P0')['combined']]*8])
-            adv,mean,std=self.grpo['group_advantage'](rewards)
-            self.assertEqual(float(adv.abs().sum()),0.)
-        partial=[reward(*sample(False,x),'P2') for x in (0.,.25,.5,1.)]
+            same=reward(*sample(final,1))['combined']
+            advantages,_,std=self.grpo['group_advantage'](torch.tensor([[same]*8]))
+            self.assertEqual(float(advantages.abs().sum()),0.);self.assertEqual(float(std[0]),0.)
+        # All-wrong: only genuinely different program-verified steps yield relative signal.
+        partial=[reward(*sample(False,p)) for p in (0.,.25,.5,1.)]
         self.assertTrue(all(r['final']==0 for r in partial))
-        adv,mean,std=self.grpo['group_advantage'](torch.tensor([[r['combined'] for r in partial]]))
-        self.assertGreater(float(std[0]),0);self.assertLess(abs(float(adv.sum())),1e-5)
-        mixed,_,_=self.grpo['group_advantage'](torch.tensor([[0.,1.,0.,1.]]))
+        advantages,_,std=self.grpo['group_advantage'](torch.tensor([[r['combined'] for r in partial]]))
+        self.assertGreater(float(std[0]),0.);self.assertAlmostEqual(float(advantages.sum()),0.,places=5)
+        mixed,_,_=self.grpo['group_advantage'](torch.tensor([[.25,1.,0.,1.25]]))
         theta=torch.zeros((4,3),requires_grad=True)
         self.grpo['grpo_clip_loss'](theta.detach(),theta,mixed[0],torch.ones_like(theta))['loss'].backward()
         torch.testing.assert_close(theta.grad,-mixed[0,:,None].expand_as(theta)/12)
@@ -191,7 +209,7 @@ class Round2Numerics(unittest.TestCase):
                 task='gravity' if method=='dpo' else 'equation_numeric'
                 settings['tasks']=[task]
                 if method=='dpo':settings.update(preference_mode='B',epochs=2)
-                else:settings.update(reward_ablation='P3',loss_reduction='sequence_mean')
+                else:settings.update(reward_ablation='R1',loss_reduction='sequence_mean')
                 seed=next(s for s in seeds if s['task_type']==task)
                 proof=reference_proof(ns,seed)
                 rows=[]

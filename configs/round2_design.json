@@ -76,7 +76,7 @@
       "grpo_equation"
     ],
     "holdout_used_for_tuning": false,
-    "report_reward_ablation": "P3"
+    "report_reward_ablation": "R1"
   },
   "dpo": {
     "tasks": [
@@ -106,12 +106,6 @@
       "equation_numeric"
     ],
     "output_contract": "closed_trace_v1",
-    "independent_reward_ablations": [
-      "P0",
-      "P1",
-      "P2",
-      "P3"
-    ],
     "smoke_train_prompts": 8,
     "candidates": 1,
     "rollout_cap": 16384,
@@ -123,19 +117,15 @@
     "value_coef": 0.5,
     "entropy_coef": 0.0,
     "reference_kl_coef": 0.0,
-    "on_policy_update_epochs": 1
+    "on_policy_update_epochs": 1,
+    "reward_ablation": "R1",
+    "reward_name": "complete_final_process_format_v1"
   },
   "grpo": {
     "tasks": [
       "equation_numeric"
     ],
     "output_contract": "closed_trace_v1",
-    "independent_reward_ablations": [
-      "P0",
-      "P1",
-      "P2",
-      "P3"
-    ],
     "smoke_train_prompts": 4,
     "candidates": 8,
     "rollout_cap": 16384,
@@ -146,17 +136,19 @@
     "reward_normalization": "population_std_plus_epsilon",
     "advantage_epsilon": 1e-06,
     "on_policy_update_epochs": 1,
-    "loss_reduction": "sequence_mean"
+    "loss_reduction": "sequence_mean",
+    "reward_ablation": "R1",
+    "reward_name": "complete_final_process_format_v1"
   },
   "reward_weights": {
     "final": 1.0,
-    "format_P1_only": 0.05,
-    "process_P2_P3": 0.2,
-    "length_P3_only": 0.05
+    "format": 0.05,
+    "process": 0.2,
+    "length": 0.0
   },
   "phase_c_budget_seconds_estimate": [
-    14400,
-    21600
+    7200,
+    14400
   ],
   "phase_d_budget_status": "reestimate_after_phase_c_measured_tokens_and_throughput; no promise of 8h total",
   "phase_d_gates": [
@@ -167,5 +159,6 @@
     "phase_c_quality_and_provenance_audits"
   ],
   "formal_runner_registration": "separate per algorithm and arm; old course_8h schema deliberately rejects this design file",
-  "phase_c_train_manifest": "data/processed/round2/round2_20261110_phaseab_v1/phase_c_train_panels/manifest.json"
+  "phase_c_train_manifest": "data/processed/round2/round2_20261110_phaseab_v1/phase_c_train_panels/manifest.json",
+  "reward_experiment_scope": "One shared composite reward only: final+verified_process+format; length diagnostic only; no reward ablation runs"
 }

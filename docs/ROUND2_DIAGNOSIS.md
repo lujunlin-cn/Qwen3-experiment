@@ -68,7 +68,7 @@
 
 ## 3. 算法/工程风险
 
-已修复：截断 DPO Rejected；Notebook 与 Runner 的 Dropout、PPO γ/λ 差异；β 不显式传入；PPO standalone 静默缩减生成预算；完成调度却留下 final 成功时间；请求正文不可追溯；第二轮奖励/偏好定义只存在于 Smoke 而未接入 Worker 的风险。详见 [代码审查](ROUND2_CODE_AUDIT.md)。
+已修复：截断 DPO Rejected；Notebook 与 Runner 的 Dropout、PPO γ/λ 差异；β 不显式传入；加载Notebook API覆盖Worker注册随机种子；PPO standalone 静默缩减生成预算；完成调度却留下 final 成功时间；请求正文不可追溯；第二轮奖励/偏好定义只存在于 Smoke 而未接入 Worker 的风险。详见 [代码审查](ROUND2_CODE_AUDIT.md)。
 
 尚未验证：新 Schema 在 vLLM 0.11.0 上的约束解码；真实 Gravity 正确轨迹的长短分布与覆盖率；新 Reward 的真实分布与反向峰值；greedy 配对结果；完整 final 测试耗时。Draft 配置不可交给旧八小时总调度器直接运行。
 
@@ -85,3 +85,5 @@
 Equation final 37 题每题仍对应 2.70 个百分点。若只有增加正确而无回退，6 个不一致对的未校正双侧 McNemar p=.03125，已相当于 16.2 个百分点；三主比较的保守首次 Holm 门槛需约 7 个单向不一致对。更小的改进很可能无法检出。未显著不代表等效；DPO 没有观察到下降也不是总体非劣性的统计证明。
 
 交付的扩大面板仅解决“四题跳25个百分点”的粗糙问题，无法保证足够功效。最终以逐题配对表、Wilson 区间、精确 McNemar 和长度配对分析报告，不使用 Holdout 补调参。
+
+当前审核范围已收敛：PPO/GRPO只运行同一复合奖励 R1=F+.20P+.05S，不做多奖励消融，长度只统计。Gravity可用g=2d/t²检查关系式，但公式出现不等于代入正确；DPO-B仍需两边通过独立数值证明。
