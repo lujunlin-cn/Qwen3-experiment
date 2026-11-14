@@ -203,7 +203,18 @@ def generate(job, c):
         logprobs=1 if rollout else None,seed=job['seed'],skip_special_tokens=False) for cap in caps]
     adapter=LoRARequest('course_policy',1,job['adapter']) if job.get('adapter') else None
     start=time.perf_counter()
-    outputs=engine.generate(rendered,params,lora_request=adapter)
+    # Keep raw per-question evidence on disk even if a later long decode exhausts
+    # its budget. No partial file is presented as a completed evaluation.
+    def completed_questions():
+        with (Path(job['output'])/'raw_partial_rows.jsonl').open('x') as partial:
+            for index,(text,param) in enumerate(zip(rendered,params)):
+                output=engine.generate([text],[param],lora_request=adapter)[0]
+                partial.write(json.dumps({'panel_index':index,'prompt_token_ids':list(output.prompt_token_ids),
+                    'outputs':[{'text':o.text,'token_ids':list(o.token_ids),'finish_reason':o.finish_reason,
+                        'stop_reason':o.stop_reason} for o in output.outputs]},ensure_ascii=False)+'\n')
+                partial.flush()
+                yield output
+    outputs=completed_questions()
     result=[]
     for original, rendered_prompt, output,cap in zip(rows,prompts,outputs,caps):
         for k,out in enumerate(output.outputs):
@@ -307,7 +318,14 @@ def save_training(policy,tokenizer,optimizer,job,result,value_head=None):
         'use_cache': policy.config.use_cache,
     }
     output=Path(job['output']); adapter=output/'adapter'
+    from utils.low_memory_logprobs import causal_policy_logprobs
+    probe_ids=torch.tensor([[2,3,4,5]],device=policy.get_input_embeddings().weight.device)
+    policy.eval()
+    with torch.no_grad():
+        probe=causal_policy_logprobs(policy,probe_ids,None,64).float().cpu().tolist()
     policy.save_pretrained(adapter); tokenizer.save_pretrained(adapter)
+    write(output/'reload_probe.json',{'input_ids':probe_ids.cpu().tolist(),'logprobs':probe,
+        'adapter_sha256':digest(adapter/'adapter_model.safetensors')})
     previous_steps=0
     if job.get('trainer_state'):
         previous_steps=torch.load(job['trainer_state'],map_location='cpu',weights_only=True).get('optimizer_steps_total',0)
@@ -330,6 +348,30 @@ def save_training(policy,tokenizer,optimizer,job,result,value_head=None):
             for name,cfg in policy.peft_config.items()}}
     write(output/'checkpoint.json',manifest)
     return dict(result,checkpoint=manifest)
+
+
+def reload_check(job,c):
+    """Separate fresh CUDA process: exercise saved Adapter and PPO Value Head."""
+    import torch
+    from utils.low_memory_logprobs import causal_policy_logprobs
+    policy,_=load_policy(job['model'],c[job['method']]['mode'],job['adapter'])
+    probe=read(Path(job['adapter']).parent/'reload_probe.json')
+    if digest(Path(job['adapter'])/'adapter_model.safetensors')!=probe['adapter_sha256']:
+        raise ValueError('Adapter changed after probe')
+    policy.eval();device=policy.get_input_embeddings().weight.device
+    with torch.no_grad():
+        actual=causal_policy_logprobs(policy,torch.tensor(probe['input_ids'],device=device),None,64).float().cpu()
+    expected=torch.tensor(probe['logprobs']);delta=float((actual-expected).abs().max())
+    torch.testing.assert_close(actual,expected,atol=.01,rtol=1e-3)
+    value_ok=None
+    if job.get('value_head'):
+        model=notebook_api('ppo')['CausalLMValueHead'](policy)
+        state=torch.load(job['value_head'],map_location=device,weights_only=True)
+        model.value_head.load_state_dict(state)
+        value_ok=all(torch.isfinite(p).all().item() for p in model.value_head.parameters())
+        if not value_ok:raise ValueError('Nonfinite reloaded Value Head')
+    return {'status':'completed','reload_logprob_max_delta':delta,'value_head_reloaded':value_ok,
+            'policy_fingerprint':artifact_fingerprint(job['adapter'])}
 
 def train_dpo(job,c):
     import torch
@@ -515,6 +557,7 @@ def main():
     started=time.perf_counter()
     try:
         if job['kind'] in ('evaluation','rollout'): result=generate(job,c)
+        elif job['kind']=='reload': result=reload_check(job,c)
         elif job['method']=='sft': result=sft_epoch(job,c)
         elif job['method']=='dpo': result=train_dpo(job,c)
         else: result=train_on_policy(job,c)
