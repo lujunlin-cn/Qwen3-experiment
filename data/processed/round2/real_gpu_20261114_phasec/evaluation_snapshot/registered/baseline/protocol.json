@@ -1,0 +1,183 @@
+{
+  "schema": "qwen3-round2-gpu/v1",
+  "config": {
+    "mode": "bf16_lora",
+    "microbatch": 1,
+    "decoder_gradient_checkpointing": true,
+    "use_cache_training": false,
+    "projection_chunk_size": 64,
+    "max_model_len": 20480,
+    "max_num_seqs": 1,
+    "max_num_batched_tokens": 512,
+    "kv_cache_gib": 3.0,
+    "enforce_eager": false,
+    "compilation_config": {
+      "level": 0,
+      "cudagraph_mode": "FULL_DECODE_ONLY",
+      "cudagraph_capture_sizes": [
+        1
+      ],
+      "max_capture_size": 1
+    },
+    "schema": "qwen3-round2-gpu/v1",
+    "seed": 20261110,
+    "device_limit_bytes": 8000000000,
+    "poll_seconds": 0.25,
+    "allocator_fraction_of_limit": 0.9,
+    "eval_caps": {
+      "numeral_system": 8192,
+      "gravity": 16384,
+      "equation_numeric": 16384
+    },
+    "sampling": {
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "enable_thinking": true
+    },
+    "evaluation": {
+      "panels_manifest": "data/processed/round2/round2_20261110_phaseab_v1/panels/manifest.json",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "enable_thinking": true,
+      "caps": {
+        "numeral_system": 8192,
+        "gravity": 16384,
+        "equation_numeric": 16384
+      },
+      "contracts": [
+        "original",
+        "closed_trace_v1"
+      ],
+      "final_models": [
+        "base",
+        "sft",
+        "dpo",
+        "ppo",
+        "grpo"
+      ],
+      "same_questions_and_settings_per_contract": true,
+      "mcnemar_exact": true,
+      "wilson95": true,
+      "paired_bootstrap_draws": 10000,
+      "primary_holm_family": [
+        "dpo_gravity",
+        "ppo_equation",
+        "grpo_equation"
+      ],
+      "holdout_used_for_tuning": false,
+      "report_reward_ablation": "R1"
+    },
+    "dpo": {
+      "tasks": [
+        "gravity"
+      ],
+      "output_contract": "closed_trace_v1",
+      "independent_arms": [
+        "B"
+      ],
+      "candidates": 4,
+      "smoke_train_prompts": 16,
+      "rollout_cap": 16384,
+      "beta": 0.1,
+      "learning_rate": 2e-06,
+      "gradient_accumulation": 4,
+      "epochs": 2,
+      "reference": "frozen_initial_sft_adapter",
+      "reject_truncated": true,
+      "chosen_requires_exact_trace": true,
+      "length_gap_min_tokens": 64,
+      "length_gap_min_fraction": 0.2,
+      "preference_mode": "B",
+      "both_sides_require_exact_trace": true,
+      "mode": "bf16_lora"
+    },
+    "ppo": {
+      "tasks": [
+        "equation_numeric"
+      ],
+      "output_contract": "closed_trace_v1",
+      "smoke_train_prompts": 8,
+      "candidates": 1,
+      "rollout_cap": 16384,
+      "learning_rate": 1e-05,
+      "gradient_accumulation": 8,
+      "gamma": 1.0,
+      "gae_lambda": 1.0,
+      "clip_eps": 0.2,
+      "value_coef": 0.5,
+      "entropy_coef": 0.0,
+      "reference_kl_coef": 0.0,
+      "on_policy_update_epochs": 1,
+      "reward_ablation": "R1",
+      "reward_name": "complete_final_process_format_v1",
+      "mode": "bf16_lora"
+    },
+    "grpo": {
+      "tasks": [
+        "equation_numeric"
+      ],
+      "output_contract": "closed_trace_v1",
+      "smoke_train_prompts": 4,
+      "candidates": 8,
+      "rollout_cap": 16384,
+      "learning_rate": 1e-05,
+      "gradient_accumulation": 32,
+      "clip_eps": 0.2,
+      "reference_kl_coef": 0.0,
+      "reward_normalization": "population_std_plus_epsilon",
+      "advantage_epsilon": 1e-06,
+      "on_policy_update_epochs": 1,
+      "loss_reduction": "sequence_mean",
+      "reward_ablation": "R1",
+      "reward_name": "complete_final_process_format_v1",
+      "mode": "bf16_lora"
+    }
+  },
+  "config_sha256": "9af7b514fe08cc76b028bef6e53e42f38847d9c649c03c24714fe20e2421e4fc",
+  "source_commit": "f1502fc",
+  "sources": {
+    "utils/audit_benchmark_results.py": "2f574c21c9c4c5b02c811ea15cc7d7c1ed3d00c2e84c2246f7341f6be9e87e25",
+    "utils/benchmark_training.py": "4155aca95e3eb08ea1e645ac74a265dbc970df2f3df2053ceb04a953c9835e29",
+    "utils/budget_low_memory.py": "0348ad94b48028ec5d99a1fc2855592c6469e79dd1886bc25c7c9cf230e7ea7e",
+    "utils/check_low_memory.py": "60274a43b22707639b48a79b17440428a0a09e0b95f7d849e71e34ebb715ca57",
+    "utils/course_protocol.py": "79fd5c7f27787a81325a075497494c7da4ab3adf8b8fe637f7472c832f5eba73",
+    "utils/course_run.py": "d43b20ece8372644c6dbacbeaeee25b34242375fc2934e83c7ebbe21c13656c8",
+    "utils/course_worker.py": "ab2fc447123f49a490b6bfd3a84245608f2f83c1bc7493b2034f6bb240241390",
+    "utils/download_qwen3.py": "d2afb84b5321f71ca8a7de34da838bb03d0a27cf9872e8256cecbcc19d9bf10b",
+    "utils/low_memory_logprobs.py": "eb51145e7bf6ccb27d26484499e3a5bbf34ed2d9298f193f85dfad751789f619",
+    "utils/prepare_official_dataset.py": "0a8310b0023c540ca388f71174f4ed55bff12065465ebc6c309e6cc29201a61c",
+    "utils/prepare_round2.py": "086dec2a54a23fa6c1d628d27f62c00ad3baf9afb86be07523f7cee8208108c8",
+    "utils/round2_evaluation.py": "5523f2b482a8a85c234ec15b92647c1994afcac91c06990ff84344d29fb50933",
+    "utils/run_baseline.py": "099263f28a3e7b70b9a375694c04896bb6e3a5950bebd82158e6ef14e37f097e",
+    "utils/run_nemo_guarded.py": "b4e4aea9ef8977942ecbd4984e8a95f5568075e536530fbc5223847714dce7a8",
+    "utils/run_synthetic_smoke.py": "7aa90aa6e05e905e62ff89097057c2233663b10b24ff5c00780f88a7c300793e",
+    "utils/round2_nemo_gpu.py": "359b28daa124519a8e459bc992c4a89e6a5dc5e72f8da5387357315d58730382",
+    "utils/round2_run.py": "f47ed4b1b917007e6c87ba90e24501914e0997b58f1acfd558a59f01a3dc5d1a",
+    "00_Baseline_Diagnosis.ipynb": "af25cd9163558a2140c21c88f57f09467bf0c2c07558cb031acd8d070791477d",
+    "01_Synthetic_Data_Engineering.ipynb": "6e73ca4848aecd81c37a8d851096755e74880dfb7c32b3fd9e6201ccbecd0995",
+    "02_Prompt_Engineering.ipynb": "afac5bd5b035891bd33b56b96b87c281040b05ae054cf78dd3ce1794fdac496f",
+    "03_SFT.ipynb": "7b9130f9ef37bb574f930df75eff52933c46d144a39095c8fc653b4b38f13874",
+    "04_DPO.ipynb": "f1c0281b21af8d79df960d8d9036f398f2abeb1110297e789f24fe3febe57259",
+    "05_PPO.ipynb": "e4814b10e9b962e80d5068ebfca55ec12469748115236e6d58f8845813ec4e0e",
+    "06_GRPO.ipynb": "f6f86a2142a770353dd6c1aef218fa01295f4a8c2b4d1521b6828a923da814a6",
+    "configs/round2_design.json": "9af7b514fe08cc76b028bef6e53e42f38847d9c649c03c24714fe20e2421e4fc"
+  },
+  "frozen_files": {
+    "public_priors.json": "29da7f7e333b396657b5d16f9bef73e367c63d7a1e7d04210288a121ed038057",
+    "panels/evaluation.jsonl": "980edfbc998d876ec75bfcd11872c405dec989a56feeb0eb88850fd3c7d5230c"
+  },
+  "split_sha256": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+    "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+  },
+  "traces_sha256": "c7b6ba16bc3975b3ffb145df07a99976bc6d17db77c82d1e286e817f469387b9",
+  "method": "baseline",
+  "parent_sft_fingerprint": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371",
+  "holdout_used": false,
+  "final_panel_used_for_selection": false,
+  "gpu_authorization": "User explicitly requested testing on port 41522 on 2026-11-14",
+  "design_gpu_flag_superseded_by_explicit_user_authorization": true
+}

@@ -1,0 +1,79 @@
+{
+  "status": "completed",
+  "metrics": {
+    "equation_numeric": {
+      "n": 8,
+      "correct": 0,
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.3244156195108769
+      ],
+      "truncated": 6,
+      "truncation_rate": 0.75,
+      "mean_output_tokens": 13618.875,
+      "total_output_tokens": 108951,
+      "mean_correct_output_tokens": null,
+      "max_output_tokens": 16384,
+      "exact_trace_pass_rate": null,
+      "exact_trace_pass_rate_verified_n": 0,
+      "format_valid_rate": null,
+      "format_valid_rate_verified_n": 0,
+      "reward_mean": null
+    },
+    "gravity": {
+      "n": 8,
+      "correct": 8,
+      "accuracy": 1.0,
+      "accuracy_wilson95": [
+        0.6755843804891231,
+        1.0
+      ],
+      "truncated": 0,
+      "truncation_rate": 0.0,
+      "mean_output_tokens": 6017.25,
+      "total_output_tokens": 48138,
+      "mean_correct_output_tokens": 6017.25,
+      "max_output_tokens": 7906,
+      "exact_trace_pass_rate": null,
+      "exact_trace_pass_rate_verified_n": 0,
+      "format_valid_rate": null,
+      "format_valid_rate_verified_n": 0,
+      "reward_mean": null
+    },
+    "numeral_system": {
+      "n": 8,
+      "correct": 5,
+      "accuracy": 0.625,
+      "accuracy_wilson95": [
+        0.30573785458380187,
+        0.863158240538479
+      ],
+      "truncated": 1,
+      "truncation_rate": 0.125,
+      "mean_output_tokens": 2613.125,
+      "total_output_tokens": 20905,
+      "mean_correct_output_tokens": 1851.8,
+      "max_output_tokens": 8192,
+      "exact_trace_pass_rate": null,
+      "exact_trace_pass_rate_verified_n": 0,
+      "format_valid_rate": null,
+      "format_valid_rate_verified_n": 0,
+      "reward_mean": null
+    }
+  },
+  "records": 24,
+  "generation_seconds": 793.2035677097738,
+  "output_tokens_per_second": 224.3988898258794,
+  "policy_fingerprint": {
+    "kind": "base"
+  },
+  "worker_wall_seconds": 817.7152571137995,
+  "torch_peak_allocated_bytes": 0,
+  "torch_peak_reserved_bytes": 0,
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "4.57.1"
+  },
+  "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+}

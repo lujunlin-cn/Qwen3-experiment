@@ -1,0 +1,93 @@
+{
+  "jobs": [
+    {
+      "job": "readiness_equation",
+      "n": 32,
+      "correct": 0,
+      "format_valid": 0,
+      "exact_trace_pass": 0,
+      "failure_categories": {
+        "parse_error": 14,
+        "schema_or_numeric_failure": 18
+      },
+      "scope": "Failure categories describe closed-JSON verification, not correctness of all free-text Thinking",
+      "audit_error_messages": {
+        "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')": 13,
+        "no_error_field": 18,
+        "JSONDecodeError(\"Expecting ',' delimiter: line 8 column 22 (char 153)\")": 1
+      }
+    },
+    {
+      "job": "dpo_r1_rollout",
+      "n": 64,
+      "correct": 7,
+      "format_valid": 20,
+      "exact_trace_pass": 0,
+      "failure_categories": {
+        "parse_error": 44,
+        "schema_or_numeric_failure": 20
+      },
+      "scope": "Failure categories describe closed-JSON verification, not correctness of all free-text Thinking",
+      "audit_error_messages": {
+        "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')": 43,
+        "no_error_field": 20,
+        "JSONDecodeError(\"Expecting ',' delimiter: line 7 column 180 (char 344)\")": 1
+      },
+      "gravity_formula_relation_found": 2
+    },
+    {
+      "job": "ppo_r1_rollout",
+      "n": 8,
+      "correct": 0,
+      "format_valid": 0,
+      "exact_trace_pass": 0,
+      "failure_categories": {
+        "schema_or_numeric_failure": 6,
+        "parse_error": 2
+      },
+      "scope": "Failure categories describe closed-JSON verification, not correctness of all free-text Thinking",
+      "audit_error_messages": {
+        "no_error_field": 6,
+        "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')": 2
+      }
+    },
+    {
+      "job": "ppo_r2_rollout",
+      "n": 8,
+      "correct": 1,
+      "format_valid": 0,
+      "exact_trace_pass": 0,
+      "failure_categories": {
+        "schema_or_numeric_failure": 5,
+        "parse_error": 3
+      },
+      "scope": "Failure categories describe closed-JSON verification, not correctness of all free-text Thinking",
+      "audit_error_messages": {
+        "no_error_field": 5,
+        "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')": 2,
+        "JSONDecodeError(\"Expecting ',' delimiter: line 6 column 38 (char 130)\")": 1
+      }
+    },
+    {
+      "job": "grpo_r1_rollout",
+      "n": 32,
+      "correct": 0,
+      "format_valid": 0,
+      "exact_trace_pass": 0,
+      "failure_categories": {
+        "parse_error": 12,
+        "schema_or_numeric_failure": 20
+      },
+      "scope": "Failure categories describe closed-JSON verification, not correctness of all free-text Thinking",
+      "audit_error_messages": {
+        "JSONDecodeError(\"Expecting ',' delimiter: line 8 column 22 (char 132)\")": 1,
+        "no_error_field": 20,
+        "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')": 9,
+        "JSONDecodeError(\"Expecting ',' delimiter: line 8 column 22 (char 149)\")": 1,
+        "JSONDecodeError(\"Expecting ',' delimiter: line 1 column 137 (char 136)\")": 1
+      }
+    }
+  ],
+  "official_scoring_or_acceptance_rules_changed": false,
+  "model_self_evaluation_used": false
+}

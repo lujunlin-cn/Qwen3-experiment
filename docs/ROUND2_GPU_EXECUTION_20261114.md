@@ -11,3 +11,11 @@
 显存阈值8,000,000,000 bytes，轮询0.25秒；记录设备峰值及Torch峰值，不声称连续瞬时上界。工作队列预算初设8小时，不从安装时间扣除；不自动覆盖、延长deadline或更改cap。剩余预算与Phase C结果决定是否有条件进入扩大评测；未满足门槛不启动正式长训。
 
 最终以新Suite原始日志、guard、rows、Reward与Preference审计、Checkpoint/reload manifest和报告为准；本文件当前记录执行设计，不是成功结论。
+
+## 执行后状态与范围调整
+
+用户随后将算法效果评测缩减为 PPO，保留同题 Base/SFT 对照，取消 DPO/GRPO 后续模型效果评测；已完成的训练信号与失败诊断保留。该指令另存 `user_scope_20261114.json`，不改写原始注册协议。
+
+已完成 NeMo R0/A/B/C、readiness、DPO-B 无偏好检查、PPO 两轮真实更新/恢复、GRPO 无组信号检查，以及 Base/SFT/PPO 原题对照。随后 SSH 返回 `Connection refused`，闭合证明三模型对照未取回完整结果；导出明确标记 `snapshot_incomplete`，远端最终进程状态未知。Phase C 未整体验收，Phase D 未启动。
+
+真实结果、限制和证据入口见 [第二轮 GPU 验证报告](ROUND2_GPU_RESULTS_20261114.md)。

@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "negative_checks": [
+    {
+      "case": "changed_official_answer",
+      "status": "rejected_as_required",
+      "reason": "Wrong evaluation question/answer/source/contract"
+    },
+    {
+      "case": "changed_raw_output",
+      "status": "rejected_as_required",
+      "reason": "Raw output changed: completion"
+    },
+    {
+      "case": "changed_token_ids",
+      "status": "rejected_as_required",
+      "reason": "Raw output changed: completion_token_ids"
+    },
+    {
+      "case": "changed_scoring_result",
+      "status": "rejected_as_required",
+      "reason": "Re-scoring mismatch: correct"
+    },
+    {
+      "case": "changed_truncation",
+      "status": "rejected_as_required",
+      "reason": "Invalid truncation or output token accounting"
+    }
+  ],
+  "verified_source_files": 25,
+  "source_commit": "f1502fc",
+  "gpu_used": false
+}

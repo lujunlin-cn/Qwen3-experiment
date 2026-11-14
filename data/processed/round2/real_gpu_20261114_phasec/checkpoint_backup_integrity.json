@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "rounds": [
+    {
+      "round": 1,
+      "verified_files": {
+        "adapter/adapter_config.json": "7f063bcd8cda01ca676f5b8957fde0816d2d9a1822abcc6046feb1c2fbdb0913",
+        "adapter/adapter_model.safetensors": "ca354c292090a31780a6ac1b952a1ca1b971dda68cf882072177a4a8ccff8a08",
+        "trainer.pt": "8234a399da8c6f7be211b1af5159bc71f3c0583c06a39ef182ba32f1d7a158bf",
+        "value_head.pt": "2a52b601eeb17cb36b2aba91bad219fb2fdb96e6e4fe08640046a15c5292ab26"
+      },
+      "total_optimizer_steps": 1,
+      "policy_version": "ppo:round1:ca354c292090"
+    },
+    {
+      "round": 2,
+      "verified_files": {
+        "adapter/adapter_config.json": "8f16bd8636288961875e069c1a997d1441a13e52056032a622c86037bf1ea7fc",
+        "adapter/adapter_model.safetensors": "e1b284163fc35fbffbe0835f4302fe31ffd6f31cade615535b8846e455c0ad4c",
+        "trainer.pt": "540e1157b0d74b603146fbc5068351bc12a3ce305a737eedf5ce662e2d9212d0",
+        "value_head.pt": "f245375ce5e5124ae61d3c156f1bc4c67ceda20c2b51826fc5211cda034efaa9"
+      },
+      "total_optimizer_steps": 2,
+      "policy_version": "ppo:round2:e1b284163fc3"
+    }
+  ],
+  "weights_kept_outside_git": true
+}

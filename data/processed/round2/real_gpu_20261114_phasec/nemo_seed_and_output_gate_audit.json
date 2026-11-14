@@ -1,0 +1,41 @@
+{
+  "status": "passed_integrity_check",
+  "same_9_inputs_and_answers_across_arms": true,
+  "arms": {
+    "R0": {
+      "seed_count": 9,
+      "seed_solver_pass": 9,
+      "seed_verifier_pass": 9,
+      "seed_leakage_pass": 9,
+      "output_accepted": 0,
+      "accepted_tasks": {}
+    },
+    "A": {
+      "seed_count": 9,
+      "seed_solver_pass": 9,
+      "seed_verifier_pass": 9,
+      "seed_leakage_pass": 9,
+      "output_accepted": 0,
+      "accepted_tasks": {}
+    },
+    "B": {
+      "seed_count": 9,
+      "seed_solver_pass": 9,
+      "seed_verifier_pass": 9,
+      "seed_leakage_pass": 9,
+      "output_accepted": 0,
+      "accepted_tasks": {}
+    },
+    "C": {
+      "seed_count": 9,
+      "seed_solver_pass": 9,
+      "seed_verifier_pass": 9,
+      "seed_leakage_pass": 9,
+      "output_accepted": 1,
+      "accepted_tasks": {
+        "numeral_system": 1
+      }
+    }
+  },
+  "interpretation": "Input-seed validation and transport success do not establish generated-output quality"
+}

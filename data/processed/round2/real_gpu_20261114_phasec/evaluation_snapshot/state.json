@@ -1,0 +1,469 @@
+{
+  "status": "running",
+  "jobs": {
+    "nemo_R0": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/nemo_R0_round2_20261114_phasec_r1",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 72.26617622375488,
+        "started_at_unix": 1794659742.1137538,
+        "device_peak_sampled_bytes": 3808428032,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 239,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "kind": "nemo",
+      "result_sha256": "febd73883a6df8ed38452fbc968aba626135dee7b24881b91f4493cac43f0d18"
+    },
+    "nemo_A": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/nemo_A_round2_20261114_phasec_r1",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 69.9166648387909,
+        "started_at_unix": 1794659814.6774676,
+        "device_peak_sampled_bytes": 3808428032,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 235,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "kind": "nemo",
+      "result_sha256": "2dc9e4783b18972f7a8258ef9c11d0fac50ba9df7c795eb3f36fa3982f3ed5f6"
+    },
+    "nemo_B": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/nemo_B_round2_20261114_phasec_r1",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 72.23605871200562,
+        "started_at_unix": 1794659884.8642628,
+        "device_peak_sampled_bytes": 3808428032,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 241,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "kind": "nemo",
+      "result_sha256": "24d2824ad5fb5f2dd2325af8536587b0de2051ecad58e4db80e1b178a9fd8080"
+    },
+    "nemo_C": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/nemo_C_round2_20261114_phasec_r1",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 66.09251737594604,
+        "started_at_unix": 1794659957.3721528,
+        "device_peak_sampled_bytes": 3808428032,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 216,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "kind": "nemo",
+      "result_sha256": "cdd49ce60f14467f7bd9d732ec606db13bab98f555dac052e736352ff678a98e"
+    },
+    "readiness_equation": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_readiness_round2_20261114_phasec_r1/jobs/readiness_equation",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 923.5833320617676,
+        "started_at_unix": 1794660023.6806455,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 3038,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "readiness",
+      "kind": "rollout",
+      "result_sha256": "b3c27de5447a785cd2c2ae8ff6c0cebcfa00c3a114a0b28b08d085e40f252eae"
+    },
+    "dpo_r1_rollout": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_dpo_round2_20261114_phasec_r1/jobs/dpo_r1_rollout",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 2432.294576406479,
+        "started_at_unix": 1794660947.395666,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 8013,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "dpo",
+      "kind": "rollout",
+      "result_sha256": "4f5b856b741627f1e1c3b478d1b6d1584188b188d0f9fb804320a90c8175c743"
+    },
+    "dpo_r1_train": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_dpo_round2_20261114_phasec_r1/jobs/dpo_r1_train",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 6.826307773590088,
+        "started_at_unix": 1794663379.9114764,
+        "device_peak_sampled_bytes": 270532608,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 23,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "dpo",
+      "kind": "training",
+      "result_sha256": "194f92eba296d04e9491ebc4e5ac63239e9499be62166af2ba36b83abce43030"
+    },
+    "ppo_r1_rollout": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r1_rollout",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 235.8816487789154,
+        "started_at_unix": 1794663386.9648588,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 772,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "ppo",
+      "kind": "rollout",
+      "result_sha256": "08eb6cfa4c9a28fe10d2414d10fc03873df442f60f881b77d58e50992098623b"
+    },
+    "ppo_r1_train": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r1_train",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 42.60691475868225,
+        "started_at_unix": 1794663623.0498114,
+        "device_peak_sampled_bytes": 3359637504,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 138,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "ppo",
+      "kind": "training",
+      "result_sha256": "dc7b11fed3e4b18722850439c167f342486f5384ef5d276efe9787dbe81cf16c"
+    },
+    "ppo_r1_reload": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r1_reload",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 11.399732828140259,
+        "started_at_unix": 1794663665.8518078,
+        "device_peak_sampled_bytes": 2036334592,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 38,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "ppo",
+      "kind": "reload",
+      "result_sha256": "046b28c95fcddded52c17b11121dae66e4c6749ea8c205b69be9c2b222595d6b"
+    },
+    "ppo_r2_rollout": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_rollout",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 227.3643057346344,
+        "started_at_unix": 1794663677.4241297,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 752,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "ppo",
+      "kind": "rollout",
+      "result_sha256": "f0858956ee630b30ad96a7f8a8b38da229ca5c12f5d067a47b28950b7bbfdeaf"
+    },
+    "ppo_r2_train": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_train",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 41.59709429740906,
+        "started_at_unix": 1794663905.0554574,
+        "device_peak_sampled_bytes": 3177185280,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 137,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "ppo",
+      "kind": "training",
+      "result_sha256": "933db52342bb995b35db088ae53c483368d3fa293dbf8d41d0340bab37085d34"
+    },
+    "ppo_r2_reload": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_reload",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 11.267019510269165,
+        "started_at_unix": 1794663946.8185923,
+        "device_peak_sampled_bytes": 2036334592,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 37,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "ppo",
+      "kind": "reload",
+      "result_sha256": "f857cfc7a1f0d58486e5534ddd0acdbf489f172ce5eb0d62513c5450786e01fe"
+    },
+    "grpo_r1_rollout": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_grpo_round2_20261114_phasec_r1/jobs/grpo_r1_rollout",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 861.5912501811981,
+        "started_at_unix": 1794663958.2909412,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 2861,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "grpo",
+      "kind": "rollout",
+      "result_sha256": "0bfe31b6f1ac337f5836d2fa2d6dc13b4011b9e03dd189f2972656acf7222509"
+    },
+    "grpo_r1_train": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_grpo_round2_20261114_phasec_r1/jobs/grpo_r1_train",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 22.59374451637268,
+        "started_at_unix": 1794664820.0499105,
+        "device_peak_sampled_bytes": 2036334592,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 77,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "grpo",
+      "kind": "training",
+      "result_sha256": "f8beb2dc4b54f87282a6ecaa739f13c4adb835561c00b7d16185a151f2fbc3bf"
+    },
+    "eval_base_original": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_baseline_round2_20261114_phasec_r1/jobs/eval_base_original",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 820.9531526565552,
+        "started_at_unix": 1794664842.6886978,
+        "device_peak_sampled_bytes": 5195694080,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 2706,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "baseline",
+      "kind": "evaluation",
+      "result_sha256": "146d47efa1b7d00fc198ac9ae79238c29b898a2173a4ecdc579ddf4956a3d490"
+    },
+    "eval_sft_original": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_baseline_round2_20261114_phasec_r1/jobs/eval_sft_original",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 1173.6499803066254,
+        "started_at_unix": 1794665663.8159678,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 3864,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "baseline",
+      "kind": "evaluation",
+      "result_sha256": "b9126cef816baf79ac514efb84cf5cfc3f1de3faba33a5487e390e9b1102acf9"
+    },
+    "eval_ppo_original": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_baseline_round2_20261114_phasec_r1/jobs/eval_ppo_original",
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 1239.3839163780212,
+        "started_at_unix": 1794666837.58651,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 4057,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "method": "baseline",
+      "kind": "evaluation",
+      "result_sha256": "3e5bea3675659730e92b458d4a4ff8210b85ba16ec5e7c0dbeadfbab49d1ec28"
+    },
+    "eval_base_closed_trace_v1": {
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_baseline_round2_20261114_phasec_r1/jobs/eval_base_closed_trace_v1",
+      "guard": {
+        "status": "running"
+      },
+      "method": "baseline",
+      "kind": "evaluation"
+    }
+  },
+  "checkpoints": {
+    "ppo": {
+      "status": "completed",
+      "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_train/adapter",
+      "method": "ppo",
+      "round": 2,
+      "parent_policy_version": "ppo:round1:ca354c292090",
+      "policy_version": "ppo:round2:e1b284163fc3",
+      "parent_fingerprint": {
+        "adapter_config.json": "7f063bcd8cda01ca676f5b8957fde0816d2d9a1822abcc6046feb1c2fbdb0913",
+        "adapter_model.safetensors": "ca354c292090a31780a6ac1b952a1ca1b971dda68cf882072177a4a8ccff8a08"
+      },
+      "weights": {
+        "adapter_config.json": "8f16bd8636288961875e069c1a997d1441a13e52056032a622c86037bf1ea7fc",
+        "adapter_model.safetensors": "e1b284163fc35fbffbe0835f4302fe31ffd6f31cade615535b8846e455c0ad4c"
+      },
+      "sft_reference": "/root/autodl-tmp/round2_setup/sft_r1_adapter",
+      "base_model_path": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B",
+      "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_train/trainer.pt",
+      "value_head": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_train/value_head.pt",
+      "trainer_state_sha256": "540e1157b0d74b603146fbc5068351bc12a3ce305a737eedf5ce662e2d9212d0",
+      "value_head_sha256": "f245375ce5e5124ae61d3c156f1bc4c67ceda20c2b51826fc5211cda034efaa9",
+      "optimizer_steps_total": 2,
+      "optimizer_learning_rates": [
+        1e-05
+      ],
+      "effective_lora": {
+        "default": {
+          "r": 8,
+          "lora_alpha": 16,
+          "lora_dropout": 0.0,
+          "target_modules": [
+            "down_proj",
+            "gate_proj",
+            "k_proj",
+            "o_proj",
+            "q_proj",
+            "up_proj",
+            "v_proj"
+          ]
+        }
+      }
+    }
+  },
+  "started_at_unix": 1794659739.226738,
+  "deadline_unix": 1794688539.2267385
+}

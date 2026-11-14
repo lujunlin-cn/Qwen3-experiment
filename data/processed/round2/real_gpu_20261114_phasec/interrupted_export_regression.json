@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "default_export_rejects_unfinished_suite": true,
+  "no_output_written_by_rejected_export": true,
+  "explicit_snapshot_preserves_running_source_state": true,
+  "no_final_wall_time_or_remote_shutdown_invented": true,
+  "missing_closed_evaluations": [
+    "eval_base_closed_trace_v1",
+    "eval_sft_closed_trace_v1",
+    "eval_ppo_closed_trace_v1"
+  ]
+}

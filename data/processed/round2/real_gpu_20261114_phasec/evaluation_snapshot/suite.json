@@ -1,0 +1,334 @@
+{
+  "status": "registered",
+  "runs": {
+    "baseline": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_baseline_round2_20261114_phasec_r1",
+    "readiness": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_readiness_round2_20261114_phasec_r1",
+    "dpo": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_dpo_round2_20261114_phasec_r1",
+    "ppo": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1",
+    "grpo": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_grpo_round2_20261114_phasec_r1"
+  },
+  "config": {
+    "mode": "bf16_lora",
+    "microbatch": 1,
+    "decoder_gradient_checkpointing": true,
+    "use_cache_training": false,
+    "projection_chunk_size": 64,
+    "max_model_len": 20480,
+    "max_num_seqs": 1,
+    "max_num_batched_tokens": 512,
+    "kv_cache_gib": 3.0,
+    "enforce_eager": false,
+    "compilation_config": {
+      "level": 0,
+      "cudagraph_mode": "FULL_DECODE_ONLY",
+      "cudagraph_capture_sizes": [
+        1
+      ],
+      "max_capture_size": 1
+    },
+    "schema": "qwen3-round2-gpu/v1",
+    "seed": 20261110,
+    "device_limit_bytes": 8000000000,
+    "poll_seconds": 0.25,
+    "allocator_fraction_of_limit": 0.9,
+    "eval_caps": {
+      "numeral_system": 8192,
+      "gravity": 16384,
+      "equation_numeric": 16384
+    },
+    "sampling": {
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "enable_thinking": true
+    },
+    "evaluation": {
+      "panels_manifest": "data/processed/round2/round2_20261110_phaseab_v1/panels/manifest.json",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "enable_thinking": true,
+      "caps": {
+        "numeral_system": 8192,
+        "gravity": 16384,
+        "equation_numeric": 16384
+      },
+      "contracts": [
+        "original",
+        "closed_trace_v1"
+      ],
+      "final_models": [
+        "base",
+        "sft",
+        "dpo",
+        "ppo",
+        "grpo"
+      ],
+      "same_questions_and_settings_per_contract": true,
+      "mcnemar_exact": true,
+      "wilson95": true,
+      "paired_bootstrap_draws": 10000,
+      "primary_holm_family": [
+        "dpo_gravity",
+        "ppo_equation",
+        "grpo_equation"
+      ],
+      "holdout_used_for_tuning": false,
+      "report_reward_ablation": "R1"
+    },
+    "dpo": {
+      "tasks": [
+        "gravity"
+      ],
+      "output_contract": "closed_trace_v1",
+      "independent_arms": [
+        "B"
+      ],
+      "candidates": 4,
+      "smoke_train_prompts": 16,
+      "rollout_cap": 16384,
+      "beta": 0.1,
+      "learning_rate": 2e-06,
+      "gradient_accumulation": 4,
+      "epochs": 2,
+      "reference": "frozen_initial_sft_adapter",
+      "reject_truncated": true,
+      "chosen_requires_exact_trace": true,
+      "length_gap_min_tokens": 64,
+      "length_gap_min_fraction": 0.2,
+      "preference_mode": "B",
+      "both_sides_require_exact_trace": true,
+      "mode": "bf16_lora"
+    },
+    "ppo": {
+      "tasks": [
+        "equation_numeric"
+      ],
+      "output_contract": "closed_trace_v1",
+      "smoke_train_prompts": 8,
+      "candidates": 1,
+      "rollout_cap": 16384,
+      "learning_rate": 1e-05,
+      "gradient_accumulation": 8,
+      "gamma": 1.0,
+      "gae_lambda": 1.0,
+      "clip_eps": 0.2,
+      "value_coef": 0.5,
+      "entropy_coef": 0.0,
+      "reference_kl_coef": 0.0,
+      "on_policy_update_epochs": 1,
+      "reward_ablation": "R1",
+      "reward_name": "complete_final_process_format_v1",
+      "mode": "bf16_lora"
+    },
+    "grpo": {
+      "tasks": [
+        "equation_numeric"
+      ],
+      "output_contract": "closed_trace_v1",
+      "smoke_train_prompts": 4,
+      "candidates": 8,
+      "rollout_cap": 16384,
+      "learning_rate": 1e-05,
+      "gradient_accumulation": 32,
+      "clip_eps": 0.2,
+      "reference_kl_coef": 0.0,
+      "reward_normalization": "population_std_plus_epsilon",
+      "advantage_epsilon": 1e-06,
+      "on_policy_update_epochs": 1,
+      "loss_reduction": "sequence_mean",
+      "reward_ablation": "R1",
+      "reward_name": "complete_final_process_format_v1",
+      "mode": "bf16_lora"
+    }
+  },
+  "design": {
+    "schema": "qwen3-round2-design/v1",
+    "status": "awaiting_human_review_before_phase_c",
+    "gpu_execution_enabled": false,
+    "prepared_run_id": "round2_20261110_phaseab_v1",
+    "model_id": "Qwen/Qwen3-0.6B",
+    "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "parent_run": "course8h_20261109_r2_cuda_graph",
+    "parent_sft_round": 1,
+    "parent_sft_adapter_sha256": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371",
+    "parent_sft_precision": "NF4-trained adapter; BF16 policy evaluation and RL training",
+    "independent_initialization": true,
+    "seed": 20261110,
+    "device_limit_bytes": 8000000000,
+    "poll_seconds": 0.25,
+    "lora": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.0
+    },
+    "runtime": {
+      "mode": "bf16_lora",
+      "microbatch": 1,
+      "decoder_gradient_checkpointing": true,
+      "use_cache_training": false,
+      "projection_chunk_size": 64,
+      "max_model_len": 20480,
+      "max_num_seqs": 1,
+      "max_num_batched_tokens": 512,
+      "kv_cache_gib": 3.0,
+      "enforce_eager": false,
+      "compilation_config": {
+        "level": 0,
+        "cudagraph_mode": "FULL_DECODE_ONLY",
+        "cudagraph_capture_sizes": [
+          1
+        ],
+        "max_capture_size": 1
+      }
+    },
+    "sampling": {
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "enable_thinking": true
+    },
+    "evaluation": {
+      "panels_manifest": "data/processed/round2/round2_20261110_phaseab_v1/panels/manifest.json",
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "enable_thinking": true,
+      "caps": {
+        "numeral_system": 8192,
+        "gravity": 16384,
+        "equation_numeric": 16384
+      },
+      "contracts": [
+        "original",
+        "closed_trace_v1"
+      ],
+      "final_models": [
+        "base",
+        "sft",
+        "dpo",
+        "ppo",
+        "grpo"
+      ],
+      "same_questions_and_settings_per_contract": true,
+      "mcnemar_exact": true,
+      "wilson95": true,
+      "paired_bootstrap_draws": 10000,
+      "primary_holm_family": [
+        "dpo_gravity",
+        "ppo_equation",
+        "grpo_equation"
+      ],
+      "holdout_used_for_tuning": false,
+      "report_reward_ablation": "R1"
+    },
+    "dpo": {
+      "tasks": [
+        "gravity"
+      ],
+      "output_contract": "closed_trace_v1",
+      "independent_arms": [
+        "B"
+      ],
+      "candidates": 4,
+      "smoke_train_prompts": 16,
+      "rollout_cap": 16384,
+      "beta": 0.1,
+      "learning_rate": 2e-06,
+      "gradient_accumulation": 4,
+      "epochs": 2,
+      "reference": "frozen_initial_sft_adapter",
+      "reject_truncated": true,
+      "chosen_requires_exact_trace": true,
+      "length_gap_min_tokens": 64,
+      "length_gap_min_fraction": 0.2,
+      "preference_mode": "B",
+      "both_sides_require_exact_trace": true
+    },
+    "ppo": {
+      "tasks": [
+        "equation_numeric"
+      ],
+      "output_contract": "closed_trace_v1",
+      "smoke_train_prompts": 8,
+      "candidates": 1,
+      "rollout_cap": 16384,
+      "learning_rate": 1e-05,
+      "gradient_accumulation": 8,
+      "gamma": 1.0,
+      "gae_lambda": 1.0,
+      "clip_eps": 0.2,
+      "value_coef": 0.5,
+      "entropy_coef": 0.0,
+      "reference_kl_coef": 0.0,
+      "on_policy_update_epochs": 1,
+      "reward_ablation": "R1",
+      "reward_name": "complete_final_process_format_v1"
+    },
+    "grpo": {
+      "tasks": [
+        "equation_numeric"
+      ],
+      "output_contract": "closed_trace_v1",
+      "smoke_train_prompts": 4,
+      "candidates": 8,
+      "rollout_cap": 16384,
+      "learning_rate": 1e-05,
+      "gradient_accumulation": 32,
+      "clip_eps": 0.2,
+      "reference_kl_coef": 0.0,
+      "reward_normalization": "population_std_plus_epsilon",
+      "advantage_epsilon": 1e-06,
+      "on_policy_update_epochs": 1,
+      "loss_reduction": "sequence_mean",
+      "reward_ablation": "R1",
+      "reward_name": "complete_final_process_format_v1"
+    },
+    "reward_weights": {
+      "final": 1.0,
+      "format": 0.05,
+      "process": 0.2,
+      "length": 0.0
+    },
+    "phase_c_budget_seconds_estimate": [
+      7200,
+      14400
+    ],
+    "phase_d_budget_status": "reestimate_after_phase_c_measured_tokens_and_throughput; no promise of 8h total",
+    "phase_d_gates": [
+      "human_review",
+      "phase_a_b_pass",
+      "phase_c_all_methods_real_updates",
+      "phase_c_sampled_memory_below_limit",
+      "phase_c_quality_and_provenance_audits"
+    ],
+    "formal_runner_registration": "separate per algorithm and arm; old course_8h schema deliberately rejects this design file",
+    "phase_c_train_manifest": "data/processed/round2/round2_20261110_phaseab_v1/phase_c_train_panels/manifest.json",
+    "reward_experiment_scope": "One shared composite reward only: final+verified_process+format; length diagnostic only; no reward ablation runs"
+  },
+  "source_commit": "f1502fc",
+  "identity": {
+    "model": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B",
+    "adapter": "/root/autodl-tmp/round2_setup/sft_r1_adapter",
+    "inference_python": "/root/autodl-tmp/Qwen3-experiment/.venv-vllm-cu128/bin/python",
+    "training_python": "/root/autodl-tmp/Qwen3-experiment/.venv/bin/python",
+    "nemo_python": "/root/autodl-tmp/Qwen3-experiment/.venv-data-designer/bin/python"
+  },
+  "model_files": {
+    "LICENSE": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "README.md": "1ab64a26fcb3b461423b89a433a8c858f1bf8d4086f979cbb3ff878d47cf20e9",
+    "config.json": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+    "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+    "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "model.safetensors": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "download_manifest.json": "d8b526ec053fd96faff1863a28bd4b4b4fe8eeb1b58f019390f5be71653dee4d"
+  },
+  "budget_seconds": 28800,
+  "on_policy_rounds": 2,
+  "phase_c_evaluation": "fixed 8 per task, both original and closed proof; no Holdout",
+  "formal_training_started": false,
+  "phase_d_requires_phase_c_acceptance": true
+}

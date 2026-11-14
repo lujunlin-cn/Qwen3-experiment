@@ -1,0 +1,41 @@
+{
+  "source": "Recovered remote setup logs, original content preserved",
+  "source_commit": "f1502fc",
+  "files": {
+    "training_freeze.txt": {
+      "sha256": "2291bb0b2d290a76055e54991e2a0a1e02290104521cb3f3fd1fe26c78bb8d4b",
+      "bytes": 5346
+    },
+    "inference_freeze.txt": {
+      "sha256": "6ddc855a528f9a4d3db26ce4746db6d8336a5183ed9609a9c1b80b00c0583a62",
+      "bytes": 6839
+    },
+    "nemo_freeze.txt": {
+      "sha256": "293d419bdeb48c375fe6d8fe1a6bee3422c1d0ea73cbfb0f002038f72afdfcde",
+      "bytes": 1755
+    },
+    "remote_cpu_course.log": {
+      "sha256": "a8a1cd962fa1fed51a0fa594ae95dc5d72c7ce6e2958a66bc46adee646f7e92a",
+      "bytes": 7748
+    },
+    "remote_cpu_numerics.log": {
+      "sha256": "7fa5d9a3cec57fe243adc85dc2e89678f0da44897b612996af88917c067154d0",
+      "bytes": 1875
+    },
+    "remote_nemo_cpu.log": {
+      "sha256": "94f21e3fd978b57128033ad263c462d5aee2f7d11b8acb79fad3383826d5ebf8",
+      "bytes": 24300
+    },
+    "remote_nemo_guard.log": {
+      "sha256": "774d1086a37de6d8b9e2865f12621648cb23ee1c9a1e8f5919ee23e907dcf70c",
+      "bytes": 98
+    }
+  },
+  "tests": {
+    "course": 11,
+    "numerics": 13,
+    "nemo": 3,
+    "nemo_guard": 1
+  },
+  "quality_or_gpu_memory_inference": false
+}

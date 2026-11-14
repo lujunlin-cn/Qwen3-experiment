@@ -1,0 +1,11 @@
+{
+  "recorded_date": "2026-11-14",
+  "authorization_source": "User steering during running Phase C",
+  "user_instruction": "后面评测只需要评测PP0，DPO和GRPO都不需要",
+  "interpreted_algorithm": "PPO",
+  "excluded_subsequent_algorithm_evaluations": ["DPO", "GRPO"],
+  "retained_comparators": ["Base", "SFT"],
+  "reason_for_comparators": "Matched questions/settings required to interpret PPO effect; preserve completed results",
+  "training_diagnosis_artifacts_preserved": true,
+  "frozen_protocol_or_historical_sources_modified": false
+}

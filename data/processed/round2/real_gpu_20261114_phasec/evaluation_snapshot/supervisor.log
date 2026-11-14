@@ -1,0 +1,41 @@
+START nemo_R0
+{"status": "completed", "returncode": 0, "wall_seconds": 72.26617622375488, "started_at_unix": 1794659742.1137538, "device_peak_sampled_bytes": 3808428032, "memory_limit_bytes": 8000000000, "memory_check": "sampled_pass", "samples": 239, "poll_seconds": 0.25, "device": {"used_bytes": 1048576, "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c", "name": "NVIDIA GeForce RTX 4080 SUPER"}, "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"}
+END nemo_R0 completed
+START nemo_A
+{"status": "completed", "returncode": 0, "wall_seconds": 69.9166648387909, "started_at_unix": 1794659814.6774676, "device_peak_sampled_bytes": 3808428032, "memory_limit_bytes": 8000000000, "memory_check": "sampled_pass", "samples": 235, "poll_seconds": 0.25, "device": {"used_bytes": 1048576, "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c", "name": "NVIDIA GeForce RTX 4080 SUPER"}, "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"}
+END nemo_A completed
+START nemo_B
+{"status": "completed", "returncode": 0, "wall_seconds": 72.23605871200562, "started_at_unix": 1794659884.8642628, "device_peak_sampled_bytes": 3808428032, "memory_limit_bytes": 8000000000, "memory_check": "sampled_pass", "samples": 241, "poll_seconds": 0.25, "device": {"used_bytes": 1048576, "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c", "name": "NVIDIA GeForce RTX 4080 SUPER"}, "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"}
+END nemo_B completed
+START nemo_C
+{"status": "completed", "returncode": 0, "wall_seconds": 66.09251737594604, "started_at_unix": 1794659957.3721528, "device_peak_sampled_bytes": 3808428032, "memory_limit_bytes": 8000000000, "memory_check": "sampled_pass", "samples": 216, "poll_seconds": 0.25, "device": {"used_bytes": 1048576, "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c", "name": "NVIDIA GeForce RTX 4080 SUPER"}, "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"}
+END nemo_C completed
+START readiness_equation
+END readiness_equation completed 5197791232
+START dpo_r1_rollout
+END dpo_r1_rollout completed 5197791232
+START dpo_r1_train
+END dpo_r1_train completed 270532608
+START ppo_r1_rollout
+END ppo_r1_rollout completed 5197791232
+START ppo_r1_train
+END ppo_r1_train completed 3359637504
+START ppo_r1_reload
+END ppo_r1_reload completed 2036334592
+START ppo_r2_rollout
+END ppo_r2_rollout completed 5197791232
+START ppo_r2_train
+END ppo_r2_train completed 3177185280
+START ppo_r2_reload
+END ppo_r2_reload completed 2036334592
+START grpo_r1_rollout
+END grpo_r1_rollout completed 5197791232
+START grpo_r1_train
+END grpo_r1_train completed 2036334592
+START eval_base_original
+END eval_base_original completed 5195694080
+START eval_sft_original
+END eval_sft_original completed 5197791232
+START eval_ppo_original
+END eval_ppo_original completed 5197791232
+START eval_base_closed_trace_v1

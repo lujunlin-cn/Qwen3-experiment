@@ -2,6 +2,8 @@
 
 GPU: RTX 4080 SUPER, 32760 MiB。各组9 Seed、18输出；生成链路均完成，质量验证另列。
 
+输入的9条Seed已全部通过Solver、独立Verifier与三集合泄漏审计，四组题目和标准答案一致。Seed准备通过和HTTP成功不等于模型输出通过质量验收；逐组复核见 `nemo_seed_and_output_gate_audit.json`。
+
 | 组 | Accepted /18 | 输出Token | 全阶段秒 | 设备采样峰值GB |
 |---|---:|---:|---:|---:|
 | R0 | 0 | 2743 | 72.27 | 3.808 |

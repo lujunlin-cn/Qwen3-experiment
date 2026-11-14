@@ -1,0 +1,776 @@
+{
+  "status": "running",
+  "jobs": {
+    "nemo_R0": {
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 72.26617622375488,
+        "started_at_unix": 1794659742.1137538,
+        "device_peak_sampled_bytes": 3808428032,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 239,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "quality_status": "empty_accepted",
+        "summary": {
+          "status": "empty_accepted",
+          "transport_complete": true,
+          "seed_rows": 9,
+          "expected_outputs": 18,
+          "received_seed_rows": 9,
+          "nonempty_outputs": 18,
+          "accepted": 0,
+          "preview": 18,
+          "merge_into_sft": false,
+          "by_task": {
+            "numeral_system": {
+              "accepted": 0,
+              "preview": 6
+            },
+            "gravity": {
+              "accepted": 0,
+              "preview": 6
+            },
+            "equation_numeric": {
+              "accepted": 0,
+              "preview": 6
+            }
+          }
+        },
+        "transport": {
+          "http_requests": 18,
+          "failed_requests": 0,
+          "completion_tokens": 2743
+        },
+        "errors": [],
+        "generation_and_screening_seconds": 44.22041681408882,
+        "merge_into_sft": false,
+        "gpu_generation_real": true,
+        "arm": "R0"
+      },
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/nemo_R0_round2_20261114_phasec_r1"
+    },
+    "nemo_A": {
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 69.9166648387909,
+        "started_at_unix": 1794659814.6774676,
+        "device_peak_sampled_bytes": 3808428032,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 235,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "quality_status": "empty_accepted",
+        "summary": {
+          "status": "empty_accepted",
+          "transport_complete": true,
+          "seed_rows": 9,
+          "expected_outputs": 18,
+          "received_seed_rows": 9,
+          "nonempty_outputs": 18,
+          "accepted": 0,
+          "preview": 18,
+          "merge_into_sft": false,
+          "by_task": {
+            "numeral_system": {
+              "accepted": 0,
+              "preview": 6
+            },
+            "gravity": {
+              "accepted": 0,
+              "preview": 6
+            },
+            "equation_numeric": {
+              "accepted": 0,
+              "preview": 6
+            }
+          }
+        },
+        "transport": {
+          "http_requests": 18,
+          "failed_requests": 0,
+          "completion_tokens": 2694
+        },
+        "errors": [],
+        "generation_and_screening_seconds": 42.41804024763405,
+        "merge_into_sft": false,
+        "gpu_generation_real": true,
+        "arm": "A"
+      },
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/nemo_A_round2_20261114_phasec_r1"
+    },
+    "nemo_B": {
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 72.23605871200562,
+        "started_at_unix": 1794659884.8642628,
+        "device_peak_sampled_bytes": 3808428032,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 241,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "quality_status": "empty_accepted",
+        "summary": {
+          "status": "empty_accepted",
+          "transport_complete": true,
+          "seed_rows": 9,
+          "expected_outputs": 18,
+          "received_seed_rows": 9,
+          "nonempty_outputs": 18,
+          "accepted": 0,
+          "preview": 18,
+          "merge_into_sft": false,
+          "by_task": {
+            "numeral_system": {
+              "accepted": 0,
+              "preview": 6
+            },
+            "gravity": {
+              "accepted": 0,
+              "preview": 6
+            },
+            "equation_numeric": {
+              "accepted": 0,
+              "preview": 6
+            }
+          }
+        },
+        "transport": {
+          "http_requests": 18,
+          "failed_requests": 0,
+          "completion_tokens": 2532
+        },
+        "errors": [],
+        "generation_and_screening_seconds": 44.54619321599603,
+        "merge_into_sft": false,
+        "gpu_generation_real": true,
+        "arm": "B"
+      },
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/nemo_B_round2_20261114_phasec_r1"
+    },
+    "nemo_C": {
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 66.09251737594604,
+        "started_at_unix": 1794659957.3721528,
+        "device_peak_sampled_bytes": 3808428032,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 216,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "quality_status": "completed_with_previews",
+        "summary": {
+          "status": "completed_with_previews",
+          "transport_complete": true,
+          "seed_rows": 9,
+          "expected_outputs": 18,
+          "received_seed_rows": 9,
+          "nonempty_outputs": 18,
+          "accepted": 1,
+          "preview": 17,
+          "merge_into_sft": false,
+          "by_task": {
+            "numeral_system": {
+              "accepted": 1,
+              "preview": 5
+            },
+            "gravity": {
+              "accepted": 0,
+              "preview": 6
+            },
+            "equation_numeric": {
+              "accepted": 0,
+              "preview": 6
+            }
+          }
+        },
+        "transport": {
+          "http_requests": 18,
+          "failed_requests": 0,
+          "completion_tokens": 2331
+        },
+        "errors": [],
+        "generation_and_screening_seconds": 37.28335155546665,
+        "merge_into_sft": false,
+        "gpu_generation_real": true,
+        "arm": "C"
+      },
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/nemo_C_round2_20261114_phasec_r1"
+    },
+    "readiness_equation": {
+      "guard": {
+        "status": "completed",
+        "returncode": 0,
+        "wall_seconds": 923.5833320617676,
+        "started_at_unix": 1794660023.6806455,
+        "device_peak_sampled_bytes": 5197791232,
+        "memory_limit_bytes": 8000000000,
+        "memory_check": "sampled_pass",
+        "samples": 3038,
+        "poll_seconds": 0.25,
+        "device": {
+          "used_bytes": 1048576,
+          "uuid": "GPU-25eb2e67-ea2f-89ee-a5de-0d01931a671c",
+          "name": "NVIDIA GeForce RTX 4080 SUPER"
+        },
+        "scope": "entire selected GPU, including CUDA context and reserved KV; sub-poll transient peaks unverified"
+      },
+      "result": {
+        "status": "completed",
+        "metrics": {
+          "equation_numeric": {
+            "n": 32,
+            "correct": 0,
+            "accuracy": 0.0,
+            "accuracy_wilson95": [
+              0.0,
+              0.1071827150573635
+            ],
+            "truncated": 0,
+            "truncation_rate": 0.0,
+            "mean_output_tokens": 5265.71875,
+            "total_output_tokens": 168503,
+            "mean_correct_output_tokens": null,
+            "max_output_tokens": 7864,
+            "exact_trace_pass_rate": 0.0,
+            "exact_trace_pass_rate_verified_n": 32,
+            "format_valid_rate": 0.0,
+            "format_valid_rate_verified_n": 32,
+            "reward_mean": null
+          }
+        },
+        "records": 32,
+        "generation_seconds": 898.1704635694623,
+        "output_tokens_per_second": 187.6069263404011,
+        "policy_fingerprint": {
+          "adapter_config.json": "1d6c4b00f50a4880d3f68967edf8e314026bb0df1de0b8d4aedf07fa3cd5962c",
+          "adapter_model.safetensors": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+        },
+        "worker_wall_seconds": 920.0235459338874,
+        "torch_peak_allocated_bytes": 0,
+        "torch_peak_reserved_bytes": 0,
+        "versions": {
+          "torch": "2.8.0+cu128",
+          "transformers": "4.57.1"
+        },
+        "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+      },
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_readiness_round2_20261114_phasec_r1/jobs/readiness_equation"
+    },
+    "dpo_r1_rollout": {
+      "guard": {
+        "status": "running"
+      },
+      "result": null,
+      "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_dpo_round2_20261114_phasec_r1/jobs/dpo_r1_rollout"
+    }
+  },
+  "acceptance": {
+    "methods": {
+      "dpo": {
+        "optimizer_steps": 0,
+        "sampled_memory_pass": false,
+        "has_saved_checkpoint": false
+      },
+      "ppo": {
+        "optimizer_steps": 0,
+        "sampled_memory_pass": false,
+        "has_saved_checkpoint": false
+      },
+      "grpo": {
+        "optimizer_steps": 0,
+        "sampled_memory_pass": false,
+        "has_saved_checkpoint": false
+      }
+    },
+    "all_method_updates_and_memory": false
+  },
+  "comparisons": {},
+  "missing_evaluations": [
+    "eval_base_original",
+    "eval_base_closed_trace_v1",
+    "eval_sft_original",
+    "eval_sft_closed_trace_v1",
+    "eval_dpo_original",
+    "eval_dpo_closed_trace_v1",
+    "eval_ppo_original",
+    "eval_ppo_closed_trace_v1",
+    "eval_grpo_original",
+    "eval_grpo_closed_trace_v1"
+  ],
+  "readiness": {
+    "groups": [
+      {
+        "sample_id": "98a2636e",
+        "components": [
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5944,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5864,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 4354,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5110,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 3678,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 4937,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 4090,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 4119,
+            "length_reward_enabled": false
+          }
+        ],
+        "group_type": "all_wrong",
+        "variance": 0.0,
+        "std_population": 0.0,
+        "advantages": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "sample_id": "99cc2e07",
+        "components": [
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 4821,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 854,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5620,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 3580,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5750,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 3625,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 2698,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 4966,
+            "length_reward_enabled": false
+          }
+        ],
+        "group_type": "all_wrong",
+        "variance": 0.0,
+        "std_population": 0.0,
+        "advantages": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "sample_id": "3b7e71b2",
+        "components": [
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 6265,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 6825,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 6177,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5773,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 7864,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5449,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5802,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 7059,
+            "length_reward_enabled": false
+          }
+        ],
+        "group_type": "all_wrong",
+        "variance": 0.0,
+        "std_population": 0.0,
+        "advantages": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "sample_id": "4b70414e",
+        "components": [
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 7000,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 7822,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5066,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5520,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 3899,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5270,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 6752,
+            "length_reward_enabled": false
+          },
+          {
+            "final": 0.0,
+            "format": 0.0,
+            "process": 0.0,
+            "length": 0.0,
+            "combined": 0.0,
+            "ablation": "R1",
+            "exact_trace_pass": false,
+            "output_tokens_diagnostic": 5950,
+            "length_reward_enabled": false
+          }
+        ],
+        "group_type": "all_wrong",
+        "variance": 0.0,
+        "std_population": 0.0,
+        "advantages": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "effective_group_ratio": 0.0
+  },
+  "primary_accuracy_holm_pvalues": null,
+  "formal_training_started": false,
+  "continuous_memory_bound_verified": false,
+  "reward": "R1=official_correct+.20*verified_process+.05*format; no length reward",
+  "holdout_used_for_tuning": false,
+  "source_commit": "f1502fc"
+}
