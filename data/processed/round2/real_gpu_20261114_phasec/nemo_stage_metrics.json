@@ -1,0 +1,162 @@
+{
+  "by_arm": {
+    "R0": {
+      "numeral_system": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 3,
+        "trace_schema_pass": 1,
+        "verifier_pass": 0,
+        "screening_accepted": 0,
+        "failure_reasons": {
+          "variant_verification_failed": 6,
+          "numeral_exposure_audit_failed": 3
+        }
+      },
+      "gravity": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 3,
+        "trace_schema_pass": 3,
+        "verifier_pass": 0,
+        "screening_accepted": 0,
+        "failure_reasons": {
+          "variant_verification_failed": 6
+        }
+      },
+      "equation_numeric": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 3,
+        "trace_schema_pass": 0,
+        "verifier_pass": 0,
+        "screening_accepted": 0,
+        "failure_reasons": {
+          "variant_verification_failed": 6
+        }
+      }
+    },
+    "A": {
+      "numeral_system": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 0,
+        "trace_schema_pass": 0,
+        "verifier_pass": 0,
+        "screening_accepted": 0,
+        "failure_reasons": {
+          "variant_verification_failed": 6,
+          "numeral_exposure_audit_failed": 3
+        }
+      },
+      "gravity": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 2,
+        "trace_schema_pass": 2,
+        "verifier_pass": 0,
+        "screening_accepted": 0,
+        "failure_reasons": {
+          "variant_verification_failed": 6
+        }
+      },
+      "equation_numeric": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 3,
+        "trace_schema_pass": 2,
+        "verifier_pass": 0,
+        "screening_accepted": 0,
+        "failure_reasons": {
+          "variant_verification_failed": 6
+        }
+      }
+    },
+    "B": {
+      "numeral_system": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 3,
+        "trace_schema_pass": 3,
+        "verifier_pass": 0,
+        "screening_accepted": 0,
+        "failure_reasons": {
+          "variant_verification_failed": 6,
+          "numeral_exposure_audit_failed": 3
+        }
+      },
+      "gravity": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 3,
+        "trace_schema_pass": 3,
+        "verifier_pass": 0,
+        "screening_accepted": 0,
+        "failure_reasons": {
+          "variant_verification_failed": 6
+        }
+      },
+      "equation_numeric": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 3,
+        "trace_schema_pass": 3,
+        "verifier_pass": 0,
+        "screening_accepted": 0,
+        "failure_reasons": {
+          "variant_verification_failed": 6
+        }
+      }
+    },
+    "C": {
+      "numeral_system": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 3,
+        "trace_schema_pass": 1,
+        "verifier_pass": 1,
+        "screening_accepted": 1,
+        "failure_reasons": {
+          "variant_verification_failed": 5,
+          "numeral_exposure_audit_failed": 3
+        }
+      },
+      "gravity": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 2,
+        "trace_schema_pass": 2,
+        "verifier_pass": 0,
+        "screening_accepted": 0,
+        "failure_reasons": {
+          "variant_verification_failed": 6
+        }
+      },
+      "equation_numeric": {
+        "n": 6,
+        "prompt_n": 3,
+        "trace_n": 3,
+        "trace_json_parse_pass": 3,
+        "trace_schema_pass": 0,
+        "verifier_pass": 0,
+        "screening_accepted": 0,
+        "failure_reasons": {
+          "variant_verification_failed": 6
+        }
+      }
+    }
+  },
+  "schema_validation_is_not_math_verification": true,
+  "all_three_splits_audited": true
+}

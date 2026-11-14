@@ -1,0 +1,102 @@
+{
+  "rows": [
+    {
+      "index": 0,
+      "id": "98a2636e",
+      "official_answer": "001",
+      "exact_prior_query_outputs": [
+        "001"
+      ],
+      "exact_prior_answer_unique": true,
+      "gold_in_exact_prior_outputs": true,
+      "scope": "CPU independent rule audit; no model output or training label modification"
+    },
+    {
+      "index": 1,
+      "id": "99cc2e07",
+      "official_answer": "/92",
+      "exact_prior_query_outputs": [
+        "/92"
+      ],
+      "exact_prior_answer_unique": true,
+      "gold_in_exact_prior_outputs": true,
+      "scope": "CPU independent rule audit; no model output or training label modification"
+    },
+    {
+      "index": 2,
+      "id": "3b7e71b2",
+      "official_answer": "3285",
+      "exact_prior_query_outputs": [
+        "3285"
+      ],
+      "exact_prior_answer_unique": true,
+      "gold_in_exact_prior_outputs": true,
+      "scope": "CPU independent rule audit; no model output or training label modification"
+    },
+    {
+      "index": 3,
+      "id": "4b70414e",
+      "official_answer": "1913",
+      "exact_prior_query_outputs": [
+        "1913"
+      ],
+      "exact_prior_answer_unique": true,
+      "gold_in_exact_prior_outputs": true,
+      "scope": "CPU independent rule audit; no model output or training label modification"
+    },
+    {
+      "index": 4,
+      "id": "3ee36e0a",
+      "official_answer": "-51",
+      "exact_prior_query_outputs": [
+        "-51"
+      ],
+      "exact_prior_answer_unique": true,
+      "gold_in_exact_prior_outputs": true,
+      "scope": "CPU independent rule audit; no model output or training label modification"
+    },
+    {
+      "index": 5,
+      "id": "afcac7af",
+      "official_answer": "-9",
+      "exact_prior_query_outputs": [
+        "-9",
+        "0191",
+        "9",
+        "9-",
+        "9101"
+      ],
+      "exact_prior_answer_unique": false,
+      "gold_in_exact_prior_outputs": true,
+      "scope": "CPU independent rule audit; no model output or training label modification"
+    },
+    {
+      "index": 6,
+      "id": "92e320c9",
+      "official_answer": "3511",
+      "exact_prior_query_outputs": [
+        "3509",
+        "3510",
+        "3511",
+        "4578",
+        "7845"
+      ],
+      "exact_prior_answer_unique": false,
+      "gold_in_exact_prior_outputs": true,
+      "scope": "CPU independent rule audit; no model output or training label modification"
+    },
+    {
+      "index": 7,
+      "id": "2e37e963",
+      "official_answer": "-15",
+      "exact_prior_query_outputs": [
+        "-15"
+      ],
+      "exact_prior_answer_unique": true,
+      "gold_in_exact_prior_outputs": true,
+      "scope": "CPU independent rule audit; no model output or training label modification"
+    }
+  ],
+  "grpo_first_four_all_unique": true,
+  "labels_unchanged": true
+}

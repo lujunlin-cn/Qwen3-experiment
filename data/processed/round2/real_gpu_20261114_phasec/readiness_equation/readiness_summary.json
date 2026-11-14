@@ -1,0 +1,498 @@
+{
+  "status": "completed",
+  "real_gpu": true,
+  "groups": {
+    "98a2636e": {
+      "n": 8,
+      "correct": 0,
+      "format_valid": 0,
+      "exact_trace_pass": 0,
+      "reward_components": [
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5944,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5864,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 4354,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5110,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 3678,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 4937,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 4090,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 4119,
+          "length_reward_enabled": false
+        }
+      ],
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "variance": 0.0,
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "99cc2e07": {
+      "n": 8,
+      "correct": 0,
+      "format_valid": 0,
+      "exact_trace_pass": 0,
+      "reward_components": [
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 4821,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 854,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5620,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 3580,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5750,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 3625,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 2698,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 4966,
+          "length_reward_enabled": false
+        }
+      ],
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "variance": 0.0,
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "3b7e71b2": {
+      "n": 8,
+      "correct": 0,
+      "format_valid": 0,
+      "exact_trace_pass": 0,
+      "reward_components": [
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 6265,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 6825,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 6177,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5773,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 7864,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5449,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5802,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 7059,
+          "length_reward_enabled": false
+        }
+      ],
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "variance": 0.0,
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "4b70414e": {
+      "n": 8,
+      "correct": 0,
+      "format_valid": 0,
+      "exact_trace_pass": 0,
+      "reward_components": [
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 7000,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 7822,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5066,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5520,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 3899,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5270,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 6752,
+          "length_reward_enabled": false
+        },
+        {
+          "final": 0.0,
+          "format": 0.0,
+          "process": 0.0,
+          "length": 0.0,
+          "combined": 0.0,
+          "ablation": "R1",
+          "exact_trace_pass": false,
+          "output_tokens_diagnostic": 5950,
+          "length_reward_enabled": false
+        }
+      ],
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "variance": 0.0,
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "effective_group_ratio": 0.0,
+  "metrics": {
+    "equation_numeric": {
+      "n": 32,
+      "correct": 0,
+      "accuracy": 0.0,
+      "accuracy_wilson95": [
+        0.0,
+        0.1071827150573635
+      ],
+      "truncated": 0,
+      "truncation_rate": 0.0,
+      "mean_output_tokens": 5265.71875,
+      "total_output_tokens": 168503,
+      "mean_correct_output_tokens": null,
+      "max_output_tokens": 7864,
+      "exact_trace_pass_rate": 0.0,
+      "exact_trace_pass_rate_verified_n": 32,
+      "format_valid_rate": 0.0,
+      "format_valid_rate_verified_n": 32,
+      "reward_mean": null
+    }
+  },
+  "recomputed_from_raw_rows_and_registered_notebook_reward": true
+}

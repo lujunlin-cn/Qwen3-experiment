@@ -14,3 +14,5 @@ R0的18条内容与第一轮对应输出完全相同。A修改提示词仍无法
 其余71输出保留Preview，未合并到SFT。每类3 Seed仅用于诊断，不能据此推断一般接受率提升。设备采样间隔0.25秒，不验证采样间瞬时峰值。
 
 原始HTTP请求、响应、Seed、编译配置、Verifier/Screening/Accepted Manifest和完整采样均保存本目录。后续算法实验在独立Run继续，不将唯一通过的合成Trace用于训练。
+
+分阶段补充：B组9/9 Trace通过JSON Schema，但数学Verifier为0/9；R0为4/9 Schema、A为4/9、C为3/9。格式通过率与数学通过率分别保存在`nemo_stage_metrics.json`。
