@@ -1,0 +1,12 @@
+{
+  "status": "no_preference_signal",
+  "optimizer_steps": 0,
+  "worker_wall_seconds": 2.854189207777381,
+  "torch_peak_allocated_bytes": 0,
+  "torch_peak_reserved_bytes": 0,
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "5.18.0"
+  },
+  "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+}

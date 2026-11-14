@@ -1,0 +1,20 @@
+{
+  "kind": "reload",
+  "method": "ppo",
+  "run": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1",
+  "output": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_reload",
+  "model": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B",
+  "adapter": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_train/adapter",
+  "policy_version": "ppo:round2:e1b284163fc3",
+  "variant": "original",
+  "seed": 20261110,
+  "round": 1,
+  "value_head": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_train/value_head.pt",
+  "adapter_fingerprint": {
+    "adapter_config.json": "8f16bd8636288961875e069c1a997d1441a13e52056032a622c86037bf1ea7fc",
+    "adapter_model.safetensors": "e1b284163fc35fbffbe0835f4302fe31ffd6f31cade615535b8846e455c0ad4c"
+  },
+  "input_hashes": {
+    "value_head": "f245375ce5e5124ae61d3c156f1bc4c67ceda20c2b51826fc5211cda034efaa9"
+  }
+}

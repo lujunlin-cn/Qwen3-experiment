@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_train/adapter",
+  "method": "ppo",
+  "round": 2,
+  "parent_policy_version": "ppo:round1:ca354c292090",
+  "policy_version": "ppo:round2:e1b284163fc3",
+  "parent_fingerprint": {
+    "adapter_config.json": "7f063bcd8cda01ca676f5b8957fde0816d2d9a1822abcc6046feb1c2fbdb0913",
+    "adapter_model.safetensors": "ca354c292090a31780a6ac1b952a1ca1b971dda68cf882072177a4a8ccff8a08"
+  },
+  "weights": {
+    "adapter_config.json": "8f16bd8636288961875e069c1a997d1441a13e52056032a622c86037bf1ea7fc",
+    "adapter_model.safetensors": "e1b284163fc35fbffbe0835f4302fe31ffd6f31cade615535b8846e455c0ad4c"
+  },
+  "sft_reference": "/root/autodl-tmp/round2_setup/sft_r1_adapter",
+  "base_model_path": "/root/autodl-tmp/huggingface/models/Qwen3-0.6B",
+  "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_train/trainer.pt",
+  "value_head": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/round2_ppo_round2_20261114_phasec_r1/jobs/ppo_r2_train/value_head.pt",
+  "trainer_state_sha256": "540e1157b0d74b603146fbc5068351bc12a3ce305a737eedf5ce662e2d9212d0",
+  "value_head_sha256": "f245375ce5e5124ae61d3c156f1bc4c67ceda20c2b51826fc5211cda034efaa9",
+  "optimizer_steps_total": 2,
+  "optimizer_learning_rates": [
+    1e-05
+  ],
+  "effective_lora": {
+    "default": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.0,
+      "target_modules": [
+        "down_proj",
+        "gate_proj",
+        "k_proj",
+        "o_proj",
+        "q_proj",
+        "up_proj",
+        "v_proj"
+      ]
+    }
+  }
+}

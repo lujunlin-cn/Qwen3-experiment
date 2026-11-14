@@ -1,0 +1,77 @@
+{
+  "status": "completed_two_round_mechanism_test",
+  "rounds": [
+    {
+      "round": 1,
+      "optimizer_steps": 1,
+      "optimizer_steps_total": 1,
+      "training_seconds": 17.87388530932367,
+      "guard_seconds": 42.60691475868225,
+      "peak_sampled_bytes": 3359637504,
+      "outcomes": {
+        "equation_numeric": {
+          "n": 8,
+          "correct": 0,
+          "accuracy": 0.0,
+          "accuracy_wilson95": [
+            0.0,
+            0.3244156195108769
+          ],
+          "truncated": 0,
+          "truncation_rate": 0.0,
+          "mean_output_tokens": 4867.375,
+          "total_output_tokens": 38939,
+          "mean_correct_output_tokens": null,
+          "max_output_tokens": 8423,
+          "exact_trace_pass_rate": 0.0,
+          "exact_trace_pass_rate_verified_n": 8,
+          "format_valid_rate": 0.0,
+          "format_valid_rate_verified_n": 8,
+          "reward_mean": 0.0
+        }
+      },
+      "reload_delta": 0.0,
+      "value_head_reloaded": true,
+      "adapter_sha256": "ca354c292090a31780a6ac1b952a1ca1b971dda68cf882072177a4a8ccff8a08",
+      "parent_policy_version": "sft:r1:d565b67a4e09"
+    },
+    {
+      "round": 2,
+      "optimizer_steps": 1,
+      "optimizer_steps_total": 2,
+      "training_seconds": 16.86989726498723,
+      "guard_seconds": 41.59709429740906,
+      "peak_sampled_bytes": 3177185280,
+      "outcomes": {
+        "equation_numeric": {
+          "n": 8,
+          "correct": 1,
+          "accuracy": 0.125,
+          "accuracy_wilson95": [
+            0.02241690886329617,
+            0.4708948057698615
+          ],
+          "truncated": 0,
+          "truncation_rate": 0.0,
+          "mean_output_tokens": 4714,
+          "total_output_tokens": 37712,
+          "mean_correct_output_tokens": 4424,
+          "max_output_tokens": 7433,
+          "exact_trace_pass_rate": 0.0,
+          "exact_trace_pass_rate_verified_n": 8,
+          "format_valid_rate": 0.0,
+          "format_valid_rate_verified_n": 8,
+          "reward_mean": 0.125
+        }
+      },
+      "reload_delta": 0.0,
+      "value_head_reloaded": true,
+      "adapter_sha256": "e1b284163fc35fbffbe0835f4302fe31ffd6f31cade615535b8846e455c0ad4c",
+      "parent_policy_version": "ppo:round1:ca354c292090"
+    }
+  ],
+  "actual_optimizer_steps": 2,
+  "quality_improvement_not_established": true,
+  "binaries_preserved_locally": "/home/hajimi2025/Qwen3-experiment/.autodl/round2_20261114/ppo_full",
+  "source_commit": "f1502fc"
+}

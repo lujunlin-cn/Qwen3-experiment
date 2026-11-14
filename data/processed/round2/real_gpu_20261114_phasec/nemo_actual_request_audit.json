@@ -1,0 +1,682 @@
+{
+  "R0": {
+    "request_count": 18,
+    "full_seed_prompt_delivered": 18,
+    "no_unrendered_fields": 18,
+    "schema_requests": 0,
+    "details": [
+      {
+        "seed_id": "numeral_system-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      }
+    ]
+  },
+  "A": {
+    "request_count": 18,
+    "full_seed_prompt_delivered": 18,
+    "no_unrendered_fields": 18,
+    "schema_requests": 0,
+    "details": [
+      {
+        "seed_id": "numeral_system-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      }
+    ]
+  },
+  "B": {
+    "request_count": 18,
+    "full_seed_prompt_delivered": 18,
+    "no_unrendered_fields": 18,
+    "schema_requests": 9,
+    "details": [
+      {
+        "seed_id": "numeral_system-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": true,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": true,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": true,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": true,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": true,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": true,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": true,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": true,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": true,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      }
+    ]
+  },
+  "C": {
+    "request_count": 18,
+    "full_seed_prompt_delivered": 18,
+    "no_unrendered_fields": 18,
+    "schema_requests": 0,
+    "details": [
+      {
+        "seed_id": "numeral_system-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "numeral_system-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "gravity-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed1",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed1",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed2",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed2",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed3",
+        "kind": "prompt_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      },
+      {
+        "seed_id": "equation_numeric-seed3",
+        "kind": "trace_variant",
+        "original_prompt_present": true,
+        "no_unrendered_fields": true,
+        "schema_on_wire": false,
+        "seed_in_request": 42,
+        "thinking_enabled": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 48/311 [00:00<00:00, 478.89it/s]Loading weights:  58%|█████▊    | 179/311 [00:00<00:00, 967.10it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 1052.51it/s]

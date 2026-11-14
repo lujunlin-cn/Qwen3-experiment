@@ -1,0 +1,2 @@
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}

@@ -1,0 +1,731 @@
+{
+  "n": 64,
+  "field_pass_counts": {
+    "g_estimates_complete": 19,
+    "query_distance_correct": 1,
+    "query_time_correct": 1
+  },
+  "rows": [
+    {
+      "sample_id": "c04634c0",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "c04634c0",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": false,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "c04634c0",
+      "group_index": 2,
+      "official_correct": true,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "c04634c0",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "2ce67ec9",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "2ce67ec9",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "2ce67ec9",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "2ce67ec9",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "8eecb224",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "8eecb224",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "8eecb224",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "8eecb224",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "6cfb1f29",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "6cfb1f29",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError(\"Expecting ',' delimiter: line 7 column 180 (char 344)\")"
+      }
+    },
+    {
+      "sample_id": "6cfb1f29",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "6cfb1f29",
+      "group_index": 3,
+      "official_correct": true,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "d54f5b26",
+      "group_index": 0,
+      "official_correct": true,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "d54f5b26",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "d54f5b26",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "d54f5b26",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "eba1891f",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "eba1891f",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "eba1891f",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "eba1891f",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "bdcccbab",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "bdcccbab",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "bdcccbab",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "bdcccbab",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "ae5e65cf",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "ae5e65cf",
+      "group_index": 1,
+      "official_correct": true,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "ae5e65cf",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "ae5e65cf",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": true
+      }
+    },
+    {
+      "sample_id": "0ab3d1de",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "0ab3d1de",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "0ab3d1de",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "0ab3d1de",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "736cdc47",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "736cdc47",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "736cdc47",
+      "group_index": 2,
+      "official_correct": true,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "736cdc47",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "42fee270",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "42fee270",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "42fee270",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "42fee270",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "f19b29c6",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "f19b29c6",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "f19b29c6",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": true,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "f19b29c6",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "76d51969",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "76d51969",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "76d51969",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "76d51969",
+      "group_index": 3,
+      "official_correct": true,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "5fe169fc",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "5fe169fc",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "5fe169fc",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "5fe169fc",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "16b45644",
+      "group_index": 0,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "16b45644",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "16b45644",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "16b45644",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "ff9540e2",
+      "group_index": 0,
+      "official_correct": true,
+      "format_valid": true,
+      "exact_trace_pass": false,
+      "checks": {
+        "g_estimates_complete": true,
+        "g_estimates_all_numeric_correct": false,
+        "g_ols_correct": false,
+        "query_time_correct": false,
+        "query_distance_correct": false
+      }
+    },
+    {
+      "sample_id": "ff9540e2",
+      "group_index": 1,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "ff9540e2",
+      "group_index": 2,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    },
+    {
+      "sample_id": "ff9540e2",
+      "group_index": 3,
+      "official_correct": false,
+      "format_valid": false,
+      "exact_trace_pass": false,
+      "checks": {
+        "parse_error": "JSONDecodeError('Expecting value: line 1 column 1 (char 0)')"
+      }
+    }
+  ],
+  "scope": "Posthoc independent diagnostics; no repair, acceptance or label changes"
+}

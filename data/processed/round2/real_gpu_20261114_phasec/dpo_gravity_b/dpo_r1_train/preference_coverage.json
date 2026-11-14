@@ -1,0 +1,27 @@
+{
+  "rollout_sha256": "9d02796e0473c8dc223d0b5ace482a473f39d539167e3c4b4698ed9b26f087f4",
+  "prompts": 16,
+  "pairs": 0,
+  "covered_prompts": 0,
+  "coverage_rate": 0.0,
+  "pairs_by_prompt": {
+    "0ab3d1de": 0,
+    "16b45644": 0,
+    "2ce67ec9": 0,
+    "42fee270": 0,
+    "5fe169fc": 0,
+    "6cfb1f29": 0,
+    "736cdc47": 0,
+    "76d51969": 0,
+    "8eecb224": 0,
+    "ae5e65cf": 0,
+    "bdcccbab": 0,
+    "c04634c0": 0,
+    "d54f5b26": 0,
+    "eba1891f": 0,
+    "f19b29c6": 0,
+    "ff9540e2": 0
+  },
+  "preference_mode": "B",
+  "truncated_candidates_excluded": 0
+}

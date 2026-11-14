@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "reload_logprob_max_delta": 0.0,
+  "value_head_reloaded": true,
+  "policy_fingerprint": {
+    "adapter_config.json": "8f16bd8636288961875e069c1a997d1441a13e52056032a622c86037bf1ea7fc",
+    "adapter_model.safetensors": "e1b284163fc35fbffbe0835f4302fe31ffd6f31cade615535b8846e455c0ad4c"
+  },
+  "worker_wall_seconds": 7.884374164044857,
+  "torch_peak_allocated_bytes": 1659389440,
+  "torch_peak_reserved_bytes": 1707081728,
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "5.18.0"
+  },
+  "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+}
