@@ -1,0 +1,88 @@
+{
+  "columns": [
+    {
+      "name": "prompt_variant",
+      "drop": false,
+      "column_type": "llm-text",
+      "skip": null,
+      "propagate_skip": true,
+      "storage_encoding": null,
+      "prompt": "Produce a safe wording variant. Output exactly one of these introductory sentences: [\"Solve the task described below.\", \"Use the given examples to answer the query below.\"]. Then a newline, then copy the entire original task EXACTLY, including all numbers, operators, formulas, examples, units, and query. No JSON, fences, answer or extra text.\nSEED_ID={{ seed_id }}\nORIGINAL_TASK_BEGIN\n{{ prompt }}\nORIGINAL_TASK_END",
+      "model_alias": "local-qwen3-prompt",
+      "system_prompt": "You follow an exact output contract for a local data generation smoke test. /no_think",
+      "multi_modal_context": null,
+      "tool_alias": null,
+      "with_trace": "last_message",
+      "extract_reasoning_content": true
+    },
+    {
+      "name": "trace_variant",
+      "drop": false,
+      "column_type": "llm-text",
+      "skip": null,
+      "propagate_skip": true,
+      "storage_encoding": null,
+      "prompt": "Compute a structured proof. No markdown, no additional keys, no narrative text.\nSEED_ID={{ seed_id }}\n{% if task_type == \"numeral_system\" %}Return one JSON object only with keys task_type=\"numeral_system\", query (integer), components (list of {\"arabic\": integer, \"roman\": string}), answer (string). Decompose the query into Roman place-value pieces, then concatenate. Every component must be a canonical Roman numeral and their Arabic values must sum to query.{% endif %}\n{% if task_type == \"gravity\" %}Return one JSON object only with keys task_type=\"gravity\", g_estimates (list of numbers in example order), g_ols (number), query_t (original time string), query_distance (number before rounding), answer (string). Compute each g_i=2*d_i/t_i^2, then g_ols=2*sum(t_i^2*d_i)/sum(t_i^4), then query_distance=0.5*g_ols*query_t^2. Give intermediate values to at least six significant digits.{% endif %}\n{% if task_type == \"equation_numeric\" %}Return one JSON object only with keys task_type=\"equation_numeric\", rules (operator to public rule name), example_outputs (list of strings in example order), query_output (string), answer (string). Choose one valid global assignment, recompute every example and the query; keep operator prefixes/suffixes. All non-join rules must share normal/flip family and at most one per semantic group. Public candidates: {\"operand_pattern\": \"AB<operator>CD with two decimal digits on each side\", \"parses\": {\"AB_CD\": \"left=AB, right=CD\", \"BA_DC\": \"left=reverse(AB), right=reverse(CD)\"}, \"operations\": [\"concatenate\", \"add\", \"add±1\", \"subtract\", \"reverse subtract\", \"absolute difference\", \"multiply\", \"multiply±1\", \"max mod min\"], \"output_formats\": [\"raw\", \"reverse digits\", \"operator-prefixed reverse\", \"two-digit padding\", \"operator suffix\"], \"rules\": [{\"name\": \"sub\", \"formula\": \"AB - CD, raw\"}, {\"name\": \"absdiff\", \"formula\": \"|AB - CD|, raw\"}, {\"name\": \"absdiff_prefix\", \"formula\": \"|AB - CD| with operator prefix\"}, {\"name\": \"join\", \"formula\": \"AB concatenated with CD\"}, {\"name\": \"join_swap\", \"formula\": \"CD concatenated with AB\"}, {\"name\": \"add\", \"formula\": \"AB + CD\"}, {\"name\": \"add_p1\", \"formula\": \"AB + CD + 1\"}, {\"name\": \"add_m1\", \"formula\": \"AB + CD - 1\"}, {\"name\": \"mul\", \"formula\": \"AB * CD\"}, {\"name\": \"mul_p1\", \"formula\": \"AB * CD + 1\"}, {\"name\": \"mul_m1\", \"formula\": \"AB * CD - 1\"}, {\"name\": \"maxmodmin\", \"formula\": \"max(AB, CD) mod min(AB, CD)\"}, {\"name\": \"flip_add\", \"formula\": \"reverse(BA + DC)\"}, {\"name\": \"flip_add_p1\", \"formula\": \"reverse(BA + DC + 1)\"}, {\"name\": \"flip_add_m1\", \"formula\": \"reverse(BA + DC - 1)\"}, {\"name\": \"flip_mul\", \"formula\": \"reverse(BA * DC)\"}, {\"name\": \"flip_mul_p1\", \"formula\": \"reverse(BA * DC + 1)\"}, {\"name\": \"flip_mul_m1\", \"formula\": \"reverse(BA * DC - 1)\"}, {\"name\": \"flip_absdiff\", \"formula\": \"reverse(|BA - DC|)\"}, {\"name\": \"flip_maxmodmin\", \"formula\": \"reverse(max(BA, DC) mod min(BA, DC))\"}, {\"name\": \"flip_sub_prefix\", \"formula\": \"reverse(BA - DC), preserving a negative sign as an operator prefix\"}, {\"name\": \"flip_sub_suffix\", \"formula\": \"reverse(DC - BA), appending the operator for a negative result\"}, {\"name\": \"flip_absdiff_prefix\", \"formula\": \"operator-prefixed reverse(|BA - DC|)\"}, {\"name\": \"flip_absdiff_suffix\", \"formula\": \"reverse(|BA - DC|) followed by the operator\"}], \"global_constraints\": [\"All non-join rules in one prompt use either normal or flipped operand family.\", \"At most one non-join rule from each semantic group: sub_or_mod_like, add_like, mul_like.\", \"Join and reverse-join are the join_like exception and can coexist with the other groups.\", \"A query operator absent from examples is Guess; it is admitted only when all valid assignments give one query output.\"]}{% endif %}\nORIGINAL_TASK_BEGIN\n{{ prompt }}\nORIGINAL_TASK_END\nSOLVER_CONTEXT_FROM_PUBLIC_PROMPT={{ solver_context }}\nRecompute and verify; context is not a final answer.",
+      "model_alias": "local-qwen3-trace",
+      "system_prompt": "You follow an exact output contract for a local data generation smoke test. /no_think",
+      "multi_modal_context": null,
+      "tool_alias": null,
+      "with_trace": "last_message",
+      "extract_reasoning_content": true
+    }
+  ],
+  "model_configs": [
+    {
+      "alias": "local-qwen3-prompt",
+      "model": "Qwen/Qwen3-0.6B",
+      "inference_parameters": {
+        "generation_type": "chat-completion",
+        "max_parallel_requests": 1,
+        "timeout": 180,
+        "extra_body": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "seed": 42
+        },
+        "temperature": 0.3,
+        "top_p": 0.9,
+        "max_tokens": 1024
+      },
+      "provider": "local-vllm",
+      "skip_health_check": true
+    },
+    {
+      "alias": "local-qwen3-trace",
+      "model": "Qwen/Qwen3-0.6B",
+      "inference_parameters": {
+        "generation_type": "chat-completion",
+        "max_parallel_requests": 1,
+        "timeout": 180,
+        "extra_body": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          },
+          "seed": 42
+        },
+        "temperature": 0.3,
+        "top_p": 0.9,
+        "max_tokens": 2048
+      },
+      "provider": "local-vllm",
+      "skip_health_check": true
+    }
+  ],
+  "tool_configs": [],
+  "seed_config": {
+    "source": {
+      "seed_type": "local",
+      "path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/round2_20261114_phasec_r1/nemo_C_round2_20261114_phasec_r1/all/public_seeds.jsonl"
+    },
+    "sampling_strategy": "ordered",
+    "selection_strategy": null
+  },
+  "constraints": null,
+  "profilers": null,
+  "processors": null
+}

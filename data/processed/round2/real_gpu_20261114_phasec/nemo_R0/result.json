@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "quality_status": "empty_accepted",
+  "summary": {
+    "status": "empty_accepted",
+    "transport_complete": true,
+    "seed_rows": 9,
+    "expected_outputs": 18,
+    "received_seed_rows": 9,
+    "nonempty_outputs": 18,
+    "accepted": 0,
+    "preview": 18,
+    "merge_into_sft": false,
+    "by_task": {
+      "numeral_system": {
+        "accepted": 0,
+        "preview": 6
+      },
+      "gravity": {
+        "accepted": 0,
+        "preview": 6
+      },
+      "equation_numeric": {
+        "accepted": 0,
+        "preview": 6
+      }
+    }
+  },
+  "transport": {
+    "http_requests": 18,
+    "failed_requests": 0,
+    "completion_tokens": 2743
+  },
+  "errors": [],
+  "generation_and_screening_seconds": 44.22041681408882,
+  "merge_into_sft": false,
+  "gpu_generation_real": true,
+  "arm": "R0"
+}

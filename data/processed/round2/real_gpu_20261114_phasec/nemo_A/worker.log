@@ -1,0 +1,69 @@
+[20:37:20] [INFO] ✅ Validation passed
+[20:37:20] [INFO] 🔁 Preview generation in progress
+[20:37:20] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[20:37:20] [INFO] ✅ Validation passed
+[20:37:20] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[20:37:20] [INFO] 🩺 Running health checks for models...
+[20:37:20] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[20:37:20] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[20:37:20] [INFO] ⚡ Using async task-queue preview
+[20:37:20] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[20:37:20] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[20:37:20] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[20:37:20] [INFO]   |-- model provider: 'local-vllm'
+[20:37:20] [INFO]   |-- inference parameters:
+[20:37:20] [INFO]   |  |-- generation_type=chat-completion
+[20:37:20] [INFO]   |  |-- max_parallel_requests=1
+[20:37:20] [INFO]   |  |-- timeout=180
+[20:37:20] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[20:37:20] [INFO]   |  |-- temperature=0.30
+[20:37:20] [INFO]   |  |-- top_p=0.90
+[20:37:20] [INFO]   |  |-- max_tokens=1024
+[20:37:20] [INFO] 📝 llm-text model config for column 'trace_variant'
+[20:37:20] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[20:37:20] [INFO]   |-- model alias: 'local-qwen3-trace'
+[20:37:20] [INFO]   |-- model provider: 'local-vllm'
+[20:37:20] [INFO]   |-- inference parameters:
+[20:37:20] [INFO]   |  |-- generation_type=chat-completion
+[20:37:20] [INFO]   |  |-- max_parallel_requests=1
+[20:37:20] [INFO]   |  |-- timeout=180
+[20:37:20] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[20:37:20] [INFO]   |  |-- temperature=0.30
+[20:37:20] [INFO]   |  |-- top_p=0.90
+[20:37:20] [INFO]   |  |-- max_tokens=2048
+[20:37:20] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 18 tasks across 1 row group(s)
+[20:37:20] [INFO] 🚀 (1/1) Dispatching with 9 records
+[20:37:20] [INFO] 🌱 (1/1) Sampling 9 records from seed dataset
+[20:37:20] [INFO]   |-- seed dataset size: 9 records
+[20:37:20] [INFO]   |-- sampling strategy: ordered
+[20:37:26] [INFO] 📊 Progress [5.7s]:
+[20:37:26] [INFO]   |-- 🐣 column 'prompt_variant': 3/9 (33%) 0.5 rec/s
+[20:37:26] [INFO]   |-- 🐱 column 'trace_variant': 2/9 (22%) 0.4 rec/s
+[20:37:33] [INFO] 📊 Progress [12.7s]:
+[20:37:33] [INFO]   |-- 🐥 column 'prompt_variant': 5/9 (56%) 0.4 rec/s
+[20:37:33] [INFO]   |-- 😺 column 'trace_variant': 4/9 (44%) 0.3 rec/s
+[20:37:38] [INFO] 📊 Progress [17.7s]:
+[20:37:38] [INFO]   |-- 🐥 column 'prompt_variant': 6/9 (67%) 0.3 rec/s
+[20:37:38] [INFO]   |-- 😸 column 'trace_variant': 6/9 (67%) 0.3 rec/s
+[20:37:44] [INFO] 📊 Progress [23.7s]:
+[20:37:44] [INFO]   |-- 🐤 column 'prompt_variant': 7/9 (78%) 0.3 rec/s
+[20:37:44] [INFO]   |-- 😼 column 'trace_variant': 7/9 (78%) 0.3 rec/s
+[20:37:50] [INFO] 📊 Progress [29.9s]:
+[20:37:50] [INFO]   |-- 🐤 column 'prompt_variant': 8/9 (89%) 0.3 rec/s
+[20:37:50] [INFO]   |-- 😼 column 'trace_variant': 8/9 (89%) 0.3 rec/s
+[20:38:02] [INFO] 📊 Progress [41.6s]:
+[20:38:02] [INFO]   |-- 🐔 column 'prompt_variant': 9/9 (100%) 0.2 rec/s
+[20:38:02] [INFO]   |-- 🦁 column 'trace_variant': 9/9 (100%) 0.2 rec/s
+[20:38:02] [INFO] ✅ Async generation complete [41.6s]: 18 ok, 0 failed across 2 column(s)
+[20:38:02] [INFO] 📊 Model usage summary:
+[20:38:02] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[20:38:02] [INFO]   |-- tokens: input=5381, output=1730, total=7111, tps=170
+[20:38:02] [INFO]   |-- requests: success=9, failed=0, total=9, rpm=12
+[20:38:02] [INFO] 📐 Measuring dataset column statistics:
+[20:38:02] [INFO]   |-- 📝 column: 'prompt_variant'
+[20:38:02] [INFO]   |-- 📝 column: 'trace_variant'
+[20:38:02] [INFO]   |-- 🌱 column: 'seed_id'
+[20:38:02] [INFO]   |-- 🌱 column: 'task_type'
+[20:38:02] [INFO]   |-- 🌱 column: 'prompt'
+[20:38:02] [INFO] 🎆 Preview complete!
+{'holdout_test': 391, 'train': 3123, 'validation': 391}

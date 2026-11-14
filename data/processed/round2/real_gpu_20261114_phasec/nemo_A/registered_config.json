@@ -1,0 +1,28 @@
+{
+  "arm": "A",
+  "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "model_fingerprint": {
+    "model.safetensors": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b"
+  },
+  "seed_sha256": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+  "inference": {
+    "enable_thinking": false,
+    "temperature": 0.3,
+    "top_p": 0.9,
+    "prompt_max_tokens": 1024,
+    "trace_max_tokens": 2048
+  },
+  "server": {
+    "max_model_len": 8192,
+    "kv_cache_gib": 2,
+    "max_num_seqs": 1,
+    "max_num_batched_tokens": 512
+  },
+  "source_hashes": {
+    "01_Synthetic_Data_Engineering.ipynb": "6e73ca4848aecd81c37a8d851096755e74880dfb7c32b3fd9e6201ccbecd0995",
+    "utils/round2_nemo_gpu.py": "359b28daa124519a8e459bc992c4a89e6a5dc5e72f8da5387357315d58730382",
+    "utils/run_synthetic_smoke.py": "7aa90aa6e05e905e62ff89097057c2233663b10b24ff5c00780f88a7c300793e"
+  },
+  "merge_into_sft": false,
+  "registered_at_unix": 1794659819.5483756
+}

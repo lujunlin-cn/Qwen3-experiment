@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "quality_status": "completed_with_previews",
+  "summary": {
+    "status": "completed_with_previews",
+    "transport_complete": true,
+    "seed_rows": 9,
+    "expected_outputs": 18,
+    "received_seed_rows": 9,
+    "nonempty_outputs": 18,
+    "accepted": 1,
+    "preview": 17,
+    "merge_into_sft": false,
+    "by_task": {
+      "numeral_system": {
+        "accepted": 1,
+        "preview": 5
+      },
+      "gravity": {
+        "accepted": 0,
+        "preview": 6
+      },
+      "equation_numeric": {
+        "accepted": 0,
+        "preview": 6
+      }
+    }
+  },
+  "transport": {
+    "http_requests": 18,
+    "failed_requests": 0,
+    "completion_tokens": 2331
+  },
+  "errors": [],
+  "generation_and_screening_seconds": 37.28335155546665,
+  "merge_into_sft": false,
+  "gpu_generation_real": true,
+  "arm": "C"
+}
