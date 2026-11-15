@@ -1,0 +1,7 @@
+{
+  "alias": "nvidia-reasoning",
+  "task_type": "gravity",
+  "status": "failed",
+  "quality_acceptance": "not_evaluated",
+  "error": "DataDesignerGenerationError: 🛑 ModelGenerationValidationFailureError:   |----------\n  | Cause: The model output from 'nvidia/nemotron-3-ultra-550b-a55b' could not be parsed into the requested format while running generation for column 'trace_variant'. Validation detail: No parsable JSON found: expected a ```json markdown fence or a complete bare JSON response.\n  | Solution: The response appears to have been cut off because it reached max_tokens, causing the parse failure. Increase inference_parameters.max_tokens in the model config and try again.\n  |----------"
+}

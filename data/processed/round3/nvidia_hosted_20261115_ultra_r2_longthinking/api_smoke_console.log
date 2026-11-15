@@ -1,0 +1,29 @@
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+Traceback (most recent call last):
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_nvidia_synthetic_smoke.py", line 465, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_nvidia_synthetic_smoke.py", line 458, in main
+    result = api_smoke(target) if args.stage == "api-smoke" else run(target)
+             ^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_nvidia_synthetic_smoke.py", line 368, in api_smoke
+    outputs = sdk_generate(builder, stage / f"probe{index}")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_nvidia_synthetic_smoke.py", line 306, in sdk_generate
+    return designer.preview(config_builder=builder, num_records=1).dataset.to_dict(orient="records")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/.venv-data-designer/lib/python3.11/site-packages/data_designer/interface/data_designer.py", line 426, in preview
+    raw_dataset = builder.build_preview(num_records=num_records)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/.venv-data-designer/lib/python3.11/site-packages/data_designer/engine/dataset_builders/dataset_builder.py", line 587, in build_preview
+    dataset = self._build_async_preview(generators, num_records)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/.venv-data-designer/lib/python3.11/site-packages/data_designer/engine/dataset_builders/dataset_builder.py", line 619, in _build_async_preview
+    _await_async_scheduler_result(future, scheduler)
+  File "/home/hajimi2025/Qwen3-experiment/.venv-data-designer/lib/python3.11/site-packages/data_designer/engine/dataset_builders/dataset_builder.py", line 93, in _await_async_scheduler_result
+    future.result()
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/concurrent/futures/_base.py", line 451, in result
+    self._condition.wait(timeout)
+  File "/home/hajimi2025/.local/share/uv/python/cpython-3.11.15-linux-aarch64-gnu/lib/python3.11/threading.py", line 327, in wait
+    waiter.acquire()
+KeyboardInterrupt

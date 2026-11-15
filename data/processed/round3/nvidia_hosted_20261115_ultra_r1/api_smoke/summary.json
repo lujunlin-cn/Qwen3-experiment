@@ -1,0 +1,105 @@
+{
+  "status": "failed_api_smoke",
+  "models": {
+    "nvidia-text": {
+      "status": "passed",
+      "probes": [
+        {
+          "alias": "nvidia-text",
+          "task_type": "numeral_system",
+          "status": "passed",
+          "quality_acceptance": "not_evaluated",
+          "transport": {
+            "verified_response_match": true,
+            "request_count": 1,
+            "finish_reason": "stop",
+            "usage": {
+              "prompt_tokens": 245,
+              "completion_tokens": 6,
+              "total_tokens": 251,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              }
+            },
+            "latency_seconds": 0.6579666552133858
+          }
+        }
+      ]
+    },
+    "nvidia-reasoning": {
+      "status": "failed",
+      "probes": [
+        {
+          "alias": "nvidia-reasoning",
+          "task_type": "numeral_system",
+          "status": "passed",
+          "quality_acceptance": "not_evaluated",
+          "json_schema_supported": true,
+          "thinking_present": true,
+          "transport": {
+            "verified_response_match": true,
+            "request_count": 1,
+            "finish_reason": "stop",
+            "usage": {
+              "prompt_tokens": 401,
+              "completion_tokens": 351,
+              "total_tokens": 752,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 305
+              }
+            },
+            "latency_seconds": 7.519116766285151
+          }
+        },
+        {
+          "alias": "nvidia-reasoning",
+          "task_type": "gravity",
+          "status": "failed",
+          "quality_acceptance": "not_evaluated",
+          "error": "DataDesignerGenerationError: 🛑 ModelGenerationValidationFailureError:   |----------\n  | Cause: The model output from 'nvidia/nemotron-3-ultra-550b-a55b' could not be parsed into the requested format while running generation for column 'trace_variant'. Validation detail: No parsable JSON found: expected a ```json markdown fence or a complete bare JSON response.\n  | Solution: The response appears to have been cut off because it reached max_tokens, causing the parse failure. Increase inference_parameters.max_tokens in the model config and try again.\n  |----------"
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 128.00056506320834,
+  "host": "local controller; not AutoDL network validation",
+  "telemetry": {
+    "http_requests": 3,
+    "failed_requests": 0,
+    "by_model": {
+      "nvidia-text": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "http_requests": 1,
+        "failed_requests": 0,
+        "retries": 0,
+        "usage": {
+          "prompt_tokens": 245,
+          "completion_tokens": 6,
+          "total_tokens": 251
+        },
+        "latency_seconds": 0.6579666552133858
+      },
+      "nvidia-reasoning": {
+        "model": "nvidia/nemotron-3-ultra-550b-a55b",
+        "http_requests": 2,
+        "failed_requests": 0,
+        "retries": 0,
+        "usage": {
+          "prompt_tokens": 903,
+          "completion_tokens": 8543,
+          "total_tokens": 9446
+        },
+        "latency_seconds": 126.7779414174147
+      }
+    },
+    "output_tokens_include_reasoning": true
+  },
+  "prepared_manifest_sha256": "ee9a465d547b7320fa991502ed2658a0b94973d2b634d551039f088249e71e23",
+  "generation_quality_passed": false
+}

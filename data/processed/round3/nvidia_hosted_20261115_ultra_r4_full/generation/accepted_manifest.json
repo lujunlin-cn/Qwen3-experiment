@@ -1,0 +1,14 @@
+{
+  "schema_version": "nvidia-hosted-accepted/v1",
+  "status": "passed",
+  "accepted_rows": 9,
+  "all_accepted_verified_and_audited": true,
+  "accepted_sha256": "ee256a403eeedb5f010ecde7779b333f51022221e901372ca67a2be0b0e93998",
+  "split_sha256": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+    "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+  },
+  "verifier_version": "nvidia-hosted-proof-v1",
+  "merge_into_sft": false
+}

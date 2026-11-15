@@ -1,0 +1,9 @@
+{
+  "status": "blocked_api_smoke",
+  "formal_generation": "not_started",
+  "cause": "Gravity probe truncated at 8192 thinking tokens; final JSON absent",
+  "expected_formal_outputs": 18,
+  "actual_formal_outputs": 0,
+  "quality": "not_evaluated",
+  "gpu_training_started": false
+}

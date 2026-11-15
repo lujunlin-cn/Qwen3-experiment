@@ -1,0 +1,9 @@
+{
+  "status": "interrupted_by_controller",
+  "reason": "Full arithmetic was an overlarge API probe; Gravity disconnected after 340 seconds and SDK retry remained pending. Register minimal schema-only probe and independent low-effort formal Run.",
+  "formal_generation_started": false,
+  "completed_wire_attempt_records": 3,
+  "at_least_one_additional_pending_attempt": true,
+  "pending_request_final_state": "not_observed",
+  "interrupted_at_unix": 1794740577.5555491
+}

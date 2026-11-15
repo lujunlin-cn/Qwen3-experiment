@@ -1,0 +1,32 @@
+                                                                                
+  🔎 Identified 1 validation issue in your Data Designer column definitions     
+                                                                                
+                                                                                
+ ─────────────────────────── Column: trace_variant ──────────────────────────── 
+                                                                                
+  ⚠️ WARNING | PARQUET_STORAGE                                                  
+                                                                                
+  Native Parquet storage at $['rules'] allows dynamic object keys that native   
+  struct storage may normalize or fail to serialize. Add                        
+  'x-data-designer-storage': 'json' to this field or an enclosing schema node,  
+  or set storage_encoding='json' on the column. This is a schema risk, not a    
+  prediction that every generated batch will fail.                              
+                                                                                
+ ────────────────────────────────────────────────────────────────────────────── 
+                                                                                
+                                                                                
+  🔎 Identified 1 validation issue in your Data Designer column definitions     
+                                                                                
+                                                                                
+ ─────────────────────────── Column: trace_variant ──────────────────────────── 
+                                                                                
+  ⚠️ WARNING | PARQUET_STORAGE                                                  
+                                                                                
+  Native Parquet storage at $['rules'] allows dynamic object keys that native   
+  struct storage may normalize or fail to serialize. Add                        
+  'x-data-designer-storage': 'json' to this field or an enclosing schema node,  
+  or set storage_encoding='json' on the column. This is a schema risk, not a    
+  prediction that every generated batch will fail.                              
+                                                                                
+ ────────────────────────────────────────────────────────────────────────────── 
+                                                                                

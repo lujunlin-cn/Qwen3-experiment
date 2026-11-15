@@ -1,0 +1,12 @@
+{
+  "status": "passed_cpu_only",
+  "tests": 15,
+  "seconds": 5.287,
+  "source_sha256": {
+    "01_Synthetic_Data_Engineering.ipynb": "ab8aa9bf8fa4f70cac9e03ecdd32c154c659d0e0d68509d09e8b670156745a5c",
+    "utils/run_nvidia_synthetic_smoke.py": "1b927b69a1bfdbedb14c067141db1833f40860c217de1cb3cfde701e3b509617",
+    "tests/test_nvidia_synthetic_smoke.py": "af8a0ddd0e721dba02bda8e26aad4be8c4ee263819775792665d89e148f00d68",
+    "configs/nvidia_synthetic_smoke_ultra_full.json": "3ffc7b05fe4b45ffd94d5cd6f73dae367c4126e1d926ee3534af9cfd42a82c0c"
+  },
+  "new_regression": "per-row runtime error retains failed status and still attempts all nine seeds and 18 mock requests"
+}

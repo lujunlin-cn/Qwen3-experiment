@@ -1,0 +1,65 @@
+{
+  "status": "full_18_output_units_tested_quality_not_fully_passed",
+  "all_18_output_units_attempted": true,
+  "http_responses": 18,
+  "http_failed": 0,
+  "original_runtime_status": "failed_runtime",
+  "original_quality_status": "completed_with_previews",
+  "accepted": 9,
+  "preview": 9,
+  "metrics": {
+    "numeral_system": {
+      "prompt_accepted": 3,
+      "trace_schema_pass": 3,
+      "closed_proof_all_checks_pass": 3,
+      "full_trace_accepted": 0,
+      "trace_truncated": 0,
+      "trace_unverified_thinking_preview": 3
+    },
+    "gravity": {
+      "prompt_accepted": 3,
+      "trace_schema_pass": 1,
+      "closed_proof_all_checks_pass": 0,
+      "full_trace_accepted": 0,
+      "trace_truncated": 2,
+      "trace_unverified_thinking_preview": 3
+    },
+    "equation_numeric": {
+      "prompt_accepted": 3,
+      "trace_schema_pass": 3,
+      "closed_proof_all_checks_pass": 3,
+      "full_trace_accepted": 0,
+      "trace_truncated": 0,
+      "trace_unverified_thinking_preview": 3
+    }
+  },
+  "model_usage": {
+    "nvidia-text": {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "requests": 9,
+      "input_tokens": 3068,
+      "output_tokens": 65,
+      "reported_reasoning_tokens": 0,
+      "usage_missing_requests": 0,
+      "thinking_present_responses": 0,
+      "mean_output_tokens": 7.222222222222222
+    },
+    "nvidia-reasoning": {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "requests": 9,
+      "input_tokens": 7865,
+      "output_tokens": 76161,
+      "reported_reasoning_tokens": 75399,
+      "usage_missing_requests": 0,
+      "thinking_present_responses": 9,
+      "mean_output_tokens": 8462.333333333334
+    }
+  },
+  "mean_output_tokens_all_18": 4234.777777777777,
+  "output_tokens_all_18": 76226,
+  "generation_seconds": 1422.0648500300013,
+  "api_smoke_seconds": 28.93384585995227,
+  "free_thinking_certified": false,
+  "gpu_training_started": false,
+  "analysis_source_sha256": "3bbbaa5a8a26c0216fbc6e66b388e28fa77a980dd23b976a574cf7dd7150d93b"
+}

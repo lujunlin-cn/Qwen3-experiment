@@ -1,0 +1,6 @@
+{
+  "status": "sdk_singleton_profiling_failed",
+  "error": "🛑 Error profiling preview dataset: float() argument must be a string or a real number, not 'NAType'",
+  "sdk_dataset_available": false,
+  "wire_output_requires_full_independent_validation": true
+}

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "frozen_inputs_checked": 10,
+  "sources_checked": 9,
+  "accepted_hash_checked": true,
+  "expected_output_units": 18,
+  "diagnosis_records": 18,
+  "report_links_checked": true
+}

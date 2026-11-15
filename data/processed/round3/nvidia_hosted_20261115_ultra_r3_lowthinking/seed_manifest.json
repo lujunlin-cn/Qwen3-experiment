@@ -1,0 +1,46 @@
+{
+  "schema_version": "nvidia-hosted-prepared/v1",
+  "status": "prepared_cpu_only",
+  "run_id": "nvidia_hosted_20261115_ultra_r3_lowthinking",
+  "models_called": 0,
+  "seed_rows": 9,
+  "expected_outputs": 18,
+  "historical_seed_hashes": {
+    "R0": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+    "A": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+    "B": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+    "C": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8"
+  },
+  "private_seed_sha256": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+  "public_fields": [
+    "seed_id",
+    "task_type",
+    "prompt"
+  ],
+  "frozen_files": {
+    "config.json": "915f998b6f1e23b076b181bf1e75a62cb99bb0cc4f7ec965e45468e479bd6fc3",
+    "prepared/equation_numeric/compiled_config.json": "310bf9fc767d35d2611b57d3fd31ac3ac694de7f9e37159e46a281ada3caaf98",
+    "prepared/equation_numeric/public_seeds.jsonl": "1ded2c5379e534097a0d86f86a55148f38a038f12686069313699ddb06cb8972",
+    "prepared/gravity/compiled_config.json": "47c4c65e6f5c5be4ea46c1f4b1b78227d85c71c3b704f0cd4efd79a77c03a5f2",
+    "prepared/gravity/public_seeds.jsonl": "eea6941b5cae4a6966e943e9afb044d99b5b7c0a6365a27e4ff77f84f15eebb9",
+    "prepared/numeral_system/compiled_config.json": "2d5b148af37177710905ccb505745a746f62e549c6e4f7bfa0520e9af5ed1b4b",
+    "prepared/numeral_system/public_seeds.jsonl": "1c9754c0cc340c2ffa8c92885f2c40e1878d0692cb771746f3ecd4793a255ccf",
+    "private_seeds.jsonl": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+    "public_seeds.jsonl": "14642ea9f5acb0b831c2ef00f6723ae545ac6475e75a1ca2c83f16a368cc0c6a",
+    "seed_checks.json": "ffc3ba77a7e32645cbb2fdfb7a72cfc9b7afb8713e37b632b82b94ba08d6b5be"
+  },
+  "sources": {
+    "01_Synthetic_Data_Engineering.ipynb": "738c976324e1e709bf8d4980932e3d2abd933a048c5713821e35e7ed1f702650",
+    "utils/run_nvidia_synthetic_smoke.py": "19e4e7b704ab4d9dc1164827fc8bc3d897c8c9436f7ce9111a331164a382433f",
+    "utils/run_synthetic_smoke.py": "7aa90aa6e05e905e62ff89097057c2233663b10b24ff5c00780f88a7c300793e",
+    "configs/nvidia_synthetic_smoke.json": "0c98253d415735c9218757449d37e5cd635fe6928f37b2e2f6c62412233e0a47",
+    "configs/nvidia_synthetic_smoke_ultra.json": "878d0f60baf9d4f75e3d3085640cad4a10a90d9e9f0d839ca9c3aee19a660a7c",
+    "configs/nvidia_synthetic_smoke_ultra_longthinking.json": "371af005420321c451de827c008952b85cd86beb1837b3defbae69b592d64a3b",
+    "configs/nvidia_synthetic_smoke_ultra_lowthinking.json": "915f998b6f1e23b076b181bf1e75a62cb99bb0cc4f7ec965e45468e479bd6fc3",
+    "configs/nemo_smoke_requirements.lock.txt": "c5f15c778c60841a2674bda7d7dd59fed0ffc193c9b65e9365519432569c3456"
+  },
+  "git_commit": "8c5350ae1a9a9c5071e3121ca0234bf9ab62bc1f",
+  "model_revision": "hosted provider does not expose immutable weight revisions; record response model per request",
+  "merge_into_sft": false,
+  "prepared_at_unix": 1794740753.4994364
+}

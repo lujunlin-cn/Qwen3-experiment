@@ -1,0 +1,24 @@
+{
+  "alias": "nvidia-text",
+  "task_type": "numeral_system",
+  "status": "passed",
+  "quality_acceptance": "not_evaluated",
+  "purpose": "minimal_text_api_probe",
+  "transport": {
+    "verified_response_match": true,
+    "request_count": 1,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 245,
+      "completion_tokens": 7,
+      "total_tokens": 252,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "latency_seconds": 0.6277429768815637
+  }
+}

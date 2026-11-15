@@ -1,0 +1,38 @@
+{
+  "schema_version": "nvidia-hosted-synthetic/v1",
+  "synthetic_run_id": "nvidia_hosted_20261115_ultra_r2_longthinking",
+  "data_designer_version": "0.10.0",
+  "provider": "nvidia",
+  "endpoint": "https://integrate.api.nvidia.com/v1",
+  "api_key_env": "NVIDIA_API_KEY",
+  "seed_source": "data/processed/round2/real_gpu_20261114_phasec/nemo_R0/private_seeds.jsonl",
+  "seed_sha256": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+  "expected_seed_rows": 9,
+  "expected_model_outputs": 18,
+  "concurrency": 1,
+  "timeout_seconds": 600,
+  "merge_into_sft": false,
+  "require_reasoning_content": true,
+  "models": {
+    "nvidia-text": {
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "max_tokens": 256,
+      "extra_body": {
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        }
+      }
+    },
+    "nvidia-reasoning": {
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "max_tokens": 32768,
+      "extra_body": {
+        "reasoning_effort": "medium"
+      }
+    }
+  }
+}

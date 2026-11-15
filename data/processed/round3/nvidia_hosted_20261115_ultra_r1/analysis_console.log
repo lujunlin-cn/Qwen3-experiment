@@ -1,0 +1,66 @@
+{
+  "api_status": "failed_api_smoke",
+  "formal_generation_status": "not_started_api_gate_failed",
+  "metrics": {
+    "numeral_system": {
+      "expected_prompt_outputs": 3,
+      "expected_trace_outputs": 3,
+      "prompt_verified": 0,
+      "prompt_accepted": 0,
+      "trace_schema_pass": 0,
+      "closed_json_math_verified": 0,
+      "full_trace_accepted": 0,
+      "trace_unverified_thinking_preview": 0,
+      "missing_required_thinking": 0,
+      "rejection_reasons": {}
+    },
+    "gravity": {
+      "expected_prompt_outputs": 3,
+      "expected_trace_outputs": 3,
+      "prompt_verified": 0,
+      "prompt_accepted": 0,
+      "trace_schema_pass": 0,
+      "closed_json_math_verified": 0,
+      "full_trace_accepted": 0,
+      "trace_unverified_thinking_preview": 0,
+      "missing_required_thinking": 0,
+      "rejection_reasons": {}
+    },
+    "equation_numeric": {
+      "expected_prompt_outputs": 3,
+      "expected_trace_outputs": 3,
+      "prompt_verified": 0,
+      "prompt_accepted": 0,
+      "trace_schema_pass": 0,
+      "closed_json_math_verified": 0,
+      "full_trace_accepted": 0,
+      "trace_unverified_thinking_preview": 0,
+      "missing_required_thinking": 0,
+      "rejection_reasons": {}
+    }
+  },
+  "request_usage": {
+    "nvidia/nemotron-3-ultra-550b-a55b": {
+      "requests": 2,
+      "failed_requests": 0,
+      "output_tokens": 8543,
+      "input_tokens": 903,
+      "reported_reasoning_tokens": 8497,
+      "thinking_responses": 2,
+      "latency_seconds": 126.7779414174147
+    },
+    "nvidia/nemotron-3.5-lightning-30b-a3b": {
+      "requests": 1,
+      "failed_requests": 0,
+      "output_tokens": 6,
+      "input_tokens": 245,
+      "reported_reasoning_tokens": 0,
+      "thinking_responses": 0,
+      "latency_seconds": 0.6579666552133858
+    }
+  },
+  "request_scope": "api_smoke",
+  "all_usage_output_includes_thinking": true,
+  "closed_json_math_is_not_verification_of_free_thinking": true,
+  "source_sha256": "9e83b75dc20efe0efc9d94e61335febd369414c7011ed1487878602faa60cffb"
+}

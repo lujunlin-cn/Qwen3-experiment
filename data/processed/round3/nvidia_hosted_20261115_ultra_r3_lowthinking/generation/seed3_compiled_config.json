@@ -1,0 +1,167 @@
+{
+  "columns": [
+    {
+      "name": "introduction",
+      "drop": false,
+      "column_type": "llm-text",
+      "skip": null,
+      "propagate_skip": true,
+      "storage_encoding": null,
+      "prompt": "Generate one concise English introduction to the task below. Return ONLY one of these semantically neutral sentences, without quotation marks or a newline: [\"Solve the task described below.\", \"Use the given examples to answer the query below.\", \"Please solve the following problem.\", \"Solve the following problem.\", \"Please answer the following question.\", \"Answer the following question.\", \"Please work through the problem below.\", \"Work through the problem below.\", \"Use the examples below to solve the problem.\", \"Please solve the task below.\"]. Do not solve, copy, rewrite or add any mathematical content, digits, operators, formulas, rules, answers or conditions. Python will append the complete original task unchanged.\nSEED_ID={{ seed_id }}\nVARIANT_KIND=prompt_variant\nORIGINAL_TASK_BEGIN\n{{ prompt }}\nORIGINAL_TASK_END",
+      "model_alias": "nvidia-text",
+      "system_prompt": "Follow the exact introduction-only contract.",
+      "multi_modal_context": null,
+      "tool_alias": null,
+      "with_trace": "last_message",
+      "extract_reasoning_content": true
+    },
+    {
+      "name": "trace_variant",
+      "drop": false,
+      "column_type": "llm-structured",
+      "skip": null,
+      "propagate_skip": true,
+      "storage_encoding": null,
+      "prompt": "Generate a complete closed mathematical proof. Return exactly the JSON object and nothing else. Keep every example in order; do not omit any operator mapping or calculation.\nReturn one JSON object only with keys task_type=\"gravity\", g_estimates (list of numbers in example order), g_ols (number), query_t (original time string), query_distance (number before rounding), answer (string). Compute each g_i=2*d_i/t_i^2, then g_ols=2*sum(t_i^2*d_i)/sum(t_i^4), then query_distance=0.5*g_ols*query_t^2. Give intermediate values to at least six significant digits.\nSEED_ID={{ seed_id }}\nVARIANT_KIND=trace_variant\nORIGINAL_TASK_BEGIN\n{{ prompt }}\nORIGINAL_TASK_END",
+      "model_alias": "nvidia-reasoning",
+      "system_prompt": "Follow the complete closed JSON proof contract.",
+      "multi_modal_context": null,
+      "tool_alias": null,
+      "with_trace": "last_message",
+      "extract_reasoning_content": true,
+      "output_format": {
+        "type": "object",
+        "properties": {
+          "task_type": {
+            "type": "string",
+            "enum": [
+              "gravity"
+            ]
+          },
+          "answer": {
+            "type": "string"
+          },
+          "g_estimates": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "g_ols": {
+            "type": "number"
+          },
+          "query_t": {
+            "type": "string"
+          },
+          "query_distance": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "task_type",
+          "answer",
+          "g_estimates",
+          "g_ols",
+          "query_t",
+          "query_distance"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "model_configs": [
+    {
+      "alias": "nvidia-text",
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "inference_parameters": {
+        "generation_type": "chat-completion",
+        "max_parallel_requests": 1,
+        "timeout": 600,
+        "extra_body": {
+          "chat_template_kwargs": {
+            "enable_thinking": false
+          }
+        },
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "max_tokens": 256
+      },
+      "provider": "nvidia",
+      "skip_health_check": true
+    },
+    {
+      "alias": "nvidia-reasoning",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "inference_parameters": {
+        "generation_type": "chat-completion",
+        "max_parallel_requests": 1,
+        "timeout": 600,
+        "extra_body": {
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_schema",
+            "json_schema": {
+              "name": "gravity_trace",
+              "strict": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "task_type": {
+                    "type": "string",
+                    "enum": [
+                      "gravity"
+                    ]
+                  },
+                  "answer": {
+                    "type": "string"
+                  },
+                  "g_estimates": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    }
+                  },
+                  "g_ols": {
+                    "type": "number"
+                  },
+                  "query_t": {
+                    "type": "string"
+                  },
+                  "query_distance": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "task_type",
+                  "answer",
+                  "g_estimates",
+                  "g_ols",
+                  "query_t",
+                  "query_distance"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "max_tokens": 32768
+      },
+      "provider": "nvidia",
+      "skip_health_check": true
+    }
+  ],
+  "tool_configs": [],
+  "seed_config": {
+    "source": {
+      "seed_type": "local",
+      "path": "/home/hajimi2025/Qwen3-experiment/data/processed/round3/nvidia_hosted_20261115_ultra_r3_lowthinking/generation/seed3_public.jsonl"
+    },
+    "sampling_strategy": "ordered",
+    "selection_strategy": null
+  },
+  "constraints": null,
+  "profilers": null,
+  "processors": null
+}

@@ -1,0 +1,26 @@
+{
+  "alias": "nvidia-reasoning",
+  "task_type": "equation_numeric",
+  "status": "passed",
+  "quality_acceptance": "not_evaluated",
+  "purpose": "minimal_api_shape_probe",
+  "json_schema_supported": true,
+  "thinking_present": true,
+  "transport": {
+    "verified_response_match": true,
+    "request_count": 1,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 311,
+      "total_tokens": 713,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 256
+      }
+    },
+    "latency_seconds": 14.517175774089992
+  }
+}

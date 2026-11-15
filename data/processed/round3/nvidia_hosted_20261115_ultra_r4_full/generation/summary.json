@@ -1,0 +1,55 @@
+{
+  "status": "completed_with_previews",
+  "transport_complete": false,
+  "seed_rows": 9,
+  "expected_outputs": 18,
+  "accepted": 9,
+  "preview": 9,
+  "acceptance_rate": 0.5,
+  "merge_into_sft": false,
+  "stage_metrics": {
+    "Seed": {
+      "passed": 18,
+      "failed": 0
+    },
+    "Generator": {
+      "passed": 16,
+      "failed": 2
+    },
+    "Solver": {
+      "passed": 18,
+      "failed": 0
+    },
+    "Verifier": {
+      "passed": 15,
+      "failed": 3
+    },
+    "Screening": {
+      "passed": 9,
+      "failed": 9
+    },
+    "Accepted": {
+      "passed": 9,
+      "failed": 9
+    }
+  },
+  "failure_reasons": {
+    "unverified_reasoning_content": 9,
+    "missing_failed_or_truncated_transport": 2,
+    "variant_verification_failed": 3
+  },
+  "by_task": {
+    "numeral_system": {
+      "accepted": 3,
+      "preview": 3
+    },
+    "gravity": {
+      "accepted": 3,
+      "preview": 3
+    },
+    "equation_numeric": {
+      "accepted": 3,
+      "preview": 3
+    }
+  }
+}

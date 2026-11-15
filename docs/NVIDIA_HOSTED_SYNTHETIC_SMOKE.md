@@ -1,5 +1,7 @@
 # NVIDIA Hosted 合成数据：本机控制与严格验收
 
+最新完整结果：[2026-11-15 全量质量报告](NVIDIA_HOSTED_SYNTHETIC_RESULTS_20261115.md)。最终 Ultra+Thinking 已执行全部 18 个输出单元；9 Prompt Accepted、9 Trace Preview，整体质量未通过。当前使用 `configs/nvidia_synthetic_smoke_ultra_full.json`，下方保留原 Super 和各独立尝试的历史配置。
+
 2026-11-15。独立于历史本地 Qwen/vLLM Smoke；不升级 `data-designer==0.10.0`，不运行 GPU 训练。数学、生成合同与筛选实现直接保留在 Notebook 01，Runner 只编排 SDK、冻结输入、记录传输与归档。
 
 ## 审查结论

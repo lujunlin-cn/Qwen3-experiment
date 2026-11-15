@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "files_checked": 304,
+  "literal_api_key_occurrences": 0,
+  "http_records_checked": 47,
+  "http_records_with_auth_headers": 0,
+  "key_source": "isolated process environment only; no credential fingerprint recorded"
+}
