@@ -51,7 +51,7 @@ Hosted 服务不提供可固定的权重 revision，本轮如实记录此限制�
 
 - `prepare`：纯 CPU，检查四组输入字节/9 道题、原数学与泄漏门槛；编译三种任务配置；模型调用数为 0。无需 Key。
 - `api-smoke`：必须先有环境变量。1 次 Lightning，reasoning 模型对三类原 Schema 各 1 次，共 4 次预期调用。当前实现只让模型检查并返回最小字段结构对象，明确标为 `API_SCHEMA_ONLY`、`api-schema-<task>`，不要求求解原题。这些接口 fixture 不属于冻结 9 Seed 的正式输出、不计质量指标、不进 Accepted。分别记录每模型结果；失败时保存具体 HTTP 错误，禁止降级解析/自动换模型。只证明接口与结构能力，数学质量此阶段不验收。
-- `run`：要求同一 Run 的两个模型和三个 Schema 都通过 API Smoke。按 Seed 顺序以 SDK 每次处理一行、生成两个列，共 18 个预期输出。失败保留部分产物并停止，记录实际请求、失败、重试和 usage。
+- `run`：要求同一 Run 的两个模型和三个 Schema 都通过 API Smoke。按 Seed 顺序以 SDK 每次处理一行、生成两个列，共 18 个预期输出。单条生成/解析失败保留 Preview 并继续其他冻结 Seed，避免一条失败跳过剩余全量；运行错误仍使总体 `failed_runtime`，不冒充通过。HTTP 400/401/403/404/410/422 等明确 Provider/Schema 不兼容仍停止实验。记录实际请求、失败、重试和 usage。
 
 所有阶段拒绝覆盖。重新尝试时须用新 ID，并重新 prepare/API Smoke：
 
@@ -148,3 +148,15 @@ Lightning 输入 245 Token、总计 251 Token；服务报告 reasoning_tokens=0�
 ```
 
 本轮用户要求 Smoke 通过后完成全量：此处全量按冻结输入协议为 **9 Seed × 2 = 18 个正式输出**。技术探测不能替代这 18 条的 Solver/Verifier/Leakage/Accepted 质量验收。最小探测与 low-effort 支持加入后的 14 项 CPU 回归已实际全部通过（3.315 秒），原始日志为 `tests_minimal_probe_final.log`。
+
+r3 的最小 API Smoke 已真实通过（21.574 秒），之后正式生成了 3 道 Roman 的两列和 Gravity 第一道引导语；Roman 闭合 JSON 数学 3/3 通过，但 Thinking 未认证，不能进入完整 Trace Accepted。Gravity Trace 随后再次发生服务端断开，等待中的重试被控制器中断；完整 18 条测试此时尚未完成。原始记录继续保留。
+
+进一步核查 [Ultra 官方说明](https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b.md)，明确提供的是 `chat_template_kwargs.enable_thinking=true/false`。此前沿用 Super 的 `reasoning_effort=low` 仅是请求参数，**没有证据证明它能缩短 Ultra 的 Thinking**；不把它描述为已验证有效的强度控制。
+
+因此注册 `configs/nvidia_synthetic_smoke_ultra_full.json` / `nvidia_hosted_20261115_ultra_r4_full`：显式 `enable_thinking=true`、cap16384，温度/采样不变；Gravity 的新 Prompt 明确七位有效数字是有限中间数表示、Query distance 指最终两位小数舍入之前的计算值，避免为了“未舍入”反复长除法。此修改不更改原数学算法、全部示例要求、官方最终评分或中间 `rel_tol=1e-4, abs_tol=1e-5`。这是多个工程纠正后的新配置，不作单一变量因果收益主张。
+
+```bash
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py prepare --config configs/nvidia_synthetic_smoke_ultra_full.json
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py api-smoke --config configs/nvidia_synthetic_smoke_ultra_full.json
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py run --config configs/nvidia_synthetic_smoke_ultra_full.json
+```

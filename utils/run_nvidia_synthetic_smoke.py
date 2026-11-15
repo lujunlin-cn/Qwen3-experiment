@@ -35,6 +35,7 @@ SOURCE_FILES = (NOTEBOOK, Path(__file__), ROOT / "utils/run_synthetic_smoke.py",
                 ROOT / "configs/nvidia_synthetic_smoke.json", ROOT / "configs/nvidia_synthetic_smoke_ultra.json",
                 ROOT / "configs/nvidia_synthetic_smoke_ultra_longthinking.json",
                 ROOT / "configs/nvidia_synthetic_smoke_ultra_lowthinking.json",
+                ROOT / "configs/nvidia_synthetic_smoke_ultra_full.json",
                 ROOT / "configs/nemo_smoke_requirements.lock.txt")
 
 
@@ -96,6 +97,9 @@ def validated_config(path=DEFAULT_CONFIG):
             low = copy.deepcopy(official["inference_parameters"])
             low["extra_body"]["reasoning_effort"] = "low"
             allowed_inference.append(low)
+            explicit_thinking = copy.deepcopy(official["inference_parameters"])
+            explicit_thinking["extra_body"] = {"chat_template_kwargs": {"enable_thinking": True}}
+            allowed_inference.append(explicit_thinking)
         if model["model"] not in allowed_models or not any(all(model.get(k) == v for k, v in params.items())
                                                            for params in allowed_inference):
             raise ValueError("Use a registered model and the SDK 0.10.0 baseline inference settings")
@@ -104,9 +108,12 @@ def validated_config(path=DEFAULT_CONFIG):
     if importlib.metadata.version("data-designer") != "0.10.0":
         raise ValueError("Do not upgrade data-designer; use 0.10.0")
     # Neither key material nor arbitrary provider/auth overrides are configuration.
-    allowed = set(read(DEFAULT_CONFIG))
-    if set(c) != allowed or "nvapi-" in json.dumps(c):
+    required = set(read(DEFAULT_CONFIG))
+    allowed = required | {"trace_prompt_mode"}
+    if not required <= set(c) or set(c) - allowed or "nvapi-" in json.dumps(c):
         raise ValueError("Unexpected configuration fields or credential material")
+    if c.get("trace_prompt_mode", "original") not in {"original", "bounded_precision"}:
+        raise ValueError("Unknown registered Trace prompt mode")
     return c
 
 
@@ -463,7 +470,11 @@ def run(target):
                 write_rows(stage / f"seed{index}_sdk_outputs.jsonl", outputs)
             except Exception as error:
                 errors.append({"seed_id": seed["seed_id"], "error": redact(type(error).__name__ + ": " + str(error))})
-                break  # Preserve partial HTTP outputs, never retry under a changed schema.
+                attempts = [r for r in rows(stage / "http_requests.jsonl") if r.get("seed_id") == seed["seed_id"]]
+                if any(r.get("http_status") in {400, 401, 403, 404, 410, 422} for r in attempts):
+                    break  # Explicit provider/schema incompatibility stops the experiment.
+                # A per-seed generation/parse failure remains Preview. Attempt
+                # the other frozen Seeds under exactly the same configuration.
             finally:
                 records.append(bind_raw_response({k: seed[k] for k in ("seed_id", "task_type", "prompt")},
                                                   rows(stage / "http_requests.jsonl"), seed))
@@ -473,7 +484,8 @@ def run(target):
                                           require_reasoning_content=c["require_reasoning_content"])
     result = {"status": "failed_runtime" if errors else quality["status"], "quality": quality,
         "telemetry": telemetry_summary(rows(stage / "http_requests.jsonl"), c), "elapsed_seconds": time.perf_counter() - start,
-        "errors": errors, "gpu_used": False, "merge_into_sft": False}
+        "errors": errors, "all_seed_attempts_completed": len(records) == len(seeds),
+        "gpu_used": False, "merge_into_sft": False}
     write_new(stage / "result.json", result)
     return result
 

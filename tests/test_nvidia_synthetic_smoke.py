@@ -63,6 +63,9 @@ class NvidiaSmokeTests(unittest.TestCase):
         low = nvidia.validated_config(nvidia.ROOT / 'configs/nvidia_synthetic_smoke_ultra_lowthinking.json')
         self.assertEqual(low['models']['nvidia-reasoning']['extra_body']['reasoning_effort'], 'low')
         self.assertTrue(low['require_reasoning_content'])
+        full = nvidia.validated_config(nvidia.ROOT / 'configs/nvidia_synthetic_smoke_ultra_full.json')
+        self.assertEqual(full['models']['nvidia-reasoning']['extra_body'], {'chat_template_kwargs': {'enable_thinking': True}})
+        self.assertEqual(full['trace_prompt_mode'], 'bounded_precision')
 
     def test_missing_key_fails_before_network_and_run_directory(self):
         with patch.dict(os.environ, {}, clear=True), patch.object(nvidia, "verify_prepared", side_effect=AssertionError("No work")):
@@ -263,6 +266,27 @@ class NvidiaSmokeTests(unittest.TestCase):
             for stage in (nvidia.api_smoke, nvidia.run):
                 with self.assertRaises(FileExistsError):
                     stage(target)
+
+    def test_per_seed_runtime_error_does_not_skip_remaining_seeds(self):
+        import httpx
+        target = nvidia.prepare(target=self.root / 'continue_fixture', run_id='nvidia_continue_cpu_fixture')
+        captured, respond = self.mock_http()
+        real_generate = nvidia.sdk_generate
+        def fail_first_after_wire(builder, path):
+            result = real_generate(builder, path)
+            if Path(path).name == 'seed0':
+                raise RuntimeError('CPU fixture per-row error after raw response')
+            return result
+        with patch.dict(os.environ, {'NVIDIA_API_KEY': 'cpu-fixture-only', 'NEMO_TELEMETRY_ENABLED': 'false'}), patch.object(
+                httpx.AsyncHTTPTransport, 'handle_async_request', respond):
+            self.assertEqual(nvidia.api_smoke(target)['status'], 'passed')
+            with patch.object(nvidia, 'sdk_generate', side_effect=fail_first_after_wire):
+                result = nvidia.run(target)
+        self.assertTrue(result['all_seed_attempts_completed'])
+        self.assertEqual(result['status'], 'failed_runtime')
+        self.assertEqual(result['telemetry']['http_requests'], 18)
+        self.assertEqual(len(nvidia.rows(target / 'generation/raw_model_outputs.jsonl')), 9)
+        self.assertEqual(len(result['errors']), 1)
 
 
 if __name__ == "__main__":
