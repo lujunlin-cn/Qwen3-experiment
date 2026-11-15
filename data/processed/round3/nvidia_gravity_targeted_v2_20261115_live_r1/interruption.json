@@ -1,0 +1,10 @@
+{
+  "status": "interrupted_execution_session_lost",
+  "cause": "The PTY process session disappeared; process no longer exists. Exact runtime cause was not observed.",
+  "completed_p16_wire_attempts": 1,
+  "unobserved_p16_seed2_request": true,
+  "p32_started": false,
+  "completed_seed1_response_reused_without_regeneration": true,
+  "next_continuation": "nvidia_gravity_targeted_v2_20261115_live_r2_continuation",
+  "observed_at_unix": 1794749024.6850488
+}

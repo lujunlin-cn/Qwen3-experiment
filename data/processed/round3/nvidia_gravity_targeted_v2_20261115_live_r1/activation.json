@@ -1,0 +1,19 @@
+{
+  "status": "authorized_live_run_started",
+  "authorization": "User explicitly approved full API testing after CPU preparation",
+  "expected_conditions": [
+    "P16K",
+    "P32K"
+  ],
+  "expected_unique_model_calls": 6,
+  "model": "nvidia/nemotron-3-ultra-550b-a55b",
+  "thinking": true,
+  "current_git_commit": "e000726fd7180ed2460203d0793e7f9f7e3ecd17",
+  "prepared_parent": "data/processed/round3/nvidia_gravity_targeted_v2_20261115_prepare_r1",
+  "prepared_source_commit": "f67a481",
+  "prepared_live_execution_this_task_false_is_historical_cpu_metadata": true,
+  "real_api_generation_subdirectories_will_record_live_status": true,
+  "gpu_training": false,
+  "merge_into_sft": false,
+  "started_at_unix": 1794747907.8775969
+}
