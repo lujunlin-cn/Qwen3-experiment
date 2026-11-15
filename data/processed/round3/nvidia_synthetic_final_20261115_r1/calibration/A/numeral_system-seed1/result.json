@@ -1,0 +1,94 @@
+{
+  "seed_id": "numeral_system-seed1",
+  "task_type": "numeral_system",
+  "variant_kind": "trace_variant",
+  "prompt": "In the Wonderland numeral system, numbers are represented as follows:\n44 -> XLIV\n65 -> LXV\n76 -> LXXVI\nNow, write the number 100 in the Wonderland numeral system.",
+  "variant_content": "{\"task_type\": \"numeral_system\", \"answer\": \"C\", \"query\": 100, \"components\": [{\"arabic\": 100, \"roman\": \"C\"}]}",
+  "verification_status": "accepted",
+  "llm_proof_accepted": true,
+  "transport": {
+    "verified": true,
+    "checks": {
+      "http_success": true,
+      "verified_response_match": true,
+      "raw_response_exact_match": true,
+      "finish_reason_stop": true,
+      "nonempty_raw_content": true,
+      "usage_match": true
+    },
+    "http_status": 200,
+    "finish_reason": "stop",
+    "request_attempts": 1,
+    "thinking_audit": {
+      "present": true,
+      "verification_status": "unverified",
+      "used_for_math_acceptance": false,
+      "allowed_in_sft_completion": false,
+      "output_tokens": 933,
+      "reasoning_tokens": 887,
+      "usage": {
+        "prompt_tokens": 480,
+        "completion_tokens": 933,
+        "total_tokens": 1413,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 887
+        }
+      }
+    },
+    "raw_reasoning_content": "We need to write 100 in the \"Wonderland numeral system\". The examples given: 44 -> XLIV, 65 -> LXV, 76 -> LXXVI. These are standard Roman numerals. 44 = XLIV (standard), 65 = LXV (standard), 76 = LXXVI (standard). So the Wonderland numeral system appears to be standard Roman numerals. Therefore 100 in Roman numerals is C.\n\nWe need to decompose the query (100) into Roman place-value pieces, then concatenate. The components must be canonical Roman numerals and their Arabic values sum to query. For 100, the canonical representation is \"C\". But we could also break into place-value pieces: 100 = 100 (C). Or maybe 100 = 50+50? But canonical Roman numerals for place values: 100 = C. Usually Roman numerals have symbols for 1,5,10,50,100,500,1000. The place-value pieces would be: 100 = C. But the instruction says \"Decompose the query into Roman place-value pieces, then concatenate.\" So we need to list components that are canonical Roman numerals (like I, V, X, L, C, D, M) and their Arabic values sum to 100. The simplest is one component: arabic: 100, roman: \"C\". That sums to 100. But maybe they want the decomposition into additive pieces: e.g., 100 = 100 (C). Could also be 50+50 = L+L = LL? But LL is not canonical (canonical for 100 is C). The requirement: \"Every component must be a canonical Roman numeral and their Arabic values must sum to query.\" Canonical Roman numeral means standard representation for that value? Usually canonical Roman numerals are the standard symbols: I, V, X, L, C, D, M. But also combinations like IV, IX, etc. But \"canonical Roman numeral\" likely means a valid Roman numeral that represents that value in standard form. For 100, \"C\" is canonical. For 90, \"XC\" is canonical. But we need to decompose 100 into pieces that are themselves canonical Roman numerals. Could be just [\"C\"]. That's fine.\n\nBut the examples: 44 -> XLIV. That is a single canonical Roman numeral. But they might want to break 44 into 40 (XL) and 4 (IV) as components? The instruction: \"Decompose the query into Roman place-value pieces, then concatenate.\" For 44, place-value pieces: 40 (XL) and 4 (IV) -> concatenate XLIV. So components would be [{\"arabic\":40,\"roman\":\"XL\"},{\"arabic\":4,\"roman\":\"IV\"}]. Similarly 65: 60 (LX) and 5 (V) -> LXV. 76: 70 (LXX) and 6 (VI) -> LXXVI. So for 100, place-value pieces: 100 (C). So components: [{\"arabic\":100,\"roman\":\"C\"}]. That sums to 100.\n\nThus answer: \"C\". Query: 100. Components: list with one object.\n\nWe must output JSON with keys: task_type=\"numeral_system\", query (integer), components (list of objects with arabic and roman), answer (string). All in a markdown code fence.\n\nWe need to ensure no extra text. Just the JSON.\n\nLet's construct:\n\n{\n  \"task_type\": \"numeral_system\",\n  \"query\": 100,\n  \"components\": [\n    {\"arabic\": 100, \"roman\": \"C\"}\n  ],\n  \"answer\": \"C\"\n}\n\nCheck schema: components items have arabic (integer >=1) and roman (string). Good.\n\nWe'll output that."
+  },
+  "verification": {
+    "verified": true,
+    "proof": {
+      "task_type": "numeral_system",
+      "answer": "C",
+      "query": 100,
+      "components": [
+        {
+          "arabic": 100,
+          "roman": "C"
+        }
+      ]
+    },
+    "scope": "all fields of a closed structured proof; no free text",
+    "schema_valid": true,
+    "field_audit": {
+      "public_examples": true,
+      "query_exact": true,
+      "canonical_components": [
+        true
+      ],
+      "component_sum": true,
+      "concatenation": true,
+      "canonical_final_answer": true
+    },
+    "verifier_version": "nvidia-independent-closed-proof-v2",
+    "acceptance_protocol": "nvidia-final-json-proof/v2",
+    "verified_scope": "final_json_proof_only",
+    "reasoning_content_verified": false
+  },
+  "acceptance_protocol": "nvidia-final-json-proof/v2",
+  "verifier_version": "nvidia-independent-closed-proof-v2",
+  "finish_reason": "stop",
+  "http_status": 200,
+  "latency_seconds": 22.606987234205008,
+  "input_tokens": 480,
+  "completion_tokens": 933,
+  "reasoning_tokens": 887,
+  "usage_status": "reported",
+  "thinking_present": true,
+  "thinking_verification_status": "unverified",
+  "lineage_status": "unavailable",
+  "train_only_provenance_passed": null,
+  "seed_gate_passed": null,
+  "sft_training_eligible": false,
+  "merge_into_sft": false,
+  "condition": "A",
+  "phase": "calibration",
+  "sdk_error": null,
+  "actual_http_requests": 1,
+  "elapsed_seconds": 23.169274576939642
+}

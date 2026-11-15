@@ -1,0 +1,183 @@
+{
+  "status": "completed",
+  "by_task": {
+    "numeral_system": {
+      "outputs": 0,
+      "accepted": 0,
+      "preview": 0,
+      "acceptance_rate": null,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "completion_tokens": null,
+      "reasoning_tokens": null,
+      "input_tokens": null,
+      "mean_completion_tokens": null,
+      "mean_reasoning_tokens": null,
+      "median_accepted_reasoning_tokens": null,
+      "median_accepted_completion_tokens": null,
+      "tokens_per_accepted_proof": null,
+      "median_latency_seconds": null,
+      "unknown_completion_usage": 0
+    },
+    "gravity": {
+      "outputs": 0,
+      "accepted": 0,
+      "preview": 0,
+      "acceptance_rate": null,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "completion_tokens": null,
+      "reasoning_tokens": null,
+      "input_tokens": null,
+      "mean_completion_tokens": null,
+      "mean_reasoning_tokens": null,
+      "median_accepted_reasoning_tokens": null,
+      "median_accepted_completion_tokens": null,
+      "tokens_per_accepted_proof": null,
+      "median_latency_seconds": null,
+      "unknown_completion_usage": 0
+    },
+    "equation_numeric": {
+      "outputs": 0,
+      "accepted": 0,
+      "preview": 0,
+      "acceptance_rate": null,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "completion_tokens": null,
+      "reasoning_tokens": null,
+      "input_tokens": null,
+      "mean_completion_tokens": null,
+      "mean_reasoning_tokens": null,
+      "median_accepted_reasoning_tokens": null,
+      "median_accepted_completion_tokens": null,
+      "tokens_per_accepted_proof": null,
+      "median_latency_seconds": null,
+      "unknown_completion_usage": 0
+    }
+  },
+  "skipped": {
+    "numeral_system": "frozen_quality_or_cost_gate_failed",
+    "gravity": "frozen_quality_or_cost_gate_failed",
+    "equation_numeric": "frozen_quality_or_cost_gate_failed"
+  },
+  "ledger": {
+    "request_count": 18,
+    "completion_tokens_charged_or_reserved": 348607,
+    "reported_completion_tokens": 4543,
+    "unknown_usage_requests": 15,
+    "keys": [
+      "calibration:A:equation_numeric-seed1",
+      "calibration:A:equation_numeric-seed2",
+      "calibration:A:equation_numeric-seed3",
+      "calibration:A:gravity-seed1",
+      "calibration:A:gravity-seed2",
+      "calibration:A:gravity-seed3",
+      "calibration:A:numeral_system-seed1",
+      "calibration:A:numeral_system-seed2",
+      "calibration:A:numeral_system-seed3",
+      "calibration:B:equation_numeric-seed1",
+      "calibration:B:equation_numeric-seed2",
+      "calibration:B:equation_numeric-seed3",
+      "calibration:B:gravity-seed1",
+      "calibration:B:gravity-seed2",
+      "calibration:B:gravity-seed3",
+      "calibration:B:numeral_system-seed1",
+      "calibration:B:numeral_system-seed2",
+      "calibration:B:numeral_system-seed3"
+    ],
+    "blocked_requests": [
+      {
+        "event": "blocked",
+        "key": "calibration:A:gravity-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794757655.0979362
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:gravity-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794757996.367691
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:gravity-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758339.4773746
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:equation_numeric-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758344.371838
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:equation_numeric-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758345.932532
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:equation_numeric-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758347.439622
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:numeral_system-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758349.333491
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:numeral_system-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758477.3291516
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:numeral_system-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758479.2072897
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:gravity-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758482.0794325
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:gravity-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758483.5534563
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:gravity-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758485.1077118
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:equation_numeric-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758586.4003768
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:equation_numeric-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758927.3286004
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:equation_numeric-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794759269.35068
+      }
+    ]
+  },
+  "merge_into_sft": false
+}

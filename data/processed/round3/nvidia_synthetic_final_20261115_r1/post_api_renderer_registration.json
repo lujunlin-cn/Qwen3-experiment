@@ -1,0 +1,26 @@
+{
+  "protocol": "post-api-exact-renderer/v2",
+  "registered_at_unix": 1794759932.6145494,
+  "original_run_manifest_sha256": "4e61ae5364bed72e8e946bbf9537b7b5c0a8662b89ee6979a34207f6b669ea36",
+  "source_sha256": {
+    "01_Synthetic_Data_Engineering.ipynb": "edef1a2650dabc2d9d54e86eb1b76d7b3a0aee7a91a60462e3f95bab4fd5193c",
+    "03_SFT.ipynb": "d0cb755e6663731764538e64f022e7852dab6146d7c2717ae20938287a2c424b",
+    "utils/run_nvidia_final_synthetic.py": "ec6f0e9340c63abe91f884bbc79d150054b3a840437ac86b508d5a24516cc83c",
+    "configs/nvidia_synthetic_final_20261115.json": "42d1c988f1aac5fd2909c8c92599017bb7a610e30f35961b451c95d5ace2603c",
+    "tests/test_nvidia_synthetic_final.py": "f523c87693c1611f956236db27e94dc9724f77ecdcbbbffe662577e9eaa4f4b9",
+    "tests/test_nvidia_v2_repair.py": "37d862c836583b40a7d83e0e036209284d26a55e2d7e7668cdf8bad3ae9d3e4b",
+    "utils/run_nvidia_v2.py": "491f0f1c746580b181ed3bbfe54d54138497529ce685fed319c97d8d74696bb1",
+    "utils/run_nvidia_synthetic_smoke.py": "1b927b69a1bfdbedb14c067141db1833f40860c217de1cb3cfde701e3b509617",
+    "utils/run_synthetic_smoke.py": "7aa90aa6e05e905e62ff89097057c2233663b10b24ff5c00780f88a7c300793e"
+  },
+  "allowed_purpose": "tighten deterministic SFT renderer only; no model/API request code",
+  "allowed_changed_paths": [
+    "03_SFT.ipynb",
+    "utils/run_nvidia_final_synthetic.py",
+    "tests/test_nvidia_synthetic_final.py"
+  ],
+  "cpu_result_file": "post_api_cpu_regression.json",
+  "cpu_result_log": "post_api_cpu_regression.log",
+  "no_new_api_requests": true,
+  "live_execution_complete": true
+}

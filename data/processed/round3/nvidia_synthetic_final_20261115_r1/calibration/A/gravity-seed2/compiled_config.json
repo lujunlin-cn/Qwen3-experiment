@@ -1,0 +1,133 @@
+{
+  "columns": [
+    {
+      "name": "trace_variant",
+      "drop": false,
+      "column_type": "llm-structured",
+      "skip": null,
+      "propagate_skip": true,
+      "storage_encoding": null,
+      "prompt": "Generate a complete closed mathematical proof. Return exactly the JSON object and nothing else. Keep every example in order; do not omit any operator mapping or calculation.\nReturn one JSON object only with keys task_type=\"gravity\", g_estimates (list of numbers in example order), g_ols (number), query_t (original time string), query_distance (number before rounding), answer (string). Compute each g_i=2*d_i/t_i^2, then g_ols=2*sum(t_i^2*d_i)/sum(t_i^4), then query_distance=0.5*g_ols*query_t^2. Give intermediate values to at least six significant digits.\nComplete the required JSON without repeatedly recomputing an already checked operation. Include every example and query field. For Gravity, use seven significant digits for intermediate numeric representations. query_distance means the computed value before rounding the final answer to two decimals; a finite seven-significant-digit representation is appropriate. Do not attempt an infinite exact decimal expansion. The independent verification precision and all required computations remain unchanged.\nquery_t MUST be exactly the original numeric Query time string, without a unit or suffix. Preserve decimal precision and trailing zeros. Correct: \"4.62\". Incorrect: \"4.62s\". Keep all g_i in example order, use OLS on every example, and format answer to two decimals.\nSEED_ID={{ seed_id }}\nVARIANT_KIND=trace_variant\nORIGINAL_TASK_BEGIN\n{{ prompt }}\nORIGINAL_TASK_END",
+      "model_alias": "nvidia-reasoning",
+      "system_prompt": "Follow the complete closed JSON proof contract.",
+      "multi_modal_context": null,
+      "tool_alias": null,
+      "with_trace": "last_message",
+      "extract_reasoning_content": true,
+      "output_format": {
+        "type": "object",
+        "properties": {
+          "task_type": {
+            "type": "string",
+            "enum": [
+              "gravity"
+            ]
+          },
+          "answer": {
+            "type": "string"
+          },
+          "g_estimates": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            }
+          },
+          "g_ols": {
+            "type": "number"
+          },
+          "query_t": {
+            "type": "string"
+          },
+          "query_distance": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "task_type",
+          "answer",
+          "g_estimates",
+          "g_ols",
+          "query_t",
+          "query_distance"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "model_configs": [
+    {
+      "alias": "nvidia-reasoning",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "inference_parameters": {
+        "generation_type": "chat-completion",
+        "max_parallel_requests": 1,
+        "timeout": 900,
+        "extra_body": {
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_schema",
+            "json_schema": {
+              "name": "gravity_trace",
+              "strict": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "task_type": {
+                    "type": "string",
+                    "enum": [
+                      "gravity"
+                    ]
+                  },
+                  "answer": {
+                    "type": "string"
+                  },
+                  "g_estimates": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    }
+                  },
+                  "g_ols": {
+                    "type": "number"
+                  },
+                  "query_t": {
+                    "type": "string"
+                  },
+                  "query_distance": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "task_type",
+                  "answer",
+                  "g_estimates",
+                  "g_ols",
+                  "query_t",
+                  "query_distance"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "max_tokens": 32768
+      },
+      "provider": "nvidia",
+      "skip_health_check": true
+    }
+  ],
+  "tool_configs": [],
+  "seed_config": {
+    "source": {
+      "seed_type": "local",
+      "path": "/home/hajimi2025/Qwen3-experiment/data/processed/round3/nvidia_synthetic_final_20261115_r1/calibration/A/gravity-seed2/public_seed.jsonl"
+    },
+    "sampling_strategy": "ordered",
+    "selection_strategy": null
+  },
+  "constraints": null,
+  "profilers": null,
+  "processors": null
+}

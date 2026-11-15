@@ -1,0 +1,14 @@
+{
+  "train_number_support_count": 100,
+  "target_query_unique_counts": {
+    "train": 100,
+    "validation": 73,
+    "holdout_test": 77
+  },
+  "heldout_target_union_count": 94,
+  "train_supported_numbers_not_in_heldout_targets": 6,
+  "train_min_example_count": 3,
+  "strict_policy_requires_all_example_and_query_numbers_outside_heldout_targets": true,
+  "numbers_withheld_from_report_to_avoid_implying_resampling": true,
+  "generator_adjusted_from_audit": false
+}

@@ -1,0 +1,133 @@
+{
+  "schema_version": "train-only-prior-manifest/v5",
+  "generator_version": "train-only-prior-v5",
+  "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+  "train_split_sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+  "train_rows": 3123,
+  "prior_content_sha256": "05f5e1d71bc3ca68bbb89d42d0f89a061aac03a1a5351dc5c017fcbab2995fe0",
+  "by_task": {
+    "numeral_system": {
+      "rows": 1260,
+      "source_ids_sha256": "5826804c0d3886f31d71aaf60471d443265146e3819cd4d36952d55c31912fee",
+      "source_rows_sha256": "ba115ea1c752e0dec5996cc6851b7138a87ec39f130d0248b61569ef9d985cd2",
+      "features": {
+        "numbers": {
+          "occurrences": 6248,
+          "observations_sha256": "4471561c1507708e1ddcd69ff7efd544380d544810c75dd7469f2159df1c4b43",
+          "sampling_rule": "empirical occurrence-weighted draw; Roman numeric values excluded after use in the same prompt"
+        },
+        "query_numbers": {
+          "occurrences": 1260,
+          "observations_sha256": "d7d7836c0101460c6537a17f5d72afd528c88d6de0e483bbf566aebb02c65ce9",
+          "sampling_rule": "empirical occurrence-weighted draw; Roman numeric values excluded after use in the same prompt"
+        },
+        "example_numbers": {
+          "occurrences": 4988,
+          "observations_sha256": "2549a6a1d48a32f6b282b402fbcec57a0421bd9902e45799738ce49052c2fd8d",
+          "sampling_rule": "empirical occurrence-weighted draw; Roman numeric values excluded after use in the same prompt"
+        },
+        "example_counts": {
+          "occurrences": 1260,
+          "observations_sha256": "8533820b788d03361748b98bb97f0911469d8bc749437cacf1a41a46f7fdecb5",
+          "sampling_rule": "empirical occurrence-weighted draw; Roman numeric values excluded after use in the same prompt"
+        }
+      },
+      "sampling_rule": "draw occurrence-weighted numbers without repeating numeric values within a prompt; empirical example counts"
+    },
+    "gravity": {
+      "rows": 1277,
+      "source_ids_sha256": "201f0ad2d280dd7cf04cec2407d0077e879ad51f4f521a1406c65f43440813ab",
+      "source_rows_sha256": "b4dba1c770c1fa46e265ec7310cc18cdb703ce052df6558a969c8ab005233706",
+      "features": {
+        "g_ols": {
+          "occurrences": 1277,
+          "observations_sha256": "a5246e2899f1f1855024b561d481e12c5d66c276ca8fcddb486931c4ec340edf",
+          "sampling_rule": "empirical occurrence-weighted draw; Roman numeric values excluded after use in the same prompt"
+        },
+        "times": {
+          "occurrences": 5165,
+          "observations_sha256": "21a1acce13bbd3f0be9c8bd93bf404e1d5839a3716d780d9beb0866c388490ee",
+          "sampling_rule": "empirical occurrence-weighted draw; Roman numeric values excluded after use in the same prompt"
+        },
+        "example_counts": {
+          "occurrences": 1277,
+          "observations_sha256": "a57ccaf3c2dbd5f6a13fa66c4e70bf1aedc7f7722a73992be7413eb9c446b89b",
+          "sampling_rule": "empirical occurrence-weighted draw; Roman numeric values excluded after use in the same prompt"
+        },
+        "distance_precision": {
+          "occurrences": 5165,
+          "observations_sha256": "066c1c15425017e60ba7588fea89acc4a0cd2907cd637cf9032806e2ee0497be",
+          "sampling_rule": "empirical occurrence-weighted draw; Roman numeric values excluded after use in the same prompt"
+        }
+      },
+      "sampling_rule": "empirical g_ols/count/time/lexical distance precision; deterministic d=0.5*g*t^2 then sampled rounding"
+    },
+    "equation_numeric": {
+      "rows": 586,
+      "source_ids_sha256": "d9fd6d275cb8e82cfae4a1ec2e962ab4b2485eeb4294eb86561c21a6c82676f1",
+      "source_rows_sha256": "6adee1feb1f9f514a0707da7ac97b44ab1088d30e2291c6dd52f2da0c87f0653",
+      "features": {
+        "operators": {
+          "occurrences": 2933,
+          "observations_sha256": "6966208d5c2b6e283dda979bd39254457313810e73f053e1b6cd8d5cdacbb854",
+          "sampling_rule": "joint empirical row-layout draw"
+        },
+        "operands_left": {
+          "occurrences": 2933,
+          "observations_sha256": "b784ee5c285b46ce0633df19754d3c3a8d4775ac1d1bd3803308ac2349fa34fa",
+          "sampling_rule": "empirical operand-pair occurrence draw; left/right marginals reported"
+        },
+        "operands_right": {
+          "occurrences": 2933,
+          "observations_sha256": "ae79037a9d40ff2ad1082c32735699dd2252a53be59bd1b78fde7fa8ba5913d6",
+          "sampling_rule": "empirical operand-pair occurrence draw; left/right marginals reported"
+        },
+        "operand_pairs": {
+          "occurrences": 2933,
+          "observations_sha256": "cf56a75927abb4be622227d7713aace45e0126e7705eacc1cd44102afe12f3b3",
+          "sampling_rule": "empirical operand-pair occurrence draw; left/right marginals reported"
+        },
+        "example_counts": {
+          "occurrences": 586,
+          "observations_sha256": "4b4a9843000088e941a56909ca8630e543b5d0cf0401c323fba7b61c72447c6e",
+          "sampling_rule": "joint empirical row-layout draw"
+        },
+        "operator_example_counts": {
+          "occurrences": 1394,
+          "observations_sha256": "cbb1d1da20d6d26f74735ceed70f42c11b37cf99591a8f46ea8fcad95cb75173",
+          "sampling_rule": "joint empirical row-layout draw"
+        },
+        "query_operators": {
+          "occurrences": 586,
+          "observations_sha256": "25d045205aaaca501e61e2a318fa0732fd1fd7b46dde17ca22d6f75ec168a4df",
+          "sampling_rule": "joint empirical row-layout draw"
+        },
+        "query_types": {
+          "occurrences": 586,
+          "observations_sha256": "8288a71eeb766ef33835e059672cf219fd7dea40bc94d5af97dad85033650ba5",
+          "sampling_rule": "joint empirical row-layout draw"
+        },
+        "layouts": {
+          "occurrences": 586,
+          "observations_sha256": "64147e49c8e922378944c9e4bdac581768f2751c514d0ece674e411bad3fd293",
+          "sampling_rule": "joint empirical row-layout draw"
+        }
+      },
+      "sampling_rule": "empirical layout jointly preserves counts/query operator/Deduce-Guess; occurrence-weighted Train operand pairs; fixed-spec legal rule assignment"
+    }
+  },
+  "task_spec_prior_id": "roman-gravity-numeric24-fixed-spec/v1",
+  "task_spec_prior_hash": "c55caba68e5413d4deb7245d0f10d2e25c73f529811c79d6d449967d06bcfeb9",
+  "fixed_task_spec_not_learned_from_train": true,
+  "notebook_git_commit": "d4ac993827b556b16b86018d4244a3bb76d34fd6",
+  "prior_generation_code_sha256": "edef1a2650dabc2d9d54e86eb1b76d7b3a0aee7a91a60462e3f95bab4fd5193c",
+  "rng_seed": 20261115,
+  "sampled_at": "2026-11-15T15:35:18Z",
+  "allowed_generator_files": [
+    "dataset_manifest.json",
+    "splits/train.csv"
+  ],
+  "answer_column_used": false,
+  "validation_holdout_available_to_generator": false,
+  "prior_file_sha256": "454345c0a43ef31fa211c730eac46233795e6928bfb3eae3a3bde24072565e4e"
+}

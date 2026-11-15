@@ -1,0 +1,16 @@
+{
+  "sdk_version": "0.10.0",
+  "official_provider": "nvidia",
+  "custom_provider": false,
+  "request_api": "HTTPX AsyncClient/Client",
+  "retry_transport_max_retries": 0,
+  "request_executor_max_retries": 0,
+  "additional_guard": "durable per Seed x condition send-before-network reservation",
+  "source_sha256": {
+    "data_designer.engine.models.clients.retry": "8eab710ff8012b5210980b6ae5407cab53b4e84116548d6b11a6500844fa4656",
+    "data_designer.engine.models.clients.model_request_executor": "c13a840726681e5fef9c5057085b14e047c3605cce387beeb88f7b2d28bd6f19",
+    "data_designer.engine.models.clients.adapters.http_model_client": "1610bee94e8c358cf519efcd2f4ccb7f65a6f98f6900382c2b9099ce5a704731"
+  },
+  "sdk_conversation_restarts": 0,
+  "sdk_correction_steps": 0
+}

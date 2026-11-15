@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "seed_id": "numeral_system-seed1",
+      "all_non_prompt_http_fields_equal": true,
+      "schema_hash_equal": true
+    },
+    {
+      "seed_id": "numeral_system-seed2",
+      "all_non_prompt_http_fields_equal": true,
+      "schema_hash_equal": true
+    },
+    {
+      "seed_id": "numeral_system-seed3",
+      "all_non_prompt_http_fields_equal": true,
+      "schema_hash_equal": true
+    },
+    {
+      "seed_id": "gravity-seed1",
+      "all_non_prompt_http_fields_equal": true,
+      "schema_hash_equal": true
+    },
+    {
+      "seed_id": "gravity-seed2",
+      "all_non_prompt_http_fields_equal": true,
+      "schema_hash_equal": true
+    },
+    {
+      "seed_id": "gravity-seed3",
+      "all_non_prompt_http_fields_equal": true,
+      "schema_hash_equal": true
+    },
+    {
+      "seed_id": "equation_numeric-seed1",
+      "all_non_prompt_http_fields_equal": true,
+      "schema_hash_equal": true
+    },
+    {
+      "seed_id": "equation_numeric-seed2",
+      "all_non_prompt_http_fields_equal": true,
+      "schema_hash_equal": true
+    },
+    {
+      "seed_id": "equation_numeric-seed3",
+      "all_non_prompt_http_fields_equal": true,
+      "schema_hash_equal": true
+    }
+  ],
+  "unique_variable": "registered user prompt wording/length"
+}

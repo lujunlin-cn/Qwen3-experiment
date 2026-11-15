@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "command": [
+    "/home/hajimi2025/Qwen3-experiment/.venv-data-designer/bin/python",
+    "-m",
+    "unittest",
+    "tests.test_nvidia_synthetic_final",
+    "-v"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": null,
+  "log_file": "post_api_cpu_regression.log",
+  "log_sha256": "7a620419ebdd5de9edc1249c8e1d897f9ba126de7dfc5758f546da949ac399a2",
+  "source_sha256": {
+    "01_Synthetic_Data_Engineering.ipynb": "edef1a2650dabc2d9d54e86eb1b76d7b3a0aee7a91a60462e3f95bab4fd5193c",
+    "03_SFT.ipynb": "d0cb755e6663731764538e64f022e7852dab6146d7c2717ae20938287a2c424b",
+    "utils/run_nvidia_final_synthetic.py": "ec6f0e9340c63abe91f884bbc79d150054b3a840437ac86b508d5a24516cc83c",
+    "configs/nvidia_synthetic_final_20261115.json": "42d1c988f1aac5fd2909c8c92599017bb7a610e30f35961b451c95d5ace2603c",
+    "tests/test_nvidia_synthetic_final.py": "f523c87693c1611f956236db27e94dc9724f77ecdcbbbffe662577e9eaa4f4b9",
+    "tests/test_nvidia_v2_repair.py": "37d862c836583b40a7d83e0e036209284d26a55e2d7e7668cdf8bad3ae9d3e4b",
+    "utils/run_nvidia_v2.py": "491f0f1c746580b181ed3bbfe54d54138497529ce685fed319c97d8d74696bb1",
+    "utils/run_nvidia_synthetic_smoke.py": "1b927b69a1bfdbedb14c067141db1833f40860c217de1cb3cfde701e3b509617",
+    "utils/run_synthetic_smoke.py": "7aa90aa6e05e905e62ff89097057c2233663b10b24ff5c00780f88a7c300793e"
+  },
+  "live_api_calls": 0,
+  "gpu_used": false
+}

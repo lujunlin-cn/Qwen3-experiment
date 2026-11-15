@@ -1,0 +1,20 @@
+{
+  "related_suites": [
+    "tests.test_nvidia_synthetic_final",
+    "tests.test_nvidia_synthetic_smoke",
+    "tests.test_nvidia_v2_repair",
+    "tests.test_nemo_smoke",
+    "tests.test_round2_nemo"
+  ],
+  "tests": 74,
+  "status": "passed",
+  "elapsed_seconds": 27.325,
+  "real_api_calls": 0,
+  "tokenizer_suite": {
+    "module": "test_nvidia_v2_tokenizer",
+    "tests": 2,
+    "status": "passed",
+    "elapsed_seconds": 3.909,
+    "no_model_weights_or_gpu": true
+  }
+}

@@ -1,0 +1,5 @@
+Observed retryable model-task error: kind=connection; the row task will be deferred.
+Non-retryable failure on trace_variant[rg=0, row=0]:   |----------
+  | Cause: An unexpected API error occurred with model 'nvidia/nemotron-3-ultra-550b-a55b' while running generation for column 'trace_variant'.
+  | Solution: Try again in a few moments. Check with your model provider 'nvidia' if the issue persists.
+  |----------

@@ -1,0 +1,17 @@
+{
+  "status": "empty_accepted",
+  "run_status": "completed",
+  "accepted_rows": 0,
+  "preview_rows": 0,
+  "skipped": {
+    "numeral_system": "frozen_quality_or_cost_gate_failed",
+    "gravity": "frozen_quality_or_cost_gate_failed",
+    "equation_numeric": "frozen_quality_or_cost_gate_failed"
+  },
+  "artifact_sha256": {
+    "llm_proof_accepted.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "llm_proof_preview.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "prior_manifest_sha256": "130b14febc9d3286e70180e884afb1809d23c6ea38374cab844fe5fb4f30b701",
+  "merge_into_sft": false
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/tmp/qwen_final_frozen_solver_benchmark.py", line 14, in <module>
+    assert v['solver_proof_accepted']
+           ~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

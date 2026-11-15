@@ -1,0 +1,99 @@
+{
+  "seed_id": "numeral_system-seed3",
+  "task_type": "numeral_system",
+  "variant_kind": "trace_variant",
+  "prompt": "In the Wonderland numeral system, numbers are represented as follows:\n38 -> XXXVIII\n82 -> LXXXII\n45 -> XLV\n50 -> L\nNow, write the number 13 in the Wonderland numeral system.",
+  "variant_content": "{\"task_type\": \"numeral_system\", \"answer\": \"XIII\", \"query\": 13, \"components\": [{\"arabic\": 10, \"roman\": \"X\"}, {\"arabic\": 3, \"roman\": \"III\"}]}",
+  "verification_status": "accepted",
+  "llm_proof_accepted": true,
+  "transport": {
+    "verified": true,
+    "checks": {
+      "http_success": true,
+      "verified_response_match": true,
+      "raw_response_exact_match": true,
+      "finish_reason_stop": true,
+      "nonempty_raw_content": true,
+      "usage_match": true
+    },
+    "http_status": 200,
+    "finish_reason": "stop",
+    "request_attempts": 1,
+    "thinking_audit": {
+      "present": true,
+      "verification_status": "unverified",
+      "used_for_math_acceptance": false,
+      "allowed_in_sft_completion": false,
+      "output_tokens": 823,
+      "reasoning_tokens": 765,
+      "usage": {
+        "prompt_tokens": 483,
+        "completion_tokens": 823,
+        "total_tokens": 1306,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 765
+        }
+      }
+    },
+    "raw_reasoning_content": "We need to generate a JSON object with task_type \"numeral_system\", query integer (the number to convert), components list of objects with arabic and roman, and answer string (the final Roman numeral). The problem: \"In the Wonderland numeral system, numbers are represented as follows: 38 -> XXXVIII, 82 -> LXXXII, 45 -> XLV, 50 -> L. Now, write the number 13 in the Wonderland numeral system.\"\n\nWe need to infer the numeral system. The examples given are standard Roman numerals? Let's check: 38 in standard Roman is XXXVIII (30=XXX, 8=VIII) correct. 82 = LXXXII (50=L, 30=XXX, 2=II) correct. 45 = XLV (40=XL, 5=V) correct. 50 = L correct. So it's standard Roman numerals. So 13 in Roman numerals is XIII (10=X, 3=III). So answer should be \"XIII\". But we need to decompose the query (13) into Roman place-value pieces, then concatenate. The components must be canonical Roman numerals and their Arabic values sum to query. Typically we break into thousands, hundreds, tens, ones. For 13: 10 (X) and 3 (III). But III is not a single canonical Roman numeral? Actually canonical Roman numerals for each place: 10 = X, 3 = III? But III is three I's. Usually the decomposition uses the standard symbols: 10 = X, 3 = III? But III is not a single symbol; it's additive. The instruction: \"Decompose the query into Roman place-value pieces, then concatenate. Every component must be a canonical Roman numeral and their Arabic values must sum to query.\" Canonical Roman numeral could be the standard symbols for each decimal place: e.g., for 13, we have 10 (X) and 3 (III) but III is not a single canonical piece? In Roman numerals, the canonical representation for 3 is III, which is a valid Roman numeral. But is it considered a \"place-value piece\"? Usually place-value pieces are like 10, 3? But the examples: 38 -> XXXVIII. If we decompose 38: 30 (XXX) and 8 (VIII). 30 is XXX, 8 is VIII. Both are canonical Roman numerals. 82: 80 (LXXX) and 2 (II). 45: 40 (XL) and 5 (V). 50: 50 (L). So they decompose into tens and ones (or hundreds, etc). For 13, it's 10 (X) and 3 (III). So components: [{\"arabic\": 10, \"roman\": \"X\"}, {\"arabic\": 3, \"roman\": \"III\"}]. Their sum = 13. Concatenated gives \"XIII\". That matches.\n\nBut we must ensure each component is a canonical Roman numeral. \"III\" is canonical for 3. Yes.\n\nThus query = 13. components = [{\"arabic\": 10, \"roman\": \"X\"}, {\"arabic\": 3, \"roman\": \"III\"}]. answer = \"XIII\". task_type = \"numeral_system\".\n\nWe need to output exactly the JSON object within a markdown code fence with ```json. No extra text.\n\nLet's produce that."
+  },
+  "verification": {
+    "verified": true,
+    "proof": {
+      "task_type": "numeral_system",
+      "answer": "XIII",
+      "query": 13,
+      "components": [
+        {
+          "arabic": 10,
+          "roman": "X"
+        },
+        {
+          "arabic": 3,
+          "roman": "III"
+        }
+      ]
+    },
+    "scope": "all fields of a closed structured proof; no free text",
+    "schema_valid": true,
+    "field_audit": {
+      "public_examples": true,
+      "query_exact": true,
+      "canonical_components": [
+        true,
+        true
+      ],
+      "component_sum": true,
+      "concatenation": true,
+      "canonical_final_answer": true
+    },
+    "verifier_version": "nvidia-independent-closed-proof-v2",
+    "acceptance_protocol": "nvidia-final-json-proof/v2",
+    "verified_scope": "final_json_proof_only",
+    "reasoning_content_verified": false
+  },
+  "acceptance_protocol": "nvidia-final-json-proof/v2",
+  "verifier_version": "nvidia-independent-closed-proof-v2",
+  "finish_reason": "stop",
+  "http_status": 200,
+  "latency_seconds": 20.63771306211129,
+  "input_tokens": 483,
+  "completion_tokens": 823,
+  "reasoning_tokens": 765,
+  "usage_status": "reported",
+  "thinking_present": true,
+  "thinking_verification_status": "unverified",
+  "lineage_status": "unavailable",
+  "train_only_provenance_passed": null,
+  "seed_gate_passed": null,
+  "sft_training_eligible": false,
+  "merge_into_sft": false,
+  "condition": "A",
+  "phase": "calibration",
+  "sdk_error": null,
+  "actual_http_requests": 1,
+  "elapsed_seconds": 20.76480997959152
+}

@@ -1,0 +1,16 @@
+test_nvidia_v2_tokenizer (unittest.loader._FailedTest.test_nvidia_v2_tokenizer) ... ERROR
+
+======================================================================
+ERROR: test_nvidia_v2_tokenizer (unittest.loader._FailedTest.test_nvidia_v2_tokenizer)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_nvidia_v2_tokenizer
+Traceback (most recent call last):
+  File "/home/hajimi2025/miniforge3/lib/python3.13/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+ModuleNotFoundError: No module named 'tests.test_nvidia_v2_tokenizer'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

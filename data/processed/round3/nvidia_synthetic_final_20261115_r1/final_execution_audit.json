@@ -1,0 +1,222 @@
+{
+  "status": "passed",
+  "live_phases_complete": true,
+  "overall_quality_status": "partial_training_seed_panel_roman_exposure_rejected",
+  "actual_http_requests": 18,
+  "ledger": {
+    "request_count": 18,
+    "completion_tokens_charged_or_reserved": 348607,
+    "reported_completion_tokens": 4543,
+    "unknown_usage_requests": 15,
+    "keys": [
+      "calibration:A:equation_numeric-seed1",
+      "calibration:A:equation_numeric-seed2",
+      "calibration:A:equation_numeric-seed3",
+      "calibration:A:gravity-seed1",
+      "calibration:A:gravity-seed2",
+      "calibration:A:gravity-seed3",
+      "calibration:A:numeral_system-seed1",
+      "calibration:A:numeral_system-seed2",
+      "calibration:A:numeral_system-seed3",
+      "calibration:B:equation_numeric-seed1",
+      "calibration:B:equation_numeric-seed2",
+      "calibration:B:equation_numeric-seed3",
+      "calibration:B:gravity-seed1",
+      "calibration:B:gravity-seed2",
+      "calibration:B:gravity-seed3",
+      "calibration:B:numeral_system-seed1",
+      "calibration:B:numeral_system-seed2",
+      "calibration:B:numeral_system-seed3"
+    ],
+    "blocked_requests": [
+      {
+        "event": "blocked",
+        "key": "calibration:A:gravity-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794757655.0979362
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:gravity-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794757996.367691
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:gravity-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758339.4773746
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:equation_numeric-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758344.371838
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:equation_numeric-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758345.932532
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:equation_numeric-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758347.439622
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:numeral_system-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758349.333491
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:numeral_system-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758477.3291516
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:numeral_system-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758479.2072897
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:gravity-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758482.0794325
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:gravity-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758483.5534563
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:gravity-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758485.1077118
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:equation_numeric-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758586.4003768
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:equation_numeric-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758927.3286004
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:equation_numeric-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794759269.35068
+      }
+    ]
+  },
+  "transport_summary": [
+    {
+      "phase": "calibration",
+      "condition": "A",
+      "task_type": "numeral_system",
+      "actual_http_sends": 3,
+      "http200": 3,
+      "transport_failed": 0,
+      "http_error_statuses": {},
+      "nonempty_final_content": 3,
+      "schema_pass": 3,
+      "math_pass": 3,
+      "accepted": 3,
+      "unknown_usage": 0
+    },
+    {
+      "phase": "calibration",
+      "condition": "A",
+      "task_type": "gravity",
+      "actual_http_sends": 3,
+      "http200": 0,
+      "transport_failed": 3,
+      "http_error_statuses": {},
+      "nonempty_final_content": 0,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "accepted": 0,
+      "unknown_usage": 3
+    },
+    {
+      "phase": "calibration",
+      "condition": "A",
+      "task_type": "equation_numeric",
+      "actual_http_sends": 3,
+      "http200": 0,
+      "transport_failed": 0,
+      "http_error_statuses": {
+        "503": 3
+      },
+      "nonempty_final_content": 0,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "accepted": 0,
+      "unknown_usage": 3
+    },
+    {
+      "phase": "calibration",
+      "condition": "B",
+      "task_type": "numeral_system",
+      "actual_http_sends": 3,
+      "http200": 0,
+      "transport_failed": 0,
+      "http_error_statuses": {
+        "503": 3
+      },
+      "nonempty_final_content": 0,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "accepted": 0,
+      "unknown_usage": 3
+    },
+    {
+      "phase": "calibration",
+      "condition": "B",
+      "task_type": "gravity",
+      "actual_http_sends": 3,
+      "http200": 0,
+      "transport_failed": 0,
+      "http_error_statuses": {
+        "503": 3
+      },
+      "nonempty_final_content": 0,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "accepted": 0,
+      "unknown_usage": 3
+    },
+    {
+      "phase": "calibration",
+      "condition": "B",
+      "task_type": "equation_numeric",
+      "actual_http_sends": 3,
+      "http200": 0,
+      "transport_failed": 2,
+      "http_error_statuses": {
+        "500": 1
+      },
+      "nonempty_final_content": 0,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "accepted": 0,
+      "unknown_usage": 3
+    }
+  ],
+  "all_wire_outputs_freshly_reverified": true,
+  "actual_ab_only_prompt_diff": true,
+  "finally_entered_sft": 0,
+  "merge_into_sft": false
+}

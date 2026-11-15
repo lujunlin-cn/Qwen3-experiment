@@ -1,0 +1,6 @@
+{
+  "purpose": "Real development test logs, including failures corrected before formal pilot registration",
+  "not_api_results": true,
+  "not_gpu_tests": true,
+  "registered_source_commit": "d4ac993"
+}

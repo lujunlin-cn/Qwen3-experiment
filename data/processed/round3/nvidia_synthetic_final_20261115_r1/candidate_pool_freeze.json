@@ -1,0 +1,16 @@
+{
+  "status": "frozen_before_evaluation_reads",
+  "candidate_count": 60,
+  "per_task": {
+    "numeral_system": 20,
+    "gravity": 20,
+    "equation_numeric": 20
+  },
+  "candidate_pool_sha256": "2ced3e5d4f026b1b0dddd9319a9788e4245cece4d835630c05551cf1ceb1c80b",
+  "prior_manifest_sha256": "130b14febc9d3286e70180e884afb1809d23c6ea38374cab844fe5fb4f30b701",
+  "frozen_at_unix": 1794756930.735597,
+  "elapsed_seconds": 3.42187886685133,
+  "evaluation_split_reads": 0,
+  "reads": [],
+  "resampling_after_audit_allowed": false
+}

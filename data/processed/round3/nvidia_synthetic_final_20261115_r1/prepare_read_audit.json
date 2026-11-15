@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "reads": [
+    {
+      "path": "data/processed/tasksets/roman_gravity_equation_v1/dataset_manifest.json",
+      "mode": "r",
+      "purpose": "Train-only prior input"
+    },
+    {
+      "path": "data/processed/tasksets/roman_gravity_equation_v1/splits/train.csv",
+      "mode": "rb",
+      "purpose": "Train-only prior input"
+    },
+    {
+      "path": "data/processed/tasksets/roman_gravity_equation_v1/splits/train.csv",
+      "mode": "rb",
+      "purpose": "Train-only prior input"
+    }
+  ],
+  "parsed_columns": [
+    "id",
+    "source_row",
+    "task_type",
+    "prompt",
+    "split"
+  ],
+  "answer_used": false,
+  "validation_or_holdout_read": false,
+  "elapsed_seconds": 1.946610672865063
+}

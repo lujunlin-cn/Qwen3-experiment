@@ -1,0 +1,7 @@
+test_21_low_effort_in_real_sdk_http_request (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_21_low_effort_in_real_sdk_http_request) ... ok
+test_23_http500_disconnect_and503_are_not_retried (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_23_http500_disconnect_and503_are_not_retried) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 4.946s
+
+OK

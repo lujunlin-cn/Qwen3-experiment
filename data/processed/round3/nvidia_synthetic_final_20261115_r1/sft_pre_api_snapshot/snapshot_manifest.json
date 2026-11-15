@@ -1,0 +1,11 @@
+{
+  "reason": "Preserve CPU Solver-first preview before post-API exact canonical reference patch",
+  "files_sha256": {
+    "solver_verified.jsonl": "aa8561a2d9540c58723e03170b3517c8afb4268d5f8605678ad0416de78d3cef",
+    "sft_rendered_preview.jsonl": "9f757783cad6a300e26ad704cc02f82b129b52b92db6466cf220143ce70bf74a",
+    "sft_render_audit.json": "2a4259fe26d1c2daf7dc13e3135894df855dce00dd33b7358232c95d946df874",
+    "sft_render_manifest.json": "5234623a0218874b244df8ac8744652b052ca97c662309996a135901e2a864e9",
+    "tokenizer_render.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "no_previous_manifest_overwritten": true
+}

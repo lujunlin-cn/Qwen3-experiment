@@ -1,0 +1,11 @@
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+test_actual_completion_and_sft_mask_token_counts (test_nvidia_v2_tokenizer.V2TokenizerTests.test_actual_completion_and_sft_mask_token_counts) ... ok
+test_repeat_export_is_byte_identical_without_network_or_gpu (test_nvidia_v2_tokenizer.V2TokenizerTests.test_repeat_export_is_byte_identical_without_network_or_gpu) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 3.909s
+
+OK
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+<sys>:0: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

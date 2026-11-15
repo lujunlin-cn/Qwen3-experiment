@@ -1,0 +1,183 @@
+{
+  "columns": [
+    {
+      "name": "trace_variant",
+      "drop": false,
+      "column_type": "llm-structured",
+      "skip": null,
+      "propagate_skip": true,
+      "storage_encoding": null,
+      "prompt": "Generate a complete closed mathematical proof. Return exactly the JSON object and nothing else. Keep every example in order; do not omit any operator mapping or calculation.\nReturn one JSON object only with keys task_type=\"equation_numeric\", rules (operator to public rule name), example_outputs (list of strings in example order), query_output (string), answer (string). Choose one valid global assignment, recompute every example and the query; keep operator prefixes/suffixes. All non-join rules must share normal/flip family and at most one per semantic group. Public candidates: {\"operand_pattern\": \"AB<operator>CD with two decimal digits on each side\", \"parses\": {\"AB_CD\": \"left=AB, right=CD\", \"BA_DC\": \"left=reverse(AB), right=reverse(CD)\"}, \"operations\": [\"concatenate\", \"add\", \"add±1\", \"subtract\", \"reverse subtract\", \"absolute difference\", \"multiply\", \"multiply±1\", \"max mod min\"], \"output_formats\": [\"raw\", \"reverse digits\", \"operator-prefixed reverse\", \"two-digit padding\", \"operator suffix\"], \"rules\": [{\"name\": \"sub\", \"formula\": \"AB - CD, raw\"}, {\"name\": \"absdiff\", \"formula\": \"|AB - CD|, raw\"}, {\"name\": \"absdiff_prefix\", \"formula\": \"|AB - CD| with operator prefix\"}, {\"name\": \"join\", \"formula\": \"AB concatenated with CD\"}, {\"name\": \"join_swap\", \"formula\": \"CD concatenated with AB\"}, {\"name\": \"add\", \"formula\": \"AB + CD\"}, {\"name\": \"add_p1\", \"formula\": \"AB + CD + 1\"}, {\"name\": \"add_m1\", \"formula\": \"AB + CD - 1\"}, {\"name\": \"mul\", \"formula\": \"AB * CD\"}, {\"name\": \"mul_p1\", \"formula\": \"AB * CD + 1\"}, {\"name\": \"mul_m1\", \"formula\": \"AB * CD - 1\"}, {\"name\": \"maxmodmin\", \"formula\": \"max(AB, CD) mod min(AB, CD)\"}, {\"name\": \"flip_add\", \"formula\": \"reverse(BA + DC)\"}, {\"name\": \"flip_add_p1\", \"formula\": \"reverse(BA + DC + 1)\"}, {\"name\": \"flip_add_m1\", \"formula\": \"reverse(BA + DC - 1)\"}, {\"name\": \"flip_mul\", \"formula\": \"reverse(BA * DC)\"}, {\"name\": \"flip_mul_p1\", \"formula\": \"reverse(BA * DC + 1)\"}, {\"name\": \"flip_mul_m1\", \"formula\": \"reverse(BA * DC - 1)\"}, {\"name\": \"flip_absdiff\", \"formula\": \"reverse(|BA - DC|)\"}, {\"name\": \"flip_maxmodmin\", \"formula\": \"reverse(max(BA, DC) mod min(BA, DC))\"}, {\"name\": \"flip_sub_prefix\", \"formula\": \"reverse(BA - DC), preserving a negative sign as an operator prefix\"}, {\"name\": \"flip_sub_suffix\", \"formula\": \"reverse(DC - BA), appending the operator for a negative result\"}, {\"name\": \"flip_absdiff_prefix\", \"formula\": \"operator-prefixed reverse(|BA - DC|)\"}, {\"name\": \"flip_absdiff_suffix\", \"formula\": \"reverse(|BA - DC|) followed by the operator\"}], \"global_constraints\": [\"All non-join rules in one prompt use either normal or flipped operand family.\", \"At most one non-join rule from each semantic group: sub_or_mod_like, add_like, mul_like.\", \"Join and reverse-join are the join_like exception and can coexist with the other groups.\", \"A query operator absent from examples is Guess; it is admitted only when all valid assignments give one query output.\"]}\nComplete the required JSON without repeatedly recomputing an already checked operation. Include every example and query field. For Gravity, use seven significant digits for intermediate numeric representations. query_distance means the computed value before rounding the final answer to two decimals; a finite seven-significant-digit representation is appropriate. Do not attempt an infinite exact decimal expansion. The independent verification precision and all required computations remain unchanged.\nSEED_ID={{ seed_id }}\nVARIANT_KIND=trace_variant\nORIGINAL_TASK_BEGIN\n{{ prompt }}\nORIGINAL_TASK_END",
+      "model_alias": "nvidia-reasoning",
+      "system_prompt": "Follow the complete closed JSON proof contract.",
+      "multi_modal_context": null,
+      "tool_alias": null,
+      "with_trace": "last_message",
+      "extract_reasoning_content": true,
+      "output_format": {
+        "type": "object",
+        "properties": {
+          "task_type": {
+            "type": "string",
+            "enum": [
+              "equation_numeric"
+            ]
+          },
+          "answer": {
+            "type": "string"
+          },
+          "rules": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "enum": [
+                "sub",
+                "absdiff",
+                "absdiff_prefix",
+                "join",
+                "join_swap",
+                "add",
+                "add_p1",
+                "add_m1",
+                "mul",
+                "mul_p1",
+                "mul_m1",
+                "maxmodmin",
+                "flip_add",
+                "flip_add_p1",
+                "flip_add_m1",
+                "flip_mul",
+                "flip_mul_p1",
+                "flip_mul_m1",
+                "flip_absdiff",
+                "flip_maxmodmin",
+                "flip_sub_prefix",
+                "flip_sub_suffix",
+                "flip_absdiff_prefix",
+                "flip_absdiff_suffix"
+              ]
+            }
+          },
+          "example_outputs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "query_output": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "task_type",
+          "answer",
+          "rules",
+          "example_outputs",
+          "query_output"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ],
+  "model_configs": [
+    {
+      "alias": "nvidia-reasoning",
+      "model": "nvidia/nemotron-3-ultra-550b-a55b",
+      "inference_parameters": {
+        "generation_type": "chat-completion",
+        "max_parallel_requests": 1,
+        "timeout": 900,
+        "extra_body": {
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_schema",
+            "json_schema": {
+              "name": "equation_numeric_trace",
+              "strict": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "task_type": {
+                    "type": "string",
+                    "enum": [
+                      "equation_numeric"
+                    ]
+                  },
+                  "answer": {
+                    "type": "string"
+                  },
+                  "rules": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "string",
+                      "enum": [
+                        "sub",
+                        "absdiff",
+                        "absdiff_prefix",
+                        "join",
+                        "join_swap",
+                        "add",
+                        "add_p1",
+                        "add_m1",
+                        "mul",
+                        "mul_p1",
+                        "mul_m1",
+                        "maxmodmin",
+                        "flip_add",
+                        "flip_add_p1",
+                        "flip_add_m1",
+                        "flip_mul",
+                        "flip_mul_p1",
+                        "flip_mul_m1",
+                        "flip_absdiff",
+                        "flip_maxmodmin",
+                        "flip_sub_prefix",
+                        "flip_sub_suffix",
+                        "flip_absdiff_prefix",
+                        "flip_absdiff_suffix"
+                      ]
+                    }
+                  },
+                  "example_outputs": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "query_output": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "task_type",
+                  "answer",
+                  "rules",
+                  "example_outputs",
+                  "query_output"
+                ],
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "max_tokens": 16384
+      },
+      "provider": "nvidia",
+      "skip_health_check": true
+    }
+  ],
+  "tool_configs": [],
+  "seed_config": {
+    "source": {
+      "seed_type": "local",
+      "path": "/home/hajimi2025/Qwen3-experiment/data/processed/round3/nvidia_synthetic_final_20261115_r1/calibration/A/equation_numeric-seed2/public_seed.jsonl"
+    },
+    "sampling_strategy": "ordered",
+    "selection_strategy": null
+  },
+  "constraints": null,
+  "profilers": null,
+  "processors": null
+}

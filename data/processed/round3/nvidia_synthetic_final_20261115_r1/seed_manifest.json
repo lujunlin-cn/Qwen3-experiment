@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "run_status": "seed_panel_shortfall",
+  "accepted_rows": 20,
+  "by_task": {
+    "numeral_system": 0,
+    "gravity": 10,
+    "equation_numeric": 10
+  },
+  "all_accepted_lineage_declared": true,
+  "artifact_sha256": {
+    "seed_candidates.jsonl": "31d9fce91677df5036313fe0a5dcef932ed8a9c84d6eb4630d3a189e12c61e0d",
+    "seed_accepted.jsonl": "d6080bfec8f35aad011ceb8ab2d1292698b564b9d25ebc5edabd127777f692ef",
+    "seed_rejected.jsonl": "402e2d9ad30afaf9cbe61ef9c2789e9100666e506a3d95da37c71d13d21933be",
+    "public_new_seeds.jsonl": "9a3578f9d93874dbcd9ece4ee50588b072778c94c8966234b9c2a82109c956ff"
+  },
+  "candidate_pool_sha256": "2ced3e5d4f026b1b0dddd9319a9788e4245cece4d835630c05551cf1ceb1c80b",
+  "split_sha256": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+    "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+  },
+  "prior_manifest_sha256": "130b14febc9d3286e70180e884afb1809d23c6ea38374cab844fe5fb4f30b701",
+  "selection": "fixed candidate order, first 10 gate passes/task, no resampling",
+  "merge_into_sft": false
+}

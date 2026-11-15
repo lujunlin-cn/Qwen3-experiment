@@ -114,7 +114,7 @@ def load_renderer():
     for cell in read(SFT)["cells"]:
         if cell["cell_type"] != "code": continue
         for node in ast.parse("".join(cell["source"])).body:
-            if isinstance(node, ast.FunctionDef) and node.name == "render_solver_first_preview":
+            if isinstance(node, ast.FunctionDef) and node.name in {"strict_equation_render_reference", "render_solver_first_preview"}:
                 exec(compile(ast.Module(body=[node], type_ignores=[]), str(SFT), "exec"), ns)
     if "render_solver_first_preview" not in ns: raise ValueError("Solver-first SFT renderer missing")
     return ns
@@ -212,7 +212,24 @@ def verify_run(target, check_sources=True, check_sdk=True):
     prior_manifest = read(target / "train_prior_manifest.json")
     if file_hash(target / "train_prior.json") != prior_manifest["prior_file_sha256"]: raise ValueError("Prior changed")
     if check_sources:
-        for p, h in manifest["source_sha256"].items():
+        expected_sources=manifest["source_sha256"]
+        registration_path=target/"post_api_renderer_registration.json"
+        if registration_path.exists():
+            registration=read(registration_path)
+            if (registration["protocol"]!="post-api-exact-renderer/v2" or
+                registration["original_run_manifest_sha256"]!=file_hash(target/"run_manifest.json") or
+                not (target/"live_completion.json").exists()):
+                raise ValueError("Invalid CPU-only post-API renderer registration")
+            changed={p for p,h in registration["source_sha256"].items() if h!=expected_sources.get(p)}
+            allowed={"03_SFT.ipynb","utils/run_nvidia_final_synthetic.py","tests/test_nvidia_synthetic_final.py"}
+            if not changed<=allowed or set(registration["source_sha256"])!=set(expected_sources):
+                raise ValueError("Post-API patch may only tighten the SFT renderer and its maintenance tests")
+            test=read(target/registration["cpu_result_file"])
+            if (test["status"]!="passed" or test["source_sha256"]!=registration["source_sha256"] or
+                file_hash(target/test["log_file"])!=test["log_sha256"]):
+                raise ValueError("Exact renderer CPU regression did not pass")
+            expected_sources=registration["source_sha256"]
+        for p, h in expected_sources.items():
             if file_hash(ROOT / p) != h: raise ValueError("Source changed after registration; do not mix configurations: " + p)
     return c, manifest
 
@@ -519,6 +536,9 @@ def high_baselines(c, ns):
 
 def check_live_gate(target):
     c, manifest=verify_run(target); verify_candidate_freeze(target)
+    # Post-API CPU repairs never grant permission to issue calls with new code.
+    if any(file_hash(ROOT/p)!=h for p,h in manifest["source_sha256"].items()):
+        raise ValueError("Live stages require original registered sources; CPU-only renderer patch cannot issue API requests")
     verify_seed_pool(target)
     test=read(Path(target)/"cpu_regression.json")
     if test["status"]!="passed" or test["source_sha256"]!=manifest["source_sha256"]: raise ValueError("Passing CPU regression required for these exact sources")

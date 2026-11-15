@@ -1,0 +1,9 @@
+{
+  "status": "started",
+  "authorized_by_user": true,
+  "credential_source": "previously supplied user credential injected into child environment; no file persistence",
+  "started_at_unix": 1794757158.5575922,
+  "pid": 1325236,
+  "maximum_requests": 48,
+  "completion_token_budget": 500000
+}

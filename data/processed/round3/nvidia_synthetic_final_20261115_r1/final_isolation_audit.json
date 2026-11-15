@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "changed_protected_paths": [],
+  "secret_or_auth_header_files": [],
+  "historical_runs_checked": 5,
+  "gpu_training": false,
+  "merge_into_sft": false,
+  "dpo_ppo_grpo_unchanged": true
+}

@@ -1,0 +1,97 @@
+{
+  "records": [
+    {
+      "phase": "calibration",
+      "condition": "A",
+      "task_type": "numeral_system",
+      "actual_http_sends": 3,
+      "http200": 3,
+      "transport_failed": 0,
+      "http_error_statuses": {},
+      "nonempty_final_content": 3,
+      "schema_pass": 3,
+      "math_pass": 3,
+      "accepted": 3,
+      "unknown_usage": 0
+    },
+    {
+      "phase": "calibration",
+      "condition": "A",
+      "task_type": "gravity",
+      "actual_http_sends": 3,
+      "http200": 0,
+      "transport_failed": 3,
+      "http_error_statuses": {},
+      "nonempty_final_content": 0,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "accepted": 0,
+      "unknown_usage": 3
+    },
+    {
+      "phase": "calibration",
+      "condition": "A",
+      "task_type": "equation_numeric",
+      "actual_http_sends": 3,
+      "http200": 0,
+      "transport_failed": 0,
+      "http_error_statuses": {
+        "503": 3
+      },
+      "nonempty_final_content": 0,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "accepted": 0,
+      "unknown_usage": 3
+    },
+    {
+      "phase": "calibration",
+      "condition": "B",
+      "task_type": "numeral_system",
+      "actual_http_sends": 3,
+      "http200": 0,
+      "transport_failed": 0,
+      "http_error_statuses": {
+        "503": 3
+      },
+      "nonempty_final_content": 0,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "accepted": 0,
+      "unknown_usage": 3
+    },
+    {
+      "phase": "calibration",
+      "condition": "B",
+      "task_type": "gravity",
+      "actual_http_sends": 3,
+      "http200": 0,
+      "transport_failed": 0,
+      "http_error_statuses": {
+        "503": 3
+      },
+      "nonempty_final_content": 0,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "accepted": 0,
+      "unknown_usage": 3
+    },
+    {
+      "phase": "calibration",
+      "condition": "B",
+      "task_type": "equation_numeric",
+      "actual_http_sends": 3,
+      "http200": 0,
+      "transport_failed": 2,
+      "http_error_statuses": {
+        "500": 1
+      },
+      "nonempty_final_content": 0,
+      "schema_pass": 0,
+      "math_pass": 0,
+      "accepted": 0,
+      "unknown_usage": 3
+    }
+  ],
+  "mathematical_error_distinct_from_no_response": true
+}

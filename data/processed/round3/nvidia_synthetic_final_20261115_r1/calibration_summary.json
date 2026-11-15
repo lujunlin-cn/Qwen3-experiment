@@ -1,0 +1,325 @@
+{
+  "baseline": {
+    "numeral_system": {
+      "outputs": 3,
+      "accepted": 3,
+      "preview": 0,
+      "acceptance_rate": 1.0,
+      "schema_pass": 3,
+      "math_pass": 3,
+      "completion_tokens": 4970,
+      "reasoning_tokens": 4806,
+      "input_tokens": 1440,
+      "mean_completion_tokens": 1656.6666666666667,
+      "mean_reasoning_tokens": 1602.0,
+      "median_accepted_reasoning_tokens": 749,
+      "median_accepted_completion_tokens": 795,
+      "tokens_per_accepted_proof": 1656.6666666666667,
+      "median_latency_seconds": 14.205543452873826,
+      "unknown_completion_usage": 0
+    },
+    "gravity": {
+      "outputs": 3,
+      "accepted": 3,
+      "preview": 0,
+      "acceptance_rate": 1.0,
+      "schema_pass": 3,
+      "math_pass": 3,
+      "completion_tokens": 41818,
+      "reasoning_tokens": 41492,
+      "input_tokens": 1945,
+      "mean_completion_tokens": 13939.333333333334,
+      "mean_reasoning_tokens": 13830.666666666666,
+      "median_accepted_reasoning_tokens": 15890,
+      "median_accepted_completion_tokens": 16006,
+      "tokens_per_accepted_proof": 13939.333333333334,
+      "median_latency_seconds": 266.1728062941693,
+      "unknown_completion_usage": 0
+    },
+    "equation_numeric": {
+      "outputs": 3,
+      "accepted": 3,
+      "preview": 0,
+      "acceptance_rate": 1.0,
+      "schema_pass": 3,
+      "math_pass": 3,
+      "completion_tokens": 23191,
+      "reasoning_tokens": 22710,
+      "input_tokens": 4666,
+      "mean_completion_tokens": 7730.333333333333,
+      "mean_reasoning_tokens": 7570.0,
+      "median_accepted_reasoning_tokens": 9527,
+      "median_accepted_completion_tokens": 9688,
+      "tokens_per_accepted_proof": 7730.333333333333,
+      "median_latency_seconds": 170.21359760779887,
+      "unknown_completion_usage": 0
+    }
+  },
+  "conditions": {
+    "A": {
+      "numeral_system": {
+        "outputs": 3,
+        "accepted": 3,
+        "preview": 0,
+        "acceptance_rate": 1.0,
+        "schema_pass": 3,
+        "math_pass": 3,
+        "completion_tokens": 4543,
+        "reasoning_tokens": 4379,
+        "input_tokens": 1440,
+        "mean_completion_tokens": 1514.3333333333333,
+        "mean_reasoning_tokens": 1459.6666666666667,
+        "median_accepted_reasoning_tokens": 887,
+        "median_accepted_completion_tokens": 933,
+        "tokens_per_accepted_proof": 1514.3333333333333,
+        "median_latency_seconds": 22.606987234205008,
+        "unknown_completion_usage": 0
+      },
+      "gravity": {
+        "outputs": 3,
+        "accepted": 0,
+        "preview": 3,
+        "acceptance_rate": 0.0,
+        "schema_pass": 0,
+        "math_pass": 0,
+        "completion_tokens": null,
+        "reasoning_tokens": null,
+        "input_tokens": null,
+        "mean_completion_tokens": null,
+        "mean_reasoning_tokens": null,
+        "median_accepted_reasoning_tokens": null,
+        "median_accepted_completion_tokens": null,
+        "tokens_per_accepted_proof": null,
+        "median_latency_seconds": 342.51103179715574,
+        "unknown_completion_usage": 3
+      },
+      "equation_numeric": {
+        "outputs": 3,
+        "accepted": 0,
+        "preview": 3,
+        "acceptance_rate": 0.0,
+        "schema_pass": 0,
+        "math_pass": 0,
+        "completion_tokens": null,
+        "reasoning_tokens": null,
+        "input_tokens": null,
+        "mean_completion_tokens": null,
+        "mean_reasoning_tokens": null,
+        "median_accepted_reasoning_tokens": null,
+        "median_accepted_completion_tokens": null,
+        "tokens_per_accepted_proof": null,
+        "median_latency_seconds": 1.3272606441751122,
+        "unknown_completion_usage": 3
+      }
+    },
+    "B": {
+      "numeral_system": {
+        "outputs": 3,
+        "accepted": 0,
+        "preview": 3,
+        "acceptance_rate": 0.0,
+        "schema_pass": 0,
+        "math_pass": 0,
+        "completion_tokens": null,
+        "reasoning_tokens": null,
+        "input_tokens": null,
+        "mean_completion_tokens": null,
+        "mean_reasoning_tokens": null,
+        "median_accepted_reasoning_tokens": null,
+        "median_accepted_completion_tokens": null,
+        "tokens_per_accepted_proof": null,
+        "median_latency_seconds": 1.7510000551119447,
+        "unknown_completion_usage": 3
+      },
+      "gravity": {
+        "outputs": 3,
+        "accepted": 0,
+        "preview": 3,
+        "acceptance_rate": 0.0,
+        "schema_pass": 0,
+        "math_pass": 0,
+        "completion_tokens": null,
+        "reasoning_tokens": null,
+        "input_tokens": null,
+        "mean_completion_tokens": null,
+        "mean_reasoning_tokens": null,
+        "median_accepted_reasoning_tokens": null,
+        "median_accepted_completion_tokens": null,
+        "tokens_per_accepted_proof": null,
+        "median_latency_seconds": 1.38768105302006,
+        "unknown_completion_usage": 3
+      },
+      "equation_numeric": {
+        "outputs": 3,
+        "accepted": 0,
+        "preview": 3,
+        "acceptance_rate": 0.0,
+        "schema_pass": 0,
+        "math_pass": 0,
+        "completion_tokens": null,
+        "reasoning_tokens": null,
+        "input_tokens": null,
+        "mean_completion_tokens": null,
+        "mean_reasoning_tokens": null,
+        "median_accepted_reasoning_tokens": null,
+        "median_accepted_completion_tokens": null,
+        "tokens_per_accepted_proof": null,
+        "median_latency_seconds": 340.7693347129971,
+        "unknown_completion_usage": 3
+      }
+    }
+  },
+  "decisions": {
+    "numeral_system": {
+      "selected_condition": "A",
+      "frozen_accepted": 3,
+      "baseline_median_reasoning_tokens": 749,
+      "low_median_accepted_reasoning_tokens": 887,
+      "reasoning_reduction": -0.1842456608811749,
+      "new_seed_llm_gate_passed": false,
+      "production_route_if_gate_fails": "solver_first",
+      "verifier_standard_unchanged": true
+    },
+    "gravity": {
+      "selected_condition": "A",
+      "frozen_accepted": 0,
+      "baseline_median_reasoning_tokens": 15890,
+      "low_median_accepted_reasoning_tokens": null,
+      "reasoning_reduction": null,
+      "new_seed_llm_gate_passed": false,
+      "production_route_if_gate_fails": "solver_first",
+      "verifier_standard_unchanged": true
+    },
+    "equation_numeric": {
+      "selected_condition": "A",
+      "frozen_accepted": 0,
+      "baseline_median_reasoning_tokens": 9527,
+      "low_median_accepted_reasoning_tokens": null,
+      "reasoning_reduction": null,
+      "new_seed_llm_gate_passed": false,
+      "production_route_if_gate_fails": "solver_first",
+      "verifier_standard_unchanged": true
+    }
+  },
+  "status": "completed",
+  "ledger": {
+    "request_count": 18,
+    "completion_tokens_charged_or_reserved": 348607,
+    "reported_completion_tokens": 4543,
+    "unknown_usage_requests": 15,
+    "keys": [
+      "calibration:A:equation_numeric-seed1",
+      "calibration:A:equation_numeric-seed2",
+      "calibration:A:equation_numeric-seed3",
+      "calibration:A:gravity-seed1",
+      "calibration:A:gravity-seed2",
+      "calibration:A:gravity-seed3",
+      "calibration:A:numeral_system-seed1",
+      "calibration:A:numeral_system-seed2",
+      "calibration:A:numeral_system-seed3",
+      "calibration:B:equation_numeric-seed1",
+      "calibration:B:equation_numeric-seed2",
+      "calibration:B:equation_numeric-seed3",
+      "calibration:B:gravity-seed1",
+      "calibration:B:gravity-seed2",
+      "calibration:B:gravity-seed3",
+      "calibration:B:numeral_system-seed1",
+      "calibration:B:numeral_system-seed2",
+      "calibration:B:numeral_system-seed3"
+    ],
+    "blocked_requests": [
+      {
+        "event": "blocked",
+        "key": "calibration:A:gravity-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794757655.0979362
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:gravity-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794757996.367691
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:gravity-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758339.4773746
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:equation_numeric-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758344.371838
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:equation_numeric-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758345.932532
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:A:equation_numeric-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758347.439622
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:numeral_system-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758349.333491
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:numeral_system-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758477.3291516
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:numeral_system-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758479.2072897
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:gravity-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758482.0794325
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:gravity-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758483.5534563
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:gravity-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758485.1077118
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:equation_numeric-seed1",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758586.4003768
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:equation_numeric-seed2",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794758927.3286004
+      },
+      {
+        "event": "blocked",
+        "key": "calibration:B:equation_numeric-seed3",
+        "reason": "duplicate_seed_condition_request",
+        "at_unix": 1794759269.35068
+      }
+    ]
+  },
+  "independent_math_verifier": "unchanged V2",
+  "merge_into_sft": false
+}

@@ -1,0 +1,1763 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "candidate_id": "numeral_system-final-001",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 7,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "2345be90",
+        "50126dab",
+        "72e3e38e",
+        "83258e90",
+        "977d739d",
+        "cdc86263",
+        "d15c3b07"
+      ],
+      "prior_source_rows": [
+        "1323",
+        "2970",
+        "4257",
+        "4855",
+        "5612",
+        "7667",
+        "7813"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-002",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "206c4406",
+        "493c1c83",
+        "4cd390ad",
+        "61ea9f30",
+        "b07b312a"
+      ],
+      "prior_source_rows": [
+        "1212",
+        "2704",
+        "2841",
+        "3650",
+        "6580"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-003",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "02d4b022",
+        "575c848f",
+        "69ae933f",
+        "8ea3533c",
+        "abdda9e5"
+      ],
+      "prior_source_rows": [
+        "112",
+        "3269",
+        "3948",
+        "5292",
+        "6417"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-004",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "4d52d243",
+        "7e230b4a",
+        "9d073610",
+        "9d6d8b52",
+        "f860e46e",
+        "fafe9174"
+      ],
+      "prior_source_rows": [
+        "2861",
+        "4658",
+        "5821",
+        "5836",
+        "9212",
+        "9315"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-005",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "10effb36",
+        "9e7769da",
+        "bf7c64dd",
+        "c6359bdd",
+        "d90cbba1"
+      ],
+      "prior_source_rows": [
+        "5878",
+        "645",
+        "7127",
+        "7378",
+        "8095"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-006",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "3c3348b1",
+        "4d52d243",
+        "85d800c7",
+        "91336795",
+        "f5032cba"
+      ],
+      "prior_source_rows": [
+        "2244",
+        "2861",
+        "4968",
+        "5390",
+        "9090"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-007",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "a9cc9eee",
+        "aed00579",
+        "bd19f9b6",
+        "caccfafe",
+        "e4fce54d"
+      ],
+      "prior_source_rows": [
+        "6336",
+        "6516",
+        "7039",
+        "7554",
+        "8510"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-008",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "33c7fc95",
+        "4aa596ae",
+        "533b136e",
+        "6489821f",
+        "68168aab",
+        "fe9ca47a"
+      ],
+      "prior_source_rows": [
+        "1930",
+        "2759",
+        "3099",
+        "3751",
+        "3891",
+        "9445"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-009",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 7,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "1066f978",
+        "32c9cfa5",
+        "337e110d",
+        "6a0be45e",
+        "91cd33f5",
+        "bc788c0e",
+        "ea3036b3"
+      ],
+      "prior_source_rows": [
+        "1890",
+        "1919",
+        "3961",
+        "5414",
+        "624",
+        "7017",
+        "8696"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-010",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "188fe6d4",
+        "1d201637",
+        "2f72e1d1",
+        "5f86e4da",
+        "abaaeccf",
+        "c610fa83"
+      ],
+      "prior_source_rows": [
+        "1091",
+        "1753",
+        "3574",
+        "6408",
+        "7370",
+        "941"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-011",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 7,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "020a2ec4",
+        "5b90765a",
+        "5d03a8b0",
+        "a070715f",
+        "ac394644",
+        "d96f8ed9",
+        "f15f1307"
+      ],
+      "prior_source_rows": [
+        "3421",
+        "3471",
+        "5948",
+        "6432",
+        "76",
+        "8112",
+        "8957"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-012",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "21b09667",
+        "5767dcd8",
+        "620b9c6c",
+        "cfe89737",
+        "dcf49d02",
+        "e3dfefaf"
+      ],
+      "prior_source_rows": [
+        "1264",
+        "3273",
+        "3654",
+        "7752",
+        "8249",
+        "8466"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-013",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 7,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "4ebda101",
+        "60332605",
+        "82721bb8",
+        "85d877a2",
+        "9bbacb75",
+        "b15a1ff8",
+        "ddc8ab31"
+      ],
+      "prior_source_rows": [
+        "2919",
+        "3594",
+        "4830",
+        "4969",
+        "5766",
+        "6606",
+        "8276"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-014",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "679094db",
+        "7163d1f6",
+        "7279dd75",
+        "75ec571e",
+        "7e7f9b6e"
+      ],
+      "prior_source_rows": [
+        "3867",
+        "4209",
+        "4245",
+        "4370",
+        "4674"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-015",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "0982db70",
+        "227edfe3",
+        "494f4331",
+        "a2c36fcf",
+        "c5f9313f",
+        "e3b5373a"
+      ],
+      "prior_source_rows": [
+        "1293",
+        "2708",
+        "355",
+        "6050",
+        "7366",
+        "8461"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-016",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "0ab0fe37",
+        "2e07bc6c",
+        "7d5a614a",
+        "a57bcd23",
+        "f7d53288"
+      ],
+      "prior_source_rows": [
+        "1704",
+        "401",
+        "4629",
+        "6166",
+        "9189"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-017",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "2d69e4ee",
+        "2f671c98",
+        "30b94c6b",
+        "3388581c",
+        "542cf03a"
+      ],
+      "prior_source_rows": [
+        "1678",
+        "1750",
+        "1807",
+        "1923",
+        "3136"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-018",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "2c5943b2",
+        "49322650",
+        "64f3bded",
+        "952d80fe",
+        "e76b11df"
+      ],
+      "prior_source_rows": [
+        "1641",
+        "2702",
+        "3771",
+        "5537",
+        "8594"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-019",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "09b26a48",
+        "108af4d3",
+        "82abdd43",
+        "c348a3ce",
+        "dceb9ba2"
+      ],
+      "prior_source_rows": [
+        "364",
+        "4835",
+        "629",
+        "7274",
+        "8247"
+      ]
+    },
+    {
+      "candidate_id": "numeral_system-final-020",
+      "task_type": "numeral_system",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 7,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "190ce176",
+        "2ee254c0",
+        "54589e31",
+        "57fa8b99",
+        "7ccd8915",
+        "8604b31b",
+        "c348a3ce"
+      ],
+      "prior_source_rows": [
+        "1730",
+        "3145",
+        "3290",
+        "4612",
+        "4975",
+        "7274",
+        "961"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-001",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 11,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "0fd289d8",
+        "3ea413e6",
+        "437acd17",
+        "4e01d71a",
+        "679b5ccf",
+        "7054453b",
+        "8c633efd",
+        "9db488f0",
+        "ba598f58",
+        "bfd0e232",
+        "ea79a0b1"
+      ],
+      "prior_source_rows": [
+        "2320",
+        "2499",
+        "2891",
+        "3872",
+        "4164",
+        "5214",
+        "5847",
+        "599",
+        "6936",
+        "7141",
+        "8709"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-002",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 13,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "02473b23",
+        "09913b3c",
+        "1596356e",
+        "16b45644",
+        "277cdbcf",
+        "2c34ec23",
+        "2c8c6f91",
+        "3abae1d9",
+        "9be2a93a",
+        "bfd0e232",
+        "c8200012",
+        "ce2e0e08",
+        "f640c781"
+      ],
+      "prior_source_rows": [
+        "1478",
+        "1638",
+        "1645",
+        "2189",
+        "359",
+        "5777",
+        "7141",
+        "7466",
+        "7682",
+        "838",
+        "870",
+        "9136",
+        "96"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-003",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 11,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "16b45644",
+        "2106285f",
+        "3d7176ac",
+        "5c5c570e",
+        "6d30152f",
+        "72d5e890",
+        "8a2c5a6a",
+        "9f70ddfd",
+        "a1f92ca9",
+        "f5e70398",
+        "fd225d00"
+      ],
+      "prior_source_rows": [
+        "1241",
+        "2279",
+        "3448",
+        "4059",
+        "4254",
+        "5124",
+        "5910",
+        "6015",
+        "870",
+        "9122",
+        "9392"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-004",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 11,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "09a80640",
+        "09bd635a",
+        "147b4c3c",
+        "218b0228",
+        "2f18b11f",
+        "35350568",
+        "90e49c68",
+        "a51b62b6",
+        "d62cf15d",
+        "e555400c"
+      ],
+      "prior_source_rows": [
+        "1261",
+        "1736",
+        "1980",
+        "363",
+        "368",
+        "5373",
+        "6151",
+        "790",
+        "7971",
+        "8521"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-005",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 11,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "203aee7d",
+        "6f3a0625",
+        "7555bb51",
+        "84e9f6ff",
+        "8f99dff1",
+        "a828788b",
+        "b29a4a21",
+        "c2bd8080",
+        "c328b4f0",
+        "c8c3c654",
+        "e9e64466"
+      ],
+      "prior_source_rows": [
+        "1210",
+        "4127",
+        "4344",
+        "4928",
+        "5326",
+        "6262",
+        "6657",
+        "7249",
+        "7270",
+        "7491",
+        "8681"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-006",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 9,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "0ff70513",
+        "1a9e3bb4",
+        "21e2511d",
+        "30b4543c",
+        "382b36ce",
+        "4b97377e",
+        "5eab0201",
+        "9114cb5f",
+        "bab19053"
+      ],
+      "prior_source_rows": [
+        "1009",
+        "1276",
+        "1806",
+        "2101",
+        "2793",
+        "3546",
+        "5381",
+        "605",
+        "6948"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-007",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 13,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "1a337ccc",
+        "44415184",
+        "4c718602",
+        "501e6f4f",
+        "660fc103",
+        "6b182424",
+        "7e47c718",
+        "80761f89",
+        "84ca908f",
+        "a2c48401",
+        "bd3996eb",
+        "c270d664",
+        "e44fed1a"
+      ],
+      "prior_source_rows": [
+        "2524",
+        "2831",
+        "2973",
+        "3814",
+        "3990",
+        "4668",
+        "4750",
+        "4922",
+        "6051",
+        "7047",
+        "7235",
+        "8484",
+        "995"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-008",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 13,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "20010db2",
+        "277cdbcf",
+        "435cf017",
+        "439c723a",
+        "4ed8b06a",
+        "51ff6cdb",
+        "73a82df5",
+        "830cce4f",
+        "8c5d40ea",
+        "a2c48401",
+        "a6d242f1",
+        "c6c03357",
+        "ea7ba028"
+      ],
+      "prior_source_rows": [
+        "1201",
+        "1478",
+        "2496",
+        "2503",
+        "2924",
+        "3055",
+        "4288",
+        "4852",
+        "5211",
+        "6051",
+        "6213",
+        "7400",
+        "8710"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-009",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 9,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "147b4c3c",
+        "76983293",
+        "b2cbea0f",
+        "b2f2ad54",
+        "b84ada64",
+        "ccbbac0e",
+        "d7869538",
+        "ea1c5fd9",
+        "ee348712"
+      ],
+      "prior_source_rows": [
+        "4388",
+        "6664",
+        "6671",
+        "6857",
+        "7624",
+        "790",
+        "8026",
+        "8692",
+        "8850"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-010",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 13,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "00ed1836",
+        "09913b3c",
+        "0d2f174c",
+        "2bdf114f",
+        "439c723a",
+        "76cd9376",
+        "8b1925e2",
+        "a400b3e0",
+        "bb9611b7",
+        "c8c3eb99",
+        "cacc0b56",
+        "d3492ebf",
+        "e19a85da"
+      ],
+      "prior_source_rows": [
+        "1627",
+        "2503",
+        "34",
+        "359",
+        "4399",
+        "487",
+        "5162",
+        "6109",
+        "6986",
+        "7492",
+        "7553",
+        "7879",
+        "8393"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-011",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 13,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "1e0d1322",
+        "4f842c6a",
+        "528d915e",
+        "5f5803c5",
+        "5fe169fc",
+        "68c5c2a5",
+        "83dcb60d",
+        "a044158a",
+        "afac52d8",
+        "c8200012",
+        "fb0df6ae",
+        "ff85238e"
+      ],
+      "prior_source_rows": [
+        "1128",
+        "2950",
+        "3075",
+        "3565",
+        "3585",
+        "3915",
+        "4889",
+        "5943",
+        "6551",
+        "7466",
+        "9317",
+        "9485"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-012",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 13,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "16436182",
+        "3ff1ea92",
+        "552ddd9b",
+        "60fba75b",
+        "6234d6d9",
+        "62def62f",
+        "a5d2e952",
+        "a8ce8537",
+        "d77e6fa6",
+        "daf021c5",
+        "e9dff6f8",
+        "ea514252",
+        "fd663423"
+      ],
+      "prior_source_rows": [
+        "2362",
+        "3180",
+        "3621",
+        "3664",
+        "3689",
+        "6172",
+        "6290",
+        "8023",
+        "8175",
+        "858",
+        "8680",
+        "8700",
+        "9402"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-013",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 13,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "1907bede",
+        "23785b83",
+        "2d7442bf",
+        "3a322ba8",
+        "4c34cc0a",
+        "4ed8b06a",
+        "7dc2bd2d",
+        "9f70ddfd",
+        "b1f8f11c",
+        "bf8524b5",
+        "c4ae8bd9",
+        "e4ebb7e9",
+        "fe6eaa3e"
+      ],
+      "prior_source_rows": [
+        "1330",
+        "1679",
+        "2168",
+        "2821",
+        "2924",
+        "4646",
+        "5910",
+        "6634",
+        "7128",
+        "7323",
+        "8505",
+        "9437",
+        "958"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-014",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 11,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "0a3c8962",
+        "0d473e1e",
+        "16d0c65e",
+        "2d4d3fee",
+        "31ea69a9",
+        "8de7d8bc",
+        "aed8e748",
+        "b3e6f386",
+        "ccddd1be",
+        "d2d2de70",
+        "fc8bc8b2"
+      ],
+      "prior_source_rows": [
+        "1672",
+        "1855",
+        "385",
+        "490",
+        "5258",
+        "6518",
+        "6707",
+        "7629",
+        "7866",
+        "875",
+        "9368"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-015",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 13,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "113ee3b2",
+        "27ca638a",
+        "29c5f854",
+        "2ff2a47e",
+        "382b36ce",
+        "62def62f",
+        "67d9c7d1",
+        "7f2e9684",
+        "97dfb47a",
+        "ba960ba9",
+        "c5c16455",
+        "e01c7e3a",
+        "e44fed1a"
+      ],
+      "prior_source_rows": [
+        "1491",
+        "1553",
+        "1776",
+        "2101",
+        "3689",
+        "3877",
+        "4702",
+        "5630",
+        "664",
+        "6944",
+        "7362",
+        "8340",
+        "8484"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-016",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 13,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "09c8f227",
+        "13c36657",
+        "164f1fd0",
+        "2d778157",
+        "58350cd5",
+        "6f3a0625",
+        "7595a683",
+        "985002a4",
+        "9f70ddfd",
+        "ba7d78f8",
+        "bfa0fdf6",
+        "d0a6832f",
+        "ddd199dd"
+      ],
+      "prior_source_rows": [
+        "1681",
+        "3293",
+        "369",
+        "4127",
+        "4354",
+        "5647",
+        "5910",
+        "6943",
+        "7131",
+        "760",
+        "7783",
+        "8277",
+        "860"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-017",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 11,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "0e897e03",
+        "277cdbcf",
+        "27ca638a",
+        "34f985b3",
+        "42fee270",
+        "486b3c3f",
+        "6c662a0c",
+        "78ee6d59",
+        "b0b84b53",
+        "c04634c0",
+        "e4456e1d"
+      ],
+      "prior_source_rows": [
+        "1478",
+        "1491",
+        "1977",
+        "2480",
+        "2671",
+        "4024",
+        "4473",
+        "553",
+        "6587",
+        "7155",
+        "8481"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-018",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 11,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "215fda9c",
+        "2cdaf13f",
+        "327cb428",
+        "43d3fe37",
+        "57f8b8c6",
+        "59148e34",
+        "645fe504",
+        "8526a49d",
+        "9048af97",
+        "ac2b67ad",
+        "be7b3d06"
+      ],
+      "prior_source_rows": [
+        "1257",
+        "1657",
+        "1878",
+        "2513",
+        "3289",
+        "3328",
+        "3744",
+        "4937",
+        "5350",
+        "6429",
+        "7098"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-019",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 9,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "00ed1836",
+        "07c96a99",
+        "1b36ce68",
+        "1e99e10f",
+        "34f985b3",
+        "9ccbf65c",
+        "add435ca",
+        "be69de9f",
+        "e4f3a31c"
+      ],
+      "prior_source_rows": [
+        "1027",
+        "1146",
+        "1977",
+        "287",
+        "34",
+        "5811",
+        "6478",
+        "7093",
+        "8507"
+      ]
+    },
+    {
+      "candidate_id": "gravity-final-020",
+      "task_type": "gravity",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 13,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "086e5409",
+        "0ecdee5a",
+        "113ee3b2",
+        "233e854d",
+        "2f18b11f",
+        "44c71228",
+        "59aa67c2",
+        "7eb35361",
+        "8fc9cb66",
+        "9ccbf65c",
+        "9de10496",
+        "a660cb06",
+        "a828788b"
+      ],
+      "prior_source_rows": [
+        "1321",
+        "1736",
+        "2541",
+        "320",
+        "3355",
+        "4682",
+        "5332",
+        "562",
+        "5811",
+        "5855",
+        "6199",
+        "6262",
+        "664"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-001",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "0bcffccd",
+        "648e2da2",
+        "8bebef83",
+        "c2945f2c",
+        "e5956ffa"
+      ],
+      "prior_source_rows": [
+        "3752",
+        "442",
+        "5192",
+        "7240",
+        "8534"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-002",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "0819520a",
+        "4dcc1844",
+        "812c12cb",
+        "92e320c9",
+        "c613082a",
+        "f28681ad"
+      ],
+      "prior_source_rows": [
+        "2881",
+        "302",
+        "4776",
+        "5450",
+        "7371",
+        "8990"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-003",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "1eaf6228",
+        "6c402bb7",
+        "8df3daad",
+        "8e3e4928",
+        "9250a0a8",
+        "ca8929f5"
+      ],
+      "prior_source_rows": [
+        "1149",
+        "4019",
+        "5261",
+        "5270",
+        "5436",
+        "7549"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-004",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 7,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "3687b4bb",
+        "6c9e4485",
+        "845e726e",
+        "88b43464",
+        "9b1ea308",
+        "bce10d97",
+        "e33f1695"
+      ],
+      "prior_source_rows": [
+        "2042",
+        "4036",
+        "4906",
+        "5063",
+        "5745",
+        "7029",
+        "8439"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-005",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 7,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "1e248995",
+        "32e9a308",
+        "4cf073bf",
+        "744a2570",
+        "902da958",
+        "a2252b88",
+        "b0d0dd45"
+      ],
+      "prior_source_rows": [
+        "1131",
+        "1893",
+        "2850",
+        "4312",
+        "5346",
+        "6020",
+        "6592"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-006",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "053f4545",
+        "6b769a9e",
+        "6d3b9da4",
+        "75eaf687",
+        "98a2636e",
+        "d5aa5564"
+      ],
+      "prior_source_rows": [
+        "197",
+        "4001",
+        "4061",
+        "4369",
+        "5660",
+        "7957"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-007",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "32815b79",
+        "3c12aeb9",
+        "4179c322",
+        "648e2da2",
+        "7a9711b1"
+      ],
+      "prior_source_rows": [
+        "1879",
+        "2240",
+        "2419",
+        "3752",
+        "4534"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-008",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 7,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "15a1d279",
+        "1f0674b0",
+        "4dbec546",
+        "837af955",
+        "88b43464",
+        "91b34547",
+        "9fb854c3"
+      ],
+      "prior_source_rows": [
+        "1163",
+        "2879",
+        "4870",
+        "5063",
+        "5409",
+        "5923",
+        "840"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-009",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "0f8452df",
+        "1d6c587d",
+        "2f485a40",
+        "8d2546a5",
+        "dbd0e3c9",
+        "e7b87b82"
+      ],
+      "prior_source_rows": [
+        "1102",
+        "1744",
+        "5235",
+        "590",
+        "8212",
+        "8600"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-010",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 7,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "2423926d",
+        "3b9e33f6",
+        "552e14d7",
+        "936b3ae5",
+        "98bb54f7",
+        "9a5b6b28",
+        "c885e697"
+      ],
+      "prior_source_rows": [
+        "1355",
+        "2225",
+        "3181",
+        "5468",
+        "5664",
+        "5719",
+        "7483"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-011",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "30763ac0",
+        "605e1c08",
+        "80d44fe3",
+        "97dee6aa",
+        "c9151e86",
+        "e4479bb1"
+      ],
+      "prior_source_rows": [
+        "1798",
+        "3597",
+        "4765",
+        "5629",
+        "7501",
+        "8482"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-012",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "5d44a0b2",
+        "76d2ee64",
+        "84030b0b",
+        "c7420a23",
+        "e7dfe7d3"
+      ],
+      "prior_source_rows": [
+        "3483",
+        "4400",
+        "4893",
+        "7424",
+        "8608"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-013",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "45dbc1cc",
+        "6f37d7be",
+        "87711597",
+        "b075e716",
+        "c81411a2"
+      ],
+      "prior_source_rows": [
+        "2575",
+        "4126",
+        "5022",
+        "6579",
+        "7463"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-014",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "118f8c86",
+        "30763ac0",
+        "39fd934f",
+        "5144897d",
+        "58fed63a",
+        "680f19b3"
+      ],
+      "prior_source_rows": [
+        "1798",
+        "2161",
+        "3021",
+        "3324",
+        "3889",
+        "683"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-015",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "1ef51442",
+        "2f7e0e78",
+        "648e2da2",
+        "6f37d7be",
+        "e4479bb1"
+      ],
+      "prior_source_rows": [
+        "1159",
+        "1756",
+        "3752",
+        "4126",
+        "8482"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-016",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "1019ee55",
+        "56343b77",
+        "5787c3d0",
+        "cb2fdb6b",
+        "d21c7677",
+        "e33f1695"
+      ],
+      "prior_source_rows": [
+        "3223",
+        "3278",
+        "611",
+        "7571",
+        "7841",
+        "8439"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-017",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 6,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "3b9e33f6",
+        "49699136",
+        "4f8da43f",
+        "88b43464",
+        "c2945f2c",
+        "c7420a23"
+      ],
+      "prior_source_rows": [
+        "2225",
+        "2713",
+        "2954",
+        "5063",
+        "7240",
+        "7424"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-018",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 7,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "118889da",
+        "2423926d",
+        "38e98135",
+        "836d6c4a",
+        "94b92001",
+        "c81411a2",
+        "dde06528"
+      ],
+      "prior_source_rows": [
+        "1355",
+        "2127",
+        "4867",
+        "5523",
+        "680",
+        "7463",
+        "8280"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-019",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 5,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "72336119",
+        "75645166",
+        "957c70fd",
+        "bc42e664",
+        "c81411a2"
+      ],
+      "prior_source_rows": [
+        "4236",
+        "4348",
+        "5548",
+        "7006",
+        "7463"
+      ]
+    },
+    {
+      "candidate_id": "equation_numeric-final-020",
+      "task_type": "equation_numeric",
+      "status": "passed",
+      "lineage_status": "declared",
+      "train_only_provenance": true,
+      "feature_count": 7,
+      "rejection_reasons": [],
+      "prior_source_ids": [
+        "0c8a8a16",
+        "2d3e809c",
+        "3bf0875d",
+        "50c0b6f8",
+        "913b2d7f",
+        "d033513f",
+        "fc7e53c7"
+      ],
+      "prior_source_rows": [
+        "1670",
+        "2237",
+        "2995",
+        "465",
+        "5391",
+        "7766",
+        "9365"
+      ]
+    }
+  ],
+  "split_checks": {
+    "train": {
+      "sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+      "rows": 3123,
+      "loaded_after_pool_freeze": true
+    },
+    "validation": {
+      "sha256": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+      "rows": 391,
+      "loaded_after_pool_freeze": true
+    },
+    "holdout_test": {
+      "sha256": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc",
+      "rows": 391,
+      "loaded_after_pool_freeze": true
+    }
+  },
+  "candidate_pool_sha256": "2ced3e5d4f026b1b0dddd9319a9788e4245cece4d835630c05551cf1ceb1c80b",
+  "by_task": {
+    "numeral_system": {
+      "candidates": 20,
+      "lineage_pass": 20,
+      "solver_pass": 20,
+      "leakage_pass": 0,
+      "all_seed_gates_pass": 0,
+      "selected": 0
+    },
+    "gravity": {
+      "candidates": 20,
+      "lineage_pass": 20,
+      "solver_pass": 20,
+      "leakage_pass": 20,
+      "all_seed_gates_pass": 20,
+      "selected": 10
+    },
+    "equation_numeric": {
+      "candidates": 20,
+      "lineage_pass": 20,
+      "solver_pass": 13,
+      "leakage_pass": 20,
+      "all_seed_gates_pass": 13,
+      "selected": 10
+    }
+  }
+}
