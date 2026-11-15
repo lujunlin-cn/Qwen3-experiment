@@ -78,7 +78,8 @@ def analyze():
                 'total_reported_output_tokens_all_attempts': sum(r.get('usage', {}).get('completion_tokens', 0) for r in http),
                 'http_attempts_without_usage': sum(not r.get('usage') for r in http),
                 'finish_reasons': dict(Counter(d['finish_reason'] for d in details if d['condition'] == condition)),
-                'prepared_manifest_sha256': file_hash(target / 'prepared_manifest.json'),
+                'prepared_manifest_sha256': file_hash(PREPARED / f'nvidia_gravity_v2_20261115_{suffix}_r1/prepared_manifest.json'),
+                'continuation_manifest_sha256': file_hash(target / 'continuation_manifest.json'),
                 'actual_live_execution': True,
                 'historical_offline_reaudit_complete_flag_is_not_execution_mode': True}
     protected = read(LEDGER.parent / 'nvidia_gravity_targeted_v2_20261115_live_r1/protected_trees_before.json')

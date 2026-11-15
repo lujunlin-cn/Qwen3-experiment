@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "all_six_seed_conditions_attempted": true,
+  "P16K_accepted": 2,
+  "P32K_accepted": 3,
+  "historical_runs_unchanged": true,
+  "cpu_preparation_files_unchanged": true,
+  "condition_manifests_verified": true,
+  "actual_request_identity_verified": {
+    "gravity-seed1": {
+      "same_wire_request_except_token_cap": true,
+      "actual_max_tokens": [
+        16384,
+        32768
+      ]
+    },
+    "gravity-seed2": {
+      "same_wire_request_except_token_cap": true,
+      "actual_max_tokens": [
+        16384,
+        32768
+      ]
+    },
+    "gravity-seed3": {
+      "same_wire_request_except_token_cap": true,
+      "actual_max_tokens": [
+        16384,
+        32768
+      ]
+    }
+  },
+  "http_records_checked": 9,
+  "files_scanned_for_key_material": 90,
+  "literal_api_key_pattern_occurrences": 0,
+  "authorization_headers_saved": 0,
+  "gpu_used": false,
+  "merge_into_sft": false
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": "nvidia-accepted-manifest/v2",
+  "status": "passed",
+  "run_status": "passed",
+  "accepted_rows": 3,
+  "preview_rows": 0,
+  "all_accepted_verified_and_audited": true,
+  "acceptance_protocol": "nvidia-final-json-proof/v2",
+  "verifier_version": "nvidia-independent-closed-proof-v2",
+  "origin": {
+    "condition": "P32K",
+    "original_run_id": "nvidia_hosted_20261115_ultra_r4_full",
+    "models_called": 5,
+    "continuation_of": "nvidia_gravity_v2_20261115_p32k_r1",
+    "imported_responses": 0
+  },
+  "by_task": {
+    "numeral_system": {
+      "prompt_variant": {
+        "accepted": 0,
+        "preview": 0
+      },
+      "trace_variant": {
+        "accepted": 0,
+        "preview": 0
+      }
+    },
+    "gravity": {
+      "prompt_variant": {
+        "accepted": 0,
+        "preview": 0
+      },
+      "trace_variant": {
+        "accepted": 3,
+        "preview": 0
+      }
+    },
+    "equation_numeric": {
+      "prompt_variant": {
+        "accepted": 0,
+        "preview": 0
+      },
+      "trace_variant": {
+        "accepted": 0,
+        "preview": 0
+      }
+    }
+  },
+  "split_sha256": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+    "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+  },
+  "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+  "artifact_sha256": {
+    "accepted.jsonl": "e2e82603d4c152f472b8ca7a8c42f3df413ebca79aa703e1eee7ae8f1ef25d2c",
+    "preview.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "candidates.jsonl": "e2e82603d4c152f472b8ca7a8c42f3df413ebca79aa703e1eee7ae8f1ef25d2c",
+    "thinking_audit.jsonl": "c4f6b91b349a645e474676ce37a6b92dd660fb5257217c0ab8cdaa83cb7aee2a",
+    "synthetic_real_leakage_audit.json": "dfcf28744b5382c2acfbf9c86af2580d8077088848a2a65d768d6f99f56d4c98",
+    "numeral_query_exposure.json": "6175c3e71d186305afca42afaa6147dffab989cc876226b47d5096412b52d2cb"
+  },
+  "leakage_status": "passed",
+  "lineage_status_counts": {
+    "unavailable": 3
+  },
+  "numeral_query_exposure_policy": "report_only",
+  "claims_no_mapping_leakage": false,
+  "thinking": {
+    "present_outputs": 3,
+    "verification_status": "unverified",
+    "role": "audit_only",
+    "in_sft_completion": false
+  },
+  "merge_into_sft": false
+}

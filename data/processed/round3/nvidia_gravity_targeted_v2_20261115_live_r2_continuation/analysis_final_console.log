@@ -1,0 +1,52 @@
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{
+  "P16K": {
+    "run_id": "nvidia_gravity_v2_20261115_p16k_r1_continuation1",
+    "all_three_seeds_attempted": true,
+    "actual_http_attempts": 4,
+    "observed_unique_requests": 3,
+    "retries": 1,
+    "schema_pass": 2,
+    "math_pass": 2,
+    "accepted": 2,
+    "preview": 1,
+    "output_tokens_for_returned_candidates": 42493,
+    "mean_output_tokens_returned_candidates": 14164.333333333334,
+    "unknown_output_token_count": 0,
+    "reasoning_tokens_for_returned_candidates": 42273,
+    "total_reported_output_tokens_all_attempts": 42493,
+    "http_attempts_without_usage": 1,
+    "finish_reasons": {
+      "length": 1,
+      "stop": 2
+    },
+    "prepared_manifest_sha256": "cd39e828fb319def28f1ab59370d846e41aec40a80a58fde3ba3fcf200577328",
+    "continuation_manifest_sha256": "0479c676effbfef24c4400d468aacdc94dae801263ea4d1319d738f26decf01d",
+    "actual_live_execution": true,
+    "historical_offline_reaudit_complete_flag_is_not_execution_mode": true
+  },
+  "P32K": {
+    "run_id": "nvidia_gravity_v2_20261115_p32k_r1_continuation1",
+    "all_three_seeds_attempted": true,
+    "actual_http_attempts": 5,
+    "observed_unique_requests": 3,
+    "retries": 2,
+    "schema_pass": 3,
+    "math_pass": 3,
+    "accepted": 3,
+    "preview": 0,
+    "output_tokens_for_returned_candidates": 41818,
+    "mean_output_tokens_returned_candidates": 13939.333333333334,
+    "unknown_output_token_count": 0,
+    "reasoning_tokens_for_returned_candidates": 41492,
+    "total_reported_output_tokens_all_attempts": 41818,
+    "http_attempts_without_usage": 2,
+    "finish_reasons": {
+      "stop": 3
+    },
+    "prepared_manifest_sha256": "461f8c9e422b825b7bd6cc5d93d622c999215edf54f00a5593058f2ae4d17514",
+    "continuation_manifest_sha256": "b62863a4387ffb5fba83964e0d4384ca2f397c43413babc2f33bbbc2f4a306b0",
+    "actual_live_execution": true,
+    "historical_offline_reaudit_complete_flag_is_not_execution_mode": true
+  }
+}

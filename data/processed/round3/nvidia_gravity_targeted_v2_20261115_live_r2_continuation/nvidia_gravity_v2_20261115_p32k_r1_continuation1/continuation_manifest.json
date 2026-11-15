@@ -1,0 +1,13 @@
+{
+  "condition": "P32K",
+  "parent_prepared_run": "nvidia_gravity_v2_20261115_p32k_r1",
+  "parent_prepared_manifest_sha256": "461f8c9e422b825b7bd6cc5d93d622c999215edf54f00a5593058f2ae4d17514",
+  "source_sha256": "624dc0d89c39a7ac4e34c40aa54519c60a49a2975d0ac4b70a60c0c44241ee4b",
+  "configuration_unchanged": true,
+  "imported_http_source": null,
+  "imported_http_sha256": null,
+  "imported_responses": 0,
+  "prior_unobserved_request_usage_unknown": false,
+  "raw_thinking_verified": false,
+  "merge_into_sft": false
+}

@@ -1,0 +1,66 @@
+{
+  "run_status": "passed",
+  "quality": {
+    "run_status": "passed",
+    "all_quality_passed": true,
+    "offline_reaudit_complete": true,
+    "record_coverage_complete": true,
+    "expected_outputs": 3,
+    "accepted": 3,
+    "preview": 0,
+    "by_task": {
+      "numeral_system": {
+        "prompt_variant": {
+          "accepted": 0,
+          "preview": 0
+        },
+        "trace_variant": {
+          "accepted": 0,
+          "preview": 0
+        }
+      },
+      "gravity": {
+        "prompt_variant": {
+          "accepted": 0,
+          "preview": 0
+        },
+        "trace_variant": {
+          "accepted": 3,
+          "preview": 0
+        }
+      },
+      "equation_numeric": {
+        "prompt_variant": {
+          "accepted": 0,
+          "preview": 0
+        },
+        "trace_variant": {
+          "accepted": 0,
+          "preview": 0
+        }
+      }
+    },
+    "acceptance_protocol": "nvidia-final-json-proof/v2",
+    "verifier_version": "nvidia-independent-closed-proof-v2",
+    "thinking_present": 3,
+    "thinking_validation_status": "unverified",
+    "merge_into_sft": false,
+    "failure_reasons": {}
+  },
+  "condition": "P32K",
+  "errors": [],
+  "engineering_gate_passed": true,
+  "thinking_present": 3,
+  "thinking_verification_status": "unverified_audit_only",
+  "elapsed_seconds": 1301.457812783774,
+  "elapsed_seconds_scope": "continuation_wall_time; imported request has separate original latency",
+  "actual_http_requests": 5,
+  "new_http_attempts": 5,
+  "imported_responses": 0,
+  "prior_unobserved_request_usage_unknown": false,
+  "failed_requests": 2,
+  "output_tokens": 41818,
+  "reasoning_tokens": 41492,
+  "all_three_seeds_attempted": true,
+  "merge_into_sft": false
+}

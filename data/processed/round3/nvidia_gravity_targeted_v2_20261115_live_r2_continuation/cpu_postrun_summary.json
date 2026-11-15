@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "tests": 14,
+  "seconds": 2.617,
+  "test": "test_nvidia_v2_repair.py",
+  "network": "forbidden by socket guard; SDK HTTP mocked",
+  "gpu_used": false
+}

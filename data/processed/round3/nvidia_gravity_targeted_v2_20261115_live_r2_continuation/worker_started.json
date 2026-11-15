@@ -1,0 +1,9 @@
+{
+  "pid": 418836,
+  "started_at_unix": 1794749072.1341321,
+  "detached_process": true,
+  "api_key_source": "environment_only",
+  "gpu_training": false,
+  "authorization": "User approved full API tests",
+  "prior_execution": "data/processed/round3/nvidia_gravity_targeted_v2_20261115_live_r1"
+}

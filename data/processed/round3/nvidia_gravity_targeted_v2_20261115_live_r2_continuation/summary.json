@@ -1,0 +1,410 @@
+{
+  "status": "completed_full_two_condition_test",
+  "all_six_seed_conditions_attempted": true,
+  "conditions": {
+    "P16K": {
+      "run_id": "nvidia_gravity_v2_20261115_p16k_r1_continuation1",
+      "original_result": {
+        "run_status": "completed_with_previews",
+        "quality": {
+          "run_status": "completed_with_previews",
+          "all_quality_passed": false,
+          "offline_reaudit_complete": true,
+          "record_coverage_complete": true,
+          "expected_outputs": 3,
+          "accepted": 2,
+          "preview": 1,
+          "by_task": {
+            "numeral_system": {
+              "prompt_variant": {
+                "accepted": 0,
+                "preview": 0
+              },
+              "trace_variant": {
+                "accepted": 0,
+                "preview": 0
+              }
+            },
+            "gravity": {
+              "prompt_variant": {
+                "accepted": 0,
+                "preview": 0
+              },
+              "trace_variant": {
+                "accepted": 2,
+                "preview": 1
+              }
+            },
+            "equation_numeric": {
+              "prompt_variant": {
+                "accepted": 0,
+                "preview": 0
+              },
+              "trace_variant": {
+                "accepted": 0,
+                "preview": 0
+              }
+            }
+          },
+          "acceptance_protocol": "nvidia-final-json-proof/v2",
+          "verifier_version": "nvidia-independent-closed-proof-v2",
+          "thinking_present": 3,
+          "thinking_validation_status": "unverified",
+          "merge_into_sft": false,
+          "failure_reasons": {
+            "raw_http_contract_failed": 1,
+            "variant_verification_failed": 1
+          }
+        },
+        "condition": "P16K",
+        "errors": [],
+        "engineering_gate_passed": false,
+        "thinking_present": 3,
+        "thinking_verification_status": "unverified_audit_only",
+        "elapsed_seconds": 801.6067783869803,
+        "elapsed_seconds_scope": "continuation_wall_time; imported request has separate original latency",
+        "actual_http_requests": 4,
+        "new_http_attempts": 3,
+        "imported_responses": 1,
+        "prior_unobserved_request_usage_unknown": true,
+        "failed_requests": 1,
+        "output_tokens": 42493,
+        "reasoning_tokens": 42273,
+        "all_three_seeds_attempted": true,
+        "merge_into_sft": false
+      },
+      "all_three_seeds_attempted": true,
+      "actual_http_attempts": 4,
+      "observed_unique_requests": 3,
+      "retries": 1,
+      "schema_pass": 2,
+      "math_pass": 2,
+      "accepted": 2,
+      "preview": 1,
+      "output_tokens_for_returned_candidates": 42493,
+      "mean_output_tokens_returned_candidates": 14164.333333333334,
+      "unknown_output_token_count": 0,
+      "reasoning_tokens_for_returned_candidates": 42273,
+      "total_reported_output_tokens_all_attempts": 42493,
+      "http_attempts_without_usage": 1,
+      "finish_reasons": {
+        "length": 1,
+        "stop": 2
+      },
+      "prepared_manifest_sha256": "cd39e828fb319def28f1ab59370d846e41aec40a80a58fde3ba3fcf200577328",
+      "continuation_manifest_sha256": "0479c676effbfef24c4400d468aacdc94dae801263ea4d1319d738f26decf01d",
+      "actual_live_execution": true,
+      "historical_offline_reaudit_complete_flag_is_not_execution_mode": true
+    },
+    "P32K": {
+      "run_id": "nvidia_gravity_v2_20261115_p32k_r1_continuation1",
+      "original_result": {
+        "run_status": "passed",
+        "quality": {
+          "run_status": "passed",
+          "all_quality_passed": true,
+          "offline_reaudit_complete": true,
+          "record_coverage_complete": true,
+          "expected_outputs": 3,
+          "accepted": 3,
+          "preview": 0,
+          "by_task": {
+            "numeral_system": {
+              "prompt_variant": {
+                "accepted": 0,
+                "preview": 0
+              },
+              "trace_variant": {
+                "accepted": 0,
+                "preview": 0
+              }
+            },
+            "gravity": {
+              "prompt_variant": {
+                "accepted": 0,
+                "preview": 0
+              },
+              "trace_variant": {
+                "accepted": 3,
+                "preview": 0
+              }
+            },
+            "equation_numeric": {
+              "prompt_variant": {
+                "accepted": 0,
+                "preview": 0
+              },
+              "trace_variant": {
+                "accepted": 0,
+                "preview": 0
+              }
+            }
+          },
+          "acceptance_protocol": "nvidia-final-json-proof/v2",
+          "verifier_version": "nvidia-independent-closed-proof-v2",
+          "thinking_present": 3,
+          "thinking_validation_status": "unverified",
+          "merge_into_sft": false,
+          "failure_reasons": {}
+        },
+        "condition": "P32K",
+        "errors": [],
+        "engineering_gate_passed": true,
+        "thinking_present": 3,
+        "thinking_verification_status": "unverified_audit_only",
+        "elapsed_seconds": 1301.457812783774,
+        "elapsed_seconds_scope": "continuation_wall_time; imported request has separate original latency",
+        "actual_http_requests": 5,
+        "new_http_attempts": 5,
+        "imported_responses": 0,
+        "prior_unobserved_request_usage_unknown": false,
+        "failed_requests": 2,
+        "output_tokens": 41818,
+        "reasoning_tokens": 41492,
+        "all_three_seeds_attempted": true,
+        "merge_into_sft": false
+      },
+      "all_three_seeds_attempted": true,
+      "actual_http_attempts": 5,
+      "observed_unique_requests": 3,
+      "retries": 2,
+      "schema_pass": 3,
+      "math_pass": 3,
+      "accepted": 3,
+      "preview": 0,
+      "output_tokens_for_returned_candidates": 41818,
+      "mean_output_tokens_returned_candidates": 13939.333333333334,
+      "unknown_output_token_count": 0,
+      "reasoning_tokens_for_returned_candidates": 41492,
+      "total_reported_output_tokens_all_attempts": 41818,
+      "http_attempts_without_usage": 2,
+      "finish_reasons": {
+        "stop": 3
+      },
+      "prepared_manifest_sha256": "461f8c9e422b825b7bd6cc5d93d622c999215edf54f00a5593058f2ae4d17514",
+      "continuation_manifest_sha256": "b62863a4387ffb5fba83964e0d4384ca2f397c43413babc2f33bbbc2f4a306b0",
+      "actual_live_execution": true,
+      "historical_offline_reaudit_complete_flag_is_not_execution_mode": true
+    }
+  },
+  "sampling_identity_audit": {
+    "gravity-seed1": {
+      "same_wire_request_except_token_cap": true,
+      "actual_max_tokens": [
+        16384,
+        32768
+      ]
+    },
+    "gravity-seed2": {
+      "same_wire_request_except_token_cap": true,
+      "actual_max_tokens": [
+        16384,
+        32768
+      ]
+    },
+    "gravity-seed3": {
+      "same_wire_request_except_token_cap": true,
+      "actual_max_tokens": [
+        16384,
+        32768
+      ]
+    }
+  },
+  "per_seed": {
+    "gravity-seed1": {
+      "P16K": {
+        "condition": "P16K",
+        "seed_id": "gravity-seed1",
+        "finish_reason": "length",
+        "http_status": 200,
+        "schema_valid": false,
+        "math_verified": false,
+        "field_audit": {},
+        "verification_status": "preview",
+        "rejection_reasons": [
+          "raw_http_contract_failed",
+          "variant_verification_failed"
+        ],
+        "thinking_present": true,
+        "thinking_verification_status": "unverified_audit_only",
+        "output_tokens": 16384,
+        "reasoning_tokens": 16384,
+        "latency_seconds_last_attempt": 211.50236859126016,
+        "request_attempt_count": 1,
+        "leakage_status": "passed",
+        "source_lineage": "unavailable"
+      },
+      "P32K": {
+        "condition": "P32K",
+        "seed_id": "gravity-seed1",
+        "finish_reason": "stop",
+        "http_status": 200,
+        "schema_valid": true,
+        "math_verified": true,
+        "field_audit": {
+          "all_example_count": true,
+          "g_estimates": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "g_ols": true,
+          "query_t_exact": true,
+          "query_distance": true,
+          "official_final_answer": true
+        },
+        "verification_status": "accepted",
+        "rejection_reasons": [],
+        "thinking_present": true,
+        "thinking_verification_status": "unverified_audit_only",
+        "output_tokens": 9267,
+        "reasoning_tokens": 9161,
+        "latency_seconds_last_attempt": 193.08823262294754,
+        "request_attempt_count": 3,
+        "leakage_status": "passed",
+        "source_lineage": "unavailable"
+      }
+    },
+    "gravity-seed2": {
+      "P16K": {
+        "condition": "P16K",
+        "seed_id": "gravity-seed2",
+        "finish_reason": "stop",
+        "http_status": 200,
+        "schema_valid": true,
+        "math_verified": true,
+        "field_audit": {
+          "all_example_count": true,
+          "g_estimates": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "g_ols": true,
+          "query_t_exact": true,
+          "query_distance": true,
+          "official_final_answer": true
+        },
+        "verification_status": "accepted",
+        "rejection_reasons": [],
+        "thinking_present": true,
+        "thinking_verification_status": "unverified_audit_only",
+        "output_tokens": 16181,
+        "reasoning_tokens": 16077,
+        "latency_seconds_last_attempt": 293.27372441394255,
+        "request_attempt_count": 2,
+        "leakage_status": "passed",
+        "source_lineage": "unavailable"
+      },
+      "P32K": {
+        "condition": "P32K",
+        "seed_id": "gravity-seed2",
+        "finish_reason": "stop",
+        "http_status": 200,
+        "schema_valid": true,
+        "math_verified": true,
+        "field_audit": {
+          "all_example_count": true,
+          "g_estimates": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "g_ols": true,
+          "query_t_exact": true,
+          "query_distance": true,
+          "official_final_answer": true
+        },
+        "verification_status": "accepted",
+        "rejection_reasons": [],
+        "thinking_present": true,
+        "thinking_verification_status": "unverified_audit_only",
+        "output_tokens": 16545,
+        "reasoning_tokens": 16441,
+        "latency_seconds_last_attempt": 266.1728062941693,
+        "request_attempt_count": 1,
+        "leakage_status": "passed",
+        "source_lineage": "unavailable"
+      }
+    },
+    "gravity-seed3": {
+      "P16K": {
+        "condition": "P16K",
+        "seed_id": "gravity-seed3",
+        "finish_reason": "stop",
+        "http_status": 200,
+        "schema_valid": true,
+        "math_verified": true,
+        "field_audit": {
+          "all_example_count": true,
+          "g_estimates": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "g_ols": true,
+          "query_t_exact": true,
+          "query_distance": true,
+          "official_final_answer": true
+        },
+        "verification_status": "accepted",
+        "rejection_reasons": [],
+        "thinking_present": true,
+        "thinking_verification_status": "unverified_audit_only",
+        "output_tokens": 9928,
+        "reasoning_tokens": 9812,
+        "latency_seconds_last_attempt": 164.3871830739081,
+        "request_attempt_count": 1,
+        "leakage_status": "passed",
+        "source_lineage": "unavailable"
+      },
+      "P32K": {
+        "condition": "P32K",
+        "seed_id": "gravity-seed3",
+        "finish_reason": "stop",
+        "http_status": 200,
+        "schema_valid": true,
+        "math_verified": true,
+        "field_audit": {
+          "all_example_count": true,
+          "g_estimates": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ],
+          "g_ols": true,
+          "query_t_exact": true,
+          "query_distance": true,
+          "official_final_answer": true
+        },
+        "verification_status": "accepted",
+        "rejection_reasons": [],
+        "thinking_present": true,
+        "thinking_verification_status": "unverified_audit_only",
+        "output_tokens": 16006,
+        "reasoning_tokens": 15890,
+        "latency_seconds_last_attempt": 281.52893920009956,
+        "request_attempt_count": 1,
+        "leakage_status": "passed",
+        "source_lineage": "unavailable"
+      }
+    }
+  },
+  "protected_history_unchanged": true,
+  "old_prepared_live_execution_flag_is_cpu_preparation_history": true,
+  "acceptance_unit": "raw final JSON proof only",
+  "thinking": "retained unverified; excluded from SFT",
+  "merge_into_sft": false,
+  "gpu_training": false,
+  "prior_interruption": "../nvidia_gravity_targeted_v2_20261115_live_r1/interruption.json",
+  "prior_unobserved_p16_seed2_request_usage_and_status_unknown": true,
+  "observed_attempt_count_is_a_lower_bound_for_whole_workflow": true,
+  "analysis_script_sha256": "7a9d4256af866baec798878007e138aaf882cf73b5b1483046bd6facc75a78f0"
+}

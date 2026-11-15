@@ -1,0 +1,47 @@
+{
+  "run_status": "passed",
+  "all_quality_passed": true,
+  "offline_reaudit_complete": true,
+  "record_coverage_complete": true,
+  "expected_outputs": 3,
+  "accepted": 3,
+  "preview": 0,
+  "by_task": {
+    "numeral_system": {
+      "prompt_variant": {
+        "accepted": 0,
+        "preview": 0
+      },
+      "trace_variant": {
+        "accepted": 0,
+        "preview": 0
+      }
+    },
+    "gravity": {
+      "prompt_variant": {
+        "accepted": 0,
+        "preview": 0
+      },
+      "trace_variant": {
+        "accepted": 3,
+        "preview": 0
+      }
+    },
+    "equation_numeric": {
+      "prompt_variant": {
+        "accepted": 0,
+        "preview": 0
+      },
+      "trace_variant": {
+        "accepted": 0,
+        "preview": 0
+      }
+    }
+  },
+  "acceptance_protocol": "nvidia-final-json-proof/v2",
+  "verifier_version": "nvidia-independent-closed-proof-v2",
+  "thinking_present": 3,
+  "thinking_validation_status": "unverified",
+  "merge_into_sft": false,
+  "failure_reasons": {}
+}

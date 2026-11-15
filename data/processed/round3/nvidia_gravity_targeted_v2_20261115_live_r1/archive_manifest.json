@@ -1,0 +1,13 @@
+{
+  "status": "interrupted_preserved",
+  "files_sha256": {
+    "activation.json": "2da58af961732895dea91c8479bfacb6e4d36505e708a31a32a9f99a84542e41",
+    "analyze_live.py": "23a394756ae730e3aa82b55006f96fd5cd10358a04edae0caaff08b0903bb3c7",
+    "interruption.json": "f733d48b7723bdbef88eaef03b56275751fd63d56b0efb343e053e490d8c0960",
+    "p16k_console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "protected_trees_before.json": "328c6f8602707252a96c09e00399af5affc84f23059fc952baac072125fd487c"
+  },
+  "api_key_saved": false,
+  "gpu_training": false,
+  "merge_into_sft": false
+}

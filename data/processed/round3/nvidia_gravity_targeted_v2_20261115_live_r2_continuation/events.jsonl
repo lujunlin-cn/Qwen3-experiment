@@ -1,0 +1,12 @@
+{"at_unix": 1794749073.170542, "event": "request_start", "condition": "P16K", "seed_id": "gravity-seed2", "max_tokens": 16384}
+{"at_unix": 1794749709.287272, "event": "request_end", "condition": "P16K", "seed_id": "gravity-seed2"}
+{"at_unix": 1794749709.2910926, "event": "request_start", "condition": "P16K", "seed_id": "gravity-seed3", "max_tokens": 16384}
+{"at_unix": 1794749873.745285, "event": "request_end", "condition": "P16K", "seed_id": "gravity-seed3"}
+{"at_unix": 1794749873.7668686, "event": "condition_complete", "condition": "P16K", "accepted": 2, "gate_passed": false}
+{"at_unix": 1794749874.0847127, "event": "request_start", "condition": "P32K", "seed_id": "gravity-seed1", "max_tokens": 32768}
+{"at_unix": 1794750627.4519877, "event": "request_end", "condition": "P32K", "seed_id": "gravity-seed1"}
+{"at_unix": 1794750627.4549344, "event": "request_start", "condition": "P32K", "seed_id": "gravity-seed2", "max_tokens": 32768}
+{"at_unix": 1794750893.673282, "event": "request_end", "condition": "P32K", "seed_id": "gravity-seed2"}
+{"at_unix": 1794750893.6751413, "event": "request_start", "condition": "P32K", "seed_id": "gravity-seed3", "max_tokens": 32768}
+{"at_unix": 1794751175.244333, "event": "request_end", "condition": "P32K", "seed_id": "gravity-seed3"}
+{"at_unix": 1794751175.2496572, "event": "condition_complete", "condition": "P32K", "accepted": 3, "gate_passed": true}

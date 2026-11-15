@@ -1,5 +1,7 @@
 # Nemotron SFT-RL 教程：文档索引
 
+Gravity V2真实API全量结果：[P16K/P32K报告](NVIDIA_GRAVITY_V2_LIVE_RESULTS_20261115.md)。相同3 Seed、Ultra+Thinking：P16K为2/3，P32K为3/3完整Proof通过；Thinking仅审计，不自动并入SFT。报告保留服务重试与执行中断的成本限制。
+
 最新离线修复：[NVIDIA V2 Proof重审与SFT转换报告](NVIDIA_SYNTHETIC_V2_REPAIR_REPORT.md)。原R4不变，V2为15 Accepted/3 Preview；6条JSON证明已渲染为SFT独立预览，正式入库0。Gravity P16K/P32K只完成CPU配置和Mock，未调用API。
 
 本机 NVIDIA Hosted 合成数据：[全量实测报告](NVIDIA_HOSTED_SYNTHETIC_RESULTS_20261115.md)、[执行入口与历史尝试](NVIDIA_HOSTED_SYNTHETIC_SMOKE.md)。复用同一批 9 Seed；按用户选择使用 Lightning 引导语与 Ultra+Thinking 闭合证明，18 个输出单元均测试：9 Prompt Accepted、9 Trace Preview。完整数据质量尚未通过；不需要本地 GPU。
