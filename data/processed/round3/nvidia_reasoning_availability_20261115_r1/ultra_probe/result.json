@@ -1,0 +1,39 @@
+{
+  "status": "passed_api_schema_probe",
+  "formal_generation": false,
+  "transport": {
+    "verified_response_match": true,
+    "request_count": 1,
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 531,
+      "total_tokens": 932,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 485
+      }
+    },
+    "latency_seconds": 7.859464913140982
+  },
+  "verification": {
+    "verified": true,
+    "proof": {
+      "task_type": "numeral_system",
+      "answer": "C",
+      "query": 100,
+      "components": [
+        {
+          "arabic": 100,
+          "roman": "C"
+        }
+      ]
+    },
+    "scope": "all fields of a closed structured proof; no free text",
+    "schema_valid": true
+  },
+  "has_unverified_reasoning_content": true,
+  "elapsed_seconds": 8.33216788386926
+}

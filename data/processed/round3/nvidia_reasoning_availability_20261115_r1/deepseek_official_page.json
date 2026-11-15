@@ -1,0 +1,13 @@
+{
+  "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro",
+  "final_url": "https://build.nvidia.com/deepseek-ai/deepseek-v4-pro-0813",
+  "model_strings": [
+    "deepseek-ai/DeepSeek-V4-Pro",
+    "deepseek-ai/DeepSeek-V4-Pro-0813",
+    "deepseek-ai/deepseek-v4-pro-0813",
+    "deepseek-ai/deepseek-v4-pro-0813.md"
+  ],
+  "page_title": [
+    "deepseek-v4-pro-0813 Model by Deepseek-ai | NVIDIA NIM"
+  ]
+}

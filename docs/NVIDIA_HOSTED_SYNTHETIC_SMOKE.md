@@ -94,3 +94,35 @@ OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 NEMO_TELEMETRY_ENABLED=false CUDA_VISIBLE_DE
 测试使用真实 SDK 和数学检查，HTTPS 上游由测试构造。它不能证明 NVIDIA 模型可用、真实 Schema 支持、速度、Token 成本或生成质量。真实执行状态须读取本轮 `api_smoke/summary.json` 和 `generation/result.json`；尚未生成这些产物时，一律为未验证，不用 CPU fixture 冒充。
 
 本次实执行 CPU 结果：新增 12 项测试全部通过（4.142 秒），原 NeMo/第二轮/守卫回归 11 项全部通过（6.385 秒）。包括 18 次模拟生成、完整 prepare→4 次 API Smoke→18 次生成的模拟状态流、单模型失败拦截、无 Key 零请求、原始 JSON 严格验证、错误中间结果拒绝、全部示例检查、原独立 Verifier 不调用 Solver、三集合泄漏、空 Accepted、不覆盖和密钥脱敏。原始日志与首次失败调试记录保留于 `data/processed/round3/nvidia_cpu_regression_20261115_r1/`。
+
+## 2026-11-15 真实 NVIDIA API 结果
+
+已用调用者提供的环境变量执行本机真实 `api-smoke`，Run 为 `nvidia_hosted_20261115_r1`，执行源码提交 `dbebae3`。实际仅 2 次请求，无重试；正式生成受 API 门槛阻止，**没有生成 18 条正式候选，也没有数据质量通过结论**。
+
+| 模型 | HTTP | finish_reason | 输出 Token | 请求耗时秒 | 已确认与未确认 |
+|---|---:|---|---:|---:|---|
+| Lightning | 200 | stop | 6 | 0.955 | 模型/当前凭证/本机网络可用；返回 `Answer the following question.`，此为接口探测，不计 Accepted |
+| Super | 404 | 无 | 服务未提供 | 0.383 | 服务端 `Not Found`，Function 对当前 account 不可用；不能据此断言模型支持或不支持 JSON Schema |
+
+Lightning 输入 245 Token、总计 251 Token；服务报告 reasoning_tokens=0。Super 无 usage，不能记为成功的零 Token 生成。API 阶段墙钟 1.916 秒，未继续 Gravity/Equation 的 Super 探测，也未运行训练或本地 vLLM。
+
+具体服务错误保存在 `api_smoke/http_requests.jsonl`；SDK 将其归类为 `ModelNotFoundError`。这可能涉及模型部署/账户访问，现有证据不能唯一归因。禁止把 404 改写成 JSON Schema 已支持/不支持，也不自动改用其他模型。该 Run 保留失败状态，不重用或覆盖；服务可用后按上面的 `r2` 命令重新注册。
+
+本轮未执行正式生成，因此没有伪造 `generation/accepted.jsonl`、Preview 或 Accepted Manifest；这些由真正执行的 `run` 阶段产出。CPU fixture 的 Accepted 18/18 仅证明门槛机制，不能替代真实生成结果。实际产物与控制台日志见 [本轮目录](../data/processed/round3/nvidia_hosted_20261115_r1/)。
+
+## 用户选定 Ultra 与 Thinking：独立后续 Run
+
+用户随后明确允许 Ultra/DeepSeek V4 Pro，并最终选定 Ultra、要求一定保留 Thinking。独立探测实测：
+
+- `nvidia/nemotron-3-ultra-550b-a55b`：HTTP 200，Roman 原 Schema 与数学证明通过；531 输出 Token，其中服务报告 485 reasoning Token。这里只是单题能力探测，不等于三类质量验收。
+- NVIDIA 官方 V4 Pro 页面重定向到 `deepseek-v4-pro-0813`，实测 `deepseek-ai/deepseek-v4-pro-0813` 返回 HTTP 410，服务明确表示该部署已于 2026-09-14 到期。没有把 Flash 当成 Pro。探测原始证据另存 `nvidia_reasoning_availability_20261115_r1/`。
+
+新增显式配置 `configs/nvidia_synthetic_smoke_ultra.json`，新 Run `nvidia_hosted_20261115_ultra_r1`。原 Super 配置与失败日志保留，不存在自动回退。Lightning 参数不变；Ultra 保持原 Super 实验的 temperature=1.0、top_p=.95、reasoning_effort=medium、cap8192，模型更换是显式实验变量，**不声称这些是 Ultra 的官方默认参数**。
+
+此配置 `require_reasoning_content=true`，API Smoke 必须实际观察三类响应的 Thinking；仅仅请求 `reasoning_effort` 不足以通过。正式生成逐候选检查 Thinking，缺失则拒绝；存在但未经认证时完整 Trace 仍留 Preview。闭合 JSON 数学结果与完整 Trace 的 Accepted 状态分别统计，不因 Thinking 的存在放宽验收。
+
+```bash
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py prepare --config configs/nvidia_synthetic_smoke_ultra.json
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py api-smoke --config configs/nvidia_synthetic_smoke_ultra.json
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py run --config configs/nvidia_synthetic_smoke_ultra.json
+```

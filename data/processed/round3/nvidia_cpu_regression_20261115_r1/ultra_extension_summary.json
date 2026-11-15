@@ -1,0 +1,13 @@
+{
+  "status": "passed_cpu_only",
+  "tests": 14,
+  "seconds": 3.397,
+  "source_sha256": {
+    "01_Synthetic_Data_Engineering.ipynb": "738c976324e1e709bf8d4980932e3d2abd933a048c5713821e35e7ed1f702650",
+    "utils/run_nvidia_synthetic_smoke.py": "710ea58bd9964772efe7bbb59d47cccbc12214ceecb9f6a96facfa34162bea28",
+    "tests/test_nvidia_synthetic_smoke.py": "55f2b3a9c4e085e4952477970c05ac5bddb238d33fe1caf3730bfb3a239fb94b",
+    "configs/nvidia_synthetic_smoke.json": "0c98253d415735c9218757449d37e5cd635fe6928f37b2e2f6c62412233e0a47",
+    "configs/nvidia_synthetic_smoke_ultra.json": "878d0f60baf9d4f75e3d3085640cad4a10a90d9e9f0d839ca9c3aee19a660a7c"
+  },
+  "actual_hosted_quality_claim": false
+}

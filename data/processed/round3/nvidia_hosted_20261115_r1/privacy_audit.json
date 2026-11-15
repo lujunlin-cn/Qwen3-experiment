@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "files_checked": 63,
+  "literal_key_occurrences": 0,
+  "http_records_with_request_headers": 0,
+  "key_source": "isolated process environment only"
+}

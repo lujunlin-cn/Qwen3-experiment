@@ -1,0 +1,21 @@
+{
+  "status": "capability_probe",
+  "same_seed_hashes": {
+    "R0": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+    "A": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+    "B": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+    "C": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8"
+  },
+  "model": {
+    "model": "nvidia/nemotron-3-ultra-550b-a55b",
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "max_tokens": 8192,
+    "extra_body": {
+      "reasoning_effort": "medium"
+    }
+  },
+  "official_default_claim": false,
+  "parameters": "Keep the original Super experimental parameters; change only model ID",
+  "not_formal_generation": true
+}

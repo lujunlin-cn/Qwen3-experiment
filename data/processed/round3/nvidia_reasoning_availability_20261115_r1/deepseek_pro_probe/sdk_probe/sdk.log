@@ -1,0 +1,5 @@
+Non-retryable failure on trace_variant[rg=0, row=0]:   |----------
+  | Provider message: The model 'deepseek-ai/deepseek-v4-pro-0813' has reached its end of life on 2026-09-14T08:00:00Z and is no longer available.
+  | Cause: Model provider 'nvidia' rejected the request for model 'deepseek-ai/deepseek-v4-pro-0813' with HTTP status 410 while running generation for column 'trace_variant'.
+  | Solution: Verify the model name, credentials, and model configuration. If the provider is behind a gateway or proxy, contact its administrator and provide the HTTP status.
+  |----------

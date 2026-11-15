@@ -1,0 +1,4 @@
+Non-retryable failure on trace_variant[rg=0, row=0]:   |----------
+  | Cause: The specified model 'nvidia/nemotron-3-super-120b-a12b' could not be found while running generation for column 'trace_variant'.
+  | Solution: Check that the model name is correct and supported by your model provider 'nvidia' and try again.
+  |----------

@@ -1,0 +1,76 @@
+{
+  "status": "failed_api_smoke",
+  "models": {
+    "nvidia-text": {
+      "status": "passed",
+      "probes": [
+        {
+          "alias": "nvidia-text",
+          "task_type": "numeral_system",
+          "status": "passed",
+          "quality_acceptance": "not_evaluated",
+          "transport": {
+            "verified_response_match": true,
+            "request_count": 1,
+            "finish_reason": "stop",
+            "usage": {
+              "prompt_tokens": 245,
+              "completion_tokens": 6,
+              "total_tokens": 251,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "completion_tokens_details": {
+                "reasoning_tokens": 0
+              }
+            },
+            "latency_seconds": 0.9548425818793476
+          }
+        }
+      ]
+    },
+    "nvidia-reasoning": {
+      "status": "failed",
+      "probes": [
+        {
+          "alias": "nvidia-reasoning",
+          "task_type": "numeral_system",
+          "status": "failed",
+          "quality_acceptance": "not_evaluated",
+          "error": "DataDesignerGenerationError: 🛑 ModelNotFoundError:   |----------\n  | Cause: The specified model 'nvidia/nemotron-3-super-120b-a12b' could not be found while running generation for column 'trace_variant'.\n  | Solution: Check that the model name is correct and supported by your model provider 'nvidia' and try again.\n  |----------"
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 1.9160046479664743,
+  "host": "local controller; not AutoDL network validation",
+  "telemetry": {
+    "http_requests": 2,
+    "failed_requests": 1,
+    "by_model": {
+      "nvidia-text": {
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "http_requests": 1,
+        "failed_requests": 0,
+        "retries": 0,
+        "usage": {
+          "prompt_tokens": 245,
+          "completion_tokens": 6,
+          "total_tokens": 251
+        },
+        "latency_seconds": 0.9548425818793476
+      },
+      "nvidia-reasoning": {
+        "model": "nvidia/nemotron-3-super-120b-a12b",
+        "http_requests": 1,
+        "failed_requests": 1,
+        "retries": 0,
+        "usage": {},
+        "latency_seconds": 0.38331052800640464
+      }
+    },
+    "output_tokens_include_reasoning": true
+  },
+  "prepared_manifest_sha256": "d2cefbcd8b5a7b9bd44c8eabd9ca79606414aa7604ecf6b00d725082ceb6ded7",
+  "generation_quality_passed": false
+}

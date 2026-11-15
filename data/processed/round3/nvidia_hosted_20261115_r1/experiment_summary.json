@@ -1,0 +1,11 @@
+{
+  "status": "blocked_api_smoke",
+  "formal_generation": "not_started",
+  "expected_formal_outputs": 18,
+  "actual_formal_outputs": 0,
+  "quality": "not_evaluated",
+  "accepted_manifest": "not_created_no_formal_generation",
+  "api_summary": "api_smoke/summary.json",
+  "run_guard": "run_blocked_console.log",
+  "gpu_training_started": false
+}

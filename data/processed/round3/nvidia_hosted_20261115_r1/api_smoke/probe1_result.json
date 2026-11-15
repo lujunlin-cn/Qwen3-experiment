@@ -1,0 +1,7 @@
+{
+  "alias": "nvidia-reasoning",
+  "task_type": "numeral_system",
+  "status": "failed",
+  "quality_acceptance": "not_evaluated",
+  "error": "DataDesignerGenerationError: 🛑 ModelNotFoundError:   |----------\n  | Cause: The specified model 'nvidia/nemotron-3-super-120b-a12b' could not be found while running generation for column 'trace_variant'.\n  | Solution: Check that the model name is correct and supported by your model provider 'nvidia' and try again.\n  |----------"
+}

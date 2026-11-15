@@ -50,6 +50,17 @@ class NvidiaSmokeTests(unittest.TestCase):
         from data_designer.engine.secret_resolver import EnvironmentResolver
         self.assertIsInstance(designer._secret_resolver, EnvironmentResolver)
 
+    def test_ultra_is_explicit_registered_alternative_not_automatic_fallback(self):
+        config = nvidia.validated_config(nvidia.ROOT / "configs/nvidia_synthetic_smoke_ultra.json")
+        self.assertEqual(config["models"]["nvidia-reasoning"]["model"], "nvidia/nemotron-3-ultra-550b-a55b")
+        self.assertEqual(self.config["models"]["nvidia-reasoning"]["model"], "nvidia/nemotron-3-super-120b-a12b")
+        self.assertNotEqual(config["synthetic_run_id"], self.config["synthetic_run_id"])
+        self.assertTrue(config["require_reasoning_content"])
+        telemetry = nvidia.telemetry_summary([{"model": config["models"]["nvidia-reasoning"]["model"],
+            "seed_id": "test", "variant_kind": "trace_variant", "status": "completed", "usage": {"completion_tokens": 123},
+            "latency_seconds": 1}], config)
+        self.assertEqual(telemetry["by_model"]["nvidia-reasoning"]["usage"]["completion_tokens"], 123)
+
     def test_missing_key_fails_before_network_and_run_directory(self):
         with patch.dict(os.environ, {}, clear=True), patch.object(nvidia, "verify_prepared", side_effect=AssertionError("No work")):
             for stage in (nvidia.api_smoke, nvidia.run):
@@ -122,6 +133,23 @@ class NvidiaSmokeTests(unittest.TestCase):
         self.assertFalse(nvidia.read(dest / "accepted_manifest.json")["all_accepted_verified_and_audited"])
         self.assertEqual(set(nvidia.read(dest / "synthetic_real_leakage_audit.json")["by_split"]),
                          {"train", "validation", "holdout_test"})
+
+    def test_required_thinking_never_accepted_as_verified_mathematics(self):
+        seed = self.seeds[0]
+        intro = self.ns["NVIDIA_INTRODUCTIONS"][0]
+        record = {k: seed[k] for k in ("seed_id", "task_type", "prompt")}
+        record.update(introduction=intro, prompt_variant=intro + '\n' + seed['prompt'],
+                      trace_variant=json.dumps(reference_proof(self.ns, seed)))
+        for kind in ('prompt_variant', 'trace_variant'):
+            record[kind + '__transport'] = {'verified_response_match': True, 'finish_reason': 'stop'}
+        checks = nvidia.read(self.prepared / 'seed_checks.json')
+        for i, thinking in enumerate(('', 'Unverified thinking')):
+            record['trace_variant__reasoning_content'] = thinking
+            target = self.root / f'thinking_gate{i}'
+            self.ns['screen_nvidia_records']([record], [seed], target, checks, require_reasoning_content=True)
+            trace = next(r for r in nvidia.rows(target / 'preview.jsonl') if r['variant_kind'] == 'trace_variant')
+            expected = 'missing_required_thinking' if not thinking else 'unverified_reasoning_content'
+            self.assertIn(expected, trace['rejection_reasons'])
 
     def test_run_overwrite_and_hash_mutation_rejected(self):
         with self.assertRaises(FileExistsError):

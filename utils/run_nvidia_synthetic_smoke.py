@@ -32,7 +32,8 @@ DEFAULT_CONFIG = ROOT / "configs/nvidia_synthetic_smoke.json"
 ENDPOINT = "https://integrate.api.nvidia.com/v1"
 TASKS = ("numeral_system", "gravity", "equation_numeric")
 SOURCE_FILES = (NOTEBOOK, Path(__file__), ROOT / "utils/run_synthetic_smoke.py",
-                ROOT / "configs/nvidia_synthetic_smoke.json", ROOT / "configs/nemo_smoke_requirements.lock.txt")
+                ROOT / "configs/nvidia_synthetic_smoke.json", ROOT / "configs/nvidia_synthetic_smoke_ultra.json",
+                ROOT / "configs/nemo_smoke_requirements.lock.txt")
 
 
 def redact(value):
@@ -83,9 +84,14 @@ def validated_config(path=DEFAULT_CONFIG):
         model = c["models"][alias]
         if set(model) != {"model", "temperature", "top_p", "max_tokens", "extra_body"}:
             raise ValueError("No custom model authentication or provider overrides")
-        if model["model"] != official["model"] or any(
+        allowed_models = {official["model"]}
+        if alias == "nvidia-reasoning":
+            # User-authorized alternative; same inference parameters are an
+            # experimental control, not a claim about Ultra's official defaults.
+            allowed_models.add("nvidia/nemotron-3-ultra-550b-a55b")
+        if model["model"] not in allowed_models or any(
                 model.get(k) != v for k, v in official["inference_parameters"].items()):
-            raise ValueError("Model and inference settings must match SDK 0.10.0 NVIDIA defaults")
+            raise ValueError("Use a registered model and the SDK 0.10.0 baseline inference settings")
         if type(model["max_tokens"]) is not int or model["max_tokens"] <= 0:
             raise ValueError("max_tokens must be a positive integer")
     if importlib.metadata.version("data-designer") != "0.10.0":
@@ -250,9 +256,9 @@ def capture_requests(destination):
             yield
 
 
-def telemetry_summary(entries):
+def telemetry_summary(entries, config=None):
     by_model = {}
-    for alias, model in read(DEFAULT_CONFIG)["models"].items():
+    for alias, model in (config or read(DEFAULT_CONFIG))["models"].items():
         subset = [e for e in entries if e.get("model") == model["model"]]
         groups = {(e.get("seed_id"), e.get("variant_kind")) for e in subset}
         usage = {}
@@ -372,6 +378,9 @@ def api_smoke(target):
                     if not verification.get("schema_valid"):
                         raise ValueError("Super raw output does not satisfy the existing closed schema")
                     result["json_schema_supported"] = True
+                    result["thinking_present"] = bool(record.get(kind + "__reasoning_content"))
+                    if c["require_reasoning_content"] and not result["thinking_present"]:
+                        raise ValueError("This registered Run requires actual thinking in reasoning_content")
                 elif not isinstance(record.get("introduction"), str) or not record["introduction"]:
                     raise ValueError("Lightning returned no text")
                 result.update(status="passed", transport=record[kind + "__transport"])
@@ -387,7 +396,7 @@ def api_smoke(target):
     passed = all(v["status"] == "passed" for v in models.values())
     summary = {"status": "passed" if passed else "failed_api_smoke", "models": models,
         "elapsed_seconds": time.perf_counter() - started, "host": "local controller; not AutoDL network validation",
-        "telemetry": telemetry_summary(rows(stage / "http_requests.jsonl")),
+        "telemetry": telemetry_summary(rows(stage / "http_requests.jsonl"), c),
         "prepared_manifest_sha256": digest(Path(target) / "seed_manifest.json"), "generation_quality_passed": False}
     write_new(stage / "summary.json", summary)
     return summary
@@ -422,9 +431,10 @@ def run(target):
                                                   rows(stage / "http_requests.jsonl"), seed))
     write_rows(stage / "raw_model_outputs.jsonl", records)
     write_new(stage / "runtime_errors.json", errors)
-    quality = ns["screen_nvidia_records"](records, seeds, stage, read(Path(target) / "seed_checks.json"))
+    quality = ns["screen_nvidia_records"](records, seeds, stage, read(Path(target) / "seed_checks.json"),
+                                          require_reasoning_content=c["require_reasoning_content"])
     result = {"status": "failed_runtime" if errors else quality["status"], "quality": quality,
-        "telemetry": telemetry_summary(rows(stage / "http_requests.jsonl")), "elapsed_seconds": time.perf_counter() - start,
+        "telemetry": telemetry_summary(rows(stage / "http_requests.jsonl"), c), "elapsed_seconds": time.perf_counter() - start,
         "errors": errors, "gpu_used": False, "merge_into_sft": False}
     write_new(stage / "result.json", result)
     return result

@@ -1,0 +1,26 @@
+test_actual_sdk_18_requests_strict_raw_binding_and_no_secret_artifacts (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_actual_sdk_18_requests_strict_raw_binding_and_no_secret_artifacts) ... ok
+test_all_three_splits_leakage_and_empty_accepted (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_all_three_splits_leakage_and_empty_accepted) ... ok
+test_api_smoke_reports_model_failure_separately_and_blocks_generation (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_api_smoke_reports_model_failure_separately_and_blocks_generation) ... ok
+test_explicit_models_match_official_defaults_and_builtin_provider (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_explicit_models_match_official_defaults_and_builtin_provider) ... ok
+test_frozen_nine_seeds_and_public_projection (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_frozen_nine_seeds_and_public_projection) ... ok
+test_missing_key_fails_before_network_and_run_directory (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_missing_key_fails_before_network_and_run_directory) ... ok
+test_prompt_append_exact_and_conservative_new_contract (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_prompt_append_exact_and_conservative_new_contract) ... ok
+test_redaction_never_saves_credentials (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_redaction_never_saves_credentials) ... ok
+test_run_overwrite_and_hash_mutation_rejected (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_run_overwrite_and_hash_mutation_rejected) ... ok
+test_strict_trace_positive_and_incorrect_intermediate (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_strict_trace_positive_and_incorrect_intermediate) ... ok
+test_successful_three_stages_22_mock_wire_requests_and_nonoverwrite (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_successful_three_stages_22_mock_wire_requests_and_nonoverwrite) ... ok
+test_ultra_is_explicit_registered_alternative_not_automatic_fallback (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_ultra_is_explicit_registered_alternative_not_automatic_fallback) ... ok
+test_verifier_stays_independent_and_requires_all_examples (test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_verifier_stays_independent_and_requires_all_examples) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 4.043s
+
+OK
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
