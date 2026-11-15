@@ -1,0 +1,16 @@
+{
+  "status": "prepared_cpu_only",
+  "models_called": 0,
+  "conditions": {
+    "P16K": {
+      "run_id": "nvidia_gravity_v2_20261115_p16k_r1",
+      "max_tokens": 16384
+    },
+    "P32K": {
+      "run_id": "nvidia_gravity_v2_20261115_p32k_r1",
+      "max_tokens": 32768
+    }
+  },
+  "real_api_run_status": "not_run",
+  "live_execution_this_task": false
+}

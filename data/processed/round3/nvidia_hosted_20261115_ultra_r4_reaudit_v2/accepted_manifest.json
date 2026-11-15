@@ -1,0 +1,86 @@
+{
+  "schema_version": "nvidia-accepted-manifest/v2",
+  "status": "passed",
+  "run_status": "completed_with_previews",
+  "accepted_rows": 15,
+  "preview_rows": 3,
+  "all_accepted_verified_and_audited": true,
+  "acceptance_protocol": "nvidia-final-json-proof/v2",
+  "verifier_version": "nvidia-independent-closed-proof-v2",
+  "origin": {
+    "original_run_id": "nvidia_hosted_20261115_ultra_r4_full",
+    "original_run_path": "/home/hajimi2025/Qwen3-experiment/data/processed/round3/nvidia_hosted_20261115_ultra_r4_full",
+    "original_git_commit": "bf024db57c5eaf0c93de6e164fb2806f449a75d4",
+    "original_raw_model_outputs_sha256": "0f04ea4af6642a64405810612aee57a491b39149952afabe3b0650999612631b",
+    "original_http_requests_sha256": "e5cf2d8a29c244060e2a1eee56ead1a77e1551ec059c01065794b48d146808b4",
+    "original_private_seed_sha256": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+    "original_public_seed_sha256": "14642ea9f5acb0b831c2ef00f6723ae545ac6475e75a1ca2c83f16a368cc0c6a",
+    "original_config_sha256": "3ffc7b05fe4b45ffd94d5cd6f73dae367c4126e1d926ee3534af9cfd42a82c0c",
+    "original_tree_sha256": "86ac4a52de8a49b4840c487abae7e089e83539d13d2ac050b0537f2e3e7caa6c",
+    "models_called": 0,
+    "git_commit": "f67a48141da32ec6a0500383b071b5b5ff28fee8",
+    "new_sources_sha256": {
+      "01_Synthetic_Data_Engineering.ipynb": "50497d69a1902936efde8bd5011fe0c7aa8c63a1fd603cd7f5066c6222ee1c51",
+      "run_nvidia_v2.py": "491f0f1c746580b181ed3bbfe54d54138497529ce685fed319c97d8d74696bb1"
+    }
+  },
+  "by_task": {
+    "numeral_system": {
+      "prompt_variant": {
+        "accepted": 3,
+        "preview": 0
+      },
+      "trace_variant": {
+        "accepted": 3,
+        "preview": 0
+      }
+    },
+    "gravity": {
+      "prompt_variant": {
+        "accepted": 3,
+        "preview": 0
+      },
+      "trace_variant": {
+        "accepted": 0,
+        "preview": 3
+      }
+    },
+    "equation_numeric": {
+      "prompt_variant": {
+        "accepted": 3,
+        "preview": 0
+      },
+      "trace_variant": {
+        "accepted": 3,
+        "preview": 0
+      }
+    }
+  },
+  "split_sha256": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+    "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+  },
+  "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+  "artifact_sha256": {
+    "accepted.jsonl": "743d41dd2e41ac0883bed6f08b43e4ad9799856f952331aee52c7df826659a72",
+    "preview.jsonl": "850de630467f170ac02841440dd7e61052720e8b4477b7d8461f7cde86ddd24e",
+    "candidates.jsonl": "08afea34288503f810abf7687e142b0370515e54eeedf96893e2e557bc2aef3e",
+    "thinking_audit.jsonl": "fbc3fa882769532917f1e8c389bc438103266364065fcb39b11b971875296673",
+    "synthetic_real_leakage_audit.json": "ac5ac31df4fbd4e7b17f215f199d1d3553451baa9a5fb6bef8714cb90eb6c38e",
+    "numeral_query_exposure.json": "4a28e494c72847f882edff21e432472c263da8fb5fe8ead72ff3b0af2678f2e7"
+  },
+  "leakage_status": "passed",
+  "lineage_status_counts": {
+    "unavailable": 18
+  },
+  "numeral_query_exposure_policy": "report_only",
+  "claims_no_mapping_leakage": false,
+  "thinking": {
+    "present_outputs": 9,
+    "verification_status": "unverified",
+    "role": "audit_only",
+    "in_sft_completion": false
+  },
+  "merge_into_sft": false
+}

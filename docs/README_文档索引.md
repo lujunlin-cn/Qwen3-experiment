@@ -1,5 +1,7 @@
 # Nemotron SFT-RL 教程：文档索引
 
+最新离线修复：[NVIDIA V2 Proof重审与SFT转换报告](NVIDIA_SYNTHETIC_V2_REPAIR_REPORT.md)。原R4不变，V2为15 Accepted/3 Preview；6条JSON证明已渲染为SFT独立预览，正式入库0。Gravity P16K/P32K只完成CPU配置和Mock，未调用API。
+
 本机 NVIDIA Hosted 合成数据：[全量实测报告](NVIDIA_HOSTED_SYNTHETIC_RESULTS_20261115.md)、[执行入口与历史尝试](NVIDIA_HOSTED_SYNTHETIC_SMOKE.md)。复用同一批 9 Seed；按用户选择使用 Lightning 引导语与 Ultra+Thinking 闭合证明，18 个输出单元均测试：9 Prompt Accepted、9 Trace Preview。完整数据质量尚未通过；不需要本地 GPU。
 
 最新本地总览：[综合报告与2026-11-15排查计划](COMPREHENSIVE_REPORT_20261114.md)。汇总两轮真实结果、Seed/生成质量的区别、SFT输出契约、低显存与耗时，以及明天“合成数据→SFT→DPO→GRPO→PPO”的逐步验收。第二轮已执行短程GPU测试，完整效果对照当前仅保留Base/SFT/PPO，闭合证明评测未完整取回；最新状态与证据见 [2026-11-14 GPU结果](ROUND2_GPU_RESULTS_20261114.md)。

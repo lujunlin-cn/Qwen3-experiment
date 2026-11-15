@@ -1,0 +1,21 @@
+{
+  "status": "archived_offline_only",
+  "models_called": 0,
+  "gpu_used": false,
+  "merge_into_sft": false,
+  "files_sha256": {
+    "nvidia_gravity_v2_20261115_p16k_r1/compiled_config.json": "988d7f2cb80b8e611a702ba5e9c2ff0d4d1b2810518cbe66fd5fd8679c645da2",
+    "nvidia_gravity_v2_20261115_p16k_r1/config.json": "265b0bbcfb21f7f1470da25674b353e51e814451a53b9ef5fd2e7502a0086033",
+    "nvidia_gravity_v2_20261115_p16k_r1/prepared_manifest.json": "cd39e828fb319def28f1ab59370d846e41aec40a80a58fde3ba3fcf200577328",
+    "nvidia_gravity_v2_20261115_p16k_r1/private_seeds.jsonl": "73b87431efd5a27c7cd67422d897ed5f7e4656fe39a3dca97c812ec6e955f5ef",
+    "nvidia_gravity_v2_20261115_p16k_r1/public_seeds.jsonl": "eea6941b5cae4a6966e943e9afb044d99b5b7c0a6365a27e4ff77f84f15eebb9",
+    "nvidia_gravity_v2_20261115_p16k_r1/seed_checks.json": "83a564d2955117815257653f3cecda3c749eb89f3ec13d68138567a6529e13ec",
+    "nvidia_gravity_v2_20261115_p32k_r1/compiled_config.json": "6861bae7dcdf8a9e830499d3d59736761db73de6ee382c4b773366cc509c9e63",
+    "nvidia_gravity_v2_20261115_p32k_r1/config.json": "265b0bbcfb21f7f1470da25674b353e51e814451a53b9ef5fd2e7502a0086033",
+    "nvidia_gravity_v2_20261115_p32k_r1/prepared_manifest.json": "461f8c9e422b825b7bd6cc5d93d622c999215edf54f00a5593058f2ae4d17514",
+    "nvidia_gravity_v2_20261115_p32k_r1/private_seeds.jsonl": "73b87431efd5a27c7cd67422d897ed5f7e4656fe39a3dca97c812ec6e955f5ef",
+    "nvidia_gravity_v2_20261115_p32k_r1/public_seeds.jsonl": "eea6941b5cae4a6966e943e9afb044d99b5b7c0a6365a27e4ff77f84f15eebb9",
+    "nvidia_gravity_v2_20261115_p32k_r1/seed_checks.json": "83a564d2955117815257653f3cecda3c749eb89f3ec13d68138567a6529e13ec",
+    "preparation_summary.json": "873b70220dd892f9b66098267188baca112ee1e6a203b13cd624dfc400143993"
+  }
+}

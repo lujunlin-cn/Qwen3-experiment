@@ -1,0 +1,187 @@
+{
+  "gravity-seed1": {
+    "passed": true,
+    "solver_result": {
+      "status": "solved",
+      "answer": "142.88",
+      "inferred_g": 13.330466256875624,
+      "trace": {
+        "solver": "ols_from_public_examples",
+        "g_estimates": [
+          13.329475308641976,
+          13.32908163265306,
+          13.330428507237103,
+          13.330484542211654
+        ],
+        "g_ols": 13.330466256875624,
+        "query_t": "4.63",
+        "query_raw": 142.88193605100852
+      }
+    },
+    "independent_verification": {
+      "answer_ok": true,
+      "trace_ok": true,
+      "identifiability": {
+        "candidate_g_count": 2,
+        "candidate_g_values": [
+          13.330466256875624,
+          13.32995190793954
+        ],
+        "query_output_count": 1,
+        "query_outputs": [
+          142.88193605100852
+        ],
+        "answer_unique": true
+      },
+      "example_checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "query_prediction": 142.88193605100852,
+      "difficulty_ok": true,
+      "solver_status": "independent_ols_verifier"
+    },
+    "leakage_audit": {
+      "status": "passed",
+      "numeral_query_exposure": {
+        "status": "not_applicable"
+      },
+      "matches": {
+        "exact": [],
+        "normalized": [],
+        "source_id": [],
+        "source_row": [],
+        "structure": []
+      },
+      "rejection_reasons": [],
+      "lineage_status": "unavailable",
+      "structure_similar_only": false
+    }
+  },
+  "gravity-seed2": {
+    "passed": true,
+    "solver_result": {
+      "status": "solved",
+      "answer": "5.60",
+      "inferred_g": 5.1787531743599535,
+      "trace": {
+        "solver": "ols_from_public_examples",
+        "g_estimates": [
+          5.1791893354020155,
+          5.179072269451061,
+          5.173553719008264,
+          5.178187286359743
+        ],
+        "g_ols": 5.1787531743599535,
+        "query_t": "1.47",
+        "query_raw": 5.595383867237211
+      }
+    },
+    "independent_verification": {
+      "answer_ok": true,
+      "trace_ok": true,
+      "identifiability": {
+        "candidate_g_count": 2,
+        "candidate_g_values": [
+          5.1787531743599535,
+          5.178629777905402
+        ],
+        "query_output_count": 1,
+        "query_outputs": [
+          5.595383867237212
+        ],
+        "answer_unique": true
+      },
+      "example_checks": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "query_prediction": 5.595383867237212,
+      "difficulty_ok": true,
+      "solver_status": "independent_ols_verifier"
+    },
+    "leakage_audit": {
+      "status": "passed",
+      "numeral_query_exposure": {
+        "status": "not_applicable"
+      },
+      "matches": {
+        "exact": [],
+        "normalized": [],
+        "source_id": [],
+        "source_row": [],
+        "structure": []
+      },
+      "rejection_reasons": [],
+      "lineage_status": "unavailable",
+      "structure_similar_only": false
+    }
+  },
+  "gravity-seed3": {
+    "passed": true,
+    "solver_result": {
+      "status": "solved",
+      "answer": "163.35",
+      "inferred_g": 15.305854399351366,
+      "trace": {
+        "solver": "ols_from_public_examples",
+        "g_estimates": [
+          15.3063462128854,
+          15.302941945343761,
+          15.312115642404057,
+          15.306699864191943,
+          15.303471898141217
+        ],
+        "g_ols": 15.305854399351366,
+        "query_t": "4.62",
+        "query_raw": 163.34713932075766
+      }
+    },
+    "independent_verification": {
+      "answer_ok": true,
+      "trace_ok": true,
+      "identifiability": {
+        "candidate_g_count": 2,
+        "candidate_g_values": [
+          15.305854399351366,
+          15.3063462128854
+        ],
+        "query_output_count": 1,
+        "query_outputs": [
+          163.34713932075766
+        ],
+        "answer_unique": true
+      },
+      "example_checks": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "query_prediction": 163.34713932075766,
+      "difficulty_ok": true,
+      "solver_status": "independent_ols_verifier"
+    },
+    "leakage_audit": {
+      "status": "passed",
+      "numeral_query_exposure": {
+        "status": "not_applicable"
+      },
+      "matches": {
+        "exact": [],
+        "normalized": [],
+        "source_id": [],
+        "source_row": [],
+        "structure": []
+      },
+      "rejection_reasons": [],
+      "lineage_status": "unavailable",
+      "structure_similar_only": false
+    }
+  }
+}

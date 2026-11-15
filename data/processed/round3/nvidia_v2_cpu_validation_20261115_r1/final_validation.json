@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "original_r4_files_checked": 101,
+  "original_r4_tree_sha256": "ee1281af1ad3f75a3800479a49ef32a136e6b89fcc49a62f81af27af02eb5e81",
+  "original_r4_unchanged": true,
+  "original_01_and_03_cells_unchanged": true,
+  "protected_runner_and_rl_files_unchanged": [
+    "utils/run_nvidia_synthetic_smoke.py",
+    "utils/run_synthetic_smoke.py",
+    "utils/course_worker.py",
+    "utils/course_run.py",
+    "utils/course_protocol.py",
+    "utils/low_memory_logprobs.py",
+    "04_DPO.ipynb",
+    "05_PPO.ipynb",
+    "06_GRPO.ipynb"
+  ],
+  "tests": 42,
+  "suites": [
+    {
+      "log": "tests_final.log",
+      "tests": 14,
+      "seconds": 2.612,
+      "passed": true
+    },
+    {
+      "log": "historical_nemo_regression.log",
+      "tests": 11,
+      "seconds": 6.164,
+      "passed": true
+    },
+    {
+      "log": "historical_nvidia_regression.log",
+      "tests": 15,
+      "seconds": 5.647,
+      "passed": true
+    },
+    {
+      "log": "local_tokenizer_integration.log",
+      "tests": 2,
+      "seconds": 4.035,
+      "passed": true
+    }
+  ],
+  "new_files_scanned_for_keys": 50,
+  "literal_nvidia_api_key_occurrences": 0,
+  "nvidia_api_requests_this_task": 0,
+  "model_loaded": false,
+  "gpu_used": false,
+  "training_started": false,
+  "report_links_checked": true
+}

@@ -1,0 +1,11 @@
+{
+  "status": "archived_offline_only",
+  "models_called": 0,
+  "gpu_used": false,
+  "merge_into_sft": false,
+  "files_sha256": {
+    "nvidia_sft_render_audit.json": "2540b53d7e757f058487d49623b2c3a89db3b6ba586515c86fc8596d9febf5e3",
+    "nvidia_sft_render_manifest.json": "47d2c956dd23264df3b9313185c1c05e78754a0306656a1ec2363d54e812e8e8",
+    "nvidia_sft_rendered_preview.jsonl": "0116d0cfddaf118bbd16d58ea21e8ff8f90dced3cb75979354eaee8650853c22"
+  }
+}
