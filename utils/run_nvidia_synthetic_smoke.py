@@ -33,6 +33,8 @@ ENDPOINT = "https://integrate.api.nvidia.com/v1"
 TASKS = ("numeral_system", "gravity", "equation_numeric")
 SOURCE_FILES = (NOTEBOOK, Path(__file__), ROOT / "utils/run_synthetic_smoke.py",
                 ROOT / "configs/nvidia_synthetic_smoke.json", ROOT / "configs/nvidia_synthetic_smoke_ultra.json",
+                ROOT / "configs/nvidia_synthetic_smoke_ultra_longthinking.json",
+                ROOT / "configs/nvidia_synthetic_smoke_ultra_lowthinking.json",
                 ROOT / "configs/nemo_smoke_requirements.lock.txt")
 
 
@@ -89,8 +91,13 @@ def validated_config(path=DEFAULT_CONFIG):
             # User-authorized alternative; same inference parameters are an
             # experimental control, not a claim about Ultra's official defaults.
             allowed_models.add("nvidia/nemotron-3-ultra-550b-a55b")
-        if model["model"] not in allowed_models or any(
-                model.get(k) != v for k, v in official["inference_parameters"].items()):
+        allowed_inference = [official["inference_parameters"]]
+        if model["model"] == "nvidia/nemotron-3-ultra-550b-a55b":
+            low = copy.deepcopy(official["inference_parameters"])
+            low["extra_body"]["reasoning_effort"] = "low"
+            allowed_inference.append(low)
+        if model["model"] not in allowed_models or not any(all(model.get(k) == v for k, v in params.items())
+                                                           for params in allowed_inference):
             raise ValueError("Use a registered model and the SDK 0.10.0 baseline inference settings")
         if type(model["max_tokens"]) is not int or model["max_tokens"] <= 0:
             raise ValueError("max_tokens must be a positive integer")
@@ -233,7 +240,7 @@ def capture_requests(destination):
             try:
                 response = original_sync(transport, request)
                 response.read()
-            except Exception as error:
+            except BaseException as error:
                 finish(entry, started, error=error)
                 raise
             finish(entry, started, response)
@@ -245,7 +252,7 @@ def capture_requests(destination):
             try:
                 response = await original_async(transport, request)
                 await response.aread()
-            except Exception as error:
+            except BaseException as error:
                 finish(entry, started, error=error)
                 raise
             finish(entry, started, response)
@@ -345,6 +352,20 @@ def bind_raw_response(record, requests, seed, kinds=("prompt_variant", "trace_va
     return record
 
 
+def schema_probe_object(task):
+    """Transport/shape fixture only; never a formal seed or mathematical sample."""
+    obj = {"task_type": task, "answer": ""}
+    if task == "numeral_system":
+        obj.update(query=1, components=[{"arabic": 1, "roman": "I"}])
+    elif task == "gravity":
+        obj.update(g_estimates=[1], g_ols=1, query_t="1", query_distance=.5)
+    elif task == "equation_numeric":
+        obj.update(rules={}, example_outputs=[], query_output="")
+    else:
+        raise ValueError(task)
+    return obj
+
+
 def api_smoke(target):
     require_api_key()  # Before any SDK construction, HTTP calls, or stage creation.
     c, seeds = verify_prepared(target)
@@ -360,14 +381,31 @@ def api_smoke(target):
         for index, (alias, task, kind) in enumerate(probes):
             seed = next(s for s in seeds if s["task_type"] == task)
             seed_file = stage / f"probe{index}_public_seed.jsonl"
-            write_rows(seed_file, [{k: seed[k] for k in ("seed_id", "task_type", "prompt")}])
+            public = {k: seed[k] for k in ("seed_id", "task_type", "prompt")}
+            if kind == "trace_variant":
+                # A minimal API/shape check should not spend a full arithmetic
+                # rollout. This fixture is explicitly outside the frozen 9
+                # mathematical Seeds and never enters quality statistics.
+                public["seed_id"] = "api-schema-" + task
+                public["prompt"] = "API shape probe only; not a mathematical training sample."
+            write_rows(seed_file, [public])
             builder = ns["build_nvidia_data_designer"](seed_file, c, task, kind)
+            if kind == "trace_variant":
+                import data_designer.config as dd
+                compiled = builder.build()
+                minimal = ("API_SCHEMA_ONLY: briefly check the required JSON fields, then return exactly this "
+                    "shape fixture. This is a transport test, not a mathematics sample or proof.\n" +
+                    json.dumps(schema_probe_object(task)) + "\nSEED_ID={{ seed_id }}\nVARIANT_KIND=trace_variant")
+                builder = dd.DataDesignerConfigBuilder(model_configs=list(compiled.model_configs))
+                builder.with_seed_dataset(dd.LocalFileSeedSource(path=str(seed_file)), sampling_strategy=dd.SamplingStrategy.ORDERED)
+                builder.add_column(compiled.columns[0].model_copy(update={"prompt": minimal}))
             write_new(stage / f"probe{index}_compiled_config.json", builder.build().model_dump(mode="json"))
-            result = {"alias": alias, "task_type": task, "status": "failed", "quality_acceptance": "not_evaluated"}
+            result = {"alias": alias, "task_type": task, "status": "failed", "quality_acceptance": "not_evaluated",
+                      "purpose": "minimal_api_shape_probe" if kind == "trace_variant" else "minimal_text_api_probe"}
             try:
                 outputs = sdk_generate(builder, stage / f"probe{index}")
                 write_rows(stage / f"probe{index}_sdk_outputs.jsonl", outputs)
-                record = bind_raw_response({}, rows(stage / "http_requests.jsonl"), seed, (kind,))
+                record = bind_raw_response({}, rows(stage / "http_requests.jsonl"), public, (kind,))
                 if not record[kind + "__transport"]["verified_response_match"]:
                     raise ValueError("No observed NVIDIA HTTP response")
                 if record[kind + "__transport"]["finish_reason"] != "stop":

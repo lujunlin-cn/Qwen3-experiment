@@ -60,6 +60,9 @@ class NvidiaSmokeTests(unittest.TestCase):
             "seed_id": "test", "variant_kind": "trace_variant", "status": "completed", "usage": {"completion_tokens": 123},
             "latency_seconds": 1}], config)
         self.assertEqual(telemetry["by_model"]["nvidia-reasoning"]["usage"]["completion_tokens"], 123)
+        low = nvidia.validated_config(nvidia.ROOT / 'configs/nvidia_synthetic_smoke_ultra_lowthinking.json')
+        self.assertEqual(low['models']['nvidia-reasoning']['extra_body']['reasoning_effort'], 'low')
+        self.assertTrue(low['require_reasoning_content'])
 
     def test_missing_key_fails_before_network_and_run_directory(self):
         with patch.dict(os.environ, {}, clear=True), patch.object(nvidia, "verify_prepared", side_effect=AssertionError("No work")):
@@ -172,8 +175,11 @@ class NvidiaSmokeTests(unittest.TestCase):
             if isinstance(text, list):
                 text = "".join(part.get("text", "") for part in text)
             seed_id = text.split("SEED_ID=", 1)[1].splitlines()[0]
-            seed = seeds[seed_id]
-            self.assertIn(seed["prompt"], text)
+            schema_only = 'API_SCHEMA_ONLY' in text
+            seed = (next(s for s in self.seeds if seed_id == 'api-schema-' + s['task_type'])
+                    if schema_only else seeds[seed_id])
+            if not schema_only:
+                self.assertIn(seed["prompt"], text)
             self.assertEqual(str(request.url), nvidia.ENDPOINT + "/chat/completions")
             if "VARIANT_KIND=prompt_variant" in text:
                 self.assertEqual(payload["model"], self.config["models"]["nvidia-text"]["model"])
@@ -183,7 +189,7 @@ class NvidiaSmokeTests(unittest.TestCase):
                 self.assertEqual(payload["response_format"]["type"], "json_schema")
                 if super_error:
                     return httpx.Response(400, json={"error": {"message": "Fixture: unsupported JSON schema", "type": "invalid_request_error"}}, request=request)
-                content = json.dumps(reference_proof(self.ns, seed))
+                content = json.dumps(nvidia.schema_probe_object(seed['task_type']) if schema_only else reference_proof(self.ns, seed))
             return httpx.Response(200, json={"id": "cpu-fixture-only", "object": "chat.completion", "created": 1,
                 "model": payload["model"], "choices": [{"index": 0, "message": {"role": "assistant", "content": content}, "finish_reason": "stop"}],
                 "usage": {"prompt_tokens": 101, "completion_tokens": 21, "total_tokens": 122}}, request=request)

@@ -50,7 +50,7 @@ Hosted 服务不提供可固定的权重 revision，本轮如实记录此限制�
 ```
 
 - `prepare`：纯 CPU，检查四组输入字节/9 道题、原数学与泄漏门槛；编译三种任务配置；模型调用数为 0。无需 Key。
-- `api-smoke`：必须先有环境变量。1 次 Lightning，Super 对三类实际 Schema 各 1 次，共 4 次预期调用。分别记录每模型结果；失败时保存具体 HTTP 错误，禁止降级解析/自动换模型。只证明接口与结构能力，数学质量此阶段不验收。
+- `api-smoke`：必须先有环境变量。1 次 Lightning，reasoning 模型对三类原 Schema 各 1 次，共 4 次预期调用。当前实现只让模型检查并返回最小字段结构对象，明确标为 `API_SCHEMA_ONLY`、`api-schema-<task>`，不要求求解原题。这些接口 fixture 不属于冻结 9 Seed 的正式输出、不计质量指标、不进 Accepted。分别记录每模型结果；失败时保存具体 HTTP 错误，禁止降级解析/自动换模型。只证明接口与结构能力，数学质量此阶段不验收。
 - `run`：要求同一 Run 的两个模型和三个 Schema 都通过 API Smoke。按 Seed 顺序以 SDK 每次处理一行、生成两个列，共 18 个预期输出。失败保留部分产物并停止，记录实际请求、失败、重试和 usage。
 
 所有阶段拒绝覆盖。重新尝试时须用新 ID，并重新 prepare/API Smoke：
@@ -136,3 +136,15 @@ Lightning 输入 245 Token、总计 251 Token；服务报告 reasoning_tokens=0�
 .venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py api-smoke --config configs/nvidia_synthetic_smoke_ultra_longthinking.json
 .venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py run --config configs/nvidia_synthetic_smoke_ultra_longthinking.json
 ```
+
+长预算 r2 的 Gravity 请求实际在约 340 秒后被服务端断开，SDK 开始自动重试；控制器随后中断仍在等待的重试并保留 `interruption.json` 与原始日志，未运行正式生成。旧捕获器只记录已结束尝试，因此中断清单明确还有至少一次未观察到最终状态的请求，不伪造总耗时或 Token 数。新代码也记录 Python 可观察到的取消异常。
+
+这次暴露出旧 API Smoke 求解完整算术并不符合“最小接口探测”的目标。当前已改为上述 Schema-only 检查，正式数学题面与 Verifier 完全不变。新配置 `configs/nvidia_synthetic_smoke_ultra_lowthinking.json` / `nvidia_hosted_20261115_ultra_r3_lowthinking`，保持 cap32768，只把 Ultra 的 effort 从 medium 改为 low；依旧必须实测非空 Thinking，不能以关闭 Thinking 加速。low 是明确的工程实验参数，不声称为 NVIDIA 官方默认。
+
+```bash
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py prepare --config configs/nvidia_synthetic_smoke_ultra_lowthinking.json
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py api-smoke --config configs/nvidia_synthetic_smoke_ultra_lowthinking.json
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py run --config configs/nvidia_synthetic_smoke_ultra_lowthinking.json
+```
+
+本轮用户要求 Smoke 通过后完成全量：此处全量按冻结输入协议为 **9 Seed × 2 = 18 个正式输出**。技术探测不能替代这 18 条的 Solver/Verifier/Leakage/Accepted 质量验收。最小探测与 low-effort 支持加入后的 14 项 CPU 回归已实际全部通过（3.315 秒），原始日志为 `tests_minimal_probe_final.log`。
