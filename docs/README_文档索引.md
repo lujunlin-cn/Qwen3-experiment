@@ -1,5 +1,7 @@
 # Nemotron SFT-RL 教程：文档索引
 
+本机 NVIDIA Hosted 合成数据入口：[NVIDIA Hosted Smoke](NVIDIA_HOSTED_SYNTHETIC_SMOKE.md)。复用 2026-11-14 同一批 9 Seed，使用官方内置 Provider、Lightning 引导语与 Super 严格 JSON 证明；prepare/API Smoke/生成质量分别记录，不需要本地 GPU。
+
 最新本地总览：[综合报告与2026-11-15排查计划](COMPREHENSIVE_REPORT_20261114.md)。汇总两轮真实结果、Seed/生成质量的区别、SFT输出契约、低显存与耗时，以及明天“合成数据→SFT→DPO→GRPO→PPO”的逐步验收。第二轮已执行短程GPU测试，完整效果对照当前仅保留Base/SFT/PPO，闭合证明评测未完整取回；最新状态与证据见 [2026-11-14 GPU结果](ROUND2_GPU_RESULTS_20261114.md)。
 
 第二轮审核材料（2026-11-10编写时为CPU准备阶段，后续执行状态见上方报告）：[诊断](ROUND2_DIAGNOSIS.md)、[NeMo 质量修复](NEMO_QUALITY_REPAIR.md)、[Gravity DPO-B](DPO_GRAVITY_DESIGN.md)、[Equation PPO/GRPO Reward](PPO_GRPO_EQUATION_REWARD.md)、[代码审查与回归](ROUND2_CODE_AUDIT.md)、[实验协议](ROUND2_EXPERIMENT_PROTOCOL.md)。DPO仅训练Gravity的正确长答/正确短答偏好；PPO/GRPO仅训练Equation，共用单一R1=正确性+.20过程+.05格式奖励，长度只统计；原审核稿的等待GPU标记属于当时状态。

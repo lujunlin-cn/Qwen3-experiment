@@ -1,0 +1,31 @@
+{
+  "status": "passed_cpu_only",
+  "checks": [
+    {
+      "log": "tests_final.log",
+      "tests": 12,
+      "seconds": 4.142,
+      "status": "passed"
+    },
+    {
+      "log": "historical_regression.log",
+      "tests": 11,
+      "seconds": 6.385,
+      "status": "passed"
+    }
+  ],
+  "source_sha256": {
+    "01_Synthetic_Data_Engineering.ipynb": "1474df902cc914fb50057c781beef95ac192005d1c17327ab864f28805232fb8",
+    "utils/run_nvidia_synthetic_smoke.py": "65a6eae66c164cbf3777042de0a051f6fa3681a3733830f09ef6ec1bd4bab4c7",
+    "tests/test_nvidia_synthetic_smoke.py": "d613049129e95a7c9cc61226bc2d48450e2ed0d1cbed49184c288f48b151e862",
+    "configs/nvidia_synthetic_smoke.json": "5ffb6f906d5d56889831039a31741d1cf63ad787671bd6a7ec91bd6a0ccb3f4d"
+  },
+  "upstream": "mock HTTPX responses with actual SDK; no NVIDIA quality claims",
+  "gpu_training_started": false,
+  "data_designer_version": "0.10.0",
+  "failed_attempts_retained": [
+    "tests_attempt1.log",
+    "tests_attempt2.log"
+  ],
+  "interpretation": "Attempt1 fixture expected string content but SDK sends content blocks. Attempt2 found SDK singleton token-std pandas.NA profiling error. Final tests validate content blocks and explicit profiling warning with strict raw validation."
+}
