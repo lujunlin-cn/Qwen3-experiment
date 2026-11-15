@@ -197,10 +197,33 @@ class V2RepairTests(unittest.TestCase):
 
     def test_training_default_and_old_notebook_functions_unchanged(self):
         self.assertEqual(v2.sft_training_tasks(), ('gravity', 'equation_numeric', 'bit_manipulation'))
-        for name, new_ids in [('01_Synthetic_Data_Engineering.ipynb', {'nvidia-v2-acceptance', 'nvidia-v2-acceptance-contract'}),
-                              ('03_SFT.ipynb', {'nvidia-v2-sft-render', 'nvidia-v2-sft-render-contract'})]:
+        for name, new_ids in [('01_Synthetic_Data_Engineering.ipynb', {'nvidia-v2-acceptance', 'nvidia-v2-acceptance-contract',
+                                  'final-train-only-protocol', 'final-train-only-functions'}),
+                              ('03_SFT.ipynb', {'nvidia-v2-sft-render', 'nvidia-v2-sft-render-contract',
+                                  'solver-first-preview-guide', 'solver-first-preview-render'})]:
             old = json.loads(subprocess.check_output(['git', 'show', '6f1c01e:' + name], cwd=v2.ROOT, text=True))
             current = v2.read(v2.ROOT / name)
+            if name.startswith('01_'):
+                # Explicitly authorized final-pilot generator interface changes.
+                # All Solver/Verifier/prompt cells remain compared byte for byte.
+                for cell in old['cells']:
+                    text = ''.join(cell['source'])
+                    if cell.get('id') == 'f4686928':
+                        text = text.replace('train_numeric_operator_pool or tuple("+-*/|\\\\@$%&!?^#~`")',
+                                            'train_numeric_operator_pool')
+                    if cell.get('id') == 'c8de4249':
+                        text = text.replace('    mode = str(rng.choice(["normal", "flip"]))',
+                            '    if not numeric_operator_pool:\n        raise ValueError("Train operator support is empty; no global fallback")\n    mode = str(rng.choice(["normal", "flip"]))')
+                    if cell.get('id') == '6a57d560':
+                        # Compare the arithmetic/rendering body unchanged. Only
+                        # the optional, sourced sampling-parameter interface differs.
+                        cur = next(c for c in current['cells'] if c.get('id') == '6a57d560')
+                        new_text = ''.join(cur['source'])
+                        self.assertEqual(text[text.index('    example_pairs = '):],
+                                         new_text[new_text.index('    example_pairs = '):])
+                        text = new_text
+                    if cell.get('id') in {'f4686928', 'c8de4249', '6a57d560'}:
+                        cell['source'] = text.splitlines(keepends=True)
             self.assertEqual(old['cells'], [c for c in current['cells'] if c.get('id') not in new_ids])
         self.assertNotIn('full_trace_records', self.sft)
         self.assertNotIn('use_synthetic_data', self.sft)
