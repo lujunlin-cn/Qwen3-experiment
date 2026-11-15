@@ -1,0 +1,4 @@
+candidate_id,task_type,status,numeral_query_exposure,matches,rejection_reasons,lineage_status,structure_similar_only
+gravity-seed1:trace_variant,gravity,passed,{'status': 'not_applicable'},"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+gravity-seed2:trace_variant,gravity,passed,{'status': 'not_applicable'},"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False
+gravity-seed3:trace_variant,gravity,passed,{'status': 'not_applicable'},"{'exact': [], 'normalized': [], 'source_id': [], 'source_row': [], 'structure': []}",[],unavailable,False

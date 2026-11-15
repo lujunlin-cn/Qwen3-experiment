@@ -1,0 +1,13 @@
+{
+  "condition": "P16K",
+  "parent_prepared_run": "nvidia_gravity_v2_20261115_p16k_r1",
+  "parent_prepared_manifest_sha256": "cd39e828fb319def28f1ab59370d846e41aec40a80a58fde3ba3fcf200577328",
+  "source_sha256": "624dc0d89c39a7ac4e34c40aa54519c60a49a2975d0ac4b70a60c0c44241ee4b",
+  "configuration_unchanged": true,
+  "imported_http_source": "data/processed/round3/nvidia_gravity_targeted_v2_20261115_prepare_r1/nvidia_gravity_v2_20261115_p16k_r1/generation/http_requests.jsonl",
+  "imported_http_sha256": "a8895693c74eef0074fd115dce76a0d0f140cfb8d972ea4a7825a1f7182269dd",
+  "imported_responses": 1,
+  "prior_unobserved_request_usage_unknown": true,
+  "raw_thinking_verified": false,
+  "merge_into_sft": false
+}

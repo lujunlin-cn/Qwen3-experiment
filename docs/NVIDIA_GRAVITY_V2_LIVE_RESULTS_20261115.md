@@ -21,3 +21,15 @@ CPU准备见 [V2修复报告](NVIDIA_SYNTHETIC_V2_REPAIR_REPORT.md)，本次批�
 - [后台续跑与逐题结果](../data/processed/round3/nvidia_gravity_targeted_v2_20261115_live_r2_continuation/)；按P16K/P32K分目录，禁止混合候选挑选3/3。
 
 Thinking始终作为未验证审计材料，不作为SFT Completion；验收对象仅为原始最终JSON Proof。原R4、V2重审和SFT预览目录均冻结保护。
+
+## P16K 已完成结果
+
+| Seed | finish_reason | 输出Token | 结果 |
+|---|---|---:|---|
+| gravity-seed1 | length | 16384 | Preview；无最终JSON |
+| gravity-seed2 | stop | 16181 | Accepted；全部g_i/OLS/Query时间/距离/末答通过 |
+| gravity-seed3 | stop | 9928 | Accepted；全部字段通过，query_t为原数值字符串 |
+
+P16K为2 Accepted、1 Preview，三题均含Thinking，**未达到3/3工程门槛**。已报告输出Token共42493（含Thinking42273）；另有一次已观察到的340秒断连不含usage，以及首次会话中结果未知的第二题请求，不能将42493视为完整计费总量。后台P16K续跑耗时801.607秒，不包含导入的首题211.5秒请求及此前中断等待。
+
+P32K已开始，最终结果尚待实际响应和Verifier，不能与P16K候选混合填补失败题。P16K相较旧R4多了两条正确完整证明，但每题单次随机采样、仅3题，不能将差异完全归因于Query提示修复。
