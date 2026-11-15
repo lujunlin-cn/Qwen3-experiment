@@ -1,0 +1,25 @@
+test_all_three_task_mappings_boxed_deterministic_and_no_hidden_thinking (test_nvidia_v2_repair.V2RepairTests.test_all_three_task_mappings_boxed_deterministic_and_no_hidden_thinking) ... ok
+test_empty_accepted_never_passes_manifest_and_no_overwrite (test_nvidia_v2_repair.V2RepairTests.test_empty_accepted_never_passes_manifest_and_no_overwrite) ... ok
+test_gravity_conditions_same_seed_prompt_schema_only_budget_differs (test_nvidia_v2_repair.V2RepairTests.test_gravity_conditions_same_seed_prompt_schema_only_budget_differs) ... ok
+test_gravity_query_time_string_and_original_numeric_tolerance (test_nvidia_v2_repair.V2RepairTests.test_gravity_query_time_string_and_original_numeric_tolerance) ... ok
+test_gravity_real_sdk_mock_requests_and_explicit_32768_error_no_fallback (test_nvidia_v2_repair.V2RepairTests.test_gravity_real_sdk_mock_requests_and_explicit_32768_error_no_fallback) ... ok
+test_http_failed_truncated_forged_or_empty_never_accepted (test_nvidia_v2_repair.V2RepairTests.test_http_failed_truncated_forged_or_empty_never_accepted) ... ok
+test_original_actual_reaudit_15_accepted_3_preview (test_nvidia_v2_repair.V2RepairTests.test_original_actual_reaudit_15_accepted_3_preview) ... ok
+test_real_six_proofs_render_only_preview_and_manifest_tampering_rejected (test_nvidia_v2_repair.V2RepairTests.test_real_six_proofs_render_only_preview_and_manifest_tampering_rejected) ... ok
+test_strict_schema_duplicates_wrong_intermediates_and_no_prose_extraction (test_nvidia_v2_repair.V2RepairTests.test_strict_schema_duplicates_wrong_intermediates_and_no_prose_extraction) ... ok
+test_targeted_missing_key_cannot_make_api_request_or_create_generation (test_nvidia_v2_repair.V2RepairTests.test_targeted_missing_key_cannot_make_api_request_or_create_generation) ... ok
+test_thinking_present_or_absent_does_not_change_json_acceptance (test_nvidia_v2_repair.V2RepairTests.test_thinking_present_or_absent_does_not_change_json_acceptance) ... ok
+test_three_set_audit_still_rejects_actual_duplicates (test_nvidia_v2_repair.V2RepairTests.test_three_set_audit_still_rejects_actual_duplicates) ... ok
+test_training_default_and_old_notebook_functions_unchanged (test_nvidia_v2_repair.V2RepairTests.test_training_default_and_old_notebook_functions_unchanged) ... ok
+test_verifier_independence_and_all_examples_rules_required (test_nvidia_v2_repair.V2RepairTests.test_verifier_independence_and_all_examples_rules_required) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 2.612s
+
+OK
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}

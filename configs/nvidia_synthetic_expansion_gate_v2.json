@@ -1,0 +1,39 @@
+{
+  "schema_version": "nvidia-synthetic-expansion-gate/v2",
+  "execution_status": "design_only_no_generation",
+  "large_scale_generation_allowed": false,
+  "automatic_expansion_allowed": false,
+  "roman": {
+    "current_closed_proofs": "3/3",
+    "gate": "blocked_pending_mapping_exposure_policy_and_sft_task_scope",
+    "claims_no_mapping_leakage": false,
+    "automatic_sft_inclusion": false
+  },
+  "equation_numeric": {
+    "current_closed_proofs": "3/3",
+    "next_stage": "may_propose_10_to_20_new_seeds_after_source_provenance_review",
+    "train_only_lineage_of_existing_seeds_proven": false,
+    "expansion_executed": false
+  },
+  "gravity": {
+    "current_complete_proofs": "0/3",
+    "gate": "P16K_or_P32K_must_pass_all_three_frozen_proofs_before_expansion",
+    "targeted_live_status": "not_run"
+  },
+  "prompt_variant": {
+    "current_accepted": "9/9",
+    "counts_as_new_math_problem": false,
+    "expand": false
+  },
+  "required_before_any_expansion": [
+    "independent_new_run_id_and_new_seed_ids",
+    "existing_python_generator_with_auditable_train_only_sampling_sources",
+    "original_solver_and_independent_verifier",
+    "no_answer_or_hidden_rule_sent_to_model",
+    "train_validation_holdout_leakage_audit",
+    "per_task_actual_accepted_rate_including_failures",
+    "no_repeated_old_seeds_to_inflate_counts",
+    "report_unproven_source_lineage_instead_of_filling_in_a_claim"
+  ],
+  "merge_into_sft": false
+}

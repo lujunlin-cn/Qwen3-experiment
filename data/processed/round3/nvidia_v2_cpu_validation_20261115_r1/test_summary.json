@@ -1,0 +1,37 @@
+{
+  "status": "passed_cpu_only",
+  "suites": [
+    {
+      "file": "tests_final.log",
+      "tests": 14,
+      "seconds": 2.612,
+      "status": "passed"
+    },
+    {
+      "file": "historical_nemo_regression.log",
+      "tests": 11,
+      "seconds": 6.164,
+      "status": "passed"
+    },
+    {
+      "file": "historical_nvidia_regression.log",
+      "tests": 15,
+      "seconds": 5.647,
+      "status": "passed"
+    }
+  ],
+  "tests": 40,
+  "new_v2_suite_socket_network_guard": true,
+  "targeted_api_responses": "mocked HTTPS with actual pinned SDK",
+  "live_api_calls": 0,
+  "model_loaded": false,
+  "gpu_used": false,
+  "sources_sha256": {
+    "01_Synthetic_Data_Engineering.ipynb": "50497d69a1902936efde8bd5011fe0c7aa8c63a1fd603cd7f5066c6222ee1c51",
+    "03_SFT.ipynb": "1f760e649da5f6e6acf019d015e362fa6979e3a5fffab855885f511ec631d16e",
+    "utils/run_nvidia_v2.py": "491f0f1c746580b181ed3bbfe54d54138497529ce685fed319c97d8d74696bb1",
+    "utils/run_nvidia_gravity_targeted.py": "aa791fd0ea6b199dd1922b2cc0ca9a5764524ea3658884cb22c9f2257d70e231",
+    "configs/nvidia_gravity_targeted_v2.json": "265b0bbcfb21f7f1470da25674b353e51e814451a53b9ef5fd2e7502a0086033",
+    "tests/test_nvidia_v2_repair.py": "05089e72da35ef47addb118c3c3460f781f2415f76f69c2d70a2a10d9ec682d1"
+  }
+}
