@@ -126,3 +126,13 @@ Lightning 输入 245 Token、总计 251 Token；服务报告 reasoning_tokens=0�
 .venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py api-smoke --config configs/nvidia_synthetic_smoke_ultra.json
 .venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py run --config configs/nvidia_synthetic_smoke_ultra.json
 ```
+
+上述 Ultra r1 实际在 Gravity API 探测返回 HTTP 200、`finish_reason=length`：8192 输出 Token 全部为 Thinking，无最终 content。Roman Schema/Thinking 通过，Gravity 未完成，因此 Equation 尚未探测，18 条正式生成没有启动。这是预算截断，不能归因于 Schema 不支持。
+
+据此注册 `configs/nvidia_synthetic_smoke_ultra_longthinking.json` / `nvidia_hosted_20261115_ultra_r2_longthinking`：**只提高 Ultra 输出上限到 32768**，Seed、提示词、temperature、top_p、effort、Verifier 不变。不覆盖 r1；新 Run 重新经过 prepare/API Smoke。
+
+```bash
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py prepare --config configs/nvidia_synthetic_smoke_ultra_longthinking.json
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py api-smoke --config configs/nvidia_synthetic_smoke_ultra_longthinking.json
+.venv-data-designer/bin/python utils/run_nvidia_synthetic_smoke.py run --config configs/nvidia_synthetic_smoke_ultra_longthinking.json
+```
