@@ -1,0 +1,27 @@
+{
+  "status": "read_only_text_format_review_complete",
+  "notebook_cell": 8,
+  "source_sha256": {
+    "03_SFT.ipynb": "7b9130f9ef37bb574f930df75eff52933c46d144a39095c8fc653b4b38f13874",
+    "data/processed/benchmarks/qwen3-0_6b/real_gpu_20261109/recovered_course_r2/panels/sft.jsonl": "8cb8bb0ead433931b938de6c60f6a0de3db2e6b5c81da9766417948ba7892d30"
+  },
+  "records": 192,
+  "by_task": {
+    "numeral_system": 64,
+    "gravity": 64,
+    "equation_numeric": 64
+  },
+  "rendered_teacher_closed_json_objects": 0,
+  "rendered_teacher_final_answer_boxed": 192,
+  "equation_trace_field_counts": {
+    "candidate_rules_by_operator": 64,
+    "candidates_by_operator": 64,
+    "query_outputs": 64,
+    "valid_assignments": 64,
+    "valid_assignment_count": 64
+  },
+  "equation_rendered_empty_candidate_dicts": 0,
+  "new_tokenizer_verification_executed": false,
+  "new_mathematical_or_gpu_verification_executed": false,
+  "interpretation": "Historical SFT teacher serialization uses prose plus boxed answer; later closed_trace_v1 requires different explicit fields. This is a confirmed format mismatch, not a causal attribution for all model regressions."
+}
