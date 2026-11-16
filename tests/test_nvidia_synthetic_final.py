@@ -316,8 +316,26 @@ print('3/3 actual tokenizer renderer checks passed')
         original=json.loads(subprocess.check_output(["git","show","e305a47:03_SFT.ipynb"],cwd=r.ROOT,text=True))
         current=r.read(r.SFT)
         by_id={c.get("id"):c for c in current["cells"]}
+        # The subsequent Equation repair explicitly authorizes only its renderer
+        # and strict reference functions. Legacy/default render paths stay equal.
+        authorized = {"audit_trace_record", "_format_trace", "strict_equation_render_reference", "render_solver_first_preview"}
         for cell in original["cells"]:
-            self.assertEqual(cell,by_id[cell.get("id")])
+            cur=by_id[cell.get("id")]
+            if cell["cell_type"]!="code": self.assertEqual(cell,cur); continue
+            def preserved(c):
+                return [ast.dump(x) for x in ast.parse("".join(c["source"])).body
+                        if not (isinstance(x,ast.FunctionDef) and x.name in authorized)]
+            self.assertEqual(preserved(cell),preserved(cur))
+        old_format={}
+        for cell in original["cells"]:
+            if cell["cell_type"]!="code":continue
+            for node in ast.parse("".join(cell["source"])).body:
+                if isinstance(node,ast.FunctionDef) and node.name=="_format_trace":
+                    exec(compile(ast.Module(body=[node],type_ignores=[]),"original_sft","exec"),old_format)
+        current=r.load_renderer()
+        for task in (*r.TASKS,"bit_manipulation"):
+            sample={"task_type":task,"trace":{},"answer":"test"}
+            self.assertEqual(old_format["_format_trace"](sample),current["_format_trace"](sample))
 
     def test_35_36_37_historical_archives_are_identical_to_git(self):
         paths=[self.c["high_baseline_r4"],"data/processed/round3/nvidia_hosted_20261115_ultra_r4_reaudit_v2",

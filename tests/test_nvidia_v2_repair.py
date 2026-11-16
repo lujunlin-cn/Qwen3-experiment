@@ -2,6 +2,7 @@
 
 Network sockets are forbidden throughout this suite. No credentials/models/GPU.
 """
+import ast
 import copy
 import json
 import os
@@ -224,7 +225,25 @@ class V2RepairTests(unittest.TestCase):
                         text = new_text
                     if cell.get('id') in {'f4686928', 'c8de4249', '6a57d560'}:
                         cell['source'] = text.splitlines(keepends=True)
-            self.assertEqual(old['cells'], [c for c in current['cells'] if c.get('id') not in new_ids])
+            # Explicitly authorized exact Equation repair: preserve every other
+            # statement, including the Gravity arithmetic and default builders.
+            authorized = {"_parse_numeric_prompt", "_numeric_candidate_rules", "_numeric_valid_assignments",
+                "solve_equation_numeric_prompt", "equation_trace_from_resolution", "_numeric_verifier_format",
+                "_numeric_verifier_candidate_rules", "_numeric_verifier_valid_assignments", "_numeric_verifier_parse",
+                "verify_equation_numeric_prompt", "verify_equation_numeric_sample", "_equation_assignment_set",
+                "audit_equation_agreement", "_solve_candidate", "_smoke_equation_resolution", "_verify_equation_proof",
+                "_format_trace", "audit_trace_record"}
+            def stable(nb):
+                out=[]
+                for c in nb:
+                    if c.get('id') in new_ids or c.get('id','').startswith('equation-sft-augmentation-'):continue
+                    if c['cell_type']!='code':out.append(c);continue
+                    clone=dict(c)
+                    tree=ast.parse(''.join(c['source']))
+                    clone['source']=[ast.dump(x) for x in tree.body if not (isinstance(x,ast.FunctionDef) and x.name in authorized)]
+                    out.append(clone)
+                return out
+            self.assertEqual(stable(old['cells']),stable(current['cells']))
         self.assertNotIn('full_trace_records', self.sft)
         self.assertNotIn('use_synthetic_data', self.sft)
         v2.assert_tree_unchanged(v2.ORIGINAL, self.before)
