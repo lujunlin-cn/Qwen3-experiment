@@ -1,0 +1,16 @@
+test_equation_augmentation (unittest.loader._FailedTest.test_equation_augmentation) ... ERROR
+
+======================================================================
+ERROR: test_equation_augmentation (unittest.loader._FailedTest.test_equation_augmentation)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_equation_augmentation
+Traceback (most recent call last):
+  File "/home/hajimi2025/miniforge3/lib/python3.13/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+ModuleNotFoundError: No module named 'tests.test_equation_augmentation'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

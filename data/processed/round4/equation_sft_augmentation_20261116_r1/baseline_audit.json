@@ -1,0 +1,129 @@
+{
+  "status": "passed_identity_and_split",
+  "adapter_path": ".autodl/round2_20261114/setup/sft_r1_adapter",
+  "adapter_actual_sha256": {
+    "README.md": "c840d3bfe11f36af7d7ffaa1d9a09514e0c86ad71637cc14afc68979e82b2b4b",
+    "adapter_config.json": "1d6c4b00f50a4880d3f68967edf8e314026bb0df1de0b8d4aedf07fa3cd5962c",
+    "tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95",
+    "chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "adapter_model.safetensors": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371",
+    "tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506"
+  },
+  "expected_weight_checks": {
+    "adapter_config.json": true,
+    "adapter_model.safetensors": true
+  },
+  "real_train_result": {
+    "status": "completed",
+    "optimizer_steps": 24,
+    "training_seconds": 112.23264668416232,
+    "mean_window_loss": 2.751043325894269,
+    "assistant_training_tokens": 22082,
+    "records": 192,
+    "decoder_memory_settings": {
+      "training_mode": true,
+      "gradient_checkpointing_enabled": true,
+      "use_cache": false
+    },
+    "checkpoint": {
+      "status": "completed",
+      "adapter_path": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/adapter",
+      "method": "sft",
+      "round": 1,
+      "parent_policy_version": "base",
+      "policy_version": "sft:round1:d565b67a4e09",
+      "parent_fingerprint": {
+        "kind": "base"
+      },
+      "weights": {
+        "adapter_config.json": "1d6c4b00f50a4880d3f68967edf8e314026bb0df1de0b8d4aedf07fa3cd5962c",
+        "adapter_model.safetensors": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+      },
+      "sft_reference": null,
+      "base_model_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+      "trainer_state": "/root/autodl-tmp/Qwen3-experiment/data/processed/course_runs/course8h_20261109_r2_cuda_graph/jobs/sft_r1_train_attempt1/trainer.pt",
+      "value_head": null
+    },
+    "worker_wall_seconds": 119.50313300453126,
+    "torch_peak_allocated_bytes": 1161910272,
+    "torch_peak_reserved_bytes": 1721761792,
+    "versions": {
+      "torch": "2.8.0+cu128",
+      "transformers": "5.18.0"
+    },
+    "base_config_sha256": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd"
+  },
+  "historical_protocol_sha256": "f31cb2b1d858745d840c853c202fcaee9716aef352060bf8bdbd90fe2e36089e",
+  "sft_panel_sha256": "8cb8bb0ead433931b938de6c60f6a0de3db2e6b5c81da9766417948ba7892d30",
+  "sft_panel_by_task": {
+    "numeral_system": 64,
+    "gravity": 64,
+    "equation_numeric": 64
+  },
+  "panel_original_train_rows_match": true,
+  "dataset_manifest": "data/processed/tasksets/roman_gravity_equation_v1/dataset_manifest.json",
+  "dataset_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+  "split_sha256": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+    "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+  },
+  "original_training_config": {
+    "tasks": [
+      "numeral_system",
+      "gravity",
+      "equation_numeric"
+    ],
+    "per_task": 64,
+    "max_rounds": 4,
+    "learning_rate": 2e-05,
+    "gradient_accumulation": 8,
+    "max_length": 4096,
+    "mode": "nf4_qlora"
+  },
+  "base_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "other_manifest_comparison": {
+    "train": {
+      "gravity": {
+        "id_equal": false,
+        "actual_rows": 1277,
+        "other_rows": 1277
+      },
+      "equation_numeric": {
+        "id_equal": false,
+        "actual_rows": 586,
+        "other_rows": 586
+      }
+    },
+    "validation": {
+      "gravity": {
+        "id_equal": false,
+        "actual_rows": 160,
+        "other_rows": 160
+      },
+      "equation_numeric": {
+        "id_equal": false,
+        "actual_rows": 73,
+        "other_rows": 73
+      }
+    },
+    "holdout_test": {
+      "gravity": {
+        "id_equal": false,
+        "actual_rows": 160,
+        "other_rows": 160
+      },
+      "equation_numeric": {
+        "id_equal": false,
+        "actual_rows": 73,
+        "other_rows": 73
+      }
+    }
+  },
+  "gpu_process_inventory": "1468381, python3, 81300 MiB\n",
+  "host_training_blockers": [
+    "GPU occupied by an existing process; not interrupted",
+    "Local model cache contains tokenizer only; base weights not present"
+  ],
+  "no_api_calls": true
+}

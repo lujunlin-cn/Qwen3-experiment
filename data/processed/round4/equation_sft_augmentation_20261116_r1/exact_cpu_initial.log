@@ -1,0 +1,21 @@
+test_corrupted_example_and_query (tests.test_equation_augmentation.ExactEquationTests.test_corrupted_example_and_query) ... ok
+test_differential_all_rules_all_operand_pairs (tests.test_equation_augmentation.ExactEquationTests.test_differential_all_rules_all_operand_pairs) ... ok
+test_global_group_and_family_conflicts (tests.test_equation_augmentation.ExactEquationTests.test_global_group_and_family_conflicts) ... ok
+test_historical_strict_equation_previews (tests.test_equation_augmentation.ExactEquationTests.test_historical_strict_equation_previews) ... ok
+test_leading_zero_string_identity (tests.test_equation_augmentation.ExactEquationTests.test_leading_zero_string_identity) ... ok
+test_multiple_assignments_different_answers (tests.test_equation_augmentation.ExactEquationTests.test_multiple_assignments_different_answers) ... ok
+test_multiple_assignments_same_answer (tests.test_equation_augmentation.ExactEquationTests.test_multiple_assignments_same_answer) ... ok
+test_near_outputs_not_equal (tests.test_equation_augmentation.ExactEquationTests.test_near_outputs_not_equal) ... ok
+test_prefix_suffix_sign_and_reverse (tests.test_equation_augmentation.ExactEquationTests.test_prefix_suffix_sign_and_reverse) ... ok
+test_render_all_examples_assignments_unique_claim (tests.test_equation_augmentation.ExactEquationTests.test_render_all_examples_assignments_unique_claim) ... ok
+test_same_assignment_count_different_set_rejected (tests.test_equation_augmentation.ExactEquationTests.test_same_assignment_count_different_set_rejected) ... ok
+test_solver_verifier_disagreement_detected (tests.test_equation_augmentation.ExactEquationTests.test_solver_verifier_disagreement_detected) ... ok
+test_tolerance_counterexample (tests.test_equation_augmentation.ExactEquationTests.test_tolerance_counterexample) ... ok
+test_undefined_operation (tests.test_equation_augmentation.ExactEquationTests.test_undefined_operation) ... ok
+test_unique_rules_and_full_trace (tests.test_equation_augmentation.ExactEquationTests.test_unique_rules_and_full_trace) ... ok
+test_verifier_independence (tests.test_equation_augmentation.ExactEquationTests.test_verifier_independence) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.836s
+
+OK

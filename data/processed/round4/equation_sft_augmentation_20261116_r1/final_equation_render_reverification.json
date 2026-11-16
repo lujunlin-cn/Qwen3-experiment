@@ -1,0 +1,1940 @@
+{
+  "status": "passed",
+  "rows": 384,
+  "records": [
+    {
+      "candidate_id": "equation_numeric-final-002",
+      "passed": true,
+      "tokens": 337
+    },
+    {
+      "candidate_id": "equation_numeric-final-004",
+      "passed": true,
+      "tokens": 369
+    },
+    {
+      "candidate_id": "equation_numeric-final-005",
+      "passed": true,
+      "tokens": 467
+    },
+    {
+      "candidate_id": "equation_numeric-final-006",
+      "passed": true,
+      "tokens": 343
+    },
+    {
+      "candidate_id": "equation_numeric-final-008",
+      "passed": true,
+      "tokens": 375
+    },
+    {
+      "candidate_id": "equation_numeric-final-009",
+      "passed": true,
+      "tokens": 302
+    },
+    {
+      "candidate_id": "equation_numeric-final-010",
+      "passed": true,
+      "tokens": 444
+    },
+    {
+      "candidate_id": "equation_numeric-final-011",
+      "passed": true,
+      "tokens": 321
+    },
+    {
+      "candidate_id": "equation_numeric-final-014",
+      "passed": true,
+      "tokens": 392
+    },
+    {
+      "candidate_id": "equation_numeric-final-016",
+      "passed": true,
+      "tokens": 330
+    },
+    {
+      "candidate_id": "equation-augmentation-0001",
+      "passed": true,
+      "tokens": 308
+    },
+    {
+      "candidate_id": "equation-augmentation-0002",
+      "passed": true,
+      "tokens": 442
+    },
+    {
+      "candidate_id": "equation-augmentation-0003",
+      "passed": true,
+      "tokens": 439
+    },
+    {
+      "candidate_id": "equation-augmentation-0005",
+      "passed": true,
+      "tokens": 353
+    },
+    {
+      "candidate_id": "equation-augmentation-0006",
+      "passed": true,
+      "tokens": 523
+    },
+    {
+      "candidate_id": "equation-augmentation-0008",
+      "passed": true,
+      "tokens": 443
+    },
+    {
+      "candidate_id": "equation-augmentation-0010",
+      "passed": true,
+      "tokens": 309
+    },
+    {
+      "candidate_id": "equation-augmentation-0011",
+      "passed": true,
+      "tokens": 368
+    },
+    {
+      "candidate_id": "equation-augmentation-0012",
+      "passed": true,
+      "tokens": 301
+    },
+    {
+      "candidate_id": "equation-augmentation-0013",
+      "passed": true,
+      "tokens": 323
+    },
+    {
+      "candidate_id": "equation-augmentation-0015",
+      "passed": true,
+      "tokens": 381
+    },
+    {
+      "candidate_id": "equation-augmentation-0016",
+      "passed": true,
+      "tokens": 345
+    },
+    {
+      "candidate_id": "equation-augmentation-0018",
+      "passed": true,
+      "tokens": 374
+    },
+    {
+      "candidate_id": "equation-augmentation-0019",
+      "passed": true,
+      "tokens": 373
+    },
+    {
+      "candidate_id": "equation-augmentation-0020",
+      "passed": true,
+      "tokens": 287
+    },
+    {
+      "candidate_id": "equation-augmentation-0023",
+      "passed": true,
+      "tokens": 409
+    },
+    {
+      "candidate_id": "equation-augmentation-0024",
+      "passed": true,
+      "tokens": 367
+    },
+    {
+      "candidate_id": "equation-augmentation-0027",
+      "passed": true,
+      "tokens": 492
+    },
+    {
+      "candidate_id": "equation-augmentation-0028",
+      "passed": true,
+      "tokens": 366
+    },
+    {
+      "candidate_id": "equation-augmentation-0029",
+      "passed": true,
+      "tokens": 460
+    },
+    {
+      "candidate_id": "equation-augmentation-0031",
+      "passed": true,
+      "tokens": 450
+    },
+    {
+      "candidate_id": "equation-augmentation-0035",
+      "passed": true,
+      "tokens": 271
+    },
+    {
+      "candidate_id": "equation-augmentation-0036",
+      "passed": true,
+      "tokens": 369
+    },
+    {
+      "candidate_id": "equation-augmentation-0037",
+      "passed": true,
+      "tokens": 469
+    },
+    {
+      "candidate_id": "equation-augmentation-0038",
+      "passed": true,
+      "tokens": 374
+    },
+    {
+      "candidate_id": "equation-augmentation-0039",
+      "passed": true,
+      "tokens": 252
+    },
+    {
+      "candidate_id": "equation-augmentation-0040",
+      "passed": true,
+      "tokens": 381
+    },
+    {
+      "candidate_id": "equation-augmentation-0043",
+      "passed": true,
+      "tokens": 338
+    },
+    {
+      "candidate_id": "equation-augmentation-0044",
+      "passed": true,
+      "tokens": 324
+    },
+    {
+      "candidate_id": "equation-augmentation-0045",
+      "passed": true,
+      "tokens": 369
+    },
+    {
+      "candidate_id": "equation-augmentation-0047",
+      "passed": true,
+      "tokens": 360
+    },
+    {
+      "candidate_id": "equation-augmentation-0048",
+      "passed": true,
+      "tokens": 310
+    },
+    {
+      "candidate_id": "equation-augmentation-0049",
+      "passed": true,
+      "tokens": 315
+    },
+    {
+      "candidate_id": "equation-augmentation-0050",
+      "passed": true,
+      "tokens": 389
+    },
+    {
+      "candidate_id": "equation-augmentation-0051",
+      "passed": true,
+      "tokens": 281
+    },
+    {
+      "candidate_id": "equation-augmentation-0052",
+      "passed": true,
+      "tokens": 311
+    },
+    {
+      "candidate_id": "equation-augmentation-0053",
+      "passed": true,
+      "tokens": 564
+    },
+    {
+      "candidate_id": "equation-augmentation-0056",
+      "passed": true,
+      "tokens": 377
+    },
+    {
+      "candidate_id": "equation-augmentation-0057",
+      "passed": true,
+      "tokens": 360
+    },
+    {
+      "candidate_id": "equation-augmentation-0058",
+      "passed": true,
+      "tokens": 327
+    },
+    {
+      "candidate_id": "equation-augmentation-0059",
+      "passed": true,
+      "tokens": 290
+    },
+    {
+      "candidate_id": "equation-augmentation-0060",
+      "passed": true,
+      "tokens": 316
+    },
+    {
+      "candidate_id": "equation-augmentation-0061",
+      "passed": true,
+      "tokens": 263
+    },
+    {
+      "candidate_id": "equation-augmentation-0062",
+      "passed": true,
+      "tokens": 371
+    },
+    {
+      "candidate_id": "equation-augmentation-0063",
+      "passed": true,
+      "tokens": 319
+    },
+    {
+      "candidate_id": "equation-augmentation-0064",
+      "passed": true,
+      "tokens": 285
+    },
+    {
+      "candidate_id": "equation-augmentation-0067",
+      "passed": true,
+      "tokens": 470
+    },
+    {
+      "candidate_id": "equation-augmentation-0068",
+      "passed": true,
+      "tokens": 505
+    },
+    {
+      "candidate_id": "equation-augmentation-0069",
+      "passed": true,
+      "tokens": 432
+    },
+    {
+      "candidate_id": "equation-augmentation-0070",
+      "passed": true,
+      "tokens": 447
+    },
+    {
+      "candidate_id": "equation-augmentation-0072",
+      "passed": true,
+      "tokens": 357
+    },
+    {
+      "candidate_id": "equation-augmentation-0073",
+      "passed": true,
+      "tokens": 445
+    },
+    {
+      "candidate_id": "equation-augmentation-0074",
+      "passed": true,
+      "tokens": 397
+    },
+    {
+      "candidate_id": "equation-augmentation-0075",
+      "passed": true,
+      "tokens": 327
+    },
+    {
+      "candidate_id": "equation-augmentation-0076",
+      "passed": true,
+      "tokens": 361
+    },
+    {
+      "candidate_id": "equation-augmentation-0077",
+      "passed": true,
+      "tokens": 378
+    },
+    {
+      "candidate_id": "equation-augmentation-0081",
+      "passed": true,
+      "tokens": 310
+    },
+    {
+      "candidate_id": "equation-augmentation-0082",
+      "passed": true,
+      "tokens": 329
+    },
+    {
+      "candidate_id": "equation-augmentation-0083",
+      "passed": true,
+      "tokens": 348
+    },
+    {
+      "candidate_id": "equation-augmentation-0085",
+      "passed": true,
+      "tokens": 310
+    },
+    {
+      "candidate_id": "equation-augmentation-0087",
+      "passed": true,
+      "tokens": 373
+    },
+    {
+      "candidate_id": "equation-augmentation-0089",
+      "passed": true,
+      "tokens": 359
+    },
+    {
+      "candidate_id": "equation-augmentation-0090",
+      "passed": true,
+      "tokens": 315
+    },
+    {
+      "candidate_id": "equation-augmentation-0091",
+      "passed": true,
+      "tokens": 291
+    },
+    {
+      "candidate_id": "equation-augmentation-0092",
+      "passed": true,
+      "tokens": 342
+    },
+    {
+      "candidate_id": "equation-augmentation-0094",
+      "passed": true,
+      "tokens": 322
+    },
+    {
+      "candidate_id": "equation-augmentation-0095",
+      "passed": true,
+      "tokens": 378
+    },
+    {
+      "candidate_id": "equation-augmentation-0096",
+      "passed": true,
+      "tokens": 407
+    },
+    {
+      "candidate_id": "equation-augmentation-0097",
+      "passed": true,
+      "tokens": 387
+    },
+    {
+      "candidate_id": "equation-augmentation-0098",
+      "passed": true,
+      "tokens": 318
+    },
+    {
+      "candidate_id": "equation-augmentation-0100",
+      "passed": true,
+      "tokens": 280
+    },
+    {
+      "candidate_id": "equation-augmentation-0101",
+      "passed": true,
+      "tokens": 441
+    },
+    {
+      "candidate_id": "equation-augmentation-0102",
+      "passed": true,
+      "tokens": 309
+    },
+    {
+      "candidate_id": "equation-augmentation-0103",
+      "passed": true,
+      "tokens": 307
+    },
+    {
+      "candidate_id": "equation-augmentation-0104",
+      "passed": true,
+      "tokens": 279
+    },
+    {
+      "candidate_id": "equation-augmentation-0105",
+      "passed": true,
+      "tokens": 334
+    },
+    {
+      "candidate_id": "equation-augmentation-0108",
+      "passed": true,
+      "tokens": 478
+    },
+    {
+      "candidate_id": "equation-augmentation-0109",
+      "passed": true,
+      "tokens": 267
+    },
+    {
+      "candidate_id": "equation-augmentation-0111",
+      "passed": true,
+      "tokens": 389
+    },
+    {
+      "candidate_id": "equation-augmentation-0113",
+      "passed": true,
+      "tokens": 311
+    },
+    {
+      "candidate_id": "equation-augmentation-0115",
+      "passed": true,
+      "tokens": 378
+    },
+    {
+      "candidate_id": "equation-augmentation-0117",
+      "passed": true,
+      "tokens": 315
+    },
+    {
+      "candidate_id": "equation-augmentation-0118",
+      "passed": true,
+      "tokens": 511
+    },
+    {
+      "candidate_id": "equation-augmentation-0119",
+      "passed": true,
+      "tokens": 402
+    },
+    {
+      "candidate_id": "equation-augmentation-0120",
+      "passed": true,
+      "tokens": 371
+    },
+    {
+      "candidate_id": "equation-augmentation-0123",
+      "passed": true,
+      "tokens": 388
+    },
+    {
+      "candidate_id": "equation-augmentation-0124",
+      "passed": true,
+      "tokens": 315
+    },
+    {
+      "candidate_id": "equation-augmentation-0125",
+      "passed": true,
+      "tokens": 479
+    },
+    {
+      "candidate_id": "equation-augmentation-0126",
+      "passed": true,
+      "tokens": 318
+    },
+    {
+      "candidate_id": "equation-augmentation-0127",
+      "passed": true,
+      "tokens": 499
+    },
+    {
+      "candidate_id": "equation-augmentation-0128",
+      "passed": true,
+      "tokens": 351
+    },
+    {
+      "candidate_id": "equation-augmentation-0130",
+      "passed": true,
+      "tokens": 353
+    },
+    {
+      "candidate_id": "equation-augmentation-0131",
+      "passed": true,
+      "tokens": 463
+    },
+    {
+      "candidate_id": "equation-augmentation-0133",
+      "passed": true,
+      "tokens": 303
+    },
+    {
+      "candidate_id": "equation-augmentation-0134",
+      "passed": true,
+      "tokens": 428
+    },
+    {
+      "candidate_id": "equation-augmentation-0136",
+      "passed": true,
+      "tokens": 325
+    },
+    {
+      "candidate_id": "equation-augmentation-0138",
+      "passed": true,
+      "tokens": 379
+    },
+    {
+      "candidate_id": "equation-augmentation-0139",
+      "passed": true,
+      "tokens": 308
+    },
+    {
+      "candidate_id": "equation-augmentation-0141",
+      "passed": true,
+      "tokens": 376
+    },
+    {
+      "candidate_id": "equation-augmentation-0142",
+      "passed": true,
+      "tokens": 420
+    },
+    {
+      "candidate_id": "equation-augmentation-0143",
+      "passed": true,
+      "tokens": 347
+    },
+    {
+      "candidate_id": "equation-augmentation-0144",
+      "passed": true,
+      "tokens": 274
+    },
+    {
+      "candidate_id": "equation-augmentation-0145",
+      "passed": true,
+      "tokens": 462
+    },
+    {
+      "candidate_id": "equation-augmentation-0146",
+      "passed": true,
+      "tokens": 283
+    },
+    {
+      "candidate_id": "equation-augmentation-0147",
+      "passed": true,
+      "tokens": 302
+    },
+    {
+      "candidate_id": "equation-augmentation-0148",
+      "passed": true,
+      "tokens": 343
+    },
+    {
+      "candidate_id": "equation-augmentation-0149",
+      "passed": true,
+      "tokens": 313
+    },
+    {
+      "candidate_id": "equation-augmentation-0151",
+      "passed": true,
+      "tokens": 372
+    },
+    {
+      "candidate_id": "equation-augmentation-0153",
+      "passed": true,
+      "tokens": 371
+    },
+    {
+      "candidate_id": "equation-augmentation-0154",
+      "passed": true,
+      "tokens": 333
+    },
+    {
+      "candidate_id": "equation-augmentation-0155",
+      "passed": true,
+      "tokens": 302
+    },
+    {
+      "candidate_id": "equation-augmentation-0156",
+      "passed": true,
+      "tokens": 314
+    },
+    {
+      "candidate_id": "equation-augmentation-0157",
+      "passed": true,
+      "tokens": 299
+    },
+    {
+      "candidate_id": "equation-augmentation-0158",
+      "passed": true,
+      "tokens": 425
+    },
+    {
+      "candidate_id": "equation-augmentation-0159",
+      "passed": true,
+      "tokens": 338
+    },
+    {
+      "candidate_id": "equation-augmentation-0160",
+      "passed": true,
+      "tokens": 422
+    },
+    {
+      "candidate_id": "equation-augmentation-0161",
+      "passed": true,
+      "tokens": 452
+    },
+    {
+      "candidate_id": "equation-augmentation-0162",
+      "passed": true,
+      "tokens": 274
+    },
+    {
+      "candidate_id": "equation-augmentation-0164",
+      "passed": true,
+      "tokens": 367
+    },
+    {
+      "candidate_id": "equation-augmentation-0165",
+      "passed": true,
+      "tokens": 327
+    },
+    {
+      "candidate_id": "equation-augmentation-0168",
+      "passed": true,
+      "tokens": 415
+    },
+    {
+      "candidate_id": "equation-augmentation-0169",
+      "passed": true,
+      "tokens": 306
+    },
+    {
+      "candidate_id": "equation-augmentation-0171",
+      "passed": true,
+      "tokens": 315
+    },
+    {
+      "candidate_id": "equation-augmentation-0173",
+      "passed": true,
+      "tokens": 263
+    },
+    {
+      "candidate_id": "equation-augmentation-0174",
+      "passed": true,
+      "tokens": 446
+    },
+    {
+      "candidate_id": "equation-augmentation-0175",
+      "passed": true,
+      "tokens": 313
+    },
+    {
+      "candidate_id": "equation-augmentation-0176",
+      "passed": true,
+      "tokens": 308
+    },
+    {
+      "candidate_id": "equation-augmentation-0178",
+      "passed": true,
+      "tokens": 300
+    },
+    {
+      "candidate_id": "equation-augmentation-0179",
+      "passed": true,
+      "tokens": 412
+    },
+    {
+      "candidate_id": "equation-augmentation-0180",
+      "passed": true,
+      "tokens": 347
+    },
+    {
+      "candidate_id": "equation-augmentation-0181",
+      "passed": true,
+      "tokens": 384
+    },
+    {
+      "candidate_id": "equation-augmentation-0182",
+      "passed": true,
+      "tokens": 317
+    },
+    {
+      "candidate_id": "equation-augmentation-0184",
+      "passed": true,
+      "tokens": 494
+    },
+    {
+      "candidate_id": "equation-augmentation-0186",
+      "passed": true,
+      "tokens": 441
+    },
+    {
+      "candidate_id": "equation-augmentation-0188",
+      "passed": true,
+      "tokens": 354
+    },
+    {
+      "candidate_id": "equation-augmentation-0189",
+      "passed": true,
+      "tokens": 399
+    },
+    {
+      "candidate_id": "equation-augmentation-0192",
+      "passed": true,
+      "tokens": 357
+    },
+    {
+      "candidate_id": "equation-augmentation-0193",
+      "passed": true,
+      "tokens": 311
+    },
+    {
+      "candidate_id": "equation-augmentation-0194",
+      "passed": true,
+      "tokens": 352
+    },
+    {
+      "candidate_id": "equation-augmentation-0195",
+      "passed": true,
+      "tokens": 313
+    },
+    {
+      "candidate_id": "equation-augmentation-0196",
+      "passed": true,
+      "tokens": 340
+    },
+    {
+      "candidate_id": "equation-augmentation-0197",
+      "passed": true,
+      "tokens": 357
+    },
+    {
+      "candidate_id": "equation-augmentation-0200",
+      "passed": true,
+      "tokens": 433
+    },
+    {
+      "candidate_id": "equation-augmentation-0201",
+      "passed": true,
+      "tokens": 348
+    },
+    {
+      "candidate_id": "equation-augmentation-0203",
+      "passed": true,
+      "tokens": 459
+    },
+    {
+      "candidate_id": "equation-augmentation-0204",
+      "passed": true,
+      "tokens": 361
+    },
+    {
+      "candidate_id": "equation-augmentation-0206",
+      "passed": true,
+      "tokens": 280
+    },
+    {
+      "candidate_id": "equation-augmentation-0207",
+      "passed": true,
+      "tokens": 338
+    },
+    {
+      "candidate_id": "equation-augmentation-0208",
+      "passed": true,
+      "tokens": 329
+    },
+    {
+      "candidate_id": "equation-augmentation-0209",
+      "passed": true,
+      "tokens": 415
+    },
+    {
+      "candidate_id": "equation-augmentation-0210",
+      "passed": true,
+      "tokens": 356
+    },
+    {
+      "candidate_id": "equation-augmentation-0211",
+      "passed": true,
+      "tokens": 362
+    },
+    {
+      "candidate_id": "equation-augmentation-0212",
+      "passed": true,
+      "tokens": 384
+    },
+    {
+      "candidate_id": "equation-augmentation-0213",
+      "passed": true,
+      "tokens": 424
+    },
+    {
+      "candidate_id": "equation-augmentation-0215",
+      "passed": true,
+      "tokens": 388
+    },
+    {
+      "candidate_id": "equation-augmentation-0217",
+      "passed": true,
+      "tokens": 397
+    },
+    {
+      "candidate_id": "equation-augmentation-0219",
+      "passed": true,
+      "tokens": 339
+    },
+    {
+      "candidate_id": "equation-augmentation-0220",
+      "passed": true,
+      "tokens": 565
+    },
+    {
+      "candidate_id": "equation-augmentation-0221",
+      "passed": true,
+      "tokens": 525
+    },
+    {
+      "candidate_id": "equation-augmentation-0222",
+      "passed": true,
+      "tokens": 335
+    },
+    {
+      "candidate_id": "equation-augmentation-0223",
+      "passed": true,
+      "tokens": 382
+    },
+    {
+      "candidate_id": "equation-augmentation-0226",
+      "passed": true,
+      "tokens": 369
+    },
+    {
+      "candidate_id": "equation-augmentation-0227",
+      "passed": true,
+      "tokens": 392
+    },
+    {
+      "candidate_id": "equation-augmentation-0228",
+      "passed": true,
+      "tokens": 434
+    },
+    {
+      "candidate_id": "equation-augmentation-0230",
+      "passed": true,
+      "tokens": 296
+    },
+    {
+      "candidate_id": "equation-augmentation-0232",
+      "passed": true,
+      "tokens": 342
+    },
+    {
+      "candidate_id": "equation-augmentation-0233",
+      "passed": true,
+      "tokens": 307
+    },
+    {
+      "candidate_id": "equation-augmentation-0234",
+      "passed": true,
+      "tokens": 319
+    },
+    {
+      "candidate_id": "equation-augmentation-0235",
+      "passed": true,
+      "tokens": 314
+    },
+    {
+      "candidate_id": "equation-augmentation-0237",
+      "passed": true,
+      "tokens": 509
+    },
+    {
+      "candidate_id": "equation-augmentation-0238",
+      "passed": true,
+      "tokens": 369
+    },
+    {
+      "candidate_id": "equation-augmentation-0239",
+      "passed": true,
+      "tokens": 323
+    },
+    {
+      "candidate_id": "equation-augmentation-0240",
+      "passed": true,
+      "tokens": 306
+    },
+    {
+      "candidate_id": "equation-augmentation-0241",
+      "passed": true,
+      "tokens": 338
+    },
+    {
+      "candidate_id": "equation-augmentation-0242",
+      "passed": true,
+      "tokens": 301
+    },
+    {
+      "candidate_id": "equation-augmentation-0243",
+      "passed": true,
+      "tokens": 301
+    },
+    {
+      "candidate_id": "equation-augmentation-0244",
+      "passed": true,
+      "tokens": 371
+    },
+    {
+      "candidate_id": "equation-augmentation-0245",
+      "passed": true,
+      "tokens": 303
+    },
+    {
+      "candidate_id": "equation-augmentation-0246",
+      "passed": true,
+      "tokens": 443
+    },
+    {
+      "candidate_id": "equation-augmentation-0247",
+      "passed": true,
+      "tokens": 275
+    },
+    {
+      "candidate_id": "equation-augmentation-0248",
+      "passed": true,
+      "tokens": 426
+    },
+    {
+      "candidate_id": "equation-augmentation-0249",
+      "passed": true,
+      "tokens": 281
+    },
+    {
+      "candidate_id": "equation-augmentation-0250",
+      "passed": true,
+      "tokens": 397
+    },
+    {
+      "candidate_id": "equation-augmentation-0253",
+      "passed": true,
+      "tokens": 514
+    },
+    {
+      "candidate_id": "equation-augmentation-0255",
+      "passed": true,
+      "tokens": 298
+    },
+    {
+      "candidate_id": "equation-augmentation-0256",
+      "passed": true,
+      "tokens": 344
+    },
+    {
+      "candidate_id": "equation-augmentation-0258",
+      "passed": true,
+      "tokens": 297
+    },
+    {
+      "candidate_id": "equation-augmentation-0259",
+      "passed": true,
+      "tokens": 412
+    },
+    {
+      "candidate_id": "equation-augmentation-0261",
+      "passed": true,
+      "tokens": 280
+    },
+    {
+      "candidate_id": "equation-augmentation-0263",
+      "passed": true,
+      "tokens": 399
+    },
+    {
+      "candidate_id": "equation-augmentation-0264",
+      "passed": true,
+      "tokens": 328
+    },
+    {
+      "candidate_id": "equation-augmentation-0265",
+      "passed": true,
+      "tokens": 468
+    },
+    {
+      "candidate_id": "equation-augmentation-0267",
+      "passed": true,
+      "tokens": 346
+    },
+    {
+      "candidate_id": "equation-augmentation-0269",
+      "passed": true,
+      "tokens": 397
+    },
+    {
+      "candidate_id": "equation-augmentation-0270",
+      "passed": true,
+      "tokens": 298
+    },
+    {
+      "candidate_id": "equation-augmentation-0271",
+      "passed": true,
+      "tokens": 333
+    },
+    {
+      "candidate_id": "equation-augmentation-0272",
+      "passed": true,
+      "tokens": 424
+    },
+    {
+      "candidate_id": "equation-augmentation-0273",
+      "passed": true,
+      "tokens": 363
+    },
+    {
+      "candidate_id": "equation-augmentation-0274",
+      "passed": true,
+      "tokens": 379
+    },
+    {
+      "candidate_id": "equation-augmentation-0275",
+      "passed": true,
+      "tokens": 266
+    },
+    {
+      "candidate_id": "equation-augmentation-0276",
+      "passed": true,
+      "tokens": 267
+    },
+    {
+      "candidate_id": "equation-augmentation-0277",
+      "passed": true,
+      "tokens": 314
+    },
+    {
+      "candidate_id": "equation-augmentation-0278",
+      "passed": true,
+      "tokens": 282
+    },
+    {
+      "candidate_id": "equation-augmentation-0279",
+      "passed": true,
+      "tokens": 311
+    },
+    {
+      "candidate_id": "equation-augmentation-0280",
+      "passed": true,
+      "tokens": 338
+    },
+    {
+      "candidate_id": "equation-augmentation-0281",
+      "passed": true,
+      "tokens": 732
+    },
+    {
+      "candidate_id": "equation-augmentation-0283",
+      "passed": true,
+      "tokens": 307
+    },
+    {
+      "candidate_id": "equation-augmentation-0284",
+      "passed": true,
+      "tokens": 274
+    },
+    {
+      "candidate_id": "equation-augmentation-0285",
+      "passed": true,
+      "tokens": 376
+    },
+    {
+      "candidate_id": "equation-augmentation-0287",
+      "passed": true,
+      "tokens": 422
+    },
+    {
+      "candidate_id": "equation-augmentation-0288",
+      "passed": true,
+      "tokens": 276
+    },
+    {
+      "candidate_id": "equation-augmentation-0289",
+      "passed": true,
+      "tokens": 289
+    },
+    {
+      "candidate_id": "equation-augmentation-0290",
+      "passed": true,
+      "tokens": 354
+    },
+    {
+      "candidate_id": "equation-augmentation-0291",
+      "passed": true,
+      "tokens": 426
+    },
+    {
+      "candidate_id": "equation-augmentation-0292",
+      "passed": true,
+      "tokens": 339
+    },
+    {
+      "candidate_id": "equation-augmentation-0293",
+      "passed": true,
+      "tokens": 449
+    },
+    {
+      "candidate_id": "equation-augmentation-0295",
+      "passed": true,
+      "tokens": 288
+    },
+    {
+      "candidate_id": "equation-augmentation-0296",
+      "passed": true,
+      "tokens": 406
+    },
+    {
+      "candidate_id": "equation-augmentation-0297",
+      "passed": true,
+      "tokens": 317
+    },
+    {
+      "candidate_id": "equation-augmentation-0299",
+      "passed": true,
+      "tokens": 311
+    },
+    {
+      "candidate_id": "equation-augmentation-0300",
+      "passed": true,
+      "tokens": 315
+    },
+    {
+      "candidate_id": "equation-augmentation-0301",
+      "passed": true,
+      "tokens": 358
+    },
+    {
+      "candidate_id": "equation-augmentation-0303",
+      "passed": true,
+      "tokens": 309
+    },
+    {
+      "candidate_id": "equation-augmentation-0304",
+      "passed": true,
+      "tokens": 265
+    },
+    {
+      "candidate_id": "equation-augmentation-0305",
+      "passed": true,
+      "tokens": 387
+    },
+    {
+      "candidate_id": "equation-augmentation-0306",
+      "passed": true,
+      "tokens": 345
+    },
+    {
+      "candidate_id": "equation-augmentation-0307",
+      "passed": true,
+      "tokens": 345
+    },
+    {
+      "candidate_id": "equation-augmentation-0308",
+      "passed": true,
+      "tokens": 337
+    },
+    {
+      "candidate_id": "equation-augmentation-0309",
+      "passed": true,
+      "tokens": 338
+    },
+    {
+      "candidate_id": "equation-augmentation-0310",
+      "passed": true,
+      "tokens": 381
+    },
+    {
+      "candidate_id": "equation-augmentation-0311",
+      "passed": true,
+      "tokens": 306
+    },
+    {
+      "candidate_id": "equation-augmentation-0312",
+      "passed": true,
+      "tokens": 359
+    },
+    {
+      "candidate_id": "equation-augmentation-0313",
+      "passed": true,
+      "tokens": 329
+    },
+    {
+      "candidate_id": "equation-augmentation-0314",
+      "passed": true,
+      "tokens": 277
+    },
+    {
+      "candidate_id": "equation-augmentation-0315",
+      "passed": true,
+      "tokens": 359
+    },
+    {
+      "candidate_id": "equation-augmentation-0317",
+      "passed": true,
+      "tokens": 275
+    },
+    {
+      "candidate_id": "equation-augmentation-0318",
+      "passed": true,
+      "tokens": 280
+    },
+    {
+      "candidate_id": "equation-augmentation-0320",
+      "passed": true,
+      "tokens": 292
+    },
+    {
+      "candidate_id": "equation-augmentation-0321",
+      "passed": true,
+      "tokens": 441
+    },
+    {
+      "candidate_id": "equation-augmentation-0322",
+      "passed": true,
+      "tokens": 496
+    },
+    {
+      "candidate_id": "equation-augmentation-0323",
+      "passed": true,
+      "tokens": 450
+    },
+    {
+      "candidate_id": "equation-augmentation-0324",
+      "passed": true,
+      "tokens": 371
+    },
+    {
+      "candidate_id": "equation-augmentation-0325",
+      "passed": true,
+      "tokens": 378
+    },
+    {
+      "candidate_id": "equation-augmentation-0327",
+      "passed": true,
+      "tokens": 378
+    },
+    {
+      "candidate_id": "equation-augmentation-0328",
+      "passed": true,
+      "tokens": 325
+    },
+    {
+      "candidate_id": "equation-augmentation-0330",
+      "passed": true,
+      "tokens": 282
+    },
+    {
+      "candidate_id": "equation-augmentation-0331",
+      "passed": true,
+      "tokens": 399
+    },
+    {
+      "candidate_id": "equation-augmentation-0332",
+      "passed": true,
+      "tokens": 353
+    },
+    {
+      "candidate_id": "equation-augmentation-0333",
+      "passed": true,
+      "tokens": 351
+    },
+    {
+      "candidate_id": "equation-augmentation-0334",
+      "passed": true,
+      "tokens": 357
+    },
+    {
+      "candidate_id": "equation-augmentation-0338",
+      "passed": true,
+      "tokens": 356
+    },
+    {
+      "candidate_id": "equation-augmentation-0339",
+      "passed": true,
+      "tokens": 271
+    },
+    {
+      "candidate_id": "equation-augmentation-0340",
+      "passed": true,
+      "tokens": 370
+    },
+    {
+      "candidate_id": "equation-augmentation-0341",
+      "passed": true,
+      "tokens": 310
+    },
+    {
+      "candidate_id": "equation-augmentation-0342",
+      "passed": true,
+      "tokens": 350
+    },
+    {
+      "candidate_id": "equation-augmentation-0343",
+      "passed": true,
+      "tokens": 319
+    },
+    {
+      "candidate_id": "equation-augmentation-0344",
+      "passed": true,
+      "tokens": 386
+    },
+    {
+      "candidate_id": "equation-augmentation-0345",
+      "passed": true,
+      "tokens": 422
+    },
+    {
+      "candidate_id": "equation-augmentation-0346",
+      "passed": true,
+      "tokens": 299
+    },
+    {
+      "candidate_id": "equation-augmentation-0347",
+      "passed": true,
+      "tokens": 446
+    },
+    {
+      "candidate_id": "equation-augmentation-0348",
+      "passed": true,
+      "tokens": 347
+    },
+    {
+      "candidate_id": "equation-augmentation-0349",
+      "passed": true,
+      "tokens": 462
+    },
+    {
+      "candidate_id": "equation-augmentation-0350",
+      "passed": true,
+      "tokens": 390
+    },
+    {
+      "candidate_id": "equation-augmentation-0351",
+      "passed": true,
+      "tokens": 397
+    },
+    {
+      "candidate_id": "equation-augmentation-0352",
+      "passed": true,
+      "tokens": 520
+    },
+    {
+      "candidate_id": "equation-augmentation-0353",
+      "passed": true,
+      "tokens": 293
+    },
+    {
+      "candidate_id": "equation-augmentation-0354",
+      "passed": true,
+      "tokens": 349
+    },
+    {
+      "candidate_id": "equation-augmentation-0356",
+      "passed": true,
+      "tokens": 347
+    },
+    {
+      "candidate_id": "equation-augmentation-0357",
+      "passed": true,
+      "tokens": 358
+    },
+    {
+      "candidate_id": "equation-augmentation-0358",
+      "passed": true,
+      "tokens": 364
+    },
+    {
+      "candidate_id": "equation-augmentation-0359",
+      "passed": true,
+      "tokens": 279
+    },
+    {
+      "candidate_id": "equation-augmentation-0362",
+      "passed": true,
+      "tokens": 405
+    },
+    {
+      "candidate_id": "equation-augmentation-0363",
+      "passed": true,
+      "tokens": 269
+    },
+    {
+      "candidate_id": "equation-augmentation-0365",
+      "passed": true,
+      "tokens": 393
+    },
+    {
+      "candidate_id": "equation-augmentation-0366",
+      "passed": true,
+      "tokens": 355
+    },
+    {
+      "candidate_id": "equation-augmentation-0367",
+      "passed": true,
+      "tokens": 376
+    },
+    {
+      "candidate_id": "equation-augmentation-0368",
+      "passed": true,
+      "tokens": 265
+    },
+    {
+      "candidate_id": "equation-augmentation-0370",
+      "passed": true,
+      "tokens": 316
+    },
+    {
+      "candidate_id": "equation-augmentation-0372",
+      "passed": true,
+      "tokens": 332
+    },
+    {
+      "candidate_id": "equation-augmentation-0373",
+      "passed": true,
+      "tokens": 416
+    },
+    {
+      "candidate_id": "equation-augmentation-0374",
+      "passed": true,
+      "tokens": 309
+    },
+    {
+      "candidate_id": "equation-augmentation-0377",
+      "passed": true,
+      "tokens": 312
+    },
+    {
+      "candidate_id": "equation-augmentation-0379",
+      "passed": true,
+      "tokens": 506
+    },
+    {
+      "candidate_id": "equation-augmentation-0380",
+      "passed": true,
+      "tokens": 390
+    },
+    {
+      "candidate_id": "equation-augmentation-0381",
+      "passed": true,
+      "tokens": 362
+    },
+    {
+      "candidate_id": "equation-augmentation-0382",
+      "passed": true,
+      "tokens": 355
+    },
+    {
+      "candidate_id": "equation-augmentation-0384",
+      "passed": true,
+      "tokens": 352
+    },
+    {
+      "candidate_id": "equation-augmentation-0385",
+      "passed": true,
+      "tokens": 338
+    },
+    {
+      "candidate_id": "equation-augmentation-0386",
+      "passed": true,
+      "tokens": 342
+    },
+    {
+      "candidate_id": "equation-augmentation-0387",
+      "passed": true,
+      "tokens": 369
+    },
+    {
+      "candidate_id": "equation-augmentation-0388",
+      "passed": true,
+      "tokens": 341
+    },
+    {
+      "candidate_id": "equation-augmentation-0389",
+      "passed": true,
+      "tokens": 424
+    },
+    {
+      "candidate_id": "equation-augmentation-0391",
+      "passed": true,
+      "tokens": 348
+    },
+    {
+      "candidate_id": "equation-augmentation-0393",
+      "passed": true,
+      "tokens": 270
+    },
+    {
+      "candidate_id": "equation-augmentation-0394",
+      "passed": true,
+      "tokens": 371
+    },
+    {
+      "candidate_id": "equation-augmentation-0395",
+      "passed": true,
+      "tokens": 379
+    },
+    {
+      "candidate_id": "equation-augmentation-0396",
+      "passed": true,
+      "tokens": 276
+    },
+    {
+      "candidate_id": "equation-augmentation-0397",
+      "passed": true,
+      "tokens": 431
+    },
+    {
+      "candidate_id": "equation-augmentation-0400",
+      "passed": true,
+      "tokens": 334
+    },
+    {
+      "candidate_id": "equation-augmentation-0401",
+      "passed": true,
+      "tokens": 495
+    },
+    {
+      "candidate_id": "equation-augmentation-0402",
+      "passed": true,
+      "tokens": 439
+    },
+    {
+      "candidate_id": "equation-augmentation-0404",
+      "passed": true,
+      "tokens": 369
+    },
+    {
+      "candidate_id": "equation-augmentation-0407",
+      "passed": true,
+      "tokens": 308
+    },
+    {
+      "candidate_id": "equation-augmentation-0408",
+      "passed": true,
+      "tokens": 273
+    },
+    {
+      "candidate_id": "equation-augmentation-0409",
+      "passed": true,
+      "tokens": 665
+    },
+    {
+      "candidate_id": "equation-augmentation-0410",
+      "passed": true,
+      "tokens": 502
+    },
+    {
+      "candidate_id": "equation-augmentation-0411",
+      "passed": true,
+      "tokens": 276
+    },
+    {
+      "candidate_id": "equation-augmentation-0412",
+      "passed": true,
+      "tokens": 400
+    },
+    {
+      "candidate_id": "equation-augmentation-0413",
+      "passed": true,
+      "tokens": 321
+    },
+    {
+      "candidate_id": "equation-augmentation-0414",
+      "passed": true,
+      "tokens": 406
+    },
+    {
+      "candidate_id": "equation-augmentation-0415",
+      "passed": true,
+      "tokens": 296
+    },
+    {
+      "candidate_id": "equation-augmentation-0416",
+      "passed": true,
+      "tokens": 398
+    },
+    {
+      "candidate_id": "equation-augmentation-0418",
+      "passed": true,
+      "tokens": 287
+    },
+    {
+      "candidate_id": "equation-augmentation-0419",
+      "passed": true,
+      "tokens": 513
+    },
+    {
+      "candidate_id": "equation-augmentation-0420",
+      "passed": true,
+      "tokens": 369
+    },
+    {
+      "candidate_id": "equation-augmentation-0421",
+      "passed": true,
+      "tokens": 437
+    },
+    {
+      "candidate_id": "equation-augmentation-0422",
+      "passed": true,
+      "tokens": 274
+    },
+    {
+      "candidate_id": "equation-augmentation-0423",
+      "passed": true,
+      "tokens": 385
+    },
+    {
+      "candidate_id": "equation-augmentation-0424",
+      "passed": true,
+      "tokens": 342
+    },
+    {
+      "candidate_id": "equation-augmentation-0425",
+      "passed": true,
+      "tokens": 280
+    },
+    {
+      "candidate_id": "equation-augmentation-0426",
+      "passed": true,
+      "tokens": 313
+    },
+    {
+      "candidate_id": "equation-augmentation-0427",
+      "passed": true,
+      "tokens": 312
+    },
+    {
+      "candidate_id": "equation-augmentation-0428",
+      "passed": true,
+      "tokens": 354
+    },
+    {
+      "candidate_id": "equation-augmentation-0430",
+      "passed": true,
+      "tokens": 302
+    },
+    {
+      "candidate_id": "equation-augmentation-0431",
+      "passed": true,
+      "tokens": 374
+    },
+    {
+      "candidate_id": "equation-augmentation-0432",
+      "passed": true,
+      "tokens": 319
+    },
+    {
+      "candidate_id": "equation-augmentation-0433",
+      "passed": true,
+      "tokens": 329
+    },
+    {
+      "candidate_id": "equation-augmentation-0435",
+      "passed": true,
+      "tokens": 339
+    },
+    {
+      "candidate_id": "equation-augmentation-0436",
+      "passed": true,
+      "tokens": 314
+    },
+    {
+      "candidate_id": "equation-augmentation-0439",
+      "passed": true,
+      "tokens": 362
+    },
+    {
+      "candidate_id": "equation-augmentation-0441",
+      "passed": true,
+      "tokens": 301
+    },
+    {
+      "candidate_id": "equation-augmentation-0442",
+      "passed": true,
+      "tokens": 458
+    },
+    {
+      "candidate_id": "equation-augmentation-0443",
+      "passed": true,
+      "tokens": 316
+    },
+    {
+      "candidate_id": "equation-augmentation-0444",
+      "passed": true,
+      "tokens": 321
+    },
+    {
+      "candidate_id": "equation-augmentation-0445",
+      "passed": true,
+      "tokens": 371
+    },
+    {
+      "candidate_id": "equation-augmentation-0446",
+      "passed": true,
+      "tokens": 276
+    },
+    {
+      "candidate_id": "equation-augmentation-0447",
+      "passed": true,
+      "tokens": 401
+    },
+    {
+      "candidate_id": "equation-augmentation-0449",
+      "passed": true,
+      "tokens": 330
+    },
+    {
+      "candidate_id": "equation-augmentation-0451",
+      "passed": true,
+      "tokens": 340
+    },
+    {
+      "candidate_id": "equation-augmentation-0452",
+      "passed": true,
+      "tokens": 508
+    },
+    {
+      "candidate_id": "equation-augmentation-0453",
+      "passed": true,
+      "tokens": 282
+    },
+    {
+      "candidate_id": "equation-augmentation-0454",
+      "passed": true,
+      "tokens": 294
+    },
+    {
+      "candidate_id": "equation-augmentation-0456",
+      "passed": true,
+      "tokens": 263
+    },
+    {
+      "candidate_id": "equation-augmentation-0457",
+      "passed": true,
+      "tokens": 358
+    },
+    {
+      "candidate_id": "equation-augmentation-0458",
+      "passed": true,
+      "tokens": 285
+    },
+    {
+      "candidate_id": "equation-augmentation-0459",
+      "passed": true,
+      "tokens": 438
+    },
+    {
+      "candidate_id": "equation-augmentation-0461",
+      "passed": true,
+      "tokens": 326
+    },
+    {
+      "candidate_id": "equation-augmentation-0462",
+      "passed": true,
+      "tokens": 330
+    },
+    {
+      "candidate_id": "equation-augmentation-0464",
+      "passed": true,
+      "tokens": 379
+    },
+    {
+      "candidate_id": "equation-augmentation-0465",
+      "passed": true,
+      "tokens": 367
+    },
+    {
+      "candidate_id": "equation-augmentation-0467",
+      "passed": true,
+      "tokens": 302
+    },
+    {
+      "candidate_id": "equation-augmentation-0470",
+      "passed": true,
+      "tokens": 485
+    },
+    {
+      "candidate_id": "equation-augmentation-0471",
+      "passed": true,
+      "tokens": 466
+    },
+    {
+      "candidate_id": "equation-augmentation-0472",
+      "passed": true,
+      "tokens": 291
+    },
+    {
+      "candidate_id": "equation-augmentation-0475",
+      "passed": true,
+      "tokens": 413
+    },
+    {
+      "candidate_id": "equation-augmentation-0476",
+      "passed": true,
+      "tokens": 339
+    },
+    {
+      "candidate_id": "equation-augmentation-0477",
+      "passed": true,
+      "tokens": 362
+    },
+    {
+      "candidate_id": "equation-augmentation-0478",
+      "passed": true,
+      "tokens": 299
+    },
+    {
+      "candidate_id": "equation-augmentation-0479",
+      "passed": true,
+      "tokens": 383
+    },
+    {
+      "candidate_id": "equation-augmentation-0480",
+      "passed": true,
+      "tokens": 411
+    },
+    {
+      "candidate_id": "equation-augmentation-0481",
+      "passed": true,
+      "tokens": 350
+    },
+    {
+      "candidate_id": "equation-augmentation-0483",
+      "passed": true,
+      "tokens": 375
+    },
+    {
+      "candidate_id": "equation-augmentation-0485",
+      "passed": true,
+      "tokens": 333
+    },
+    {
+      "candidate_id": "equation-augmentation-0486",
+      "passed": true,
+      "tokens": 390
+    },
+    {
+      "candidate_id": "equation-augmentation-0487",
+      "passed": true,
+      "tokens": 371
+    },
+    {
+      "candidate_id": "equation-augmentation-0488",
+      "passed": true,
+      "tokens": 324
+    },
+    {
+      "candidate_id": "equation-augmentation-0490",
+      "passed": true,
+      "tokens": 343
+    },
+    {
+      "candidate_id": "equation-augmentation-0494",
+      "passed": true,
+      "tokens": 300
+    },
+    {
+      "candidate_id": "equation-augmentation-0495",
+      "passed": true,
+      "tokens": 622
+    },
+    {
+      "candidate_id": "equation-augmentation-0496",
+      "passed": true,
+      "tokens": 367
+    },
+    {
+      "candidate_id": "equation-augmentation-0497",
+      "passed": true,
+      "tokens": 313
+    },
+    {
+      "candidate_id": "equation-augmentation-0498",
+      "passed": true,
+      "tokens": 274
+    },
+    {
+      "candidate_id": "equation-augmentation-0499",
+      "passed": true,
+      "tokens": 306
+    },
+    {
+      "candidate_id": "equation-augmentation-0500",
+      "passed": true,
+      "tokens": 330
+    }
+  ],
+  "raw_model_thinking_used": false,
+  "actual_tokenizer": {
+    "status": "local_only",
+    "model": "Qwen/Qwen3-0.6B",
+    "path": "/home/hajimi2025/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+    "files_sha256": {
+      "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    "model_loaded": false,
+    "network_used": false
+  }
+}

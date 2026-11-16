@@ -1,0 +1,17 @@
+test_boxed_literal_operator_braces_roundtrip (test_equation_augmentation.ExactEquationTests.test_boxed_literal_operator_braces_roundtrip) ... FAIL
+
+======================================================================
+FAIL: test_boxed_literal_operator_braces_roundtrip (test_equation_augmentation.ExactEquationTests.test_boxed_literal_operator_braces_roundtrip)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hajimi2025/Qwen3-experiment/tests/test_equation_augmentation.py", line 85, in test_boxed_literal_operator_braces_roundtrip
+    self.assertEqual(extracted,answer)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+AssertionError: '' != '}30'
++ }30
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.396s
+
+FAILED (failures=1)

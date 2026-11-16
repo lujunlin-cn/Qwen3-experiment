@@ -1,0 +1,5 @@
+2.13.0+cu130
+NVIDIA GB10
+allocation_ok tensor([0.], device='cuda:0')
+cuda (37832495104, 130663165952)
+accelerator (37832495104, 130663165952)

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "function_checks": {
+    "normalize_answer_text": true,
+    "official_numeric_match": true,
+    "numeric_or_text_match": true,
+    "_gravity_quantiles": true,
+    "_extract_gravity_profile": true,
+    "_gravity_generator_render": true,
+    "_gravity_render": true,
+    "_gravity_prompt_parts": true,
+    "solve_gravity_prompt": true,
+    "_gravity_verifier_fit": true,
+    "_gravity_verifier_distance": true,
+    "gravity_identifiability": true,
+    "generate_gravity_sample": true,
+    "verify_gravity_sample": true,
+    "_smoke_close": true,
+    "_verify_gravity_proof": true,
+    "audit_gravity_formula": true,
+    "build_nvidia_gravity_targeted_v2": true
+  }
+}

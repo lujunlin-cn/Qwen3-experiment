@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "related_cpu_tests": 83,
+  "additional_cpu_update_tests": 1,
+  "logs": [
+    "related_cpu_final.log",
+    "augmentation_cpu_numerics_final.log"
+  ],
+  "formal_arms_start_from_r1": true
+}

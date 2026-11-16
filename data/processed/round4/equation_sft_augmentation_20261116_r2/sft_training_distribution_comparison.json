@@ -1,0 +1,102 @@
+{
+  "arms": {
+    "B": {
+      "family_counts": {
+        "flip": 47,
+        "normal": 53
+      },
+      "example_count_distribution": {
+        "4": 35,
+        "5": 40,
+        "3": 25
+      },
+      "example_operator_count_distribution": {
+        "2": 39,
+        "3": 59,
+        "1": 2
+      },
+      "selected_witness_rule_counts": {
+        "flip_mul_p1": 13,
+        "flip_maxmodmin": 4,
+        "sub": 14,
+        "mul": 16,
+        "flip_sub_suffix": 10,
+        "join_swap": 35,
+        "join": 32,
+        "flip_add_p1": 12,
+        "flip_absdiff": 7,
+        "flip_mul": 12,
+        "flip_add_m1": 11,
+        "flip_mul_m1": 11,
+        "add_p1": 15,
+        "add": 10,
+        "add_m1": 10,
+        "mul_p1": 4,
+        "flip_add": 4,
+        "flip_absdiff_suffix": 3,
+        "absdiff": 5,
+        "mul_m1": 17,
+        "flip_sub_prefix": 3,
+        "flip_absdiff_prefix": 1,
+        "maxmodmin": 5,
+        "absdiff_prefix": 3
+      }
+    },
+    "C": {
+      "family_counts": {
+        "normal": 36,
+        "flip": 64
+      },
+      "example_count_distribution": {
+        "5": 40,
+        "3": 26,
+        "4": 34
+      },
+      "example_operator_count_distribution": {
+        "2": 51,
+        "3": 48,
+        "1": 1
+      },
+      "selected_witness_rule_counts": {
+        "absdiff_prefix": 8,
+        "join": 16,
+        "mul_p1": 6,
+        "sub": 11,
+        "add_p1": 9,
+        "flip_mul_m1": 11,
+        "flip_absdiff": 16,
+        "flip_sub_prefix": 18,
+        "join_swap": 16,
+        "flip_add_p1": 7,
+        "mul": 14,
+        "flip_mul": 27,
+        "flip_add": 32,
+        "add_m1": 4,
+        "flip_mul_p1": 7,
+        "add": 9,
+        "mul_m1": 3,
+        "flip_add_m1": 5,
+        "absdiff": 7,
+        "flip_maxmodmin": 6,
+        "flip_sub_suffix": 5,
+        "flip_absdiff_prefix": 5,
+        "maxmodmin": 4,
+        "flip_absdiff_suffix": 1
+      }
+    }
+  },
+  "matched_factors": [
+    "task_counts",
+    "Deduce subtype",
+    "record_count",
+    "supervised_token_budget",
+    "optimizer_steps",
+    "hyperparameters"
+  ],
+  "unmatched_factors": [
+    "individual public problems",
+    "rule-family mix",
+    "semantic difficulty and assignment structure"
+  ],
+  "interpretation": "A single seed pilot compares these registered datasets; equal tokens do not prove difficulty matching or a general causal source effect."
+}

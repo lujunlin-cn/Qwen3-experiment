@@ -1,0 +1,15 @@
+test_false_query_expression_and_formula_claim_rejected (test_equation_augmentation.ExactEquationTests.test_false_query_expression_and_formula_claim_rejected) ... FAIL
+
+======================================================================
+FAIL: test_false_query_expression_and_formula_claim_rejected (test_equation_augmentation.ExactEquationTests.test_false_query_expression_and_formula_claim_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hajimi2025/Qwen3-experiment/tests/test_equation_augmentation.py", line 56, in test_false_query_expression_and_formula_claim_rejected
+    self.assertFalse(self.n['verify_equation_numeric_sample'](bad)['trace_ok'],field)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : query_expression
+
+----------------------------------------------------------------------
+Ran 1 test in 0.369s
+
+FAILED (failures=1)

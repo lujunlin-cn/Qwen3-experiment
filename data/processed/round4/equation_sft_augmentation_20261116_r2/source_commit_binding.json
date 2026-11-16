@@ -1,0 +1,12 @@
+{
+  "git_commit": "629c3fd9d93d2fc18f8c98968e84468faed7b54a",
+  "sources": {
+    "01_Synthetic_Data_Engineering.ipynb": "921c42cc3ca85297523e079fcd1d7cd6aa22be748ea6b9f08d4ebce2fd339285",
+    "03_SFT.ipynb": "918c9118d811277be5ad2b56cf5f794b0f86810b54f7712144aa1504404c9019",
+    "utils/run_equation_augmentation.py": "221b3401b345bbb70149b420694981efb8d211594393080993ef490a974992a3",
+    "utils/run_sft_augmentation.py": "ce1997925761e1da546a8d05ff16f5985d0429307b095d244890a920cb93f3f2",
+    "utils/evaluate_sft_augmentation_vllm.py": "af8a8dd3249d2adcf0b0f2429d48a740cd3062e55612bb3cc3e108a994a18af1"
+  },
+  "registration_initial_git_commit": "a3f29dc81835a4136b14a6a2108e7f3e59e5fc51",
+  "working_source_registered_by_hash_before_execution": true
+}

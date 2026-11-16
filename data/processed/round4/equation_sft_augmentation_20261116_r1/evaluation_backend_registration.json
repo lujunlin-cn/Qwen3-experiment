@@ -1,0 +1,13 @@
+{
+  "protocol": "evaluation-backend-amendment/v1",
+  "registered_at_unix": 1794809786.050185,
+  "original_registration_sha256": "651b85508fdb2ee2987fe198f0e514b1ad2498cc72d61813c6c8af0868bb216c",
+  "reason": "Use available local vLLM CUDA graph backend for feasible inference. Initial Torch attempt archived, no result chosen by outcomes. Full A/B/C restart, all 150 questions each.",
+  "image": "vllm/vllm-openai:v0.27.1-aarch64",
+  "image_id": "sha256:2c211a1273b48e8929f893b267aeb1509e6b84654cdbde1bad56d79e3964224d",
+  "worker_sha256": "80d6e02dd5d41f43624b9e507533d22f6c5fb629ed4ad46f8923d020ae0baa5b",
+  "parameters": "Same model weights, tokenizer, public prompts, greedy thinking-enabled decode and registered per-task token caps; vLLM batching 4, KV 2 GiB, max context8192, FULL_DECODE_ONLY capture1/2/4, compile mode0",
+  "network": "none",
+  "hosted_api_calls": 0,
+  "do_not_use_torch_initial_outputs": true
+}

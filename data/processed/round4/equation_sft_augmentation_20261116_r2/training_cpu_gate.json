@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "related_cpu_tests": 85,
+  "actual_boxed_roundtrip_records": 604,
+  "original_r1_control_id_overlap": 0,
+  "original_r1_control_prompt_overlap": 0,
+  "same_control_ids_as_excluded_trial": true
+}

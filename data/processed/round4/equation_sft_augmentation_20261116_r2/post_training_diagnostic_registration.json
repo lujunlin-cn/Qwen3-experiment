@@ -1,0 +1,12 @@
+{
+  "scope": "post-training diagnostic reporting fix only",
+  "changed_file": "utils/run_equation_augmentation.py",
+  "reason": "Preserve true Solver/Verifier agreement when proof creation rejects an ambiguous answer; ambiguity is distinct from arithmetic disagreement",
+  "source_sha256": "29cab77ff8c66758765d2d32c57c570947dee95c33739707e339486307044353",
+  "training_data_unchanged": true,
+  "training_data_sha256": {
+    "sft_synthetic_110.jsonl": "bba5795987b7d8c351786811c352ddd35c369df7724bf3d3dccdcd43e0833579",
+    "sft_real_control_110.jsonl": "69194c6add43ab5f44da650f674690e1de1e38e3316693df988e3882d6f5663f"
+  },
+  "registered_unix": 1794813143.671313
+}

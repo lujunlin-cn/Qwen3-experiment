@@ -1,0 +1,5012 @@
+{
+  "status": "passed",
+  "rows": 384,
+  "records": [
+    {
+      "candidate_id": "equation_numeric-final-002",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation_numeric-final-004",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation_numeric-final-005",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation_numeric-final-006",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation_numeric-final-008",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation_numeric-final-009",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation_numeric-final-010",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation_numeric-final-011",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation_numeric-final-014",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation_numeric-final-016",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0001",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0002",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0003",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0005",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0006",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0008",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0010",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0011",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0012",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0013",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0015",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0016",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0018",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0019",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0020",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0023",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0024",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0027",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0028",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0029",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0031",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0035",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0036",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0037",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0038",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0039",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0040",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0043",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0044",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0045",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0047",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0048",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0049",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0050",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0051",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0052",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0053",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0056",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0057",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0058",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0059",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0060",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0061",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0062",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0063",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0064",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0067",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0068",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0069",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0070",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0072",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0073",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0074",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0075",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0076",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0077",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0081",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0082",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0083",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0085",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0087",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0089",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0090",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0091",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0092",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0094",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0095",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0096",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0097",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0098",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0100",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0101",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0102",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0103",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0104",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0105",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0108",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0109",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0111",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0113",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0115",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0117",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0118",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0119",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0120",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0123",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0124",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0125",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0126",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0127",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0128",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0130",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0131",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0133",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0134",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0136",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0138",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0139",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0141",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0142",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0143",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0144",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0145",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0146",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0147",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0148",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0149",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0151",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0153",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0154",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0155",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0156",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0157",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0158",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0159",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0160",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0161",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0162",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0164",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0165",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0168",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0169",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0171",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0173",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0174",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0175",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0176",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0178",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0179",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0180",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0181",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0182",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0184",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0186",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0188",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0189",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0192",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0193",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0194",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0195",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0196",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0197",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0200",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0201",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0203",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0204",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0206",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0207",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0208",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0209",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0210",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0211",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0212",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0213",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0215",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0217",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0219",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0220",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0221",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0222",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0223",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0226",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0227",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0228",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0230",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0232",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0233",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0234",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0235",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0237",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0238",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0239",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0240",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0241",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0242",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0243",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0244",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0245",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0246",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0247",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0248",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0249",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0250",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0253",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0255",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0256",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0258",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0259",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0261",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0263",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0264",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0265",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0267",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0269",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0270",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0271",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0272",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0273",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0274",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0275",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0276",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0277",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0278",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0279",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0280",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0281",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0283",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0284",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0285",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0287",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0288",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0289",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0290",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0291",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0292",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0293",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0295",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0296",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0297",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0299",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0300",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0301",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0303",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0304",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0305",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0306",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0307",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0308",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0309",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0310",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0311",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0312",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0313",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0314",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0315",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0317",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0318",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0320",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0321",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0322",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0323",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0324",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0325",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0327",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0328",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0330",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0331",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0332",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0333",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0334",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0338",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0339",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0340",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0341",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0342",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0343",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0344",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0345",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0346",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0347",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0348",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0349",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0350",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0351",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0352",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0353",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0354",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0356",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0357",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0358",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0359",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0362",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0363",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0365",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0366",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0367",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0368",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0370",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0372",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0373",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0374",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0377",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0379",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0380",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0381",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0382",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0384",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0385",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0386",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0387",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0388",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0389",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0391",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0393",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0394",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0395",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0396",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0397",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0400",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0401",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0402",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0404",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0407",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0408",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0409",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0410",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0411",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0412",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0413",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0414",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0415",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0416",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0418",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0419",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0420",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0421",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0422",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0423",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0424",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0425",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0426",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0427",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0428",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0430",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0431",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0432",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0433",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0435",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0436",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0439",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0441",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0442",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0443",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0444",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0445",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0446",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0447",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0449",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0451",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0452",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0453",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0454",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0456",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0457",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0458",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0459",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0461",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0462",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0464",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0465",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0467",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0470",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0471",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0472",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0475",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0476",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0477",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0478",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0479",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0480",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0481",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0483",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0485",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0486",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0487",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0488",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0490",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0494",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0495",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0496",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0497",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0498",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0499",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    },
+    {
+      "candidate_id": "equation-augmentation-0500",
+      "checks": {
+        "answer": true,
+        "trace": true,
+        "full_agreement": true,
+        "render_deterministic": true,
+        "supervised_reasoning_retained": true,
+        "actual_token_length": true,
+        "boxed_roundtrip": true
+      },
+      "passed": true
+    }
+  ],
+  "raw_model_thinking_used": false,
+  "actual_tokenizer": {
+    "status": "local_only",
+    "model": "Qwen/Qwen3-0.6B",
+    "path": "/home/hajimi2025/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca",
+    "files_sha256": {
+      "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+    },
+    "model_loaded": false,
+    "network_used": false
+  }
+}

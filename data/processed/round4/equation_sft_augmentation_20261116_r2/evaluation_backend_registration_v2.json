@@ -1,0 +1,20 @@
+{
+  "protocol": "evaluation-backend-amendment/v2",
+  "registered_at_unix": 1794812508.3340178,
+  "original_registration_sha256": "5e26ad4b330b258feab42ce9bc36706129c7c4d2affa36b216af93dd8256f082",
+  "reason": "Use available local vLLM CUDA graph backend for feasible inference. Initial Torch attempt archived, no result chosen by outcomes. Full A/B/C restart, all 150 questions each.",
+  "image": "vllm/vllm-openai:v0.27.1-aarch64",
+  "image_id": "sha256:2c211a1273b48e8929f893b267aeb1509e6b84654cdbde1bad56d79e3964224d",
+  "worker_sha256": "af8a8dd3249d2adcf0b0f2429d48a740cd3062e55612bb3cc3e108a994a18af1",
+  "parameters": "Same frozen scientific decode parameters for all A/B/C. KV cache 1.25 GiB, single process engine to reduce CUDA context overhead.",
+  "network": "none",
+  "hosted_api_calls": 0,
+  "do_not_use_torch_initial_outputs": true,
+  "previous_attempts": "R1 initialization failures/partial decode preserved; R2 first formal uniform backend attempt",
+  "kv_cache_bytes": 1342177280,
+  "engine_multiprocessing": false,
+  "implementation_git_commit": "629c3fd9d93d2fc18f8c98968e84468faed7b54a",
+  "all_arms_restarted": true,
+  "prefix_caching": false,
+  "run_id": "equation_sft_augmentation_20261116_r2"
+}

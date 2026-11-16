@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/hajimi2025/Qwen3-experiment/utils/score_sft_augmentation.py", line 47, in <module>
+    if __name__=='__main__':score()
+                            ~~~~~^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/score_sft_augmentation.py", line 45, in score
+    write_rows(out/'rows.jsonl',scored);write(out/'result.json',{**infer,'status':'completed','metrics_scope':'official answers + conservative canonical Full Trace certificate','scored_rows':len(scored)})
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_equation_augmentation.py", line 26, in write_rows
+    with pathlib.Path(p).open('x') as f:
+         ~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/home/hajimi2025/miniforge3/lib/python3.13/pathlib/_local.py", line 537, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/hajimi2025/Qwen3-experiment/data/processed/round4/equation_sft_augmentation_20261116_r2/sft_A_validation/rows.jsonl'

@@ -1,0 +1,6 @@
+{
+  "reason": "Shared-host CUDA memory query failed before weight loading or optimizer updates; physical free memory has since recovered",
+  "failed_optimizer_steps": 0,
+  "same_source_config_data_parent": true,
+  "retry_time": 1794811796.7602458
+}

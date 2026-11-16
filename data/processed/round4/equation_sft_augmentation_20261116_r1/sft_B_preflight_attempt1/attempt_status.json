@@ -1,0 +1,7 @@
+{
+  "status": "excluded_preflight_attempt",
+  "reason": "Additional numerical harness initially failed to import; run was stopped and restarted from R1 after passing CPU execution",
+  "actual_optimizer_steps_logged": 2,
+  "checkpoint_accepted": false,
+  "time": 1794809024.5182045
+}

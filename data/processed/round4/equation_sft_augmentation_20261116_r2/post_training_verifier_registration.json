@@ -1,0 +1,13 @@
+{
+  "protocol": "exact-trace-claim-audit/v1",
+  "reason": "Reject tampered trace Query expression or rule formula metadata; all produced proofs and training strings already correct. No data, training, decoding or selection change.",
+  "original_notebook_sha256": "921c42cc3ca85297523e079fcd1d7cd6aa22be748ea6b9f08d4ebce2fd339285",
+  "new_notebook_sha256": "83af83acc7e547864c17ca0f8a33df53f8e6a6e54209ac9faa54c79591476d1c",
+  "affected_function": "verify_equation_numeric_sample",
+  "post_training_cpu_only": true,
+  "registered_unix": 1794812913.756704,
+  "training_data_sha256": {
+    "sft_synthetic_110.jsonl": "bba5795987b7d8c351786811c352ddd35c369df7724bf3d3dccdcd43e0833579",
+    "sft_real_control_110.jsonl": "69194c6add43ab5f44da650f674690e1de1e38e3316693df988e3882d6f5663f"
+  }
+}

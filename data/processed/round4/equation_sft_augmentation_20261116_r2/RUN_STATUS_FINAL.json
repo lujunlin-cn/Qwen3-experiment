@@ -1,0 +1,23 @@
+{
+  "run_id": "equation_sft_augmentation_20261116_r2",
+  "run_status": "completed",
+  "quality_status": "data_pipeline_passed_model_benefit_unproven",
+  "all_training_and_validation_completed": true,
+  "primary_comparison": "C_vs_B",
+  "source_git_commit": "d96b246f978bbddb45118902127229bb02e6f42f",
+  "excluded_previous_run": "equation_sft_augmentation_20261116_r1",
+  "excluded_previous_reason": "Literal brace in boxed answers did not roundtrip; excluded weights/results preserved",
+  "holdout_used_for_tuning": false,
+  "holdout_evaluated": false,
+  "hosted_API_calls": 0,
+  "DPO_PPO_GRPO_changed": false,
+  "default_SFT_data_merged": false,
+  "known_limits": [
+    "All accepted Equation synthetic examples are Deduce, no Guess training coverage",
+    "50 Validation questions per task, one training seed; no established synthetic superiority",
+    "General free-language Full Trace verification remains unresolved",
+    "Evaluation output caps differ from historical longer-cap runs",
+    "Rule-family difficulty is not fully matched between B and C"
+  ],
+  "time_unix": 1794818082.900006
+}

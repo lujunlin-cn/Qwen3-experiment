@@ -1,0 +1,6 @@
+test_real_cpu_updates_full_masks_and_short_final_window (test_equation_augmentation.AugmentationTrainingMathTests.test_real_cpu_updates_full_masks_and_short_final_window) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 1.203s
+
+OK

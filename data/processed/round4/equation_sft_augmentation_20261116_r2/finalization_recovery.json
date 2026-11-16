@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "automatic_chain_failed_at": "offline scoring after all three inference_result files existed",
+  "failure": "PermissionError: inference directories owned by UID1000, host execution UID1001",
+  "failed_logs": [
+    "final_driver.log",
+    "score_sft_augmentation.log",
+    "score_sft_augmentation_retry1.log"
+  ],
+  "resolution": "Change only ownership of completed A/B/C validation directories to UID/GID1001, then perform CPU-only score retry2 and report. Raw inference content was not modified.",
+  "successful_logs": [
+    "score_sft_augmentation_retry2.log",
+    "report_sft_augmentation.log",
+    "report_revision1.log"
+  ],
+  "inference_repeated": false,
+  "training_repeated_for_this_recovery": false,
+  "automatic_driver_source": "offline_completion_driver_v1.py",
+  "completion_event_observed": true
+}

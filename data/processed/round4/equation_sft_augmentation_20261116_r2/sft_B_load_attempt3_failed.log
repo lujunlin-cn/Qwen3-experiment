@@ -1,0 +1,35 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 13613.46it/s]
+Traceback (most recent call last):
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_sft_augmentation.py", line 168, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_sft_augmentation.py", line 166, in main
+    result=register() if a.stage=='register' else globals()[a.stage](a.arm)
+                                                  ~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_sft_augmentation.py", line 102, in train
+    model,tok,inventory=load_model(ADAPTER,True,c)
+                        ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_sft_augmentation.py", line 89, in load_model
+    model=PeftModel.from_pretrained(base,str(adapter),is_trainable=train).to('cuda')
+          ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/.venv-low-memory/lib/python3.13/site-packages/peft/peft_model.py", line 601, in from_pretrained
+    load_result = model.load_adapter(
+        model_id,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/home/hajimi2025/Qwen3-experiment/.venv-low-memory/lib/python3.13/site-packages/peft/peft_model.py", line 1499, in load_adapter
+    adapters_weights = load_peft_weights(
+        model_id, device=torch_device, key_mapping=key_mapping, **hf_hub_download_kwargs
+    )
+  File "/home/hajimi2025/Qwen3-experiment/.venv-low-memory/lib/python3.13/site-packages/peft/utils/save_and_load.py", line 774, in load_peft_weights
+    adapters_weights = safe_load_file(filename, device=device)
+  File "/home/hajimi2025/miniforge3/lib/python3.13/site-packages/safetensors/torch.py", line 360, in load_file
+    return f.get_tensors()
+           ~~~~~~~~~~~~~^^
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

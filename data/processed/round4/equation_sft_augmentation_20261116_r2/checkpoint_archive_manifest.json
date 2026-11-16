@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "baseline_parent_preserved": true,
+  "checkpoints": {
+    "B": {
+      "status": "passed_tensor_and_optimizer_reload",
+      "path": ".autodl/equation_sft_augmentation_20261116_r2/B",
+      "files_sha256": {
+        "adapter/README.md": "a902c0961085aa798187f347a718700f3014076758afc676906a0ff5fcd5aa8b",
+        "adapter/adapter_config.json": "c64709b29c324ebdb0c40685b92f8baccf27815f0de3686fbadde671f090fe44",
+        "adapter/adapter_model.safetensors": "dafb648cd850b996a3e0d154291222ef6a32301af8080420c220eaa5a5a9cc3a",
+        "adapter/chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "adapter/tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+        "adapter/tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95",
+        "optimizer.pt": "f22b6c9cb76bb93caf1d4d034d4634a5ee24126b2ba6e74165382cd2b3eac821"
+      },
+      "optimizer_step_values": [
+        28
+      ],
+      "changed_tensor_count": 392,
+      "max_parameter_change": 0.0006162356585264206,
+      "data_source_sha256": "5e26ad4b330b258feab42ce9bc36706129c7c4d2affa36b216af93dd8256f082",
+      "parent_sha256": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+    },
+    "C": {
+      "status": "passed_tensor_and_optimizer_reload",
+      "path": ".autodl/equation_sft_augmentation_20261116_r2/C",
+      "files_sha256": {
+        "adapter/README.md": "a902c0961085aa798187f347a718700f3014076758afc676906a0ff5fcd5aa8b",
+        "adapter/adapter_config.json": "3a3e43e277135329428e774b11d60ec91fc8a93024c3ad6598ea8d05eebf40d2",
+        "adapter/adapter_model.safetensors": "7033241d41efb086762df20789ce2b70764bb3a5c524e29b8d8f846d3254e3f4",
+        "adapter/chat_template.jinja": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+        "adapter/tokenizer.json": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+        "adapter/tokenizer_config.json": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95",
+        "optimizer.pt": "3ea7b16cfb1e620408ffe94045da92d4e9151118776e05ae926e8828ca3c281e"
+      },
+      "optimizer_step_values": [
+        28
+      ],
+      "changed_tensor_count": 392,
+      "max_parameter_change": 0.0006160959601402283,
+      "data_source_sha256": "5e26ad4b330b258feab42ce9bc36706129c7c4d2affa36b216af93dd8256f082",
+      "parent_sha256": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371"
+    }
+  },
+  "binary_weights_in_git": false,
+  "formal_run": "equation_sft_augmentation_20261116_r2",
+  "excluded_previous_run": "equation_sft_augmentation_20261116_r1"
+}

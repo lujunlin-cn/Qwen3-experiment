@@ -1,0 +1,7 @@
+test_exact_mcnemar_and_paired_length (tests.test_sft_augmentation_analysis.PairedAnalysisTests.test_exact_mcnemar_and_paired_length) ... ok
+test_wilson_boundary_unknown_correct_length_and_pair_identity (tests.test_sft_augmentation_analysis.PairedAnalysisTests.test_wilson_boundary_unknown_correct_length_and_pair_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.008s
+
+OK

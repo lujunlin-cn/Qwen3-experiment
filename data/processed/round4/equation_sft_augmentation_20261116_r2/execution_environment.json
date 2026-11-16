@@ -1,0 +1,22 @@
+{
+  "training_python": "3.13.12 | packaged by conda-forge | (main, Feb  5 2026, 05:43:35) [GCC 14.3.0]",
+  "training_versions": {
+    "torch": "2.11.0",
+    "transformers": "5.12.0",
+    "peft": "0.21.2",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.8",
+    "safetensors": "0.8.0",
+    "accelerate": "1.14.0",
+    "huggingface-hub": "1.32.0"
+  },
+  "inference_image": "vllm/vllm-openai:v0.27.1-aarch64",
+  "inference_image_id": "sha256:2c211a1273b48e8929f893b267aeb1509e6b84654cdbde1bad56d79e3964224d",
+  "api_key_read_by_new_pipeline": false,
+  "hosted_api_calls": 0,
+  "generator_teacher": "deterministic Python Solver + independent Verifier + Notebook03 Renderer",
+  "student": "Qwen/Qwen3-0.6B",
+  "device": "NVIDIA GB10 shared integrated GPU",
+  "initial_foreign_gpu_pid": 1468381
+}

@@ -1,0 +1,3797 @@
+{
+  "rows": [
+    {
+      "id": "685bb0b1",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXI",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 71 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXI}"
+    },
+    {
+      "id": "29806da8",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XXVIII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 28 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XXVIII}"
+    },
+    {
+      "id": "339f3dfa",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LX",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 60 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LX}"
+    },
+    {
+      "id": "e6a0585e",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXVI",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 76 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXVI}"
+    },
+    {
+      "id": "eb9963a8",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "I",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 1 into [{'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{I}"
+    },
+    {
+      "id": "846e47e4",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XXXIII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 33 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XXXIII}"
+    },
+    {
+      "id": "21c09ced",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXXVII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 87 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXXVII}"
+    },
+    {
+      "id": "21115993",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXV",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 75 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXV}"
+    },
+    {
+      "id": "3fd7e4d6",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XXXII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 32 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XXXII}"
+    },
+    {
+      "id": "7de78987",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XLI",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 41 into [{'arabic': 40, 'roman': 'XL'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XLI}"
+    },
+    {
+      "id": "fa995fce",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "IV",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 4 into [{'arabic': 4, 'roman': 'IV'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{IV}"
+    },
+    {
+      "id": "5ca7d798",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LVI",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 56 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LVI}"
+    },
+    {
+      "id": "8b4a1460",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 62 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXII}"
+    },
+    {
+      "id": "8a68d02a",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXXIX",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 89 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 9, 'roman': 'IX'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXXIX}"
+    },
+    {
+      "id": "abed1c35",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXXIII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 83 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXXIII}"
+    },
+    {
+      "id": "ec43b213",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XXXIV",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 34 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 4, 'roman': 'IV'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XXXIV}"
+    },
+    {
+      "id": "635fd6d7",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XXXIX",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 39 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 9, 'roman': 'IX'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XXXIX}"
+    },
+    {
+      "id": "7221318f",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "VII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 7 into [{'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{VII}"
+    },
+    {
+      "id": "7233941f",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XVII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 17 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XVII}"
+    },
+    {
+      "id": "f6a7fc15",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LIX",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 59 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 9, 'roman': 'IX'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LIX}"
+    },
+    {
+      "id": "7274c0f2",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XLIV",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 44 into [{'arabic': 40, 'roman': 'XL'}, {'arabic': 4, 'roman': 'IV'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XLIV}"
+    },
+    {
+      "id": "8ec53c10",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 52 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LII}"
+    },
+    {
+      "id": "1ba0e448",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "IV",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 4 into [{'arabic': 4, 'roman': 'IV'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{IV}"
+    },
+    {
+      "id": "a087d342",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XXV",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 25 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XXV}"
+    },
+    {
+      "id": "a88fbc44",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXXVIII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 88 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXXVIII}"
+    },
+    {
+      "id": "a558df6c",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LVII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 57 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LVII}"
+    },
+    {
+      "id": "586d246b",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XV",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 15 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XV}"
+    },
+    {
+      "id": "2e94ea17",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LV",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 55 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 5, 'roman': 'V'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LV}"
+    },
+    {
+      "id": "278e987a",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXIX",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 69 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 9, 'roman': 'IX'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXIX}"
+    },
+    {
+      "id": "451a85d7",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XXX",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 30 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XXX}"
+    },
+    {
+      "id": "d0dd8e4e",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "VII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 7 into [{'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{VII}"
+    },
+    {
+      "id": "6c363edc",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXXIII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 83 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXXIII}"
+    },
+    {
+      "id": "9f775c18",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "VI",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 6 into [{'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{VI}"
+    },
+    {
+      "id": "1347c69f",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "II",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 2 into [{'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{II}"
+    },
+    {
+      "id": "62bbb19e",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXXIV",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 84 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 4, 'roman': 'IV'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXXIV}"
+    },
+    {
+      "id": "e0a4942d",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXXII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 82 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXXII}"
+    },
+    {
+      "id": "1340260d",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXVII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 67 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXVII}"
+    },
+    {
+      "id": "e598c0ba",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXXV",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 85 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXXV}"
+    },
+    {
+      "id": "3e7e15d4",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XVIII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 18 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XVIII}"
+    },
+    {
+      "id": "87312ffc",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "VII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 7 into [{'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{VII}"
+    },
+    {
+      "id": "3edf8317",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXV",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 65 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXV}"
+    },
+    {
+      "id": "1104945c",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXIII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 73 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXIII}"
+    },
+    {
+      "id": "0c5cf3d9",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XX",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 20 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XX}"
+    },
+    {
+      "id": "41a344c7",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XI",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 11 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XI}"
+    },
+    {
+      "id": "f6948af3",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XVIII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 18 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XVIII}"
+    },
+    {
+      "id": "cd581510",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XIII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 13 into [{'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XIII}"
+    },
+    {
+      "id": "f886b9af",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXIII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 73 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXIII}"
+    },
+    {
+      "id": "47bf2d74",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "XC",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 90 into [{'arabic': 90, 'roman': 'XC'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{XC}"
+    },
+    {
+      "id": "9c46baa8",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXXII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 72 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXXII}"
+    },
+    {
+      "id": "735e29b5",
+      "task_type": "numeral_system",
+      "reference_verified": true,
+      "solver_answer": "LXVII",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Check the standard Roman rules against the public examples.\n2. Decompose 67 into [{'arabic': 50, 'roman': 'L'}, {'arabic': 10, 'roman': 'X'}, {'arabic': 5, 'roman': 'V'}, {'arabic': 1, 'roman': 'I'}, {'arabic': 1, 'roman': 'I'}].\n3. Concatenate the place-value components.\nFinal answer: \\boxed{LXVII}"
+    },
+    {
+      "id": "6b01cc50",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "18.99",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 11.592432669013162; apply distance = 0.5*g*t^2 to Query t=1.81.\n4. The unrounded Query distance is 18.98898433347701; format the final numeric answer.\nFinal answer: \\boxed{18.99}"
+    },
+    {
+      "id": "fbd16bf8",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "114.71",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 9.516442045971768; apply distance = 0.5*g*t^2 to Query t=4.91.\n4. The unrounded Query distance is 114.711668244246; format the final numeric answer.\nFinal answer: \\boxed{114.71}"
+    },
+    {
+      "id": "618c69cb",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "108.31",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 15.486372073072628; apply distance = 0.5*g*t^2 to Query t=3.74.\n4. The unrounded Query distance is 108.30858900465536; format the final numeric answer.\nFinal answer: \\boxed{108.31}"
+    },
+    {
+      "id": "fd6eab47",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "188.87",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 18.737180176457287; apply distance = 0.5*g*t^2 to Query t=4.49.\n4. The unrounded Query distance is 188.8717130376983; format the final numeric answer.\nFinal answer: \\boxed{188.87}"
+    },
+    {
+      "id": "077b20f7",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "76.59",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 17.365590141143958; apply distance = 0.5*g*t^2 to Query t=2.97.\n4. The unrounded Query distance is 76.59006703800839; format the final numeric answer.\nFinal answer: \\boxed{76.59}"
+    },
+    {
+      "id": "4b9e883a",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "108.43",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 13.026906482868664; apply distance = 0.5*g*t^2 to Query t=4.08.\n4. The unrounded Query distance is 108.42554803821247; format the final numeric answer.\nFinal answer: \\boxed{108.43}"
+    },
+    {
+      "id": "0f17279e",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "132.44",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 17.963236274939185; apply distance = 0.5*g*t^2 to Query t=3.84.\n4. The unrounded Query distance is 132.43934840787162; format the final numeric answer.\nFinal answer: \\boxed{132.44}"
+    },
+    {
+      "id": "6eb182f1",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "85.85",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 15.959589129384609; apply distance = 0.5*g*t^2 to Query t=3.28.\n4. The unrounded Query distance is 85.84982184478568; format the final numeric answer.\nFinal answer: \\boxed{85.85}"
+    },
+    {
+      "id": "337422d3",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "81.18",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 13.88163757976864; apply distance = 0.5*g*t^2 to Query t=3.42.\n4. The unrounded Query distance is 81.18259289400295; format the final numeric answer.\nFinal answer: \\boxed{81.18}"
+    },
+    {
+      "id": "97d0bad8",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "198.41",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 16.260908533007004; apply distance = 0.5*g*t^2 to Query t=4.94.\n4. The unrounded Query distance is 198.4123537380449; format the final numeric answer.\nFinal answer: \\boxed{198.41}"
+    },
+    {
+      "id": "6735003f",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "93.34",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 18.003972252033716; apply distance = 0.5*g*t^2 to Query t=3.22.\n4. The unrounded Query distance is 93.3361929489932; format the final numeric answer.\nFinal answer: \\boxed{93.34}"
+    },
+    {
+      "id": "d26230fc",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "41.88",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 12.98204289890414; apply distance = 0.5*g*t^2 to Query t=2.54.\n4. The unrounded Query distance is 41.87747398328498; format the final numeric answer.\nFinal answer: \\boxed{41.88}"
+    },
+    {
+      "id": "5a4be7fa",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "90.00",
+      "official_answer_exact": false,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 7.877842990380184; apply distance = 0.5*g*t^2 to Query t=4.78.\n4. The unrounded Query distance is 89.99805389070131; format the final numeric answer.\nFinal answer: \\boxed{90.00}"
+    },
+    {
+      "id": "ce2df062",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "51.21",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 18.38988085024565; apply distance = 0.5*g*t^2 to Query t=2.36.\n4. The unrounded Query distance is 51.21214019176408; format the final numeric answer.\nFinal answer: \\boxed{51.21}"
+    },
+    {
+      "id": "f83e6ef3",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "13.16",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 17.6857711012865; apply distance = 0.5*g*t^2 to Query t=1.22.\n4. The unrounded Query distance is 13.161750853577415; format the final numeric answer.\nFinal answer: \\boxed{13.16}"
+    },
+    {
+      "id": "fc9b063b",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "116.87",
+      "official_answer_exact": false,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 9.936457440696783; apply distance = 0.5*g*t^2 to Query t=4.85.\n4. The unrounded Query distance is 116.86516007439502; format the final numeric answer.\nFinal answer: \\boxed{116.87}"
+    },
+    {
+      "id": "3ee2b186",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "14.93",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 6.643807661546184; apply distance = 0.5*g*t^2 to Query t=2.12.\n4. The unrounded Query distance is 14.929964577026587; format the final numeric answer.\nFinal answer: \\boxed{14.93}"
+    },
+    {
+      "id": "9b183a23",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "51.06",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 7.379375341055718; apply distance = 0.5*g*t^2 to Query t=3.72.\n4. The unrounded Query distance is 51.05937385983273; format the final numeric answer.\nFinal answer: \\boxed{51.06}"
+    },
+    {
+      "id": "30d70872",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "36.28",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 5.629677624198786; apply distance = 0.5*g*t^2 to Query t=3.59.\n4. The unrounded Query distance is 36.277924094218186; format the final numeric answer.\nFinal answer: \\boxed{36.28}"
+    },
+    {
+      "id": "52f83b1c",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "83.74",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 15.19459492556995; apply distance = 0.5*g*t^2 to Query t=3.32.\n4. The unrounded Query distance is 83.74045155380111; format the final numeric answer.\nFinal answer: \\boxed{83.74}"
+    },
+    {
+      "id": "8e922a3a",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "16.48",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 14.846289853205496; apply distance = 0.5*g*t^2 to Query t=1.49.\n4. The unrounded Query distance is 16.48012405155076; format the final numeric answer.\nFinal answer: \\boxed{16.48}"
+    },
+    {
+      "id": "3d2a57eb",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "105.73",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 17.766563787491155; apply distance = 0.5*g*t^2 to Query t=3.45.\n4. The unrounded Query distance is 105.73326274030674; format the final numeric answer.\nFinal answer: \\boxed{105.73}"
+    },
+    {
+      "id": "8ec8d10c",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "48.97",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 14.488770076085762; apply distance = 0.5*g*t^2 to Query t=2.6.\n4. The unrounded Query distance is 48.97204285716988; format the final numeric answer.\nFinal answer: \\boxed{48.97}"
+    },
+    {
+      "id": "b32c8042",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "8.13",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 14.750108027212061; apply distance = 0.5*g*t^2 to Query t=1.05.\n4. The unrounded Query distance is 8.13099705000065; format the final numeric answer.\nFinal answer: \\boxed{8.13}"
+    },
+    {
+      "id": "7c30fc77",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "33.15",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 6.393593261740932; apply distance = 0.5*g*t^2 to Query t=3.22.\n4. The unrounded Query distance is 33.14566618751734; format the final numeric answer.\nFinal answer: \\boxed{33.15}"
+    },
+    {
+      "id": "8e438ef9",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "97.36",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 8.928636937938812; apply distance = 0.5*g*t^2 to Query t=4.67.\n4. The unrounded Query distance is 97.36187505790687; format the final numeric answer.\nFinal answer: \\boxed{97.36}"
+    },
+    {
+      "id": "a0fc7b3e",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "21.21",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 15.212110042262323; apply distance = 0.5*g*t^2 to Query t=1.67.\n4. The unrounded Query distance is 21.212526848432695; format the final numeric answer.\nFinal answer: \\boxed{21.21}"
+    },
+    {
+      "id": "da0c7a5e",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "171.79",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 19.293065635581463; apply distance = 0.5*g*t^2 to Query t=4.22.\n4. The unrounded Query distance is 171.78931503234446; format the final numeric answer.\nFinal answer: \\boxed{171.79}"
+    },
+    {
+      "id": "f61f3d46",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "63.24",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 5.267516516474854; apply distance = 0.5*g*t^2 to Query t=4.9.\n4. The unrounded Query distance is 63.23653578028063; format the final numeric answer.\nFinal answer: \\boxed{63.24}"
+    },
+    {
+      "id": "5ea6d59c",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "13.27",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 19.388819879202472; apply distance = 0.5*g*t^2 to Query t=1.17.\n4. The unrounded Query distance is 13.27067776632013; format the final numeric answer.\nFinal answer: \\boxed{13.27}"
+    },
+    {
+      "id": "5b43f7fc",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "92.16",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 14.792274071917248; apply distance = 0.5*g*t^2 to Query t=3.53.\n4. The unrounded Query distance is 92.16252399137682; format the final numeric answer.\nFinal answer: \\boxed{92.16}"
+    },
+    {
+      "id": "7a895e9c",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "23.62",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 12.814773979461432; apply distance = 0.5*g*t^2 to Query t=1.92.\n4. The unrounded Query distance is 23.62019139894331; format the final numeric answer.\nFinal answer: \\boxed{23.62}"
+    },
+    {
+      "id": "f6eef71c",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "31.76",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 8.649632877986626; apply distance = 0.5*g*t^2 to Query t=2.71.\n4. The unrounded Query distance is 31.76188440961079; format the final numeric answer.\nFinal answer: \\boxed{31.76}"
+    },
+    {
+      "id": "26e2d26a",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "94.28",
+      "official_answer_exact": false,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 12.147177922358528; apply distance = 0.5*g*t^2 to Query t=3.94.\n4. The unrounded Query distance is 94.28396559776243; format the final numeric answer.\nFinal answer: \\boxed{94.28}"
+    },
+    {
+      "id": "e2f56016",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "47.86",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 10.42514572479083; apply distance = 0.5*g*t^2 to Query t=3.03.\n4. The unrounded Query distance is 47.85611019236607; format the final numeric answer.\nFinal answer: \\boxed{47.86}"
+    },
+    {
+      "id": "e43520a7",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "3.89",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 7.05539264651162; apply distance = 0.5*g*t^2 to Query t=1.05.\n4. The unrounded Query distance is 3.8892851963895305; format the final numeric answer.\nFinal answer: \\boxed{3.89}"
+    },
+    {
+      "id": "6b3f1b31",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "109.73",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 15.522936691282915; apply distance = 0.5*g*t^2 to Query t=3.76.\n4. The unrounded Query distance is 109.72853488334066; format the final numeric answer.\nFinal answer: \\boxed{109.73}"
+    },
+    {
+      "id": "341252e5",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "118.94",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 11.643259157082818; apply distance = 0.5*g*t^2 to Query t=4.52.\n4. The unrounded Query distance is 118.93822094143238; format the final numeric answer.\nFinal answer: \\boxed{118.94}"
+    },
+    {
+      "id": "9bee3f4d",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "64.19",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 16.492845280866838; apply distance = 0.5*g*t^2 to Query t=2.79.\n4. The unrounded Query distance is 64.19097847539778; format the final numeric answer.\nFinal answer: \\boxed{64.19}"
+    },
+    {
+      "id": "90afd579",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "34.94",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 16.30911499256466; apply distance = 0.5*g*t^2 to Query t=2.07.\n4. The unrounded Query distance is 34.94146341582015; format the final numeric answer.\nFinal answer: \\boxed{34.94}"
+    },
+    {
+      "id": "0409e7d8",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "58.73",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 14.876450959553676; apply distance = 0.5*g*t^2 to Query t=2.81.\n4. The unrounded Query distance is 58.732972210865896; format the final numeric answer.\nFinal answer: \\boxed{58.73}"
+    },
+    {
+      "id": "a4a5fe71",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "102.63",
+      "official_answer_exact": false,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 18.964155505587655; apply distance = 0.5*g*t^2 to Query t=3.29.\n4. The unrounded Query distance is 102.63495780401567; format the final numeric answer.\nFinal answer: \\boxed{102.63}"
+    },
+    {
+      "id": "bfaa2811",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "10.10",
+      "official_answer_exact": false,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 10.766347670733264; apply distance = 0.5*g*t^2 to Query t=1.37.\n4. The unrounded Query distance is 10.103678971599633; format the final numeric answer.\nFinal answer: \\boxed{10.10}"
+    },
+    {
+      "id": "1ca8e087",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "41.99",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 16.156632687084333; apply distance = 0.5*g*t^2 to Query t=2.28.\n4. The unrounded Query distance is 41.99431968026959; format the final numeric answer.\nFinal answer: \\boxed{41.99}"
+    },
+    {
+      "id": "396cc0a0",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "69.74",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 16.934420703617988; apply distance = 0.5*g*t^2 to Query t=2.87.\n4. The unrounded Query distance is 69.74356494681551; format the final numeric answer.\nFinal answer: \\boxed{69.74}"
+    },
+    {
+      "id": "d0b08b79",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "108.88",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 18.295080075607213; apply distance = 0.5*g*t^2 to Query t=3.45.\n4. The unrounded Query distance is 108.87859529995744; format the final numeric answer.\nFinal answer: \\boxed{108.88}"
+    },
+    {
+      "id": "054d3e92",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "180.41",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 19.156667899257698; apply distance = 0.5*g*t^2 to Query t=4.34.\n4. The unrounded Query distance is 180.41366694162915; format the final numeric answer.\nFinal answer: \\boxed{180.41}"
+    },
+    {
+      "id": "9846834b",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "70.44",
+      "official_answer_exact": false,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 6.140268969369848; apply distance = 0.5*g*t^2 to Query t=4.79.\n4. The unrounded Query distance is 70.44147263005937; format the final numeric answer.\nFinal answer: \\boxed{70.44}"
+    },
+    {
+      "id": "c50cd56e",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "90.09",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 14.37879059932299; apply distance = 0.5*g*t^2 to Query t=3.54.\n4. The unrounded Query distance is 90.094626137238; format the final numeric answer.\nFinal answer: \\boxed{90.09}"
+    },
+    {
+      "id": "65044291",
+      "task_type": "gravity",
+      "reference_verified": true,
+      "solver_answer": "131.29",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse all public time-distance examples.\n2. Fit g = 2*sum(t^2*d)/sum(t^4) using only those examples.\n3. The fitted g is 15.469173178028345; apply distance = 0.5*g*t^2 to Query t=4.12.\n4. The unrounded Query distance is 131.28996659656218; format the final numeric answer.\nFinal answer: \\boxed{131.29}"
+    },
+    {
+      "id": "2afebbc3",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "/",
+        "query_operator_in_examples": true,
+        "candidates_by_operator": {
+          "#": [
+            "join"
+          ],
+          "/": [
+            "absdiff",
+            "maxmodmin",
+            "flip_absdiff",
+            "flip_sub_suffix"
+          ]
+        },
+        "valid_assignment_count": 4,
+        "valid_assignments": [
+          {
+            "mode": "normal",
+            "rules": {
+              "#": "join",
+              "/": "absdiff"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "#": "join",
+              "/": "maxmodmin"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "join",
+              "/": "flip_absdiff"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "join",
+              "/": "flip_sub_suffix"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "#": "join",
+                "/": "absdiff"
+              }
+            },
+            "query_output": "34"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "#": "join",
+                "/": "maxmodmin"
+              }
+            },
+            "query_output": "16"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "join",
+                "/": "flip_absdiff"
+              }
+            },
+            "query_output": "65"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "join",
+                "/": "flip_sub_suffix"
+              }
+            },
+            "query_output": "65/"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "16",
+          "34",
+          "65",
+          "65/"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "b7ad0671",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": ":",
+        "query_operator_in_examples": false,
+        "candidates_by_operator": {
+          "@": [
+            "flip_mul"
+          ],
+          "-": [
+            "flip_add"
+          ],
+          ":": [
+            "sub",
+            "absdiff",
+            "absdiff_prefix",
+            "join",
+            "join_swap",
+            "add",
+            "add_p1",
+            "add_m1",
+            "mul",
+            "mul_p1",
+            "mul_m1",
+            "maxmodmin",
+            "flip_add",
+            "flip_add_p1",
+            "flip_add_m1",
+            "flip_mul",
+            "flip_mul_p1",
+            "flip_mul_m1",
+            "flip_absdiff",
+            "flip_maxmodmin",
+            "flip_sub_prefix",
+            "flip_sub_suffix",
+            "flip_absdiff_prefix",
+            "flip_absdiff_suffix"
+          ]
+        },
+        "valid_assignment_count": 8,
+        "valid_assignments": [
+          {
+            "mode": "flip",
+            "rules": {
+              "@": "flip_mul",
+              "-": "flip_add",
+              ":": "join"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "@": "flip_mul",
+              "-": "flip_add",
+              ":": "join_swap"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "@": "flip_mul",
+              "-": "flip_add",
+              ":": "flip_absdiff"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "@": "flip_mul",
+              "-": "flip_add",
+              ":": "flip_maxmodmin"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "@": "flip_mul",
+              "-": "flip_add",
+              ":": "flip_sub_prefix"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "@": "flip_mul",
+              "-": "flip_add",
+              ":": "flip_sub_suffix"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "@": "flip_mul",
+              "-": "flip_add",
+              ":": "flip_absdiff_prefix"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "@": "flip_mul",
+              "-": "flip_add",
+              ":": "flip_absdiff_suffix"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "@": "flip_mul",
+                "-": "flip_add",
+                ":": "join"
+              }
+            },
+            "query_output": "2812"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "@": "flip_mul",
+                "-": "flip_add",
+                ":": "join_swap"
+              }
+            },
+            "query_output": "1228"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "@": "flip_mul",
+                "-": "flip_add",
+                ":": "flip_absdiff"
+              }
+            },
+            "query_output": "16"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "@": "flip_mul",
+                "-": "flip_add",
+                ":": "flip_maxmodmin"
+              }
+            },
+            "query_output": "91"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "@": "flip_mul",
+                "-": "flip_add",
+                ":": "flip_sub_prefix"
+              }
+            },
+            "query_output": "16"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "@": "flip_mul",
+                "-": "flip_add",
+                ":": "flip_sub_suffix"
+              }
+            },
+            "query_output": "16:"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "@": "flip_mul",
+                "-": "flip_add",
+                ":": "flip_absdiff_prefix"
+              }
+            },
+            "query_output": ":16"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "@": "flip_mul",
+                "-": "flip_add",
+                ":": "flip_absdiff_suffix"
+              }
+            },
+            "query_output": "16:"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "1228",
+          "16",
+          "16:",
+          "2812",
+          "91",
+          ":16"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "59b2cbbf",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "211",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'+': ['flip_add'], '`': ['flip_absdiff', 'flip_sub_suffix']}.\n3. The public candidate formulas are {'flip_add': 'reverse(BA + DC)', 'flip_absdiff': 'reverse(|BA - DC|)', 'flip_sub_suffix': 'reverse(DC - BA), appending the operator for a negative result'}.\n4. Witness check: 38+27 using flip_add gives 551; public output 551 matches exactly.\n5. Witness check: 97+57 using flip_add gives 451; public output 451 matches exactly.\n6. Witness check: 74`59 using flip_absdiff gives 84; public output 84 matches exactly.\n7. Witness check: 64+54 using flip_add gives 19; public output 19 matches exactly.\n8. Witness check: 87`28 using flip_absdiff gives 4; public output 4 matches exactly.\n9. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n10. Legal assignment {'mode': 'flip', 'rules': {'+': 'flip_add', '`': 'flip_absdiff'}}: Query 83+47 gives 211.\n11. Legal assignment {'mode': 'flip', 'rules': {'+': 'flip_add', '`': 'flip_sub_suffix'}}: Query 83+47 gives 211.\n12. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['211']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{211}"
+    },
+    {
+      "id": "759cbdde",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "211",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'*': ['flip_add'], '(': ['flip_mul_m1'], \"'\": ['flip_absdiff', 'flip_maxmodmin', 'flip_sub_prefix']}.\n3. The public candidate formulas are {'flip_add': 'reverse(BA + DC)', 'flip_mul_m1': 'reverse(BA * DC - 1)', 'flip_absdiff': 'reverse(|BA - DC|)', 'flip_maxmodmin': 'reverse(max(BA, DC) mod min(BA, DC))', 'flip_sub_prefix': 'reverse(BA - DC), preserving a negative sign as an operator prefix'}.\n4. Witness check: 18*04 using flip_add gives 121; public output 121 matches exactly.\n5. Witness check: 82(56 using flip_mul_m1 gives 9181; public output 9181 matches exactly.\n6. Witness check: 44'34 using flip_absdiff gives 1; public output 1 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'flip', 'rules': {'*': 'flip_add', '(': 'flip_mul_m1', \"'\": 'flip_absdiff'}}: Query 84*46 gives 211.\n9. Legal assignment {'mode': 'flip', 'rules': {'*': 'flip_add', '(': 'flip_mul_m1', \"'\": 'flip_maxmodmin'}}: Query 84*46 gives 211.\n10. Legal assignment {'mode': 'flip', 'rules': {'*': 'flip_add', '(': 'flip_mul_m1', \"'\": 'flip_sub_prefix'}}: Query 84*46 gives 211.\n11. There are 3 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['211']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{211}"
+    },
+    {
+      "id": "42d4dcf7",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "91",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'-': ['flip_maxmodmin'], '*': ['flip_mul']}.\n3. The public candidate formulas are {'flip_maxmodmin': 'reverse(max(BA, DC) mod min(BA, DC))', 'flip_mul': 'reverse(BA * DC)'}.\n4. Witness check: 26-31 using flip_maxmodmin gives 01; public output 01 matches exactly.\n5. Witness check: 21-49 using flip_maxmodmin gives 01; public output 01 matches exactly.\n6. Witness check: 07*65 using flip_mul gives 0293; public output 0293 matches exactly.\n7. Witness check: 38-07 using flip_maxmodmin gives 31; public output 31 matches exactly.\n8. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n9. Legal assignment {'mode': 'flip', 'rules': {'-': 'flip_maxmodmin', '*': 'flip_mul'}}: Query 65-57 gives 91.\n10. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['91']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{91}"
+    },
+    {
+      "id": "2cf587f6",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "159",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'>': ['add_m1'], '\\\\': ['mul']}.\n3. The public candidate formulas are {'add_m1': 'AB + CD - 1', 'mul': 'AB * CD'}.\n4. Witness check: 33>28 using add_m1 gives 60; public output 60 matches exactly.\n5. Witness check: 83>37 using add_m1 gives 119; public output 119 matches exactly.\n6. Witness check: 95\\55 using mul gives 5225; public output 5225 matches exactly.\n7. Witness check: 30\\11 using mul gives 330; public output 330 matches exactly.\n8. Witness check: 95\\62 using mul gives 5890; public output 5890 matches exactly.\n9. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n10. Legal assignment {'mode': 'normal', 'rules': {'>': 'add_m1', '\\\\': 'mul'}}: Query 88>72 gives 159.\n11. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['159']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{159}"
+    },
+    {
+      "id": "86cda2ec",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "13",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'-': ['absdiff', 'flip_absdiff', 'flip_sub_suffix'], '*': ['flip_mul'], '+': ['flip_add_p1']}.\n3. The public candidate formulas are {'absdiff': '|AB - CD|, raw', 'flip_absdiff': 'reverse(|BA - DC|)', 'flip_sub_suffix': 'reverse(DC - BA), appending the operator for a negative result', 'flip_mul': 'reverse(BA * DC)', 'flip_add_p1': 'reverse(BA + DC + 1)'}.\n4. Witness check: 12-75 using flip_absdiff gives 63; public output 63 matches exactly.\n5. Witness check: 73*21 using flip_mul gives 444; public output 444 matches exactly.\n6. Witness check: 88+31 using flip_add_p1 gives 201; public output 201 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'flip', 'rules': {'-': 'flip_absdiff', '*': 'flip_mul', '+': 'flip_add_p1'}}: Query 26-39 gives 13.\n9. Legal assignment {'mode': 'flip', 'rules': {'-': 'flip_sub_suffix', '*': 'flip_mul', '+': 'flip_add_p1'}}: Query 26-39 gives 13.\n10. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['13']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{13}"
+    },
+    {
+      "id": "8011cb24",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": ":64",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'-': ['join'], ':': ['absdiff_prefix', 'flip_absdiff_prefix']}.\n3. The public candidate formulas are {'join': 'AB concatenated with CD', 'absdiff_prefix': '|AB - CD| with operator prefix', 'flip_absdiff_prefix': 'operator-prefixed reverse(|BA - DC|)'}.\n4. Witness check: 79-69 using join gives 7969; public output 7969 matches exactly.\n5. Witness check: 95:22 using absdiff_prefix gives :73; public output :73 matches exactly.\n6. Witness check: 19-49 using join gives 1949; public output 1949 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'normal', 'rules': {'-': 'join', ':': 'absdiff_prefix'}}: Query 74:10 gives :64.\n9. Legal assignment {'mode': 'flip', 'rules': {'-': 'join', ':': 'flip_absdiff_prefix'}}: Query 74:10 gives :64.\n10. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are [':64']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{:64}"
+    },
+    {
+      "id": "d096a492",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "-",
+        "query_operator_in_examples": false,
+        "candidates_by_operator": {
+          "*": [
+            "flip_mul"
+          ],
+          "+": [
+            "join_swap"
+          ],
+          "-": [
+            "sub",
+            "absdiff",
+            "absdiff_prefix",
+            "join",
+            "join_swap",
+            "add",
+            "add_p1",
+            "add_m1",
+            "mul",
+            "mul_p1",
+            "mul_m1",
+            "maxmodmin",
+            "flip_add",
+            "flip_add_p1",
+            "flip_add_m1",
+            "flip_mul",
+            "flip_mul_p1",
+            "flip_mul_m1",
+            "flip_absdiff",
+            "flip_maxmodmin",
+            "flip_sub_prefix",
+            "flip_sub_suffix",
+            "flip_absdiff_prefix",
+            "flip_absdiff_suffix"
+          ]
+        },
+        "valid_assignment_count": 11,
+        "valid_assignments": [
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "+": "join_swap",
+              "-": "join"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "+": "join_swap",
+              "-": "join_swap"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "+": "join_swap",
+              "-": "flip_add"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "+": "join_swap",
+              "-": "flip_add_p1"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "+": "join_swap",
+              "-": "flip_add_m1"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "+": "join_swap",
+              "-": "flip_absdiff"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "+": "join_swap",
+              "-": "flip_maxmodmin"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "+": "join_swap",
+              "-": "flip_sub_prefix"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "+": "join_swap",
+              "-": "flip_sub_suffix"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "+": "join_swap",
+              "-": "flip_absdiff_prefix"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "+": "join_swap",
+              "-": "flip_absdiff_suffix"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "+": "join_swap",
+                "-": "join"
+              }
+            },
+            "query_output": "9833"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "+": "join_swap",
+                "-": "join_swap"
+              }
+            },
+            "query_output": "3398"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "+": "join_swap",
+                "-": "flip_add"
+              }
+            },
+            "query_output": "221"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "+": "join_swap",
+                "-": "flip_add_p1"
+              }
+            },
+            "query_output": "321"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "+": "join_swap",
+                "-": "flip_add_m1"
+              }
+            },
+            "query_output": "121"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "+": "join_swap",
+                "-": "flip_absdiff"
+              }
+            },
+            "query_output": "65"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "+": "join_swap",
+                "-": "flip_maxmodmin"
+              }
+            },
+            "query_output": "32"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "+": "join_swap",
+                "-": "flip_sub_prefix"
+              }
+            },
+            "query_output": "65"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "+": "join_swap",
+                "-": "flip_sub_suffix"
+              }
+            },
+            "query_output": "65-"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "+": "join_swap",
+                "-": "flip_absdiff_prefix"
+              }
+            },
+            "query_output": "-65"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "+": "join_swap",
+                "-": "flip_absdiff_suffix"
+              }
+            },
+            "query_output": "65-"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "-65",
+          "121",
+          "221",
+          "32",
+          "321",
+          "3398",
+          "65",
+          "65-",
+          "9833"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "5d055504",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "!",
+        "query_operator_in_examples": false,
+        "candidates_by_operator": {
+          ">": [
+            "flip_mul"
+          ],
+          "!": [
+            "sub",
+            "absdiff",
+            "absdiff_prefix",
+            "join",
+            "join_swap",
+            "add",
+            "add_p1",
+            "add_m1",
+            "mul",
+            "mul_p1",
+            "mul_m1",
+            "maxmodmin",
+            "flip_add",
+            "flip_add_p1",
+            "flip_add_m1",
+            "flip_mul",
+            "flip_mul_p1",
+            "flip_mul_m1",
+            "flip_absdiff",
+            "flip_maxmodmin",
+            "flip_sub_prefix",
+            "flip_sub_suffix",
+            "flip_absdiff_prefix",
+            "flip_absdiff_suffix"
+          ]
+        },
+        "valid_assignment_count": 11,
+        "valid_assignments": [
+          {
+            "mode": "flip",
+            "rules": {
+              ">": "flip_mul",
+              "!": "join"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              ">": "flip_mul",
+              "!": "join_swap"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              ">": "flip_mul",
+              "!": "flip_add"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              ">": "flip_mul",
+              "!": "flip_add_p1"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              ">": "flip_mul",
+              "!": "flip_add_m1"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              ">": "flip_mul",
+              "!": "flip_absdiff"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              ">": "flip_mul",
+              "!": "flip_maxmodmin"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              ">": "flip_mul",
+              "!": "flip_sub_prefix"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              ">": "flip_mul",
+              "!": "flip_sub_suffix"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              ">": "flip_mul",
+              "!": "flip_absdiff_prefix"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              ">": "flip_mul",
+              "!": "flip_absdiff_suffix"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                ">": "flip_mul",
+                "!": "join"
+              }
+            },
+            "query_output": "7623"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                ">": "flip_mul",
+                "!": "join_swap"
+              }
+            },
+            "query_output": "2376"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                ">": "flip_mul",
+                "!": "flip_add"
+              }
+            },
+            "query_output": "99"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                ">": "flip_mul",
+                "!": "flip_add_p1"
+              }
+            },
+            "query_output": "001"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                ">": "flip_mul",
+                "!": "flip_add_m1"
+              }
+            },
+            "query_output": "89"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                ">": "flip_mul",
+                "!": "flip_absdiff"
+              }
+            },
+            "query_output": "53"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                ">": "flip_mul",
+                "!": "flip_maxmodmin"
+              }
+            },
+            "query_output": "3"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                ">": "flip_mul",
+                "!": "flip_sub_prefix"
+              }
+            },
+            "query_output": "53"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                ">": "flip_mul",
+                "!": "flip_sub_suffix"
+              }
+            },
+            "query_output": "53!"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                ">": "flip_mul",
+                "!": "flip_absdiff_prefix"
+              }
+            },
+            "query_output": "!53"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                ">": "flip_mul",
+                "!": "flip_absdiff_suffix"
+              }
+            },
+            "query_output": "53!"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "!53",
+          "001",
+          "2376",
+          "3",
+          "53",
+          "53!",
+          "7623",
+          "89",
+          "99"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "f333b67f",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "100",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'^': ['sub', 'absdiff_prefix'], '$': ['mul_m1'], '<': ['add_p1']}.\n3. The public candidate formulas are {'sub': 'AB - CD, raw', 'absdiff_prefix': '|AB - CD| with operator prefix', 'mul_m1': 'AB * CD - 1', 'add_p1': 'AB + CD + 1'}.\n4. Witness check: 36^58 using sub gives ^22; public output ^22 matches exactly.\n5. Witness check: 35$47 using mul_m1 gives 1644; public output 1644 matches exactly.\n6. Witness check: 59^79 using sub gives ^20; public output ^20 matches exactly.\n7. Witness check: 90<20 using add_p1 gives 111; public output 111 matches exactly.\n8. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n9. Legal assignment {'mode': 'normal', 'rules': {'^': 'sub', '$': 'mul_m1', '<': 'add_p1'}}: Query 48<51 gives 100.\n10. Legal assignment {'mode': 'normal', 'rules': {'^': 'absdiff_prefix', '$': 'mul_m1', '<': 'add_p1'}}: Query 48<51 gives 100.\n11. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['100']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{100}"
+    },
+    {
+      "id": "88fe5a52",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "8065",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'*': ['flip_mul_m1'], '-': ['sub', 'absdiff_prefix', 'flip_sub_prefix', 'flip_absdiff_prefix'], '+': ['flip_add_m1']}.\n3. The public candidate formulas are {'flip_mul_m1': 'reverse(BA * DC - 1)', 'sub': 'AB - CD, raw', 'absdiff_prefix': '|AB - CD| with operator prefix', 'flip_sub_prefix': 'reverse(BA - DC), preserving a negative sign as an operator prefix', 'flip_absdiff_prefix': 'operator-prefixed reverse(|BA - DC|)', 'flip_add_m1': 'reverse(BA + DC - 1)'}.\n4. Witness check: 49*95 using flip_mul_m1 gives 5455; public output 5455 matches exactly.\n5. Witness check: 03-58 using flip_sub_prefix gives -55; public output -55 matches exactly.\n6. Witness check: 33*77 using flip_mul_m1 gives 0452; public output 0452 matches exactly.\n7. Witness check: 57+59 using flip_add_m1 gives 961; public output 961 matches exactly.\n8. Witness check: 79+61 using flip_add_m1 gives 211; public output 211 matches exactly.\n9. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n10. Legal assignment {'mode': 'flip', 'rules': {'*': 'flip_mul_m1', '-': 'flip_sub_prefix', '+': 'flip_add_m1'}}: Query 97*17 gives 8065.\n11. Legal assignment {'mode': 'flip', 'rules': {'*': 'flip_mul_m1', '-': 'flip_absdiff_prefix', '+': 'flip_add_m1'}}: Query 97*17 gives 8065.\n12. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['8065']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{8065}"
+    },
+    {
+      "id": "4d92de08",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "819",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {']': ['flip_add'], '#': ['flip_mul'], '<': ['flip_absdiff', 'flip_maxmodmin', 'flip_sub_prefix']}.\n3. The public candidate formulas are {'flip_add': 'reverse(BA + DC)', 'flip_mul': 'reverse(BA * DC)', 'flip_absdiff': 'reverse(|BA - DC|)', 'flip_maxmodmin': 'reverse(max(BA, DC) mod min(BA, DC))', 'flip_sub_prefix': 'reverse(BA - DC), preserving a negative sign as an operator prefix'}.\n4. Witness check: 03]36 using flip_add gives 39; public output 39 matches exactly.\n5. Witness check: 13#44 using flip_mul gives 4631; public output 4631 matches exactly.\n6. Witness check: 57]28 using flip_add gives 751; public output 751 matches exactly.\n7. Witness check: 04<42 using flip_absdiff gives 61; public output 61 matches exactly.\n8. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n9. Legal assignment {'mode': 'flip', 'rules': {']': 'flip_add', '#': 'flip_mul', '<': 'flip_absdiff'}}: Query 15#81 gives 819.\n10. Legal assignment {'mode': 'flip', 'rules': {']': 'flip_add', '#': 'flip_mul', '<': 'flip_maxmodmin'}}: Query 15#81 gives 819.\n11. Legal assignment {'mode': 'flip', 'rules': {']': 'flip_add', '#': 'flip_mul', '<': 'flip_sub_prefix'}}: Query 15#81 gives 819.\n12. There are 3 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['819']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{819}"
+    },
+    {
+      "id": "e102a09d",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "-",
+        "query_operator_in_examples": true,
+        "candidates_by_operator": {
+          "*": [
+            "join_swap"
+          ],
+          "-": [
+            "sub",
+            "absdiff",
+            "maxmodmin",
+            "flip_absdiff",
+            "flip_maxmodmin",
+            "flip_sub_prefix"
+          ],
+          "+": [
+            "join_swap"
+          ]
+        },
+        "valid_assignment_count": 6,
+        "valid_assignments": [
+          {
+            "mode": "normal",
+            "rules": {
+              "*": "join_swap",
+              "-": "sub",
+              "+": "join_swap"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "*": "join_swap",
+              "-": "absdiff",
+              "+": "join_swap"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "*": "join_swap",
+              "-": "maxmodmin",
+              "+": "join_swap"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "join_swap",
+              "-": "flip_absdiff",
+              "+": "join_swap"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "join_swap",
+              "-": "flip_maxmodmin",
+              "+": "join_swap"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "join_swap",
+              "-": "flip_sub_prefix",
+              "+": "join_swap"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "*": "join_swap",
+                "-": "sub",
+                "+": "join_swap"
+              }
+            },
+            "query_output": "-2"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "*": "join_swap",
+                "-": "absdiff",
+                "+": "join_swap"
+              }
+            },
+            "query_output": "2"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "*": "join_swap",
+                "-": "maxmodmin",
+                "+": "join_swap"
+              }
+            },
+            "query_output": "2"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "join_swap",
+                "-": "flip_absdiff",
+                "+": "join_swap"
+              }
+            },
+            "query_output": "02"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "join_swap",
+                "-": "flip_maxmodmin",
+                "+": "join_swap"
+              }
+            },
+            "query_output": "02"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "join_swap",
+                "-": "flip_sub_prefix",
+                "+": "join_swap"
+              }
+            },
+            "query_output": "-02"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "-02",
+          "-2",
+          "02",
+          "2"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "aa8c76a1",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "0861",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'*': ['join_swap'], '+': ['flip_add_p1'], '-': ['flip_sub_prefix', 'flip_absdiff_prefix']}.\n3. The public candidate formulas are {'join_swap': 'CD concatenated with AB', 'flip_add_p1': 'reverse(BA + DC + 1)', 'flip_sub_prefix': 'reverse(BA - DC), preserving a negative sign as an operator prefix', 'flip_absdiff_prefix': 'operator-prefixed reverse(|BA - DC|)'}.\n4. Witness check: 23*34 using join_swap gives 3423; public output 3423 matches exactly.\n5. Witness check: 85+56 using flip_add_p1 gives 421; public output 421 matches exactly.\n6. Witness check: 53-45 using flip_sub_prefix gives -91; public output -91 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'flip', 'rules': {'*': 'join_swap', '+': 'flip_add_p1', '-': 'flip_sub_prefix'}}: Query 61*08 gives 0861.\n9. Legal assignment {'mode': 'flip', 'rules': {'*': 'join_swap', '+': 'flip_add_p1', '-': 'flip_absdiff_prefix'}}: Query 61*08 gives 0861.\n10. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['0861']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{0861}"
+    },
+    {
+      "id": "abbb5d43",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "{",
+        "query_operator_in_examples": false,
+        "candidates_by_operator": {
+          "^": [
+            "add"
+          ],
+          "/": [
+            "sub",
+            "absdiff"
+          ],
+          "{": [
+            "sub",
+            "absdiff",
+            "absdiff_prefix",
+            "join",
+            "join_swap",
+            "add",
+            "add_p1",
+            "add_m1",
+            "mul",
+            "mul_p1",
+            "mul_m1",
+            "maxmodmin",
+            "flip_add",
+            "flip_add_p1",
+            "flip_add_m1",
+            "flip_mul",
+            "flip_mul_p1",
+            "flip_mul_m1",
+            "flip_absdiff",
+            "flip_maxmodmin",
+            "flip_sub_prefix",
+            "flip_sub_suffix",
+            "flip_absdiff_prefix",
+            "flip_absdiff_suffix"
+          ]
+        },
+        "valid_assignment_count": 10,
+        "valid_assignments": [
+          {
+            "mode": "normal",
+            "rules": {
+              "^": "add",
+              "/": "sub",
+              "{": "join"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "^": "add",
+              "/": "sub",
+              "{": "join_swap"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "^": "add",
+              "/": "sub",
+              "{": "mul"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "^": "add",
+              "/": "sub",
+              "{": "mul_p1"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "^": "add",
+              "/": "sub",
+              "{": "mul_m1"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "^": "add",
+              "/": "absdiff",
+              "{": "join"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "^": "add",
+              "/": "absdiff",
+              "{": "join_swap"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "^": "add",
+              "/": "absdiff",
+              "{": "mul"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "^": "add",
+              "/": "absdiff",
+              "{": "mul_p1"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "^": "add",
+              "/": "absdiff",
+              "{": "mul_m1"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "^": "add",
+                "/": "sub",
+                "{": "join"
+              }
+            },
+            "query_output": "8699"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "^": "add",
+                "/": "sub",
+                "{": "join_swap"
+              }
+            },
+            "query_output": "9986"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "^": "add",
+                "/": "sub",
+                "{": "mul"
+              }
+            },
+            "query_output": "8514"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "^": "add",
+                "/": "sub",
+                "{": "mul_p1"
+              }
+            },
+            "query_output": "8515"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "^": "add",
+                "/": "sub",
+                "{": "mul_m1"
+              }
+            },
+            "query_output": "8513"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "^": "add",
+                "/": "absdiff",
+                "{": "join"
+              }
+            },
+            "query_output": "8699"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "^": "add",
+                "/": "absdiff",
+                "{": "join_swap"
+              }
+            },
+            "query_output": "9986"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "^": "add",
+                "/": "absdiff",
+                "{": "mul"
+              }
+            },
+            "query_output": "8514"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "^": "add",
+                "/": "absdiff",
+                "{": "mul_p1"
+              }
+            },
+            "query_output": "8515"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "^": "add",
+                "/": "absdiff",
+                "{": "mul_m1"
+              }
+            },
+            "query_output": "8513"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "8513",
+          "8514",
+          "8515",
+          "8699",
+          "9986"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "e836fb20",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "68",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'+': ['flip_add'], '*': ['flip_mul_p1'], '-': ['sub', 'absdiff', 'flip_absdiff', 'flip_sub_prefix']}.\n3. The public candidate formulas are {'flip_add': 'reverse(BA + DC)', 'flip_mul_p1': 'reverse(BA * DC + 1)', 'sub': 'AB - CD, raw', 'absdiff': '|AB - CD|, raw', 'flip_absdiff': 'reverse(|BA - DC|)', 'flip_sub_prefix': 'reverse(BA - DC), preserving a negative sign as an operator prefix'}.\n4. Witness check: 73+73 using flip_add gives 47; public output 47 matches exactly.\n5. Witness check: 65*51 using flip_mul_p1 gives 148; public output 148 matches exactly.\n6. Witness check: 97*61 using flip_mul_p1 gives 5621; public output 5621 matches exactly.\n7. Witness check: 58-04 using flip_absdiff gives 54; public output 54 matches exactly.\n8. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n9. Legal assignment {'mode': 'flip', 'rules': {'+': 'flip_add', '*': 'flip_mul_p1', '-': 'flip_absdiff'}}: Query 89-21 gives 68.\n10. Legal assignment {'mode': 'flip', 'rules': {'+': 'flip_add', '*': 'flip_mul_p1', '-': 'flip_sub_prefix'}}: Query 89-21 gives 68.\n11. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['68']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{68}"
+    },
+    {
+      "id": "6dda26c0",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "4643",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'-': ['mul_m1'], '[': ['join'], '*': ['sub', 'absdiff_prefix', 'flip_sub_prefix', 'flip_absdiff_prefix']}.\n3. The public candidate formulas are {'mul_m1': 'AB * CD - 1', 'join': 'AB concatenated with CD', 'sub': 'AB - CD, raw', 'absdiff_prefix': '|AB - CD| with operator prefix', 'flip_sub_prefix': 'reverse(BA - DC), preserving a negative sign as an operator prefix', 'flip_absdiff_prefix': 'operator-prefixed reverse(|BA - DC|)'}.\n4. Witness check: 47-51 using mul_m1 gives 2396; public output 2396 matches exactly.\n5. Witness check: 32[26 using join gives 3226; public output 3226 matches exactly.\n6. Witness check: 50*72 using sub gives *22; public output *22 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'normal', 'rules': {'-': 'mul_m1', '[': 'join', '*': 'sub'}}: Query 46[43 gives 4643.\n9. Legal assignment {'mode': 'normal', 'rules': {'-': 'mul_m1', '[': 'join', '*': 'absdiff_prefix'}}: Query 46[43 gives 4643.\n10. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['4643']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{4643}"
+    },
+    {
+      "id": "d64a6578",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "2626",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'{': ['mul_p1'], '?': ['sub', 'absdiff_prefix']}.\n3. The public candidate formulas are {'mul_p1': 'AB * CD + 1', 'sub': 'AB - CD, raw', 'absdiff_prefix': '|AB - CD| with operator prefix'}.\n4. Witness check: 58{12 using mul_p1 gives 697; public output 697 matches exactly.\n5. Witness check: 27{69 using mul_p1 gives 1864; public output 1864 matches exactly.\n6. Witness check: 76?86 using sub gives ?10; public output ?10 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'normal', 'rules': {'{': 'mul_p1', '?': 'sub'}}: Query 75{35 gives 2626.\n9. Legal assignment {'mode': 'normal', 'rules': {'{': 'mul_p1', '?': 'absdiff_prefix'}}: Query 75{35 gives 2626.\n10. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['2626']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{2626}"
+    },
+    {
+      "id": "940df3f4",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "!",
+        "query_operator_in_examples": false,
+        "candidates_by_operator": {
+          "#": [
+            "flip_add"
+          ],
+          "-": [
+            "sub",
+            "absdiff",
+            "flip_absdiff",
+            "flip_sub_prefix"
+          ],
+          "!": [
+            "sub",
+            "absdiff",
+            "absdiff_prefix",
+            "join",
+            "join_swap",
+            "add",
+            "add_p1",
+            "add_m1",
+            "mul",
+            "mul_p1",
+            "mul_m1",
+            "maxmodmin",
+            "flip_add",
+            "flip_add_p1",
+            "flip_add_m1",
+            "flip_mul",
+            "flip_mul_p1",
+            "flip_mul_m1",
+            "flip_absdiff",
+            "flip_maxmodmin",
+            "flip_sub_prefix",
+            "flip_sub_suffix",
+            "flip_absdiff_prefix",
+            "flip_absdiff_suffix"
+          ]
+        },
+        "valid_assignment_count": 10,
+        "valid_assignments": [
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "flip_add",
+              "-": "flip_absdiff",
+              "!": "join"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "flip_add",
+              "-": "flip_absdiff",
+              "!": "join_swap"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "flip_add",
+              "-": "flip_absdiff",
+              "!": "flip_mul"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "flip_add",
+              "-": "flip_absdiff",
+              "!": "flip_mul_p1"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "flip_add",
+              "-": "flip_absdiff",
+              "!": "flip_mul_m1"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "flip_add",
+              "-": "flip_sub_prefix",
+              "!": "join"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "flip_add",
+              "-": "flip_sub_prefix",
+              "!": "join_swap"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "flip_add",
+              "-": "flip_sub_prefix",
+              "!": "flip_mul"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "flip_add",
+              "-": "flip_sub_prefix",
+              "!": "flip_mul_p1"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "#": "flip_add",
+              "-": "flip_sub_prefix",
+              "!": "flip_mul_m1"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "flip_add",
+                "-": "flip_absdiff",
+                "!": "join"
+              }
+            },
+            "query_output": "2782"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "flip_add",
+                "-": "flip_absdiff",
+                "!": "join_swap"
+              }
+            },
+            "query_output": "8227"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "flip_add",
+                "-": "flip_absdiff",
+                "!": "flip_mul"
+              }
+            },
+            "query_output": "6102"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "flip_add",
+                "-": "flip_absdiff",
+                "!": "flip_mul_p1"
+              }
+            },
+            "query_output": "7102"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "flip_add",
+                "-": "flip_absdiff",
+                "!": "flip_mul_m1"
+              }
+            },
+            "query_output": "5102"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "flip_add",
+                "-": "flip_sub_prefix",
+                "!": "join"
+              }
+            },
+            "query_output": "2782"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "flip_add",
+                "-": "flip_sub_prefix",
+                "!": "join_swap"
+              }
+            },
+            "query_output": "8227"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "flip_add",
+                "-": "flip_sub_prefix",
+                "!": "flip_mul"
+              }
+            },
+            "query_output": "6102"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "flip_add",
+                "-": "flip_sub_prefix",
+                "!": "flip_mul_p1"
+              }
+            },
+            "query_output": "7102"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "#": "flip_add",
+                "-": "flip_sub_prefix",
+                "!": "flip_mul_m1"
+              }
+            },
+            "query_output": "5102"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "2782",
+          "5102",
+          "6102",
+          "7102",
+          "8227"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "f2fa334a",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "545",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'*': ['add_p1'], '`': ['sub'], '{': ['mul_m1']}.\n3. The public candidate formulas are {'add_p1': 'AB + CD + 1', 'sub': 'AB - CD, raw', 'mul_m1': 'AB * CD - 1'}.\n4. Witness check: 31*29 using add_p1 gives 61; public output 61 matches exactly.\n5. Witness check: 89`59 using sub gives 30; public output 30 matches exactly.\n6. Witness check: 66{51 using mul_m1 gives 3365; public output 3365 matches exactly.\n7. Witness check: 59`70 using sub gives `11; public output `11 matches exactly.\n8. Witness check: 98*41 using add_p1 gives 140; public output 140 matches exactly.\n9. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n10. Legal assignment {'mode': 'normal', 'rules': {'*': 'add_p1', '`': 'sub', '{': 'mul_m1'}}: Query 42{13 gives 545.\n11. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['545']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{545}"
+    },
+    {
+      "id": "144a3e31",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "582",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'-': ['flip_mul'], '[': ['maxmodmin', 'flip_maxmodmin'], '{': ['flip_add']}.\n3. The public candidate formulas are {'flip_mul': 'reverse(BA * DC)', 'maxmodmin': 'max(AB, CD) mod min(AB, CD)', 'flip_maxmodmin': 'reverse(max(BA, DC) mod min(BA, DC))', 'flip_add': 'reverse(BA + DC)'}.\n4. Witness check: 05-08 using flip_mul gives 0004; public output 0004 matches exactly.\n5. Witness check: 61-45 using flip_mul gives 468; public output 468 matches exactly.\n6. Witness check: 88[21 using flip_maxmodmin gives 4; public output 4 matches exactly.\n7. Witness check: 06{49 using flip_add gives 451; public output 451 matches exactly.\n8. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n9. Legal assignment {'mode': 'flip', 'rules': {'-': 'flip_mul', '[': 'flip_maxmodmin', '{': 'flip_add'}}: Query 51-91 gives 582.\n10. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['582']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{582}"
+    },
+    {
+      "id": "7ac90433",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "-",
+        "query_operator_in_examples": true,
+        "candidates_by_operator": {
+          "-": [
+            "flip_sub_prefix",
+            "flip_absdiff_prefix"
+          ]
+        },
+        "valid_assignment_count": 2,
+        "valid_assignments": [
+          {
+            "mode": "flip",
+            "rules": {
+              "-": "flip_sub_prefix"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "-": "flip_absdiff_prefix"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "-": "flip_sub_prefix"
+              }
+            },
+            "query_output": "23"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "-": "flip_absdiff_prefix"
+              }
+            },
+            "query_output": "-23"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "-23",
+          "23"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "bad6f95d",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "41",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'+': ['mul'], '-': ['absdiff', 'maxmodmin', 'flip_absdiff', 'flip_sub_suffix'], '$': ['add_p1']}.\n3. The public candidate formulas are {'mul': 'AB * CD', 'absdiff': '|AB - CD|, raw', 'maxmodmin': 'max(AB, CD) mod min(AB, CD)', 'flip_absdiff': 'reverse(|BA - DC|)', 'flip_sub_suffix': 'reverse(DC - BA), appending the operator for a negative result', 'add_p1': 'AB + CD + 1'}.\n4. Witness check: 86+60 using mul gives 5160; public output 5160 matches exactly.\n5. Witness check: 42-69 using absdiff gives 27; public output 27 matches exactly.\n6. Witness check: 26$56 using add_p1 gives 83; public output 83 matches exactly.\n7. Witness check: 77+35 using mul gives 2695; public output 2695 matches exactly.\n8. Witness check: 79+27 using mul gives 2133; public output 2133 matches exactly.\n9. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n10. Legal assignment {'mode': 'normal', 'rules': {'+': 'mul', '-': 'absdiff', '$': 'add_p1'}}: Query 54-95 gives 41.\n11. Legal assignment {'mode': 'normal', 'rules': {'+': 'mul', '-': 'maxmodmin', '$': 'add_p1'}}: Query 54-95 gives 41.\n12. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['41']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{41}"
+    },
+    {
+      "id": "d1bd7478",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": ":",
+        "query_operator_in_examples": true,
+        "candidates_by_operator": {
+          "$": [
+            "mul"
+          ],
+          ":": [
+            "sub",
+            "absdiff",
+            "maxmodmin",
+            "flip_absdiff",
+            "flip_maxmodmin",
+            "flip_sub_prefix"
+          ],
+          "|": [
+            "add_p1"
+          ]
+        },
+        "valid_assignment_count": 3,
+        "valid_assignments": [
+          {
+            "mode": "normal",
+            "rules": {
+              "$": "mul",
+              ":": "sub",
+              "|": "add_p1"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "$": "mul",
+              ":": "absdiff",
+              "|": "add_p1"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "$": "mul",
+              ":": "maxmodmin",
+              "|": "add_p1"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "$": "mul",
+                ":": "sub",
+                "|": "add_p1"
+              }
+            },
+            "query_output": ":30"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "$": "mul",
+                ":": "absdiff",
+                "|": "add_p1"
+              }
+            },
+            "query_output": "30"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "$": "mul",
+                ":": "maxmodmin",
+                "|": "add_p1"
+              }
+            },
+            "query_output": "30"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "30",
+          ":30"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "9d68ef62",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "83(",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'(': ['flip_sub_suffix', 'flip_absdiff_suffix'], ')': ['add', 'flip_add'], '*': ['flip_mul']}.\n3. The public candidate formulas are {'flip_sub_suffix': 'reverse(DC - BA), appending the operator for a negative result', 'flip_absdiff_suffix': 'reverse(|BA - DC|) followed by the operator', 'add': 'AB + CD', 'flip_add': 'reverse(BA + DC)', 'flip_mul': 'reverse(BA * DC)'}.\n4. Witness check: 88(43 using flip_sub_suffix gives 45(; public output 45( matches exactly.\n5. Witness check: 02)91 using flip_add gives 93; public output 93 matches exactly.\n6. Witness check: 17*06 using flip_mul gives 0624; public output 0624 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'flip', 'rules': {'(': 'flip_sub_suffix', ')': 'flip_add', '*': 'flip_mul'}}: Query 69(85 gives 83(.\n9. Legal assignment {'mode': 'flip', 'rules': {'(': 'flip_absdiff_suffix', ')': 'flip_add', '*': 'flip_mul'}}: Query 69(85 gives 83(.\n10. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['83(']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{83(}"
+    },
+    {
+      "id": "3c424916",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "9351",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'*': ['flip_mul_m1'], '+': ['flip_add']}.\n3. The public candidate formulas are {'flip_mul_m1': 'reverse(BA * DC - 1)', 'flip_add': 'reverse(BA + DC)'}.\n4. Witness check: 26*84 using flip_mul_m1 gives 5792; public output 5792 matches exactly.\n5. Witness check: 22+78 using flip_add gives 901; public output 901 matches exactly.\n6. Witness check: 49*64 using flip_mul_m1 gives 3234; public output 3234 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'flip', 'rules': {'*': 'flip_mul_m1', '+': 'flip_add'}}: Query 82*55 gives 9351.\n9. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['9351']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{9351}"
+    },
+    {
+      "id": "fe393711",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "1291",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'\\\\': ['flip_sub_suffix'], '}': ['flip_mul_p1']}.\n3. The public candidate formulas are {'flip_sub_suffix': 'reverse(DC - BA), appending the operator for a negative result', 'flip_mul_p1': 'reverse(BA * DC + 1)'}.\n4. Witness check: 44\\66 using flip_sub_suffix gives 22; public output 22 matches exactly.\n5. Witness check: 57\\79 using flip_sub_suffix gives 22; public output 22 matches exactly.\n6. Witness check: 67}91 using flip_mul_p1 gives 5441; public output 5441 matches exactly.\n7. Witness check: 49\\19 using flip_sub_suffix gives 3\\; public output 3\\ matches exactly.\n8. Witness check: 31\\62 using flip_sub_suffix gives 31; public output 31 matches exactly.\n9. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n10. Legal assignment {'mode': 'flip', 'rules': {'\\\\': 'flip_sub_suffix', '}': 'flip_mul_p1'}}: Query 46}03 gives 1291.\n11. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['1291']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{1291}"
+    },
+    {
+      "id": "21519be7",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "35",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'@': ['flip_add'], '>': ['flip_absdiff', 'flip_sub_suffix']}.\n3. The public candidate formulas are {'flip_add': 'reverse(BA + DC)', 'flip_absdiff': 'reverse(|BA - DC|)', 'flip_sub_suffix': 'reverse(DC - BA), appending the operator for a negative result'}.\n4. Witness check: 58@52 using flip_add gives 011; public output 011 matches exactly.\n5. Witness check: 31>55 using flip_absdiff gives 24; public output 24 matches exactly.\n6. Witness check: 85>27 using flip_absdiff gives 41; public output 41 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'flip', 'rules': {'@': 'flip_add', '>': 'flip_absdiff'}}: Query 82@52 gives 35.\n9. Legal assignment {'mode': 'flip', 'rules': {'@': 'flip_add', '>': 'flip_sub_suffix'}}: Query 82@52 gives 35.\n10. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['35']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{35}"
+    },
+    {
+      "id": "592107c3",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "/",
+        "query_operator_in_examples": false,
+        "candidates_by_operator": {
+          "<": [
+            "mul"
+          ],
+          "+": [
+            "join"
+          ],
+          "/": [
+            "sub",
+            "absdiff",
+            "absdiff_prefix",
+            "join",
+            "join_swap",
+            "add",
+            "add_p1",
+            "add_m1",
+            "mul",
+            "mul_p1",
+            "mul_m1",
+            "maxmodmin",
+            "flip_add",
+            "flip_add_p1",
+            "flip_add_m1",
+            "flip_mul",
+            "flip_mul_p1",
+            "flip_mul_m1",
+            "flip_absdiff",
+            "flip_maxmodmin",
+            "flip_sub_prefix",
+            "flip_sub_suffix",
+            "flip_absdiff_prefix",
+            "flip_absdiff_suffix"
+          ]
+        },
+        "valid_assignment_count": 9,
+        "valid_assignments": [
+          {
+            "mode": "normal",
+            "rules": {
+              "<": "mul",
+              "+": "join",
+              "/": "sub"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "<": "mul",
+              "+": "join",
+              "/": "absdiff"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "<": "mul",
+              "+": "join",
+              "/": "absdiff_prefix"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "<": "mul",
+              "+": "join",
+              "/": "join"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "<": "mul",
+              "+": "join",
+              "/": "join_swap"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "<": "mul",
+              "+": "join",
+              "/": "add"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "<": "mul",
+              "+": "join",
+              "/": "add_p1"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "<": "mul",
+              "+": "join",
+              "/": "add_m1"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "<": "mul",
+              "+": "join",
+              "/": "maxmodmin"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "<": "mul",
+                "+": "join",
+                "/": "sub"
+              }
+            },
+            "query_output": "13"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "<": "mul",
+                "+": "join",
+                "/": "absdiff"
+              }
+            },
+            "query_output": "13"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "<": "mul",
+                "+": "join",
+                "/": "absdiff_prefix"
+              }
+            },
+            "query_output": "/13"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "<": "mul",
+                "+": "join",
+                "/": "join"
+              }
+            },
+            "query_output": "7562"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "<": "mul",
+                "+": "join",
+                "/": "join_swap"
+              }
+            },
+            "query_output": "6275"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "<": "mul",
+                "+": "join",
+                "/": "add"
+              }
+            },
+            "query_output": "137"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "<": "mul",
+                "+": "join",
+                "/": "add_p1"
+              }
+            },
+            "query_output": "138"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "<": "mul",
+                "+": "join",
+                "/": "add_m1"
+              }
+            },
+            "query_output": "136"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "<": "mul",
+                "+": "join",
+                "/": "maxmodmin"
+              }
+            },
+            "query_output": "13"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "/13",
+          "13",
+          "136",
+          "137",
+          "138",
+          "6275",
+          "7562"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "966c1f9f",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "+",
+        "query_operator_in_examples": false,
+        "candidates_by_operator": {
+          "*": [
+            "flip_mul"
+          ],
+          "-": [
+            "flip_sub_prefix",
+            "flip_absdiff_prefix"
+          ],
+          "+": [
+            "sub",
+            "absdiff",
+            "absdiff_prefix",
+            "join",
+            "join_swap",
+            "add",
+            "add_p1",
+            "add_m1",
+            "mul",
+            "mul_p1",
+            "mul_m1",
+            "maxmodmin",
+            "flip_add",
+            "flip_add_p1",
+            "flip_add_m1",
+            "flip_mul",
+            "flip_mul_p1",
+            "flip_mul_m1",
+            "flip_absdiff",
+            "flip_maxmodmin",
+            "flip_sub_prefix",
+            "flip_sub_suffix",
+            "flip_absdiff_prefix",
+            "flip_absdiff_suffix"
+          ]
+        },
+        "valid_assignment_count": 10,
+        "valid_assignments": [
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "-": "flip_sub_prefix",
+              "+": "join"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "-": "flip_sub_prefix",
+              "+": "join_swap"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "-": "flip_sub_prefix",
+              "+": "flip_add"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "-": "flip_sub_prefix",
+              "+": "flip_add_p1"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "-": "flip_sub_prefix",
+              "+": "flip_add_m1"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "-": "flip_absdiff_prefix",
+              "+": "join"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "-": "flip_absdiff_prefix",
+              "+": "join_swap"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "-": "flip_absdiff_prefix",
+              "+": "flip_add"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "-": "flip_absdiff_prefix",
+              "+": "flip_add_p1"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "*": "flip_mul",
+              "-": "flip_absdiff_prefix",
+              "+": "flip_add_m1"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "-": "flip_sub_prefix",
+                "+": "join"
+              }
+            },
+            "query_output": "3145"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "-": "flip_sub_prefix",
+                "+": "join_swap"
+              }
+            },
+            "query_output": "4531"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "-": "flip_sub_prefix",
+                "+": "flip_add"
+              }
+            },
+            "query_output": "76"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "-": "flip_sub_prefix",
+                "+": "flip_add_p1"
+              }
+            },
+            "query_output": "86"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "-": "flip_sub_prefix",
+                "+": "flip_add_m1"
+              }
+            },
+            "query_output": "66"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "-": "flip_absdiff_prefix",
+                "+": "join"
+              }
+            },
+            "query_output": "3145"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "-": "flip_absdiff_prefix",
+                "+": "join_swap"
+              }
+            },
+            "query_output": "4531"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "-": "flip_absdiff_prefix",
+                "+": "flip_add"
+              }
+            },
+            "query_output": "76"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "-": "flip_absdiff_prefix",
+                "+": "flip_add_p1"
+              }
+            },
+            "query_output": "86"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "*": "flip_mul",
+                "-": "flip_absdiff_prefix",
+                "+": "flip_add_m1"
+              }
+            },
+            "query_output": "66"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "3145",
+          "4531",
+          "66",
+          "76",
+          "86"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "4350015c",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "6461",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'*': ['flip_mul_m1'], '-': ['maxmodmin', 'flip_maxmodmin']}.\n3. The public candidate formulas are {'flip_mul_m1': 'reverse(BA * DC - 1)', 'maxmodmin': 'max(AB, CD) mod min(AB, CD)', 'flip_maxmodmin': 'reverse(max(BA, DC) mod min(BA, DC))'}.\n4. Witness check: 57*59 using flip_mul_m1 gives 4217; public output 4217 matches exactly.\n5. Witness check: 47-69 using flip_maxmodmin gives 22; public output 22 matches exactly.\n6. Witness check: 32-75 using flip_maxmodmin gives 11; public output 11 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'flip', 'rules': {'*': 'flip_mul_m1', '-': 'flip_maxmodmin'}}: Query 16*72 gives 6461.\n9. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['6461']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{6461}"
+    },
+    {
+      "id": "3013265c",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "36",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'-': ['flip_absdiff', 'flip_maxmodmin'], '+': ['flip_add']}.\n3. The public candidate formulas are {'flip_absdiff': 'reverse(|BA - DC|)', 'flip_maxmodmin': 'reverse(max(BA, DC) mod min(BA, DC))', 'flip_add': 'reverse(BA + DC)'}.\n4. Witness check: 94-96 using flip_absdiff gives 02; public output 02 matches exactly.\n5. Witness check: 18-56 using flip_absdiff gives 61; public output 61 matches exactly.\n6. Witness check: 29+41 using flip_add gives 601; public output 601 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'flip', 'rules': {'-': 'flip_absdiff', '+': 'flip_add'}}: Query 92+43 gives 36.\n9. Legal assignment {'mode': 'flip', 'rules': {'-': 'flip_maxmodmin', '+': 'flip_add'}}: Query 92+43 gives 36.\n10. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['36']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{36}"
+    },
+    {
+      "id": "75032b65",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "27",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'&': ['sub', 'absdiff'], \"'\": ['mul_m1']}.\n3. The public candidate formulas are {'sub': 'AB - CD, raw', 'absdiff': '|AB - CD|, raw', 'mul_m1': 'AB * CD - 1'}.\n4. Witness check: 64&31 using sub gives 33; public output 33 matches exactly.\n5. Witness check: 28'15 using mul_m1 gives 419; public output 419 matches exactly.\n6. Witness check: 40'85 using mul_m1 gives 3399; public output 3399 matches exactly.\n7. Witness check: 54&29 using sub gives 25; public output 25 matches exactly.\n8. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n9. Legal assignment {'mode': 'normal', 'rules': {'&': 'sub', \"'\": 'mul_m1'}}: Query 52&25 gives 27.\n10. Legal assignment {'mode': 'normal', 'rules': {'&': 'absdiff', \"'\": 'mul_m1'}}: Query 52&25 gives 27.\n11. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['27']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{27}"
+    },
+    {
+      "id": "d8bc44b3",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "-",
+        "query_operator_in_examples": true,
+        "candidates_by_operator": {
+          "+": [
+            "add",
+            "mul_p1",
+            "flip_add"
+          ],
+          "*": [
+            "flip_mul_m1"
+          ],
+          "-": [
+            "absdiff",
+            "maxmodmin",
+            "flip_absdiff",
+            "flip_maxmodmin",
+            "flip_sub_suffix"
+          ]
+        },
+        "valid_assignment_count": 3,
+        "valid_assignments": [
+          {
+            "mode": "flip",
+            "rules": {
+              "+": "flip_add",
+              "*": "flip_mul_m1",
+              "-": "flip_absdiff"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "+": "flip_add",
+              "*": "flip_mul_m1",
+              "-": "flip_maxmodmin"
+            }
+          },
+          {
+            "mode": "flip",
+            "rules": {
+              "+": "flip_add",
+              "*": "flip_mul_m1",
+              "-": "flip_sub_suffix"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "+": "flip_add",
+                "*": "flip_mul_m1",
+                "-": "flip_absdiff"
+              }
+            },
+            "query_output": "31"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "+": "flip_add",
+                "*": "flip_mul_m1",
+                "-": "flip_maxmodmin"
+              }
+            },
+            "query_output": "31"
+          },
+          {
+            "assignment": {
+              "mode": "flip",
+              "rules": {
+                "+": "flip_add",
+                "*": "flip_mul_m1",
+                "-": "flip_sub_suffix"
+              }
+            },
+            "query_output": "31-"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "31",
+          "31-"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "93d1c7eb",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "0154",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'[': ['flip_sub_prefix'], '`': ['flip_mul']}.\n3. The public candidate formulas are {'flip_sub_prefix': 'reverse(BA - DC), preserving a negative sign as an operator prefix', 'flip_mul': 'reverse(BA * DC)'}.\n4. Witness check: 29[22 using flip_sub_prefix gives 07; public output 07 matches exactly.\n5. Witness check: 24[68 using flip_sub_prefix gives [44; public output [44 matches exactly.\n6. Witness check: 54`61 using flip_mul gives 027; public output 027 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'flip', 'rules': {'[': 'flip_sub_prefix', '`': 'flip_mul'}}: Query 28`55 gives 0154.\n9. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['0154']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{0154}"
+    },
+    {
+      "id": "71e02000",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "3767",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'-': ['absdiff_prefix'], '$': ['join']}.\n3. The public candidate formulas are {'absdiff_prefix': '|AB - CD| with operator prefix', 'join': 'AB concatenated with CD'}.\n4. Witness check: 56-66 using absdiff_prefix gives -10; public output -10 matches exactly.\n5. Witness check: 25$31 using join gives 2531; public output 2531 matches exactly.\n6. Witness check: 47-19 using absdiff_prefix gives -28; public output -28 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'normal', 'rules': {'-': 'absdiff_prefix', '$': 'join'}}: Query 37$67 gives 3767.\n9. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['3767']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{3767}"
+    },
+    {
+      "id": "794f71ed",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "5432",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'-': ['flip_absdiff_prefix'], '*': ['flip_mul']}.\n3. The public candidate formulas are {'flip_absdiff_prefix': 'operator-prefixed reverse(|BA - DC|)', 'flip_mul': 'reverse(BA * DC)'}.\n4. Witness check: 42-16 using flip_absdiff_prefix gives -73; public output -73 matches exactly.\n5. Witness check: 43*45 using flip_mul gives 6381; public output 6381 matches exactly.\n6. Witness check: 28-17 using flip_absdiff_prefix gives -11; public output -11 matches exactly.\n7. Witness check: 14-53 using flip_absdiff_prefix gives -6; public output -6 matches exactly.\n8. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n9. Legal assignment {'mode': 'flip', 'rules': {'-': 'flip_absdiff_prefix', '*': 'flip_mul'}}: Query 53*76 gives 5432.\n10. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['5432']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{5432}"
+    },
+    {
+      "id": "e70d5739",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "6257",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'*': ['flip_mul_p1'], '-': ['sub', 'absdiff', 'maxmodmin', 'flip_absdiff', 'flip_sub_prefix'], '+': ['join_swap']}.\n3. The public candidate formulas are {'flip_mul_p1': 'reverse(BA * DC + 1)', 'sub': 'AB - CD, raw', 'absdiff': '|AB - CD|, raw', 'maxmodmin': 'max(AB, CD) mod min(AB, CD)', 'flip_absdiff': 'reverse(|BA - DC|)', 'flip_sub_prefix': 'reverse(BA - DC), preserving a negative sign as an operator prefix', 'join_swap': 'CD concatenated with AB'}.\n4. Witness check: 95*89 using flip_mul_p1 gives 3875; public output 3875 matches exactly.\n5. Witness check: 99-81 using flip_absdiff gives 18; public output 18 matches exactly.\n6. Witness check: 32+87 using join_swap gives 8732; public output 8732 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'flip', 'rules': {'*': 'flip_mul_p1', '-': 'flip_absdiff', '+': 'join_swap'}}: Query 57+62 gives 6257.\n9. Legal assignment {'mode': 'flip', 'rules': {'*': 'flip_mul_p1', '-': 'flip_sub_prefix', '+': 'join_swap'}}: Query 57+62 gives 6257.\n10. There are 2 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['6257']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{6257}"
+    },
+    {
+      "id": "cf84c023",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "*",
+        "query_operator_in_examples": true,
+        "candidates_by_operator": {
+          "]": [
+            "mul_m1"
+          ],
+          "*": [
+            "sub",
+            "absdiff_prefix",
+            "flip_sub_prefix",
+            "flip_absdiff_prefix"
+          ]
+        },
+        "valid_assignment_count": 2,
+        "valid_assignments": [
+          {
+            "mode": "normal",
+            "rules": {
+              "]": "mul_m1",
+              "*": "sub"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "]": "mul_m1",
+              "*": "absdiff_prefix"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "]": "mul_m1",
+                "*": "sub"
+              }
+            },
+            "query_output": "13"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "]": "mul_m1",
+                "*": "absdiff_prefix"
+              }
+            },
+            "query_output": "*13"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "*13",
+          "13"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "8321a400",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "6915",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'*': ['join_swap'], '-': ['sub', 'absdiff', 'flip_absdiff', 'flip_sub_prefix'], '+': ['join_swap']}.\n3. The public candidate formulas are {'join_swap': 'CD concatenated with AB', 'sub': 'AB - CD, raw', 'absdiff': '|AB - CD|, raw', 'flip_absdiff': 'reverse(|BA - DC|)', 'flip_sub_prefix': 'reverse(BA - DC), preserving a negative sign as an operator prefix'}.\n4. Witness check: 98*36 using join_swap gives 3698; public output 3698 matches exactly.\n5. Witness check: 04*82 using join_swap gives 8204; public output 8204 matches exactly.\n6. Witness check: 26-11 using sub gives 15; public output 15 matches exactly.\n7. Witness check: 64*02 using join_swap gives 0264; public output 0264 matches exactly.\n8. Witness check: 25+94 using join_swap gives 9425; public output 9425 matches exactly.\n9. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n10. Legal assignment {'mode': 'normal', 'rules': {'*': 'join_swap', '-': 'sub', '+': 'join_swap'}}: Query 15*69 gives 6915.\n11. Legal assignment {'mode': 'normal', 'rules': {'*': 'join_swap', '-': 'absdiff', '+': 'join_swap'}}: Query 15*69 gives 6915.\n12. Legal assignment {'mode': 'flip', 'rules': {'*': 'join_swap', '-': 'flip_absdiff', '+': 'join_swap'}}: Query 15*69 gives 6915.\n13. Legal assignment {'mode': 'flip', 'rules': {'*': 'join_swap', '-': 'flip_sub_prefix', '+': 'join_swap'}}: Query 15*69 gives 6915.\n14. There are 4 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['6915']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{6915}"
+    },
+    {
+      "id": "d67f28ad",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "131",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'#': ['add_m1'], '\\\\': ['absdiff', 'flip_absdiff']}.\n3. The public candidate formulas are {'add_m1': 'AB + CD - 1', 'absdiff': '|AB - CD|, raw', 'flip_absdiff': 'reverse(|BA - DC|)'}.\n4. Witness check: 32#89 using add_m1 gives 120; public output 120 matches exactly.\n5. Witness check: 41\\97 using absdiff gives 56; public output 56 matches exactly.\n6. Witness check: 28#56 using add_m1 gives 83; public output 83 matches exactly.\n7. Witness check: 88\\24 using absdiff gives 64; public output 64 matches exactly.\n8. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n9. Legal assignment {'mode': 'normal', 'rules': {'#': 'add_m1', '\\\\': 'absdiff'}}: Query 68#64 gives 131.\n10. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['131']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{131}"
+    },
+    {
+      "id": "f4ecefa4",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "86",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'-': ['absdiff'], '%': ['add_p1']}.\n3. The public candidate formulas are {'absdiff': '|AB - CD|, raw', 'add_p1': 'AB + CD + 1'}.\n4. Witness check: 81-45 using absdiff gives 36; public output 36 matches exactly.\n5. Witness check: 11-61 using absdiff gives 50; public output 50 matches exactly.\n6. Witness check: 58%35 using add_p1 gives 94; public output 94 matches exactly.\n7. Witness check: 31%95 using add_p1 gives 127; public output 127 matches exactly.\n8. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n9. Legal assignment {'mode': 'normal', 'rules': {'-': 'absdiff', '%': 'add_p1'}}: Query 27%58 gives 86.\n10. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['86']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{86}"
+    },
+    {
+      "id": "68b9b9a8",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "4734",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'*': ['flip_mul'], '+': ['flip_add_p1']}.\n3. The public candidate formulas are {'flip_mul': 'reverse(BA * DC)', 'flip_add_p1': 'reverse(BA + DC + 1)'}.\n4. Witness check: 73*37 using flip_mul gives 1072; public output 1072 matches exactly.\n5. Witness check: 16*82 using flip_mul gives 8071; public output 8071 matches exactly.\n6. Witness check: 84*78 using flip_mul gives 6714; public output 6714 matches exactly.\n7. Witness check: 11+42 using flip_add_p1 gives 63; public output 63 matches exactly.\n8. Witness check: 71+39 using flip_add_p1 gives 111; public output 111 matches exactly.\n9. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n10. Legal assignment {'mode': 'flip', 'rules': {'*': 'flip_mul', '+': 'flip_add_p1'}}: Query 45*18 gives 4734.\n11. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['4734']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{4734}"
+    },
+    {
+      "id": "b4a5076f",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "75",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'!': ['flip_maxmodmin'], '<': ['flip_add'], '$': ['flip_mul']}.\n3. The public candidate formulas are {'flip_maxmodmin': 'reverse(max(BA, DC) mod min(BA, DC))', 'flip_add': 'reverse(BA + DC)', 'flip_mul': 'reverse(BA * DC)'}.\n4. Witness check: 84!87 using flip_maxmodmin gives 03; public output 03 matches exactly.\n5. Witness check: 95<16 using flip_add gives 021; public output 021 matches exactly.\n6. Witness check: 88!71 using flip_maxmodmin gives 3; public output 3 matches exactly.\n7. Witness check: 38<94 using flip_add gives 231; public output 231 matches exactly.\n8. Witness check: 12$38 using flip_mul gives 3471; public output 3471 matches exactly.\n9. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n10. Legal assignment {'mode': 'flip', 'rules': {'!': 'flip_maxmodmin', '<': 'flip_add', '$': 'flip_mul'}}: Query 62<13 gives 75.\n11. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['75']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{75}"
+    },
+    {
+      "id": "7d8fe3a8",
+      "task_type": "equation_numeric",
+      "reference_verified": false,
+      "error": "Unsolved or non-unique candidate",
+      "resolution": {
+        "status": "solved",
+        "query_operator": "%",
+        "query_operator_in_examples": false,
+        "candidates_by_operator": {
+          "\"": [
+            "add_p1"
+          ],
+          "|": [
+            "sub",
+            "absdiff_prefix"
+          ],
+          "%": [
+            "sub",
+            "absdiff",
+            "absdiff_prefix",
+            "join",
+            "join_swap",
+            "add",
+            "add_p1",
+            "add_m1",
+            "mul",
+            "mul_p1",
+            "mul_m1",
+            "maxmodmin",
+            "flip_add",
+            "flip_add_p1",
+            "flip_add_m1",
+            "flip_mul",
+            "flip_mul_p1",
+            "flip_mul_m1",
+            "flip_absdiff",
+            "flip_maxmodmin",
+            "flip_sub_prefix",
+            "flip_sub_suffix",
+            "flip_absdiff_prefix",
+            "flip_absdiff_suffix"
+          ]
+        },
+        "valid_assignment_count": 10,
+        "valid_assignments": [
+          {
+            "mode": "normal",
+            "rules": {
+              "\"": "add_p1",
+              "|": "sub",
+              "%": "join"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "\"": "add_p1",
+              "|": "sub",
+              "%": "join_swap"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "\"": "add_p1",
+              "|": "sub",
+              "%": "mul"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "\"": "add_p1",
+              "|": "sub",
+              "%": "mul_p1"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "\"": "add_p1",
+              "|": "sub",
+              "%": "mul_m1"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "\"": "add_p1",
+              "|": "absdiff_prefix",
+              "%": "join"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "\"": "add_p1",
+              "|": "absdiff_prefix",
+              "%": "join_swap"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "\"": "add_p1",
+              "|": "absdiff_prefix",
+              "%": "mul"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "\"": "add_p1",
+              "|": "absdiff_prefix",
+              "%": "mul_p1"
+            }
+          },
+          {
+            "mode": "normal",
+            "rules": {
+              "\"": "add_p1",
+              "|": "absdiff_prefix",
+              "%": "mul_m1"
+            }
+          }
+        ],
+        "assignment_query_outputs": [
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "\"": "add_p1",
+                "|": "sub",
+                "%": "join"
+              }
+            },
+            "query_output": "9184"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "\"": "add_p1",
+                "|": "sub",
+                "%": "join_swap"
+              }
+            },
+            "query_output": "8491"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "\"": "add_p1",
+                "|": "sub",
+                "%": "mul"
+              }
+            },
+            "query_output": "7644"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "\"": "add_p1",
+                "|": "sub",
+                "%": "mul_p1"
+              }
+            },
+            "query_output": "7645"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "\"": "add_p1",
+                "|": "sub",
+                "%": "mul_m1"
+              }
+            },
+            "query_output": "7643"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "\"": "add_p1",
+                "|": "absdiff_prefix",
+                "%": "join"
+              }
+            },
+            "query_output": "9184"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "\"": "add_p1",
+                "|": "absdiff_prefix",
+                "%": "join_swap"
+              }
+            },
+            "query_output": "8491"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "\"": "add_p1",
+                "|": "absdiff_prefix",
+                "%": "mul"
+              }
+            },
+            "query_output": "7644"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "\"": "add_p1",
+                "|": "absdiff_prefix",
+                "%": "mul_p1"
+              }
+            },
+            "query_output": "7645"
+          },
+          {
+            "assignment": {
+              "mode": "normal",
+              "rules": {
+                "\"": "add_p1",
+                "|": "absdiff_prefix",
+                "%": "mul_m1"
+              }
+            },
+            "query_output": "7643"
+          }
+        ],
+        "undefined_query_assignments": 0,
+        "query_outputs": [
+          "7643",
+          "7644",
+          "7645",
+          "8491",
+          "9184"
+        ],
+        "answer_unique": false,
+        "rule_assignment_unique": false,
+        "selected_assignment": null
+      }
+    },
+    {
+      "id": "824d4bcb",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "64:",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'!': ['flip_mul'], '\\\\': ['add', 'flip_add'], ':': ['flip_absdiff_suffix']}.\n3. The public candidate formulas are {'flip_mul': 'reverse(BA * DC)', 'add': 'AB + CD', 'flip_add': 'reverse(BA + DC)', 'flip_absdiff_suffix': 'reverse(|BA - DC|) followed by the operator'}.\n4. Witness check: 09!22 using flip_mul gives 0891; public output 0891 matches exactly.\n5. Witness check: 49\\72 using flip_add gives 121; public output 121 matches exactly.\n6. Witness check: 11:92 using flip_absdiff_suffix gives 81:; public output 81: matches exactly.\n7. Witness check: 65!61 using flip_mul gives 698; public output 698 matches exactly.\n8. Witness check: 68:06 using flip_absdiff_suffix gives 62:; public output 62: matches exactly.\n9. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n10. Legal assignment {'mode': 'flip', 'rules': {'!': 'flip_mul', '\\\\': 'flip_add', ':': 'flip_absdiff_suffix'}}: Query 24:88 gives 64:.\n11. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['64:']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{64:}"
+    },
+    {
+      "id": "2af7134e",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "20",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'+': ['absdiff'], '}': ['join']}.\n3. The public candidate formulas are {'absdiff': '|AB - CD|, raw', 'join': 'AB concatenated with CD'}.\n4. Witness check: 13+14 using absdiff gives 1; public output 1 matches exactly.\n5. Witness check: 92+33 using absdiff gives 59; public output 59 matches exactly.\n6. Witness check: 95}54 using join gives 9554; public output 9554 matches exactly.\n7. Witness check: 56+21 using absdiff gives 35; public output 35 matches exactly.\n8. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n9. Legal assignment {'mode': 'normal', 'rules': {'+': 'absdiff', '}': 'join'}}: Query 61+41 gives 20.\n10. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['20']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{20}"
+    },
+    {
+      "id": "9ff6e9d2",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "11",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'-': ['flip_absdiff', 'flip_maxmodmin', 'flip_sub_prefix'], '+': ['flip_add']}.\n3. The public candidate formulas are {'flip_absdiff': 'reverse(|BA - DC|)', 'flip_maxmodmin': 'reverse(max(BA, DC) mod min(BA, DC))', 'flip_sub_prefix': 'reverse(BA - DC), preserving a negative sign as an operator prefix', 'flip_add': 'reverse(BA + DC)'}.\n4. Witness check: 18-55 using flip_absdiff gives 62; public output 62 matches exactly.\n5. Witness check: 26-15 using flip_absdiff gives 11; public output 11 matches exactly.\n6. Witness check: 02+03 using flip_add gives 05; public output 05 matches exactly.\n7. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n8. Legal assignment {'mode': 'flip', 'rules': {'-': 'flip_absdiff', '+': 'flip_add'}}: Query 65-54 gives 11.\n9. Legal assignment {'mode': 'flip', 'rules': {'-': 'flip_maxmodmin', '+': 'flip_add'}}: Query 65-54 gives 11.\n10. Legal assignment {'mode': 'flip', 'rules': {'-': 'flip_sub_prefix', '+': 'flip_add'}}: Query 65-54 gives 11.\n11. There are 3 legal assignments; rule_assignment_unique=False, answer_unique=True. All legal Query outputs are ['11']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{11}"
+    },
+    {
+      "id": "5d834875",
+      "task_type": "equation_numeric",
+      "reference_verified": true,
+      "solver_answer": "25",
+      "official_answer_exact": true,
+      "official_answer_scored_correct": true,
+      "canonical_completion": "1. Parse every public equation; treat each output as an exact string, preserving signs and leading zeros.\n2. Enumerate the fixed Numeric24 rules for each operator: {'`': ['flip_mul'], '-': ['flip_add']}.\n3. The public candidate formulas are {'flip_mul': 'reverse(BA * DC)', 'flip_add': 'reverse(BA + DC)'}.\n4. Witness check: 08`18 using flip_mul gives 0846; public output 0846 matches exactly.\n5. Witness check: 34-95 using flip_add gives 201; public output 201 matches exactly.\n6. Witness check: 79`94 using flip_mul gives 3574; public output 3574 matches exactly.\n7. Witness check: 33`23 using flip_mul gives 6501; public output 6501 matches exactly.\n8. Enumerate all assignments with one normal/flip family and no repeated non-join semantic group.\n9. Legal assignment {'mode': 'flip', 'rules': {'`': 'flip_mul', '-': 'flip_add'}}: Query 91-33 gives 25.\n10. There are 1 legal assignments; rule_assignment_unique=True, answer_unique=True. All legal Query outputs are ['25']. The displayed witness does not imply unique rules.\nFinal answer: \\boxed{25}"
+    }
+  ],
+  "all_questions_retained": true,
+  "primary_metric": "official final accuracy on every registered question",
+  "scope_note": "Non-unique/unsupported public Numeric24 references cannot certify full proof; never change official targets."
+}

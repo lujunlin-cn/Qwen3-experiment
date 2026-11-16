@@ -1,0 +1,14 @@
+audited 50 accepted 37
+audited 100 accepted 73
+audited 150 accepted 108
+audited 200 accepted 146
+audited 250 accepted 183
+audited 300 accepted 223
+audited 350 accepted 263
+audited 400 accepted 302
+audited 450 accepted 340
+audited 500 accepted 377
+{
+  "accepted": 384,
+  "rejected": 126
+}

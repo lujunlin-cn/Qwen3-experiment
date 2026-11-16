@@ -1,0 +1,72 @@
+{
+  "pipeline_status": "completed",
+  "mathematics_and_data_gate": "passed",
+  "research_claim_status": "synthetic_superiority_not_established",
+  "old_preview_audit": {
+    "gravity": {
+      "passed": 10,
+      "total": 10,
+      "records_preserved_byte_for_byte": true
+    },
+    "equation_numeric": {
+      "passed": 10,
+      "total": 10,
+      "rerendered_with_exact_reference_for_new_experiment": true
+    }
+  },
+  "new_candidates": 500,
+  "new_accepted": 374,
+  "prior_equation_previews_accepted": 10,
+  "equation_proofs_accepted": 384,
+  "equation_sft_render_passed": 384,
+  "equation_training_eligible": 384,
+  "equation_selected_and_entered_isolated_sft": 100,
+  "equation_accepted_subtypes": {
+    "deduce": 384,
+    "guess": 0
+  },
+  "gravity_selected_and_entered_isolated_sft": 10,
+  "roman_prefix_previews": 30,
+  "roman_training_eligible": 0,
+  "independent_train_arms": {
+    "A": {
+      "optimizer_steps": 0,
+      "is_original_R1": true
+    },
+    "B": {
+      "optimizer_steps": 28,
+      "records": 110,
+      "supervised_tokens": 77106
+    },
+    "C": {
+      "optimizer_steps": 28,
+      "records": 110,
+      "supervised_tokens": 77116
+    }
+  },
+  "token_budget_relative_difference": 0.0001296915933909164,
+  "validation": {
+    "per_task_per_arm": 50,
+    "total_outputs": 450,
+    "equation_correct": {
+      "A": 0,
+      "B": 3,
+      "C": 1
+    },
+    "primary_C_vs_B": {
+      "first_false_second_true": 3,
+      "first_true_second_false": 1,
+      "mean_paired_difference": 0.04,
+      "exact_mcnemar_p": 0.625,
+      "paired_bootstrap95": [
+        -0.04,
+        0.12
+      ]
+    }
+  },
+  "full_trace_outcome": "inconclusive: noncanonical free-language proofs unverified; zero canonical matches is not zero mathematically correct proofs",
+  "merge_into_default_sft": false,
+  "hosted_API_calls": 0,
+  "holdout_evaluation": false,
+  "source_git_commit": "d96b246f978bbddb45118902127229bb02e6f42f"
+}

@@ -1,0 +1,2 @@
+{"epoch": 1, "optimizer_step": 1, "token_mean_loss": 2.137988384082134, "window_supervised_tokens": 2849, "gradient_norm": 1.9822801351547241, "elapsed_seconds": 4.693737491033971, "torch_peak_allocated_bytes": 1659389440, "torch_peak_reserved_bytes": 1769996288}
+{"epoch": 1, "optimizer_step": 2, "token_mean_loss": 2.077065275272939, "window_supervised_tokens": 2506, "gradient_norm": 1.8516563177108765, "elapsed_seconds": 7.707552933134139, "torch_peak_allocated_bytes": 1659389440, "torch_peak_reserved_bytes": 1797259264}

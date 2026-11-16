@@ -1,0 +1,94 @@
+{
+  "prompt": "In this numeric equation task, each operator has a hidden transformation rule.\nThe same rule assignment is used consistently within this prompt.\n50+50 = 100\nNow, determine the result for: 51+50",
+  "solver": {
+    "status": "solved",
+    "query_operator": "+",
+    "query_operator_in_examples": true,
+    "candidates_by_operator": {
+      "+": [
+        "add",
+        "add_p1",
+        "add_m1"
+      ]
+    },
+    "valid_assignment_count": 3,
+    "valid_assignments": [
+      {
+        "mode": "normal",
+        "rules": {
+          "+": "add"
+        }
+      },
+      {
+        "mode": "normal",
+        "rules": {
+          "+": "add_p1"
+        }
+      },
+      {
+        "mode": "normal",
+        "rules": {
+          "+": "add_m1"
+        }
+      }
+    ],
+    "query_outputs": [
+      "101"
+    ],
+    "answer_unique": true,
+    "selected_assignment": {
+      "mode": "normal",
+      "rules": {
+        "+": "add"
+      }
+    }
+  },
+  "verifier": {
+    "status": "solved",
+    "query_operator": "+",
+    "query_operator_in_examples": true,
+    "candidates_by_operator": {
+      "+": [
+        "add",
+        "add_p1",
+        "add_m1"
+      ]
+    },
+    "valid_assignment_count": 3,
+    "valid_assignments": [
+      {
+        "mode": "normal",
+        "rules": {
+          "+": "add"
+        }
+      },
+      {
+        "mode": "normal",
+        "rules": {
+          "+": "add_p1"
+        }
+      },
+      {
+        "mode": "normal",
+        "rules": {
+          "+": "add_m1"
+        }
+      }
+    ],
+    "query_outputs": [
+      "101"
+    ],
+    "answer_unique": true,
+    "selected_assignment": {
+      "mode": "normal",
+      "rules": {
+        "+": "add"
+      }
+    }
+  },
+  "official_comparator_100_101": true,
+  "expected_exact_candidates": [
+    "add"
+  ],
+  "prediction": "approximate example matching admits add+1/add-1; approximate query dedup then hides ambiguous outputs"
+}

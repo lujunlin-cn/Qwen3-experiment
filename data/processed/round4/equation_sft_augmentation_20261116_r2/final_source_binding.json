@@ -1,0 +1,26 @@
+{
+  "source_git_commit": "d96b246f978bbddb45118902127229bb02e6f42f",
+  "source_sha256": {
+    "01_Synthetic_Data_Engineering.ipynb": "83af83acc7e547864c17ca0f8a33df53f8e6a6e54209ac9faa54c79591476d1c",
+    "03_SFT.ipynb": "918c9118d811277be5ad2b56cf5f794b0f86810b54f7712144aa1504404c9019",
+    "configs/equation_sft_augmentation_20261116.json": "72e754c32d81cb60cdbd8019cdfa8f3e17a8d70b58f397f45d6293b09a6cd712",
+    "docs/EQUATION_SYNTHETIC_100_REPORT.md": "163197b740b5d47b6864976a31f94bf8b2fdccc30ad8b73cdd2393534af9a6f7",
+    "docs/PREVIEW_AUDIT.md": "819de46ff89eba32ea91ffe9a168e4191602eb79d2d75f3769881fd3e3bbf3b9",
+    "docs/SFT_AUGMENTATION_BASELINE_AUDIT.md": "e53d93966f7503c63c2294d94d0e43ed671778faf6d96078dc871959d06b33cd",
+    "docs/SFT_SYNTHETIC_AUGMENTATION_REPORT.md": "dbcad3d8e16a70d96f5934de930b100e703817388acbc1defd1add4df0c5e939",
+    "tests/test_equation_augmentation.py": "2c84aa6b97037082adf366093cad0a2a3b7fec88100d603ff70d770dfb3068ec",
+    "tests/test_equation_augmentation_artifacts.py": "e90664e54d5e7e073ad9d987e81ffe18849653d0df90d2c4a52db43a3938f5a8",
+    "tests/test_nvidia_synthetic_final.py": "7fb7cd844912fd37589600c9ff4225086c196dd7bcd9ed601046ca07f4c5ec69",
+    "tests/test_nvidia_v2_repair.py": "23476782fffaa0fe8844119bbfd47da7409c0835603368e8a94c5a11f8c1d312",
+    "tests/test_sft_augmentation_analysis.py": "add4810082627a3410c96cbe5b54f8c3838b9e481abd2a747f5fbd2e0e7a3966",
+    "utils/evaluate_sft_augmentation_vllm.py": "7705ce1de3c2c2cf2ca5723c36162e6dbdbc6c7be19a94d99f820afb9006eb0a",
+    "utils/report_sft_augmentation.py": "d23963454a7f723a9fe541b5c2cf33760c41298ffde0cd8245448ac8ef6c29fa",
+    "utils/run_equation_augmentation.py": "29cab77ff8c66758765d2d32c57c570947dee95c33739707e339486307044353",
+    "utils/run_sft_augmentation.py": "ce1997925761e1da546a8d05ff16f5985d0429307b095d244890a920cb93f3f2",
+    "utils/score_sft_augmentation.py": "0bbad0110edb4f6942b771dd927fcc2195f77f2b5d781f51dce8ef826d2ff41f"
+  },
+  "original_registration_preserved": true,
+  "execution_binding_note": "Original training/evaluation registrations identify exact dirty source hashes before execution. Later CPU verifier/diagnostic/report changes are independently registered; this closure does not overwrite original bindings.",
+  "evaluation_worker_matches_registration": true,
+  "time_unix": 1794818082.886469
+}

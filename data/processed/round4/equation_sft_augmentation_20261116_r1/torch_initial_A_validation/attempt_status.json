@@ -1,0 +1,6 @@
+{
+  "status": "incomplete_excluded",
+  "reason": "Throughput: first 4 answers took 158 seconds; backend changed uniformly for A/B/C before comparative results analysis",
+  "rows_preserved": 4,
+  "included_in_final_statistics": false
+}

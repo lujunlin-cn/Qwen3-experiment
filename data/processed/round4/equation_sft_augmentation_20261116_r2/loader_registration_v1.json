@@ -1,0 +1,9 @@
+{
+  "protocol": "cpu-first-load-amendment/v1",
+  "reason": "Two CUDA memory-query failures before model tensors or optimizer updates; CPU-first load bypasses optional preallocation warmup only",
+  "runner_sha256": "42b768bab236e0bffa4c889a4cfa18da0a277c8e988c3bd5443e56a5e05edfd6",
+  "original_registration_sha256": "5e26ad4b330b258feab42ce9bc36706129c7c4d2affa36b216af93dd8256f082",
+  "weights_precision_optimizer_unchanged": true,
+  "all_formal_branches_use_same_loader": true,
+  "registered_unix": 1794812225.4521513
+}

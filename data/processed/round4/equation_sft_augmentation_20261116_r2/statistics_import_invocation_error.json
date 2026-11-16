@@ -1,0 +1,7 @@
+{
+  "command": ".venv-low-memory/bin/python -m unittest tests.test_sft_augmentation_analysis -v",
+  "status": "failed_import",
+  "error": "ModuleNotFoundError: No module named 'tests.test_sft_augmentation_analysis'",
+  "reason": "tests directory is used with unittest discovery; corrected command recorded in statistics_report_format_regression.log",
+  "model_or_training_effect": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "baseline_identity_resolved_and_verified",
+  "original_baseline_audit_sha256": "25b71dd959a04804558939aa81a7cd9d0fb8d8f428b09e9985763d2b0526fc10",
+  "base_weights_downloaded_at_fixed_revision": true,
+  "all_historical_base_tokenizer_files_match": {
+    "model.safetensors": true,
+    "config.json": true,
+    "tokenizer.json": true,
+    "tokenizer_config.json": true,
+    "generation_config.json": true,
+    "vocab.json": true,
+    "merges.txt": true
+  },
+  "parent_adapter_sha256": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371",
+  "initial_host_blockers_are_historical_inventory": true,
+  "shared_gpu_execution_disclosed": true,
+  "B_and_C_real_training_completed": true,
+  "no_existing_foreign_process_stopped": true,
+  "time_unix": 1794814678.3164954
+}

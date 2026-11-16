@@ -1,0 +1,23 @@
+{
+  "protocol": "evaluation-backend-amendment/v3",
+  "registered_at_unix": 1794813015.0465958,
+  "original_registration_sha256": "5e26ad4b330b258feab42ce9bc36706129c7c4d2affa36b216af93dd8256f082",
+  "reason": "Improve throughput to finish all450 outputs. No comparative scoring or data selection used. All A/B/C restarted uniformly. Initial batch4 partial preserved and excluded.",
+  "image": "vllm/vllm-openai:v0.27.1-aarch64",
+  "image_id": "sha256:2c211a1273b48e8929f893b267aeb1509e6b84654cdbde1bad56d79e3964224d",
+  "worker_sha256": "7705ce1de3c2c2cf2ca5723c36162e6dbdbc6c7be19a94d99f820afb9006eb0a",
+  "parameters": "Identical model/LoRA, public prompts, greedy thinking enabled, seed/caps. Scheduling batch8; KV4GiB, capture1/2/4/8; no prefix cache.",
+  "network": "none",
+  "hosted_api_calls": 0,
+  "do_not_use_torch_initial_outputs": true,
+  "previous_attempts": "R1 initialization failures/partial decode preserved; R2 first formal uniform backend attempt",
+  "kv_cache_bytes": 4294967296,
+  "engine_multiprocessing": false,
+  "implementation_git_commit": "629c3fd9d93d2fc18f8c98968e84468faed7b54a",
+  "all_arms_restarted": true,
+  "prefix_caching": false,
+  "run_id": "equation_sft_augmentation_20261116_r2",
+  "batch_size": 8,
+  "max_num_seqs": 8,
+  "previous_partial_excluded": "vllm_batch4_partial_A_validation"
+}

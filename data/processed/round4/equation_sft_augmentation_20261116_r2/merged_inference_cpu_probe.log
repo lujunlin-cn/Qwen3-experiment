@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 8317.10it/s]
+{'scope': 'CPU numerical probe; no generation used or changed', 'max_absolute_logit_difference': 0.937255859375, 'rms_logit_difference': 0.06860299408435822, 'mean_forward_KL': 0.0023551308549940586, 'greedy_argmax_identical': True, 'note': 'Merging in BF16 is not bitwise equivalent; no new inference method accepted based on this probe alone.'}

@@ -1,0 +1,13 @@
+{
+  "status": "preview_only",
+  "rows": 30,
+  "original_seed_source": "data/processed/round3/nvidia_hosted_20261115_ultra_r4_full/private_seeds.jsonl",
+  "original_seed_sha256": "a5d35bb596a2d21161d4dd3e7bba25666c29b0770857cc73e01cb889c64f25e8",
+  "artifact_sha256": "1cbab322ed732b4e36acadb63fa12451564da65ae4e216b9b983f4a3a3797769",
+  "all_original_prompt_suffixes_and_answers_preserved": true,
+  "mapping_exposure_audit_performed_against_both_manifests": true,
+  "claims_new_mapping_knowledge": false,
+  "training_eligible": 0,
+  "merge_into_default_sft": false,
+  "lineage_policy": "Historical frozen seeds retain their original provenance limitations; no training admission granted by prefix changes."
+}

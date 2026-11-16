@@ -1,0 +1,68 @@
+{
+  "status": "registered_before_training",
+  "config": {
+    "schema_version": "equation-sft-augmentation/v1",
+    "run_id": "equation_sft_augmentation_20261116_r2",
+    "base_model": "Qwen/Qwen3-0.6B",
+    "base_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+    "parent_adapter_sha256": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371",
+    "seed": 20261116,
+    "mode": "bf16_lora",
+    "epochs": 2,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "adam_epsilon": 1e-08,
+    "micro_batch_size": 1,
+    "gradient_accumulation": 8,
+    "max_grad_norm": 1.0,
+    "max_length": 4096,
+    "projection_chunk_size": 64,
+    "validation_per_task": 50,
+    "evaluation_batch_size": 4,
+    "eval_caps": {
+      "numeral_system": 2048,
+      "gravity": 4096,
+      "equation_numeric": 4096
+    },
+    "do_sample": false,
+    "enable_thinking": true,
+    "device_process_reserved_limit_bytes": 8000000000,
+    "minimum_available_host_bytes": 16000000000,
+    "shared_gpu_allowed": true,
+    "hosted_api_calls": false,
+    "merge_into_default_sft": false,
+    "holdout_evaluation": false
+  },
+  "config_sha256": "72e754c32d81cb60cdbd8019cdfa8f3e17a8d70b58f397f45d6293b09a6cd712",
+  "git_commit": "a3f29dc81835a4136b14a6a2108e7f3e59e5fc51",
+  "source_sha256": {
+    "01_Synthetic_Data_Engineering.ipynb": "921c42cc3ca85297523e079fcd1d7cd6aa22be748ea6b9f08d4ebce2fd339285",
+    "03_SFT.ipynb": "918c9118d811277be5ad2b56cf5f794b0f86810b54f7712144aa1504404c9019",
+    "utils/run_equation_augmentation.py": "221b3401b345bbb70149b420694981efb8d211594393080993ef490a974992a3",
+    "utils/run_sft_augmentation.py": "c8b41da989b9d38de72360c82d6d3107557f4afbbc95104b5c04741e3909620a",
+    "configs/equation_sft_augmentation_20261116.json": "72e754c32d81cb60cdbd8019cdfa8f3e17a8d70b58f397f45d6293b09a6cd712"
+  },
+  "data_sha256": {
+    "sft_synthetic_110.jsonl": "bba5795987b7d8c351786811c352ddd35c369df7724bf3d3dccdcd43e0833579",
+    "sft_real_control_110.jsonl": "69194c6add43ab5f44da650f674690e1de1e38e3316693df988e3882d6f5663f"
+  },
+  "validation_panel_sha256": "9b756cf0a8c636f728dae5bd9c66270a61a43a4026401542f029b962145f6819",
+  "validation_source_sha256": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+  "base_files_match_historical_r1": {
+    "model.safetensors": true,
+    "config.json": true,
+    "tokenizer.json": true,
+    "tokenizer_config.json": true,
+    "generation_config.json": true,
+    "vocab.json": true,
+    "merges.txt": true
+  },
+  "parent_weight_sha256": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371",
+  "baseline_A": "same R1 adapter, no optimizer update; BF16 base inference as used in the original vLLM evaluation",
+  "precision_note": "Original R1 trained NF4 QLoRA. Both new arms use identical BF16 LoRA on this host; fixed original adapter is preserved.",
+  "evaluation_panel_reason": "50/task resource-bounded preregistration; no sample chosen using model outcomes",
+  "holdout_used": false,
+  "evaluation_cap_note": "Caps lower than historical 8192/16384; all A/B/C use identical caps. Results only describe this registered decode budget.",
+  "full_trace_verification_scope": "Only exact deterministic Full Trace templates can be certified; other wording is unverified, not mathematically false.",
+  "registered_at_unix": 1794811413.4362714
+}

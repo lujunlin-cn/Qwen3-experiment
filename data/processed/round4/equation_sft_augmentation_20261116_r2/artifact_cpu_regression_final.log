@@ -1,0 +1,16 @@
+test_384_accepted_all_gate_records (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_384_accepted_all_gate_records) ... ok
+test_ambiguity_is_not_solver_verifier_disagreement (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_ambiguity_is_not_solver_verifier_disagreement) ... ok
+test_boxed_roundtrip_all604 (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_boxed_roundtrip_all604) ... ok
+test_control_ids_and_token_budget (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_control_ids_and_token_budget) ... ok
+test_exact_certificate_for_all_accepted (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_exact_certificate_for_all_accepted) ... ok
+test_frozen_500_reused_without_resampling (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_frozen_500_reused_without_resampling) ... ok
+test_generator_file_boundary (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_generator_file_boundary) ... ok
+test_gravity_record_bytes_unchanged (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_gravity_record_bytes_unchanged) ... ok
+test_no_hosted_api_entrypoint (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_no_hosted_api_entrypoint) ... ok
+test_official_scoring_and_protected_algorithms (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_official_scoring_and_protected_algorithms) ... ok
+test_roman_preview_only (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_roman_preview_only) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.467s
+
+OK

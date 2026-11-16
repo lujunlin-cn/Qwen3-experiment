@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "arm": "A",
+  "rows": 150,
+  "evaluation_seconds": 2306.7700481414795,
+  "adapter_sha256": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371",
+  "memory": [
+    {
+      "peak_allocated_bytes": 5639665152,
+      "peak_reserved_bytes": 5771362304
+    }
+  ],
+  "initial_engine_memory": [
+    {
+      "peak_allocated_bytes": 5639665152,
+      "peak_reserved_bytes": 5769265152
+    }
+  ],
+  "backend_registration_sha256": "42e13b21b4618df2648cc3298f803a7ba5109bc41d094e75b18ef99ceaea3818"
+}

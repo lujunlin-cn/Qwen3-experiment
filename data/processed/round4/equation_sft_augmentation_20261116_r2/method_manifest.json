@@ -1,0 +1,18 @@
+{
+  "run_id": "equation_sft_augmentation_20261116_r2",
+  "generator_version": "train-only-prior-v5",
+  "mathematical_solver": "exact-string-numeric24/v6",
+  "independent_verifier": "independent_exact_numeric24/v6",
+  "renderer": "notebook03-full-trace-exact-boxed/v2",
+  "official_metric": "official_nvidia_metric_v3",
+  "official_metric_tolerance_changed": false,
+  "source_git_commit": "629c3fd",
+  "original_run_preserved": "nvidia_synthetic_final_20261115_r1",
+  "parent_sft_r1_weight_sha256": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371",
+  "config_sha256": "72e754c32d81cb60cdbd8019cdfa8f3e17a8d70b58f397f45d6293b09a6cd712",
+  "data_manifest_sha256": "e6bbb0b5c1721a4b419f2486ae086d1eb9a348ace04036b341bf54abbff83863",
+  "candidate_pool_sha256": "f2cd1d922125be3fca95f6b7dd98c0b44a62eccf70aa21a350b1fcaed26fadae",
+  "merge_into_default_sft": false,
+  "hosted_api_calls": 0,
+  "all_accepted_declared_lineage": true
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": {
+    "protected_algorithms": true,
+    "historical_artifacts": true,
+    "default_sft_builder_unchanged": true,
+    "gravity_renderer_unchanged": true
+  },
+  "api_calls": 0,
+  "gpu_training": false,
+  "merge_into_default_sft": false
+}

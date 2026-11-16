@@ -1,0 +1,472 @@
+test_01_generator_only_accepts_authenticated_train_prior (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_01_generator_only_accepts_authenticated_train_prior) ... ok
+test_02_prior_rejects_non_train_rows (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_02_prior_rejects_non_train_rows) ... ok
+test_03_answer_column_cannot_change_prior_or_generation (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_03_answer_column_cannot_change_prior_or_generation) ... ok
+test_04_missing_train_statistics_fails (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_04_missing_train_statistics_fails) ... ok
+test_05_no_global_operator_fallback (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_05_no_global_operator_fallback) ... ok
+test_06_every_candidate_has_complete_empirical_lineage (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_06_every_candidate_has_complete_empirical_lineage) ... ok
+test_07_forged_source_or_missing_feature_rejected (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_07_forged_source_or_missing_feature_rejected) ... ok
+test_08_generator_cannot_read_evaluation_or_other_real_files (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_08_generator_cannot_read_evaluation_or_other_real_files) ... ok
+test_09_audit_cannot_load_splits_before_pool_freeze (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_09_audit_cannot_load_splits_before_pool_freeze) ... ok
+test_10_hashes_match_and_corruption_fails (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_10_hashes_match_and_corruption_fails) ... ok
+test_11_roman_solver_verifier_positive_and_negative (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_11_roman_solver_verifier_positive_and_negative) ... ok
+test_12_gravity_solver_verifier_positive_and_negative (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_12_gravity_solver_verifier_positive_and_negative) ... ok
+test_13_equation_solver_verifier_positive_and_negative (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_13_equation_solver_verifier_positive_and_negative) ... ok
+test_14_equation_global_constraints_and_uniqueness (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_14_equation_global_constraints_and_uniqueness) ... ok
+test_15_exactly_twenty_candidates_per_task_without_resampling (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_15_exactly_twenty_candidates_per_task_without_resampling) ... ok
+test_16_real_duplicates_all_three_splits_are_rejected (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_16_real_duplicates_all_three_splits_are_rejected) ... ok
+test_17_strict_roman_mapping_target_exposure (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_17_strict_roman_mapping_target_exposure) ... ok
+test_18_structure_similarity_is_report_only_and_prior_sources_are_not_clones (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_18_structure_similarity_is_report_only_and_prior_sources_are_not_clones) ... ok
+test_19_ab_only_prompt_changes_and_compact_is_shorter (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_19_ab_only_prompt_changes_and_compact_is_shorter) ... ok
+test_20_schemas_identical_to_original_closed_schema (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_20_schemas_identical_to_original_closed_schema) ... ok
+test_21_low_effort_in_real_sdk_http_request (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_21_low_effort_in_real_sdk_http_request) ... ok
+test_22_duplicate_send_blocked_durably (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_22_duplicate_send_blocked_durably) ... ok
+test_23_http500_disconnect_and503_are_not_retried (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_23_http500_disconnect_and503_are_not_retried) ... ok
+test_24_unknown_usage_is_not_zero (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_24_unknown_usage_is_not_zero) ... ok
+test_25_hard_token_and_request_budgets (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_25_hard_token_and_request_budgets) ... ok
+test_26_thinking_cannot_change_math_acceptance (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_26_thinking_cannot_change_math_acceptance) ... ok
+test_27_missing_key_no_request_and_no_key_in_archives (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_27_missing_key_no_request_and_no_key_in_archives) ... ok
+test_28_29_30_31_32_renderer_maps_all_tasks_boxed_no_hidden_or_thinking_deterministic (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_28_29_30_31_32_renderer_maps_all_tasks_boxed_no_hidden_or_thinking_deterministic) ... ok
+test_33_roman_not_in_default_task_pool (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_33_roman_not_in_default_task_pool) ... ok
+test_34_sft_default_behavior_unchanged (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_34_sft_default_behavior_unchanged) ... ok
+test_35_36_37_historical_archives_are_identical_to_git (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_35_36_37_historical_archives_are_identical_to_git) ... ok
+test_38_no_gpu_training_or_model_load_entrypoint (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_38_no_gpu_training_or_model_load_entrypoint) ... ok
+test_39_immutable_outputs_and_no_sft_merge (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_39_immutable_outputs_and_no_sft_merge) ... ok
+test_40_dpo_ppo_grpo_unchanged (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_40_dpo_ppo_grpo_unchanged) ... ok
+test_selection_thresholds_missing_usage_and_no_cherry_picking (tests.test_nvidia_synthetic_final.FinalSyntheticTests.test_selection_thresholds_missing_usage_and_no_cherry_picking) ... ok
+test_all_three_task_mappings_boxed_deterministic_and_no_hidden_thinking (tests.test_nvidia_v2_repair.V2RepairTests.test_all_three_task_mappings_boxed_deterministic_and_no_hidden_thinking) ... ok
+test_empty_accepted_never_passes_manifest_and_no_overwrite (tests.test_nvidia_v2_repair.V2RepairTests.test_empty_accepted_never_passes_manifest_and_no_overwrite) ... ok
+test_gravity_conditions_same_seed_prompt_schema_only_budget_differs (tests.test_nvidia_v2_repair.V2RepairTests.test_gravity_conditions_same_seed_prompt_schema_only_budget_differs) ... ok
+test_gravity_query_time_string_and_original_numeric_tolerance (tests.test_nvidia_v2_repair.V2RepairTests.test_gravity_query_time_string_and_original_numeric_tolerance) ... ok
+test_gravity_real_sdk_mock_requests_and_explicit_32768_error_no_fallback (tests.test_nvidia_v2_repair.V2RepairTests.test_gravity_real_sdk_mock_requests_and_explicit_32768_error_no_fallback) ... ok
+test_http_failed_truncated_forged_or_empty_never_accepted (tests.test_nvidia_v2_repair.V2RepairTests.test_http_failed_truncated_forged_or_empty_never_accepted) ... ok
+test_original_actual_reaudit_15_accepted_3_preview (tests.test_nvidia_v2_repair.V2RepairTests.test_original_actual_reaudit_15_accepted_3_preview) ... ok
+test_real_six_proofs_render_only_preview_and_manifest_tampering_rejected (tests.test_nvidia_v2_repair.V2RepairTests.test_real_six_proofs_render_only_preview_and_manifest_tampering_rejected) ... ok
+test_strict_schema_duplicates_wrong_intermediates_and_no_prose_extraction (tests.test_nvidia_v2_repair.V2RepairTests.test_strict_schema_duplicates_wrong_intermediates_and_no_prose_extraction) ... ok
+test_targeted_missing_key_cannot_make_api_request_or_create_generation (tests.test_nvidia_v2_repair.V2RepairTests.test_targeted_missing_key_cannot_make_api_request_or_create_generation) ... ok
+test_thinking_present_or_absent_does_not_change_json_acceptance (tests.test_nvidia_v2_repair.V2RepairTests.test_thinking_present_or_absent_does_not_change_json_acceptance) ... ok
+test_three_set_audit_still_rejects_actual_duplicates (tests.test_nvidia_v2_repair.V2RepairTests.test_three_set_audit_still_rejects_actual_duplicates) ... ok
+test_training_default_and_old_notebook_functions_unchanged (tests.test_nvidia_v2_repair.V2RepairTests.test_training_default_and_old_notebook_functions_unchanged) ... ok
+test_verifier_independence_and_all_examples_rules_required (tests.test_nvidia_v2_repair.V2RepairTests.test_verifier_independence_and_all_examples_rules_required) ... ok
+test_actual_sdk_18_requests_strict_raw_binding_and_no_secret_artifacts (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_actual_sdk_18_requests_strict_raw_binding_and_no_secret_artifacts) ... ok
+test_all_three_splits_leakage_and_empty_accepted (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_all_three_splits_leakage_and_empty_accepted) ... ok
+test_api_smoke_reports_model_failure_separately_and_blocks_generation (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_api_smoke_reports_model_failure_separately_and_blocks_generation) ... ok
+test_explicit_models_match_official_defaults_and_builtin_provider (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_explicit_models_match_official_defaults_and_builtin_provider) ... ok
+test_frozen_nine_seeds_and_public_projection (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_frozen_nine_seeds_and_public_projection) ... ok
+test_missing_key_fails_before_network_and_run_directory (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_missing_key_fails_before_network_and_run_directory) ... ok
+test_per_seed_runtime_error_does_not_skip_remaining_seeds (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_per_seed_runtime_error_does_not_skip_remaining_seeds) ... ok
+test_prompt_append_exact_and_conservative_new_contract (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_prompt_append_exact_and_conservative_new_contract) ... ok
+test_redaction_never_saves_credentials (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_redaction_never_saves_credentials) ... ok
+test_required_thinking_never_accepted_as_verified_mathematics (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_required_thinking_never_accepted_as_verified_mathematics) ... ok
+test_run_overwrite_and_hash_mutation_rejected (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_run_overwrite_and_hash_mutation_rejected) ... ok
+test_strict_trace_positive_and_incorrect_intermediate (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_strict_trace_positive_and_incorrect_intermediate) ... ok
+test_successful_three_stages_22_mock_wire_requests_and_nonoverwrite (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_successful_three_stages_22_mock_wire_requests_and_nonoverwrite) ... ok
+test_ultra_is_explicit_registered_alternative_not_automatic_fallback (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_ultra_is_explicit_registered_alternative_not_automatic_fallback) ... ok
+test_verifier_stays_independent_and_requires_all_examples (tests.test_nvidia_synthetic_smoke.NvidiaSmokeTests.test_verifier_stays_independent_and_requires_all_examples) ... ok
+test_all_arms_actual_sdk_request_fields_schema_and_raw_screening (tests.test_round2_nemo.Round2NeMoTests.test_all_arms_actual_sdk_request_fields_schema_and_raw_screening) ... [15:19:45] [INFO] ✅ Validation passed
+[15:19:45] [INFO] 🔁 Preview generation in progress
+[15:19:45] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[15:19:45] [INFO] ✅ Validation passed
+[15:19:45] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[15:19:45] [INFO] 🩺 Running health checks for models...
+[15:19:45] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[15:19:45] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[15:19:45] [INFO] ⚡ Using async task-queue preview
+[15:19:45] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[15:19:45] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:45] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[15:19:45] [INFO]   |-- model provider: 'local-vllm'
+[15:19:45] [INFO]   |-- inference parameters:
+[15:19:45] [INFO]   |  |-- generation_type=chat-completion
+[15:19:45] [INFO]   |  |-- max_parallel_requests=1
+[15:19:45] [INFO]   |  |-- timeout=180
+[15:19:45] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[15:19:45] [INFO]   |  |-- temperature=0.30
+[15:19:45] [INFO]   |  |-- top_p=0.90
+[15:19:45] [INFO]   |  |-- max_tokens=1024
+[15:19:45] [INFO] 📝 llm-text model config for column 'trace_variant'
+[15:19:45] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:45] [INFO]   |-- model alias: 'local-qwen3-trace'
+[15:19:45] [INFO]   |-- model provider: 'local-vllm'
+[15:19:45] [INFO]   |-- inference parameters:
+[15:19:45] [INFO]   |  |-- generation_type=chat-completion
+[15:19:45] [INFO]   |  |-- max_parallel_requests=1
+[15:19:45] [INFO]   |  |-- timeout=180
+[15:19:45] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[15:19:45] [INFO]   |  |-- temperature=0.30
+[15:19:45] [INFO]   |  |-- top_p=0.90
+[15:19:45] [INFO]   |  |-- max_tokens=2048
+[15:19:45] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 18 tasks across 1 row group(s)
+[15:19:45] [INFO] 🚀 (1/1) Dispatching with 9 records
+[15:19:45] [INFO] 🌱 (1/1) Sampling 9 records from seed dataset
+[15:19:45] [INFO]   |-- seed dataset size: 9 records
+[15:19:45] [INFO]   |-- sampling strategy: ordered
+[15:19:45] [INFO] 📊 Progress [0.1s]:
+[15:19:45] [INFO]   |-- 🐔 column 'prompt_variant': 9/9 (100%) 74.7 rec/s
+[15:19:45] [INFO]   |-- 🦁 column 'trace_variant': 9/9 (100%) 74.7 rec/s
+[15:19:45] [INFO] ✅ Async generation complete [0.1s]: 18 ok, 0 failed across 2 column(s)
+[15:19:45] [INFO] 📊 Model usage summary:
+[15:19:45] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[15:19:45] [INFO]   |-- tokens: input=900, output=180, total=1080, tps=8740
+[15:19:45] [INFO]   |-- requests: success=9, failed=0, total=9, rpm=4370
+[15:19:45] [INFO] 📐 Measuring dataset column statistics:
+[15:19:45] [INFO]   |-- 📝 column: 'prompt_variant'
+[15:19:45] [INFO]   |-- 📝 column: 'trace_variant'
+[15:19:45] [INFO]   |-- 🌱 column: 'seed_id'
+[15:19:45] [INFO]   |-- 🌱 column: 'task_type'
+[15:19:45] [INFO]   |-- 🌱 column: 'prompt'
+[15:19:45] [INFO] 🎉 Preview complete!
+[15:19:45] [INFO] ✅ Validation passed
+[15:19:45] [INFO] 🕵️ Preview generation in progress
+[15:19:45] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[15:19:46] [INFO] ✅ Validation passed
+[15:19:46] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[15:19:46] [INFO] 🩺 Running health checks for models...
+[15:19:46] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[15:19:46] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[15:19:46] [INFO] ⚡ Using async task-queue preview
+[15:19:46] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[15:19:46] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:46] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[15:19:46] [INFO]   |-- model provider: 'local-vllm'
+[15:19:46] [INFO]   |-- inference parameters:
+[15:19:46] [INFO]   |  |-- generation_type=chat-completion
+[15:19:46] [INFO]   |  |-- max_parallel_requests=1
+[15:19:46] [INFO]   |  |-- timeout=180
+[15:19:46] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[15:19:46] [INFO]   |  |-- temperature=0.30
+[15:19:46] [INFO]   |  |-- top_p=0.90
+[15:19:46] [INFO]   |  |-- max_tokens=1024
+[15:19:46] [INFO] 📝 llm-text model config for column 'trace_variant'
+[15:19:46] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:46] [INFO]   |-- model alias: 'local-qwen3-trace'
+[15:19:46] [INFO]   |-- model provider: 'local-vllm'
+[15:19:46] [INFO]   |-- inference parameters:
+[15:19:46] [INFO]   |  |-- generation_type=chat-completion
+[15:19:46] [INFO]   |  |-- max_parallel_requests=1
+[15:19:46] [INFO]   |  |-- timeout=180
+[15:19:46] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[15:19:46] [INFO]   |  |-- temperature=0.30
+[15:19:46] [INFO]   |  |-- top_p=0.90
+[15:19:46] [INFO]   |  |-- max_tokens=2048
+[15:19:46] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 18 tasks across 1 row group(s)
+[15:19:46] [INFO] 🚀 (1/1) Dispatching with 9 records
+[15:19:46] [INFO] 🌱 (1/1) Sampling 9 records from seed dataset
+[15:19:46] [INFO]   |-- seed dataset size: 9 records
+[15:19:46] [INFO]   |-- sampling strategy: ordered
+[15:19:46] [INFO] 📊 Progress [0.1s]:
+[15:19:46] [INFO]   |-- 🌕 column 'prompt_variant': 9/9 (100%) 83.5 rec/s
+[15:19:46] [INFO]   |-- 🦁 column 'trace_variant': 9/9 (100%) 83.5 rec/s
+[15:19:46] [INFO] ✅ Async generation complete [0.1s]: 18 ok, 0 failed across 2 column(s)
+[15:19:46] [INFO] 📊 Model usage summary:
+[15:19:46] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[15:19:46] [INFO]   |-- tokens: input=900, output=180, total=1080, tps=9669
+[15:19:46] [INFO]   |-- requests: success=9, failed=0, total=9, rpm=4834
+[15:19:46] [INFO] 📐 Measuring dataset column statistics:
+[15:19:46] [INFO]   |-- 📝 column: 'prompt_variant'
+[15:19:46] [INFO]   |-- 📝 column: 'trace_variant'
+[15:19:46] [INFO]   |-- 🌱 column: 'seed_id'
+[15:19:46] [INFO]   |-- 🌱 column: 'task_type'
+[15:19:46] [INFO]   |-- 🌱 column: 'prompt'
+[15:19:46] [INFO] ✅ Preview complete!
+[15:19:46] [INFO] ✅ Validation passed
+[15:19:46] [INFO] 📸 Preview generation in progress
+[15:19:46] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[15:19:46] [INFO] ✅ Validation passed
+[15:19:46] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[15:19:46] [INFO] 🩺 Running health checks for models...
+[15:19:46] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[15:19:46] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[15:19:46] [INFO] ⚡ Using async task-queue preview
+[15:19:46] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[15:19:46] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:46] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[15:19:46] [INFO]   |-- model provider: 'local-vllm'
+[15:19:46] [INFO]   |-- inference parameters:
+[15:19:46] [INFO]   |  |-- generation_type=chat-completion
+[15:19:46] [INFO]   |  |-- max_parallel_requests=1
+[15:19:46] [INFO]   |  |-- timeout=180
+[15:19:46] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[15:19:46] [INFO]   |  |-- temperature=0.30
+[15:19:46] [INFO]   |  |-- top_p=0.90
+[15:19:46] [INFO]   |  |-- max_tokens=1024
+[15:19:46] [INFO] 🗂️ llm-structured model config for column 'trace_variant'
+[15:19:46] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:46] [INFO]   |-- model alias: 'local-qwen3-trace'
+[15:19:46] [INFO]   |-- model provider: 'local-vllm'
+[15:19:46] [INFO]   |-- inference parameters:
+[15:19:46] [INFO]   |  |-- generation_type=chat-completion
+[15:19:46] [INFO]   |  |-- max_parallel_requests=1
+[15:19:46] [INFO]   |  |-- timeout=180
+[15:19:46] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42, 'response_format': {'type': 'json_schema', 'json_schema': {'name': 'numeral_system_trace', 'strict': True, 'schema': {'type': 'object', 'properties': {'task_type': {'type': 'string', 'enum': ['numeral_system']}, 'answer': {'type': 'string'}, 'query': {'type': 'integer'}, 'components': {'type': 'array', 'minItems': 1, 'items': {'type': 'object', 'properties': {'arabic': {'type': 'integer', 'minimum': 1}, 'roman': {'type': 'string'}}, 'required': ['arabic', 'roman'], 'additionalProperties': False}}}, 'required': ['task_type', 'answer', 'query', 'components'], 'additionalProperties': False}}}}
+[15:19:46] [INFO]   |  |-- temperature=0.30
+[15:19:46] [INFO]   |  |-- top_p=0.90
+[15:19:46] [INFO]   |  |-- max_tokens=2048
+[15:19:46] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 6 tasks across 1 row group(s)
+[15:19:46] [INFO] 🚀 (1/1) Dispatching with 3 records
+[15:19:46] [INFO] 🌱 (1/1) Sampling 3 records from seed dataset
+[15:19:46] [INFO]   |-- seed dataset size: 3 records
+[15:19:46] [INFO]   |-- sampling strategy: ordered
+[15:19:46] [INFO] 📊 Progress [0.1s]:
+[15:19:46] [INFO]   |-- 🦁 column 'prompt_variant': 3/3 (100%) 44.7 rec/s
+[15:19:46] [INFO]   |-- ☀️ column 'trace_variant': 3/3 (100%) 44.7 rec/s
+[15:19:46] [INFO] ✅ Async generation complete [0.1s]: 6 ok, 0 failed across 2 column(s)
+[15:19:46] [INFO] 📊 Model usage summary:
+[15:19:46] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[15:19:46] [INFO]   |-- tokens: input=300, output=60, total=360, tps=5148
+[15:19:46] [INFO]   |-- requests: success=3, failed=0, total=3, rpm=2574
+[15:19:46] [INFO] 📐 Measuring dataset column statistics:
+[15:19:46] [INFO]   |-- 📝 column: 'prompt_variant'
+[15:19:46] [INFO]   |-- 🗂️ column: 'trace_variant'
+[15:19:46] [INFO]   |-- 🌱 column: 'seed_id'
+[15:19:46] [INFO]   |-- 🌱 column: 'task_type'
+[15:19:46] [INFO]   |-- 🌱 column: 'prompt'
+[15:19:46] [INFO] 🏆 Preview complete!
+[15:19:46] [INFO] ✅ Validation passed
+[15:19:46] [INFO] 📺 Preview generation in progress
+[15:19:46] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[15:19:46] [INFO] ✅ Validation passed
+[15:19:46] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[15:19:46] [INFO] 🩺 Running health checks for models...
+[15:19:46] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[15:19:46] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[15:19:46] [INFO] ⚡ Using async task-queue preview
+[15:19:46] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[15:19:46] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:46] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[15:19:46] [INFO]   |-- model provider: 'local-vllm'
+[15:19:46] [INFO]   |-- inference parameters:
+[15:19:46] [INFO]   |  |-- generation_type=chat-completion
+[15:19:46] [INFO]   |  |-- max_parallel_requests=1
+[15:19:46] [INFO]   |  |-- timeout=180
+[15:19:46] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[15:19:46] [INFO]   |  |-- temperature=0.30
+[15:19:46] [INFO]   |  |-- top_p=0.90
+[15:19:46] [INFO]   |  |-- max_tokens=1024
+[15:19:46] [INFO] 🗂️ llm-structured model config for column 'trace_variant'
+[15:19:46] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:46] [INFO]   |-- model alias: 'local-qwen3-trace'
+[15:19:46] [INFO]   |-- model provider: 'local-vllm'
+[15:19:46] [INFO]   |-- inference parameters:
+[15:19:46] [INFO]   |  |-- generation_type=chat-completion
+[15:19:46] [INFO]   |  |-- max_parallel_requests=1
+[15:19:46] [INFO]   |  |-- timeout=180
+[15:19:46] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42, 'response_format': {'type': 'json_schema', 'json_schema': {'name': 'gravity_trace', 'strict': True, 'schema': {'type': 'object', 'properties': {'task_type': {'type': 'string', 'enum': ['gravity']}, 'answer': {'type': 'string'}, 'g_estimates': {'type': 'array', 'items': {'type': 'number'}}, 'g_ols': {'type': 'number'}, 'query_t': {'type': 'string'}, 'query_distance': {'type': 'number'}}, 'required': ['task_type', 'answer', 'g_estimates', 'g_ols', 'query_t', 'query_distance'], 'additionalProperties': False}}}}
+[15:19:46] [INFO]   |  |-- temperature=0.30
+[15:19:46] [INFO]   |  |-- top_p=0.90
+[15:19:46] [INFO]   |  |-- max_tokens=2048
+[15:19:46] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 6 tasks across 1 row group(s)
+[15:19:46] [INFO] 🚀 (1/1) Dispatching with 3 records
+[15:19:46] [INFO] 🌱 (1/1) Sampling 3 records from seed dataset
+[15:19:46] [INFO]   |-- seed dataset size: 3 records
+[15:19:46] [INFO]   |-- sampling strategy: ordered
+[15:19:46] [INFO] 📊 Progress [0.1s]:
+[15:19:46] [INFO]   |-- 🐔 column 'prompt_variant': 3/3 (100%) 51.5 rec/s
+[15:19:46] [INFO]   |-- 🌕 column 'trace_variant': 3/3 (100%) 51.5 rec/s
+[15:19:46] [INFO] ✅ Async generation complete [0.1s]: 6 ok, 0 failed across 2 column(s)
+[15:19:46] [INFO] 📊 Model usage summary:
+[15:19:46] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[15:19:46] [INFO]   |-- tokens: input=300, output=60, total=360, tps=5885
+[15:19:46] [INFO]   |-- requests: success=3, failed=0, total=3, rpm=2942
+[15:19:46] [INFO] 📐 Measuring dataset column statistics:
+[15:19:46] [INFO]   |-- 📝 column: 'prompt_variant'
+[15:19:46] [INFO]   |-- 🗂️ column: 'trace_variant'
+[15:19:46] [INFO]   |-- 🌱 column: 'seed_id'
+[15:19:46] [INFO]   |-- 🌱 column: 'task_type'
+[15:19:46] [INFO]   |-- 🌱 column: 'prompt'
+[15:19:46] [INFO] 🎉 Preview complete!
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+                                                                                
+  🔎 Identified 1 validation issue in your Data Designer column definitions     
+                                                                                
+                                                                                
+ ─────────────────────────── Column: trace_variant ──────────────────────────── 
+                                                                                
+  ⚠️ WARNING | PARQUET_STORAGE                                                  
+                                                                                
+  Native Parquet storage at $['rules'] allows dynamic object keys that native   
+  struct storage may normalize or fail to serialize. Add                        
+  'x-data-designer-storage': 'json' to this field or an enclosing schema node,  
+  or set storage_encoding='json' on the column. This is a schema risk, not a    
+  prediction that every generated batch will fail.                              
+                                                                                
+ ────────────────────────────────────────────────────────────────────────────── 
+                                                                                
+[15:19:46] [INFO] 👁️ Preview generation in progress
+[15:19:46] [INFO]   |-- 🔒 Jinja rendering engine: secure
+                                                                                
+  🔎 Identified 1 validation issue in your Data Designer column definitions     
+                                                                                
+                                                                                
+ ─────────────────────────── Column: trace_variant ──────────────────────────── 
+                                                                                
+  ⚠️ WARNING | PARQUET_STORAGE                                                  
+                                                                                
+  Native Parquet storage at $['rules'] allows dynamic object keys that native   
+  struct storage may normalize or fail to serialize. Add                        
+  'x-data-designer-storage': 'json' to this field or an enclosing schema node,  
+  or set storage_encoding='json' on the column. This is a schema risk, not a    
+  prediction that every generated batch will fail.                              
+                                                                                
+ ────────────────────────────────────────────────────────────────────────────── 
+                                                                                
+[15:19:47] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[15:19:47] [INFO] 🩺 Running health checks for models...
+[15:19:47] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[15:19:47] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[15:19:47] [INFO] ⚡ Using async task-queue preview
+[15:19:47] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[15:19:47] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:47] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[15:19:47] [INFO]   |-- model provider: 'local-vllm'
+[15:19:47] [INFO]   |-- inference parameters:
+[15:19:47] [INFO]   |  |-- generation_type=chat-completion
+[15:19:47] [INFO]   |  |-- max_parallel_requests=1
+[15:19:47] [INFO]   |  |-- timeout=180
+[15:19:47] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[15:19:47] [INFO]   |  |-- temperature=0.30
+[15:19:47] [INFO]   |  |-- top_p=0.90
+[15:19:47] [INFO]   |  |-- max_tokens=1024
+[15:19:47] [INFO] 🗂️ llm-structured model config for column 'trace_variant'
+[15:19:47] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:47] [INFO]   |-- model alias: 'local-qwen3-trace'
+[15:19:47] [INFO]   |-- model provider: 'local-vllm'
+[15:19:47] [INFO]   |-- inference parameters:
+[15:19:47] [INFO]   |  |-- generation_type=chat-completion
+[15:19:47] [INFO]   |  |-- max_parallel_requests=1
+[15:19:47] [INFO]   |  |-- timeout=180
+[15:19:47] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42, 'response_format': {'type': 'json_schema', 'json_schema': {'name': 'equation_numeric_trace', 'strict': True, 'schema': {'type': 'object', 'properties': {'task_type': {'type': 'string', 'enum': ['equation_numeric']}, 'answer': {'type': 'string'}, 'rules': {'type': 'object', 'additionalProperties': {'type': 'string', 'enum': ['sub', 'absdiff', 'absdiff_prefix', 'join', 'join_swap', 'add', 'add_p1', 'add_m1', 'mul', 'mul_p1', 'mul_m1', 'maxmodmin', 'flip_add', 'flip_add_p1', 'flip_add_m1', 'flip_mul', 'flip_mul_p1', 'flip_mul_m1', 'flip_absdiff', 'flip_maxmodmin', 'flip_sub_prefix', 'flip_sub_suffix', 'flip_absdiff_prefix', 'flip_absdiff_suffix']}}, 'example_outputs': {'type': 'array', 'items': {'type': 'string'}}, 'query_output': {'type': 'string'}}, 'required': ['task_type', 'answer', 'rules', 'example_outputs', 'query_output'], 'additionalProperties': False}}}}
+[15:19:47] [INFO]   |  |-- temperature=0.30
+[15:19:47] [INFO]   |  |-- top_p=0.90
+[15:19:47] [INFO]   |  |-- max_tokens=2048
+[15:19:47] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 6 tasks across 1 row group(s)
+[15:19:47] [INFO] 🚀 (1/1) Dispatching with 3 records
+[15:19:47] [INFO] 🌱 (1/1) Sampling 3 records from seed dataset
+[15:19:47] [INFO]   |-- seed dataset size: 3 records
+[15:19:47] [INFO]   |-- sampling strategy: ordered
+[15:19:47] [INFO] 📊 Progress [0.1s]:
+[15:19:47] [INFO]   |-- 🐔 column 'prompt_variant': 3/3 (100%) 40.0 rec/s
+[15:19:47] [INFO]   |-- 🦁 column 'trace_variant': 3/3 (100%) 40.0 rec/s
+[15:19:47] [INFO] ✅ Async generation complete [0.1s]: 6 ok, 0 failed across 2 column(s)
+[15:19:47] [INFO] 📊 Model usage summary:
+[15:19:47] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[15:19:47] [INFO]   |-- tokens: input=300, output=60, total=360, tps=4600
+[15:19:47] [INFO]   |-- requests: success=3, failed=0, total=3, rpm=2300
+[15:19:47] [INFO] 📐 Measuring dataset column statistics:
+[15:19:47] [INFO]   |-- 📝 column: 'prompt_variant'
+[15:19:47] [INFO]   |-- 🗂️ column: 'trace_variant'
+[15:19:47] [INFO]   |-- 🌱 column: 'seed_id'
+[15:19:47] [INFO]   |-- 🌱 column: 'task_type'
+[15:19:47] [INFO]   |-- 🌱 column: 'prompt'
+[15:19:47] [INFO] 👏 Preview complete!
+[15:19:47] [INFO] ✅ Validation passed
+[15:19:47] [INFO] 🔭 Preview generation in progress
+[15:19:47] [INFO]   |-- 🔒 Jinja rendering engine: secure
+[15:19:47] [INFO] ✅ Validation passed
+[15:19:47] [INFO] ⛓️ Sorting column configs into a Directed Acyclic Graph
+[15:19:47] [INFO] 🩺 Running health checks for models...
+[15:19:47] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-trace' (skip_health_check=True)
+[15:19:47] [INFO]   |-- ⏭️  Skipping health check for model alias 'local-qwen3-prompt' (skip_health_check=True)
+[15:19:47] [INFO] ⚡ Using async task-queue preview
+[15:19:47] [INFO] 📝 llm-text model config for column 'prompt_variant'
+[15:19:47] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:47] [INFO]   |-- model alias: 'local-qwen3-prompt'
+[15:19:47] [INFO]   |-- model provider: 'local-vllm'
+[15:19:47] [INFO]   |-- inference parameters:
+[15:19:47] [INFO]   |  |-- generation_type=chat-completion
+[15:19:47] [INFO]   |  |-- max_parallel_requests=1
+[15:19:47] [INFO]   |  |-- timeout=180
+[15:19:47] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[15:19:47] [INFO]   |  |-- temperature=0.30
+[15:19:47] [INFO]   |  |-- top_p=0.90
+[15:19:47] [INFO]   |  |-- max_tokens=1024
+[15:19:47] [INFO] 📝 llm-text model config for column 'trace_variant'
+[15:19:47] [INFO]   |-- model: 'Qwen/Qwen3-0.6B'
+[15:19:47] [INFO]   |-- model alias: 'local-qwen3-trace'
+[15:19:47] [INFO]   |-- model provider: 'local-vllm'
+[15:19:47] [INFO]   |-- inference parameters:
+[15:19:47] [INFO]   |  |-- generation_type=chat-completion
+[15:19:47] [INFO]   |  |-- max_parallel_requests=1
+[15:19:47] [INFO]   |  |-- timeout=180
+[15:19:47] [INFO]   |  |-- extra_body={'chat_template_kwargs': {'enable_thinking': False}, 'seed': 42}
+[15:19:47] [INFO]   |  |-- temperature=0.30
+[15:19:47] [INFO]   |  |-- top_p=0.90
+[15:19:47] [INFO]   |  |-- max_tokens=2048
+[15:19:47] [INFO] ⚡️ Async generation: 2 column(s) (column 'prompt_variant', column 'trace_variant'), 18 tasks across 1 row group(s)
+[15:19:47] [INFO] 🚀 (1/1) Dispatching with 9 records
+[15:19:47] [INFO] 🌱 (1/1) Sampling 9 records from seed dataset
+[15:19:47] [INFO]   |-- seed dataset size: 9 records
+[15:19:47] [INFO]   |-- sampling strategy: ordered
+[15:19:47] [INFO] 📊 Progress [0.1s]:
+[15:19:47] [INFO]   |-- 🐔 column 'prompt_variant': 9/9 (100%) 60.7 rec/s
+[15:19:47] [INFO]   |-- 🦁 column 'trace_variant': 9/9 (100%) 60.7 rec/s
+[15:19:47] [INFO] ✅ Async generation complete [0.1s]: 18 ok, 0 failed across 2 column(s)
+[15:19:47] [INFO] 📊 Model usage summary:
+[15:19:47] [INFO]   |-- model: Qwen/Qwen3-0.6B
+[15:19:47] [INFO]   |-- tokens: input=900, output=180, total=1080, tps=7145
+[15:19:47] [INFO]   |-- requests: success=9, failed=0, total=9, rpm=3572
+[15:19:47] [INFO] 📐 Measuring dataset column statistics:
+[15:19:47] [INFO]   |-- 📝 column: 'prompt_variant'
+[15:19:47] [INFO]   |-- 📝 column: 'trace_variant'
+[15:19:47] [INFO]   |-- 🌱 column: 'seed_id'
+[15:19:47] [INFO]   |-- 🌱 column: 'task_type'
+[15:19:47] [INFO]   |-- 🌱 column: 'prompt'
+[15:19:47] [INFO]   |-- 🌱 column: 'solver_context'
+[15:19:47] [INFO] 👏 Preview complete!
+ok
+test_gravity_formula_is_symbolically_checked_not_keyword_reward (tests.test_round2_nemo.Round2NeMoTests.test_gravity_formula_is_symbolically_checked_not_keyword_reward) ... ok
+test_independent_process_partial_signal_without_false_final_reward (tests.test_round2_nemo.Round2NeMoTests.test_independent_process_partial_signal_without_false_final_reward) ... ok
+test_real_cpu_updates_full_masks_and_short_final_window (tests.test_equation_augmentation.AugmentationTrainingMathTests.test_real_cpu_updates_full_masks_and_short_final_window) ... ok
+test_boxed_literal_operator_braces_roundtrip (tests.test_equation_augmentation.ExactEquationTests.test_boxed_literal_operator_braces_roundtrip) ... ok
+test_corrupted_example_and_query (tests.test_equation_augmentation.ExactEquationTests.test_corrupted_example_and_query) ... ok
+test_differential_all_rules_all_operand_pairs (tests.test_equation_augmentation.ExactEquationTests.test_differential_all_rules_all_operand_pairs) ... ok
+test_false_query_expression_and_formula_claim_rejected (tests.test_equation_augmentation.ExactEquationTests.test_false_query_expression_and_formula_claim_rejected) ... ok
+test_global_group_and_family_conflicts (tests.test_equation_augmentation.ExactEquationTests.test_global_group_and_family_conflicts) ... ok
+test_historical_strict_equation_previews (tests.test_equation_augmentation.ExactEquationTests.test_historical_strict_equation_previews) ... ok
+test_leading_zero_string_identity (tests.test_equation_augmentation.ExactEquationTests.test_leading_zero_string_identity) ... ok
+test_multiple_assignments_different_answers (tests.test_equation_augmentation.ExactEquationTests.test_multiple_assignments_different_answers) ... ok
+test_multiple_assignments_same_answer (tests.test_equation_augmentation.ExactEquationTests.test_multiple_assignments_same_answer) ... ok
+test_near_outputs_not_equal (tests.test_equation_augmentation.ExactEquationTests.test_near_outputs_not_equal) ... ok
+test_prefix_suffix_sign_and_reverse (tests.test_equation_augmentation.ExactEquationTests.test_prefix_suffix_sign_and_reverse) ... ok
+test_render_all_examples_assignments_unique_claim (tests.test_equation_augmentation.ExactEquationTests.test_render_all_examples_assignments_unique_claim) ... ok
+test_same_assignment_count_different_set_rejected (tests.test_equation_augmentation.ExactEquationTests.test_same_assignment_count_different_set_rejected) ... ok
+test_solver_verifier_disagreement_detected (tests.test_equation_augmentation.ExactEquationTests.test_solver_verifier_disagreement_detected) ... ok
+test_tolerance_counterexample (tests.test_equation_augmentation.ExactEquationTests.test_tolerance_counterexample) ... ok
+test_undefined_operation (tests.test_equation_augmentation.ExactEquationTests.test_undefined_operation) ... ok
+test_unique_rules_and_full_trace (tests.test_equation_augmentation.ExactEquationTests.test_unique_rules_and_full_trace) ... ok
+test_verifier_independence (tests.test_equation_augmentation.ExactEquationTests.test_verifier_independence) ... ok
+test_384_accepted_all_gate_records (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_384_accepted_all_gate_records) ... ok
+test_ambiguity_is_not_solver_verifier_disagreement (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_ambiguity_is_not_solver_verifier_disagreement) ... ok
+test_boxed_roundtrip_all604 (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_boxed_roundtrip_all604) ... ok
+test_control_ids_and_token_budget (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_control_ids_and_token_budget) ... ok
+test_exact_certificate_for_all_accepted (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_exact_certificate_for_all_accepted) ... ok
+test_frozen_500_reused_without_resampling (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_frozen_500_reused_without_resampling) ... ok
+test_generator_file_boundary (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_generator_file_boundary) ... ok
+test_gravity_record_bytes_unchanged (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_gravity_record_bytes_unchanged) ... ok
+test_no_hosted_api_entrypoint (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_no_hosted_api_entrypoint) ... ok
+test_official_scoring_and_protected_algorithms (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_official_scoring_and_protected_algorithms) ... ok
+test_roman_preview_only (tests.test_equation_augmentation_artifacts.ActualArtifactTests.test_roman_preview_only) ... ok
+test_exact_mcnemar_and_paired_length (tests.test_sft_augmentation_analysis.PairedAnalysisTests.test_exact_mcnemar_and_paired_length) ... ok
+test_wilson_boundary_unknown_correct_length_and_pair_identity (tests.test_sft_augmentation_analysis.PairedAnalysisTests.test_wilson_boundary_unknown_correct_length_and_pair_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 99 tests in 37.750s
+
+OK

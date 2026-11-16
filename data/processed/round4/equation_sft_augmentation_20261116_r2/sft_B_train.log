@@ -1,0 +1,340 @@
+Loading weights:   0%|          | 0/311 [00:00<?, ?it/s]Loading weights: 100%|██████████| 311/311 [00:00<00:00, 5653.31it/s]
+B 1 2.138 4.4
+B 2 2.0763 7.4
+B 3 2.0821 10.6
+B 4 2.1108 13.8
+B 5 1.8624 17.0
+B 6 2.0786 20.2
+B 7 1.8945 23.6
+B 8 1.9893 26.8
+B 9 1.8926 30.1
+B 10 1.8844 33.2
+B 11 1.9684 36.0
+B 12 1.862 39.1
+B 13 1.7892 42.0
+B 14 1.9711 43.5
+B 15 1.7243 46.8
+B 16 1.8569 49.5
+B 17 1.7516 52.4
+B 18 1.7885 54.7
+B 19 1.7 57.1
+B 20 1.6232 58.6
+B 21 1.5966 60.0
+B 22 1.5914 61.6
+B 23 1.69 63.1
+B 24 1.601 64.9
+B 25 1.6618 66.8
+B 26 1.583 69.9
+B 27 1.5843 72.8
+B 28 1.435 75.3
+/home/hajimi2025/Qwen3-experiment/.venv-low-memory/lib/python3.13/site-packages/peft/utils/save_and_load.py:313: UserWarning: Could not find a config file in /root/.cache/huggingface/hub/models--Qwen--Qwen3-0.6B/snapshots/c1899de289a04d12100db370d81485cdf75e47ca - will assume that the vocabulary was not modified.
+  warnings.warn(
+{
+  "status": "completed",
+  "optimizer_steps": 28,
+  "supervised_tokens": 77106,
+  "records": 110,
+  "epochs": 2,
+  "training_seconds": 75.33324743574485,
+  "history": [
+    {
+      "epoch": 1,
+      "optimizer_step": 1,
+      "token_mean_loss": 2.137988384082134,
+      "window_supervised_tokens": 2849,
+      "gradient_norm": 1.982515811920166,
+      "elapsed_seconds": 4.358225755859166,
+      "torch_peak_allocated_bytes": 1410758144,
+      "torch_peak_reserved_bytes": 1480589312
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 2,
+      "token_mean_loss": 2.0762559627402046,
+      "window_supervised_tokens": 2506,
+      "gradient_norm": 1.8562545776367188,
+      "elapsed_seconds": 7.371924413833767,
+      "torch_peak_allocated_bytes": 1452038144,
+      "torch_peak_reserved_bytes": 1505755136
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 3,
+      "token_mean_loss": 2.082145116329998,
+      "window_supervised_tokens": 2961,
+      "gradient_norm": 1.8033849000930786,
+      "elapsed_seconds": 10.609904398676008,
+      "torch_peak_allocated_bytes": 1452164096,
+      "torch_peak_reserved_bytes": 1505755136
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 4,
+      "token_mean_loss": 2.110802397163247,
+      "window_supervised_tokens": 2854,
+      "gradient_norm": 1.8605825901031494,
+      "elapsed_seconds": 13.786737709771842,
+      "torch_peak_allocated_bytes": 1452164096,
+      "torch_peak_reserved_bytes": 1505755136
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 5,
+      "token_mean_loss": 1.8623625274397368,
+      "window_supervised_tokens": 2808,
+      "gradient_norm": 1.5113320350646973,
+      "elapsed_seconds": 17.008839811664075,
+      "torch_peak_allocated_bytes": 1454718464,
+      "torch_peak_reserved_bytes": 1545601024
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 6,
+      "token_mean_loss": 2.078637406632707,
+      "window_supervised_tokens": 2960,
+      "gradient_norm": 1.6706870794296265,
+      "elapsed_seconds": 20.195424292702228,
+      "torch_peak_allocated_bytes": 1454718464,
+      "torch_peak_reserved_bytes": 1545601024
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 7,
+      "token_mean_loss": 1.8944521328181798,
+      "window_supervised_tokens": 2751,
+      "gradient_norm": 1.470546007156372,
+      "elapsed_seconds": 23.59414100460708,
+      "torch_peak_allocated_bytes": 1454718464,
+      "torch_peak_reserved_bytes": 1545601024
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 8,
+      "token_mean_loss": 1.9893075068764463,
+      "window_supervised_tokens": 2917,
+      "gradient_norm": 1.6525237560272217,
+      "elapsed_seconds": 26.76590331690386,
+      "torch_peak_allocated_bytes": 1454718464,
+      "torch_peak_reserved_bytes": 1549795328
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 9,
+      "token_mean_loss": 1.8926010927317831,
+      "window_supervised_tokens": 3165,
+      "gradient_norm": 1.4454680681228638,
+      "elapsed_seconds": 30.1309996037744,
+      "torch_peak_allocated_bytes": 1454718464,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 10,
+      "token_mean_loss": 1.8843934550087833,
+      "window_supervised_tokens": 2704,
+      "gradient_norm": 1.5089168548583984,
+      "elapsed_seconds": 33.21496092993766,
+      "torch_peak_allocated_bytes": 1454718464,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 11,
+      "token_mean_loss": 1.96843567849698,
+      "window_supervised_tokens": 2556,
+      "gradient_norm": 1.5384609699249268,
+      "elapsed_seconds": 35.95495437271893,
+      "torch_peak_allocated_bytes": 1454718464,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 12,
+      "token_mean_loss": 1.86195314907371,
+      "window_supervised_tokens": 2941,
+      "gradient_norm": 1.4727535247802734,
+      "elapsed_seconds": 39.066866227891296,
+      "torch_peak_allocated_bytes": 1454718464,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 13,
+      "token_mean_loss": 1.7891955473255128,
+      "window_supervised_tokens": 2883,
+      "gradient_norm": 1.3373323678970337,
+      "elapsed_seconds": 42.03889436274767,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 1,
+      "optimizer_step": 14,
+      "token_mean_loss": 1.971128573827665,
+      "window_supervised_tokens": 1698,
+      "gradient_norm": 1.628617525100708,
+      "elapsed_seconds": 43.52883978188038,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 15,
+      "token_mean_loss": 1.7243172077217488,
+      "window_supervised_tokens": 2970,
+      "gradient_norm": 1.3630863428115845,
+      "elapsed_seconds": 46.770404669921845,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 16,
+      "token_mean_loss": 1.8569053852966078,
+      "window_supervised_tokens": 2630,
+      "gradient_norm": 1.360154151916504,
+      "elapsed_seconds": 49.507197143975645,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 17,
+      "token_mean_loss": 1.7515867247735937,
+      "window_supervised_tokens": 2902,
+      "gradient_norm": 1.3543158769607544,
+      "elapsed_seconds": 52.36031990265474,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 18,
+      "token_mean_loss": 1.78849314962809,
+      "window_supervised_tokens": 1962,
+      "gradient_norm": 1.3445489406585693,
+      "elapsed_seconds": 54.677289029583335,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 19,
+      "token_mean_loss": 1.699953033690111,
+      "window_supervised_tokens": 3016,
+      "gradient_norm": 1.2803783416748047,
+      "elapsed_seconds": 57.08474788395688,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 20,
+      "token_mean_loss": 1.6231705674444143,
+      "window_supervised_tokens": 3123,
+      "gradient_norm": 1.2280659675598145,
+      "elapsed_seconds": 58.57603285787627,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 21,
+      "token_mean_loss": 1.596629195925456,
+      "window_supervised_tokens": 2906,
+      "gradient_norm": 1.3078186511993408,
+      "elapsed_seconds": 60.03367320774123,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 22,
+      "token_mean_loss": 1.5913554736735591,
+      "window_supervised_tokens": 2876,
+      "gradient_norm": 1.180888056755066,
+      "elapsed_seconds": 61.61616805288941,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 23,
+      "token_mean_loss": 1.68998546155022,
+      "window_supervised_tokens": 3041,
+      "gradient_norm": 1.277481198310852,
+      "elapsed_seconds": 63.07665760582313,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 24,
+      "token_mean_loss": 1.601041039568739,
+      "window_supervised_tokens": 2855,
+      "gradient_norm": 1.1895806789398193,
+      "elapsed_seconds": 64.91310716094449,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 25,
+      "token_mean_loss": 1.6617713579671638,
+      "window_supervised_tokens": 2561,
+      "gradient_norm": 1.3234727382659912,
+      "elapsed_seconds": 66.82217985857278,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 26,
+      "token_mean_loss": 1.5830162570901114,
+      "window_supervised_tokens": 2920,
+      "gradient_norm": 1.2814512252807617,
+      "elapsed_seconds": 69.89997057290748,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 27,
+      "token_mean_loss": 1.5843399224838346,
+      "window_supervised_tokens": 2414,
+      "gradient_norm": 1.2583823204040527,
+      "elapsed_seconds": 72.82456228882074,
+      "torch_peak_allocated_bytes": 1457053696,
+      "torch_peak_reserved_bytes": 1556086784
+    },
+    {
+      "epoch": 2,
+      "optimizer_step": 28,
+      "token_mean_loss": 1.4349794431950398,
+      "window_supervised_tokens": 2377,
+      "gradient_norm": 1.1679397821426392,
+      "elapsed_seconds": 75.33267584582791,
+      "torch_peak_allocated_bytes": 1457475584,
+      "torch_peak_reserved_bytes": 1556086784
+    }
+  ],
+  "arm": "B",
+  "parent_adapter_sha256": "d565b67a4e09d41b260b3929d5f3600b96e78ea8e7a8f3712dbfc749c190d371",
+  "adapter_path": "/home/hajimi2025/Qwen3-experiment/.autodl/equation_sft_augmentation_20261116_r2/B/adapter",
+  "adapter_sha256": "dafb648cd850b996a3e0d154291222ef6a32301af8080420c220eaa5a5a9cc3a",
+  "optimizer_state_sha256": "f22b6c9cb76bb93caf1d4d034d4634a5ee24126b2ba6e74165382cd2b3eac821",
+  "source_registration_sha256": "5e26ad4b330b258feab42ce9bc36706129c7c4d2affa36b216af93dd8256f082",
+  "own_peak_allocated_bytes": 1457475584,
+  "own_peak_reserved_bytes": 1556086784,
+  "resource_inventory": {
+    "existing_gpu_processes": "1468381, python3, 41876 MiB\n",
+    "host_memory": {
+      "MemTotal": 130663165952,
+      "MemAvailable": 67278168064
+    },
+    "gpu_memory_scope": "shared integrated GB10; nvidia-smi whole-device memory is unavailable; own Torch peaks reported"
+  },
+  "completed_at_unix": 1794812388.5065224,
+  "wall_seconds": 87.2170205116272,
+  "changed_tensor_count": 392
+}

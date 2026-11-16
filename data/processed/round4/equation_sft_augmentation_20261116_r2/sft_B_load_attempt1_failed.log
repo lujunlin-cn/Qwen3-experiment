@@ -1,0 +1,41 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Traceback (most recent call last):
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_sft_augmentation.py", line 155, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_sft_augmentation.py", line 153, in main
+    result=register() if a.stage=='register' else globals()[a.stage](a.arm)
+                                                  ~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_sft_augmentation.py", line 89, in train
+    model,tok,inventory=load_model(ADAPTER,True,c)
+                        ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_sft_augmentation.py", line 80, in load_model
+    model,tok=load_policy(str(BASE),'bf16_lora',str(adapter))
+              ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/course_worker.py", line 92, in load_policy
+    base = AutoModelForCausalLM.from_pretrained(model_path, **kwargs)
+  File "/home/hajimi2025/miniforge3/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 406, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hajimi2025/miniforge3/lib/python3.13/site-packages/transformers/modeling_utils.py", line 4327, in from_pretrained
+    loading_info, disk_offload_index = cls._load_pretrained_model(model, state_dict, checkpoint_files, load_config)
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/miniforge3/lib/python3.13/site-packages/transformers/modeling_utils.py", line 4408, in _load_pretrained_model
+    caching_allocator_warmup(model, expanded_device_map, load_config.hf_quantizer)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/miniforge3/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5058, in caching_allocator_warmup
+    free_device_memory, total_device_memory = accelerator_module.mem_get_info(index)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/hajimi2025/miniforge3/lib/python3.13/site-packages/torch/cuda/memory.py", line 842, in mem_get_info
+    return torch.cuda.cudart().cudaMemGetInfo(device)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+torch.AcceleratorError: CUDA error: out of memory
+Search for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

@@ -1,0 +1,20 @@
+{
+  "candidate_count": 500,
+  "candidate_sha256": "f2cd1d922125be3fca95f6b7dd98c0b44a62eccf70aa21a350b1fcaed26fadae",
+  "rng_seed": 20261116,
+  "prior_manifest_sha256": "130b14febc9d3286e70180e884afb1809d23c6ea38374cab844fe5fb4f30b701",
+  "prior_file_sha256": "454345c0a43ef31fa211c730eac46233795e6928bfb3eae3a3bde24072565e4e",
+  "generated_before_this_run_evaluation_audit": true,
+  "evaluation_reads": 0,
+  "reads": [
+    "data/processed/round3/nvidia_synthetic_final_20261115_r1/train_prior.json",
+    "data/processed/round3/nvidia_synthetic_final_20261115_r1/train_prior_manifest.json",
+    "data/processed/round3/nvidia_synthetic_final_20261115_r1/train_prior_manifest.json",
+    "data/processed/tasksets/roman_gravity_equation_v1/dataset_manifest.json",
+    "data/processed/tasksets/roman_gravity_equation_v1/splits/train.csv",
+    "data/processed/tasksets/roman_gravity_equation_v1/dataset_manifest.json"
+  ],
+  "elapsed_seconds": 19.564968990162015,
+  "resampling_after_audit": false,
+  "note": "Prior selection fixed before this run. Previous historical audits existed; no evaluation-driven changes to sampling."
+}

@@ -1,0 +1,13 @@
+{
+  "status": "failed_or_blocked",
+  "error": "AcceleratorError: CUDA error: out of memory\nSearch for `cudaErrorMemoryAllocation' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n",
+  "wall_seconds": 3.777428388595581,
+  "resource_inventory": {
+    "existing_gpu_processes": "1468381, python3, 73684 MiB\n",
+    "host_memory": {
+      "MemTotal": 130663165952,
+      "MemAvailable": 34287239168
+    },
+    "gpu_memory_scope": "shared integrated GB10; nvidia-smi whole-device memory is unavailable; own Torch peaks reported"
+  }
+}

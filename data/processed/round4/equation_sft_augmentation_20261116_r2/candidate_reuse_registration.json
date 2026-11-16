@@ -1,0 +1,11 @@
+{
+  "parent_run": "equation_sft_augmentation_20261116_r1",
+  "reason": "Repair literal-brace Boxed Answer roundtrip, then restart both B/C from original R1",
+  "candidates_regenerated": 0,
+  "candidate_count": 500,
+  "same_candidate_pool_sha256": "f2cd1d922125be3fca95f6b7dd98c0b44a62eccf70aa21a350b1fcaed26fadae",
+  "seed": 20261116,
+  "same_real_control_ids": true,
+  "model_outputs_used_to_choose_data": false,
+  "registered_unix": 1794811039.6195111
+}

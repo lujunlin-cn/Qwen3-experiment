@@ -1,0 +1,3530 @@
+{
+  "records": [
+    {
+      "file": "equation_sft_rendered_preview.jsonl",
+      "query_repeated_from_examples": 0,
+      "contradictory_examples": 0,
+      "rows": [
+        {
+          "id": "equation_numeric-final-002",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-004",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-005",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-006",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-008",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-009",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-010",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-011",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-014",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-016",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0001",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0002",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0003",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0005",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0006",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0008",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0010",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0011",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0012",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0013",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0015",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0016",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0018",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0019",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0020",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0023",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0024",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0027",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0028",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0029",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0031",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0035",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0036",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0037",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0038",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0039",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0040",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0043",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0044",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0045",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0047",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0048",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0049",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0050",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0051",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0052",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0053",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0056",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0057",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0058",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0059",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0060",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0061",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0062",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0063",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0064",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0067",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0068",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0069",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0070",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0072",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0073",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0074",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0075",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0076",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0077",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0081",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0082",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0083",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0085",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0087",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0089",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0090",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0091",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0092",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0094",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0095",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0096",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0097",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0098",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0100",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0101",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0102",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0103",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0104",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0105",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0108",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0109",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0111",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0113",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0115",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0117",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0118",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0119",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0120",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0123",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0124",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0125",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0126",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0127",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0128",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0130",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0131",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0133",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0134",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0136",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0138",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0139",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0141",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0142",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0143",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0144",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0145",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0146",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0147",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0148",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0149",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0151",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0153",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0154",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0155",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0156",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0157",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0158",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0159",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0160",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0161",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0162",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0164",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0165",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0168",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0169",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0171",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0173",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0174",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0175",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0176",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0178",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0179",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0180",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0181",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0182",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0184",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0186",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0188",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0189",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0192",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0193",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0194",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0195",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0196",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0197",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0200",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0201",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0203",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0204",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0206",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0207",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0208",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0209",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0210",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0211",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0212",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0213",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0215",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0217",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0219",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0220",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0221",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0222",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0223",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0226",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0227",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0228",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0230",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0232",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0233",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0234",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0235",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0237",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0238",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0239",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0240",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0241",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0242",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0243",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0244",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0245",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0246",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0247",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0248",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0249",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0250",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0253",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0255",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0256",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0258",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0259",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0261",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0263",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0264",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0265",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0267",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0269",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0270",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0271",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0272",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0273",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0274",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0275",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0276",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0277",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0278",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0279",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0280",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0281",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0283",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0284",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0285",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0287",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0288",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0289",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0290",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0291",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0292",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0293",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0295",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0296",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0297",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0299",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0300",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0301",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0303",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0304",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0305",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0306",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0307",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0308",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0309",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0310",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0311",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0312",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0313",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0314",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0315",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0317",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0318",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0320",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0321",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0322",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0323",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0324",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0325",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0327",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0328",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0330",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0331",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0332",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0333",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0334",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0338",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0339",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0340",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0341",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0342",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0343",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0344",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0345",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0346",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0347",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0348",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0349",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0350",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0351",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0352",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0353",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0354",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0356",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0357",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0358",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0359",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0362",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0363",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0365",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0366",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0367",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0368",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0370",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0372",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0373",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0374",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0377",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0379",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0380",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0381",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0382",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0384",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0385",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0386",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0387",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0388",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0389",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0391",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0393",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0394",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0395",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0396",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0397",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0400",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0401",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0402",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0404",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0407",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0408",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0409",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0410",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0411",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0412",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0413",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0414",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0415",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0416",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0418",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0419",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0420",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0421",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0422",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0423",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0424",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0425",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0426",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 1,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0427",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0428",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0430",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0431",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0432",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0433",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0435",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0436",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0439",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0441",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0442",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0443",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0444",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0445",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0446",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0447",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0449",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0451",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0452",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0453",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0454",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0456",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0457",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0458",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0459",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0461",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0462",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0464",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0465",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0467",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0470",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0471",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0472",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0475",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0476",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0477",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0478",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0479",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0480",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0481",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0483",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 1,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0485",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0486",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0487",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0488",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0490",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0494",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0495",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0496",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0497",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0498",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0499",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0500",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        }
+      ]
+    },
+    {
+      "file": "sft_synthetic_110.jsonl",
+      "query_repeated_from_examples": 0,
+      "contradictory_examples": 0,
+      "rows": [
+        {
+          "id": "equation_numeric-final-002",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-004",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-005",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-006",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-008",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-009",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-010",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-011",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-014",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation_numeric-final-016",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0001",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0002",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0003",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0005",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0006",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0008",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0010",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0011",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0012",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0013",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0015",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0016",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0018",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0019",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0020",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0023",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0024",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0027",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0028",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0029",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0031",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0035",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0036",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0037",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0038",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0039",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0040",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0043",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0044",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0045",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0047",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0048",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0049",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0050",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0051",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0052",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0053",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0056",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0057",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0058",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0059",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0060",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0061",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0062",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0063",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0064",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0067",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0068",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0069",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0070",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0072",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0073",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0074",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0075",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0076",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0077",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0081",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0082",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0083",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0085",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0087",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0089",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0090",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0091",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0092",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0094",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0095",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0096",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0097",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0098",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0100",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0101",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0102",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0103",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0104",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0105",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0108",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0109",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0111",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0113",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0115",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0117",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0118",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0119",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0120",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0123",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0124",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0125",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0126",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "equation-augmentation-0127",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        }
+      ]
+    },
+    {
+      "file": "sft_real_control_110.jsonl",
+      "query_repeated_from_examples": 0,
+      "contradictory_examples": 0,
+      "rows": [
+        {
+          "id": "3580648f",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "38e98135",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "d44ef285",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "2cc274cb",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "47c368d8",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "6e60b0c5",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "4d8f8111",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "921da788",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "79f29eb5",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "9c8eef89",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "6402d0ee",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "32815b79",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "0a15c5c7",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "1e248995",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "155b4694",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "13892a7c",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "9dd8adaa",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "c7bcab48",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "2aeb5265",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "76e6f646",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "791056ce",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "80d44fe3",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "6d3b9da4",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "76d2ee64",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "61766c6f",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "850dc715",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "2a73a462",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "66c5974c",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "339149c9",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "4b70414e",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "330d5ef1",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "047c4111",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "c5b058d6",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "49578b02",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "e5956ffa",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "8c6a158e",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "13ad7bce",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "9d4ae6b8",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "680f19b3",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "40c53743",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "9250a0a8",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "0505ab22",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "2ee39f5f",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "e9afa4a0",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "4aabfc3b",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "49919931",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "7195cb7b",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "c81411a2",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "97dee6aa",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "0f0536de",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "25f2f2cd",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "b3ae7f39",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "35661801",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "744a2570",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "e3b3573a",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "61bbcdc3",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "5eea60e7",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "3c12aeb9",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "9ae3b78e",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "705bb686",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "347477c5",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "791fc537",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "b4342b90",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "43837c5b",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "35672155",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "56343b77",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "b69391b8",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "37a2a7ff",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "4245e455",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "c37a2a23",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "f463ee16",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "806eba07",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "913fdf86",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "87a902eb",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "4dcc1844",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "bc7f14d1",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "e9b69bf8",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "9fb854c3",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "1526c35d",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "383889e1",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "37f04e3e",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "4dbec546",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "1f445c5e",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "4f8da43f",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "a1bae076",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "1450fbc4",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "3bf0875d",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "317ec3e6",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "09302769",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "026106f5",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "8a800607",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "a2252b88",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "50c0b6f8",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "4d39d098",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "c11777c0",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "4ff92c73",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "1f4c8169",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "eafc7e67",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "4d714623",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        },
+        {
+          "id": "6bd59a1f",
+          "query_already_public_example": false,
+          "duplicate_example_expressions": 0,
+          "contradictory_examples": false
+        }
+      ]
+    }
+  ],
+  "policy": "Descriptive public-query reuse audit; no post-evaluation resampling or relabeling"
+}

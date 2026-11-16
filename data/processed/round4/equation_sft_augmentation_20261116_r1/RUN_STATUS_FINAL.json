@@ -1,0 +1,14 @@
+{
+  "status": "excluded_due_to_sft_format_gate",
+  "math_proofs_accepted": 384,
+  "sft_preview_roundtrip_failed": 5,
+  "real_control_roundtrip_failed": 2,
+  "training_B_actual_steps": 28,
+  "training_C_actual_steps": 28,
+  "formal_validation_completed": false,
+  "evaluation_status": "stopped_before_comparative_scoring",
+  "replacement_run": "equation_sft_augmentation_20261116_r2",
+  "reason": "Literal brace operator must be escaped inside boxed answer; never change original answer or official extractor",
+  "history_retained": true,
+  "finalized_unix": 1794811039.6179798
+}

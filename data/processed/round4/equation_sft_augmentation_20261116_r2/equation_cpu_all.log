@@ -1,0 +1,23 @@
+test_real_cpu_updates_full_masks_and_short_final_window (test_equation_augmentation.AugmentationTrainingMathTests.test_real_cpu_updates_full_masks_and_short_final_window) ... ok
+test_boxed_literal_operator_braces_roundtrip (test_equation_augmentation.ExactEquationTests.test_boxed_literal_operator_braces_roundtrip) ... ok
+test_corrupted_example_and_query (test_equation_augmentation.ExactEquationTests.test_corrupted_example_and_query) ... ok
+test_differential_all_rules_all_operand_pairs (test_equation_augmentation.ExactEquationTests.test_differential_all_rules_all_operand_pairs) ... ok
+test_global_group_and_family_conflicts (test_equation_augmentation.ExactEquationTests.test_global_group_and_family_conflicts) ... ok
+test_historical_strict_equation_previews (test_equation_augmentation.ExactEquationTests.test_historical_strict_equation_previews) ... ok
+test_leading_zero_string_identity (test_equation_augmentation.ExactEquationTests.test_leading_zero_string_identity) ... ok
+test_multiple_assignments_different_answers (test_equation_augmentation.ExactEquationTests.test_multiple_assignments_different_answers) ... ok
+test_multiple_assignments_same_answer (test_equation_augmentation.ExactEquationTests.test_multiple_assignments_same_answer) ... ok
+test_near_outputs_not_equal (test_equation_augmentation.ExactEquationTests.test_near_outputs_not_equal) ... ok
+test_prefix_suffix_sign_and_reverse (test_equation_augmentation.ExactEquationTests.test_prefix_suffix_sign_and_reverse) ... ok
+test_render_all_examples_assignments_unique_claim (test_equation_augmentation.ExactEquationTests.test_render_all_examples_assignments_unique_claim) ... ok
+test_same_assignment_count_different_set_rejected (test_equation_augmentation.ExactEquationTests.test_same_assignment_count_different_set_rejected) ... ok
+test_solver_verifier_disagreement_detected (test_equation_augmentation.ExactEquationTests.test_solver_verifier_disagreement_detected) ... ok
+test_tolerance_counterexample (test_equation_augmentation.ExactEquationTests.test_tolerance_counterexample) ... ok
+test_undefined_operation (test_equation_augmentation.ExactEquationTests.test_undefined_operation) ... ok
+test_unique_rules_and_full_trace (test_equation_augmentation.ExactEquationTests.test_unique_rules_and_full_trace) ... ok
+test_verifier_independence (test_equation_augmentation.ExactEquationTests.test_verifier_independence) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 2.500s
+
+OK

@@ -1,0 +1,130 @@
+            if assigned_physical_gpu_ids is not None:
+                from vllm.platforms.interface import set_assigned_physical_gpu_ids
+
+                set_assigned_physical_gpu_ids(assigned_physical_gpu_ids)
+                assert self.local_rank < len(assigned_physical_gpu_ids), (
+                    f"local_rank {self.local_rank} is out of bounds for "
+                    f"assigned_physical_gpu_ids {assigned_physical_gpu_ids}"
+                )
+                # NOTE(patch pr45026): local_world_size is derived from
+                # parallel_config.nnodes, which is only set for the "mp"
+                # multi-node backend. With the "ray"/"external_launcher"
+                # backends nnodes stays 1, so local_world_size collapses to
+                # the full world_size and this check wrongly fires on
+                # cross-node deployments. assigned_physical_gpu_ids is already
+                # per-node and the local_rank bound above fully validates the
+                # mapping for these backends, so skip the check for them.
+                if parallel_config.distributed_executor_backend not in (
+                    "ray",
+                    "external_launcher",
+                ):
+                    assert self.parallel_config.local_world_size <= len(
+                        assigned_physical_gpu_ids
+                    ), (
+                        f"local_world_size ({self.parallel_config.local_world_size})"
+                        " exceeds assigned_physical_gpu_ids count "
+                        f"({len(assigned_physical_gpu_ids)})"
+                    )
+            else:
+                assert self.local_rank < torch.accelerator.device_count(), (
+                    f"DP adjusted local rank {self.local_rank} is out of "
+                    f"bounds for {torch.accelerator.device_count()} devices."
+                )
+
+            visible_device_index = (
+                current_platform.logical_device_id_to_visible_device_id(self.local_rank)
+            )
+            self.device = torch.device(f"cuda:{visible_device_index}")
+            torch.accelerator.set_device_index(self.device)
+
+            current_platform.check_if_supports_dtype(self.model_config.dtype)
+
+            # Initialize the distributed environment BEFORE taking
+            # memory snapshot
+            # This ensures NCCL buffers are allocated before we measure
+            # available memory
+            init_worker_distributed_environment(
+                self.vllm_config,
+                self.rank,
+                self.distributed_init_method,
+                self.local_rank,
+                current_platform.dist_backend,
+            )
+
+            if self.use_v2_model_runner:
+                logger.info_once("Using V2 Model Runner")
+
+            # Set random seed.
+            set_random_seed(self.model_config.seed)
+
+            # Now take memory snapshot after NCCL is initialized
+            gc.collect()
+            torch.accelerator.empty_cache()
+
+            # take current memory snapshot
+            self.init_snapshot = init_snapshot = MemorySnapshot(device=self.device)
+            self.requested_memory = request_memory(init_snapshot, self.cache_config)
+            logger.debug("worker init memory snapshot: %r", self.init_snapshot)
+            logger.debug(
+                "worker requested memory: %sGiB", format_gib(self.requested_memory)
+            )
+        else:
+            raise RuntimeError(f"Unsupported device type: {self.device_config.device}")
+
+        # Initialize workspace manager
+        num_ubatches = 2 if self.vllm_config.parallel_config.enable_dbo else 1
+
+
+@dataclass
+class MemorySnapshot:
+    """Memory snapshot."""
+
+    torch_peak: int = 0
+    torch_allocated: int = 0
+    free_memory: int = 0
+    total_memory: int = 0
+    cuda_memory: int = 0
+    torch_memory: int = 0
+    non_torch_memory: int = 0
+    timestamp: float = 0.0
+
+    device: torch.types.Device = None
+    auto_measure: bool = True
+
+    def __post_init__(self) -> None:
+        if self.device is None:
+            device_fn = current_platform.current_device
+            assert device_fn is not None
+            self.device_ = torch.device(device_fn())
+        else:
+            self.device_ = torch.device(self.device)
+
+        if self.auto_measure:
+            self.measure()
+
+    def measure(self) -> None:
+        device = self.device_
+
+        # we measure the torch peak memory usage via allocated_bytes,
+        # rather than `torch.accelerator.memory_reserved()` .
+        # After `torch.accelerator.reset_peak_memory_stats()`,
+        # `torch.accelerator.memory_reserved()` will keep growing, and only shrink
+        # when we call `torch.accelerator.empty_cache()` or OOM happens.
+        stats = torch.accelerator.memory_stats(device)
+        self.torch_peak = stats.get("allocated_bytes.all.peak", 0)
+        self.torch_allocated = stats.get("allocated_bytes.all.current", 0)
+
+        self.free_memory, self.total_memory = torch.accelerator.get_memory_info(device)
+        if current_platform.is_integrated_gpu(device.index):
+            # On UMA (Unified Memory Architecture) platforms where CPU and
+            # GPU share physical memory (e.g. GH200, DGX Spark, Jetson Orin),
+            # cudaMemGetInfo underreports free memory because it does not
+            # account for reclaimable OS memory (page cache, buffers).
+            # Use psutil to get the true available memory.
+            # https://docs.nvidia.com/cuda/cuda-for-tegra-appnote/#estimating-total-allocatable-device-memory-on-an-integrated-gpu-device
+            self.free_memory = psutil.virtual_memory().available
+
+        self.cuda_memory = self.total_memory - self.free_memory
+
+        # torch.accelerator.memory_reserved() is how many bytes
+        # PyTorch gets from cuda (by calling cudaMalloc, etc.)

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/tmp/qwen_aug_finish.py", line 9, in <module>
+    if run.returncode:raise RuntimeError(module+' failed')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: utils.score_sft_augmentation failed

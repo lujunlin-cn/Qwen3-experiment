@@ -1,0 +1,48 @@
+{
+  "status": "failed",
+  "files_checked": 3,
+  "bad": [
+    {
+      "file": "equation_sft_rendered_preview.jsonl",
+      "id": "equation-augmentation-0284",
+      "expected": "}90",
+      "extracted": ""
+    },
+    {
+      "file": "equation_sft_rendered_preview.jsonl",
+      "id": "equation-augmentation-0288",
+      "expected": "}46",
+      "extracted": ""
+    },
+    {
+      "file": "equation_sft_rendered_preview.jsonl",
+      "id": "equation-augmentation-0300",
+      "expected": "}71",
+      "extracted": ""
+    },
+    {
+      "file": "equation_sft_rendered_preview.jsonl",
+      "id": "equation-augmentation-0365",
+      "expected": "35}",
+      "extracted": "35"
+    },
+    {
+      "file": "equation_sft_rendered_preview.jsonl",
+      "id": "equation-augmentation-0424",
+      "expected": "3}",
+      "extracted": "3"
+    },
+    {
+      "file": "sft_real_control_110.jsonl",
+      "id": "8c6a158e",
+      "expected": "}30",
+      "extracted": ""
+    },
+    {
+      "file": "sft_real_control_110.jsonl",
+      "id": "e9afa4a0",
+      "expected": "}51",
+      "extracted": ""
+    }
+  ]
+}

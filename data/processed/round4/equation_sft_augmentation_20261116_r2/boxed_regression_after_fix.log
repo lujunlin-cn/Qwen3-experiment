@@ -1,0 +1,6 @@
+test_boxed_literal_operator_braces_roundtrip (test_equation_augmentation.ExactEquationTests.test_boxed_literal_operator_braces_roundtrip) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.400s
+
+OK
