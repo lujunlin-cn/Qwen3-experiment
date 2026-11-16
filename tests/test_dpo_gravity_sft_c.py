@@ -38,6 +38,10 @@ class NaturalGravity(unittest.TestCase):
  def test_bad_symbolic_arithmetic(self):self.assertFalse(self.check(PROOF+'\nt^2=999')['verified'])
  def test_good_symbolic_arithmetic(self):self.assertTrue(self.check(PROOF+'\nt^2=9')['verified'])
  def test_modified_public_example(self):self.assertFalse(self.check(PROOF+'\nFor t = 1, d = 999')['verified'])
+ def test_wrong_fitted_g_in_additional_sentence(self):self.assertFalse(self.check(PROOF+'\nThe fitted g is 999.')['verified'])
+ def test_wrong_arithmetic_with_trailing_prose(self):self.assertFalse(self.check(PROOF+'\n2*10=99 is the checked result.')['verified'])
+ def test_input_opened_thinking_requires_response_close(self):self.assertFalse(self.verify(PROMPT,PROOF,'45',thinking_expected=True)['verified'])
+ def test_contradictory_additional_physics(self):self.assertFalse(self.check(PROOF+'\nd=g*t^3')['verified'])
  def test_numeric_query_substitution_instead_of_prose(self):self.assertTrue(self.check(PROOF.replace('The unrounded Query distance is 45; format the final numeric answer.','d = 0.5*10*(3)^2 = 45'))['verified'])
  def test_multiple_boxes(self):self.assertFalse(self.check(PROOF+'\n\\boxed{45}')['verified'])
  def test_solver_not_called(self):

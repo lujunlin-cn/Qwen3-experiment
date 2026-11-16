@@ -47,7 +47,7 @@ def pair_api():
 def audit_nl_rows(rs):
  ns=nl_api()
  for r in rs:
-  audit=ns['verify_gravity_natural_language'](r['prompt'],r['completion'],r['expected_answer'],r['finish_reason'])
+  audit=ns['verify_gravity_natural_language'](r['prompt'],r['completion'],r['expected_answer'],r['finish_reason'],thinking_expected=r.get('thinking_enabled',False))
   r.update(proof_audit=audit,format_valid=audit['format_valid'],exact_trace_pass=audit['verified'],
     correct=bool(audit['final_correct'] and not r['truncated'] and r['finish_reason']=='stop'),predicted=audit.get('predicted'),
     proof_verifier_version=audit['version'],verifier_version='official_nvidia_metric_v3',output_contract='natural_language_gravity_v1',variant='original')
@@ -61,7 +61,14 @@ def validate_identity():
  if (read(PARENT/'adapter_config.json')['r'],read(PARENT/'adapter_config.json')['lora_alpha'],read(PARENT/'adapter_config.json')['lora_dropout'])!=(8,16,0):raise ValueError('LoRA contract mismatch')
  reg=RUN/'registration.json'
  if reg.exists():
-  for p,h in read(reg)['sources'].items():
+  sources=read(reg)['sources']
+  amendment=RUN/'verification_amendment.json'
+  if amendment.exists():
+   amended=read(amendment)
+   if amended['original_registration_sha256']!=sha(reg) or amended['cpu_tests_exit_code']!=0:raise ValueError('Invalid CPU verifier repair registration')
+   if sha(RUN/amended['cpu_tests_log'])!=amended['cpu_tests_log_sha256']:raise ValueError('CPU verifier repair test evidence changed')
+   sources=amended['sources']
+  for p,h in sources.items():
    if sha(ROOT/p)!=h:raise ValueError('Registered source changed: '+p)
  return c
 

@@ -157,6 +157,7 @@ def report(status,error=None):
   '',f'固定父 Adapter SHA256：`{c["parent_adapter_sha256"]}`。Base Revision：`{c["base_revision"]}`。启动前全部 Base/Tokenizer 文件与历史 fingerprint 比对通过；Policy 和冻结 Reference 同为 SFT C，无回退。',
   '', '## 数据与验收合同','', '训练题为原始16道 Gravity Train +10道保留 `synthetic_train_prior` 逐特征来源的合成题。原始 Prompt 不追加 JSON/答案/证明。独立 OLS 使用全部公开示例；最终自然语言证明中的 g、Query 时间、未舍入距离、物理关系和盒装答案按 rel_tol=1e-4、abs_tol=1e-5 检查；官方最终评分器保持不变。隐藏 Thinking 不参与证明验收，但计入总长度及 DPO Sequence Log Probability。不可解析或不完整回答记录为 unverifiable。Verifier 是保守的、有限语法的数学证书检查，未认证不等于数学错误。',
   '', 'Tune48和Locked Final100均复用历史冻结 Validation 面板；Locked Final不是官方 Holdout Test。未使用 Holdout 结果调整任何设置。两者可能被历史实验评估过，不能声称首次盲测。',
+  '', 'CPU附加反例在查看本轮Rollout内容前发现并修复：相互矛盾的拟合g、带后续自然语言的错误算式、输入Chat Template已开启但Completion未关闭的Thinking。最终使用gravity-natural-language-v1.1；原始注册和第一次完成链的状态/日志均保留。采样配置、原始Completion及数学容差没有改变。附加CPU门槛通过后，自动续链重新验收全部原始Rollout。',
   '', '## 实际 Rollout 与偏好数据','', '```json',json.dumps(q,ensure_ascii=False,indent=2),'```',
   '', '初始每题8条；不足16对时全26题各补4条。Chosen最短、Rejected最长，双方均正确完整且独立证明通过，长度差>=64且>=长答20%，每题最多1对。所有错误、截断、不可验证回答均排除。']
  if train:
@@ -196,8 +197,64 @@ def all_stages():
   if not (RUN/'final_status.json').exists():report('failed',repr(e))
   raise
 
+def resume_after_cpu_repair(wait_pid=None):
+ """One completion-triggered recovery; no polling, no rollout regeneration.
+
+ The initial chain's immutable-source check stops before another GPU phase
+ because the CPU adversarial repair changed sources. Raw generation finishes
+ unchanged. This hook resumes with the strengthened acceptance contract.
+ """
+ if wait_pid:
+  import select
+  try:
+   fd=os.pidfd_open(wait_pid)
+  except ProcessLookupError:fd=None
+  if fd is not None:
+   write(RUN/'cpu_repair_continuation_wait.json',{'waiting_pid':wait_pid,'mechanism':'pidfd/select completion hook; no periodic training monitoring','time':time.time()})
+   select.select([fd],[],[]);os.close(fd)
+ if not (RUN/'rollout8/completion_hook.json').exists():
+  raise RuntimeError('Original rollout did not complete; preserve original failure and do not regenerate')
+ import shutil
+ archive=RUN/'attempts/before_cpu_adversarial_repair';archive.mkdir(parents=True,exist_ok=False)
+ moved={}
+ for name in ['final_status.json','artifact_manifest.json','rollouts_audited_8.jsonl','rollouts_audited_12.jsonl','rollouts_audited.jsonl',
+              'preference_pairs_8.jsonl','preference_pairs_12.jsonl','rollout_quality_8.json','rollout_quality_12.json',
+              'rollout4.log','train.log']:
+  old=RUN/name
+  if old.exists():
+   moved[name]={'sha256':sha(old),'archived_path':str((archive/name).relative_to(RUN))};shutil.move(old,archive/name)
+ old_report=ROOT/'docs/DPO_GRAVITY_SFT_C_FINAL_REPORT.md'
+ if old_report.exists():
+  moved['docs/DPO_GRAVITY_SFT_C_FINAL_REPORT.md']={'sha256':sha(old_report),'archived_path':str((archive/'initial_chain_report.md').relative_to(RUN))}
+  shutil.move(old_report,archive/'initial_chain_report.md')
+ write(archive/'preservation_manifest.json',moved)
+ log=RUN/'cpu_verifier_repair_gate.log'
+ with log.open('x') as f:
+  p=subprocess.run([str(PYTHON),'-m','unittest','tests.test_dpo_gravity_sft_c','tests.test_round2_numerics','tests.test_course_experiment','-v'],cwd=ROOT,
+   stdout=f,stderr=subprocess.STDOUT,env={**os.environ,'CUDA_VISIBLE_DEVICES':'','PYTHONPATH':str(ROOT)+':'+str(ROOT/'tests')})
+ if p.returncode:report('failed','Strengthened CPU verifier regression failed; no further GPU phases');return
+ write(RUN/'verification_amendment.json',{'version':'gravity-natural-language-v1.1','original_registration_sha256':sha(RUN/'registration.json'),
+  'reason':'Acceptance strengthened by CPU adversarial tests before inspecting generated completion contents. Input/sampling/token caps unchanged; no rerollout.',
+  'sources':{name:sha(ROOT/name) for name in SOURCES},'cpu_tests_exit_code':p.returncode,'cpu_tests_log':log.name,'cpu_tests_log_sha256':sha(log),
+  'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'registered_unix':time.time()})
+ try:
+  validate_identity()
+  q=audit_rollouts()
+  if q['pairs']<16:
+   if not (RUN/'rollout4/completion_hook.json').exists():invoke('rollout4')
+   q=audit_rollouts(True)
+  if q['pairs']<16:report('no_preference_signal');return
+  invoke('train');invoke('reload');invoke('tune');score('tune')
+  checkpoint=read(WEIGHTS/'checkpoint.json');checkpoint['frozen_after_tune_unix']=time.time();checkpoint['tune_comparison_sha256']=sha(RUN/'tune/comparison.json')
+  write(RUN/'checkpoint_freeze.json',checkpoint);invoke('final');score('final');report('completed')
+ except BaseException as e:
+  append(RUN/'failures.jsonl',{'error':repr(e),'traceback':traceback.format_exc(),'unix':time.time(),'continuation':'CPU adversarial repair'})
+  if not (RUN/'final_status.json').exists():report('failed',repr(e))
+  raise
+
 def main():
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('stage',choices=['all','report']);a=p.parse_args()
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('stage',choices=['all','report','resume-after-cpu-repair']);p.add_argument('--wait-pid',type=int);a=p.parse_args()
  if a.stage=='all':all_stages()
+ elif a.stage=='resume-after-cpu-repair':resume_after_cpu_repair(a.wait_pid)
  else:report('recovered_completed')
 if __name__=='__main__':main()
