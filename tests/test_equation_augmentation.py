@@ -49,6 +49,11 @@ class ExactEquationTests(unittest.TestCase):
    b=copy.deepcopy(s);b['trace']['example_checks'][0][key]='wrong'
    self.assertFalse(self.n['verify_equation_numeric_sample'](b)['trace_ok'])
   b=copy.deepcopy(s);b['trace']['query_outputs']=['102'];self.assertFalse(self.n['verify_equation_numeric_sample'](b)['trace_ok'])
+ def test_false_query_expression_and_formula_claim_rejected(self):
+  s=self.sample([('50+50','100')],'51+50')
+  for field,value in [('query_expression','99+99'),('query_operator','@'),('rule_formulas',{'add':'AB-CD'})]:
+   bad=copy.deepcopy(s);bad['trace'][field]=value
+   self.assertFalse(self.n['verify_equation_numeric_sample'](bad)['trace_ok'],field)
  def test_same_assignment_count_different_set_rejected(self):
   s=self.sample([('50+50','100')],'51+50');s['trace']['valid_assignments'][0]['rules']['+']='add_p1'
   self.assertFalse(self.n['verify_equation_numeric_sample'](s)['trace_ok'])

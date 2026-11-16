@@ -15,14 +15,14 @@ def memory_report(worker):
 def main():
  from vllm import LLM,SamplingParams
  from vllm.lora.request import LoRARequest
- registration=read(RUN/'sft_experiment_registration.json');amendment=read(RUN/'evaluation_backend_registration_v2.json');c=registration['config']
+ registration=read(RUN/'sft_experiment_registration.json');amendment=read(RUN/'evaluation_backend_registration_v3.json');c=registration['config']
  if sha(pathlib.Path(__file__))!=amendment['worker_sha256']:raise ValueError('Worker changed after registration')
  panel=rows(RUN/'augmentation_validation_panel.jsonl')
  if sha(RUN/'augmentation_validation_panel.jsonl')!=registration['validation_panel_sha256']:raise ValueError('Panel changed')
  model=ROOT/'.autodl/augmentation_base_c1899de'
  engine=LLM(model=str(model),tokenizer=str(model),dtype='bfloat16',tensor_parallel_size=1,enable_lora=True,max_lora_rank=8,max_loras=1,
-  enable_prefix_caching=False,max_model_len=8192,max_num_seqs=4,max_num_batched_tokens=512,kv_cache_memory_bytes=int(1.25*2**30),gpu_memory_utilization=.10,
-  enforce_eager=False,compilation_config={'mode':0,'cudagraph_mode':'FULL_DECODE_ONLY','cudagraph_capture_sizes':[1,2,4],'max_cudagraph_capture_size':4},
+  enable_prefix_caching=False,max_model_len=8192,max_num_seqs=8,max_num_batched_tokens=512,kv_cache_memory_bytes=4*2**30,gpu_memory_utilization=.10,
+  enforce_eager=False,compilation_config={'mode':0,'cudagraph_mode':'FULL_DECODE_ONLY','cudagraph_capture_sizes':[1,2,4,8],'max_cudagraph_capture_size':8},
   seed=c['seed'],generation_config='vllm')
  tokenizer=engine.get_tokenizer()
  try:idle_memory=engine.collective_rpc(memory_report)
@@ -33,8 +33,8 @@ def main():
   expected=c['parent_adapter_sha256'] if a=='A' else read(RUN/f'sft_{a}_train/result.json')['adapter_sha256']
   if sha(adapter/'adapter_model.safetensors')!=expected:raise ValueError('Adapter changed')
   lora=LoRARequest('augmentation_'+a,ord(a)-64,str(adapter))
-  for start in range(0,len(panel),4):
-   batch=panel[start:start+4];prompts=[tokenizer.apply_chat_template([{'role':'user','content':r['prompt']}],tokenize=False,add_generation_prompt=True,enable_thinking=True) for r in batch]
+  for start in range(0,len(panel),8):
+   batch=panel[start:start+8];prompts=[tokenizer.apply_chat_template([{'role':'user','content':r['prompt']}],tokenize=False,add_generation_prompt=True,enable_thinking=True) for r in batch]
    params=[SamplingParams(temperature=0.,top_p=1.,top_k=-1,max_tokens=c['eval_caps'][r['task_type']],seed=c['seed'],skip_special_tokens=False) for r in batch]
    tic=time.perf_counter();outputs=engine.generate(prompts,params,lora_request=lora,use_tqdm=False)
    for r,p,o in zip(batch,prompts,outputs):
@@ -48,5 +48,5 @@ def main():
   try:peak=engine.collective_rpc(memory_report)
   except Exception as e:peak={'unavailable':repr(e)}
   with (out/'inference_result.json').open('x') as f:json.dump({'status':'completed' if count==len(panel) else 'incomplete','arm':a,'rows':count,'evaluation_seconds':time.time()-started,
-   'adapter_sha256':expected,'memory':peak,'initial_engine_memory':idle_memory,'backend_registration_sha256':sha(RUN/'evaluation_backend_registration_v2.json')},f,indent=2)
+   'adapter_sha256':expected,'memory':peak,'initial_engine_memory':idle_memory,'backend_registration_sha256':sha(RUN/'evaluation_backend_registration_v3.json')},f,indent=2)
 if __name__=='__main__':main()

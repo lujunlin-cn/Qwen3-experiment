@@ -53,6 +53,7 @@ def training_gate(seed,n,idx,prior,ph):
  if not lineage['train_only_provenance']:reasons.append('lineage_failed')
  for name,a in leakage.items():
   if a['status']!='passed':reasons.append('leakage_'+name)
+ agreement={'passed':False}
  try:
   agreement=n['audit_equation_agreement'](seed['prompt']) if seed['task_type']=='equation_numeric' else {'passed':True}
   proof=n['solver_first_structured_proof'](seed)
@@ -63,7 +64,7 @@ def training_gate(seed,n,idx,prior,ph):
    truth=truth and n['_numeric_truth_output'](hidden[q[2]],q)==proof['sample']['answer']
    if not truth:reasons.append('generator_solver_verifier_disagreement')
  except (ValueError,KeyError,TypeError,IndexError) as e:
-  proof={'solver_proof_accepted':False,'error':str(e)};agreement={'passed':False};reasons.append('solver_unresolved_or_nonunique')
+  proof={'solver_proof_accepted':False,'error':str(e)};reasons.append('solver_unresolved_or_nonunique')
  return {'lineage':lineage,'leakage':leakage,'proof':proof,'agreement':agreement,'rejection_reasons':reasons}
 
 def render_candidate(seed,gate,n,s,prior,ph,tok):
