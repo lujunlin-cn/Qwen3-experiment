@@ -1,0 +1,3 @@
+{
+  "reason": "Offline summary had assumed only151645; pinned generation_config permits151645 and151643. Correct the accounting, preserve all original data and previous summaries. No inference or acceptance changes."
+}

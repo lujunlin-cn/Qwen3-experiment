@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/home/hajimi2025/Qwen3-experiment/utils/dpo_gravity_worker.py", line 186, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/dpo_gravity_worker.py", line 183, in main
+    try:train() if a.stage=='train' else reload() if a.stage=='reload' else infer(a.stage)
+                                                                            ^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/dpo_gravity_worker.py", line 104, in infer
+    c=validate_identity();seed=c['seed']
+      ^^^^^^^^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/dpo_gravity_worker.py", line 72, in validate_identity
+    if sha(ROOT/p)!=h:raise ValueError('Registered source changed: '+p)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Registered source changed: 01_Synthetic_Data_Engineering.ipynb

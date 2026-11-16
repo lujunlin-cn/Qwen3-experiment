@@ -1,0 +1,20 @@
+{
+  "version": "gravity-natural-language-v1.1",
+  "original_registration_sha256": "6684f38e300ed21685a4f01c302c0e46f88ddb3a7f5c6c7c3bccb93bcd955623",
+  "reason": "Acceptance strengthened by CPU adversarial tests before inspecting generated completion contents. Input/sampling/token caps unchanged; no rerollout.",
+  "sources": {
+    "01_Synthetic_Data_Engineering.ipynb": "360cd744f1d636387af235168085143f6a2ba085878ae330e31675bfdba63ef8",
+    "04_DPO.ipynb": "3221da00fbbc30dc5a3dbf09559b9eda6aeb5e2b0f9202d1eb63e42763f6fff5",
+    "utils/course_worker.py": "6316dfddbf30b0c9cddb2de8eb6958faf2250c9d1bfbaf5f5adec273561f4dc1",
+    "utils/low_memory_logprobs.py": "eb51145e7bf6ccb27d26484499e3a5bbf34ed2d9298f193f85dfad751789f619",
+    "utils/dpo_gravity_worker.py": "b9bf80bf45539c3e517355b0431ccc6292d59d8596b4d63e462eab233b8534c1",
+    "utils/run_dpo_gravity_sft_c.py": "a9425041c5caf208ade058f67088f246ce262319873170cdf38c11654f3ab6de",
+    "tests/test_dpo_gravity_sft_c.py": "97bf10318f5339e378d01bdc58d7ee83c41e2ea809394fcad889b342ee780cf7",
+    "configs/dpo_gravity_sft_c_20261116.json": "a3e7b027e648d030b887d43991b55262161ee63e8321f6f239534786845061ab"
+  },
+  "cpu_tests_exit_code": 0,
+  "cpu_tests_log": "cpu_verifier_repair_gate.log",
+  "cpu_tests_log_sha256": "cda2cd743d2da758f7d95e8017710095f1041fdc5f39231a6cbf9390163204a9",
+  "git_commit": "785a946c935d48ae68b50faaa7a09d7c1dfa9c1c",
+  "registered_unix": 1794824860.1508791
+}

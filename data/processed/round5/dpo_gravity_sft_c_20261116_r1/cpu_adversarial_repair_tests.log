@@ -1,0 +1,209 @@
+test_actual_ten_gravity_teachers (tests.test_dpo_gravity_sft_c.NaturalGravity.test_actual_ten_gravity_teachers) ... ok
+test_bad_symbolic_arithmetic (tests.test_dpo_gravity_sft_c.NaturalGravity.test_bad_symbolic_arithmetic) ... ok
+test_canonical_sft_format_without_per_example_g (tests.test_dpo_gravity_sft_c.NaturalGravity.test_canonical_sft_format_without_per_example_g) ... ok
+test_correct_thinking_does_not_rescue_wrong_final (tests.test_dpo_gravity_sft_c.NaturalGravity.test_correct_thinking_does_not_rescue_wrong_final) ... ok
+test_final_only_not_proof (tests.test_dpo_gravity_sft_c.NaturalGravity.test_final_only_not_proof) ... ok
+test_good_symbolic_arithmetic (tests.test_dpo_gravity_sft_c.NaturalGravity.test_good_symbolic_arithmetic) ... ok
+test_incorrect_extra_arithmetic (tests.test_dpo_gravity_sft_c.NaturalGravity.test_incorrect_extra_arithmetic) ... ok
+test_input_opened_thinking_requires_response_close (tests.test_dpo_gravity_sft_c.NaturalGravity.test_input_opened_thinking_requires_response_close) ... ok
+test_length_finish_rejected (tests.test_dpo_gravity_sft_c.NaturalGravity.test_length_finish_rejected) ... ok
+test_missing_physics (tests.test_dpo_gravity_sft_c.NaturalGravity.test_missing_physics) ... ok
+test_missing_raw_is_unverifiable (tests.test_dpo_gravity_sft_c.NaturalGravity.test_missing_raw_is_unverifiable) ... ok
+test_modified_public_example (tests.test_dpo_gravity_sft_c.NaturalGravity.test_modified_public_example) ... ok
+test_multiple_boxes (tests.test_dpo_gravity_sft_c.NaturalGravity.test_multiple_boxes) ... ok
+test_no_answer_in_public_reference (tests.test_dpo_gravity_sft_c.NaturalGravity.test_no_answer_in_public_reference) ... ok
+test_numeric_query_substitution_instead_of_prose (tests.test_dpo_gravity_sft_c.NaturalGravity.test_numeric_query_substitution_instead_of_prose) ... ok
+test_one_percent_official_answer_does_not_certify_wrong_process (tests.test_dpo_gravity_sft_c.NaturalGravity.test_one_percent_official_answer_does_not_certify_wrong_process) ... ok
+test_paraphrase_is_not_full_string_equality (tests.test_dpo_gravity_sft_c.NaturalGravity.test_paraphrase_is_not_full_string_equality) ... ok
+test_safe_math_no_code_execution (tests.test_dpo_gravity_sft_c.NaturalGravity.test_safe_math_no_code_execution) ... ok
+test_solver_not_called (tests.test_dpo_gravity_sft_c.NaturalGravity.test_solver_not_called) ... ok
+test_synthetic_query_wording_supported (tests.test_dpo_gravity_sft_c.NaturalGravity.test_synthetic_query_wording_supported) ... ok
+test_thinking_ignored_and_not_certified (tests.test_dpo_gravity_sft_c.NaturalGravity.test_thinking_ignored_and_not_certified) ... ok
+test_unclosed_thinking_rejected (tests.test_dpo_gravity_sft_c.NaturalGravity.test_unclosed_thinking_rejected) ... ok
+test_valid_extra_arithmetic (tests.test_dpo_gravity_sft_c.NaturalGravity.test_valid_extra_arithmetic) ... ok
+test_wrong_arithmetic_with_trailing_prose (tests.test_dpo_gravity_sft_c.NaturalGravity.test_wrong_arithmetic_with_trailing_prose) ... ok
+test_wrong_fitted_g (tests.test_dpo_gravity_sft_c.NaturalGravity.test_wrong_fitted_g) ... ok
+test_wrong_fitted_g_in_additional_sentence (tests.test_dpo_gravity_sft_c.NaturalGravity.test_wrong_fitted_g_in_additional_sentence) ... ok
+test_wrong_query_time (tests.test_dpo_gravity_sft_c.NaturalGravity.test_wrong_query_time) ... ok
+test_wrong_unrounded_distance (tests.test_dpo_gravity_sft_c.NaturalGravity.test_wrong_unrounded_distance) ... ok
+test_config_matches_user (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_config_matches_user) ... ok
+test_fraction20 (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_fraction20) ... ok
+test_gap64 (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_gap64) ... ok
+test_gravity_only (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_gravity_only) ... ok
+test_no_hosted_api_or_legacy_entry (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_no_hosted_api_or_legacy_entry) ... ok
+test_no_wrong_or_truncated_rejected (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_no_wrong_or_truncated_rejected) ... ok
+test_policy_mismatch_raises (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_policy_mismatch_raises) ... ok
+test_prompt_mismatch_raises (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_prompt_mismatch_raises) ... ok
+test_real_parent_hash (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_real_parent_hash) ... ok
+test_response_tokens_include_thinking_and_eos (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_response_tokens_include_thinking_and_eos) ... ok
+test_shortest_and_longest_verified_only (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_shortest_and_longest_verified_only) ... ok
+test_budget_incomplete_final_never_marks_finished (tests.test_round2_numerics.Round2Numerics.test_budget_incomplete_final_never_marks_finished) ... ok
+test_dpo_multiple_betas_sequential_gradients_equal_dense (tests.test_round2_numerics.Round2Numerics.test_dpo_multiple_betas_sequential_gradients_equal_dense) ... ok
+test_gae_matches_finite_horizon_returns_and_never_zeros_observed_value (tests.test_round2_numerics.Round2Numerics.test_gae_matches_finite_horizon_returns_and_never_zeros_observed_value) ... ok
+test_gravity_preferences_no_truncation_cross_prompt_or_unverified_chosen (tests.test_round2_numerics.Round2Numerics.test_gravity_preferences_no_truncation_cross_prompt_or_unverified_chosen) ... ok
+test_grpo_sequence_mean_with_unequal_response_lengths (tests.test_round2_numerics.Round2Numerics.test_grpo_sequence_mean_with_unequal_response_lengths) ... ok
+test_notebook_api_loading_does_not_reset_registered_rng (tests.test_round2_numerics.Round2Numerics.test_notebook_api_loading_does_not_reset_registered_rng) ... ok
+test_official_final_reward_is_independent_of_schema (tests.test_round2_numerics.Round2Numerics.test_official_final_reward_is_independent_of_schema) ... ok
+test_optimizer_roundtrip_equals_uninterrupted_two_steps (tests.test_round2_numerics.Round2Numerics.test_optimizer_roundtrip_equals_uninterrupted_two_steps) ... ok
+test_paired_statistics_and_provenance_guards (tests.test_round2_numerics.Round2Numerics.test_paired_statistics_and_provenance_guards) ... ok
+test_ppo_policy_gradient_and_clip_match_scalar_oracle (tests.test_round2_numerics.Round2Numerics.test_ppo_policy_gradient_and_clip_match_scalar_oracle) ... ok
+test_ppo_zero_outcome_can_still_train_value (tests.test_round2_numerics.Round2Numerics.test_ppo_zero_outcome_can_still_train_value) ... ok
+test_round2_worker_paths_with_real_verifier_and_tiny_parameter_updates (tests.test_round2_numerics.Round2Numerics.test_round2_worker_paths_with_real_verifier_and_tiny_parameter_updates) ... 05_PPO.ipynb:cell24:25: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+05_PPO.ipynb:cell13:11: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+ok
+test_single_composite_reward_priority_gates_and_group_structures (tests.test_round2_numerics.Round2Numerics.test_single_composite_reward_priority_gates_and_group_structures) ... ok
+test_full_supervisor_protocol_and_idempotent_resume_without_gpu (tests.test_course_experiment.ProtocolTests.test_full_supervisor_protocol_and_idempotent_resume_without_gpu) ... {'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'holdout_test': 391, 'train': 3123, 'validation': 391}
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+START base_reference (2699 seconds left in baseline)
+END base_reference: completed, peak 0.00 GiB
+PILOT_BUDGET {"observed_reference_tokens_per_second": 10, "estimated_final_output_tokens_for_5_models_2_prompts": 720, "estimated_final_generation_seconds": 72.0, "warning": "Planning extrapolation; training/prior prompts can change lengths. No sample size or cap silently reduced."}
+START base_cap512 (2699 seconds left in baseline)
+END base_cap512: completed, peak 0.00 GiB
+START base_cap2048 (2699 seconds left in baseline)
+END base_cap2048: completed, peak 0.00 GiB
+START base_cap8192 (2699 seconds left in baseline)
+END base_cap8192: completed, peak 0.00 GiB
+START base_cap16384 (2699 seconds left in baseline)
+END base_cap16384: completed, peak 0.00 GiB
+START prior_reference (2699 seconds left in prompt)
+END prior_reference: completed, peak 0.00 GiB
+START sft_r1_train (5399 seconds left in sft)
+END sft_r1_train: completed, peak 0.00 GiB
+START sft_r1_validation (5399 seconds left in sft)
+END sft_r1_validation: completed, peak 0.00 GiB
+START sft_r2_train (5399 seconds left in sft)
+END sft_r2_train: completed, peak 0.00 GiB
+START sft_r2_validation (5399 seconds left in sft)
+END sft_r2_validation: completed, peak 0.00 GiB
+START sft_r3_train (5399 seconds left in sft)
+END sft_r3_train: completed, peak 0.00 GiB
+START sft_r3_validation (5399 seconds left in sft)
+END sft_r3_validation: completed, peak 0.00 GiB
+START dpo_r1_rollout (5399 seconds left in dpo)
+END dpo_r1_rollout: completed, peak 0.00 GiB
+START dpo_r1_train (5399 seconds left in dpo)
+END dpo_r1_train: completed, peak 0.00 GiB
+START dpo_r1_validation (5399 seconds left in dpo)
+END dpo_r1_validation: completed, peak 0.00 GiB
+START dpo_r2_rollout (5399 seconds left in dpo)
+END dpo_r2_rollout: completed, peak 0.00 GiB
+START dpo_r2_train (5399 seconds left in dpo)
+END dpo_r2_train: completed, peak 0.00 GiB
+START dpo_r2_validation (5399 seconds left in dpo)
+END dpo_r2_validation: completed, peak 0.00 GiB
+START dpo_r3_rollout (5399 seconds left in dpo)
+END dpo_r3_rollout: completed, peak 0.00 GiB
+START dpo_r3_train (5399 seconds left in dpo)
+END dpo_r3_train: completed, peak 0.00 GiB
+START dpo_r3_validation (5399 seconds left in dpo)
+END dpo_r3_validation: completed, peak 0.00 GiB
+START ppo_r1_rollout (5399 seconds left in ppo)
+END ppo_r1_rollout: completed, peak 0.00 GiB
+START ppo_r1_train (5399 seconds left in ppo)
+END ppo_r1_train: completed, peak 0.00 GiB
+START ppo_r1_validation (5399 seconds left in ppo)
+END ppo_r1_validation: completed, peak 0.00 GiB
+START ppo_r2_rollout (5399 seconds left in ppo)
+END ppo_r2_rollout: completed, peak 0.00 GiB
+START ppo_r2_train (5399 seconds left in ppo)
+END ppo_r2_train: completed, peak 0.00 GiB
+START ppo_r2_validation (5399 seconds left in ppo)
+END ppo_r2_validation: completed, peak 0.00 GiB
+START ppo_r3_rollout (5399 seconds left in ppo)
+END ppo_r3_rollout: completed, peak 0.00 GiB
+START ppo_r3_train (5399 seconds left in ppo)
+END ppo_r3_train: completed, peak 0.00 GiB
+START ppo_r3_validation (5399 seconds left in ppo)
+END ppo_r3_validation: completed, peak 0.00 GiB
+START grpo_r1_rollout (5399 seconds left in grpo)
+END grpo_r1_rollout: completed, peak 0.00 GiB
+START grpo_r1_train (5399 seconds left in grpo)
+END grpo_r1_train: completed, peak 0.00 GiB
+START grpo_r1_validation (5399 seconds left in grpo)
+END grpo_r1_validation: completed, peak 0.00 GiB
+START grpo_r2_rollout (5399 seconds left in grpo)
+END grpo_r2_rollout: completed, peak 0.00 GiB
+START grpo_r2_train (5399 seconds left in grpo)
+END grpo_r2_train: completed, peak 0.00 GiB
+START grpo_r2_validation (5399 seconds left in grpo)
+END grpo_r2_validation: completed, peak 0.00 GiB
+START grpo_r3_rollout (5399 seconds left in grpo)
+END grpo_r3_rollout: completed, peak 0.00 GiB
+START grpo_r3_train (5399 seconds left in grpo)
+END grpo_r3_train: completed, peak 0.00 GiB
+START grpo_r3_validation (5399 seconds left in grpo)
+END grpo_r3_validation: completed, peak 0.00 GiB
+START final_base_original (28799 seconds left in final)
+END final_base_original: completed, peak 0.00 GiB
+START final_sft_original (28799 seconds left in final)
+END final_sft_original: completed, peak 0.00 GiB
+START final_dpo_original (28799 seconds left in final)
+END final_dpo_original: completed, peak 0.00 GiB
+START final_ppo_original (28799 seconds left in final)
+END final_ppo_original: completed, peak 0.00 GiB
+START final_grpo_original (28799 seconds left in final)
+END final_grpo_original: completed, peak 0.00 GiB
+START final_base_prior (28799 seconds left in final)
+END final_base_prior: completed, peak 0.00 GiB
+START final_sft_prior (28799 seconds left in final)
+END final_sft_prior: completed, peak 0.00 GiB
+START final_dpo_prior (28799 seconds left in final)
+END final_dpo_prior: completed, peak 0.00 GiB
+START final_ppo_prior (28799 seconds left in final)
+END final_ppo_prior: completed, peak 0.00 GiB
+START final_grpo_prior (28799 seconds left in final)
+END final_grpo_prior: completed, peak 0.00 GiB
+PILOT_BUDGET {"observed_reference_tokens_per_second": 10, "estimated_final_output_tokens_for_5_models_2_prompts": 720, "estimated_final_generation_seconds": 72.0, "warning": "Planning extrapolation; training/prior prompts can change lengths. No sample size or cap silently reduced."}
+ok
+test_graph_profile_keeps_the_learning_protocol (tests.test_course_experiment.ProtocolTests.test_graph_profile_keeps_the_learning_protocol) ... ok
+test_guard_limit_and_deadline_use_only_child_group (tests.test_course_experiment.ProtocolTests.test_guard_limit_and_deadline_use_only_child_group) ... ok
+test_panels_metrics_and_resume_immutability (tests.test_course_experiment.ProtocolTests.test_panels_metrics_and_resume_immutability) ... ok
+test_priors_do_not_require_target_and_keep_format (tests.test_course_experiment.ProtocolTests.test_priors_do_not_require_target_and_keep_format) ... ok
+test_stopping_is_validation_based (tests.test_course_experiment.ProtocolTests.test_stopping_is_validation_based) ... ok
+test_decoder_checkpointing_recomputes_without_changing_gradients (tests.test_course_experiment.TrainingTests.test_decoder_checkpointing_recomputes_without_changing_gradients) ... ok
+test_dpo_sequential_backward_is_exact (tests.test_course_experiment.TrainingTests.test_dpo_sequential_backward_is_exact) ... ok
+test_preference_and_reward_dominance (tests.test_course_experiment.TrainingTests.test_preference_and_reward_dominance) ... ok
+test_sft_projection_matches_dense_loss_and_gradients (tests.test_course_experiment.TrainingTests.test_sft_projection_matches_dense_loss_and_gradients) ... ok
+test_two_round_real_tiny_model_replay_all_methods (tests.test_course_experiment.TrainingTests.test_two_round_real_tiny_model_replay_all_methods) ... 05_PPO.ipynb:cell24:25: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+05_PPO.ipynb:cell13:11: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+05_PPO.ipynb:cell24:25: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+05_PPO.ipynb:cell13:11: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+ok
+
+----------------------------------------------------------------------
+Ran 63 tests in 4.585s
+
+OK
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+{'equation_numeric_rules': 24, 'prior_tasks': ['numeral_system', 'gravity', 'equation_numeric', 'bit_manipulation']}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}
+{'model_id': 'Qwen/Qwen3-0.6B', 'device_for_cpu_smoke': 'cpu', 'run_sft': False, 'run_mode': 'smoke', 'max_length': 1024, 'train_rows': 3123}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'model_id': 'Qwen/Qwen3-0.6B', 'real_train_rows': 3123, 'run_rollout': False, 'run_dpo': False}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_ppo': False, 'run_mode': 'smoke', 'max_new_tokens': 16384, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+{'model_id': 'Qwen/Qwen3-0.6B', 'run_grpo': False, 'run_mode': 'smoke', 'group_size': 8, 'tasks': ('equation_numeric',)}
+<sys>:0: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

@@ -1,0 +1,26 @@
+{
+  "original_final_status_sha256": "06ba71f87514351bc41df337ea6e81782e660587140e86cacddbf47f570ca7aa",
+  "original_artifact_manifest_sha256": "3becb32c20bd24184bde999240b69d25bdd3fc3e79e6d3ca7a700ae052bd5e53",
+  "source_sha256": {
+    "01_Synthetic_Data_Engineering.ipynb": "56935aad2acb441b97bf856660abbd05ebd53a7d4688a13421c1c6e329cad9ac",
+    "04_DPO.ipynb": "3221da00fbbc30dc5a3dbf09559b9eda6aeb5e2b0f9202d1eb63e42763f6fff5",
+    "utils/course_worker.py": "6316dfddbf30b0c9cddb2de8eb6958faf2250c9d1bfbaf5f5adec273561f4dc1",
+    "utils/low_memory_logprobs.py": "eb51145e7bf6ccb27d26484499e3a5bbf34ed2d9298f193f85dfad751789f619",
+    "utils/dpo_gravity_worker.py": "c4e2afc9e3609f5a3e273089fe2eef4f34bb01734abaefe5f88808639a0f822a",
+    "utils/run_dpo_gravity_sft_c.py": "9a2a03158c05e19d948afc92b6749d47537c704175cd245b338ed9b988731921",
+    "tests/test_dpo_gravity_sft_c.py": "931bbd9654762c05853060b807beb7ee0e0295017855e444c236954a18561629",
+    "configs/dpo_gravity_sft_c_20261116.json": "a3e7b027e648d030b887d43991b55262161ee63e8321f6f239534786845061ab"
+  },
+  "cpu_tests_log_sha256": "d6af3f8981abdbe73d3fd20d59345cd99e204867632920e8c6d02a1419171d87",
+  "changes": [
+    "Use unchanged official extractor independently of proof format",
+    "Verify indexed g_i only if present",
+    "Check known Query time as exact numeric input"
+  ],
+  "no_sampling_change": true,
+  "no_tolerance_relaxation": true,
+  "no_new_gpu_requests": true,
+  "full_pool_reaudited": 312,
+  "outcome_unchanged": "no_preference_signal",
+  "time": 1794826561.1514404
+}

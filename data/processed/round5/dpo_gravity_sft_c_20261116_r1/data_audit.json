@@ -1,0 +1,797 @@
+{
+  "status": "passed",
+  "real": 16,
+  "synthetic_train_prior": 10,
+  "cross_split_duplicate_hits": [],
+  "public_reference": [
+    {
+      "sample_id": "c04634c0",
+      "public_reference": {
+        "examples": [
+          [
+            "4.12",
+            "86.06"
+          ],
+          [
+            "4.92",
+            "122.72"
+          ],
+          [
+            "3.02",
+            "46.24"
+          ],
+          [
+            "4.42",
+            "99.04"
+          ],
+          [
+            "4.95",
+            "124.22"
+          ]
+        ],
+        "g_ols": 10.139445051441283,
+        "query_t": "2.06",
+        "query_raw": 21.513874510148117,
+        "answer": "21.51",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "2ce67ec9",
+      "public_reference": {
+        "examples": [
+          [
+            "3.95",
+            "86.54"
+          ],
+          [
+            "2.9",
+            "46.64"
+          ],
+          [
+            "2.55",
+            "36.06"
+          ],
+          [
+            "3.81",
+            "80.51"
+          ],
+          [
+            "4.27",
+            "101.12"
+          ]
+        ],
+        "g_ols": 11.09235321812118,
+        "query_t": "3.64",
+        "query_raw": 73.48462159940921,
+        "answer": "73.48",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "8eecb224",
+      "public_reference": {
+        "examples": [
+          [
+            "1.2",
+            "9.13"
+          ],
+          [
+            "3.51",
+            "78.13"
+          ],
+          [
+            "1.33",
+            "11.22"
+          ],
+          [
+            "1.83",
+            "21.24"
+          ]
+        ],
+        "g_ols": 12.683445934719359,
+        "query_t": "1.88",
+        "query_raw": 22.414185655836047,
+        "answer": "22.41",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "6cfb1f29",
+      "public_reference": {
+        "examples": [
+          [
+            "4.28",
+            "126.7"
+          ],
+          [
+            "2.81",
+            "54.62"
+          ],
+          [
+            "2.31",
+            "36.91"
+          ],
+          [
+            "1.48",
+            "15.15"
+          ],
+          [
+            "1.39",
+            "13.36"
+          ]
+        ],
+        "g_ols": 13.83334811981368,
+        "query_t": "1.46",
+        "query_raw": 14.74358242609742,
+        "answer": "14.74",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "d54f5b26",
+      "public_reference": {
+        "examples": [
+          [
+            "4.44",
+            "183.6"
+          ],
+          [
+            "4.9",
+            "223.62"
+          ],
+          [
+            "1.94",
+            "35.05"
+          ],
+          [
+            "1.93",
+            "34.69"
+          ],
+          [
+            "4.33",
+            "174.62"
+          ]
+        ],
+        "g_ols": 18.627061699579784,
+        "query_t": "4.71",
+        "query_raw": 206.61229972482394,
+        "answer": "206.61",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "eba1891f",
+      "public_reference": {
+        "examples": [
+          [
+            "1.16",
+            "12.44"
+          ],
+          [
+            "2.55",
+            "60.13"
+          ],
+          [
+            "3.25",
+            "97.67"
+          ],
+          [
+            "1.89",
+            "33.03"
+          ],
+          [
+            "3.54",
+            "115.87"
+          ]
+        ],
+        "g_ols": 18.49316517456116,
+        "query_t": "2.69",
+        "query_raw": 66.909196259821,
+        "answer": "66.91",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "bdcccbab",
+      "public_reference": {
+        "examples": [
+          [
+            "2.58",
+            "16.58"
+          ],
+          [
+            "4.54",
+            "51.35"
+          ],
+          [
+            "4.26",
+            "45.21"
+          ],
+          [
+            "3.45",
+            "29.65"
+          ]
+        ],
+        "g_ols": 4.982458925710501,
+        "query_t": "2.96",
+        "query_raw": 21.827156061752564,
+        "answer": "21.83",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "ae5e65cf",
+      "public_reference": {
+        "examples": [
+          [
+            "1.13",
+            "12.18"
+          ],
+          [
+            "4.47",
+            "190.54"
+          ],
+          [
+            "3.44",
+            "112.85"
+          ]
+        ],
+        "g_ols": 19.072383968668063,
+        "query_t": "3.44",
+        "query_raw": 112.84748146581518,
+        "answer": "112.85",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "0ab3d1de",
+      "public_reference": {
+        "examples": [
+          [
+            "4.52",
+            "158.67"
+          ],
+          [
+            "4.67",
+            "169.37"
+          ],
+          [
+            "1.42",
+            "15.66"
+          ],
+          [
+            "4.56",
+            "161.49"
+          ],
+          [
+            "4.12",
+            "131.83"
+          ]
+        ],
+        "g_ols": 15.532567909923456,
+        "query_t": "3.35",
+        "query_raw": 87.15712168455799,
+        "answer": "87.16",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "736cdc47",
+      "public_reference": {
+        "examples": [
+          [
+            "3.58",
+            "115.95"
+          ],
+          [
+            "4.77",
+            "205.85"
+          ],
+          [
+            "4.56",
+            "188.12"
+          ]
+        ],
+        "g_ols": 18.094196223521898,
+        "query_t": "3.26",
+        "query_raw": 96.14893989255064,
+        "answer": "96.15",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "42fee270",
+      "public_reference": {
+        "examples": [
+          [
+            "4.58",
+            "135.13"
+          ],
+          [
+            "1.92",
+            "23.75"
+          ],
+          [
+            "3.0",
+            "57.98"
+          ],
+          [
+            "3.48",
+            "78.01"
+          ],
+          [
+            "2.52",
+            "40.91"
+          ]
+        ],
+        "g_ols": 12.883912590358296,
+        "query_t": "4.74",
+        "query_raw": 144.73529725756703,
+        "answer": "144.74",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "f19b29c6",
+      "public_reference": {
+        "examples": [
+          [
+            "1.76",
+            "10.2"
+          ],
+          [
+            "4.77",
+            "74.94"
+          ],
+          [
+            "4.73",
+            "73.69"
+          ]
+        ],
+        "g_ols": 6.587346738575818,
+        "query_t": "2.45",
+        "query_raw": 19.77027439915068,
+        "answer": "19.77",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "76d51969",
+      "public_reference": {
+        "examples": [
+          [
+            "4.66",
+            "138.46"
+          ],
+          [
+            "1.3",
+            "10.78"
+          ],
+          [
+            "4.34",
+            "120.1"
+          ]
+        ],
+        "g_ols": 12.75227994211257,
+        "query_t": "3.67",
+        "query_raw": 85.87959165616,
+        "answer": "85.88",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "5fe169fc",
+      "public_reference": {
+        "examples": [
+          [
+            "2.2",
+            "34.2"
+          ],
+          [
+            "3.28",
+            "76.03"
+          ],
+          [
+            "3.39",
+            "81.21"
+          ],
+          [
+            "4.35",
+            "133.72"
+          ],
+          [
+            "4.62",
+            "150.84"
+          ]
+        ],
+        "g_ols": 14.133650968442115,
+        "query_t": "2.98",
+        "query_raw": 62.75623703007668,
+        "answer": "62.76",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "16b45644",
+      "public_reference": {
+        "examples": [
+          [
+            "3.08",
+            "57.73"
+          ],
+          [
+            "2.51",
+            "38.34"
+          ],
+          [
+            "3.03",
+            "55.87"
+          ],
+          [
+            "1.28",
+            "9.97"
+          ],
+          [
+            "3.0",
+            "54.77"
+          ]
+        ],
+        "g_ols": 12.171066353227683,
+        "query_t": "4.02",
+        "query_raw": 98.3446503473503,
+        "answer": "98.34",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "ff9540e2",
+      "public_reference": {
+        "examples": [
+          [
+            "2.79",
+            "41.22"
+          ],
+          [
+            "3.75",
+            "74.46"
+          ],
+          [
+            "1.78",
+            "16.78"
+          ],
+          [
+            "3.86",
+            "78.89"
+          ]
+        ],
+        "g_ols": 10.589884933011426,
+        "query_t": "4.51",
+        "query_raw": 107.69965926297284,
+        "answer": "107.70",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "gravity-final-001",
+      "public_reference": {
+        "examples": [
+          [
+            "3.77",
+            "93.03"
+          ],
+          [
+            "2.87",
+            "53.92"
+          ],
+          [
+            "4.61",
+            "139.11"
+          ],
+          [
+            "3.29",
+            "70.85"
+          ]
+        ],
+        "g_ols": 13.09133128690559,
+        "query_t": "1.61",
+        "query_raw": 16.96701991439399,
+        "answer": "16.97",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "gravity-final-002",
+      "public_reference": {
+        "examples": [
+          [
+            "4.03",
+            "129.75"
+          ],
+          [
+            "4.51",
+            "162.49"
+          ],
+          [
+            "3.06",
+            "74.80"
+          ],
+          [
+            "4.72",
+            "177.98"
+          ],
+          [
+            "3.77",
+            "113.54"
+          ]
+        ],
+        "g_ols": 15.977563457330678,
+        "query_t": "2.49",
+        "query_raw": 49.53124559589798,
+        "answer": "49.53",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "gravity-final-003",
+      "public_reference": {
+        "examples": [
+          [
+            "1.72",
+            "21.29"
+          ],
+          [
+            "1.47",
+            "15.55"
+          ],
+          [
+            "4.12",
+            "122.16"
+          ],
+          [
+            "3.02",
+            "65.64"
+          ]
+        ],
+        "g_ols": 14.393555959231044,
+        "query_t": "3.03",
+        "query_raw": 66.07289895305215,
+        "answer": "66.07",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "gravity-final-004",
+      "public_reference": {
+        "examples": [
+          [
+            "4.64",
+            "178.47"
+          ],
+          [
+            "4.58",
+            "173.88"
+          ],
+          [
+            "2.14",
+            "37.96"
+          ],
+          [
+            "1.46",
+            "17.67"
+          ]
+        ],
+        "g_ols": 16.57881788386779,
+        "query_t": "4.5",
+        "query_raw": 167.86053107416137,
+        "answer": "167.86",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "gravity-final-005",
+      "public_reference": {
+        "examples": [
+          [
+            "3.18",
+            "93.10"
+          ],
+          [
+            "1.76",
+            "28.52"
+          ],
+          [
+            "4.22",
+            "163.95"
+          ],
+          [
+            "1.3",
+            "15.56"
+          ]
+        ],
+        "g_ols": 18.41279444741545,
+        "query_t": "1.51",
+        "query_raw": 20.991506309775986,
+        "answer": "20.99",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "gravity-final-006",
+      "public_reference": {
+        "examples": [
+          [
+            "1.28",
+            "13.53"
+          ],
+          [
+            "4.01",
+            "132.78"
+          ],
+          [
+            "4.82",
+            "191.84"
+          ]
+        ],
+        "g_ols": 16.51485697954857,
+        "query_t": "1.88",
+        "query_raw": 29.185055254258227,
+        "answer": "29.19",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "gravity-final-007",
+      "public_reference": {
+        "examples": [
+          [
+            "3.57",
+            "46.40"
+          ],
+          [
+            "1.51",
+            "8.30"
+          ],
+          [
+            "2.12",
+            "16.36"
+          ],
+          [
+            "4",
+            "58.25"
+          ],
+          [
+            "3.01",
+            "32.99"
+          ]
+        ],
+        "g_ols": 7.28142101139225,
+        "query_t": "2.37",
+        "query_raw": 20.449506839444563,
+        "answer": "20.45",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "gravity-final-008",
+      "public_reference": {
+        "examples": [
+          [
+            "3.11",
+            "79.98"
+          ],
+          [
+            "3.72",
+            "114.43"
+          ],
+          [
+            "3.99",
+            "131.65"
+          ],
+          [
+            "4.78",
+            "188.9"
+          ],
+          [
+            "4.03",
+            "134.30"
+          ]
+        ],
+        "g_ols": 16.537131978126514,
+        "query_t": "3.7",
+        "query_raw": 113.196668390276,
+        "answer": "113.20",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "gravity-final-009",
+      "public_reference": {
+        "examples": [
+          [
+            "4.8",
+            "166.9"
+          ],
+          [
+            "2.21",
+            "35.39"
+          ],
+          [
+            "1.9",
+            "26.2"
+          ]
+        ],
+        "g_ols": 14.48864715808058,
+        "query_t": "2.04",
+        "query_raw": 30.147977006534074,
+        "answer": "30.15",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    },
+    {
+      "sample_id": "gravity-final-010",
+      "public_reference": {
+        "examples": [
+          [
+            "2.04",
+            "18.81"
+          ],
+          [
+            "2.45",
+            "27.13"
+          ],
+          [
+            "3.06",
+            "42.32"
+          ],
+          [
+            "3.06",
+            "42.32"
+          ],
+          [
+            "4.39",
+            "87.1"
+          ]
+        ],
+        "g_ols": 9.039115967003623,
+        "query_t": "1.61",
+        "query_raw": 11.715146249035048,
+        "answer": "11.72",
+        "method": "independent_fsum_ols_all_public_examples"
+      },
+      "answer_matches": true
+    }
+  ],
+  "split_sha256": {
+    "train": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+    "validation": "6f0267b11bd865c823c77538b559056646d749f62365bdc66da58be42bc53492",
+    "holdout_test": "61219f80b68bb33712465a844bf277f02401a261d47ab678781c3ad87a732efc"
+  },
+  "original_training_panel_sha256": "e83a6c743f2767673c97a41f0af039bbe5bc658f66fde76b89450798c7f124c1",
+  "original_synthetic_sha256": "bba5795987b7d8c351786811c352ddd35c369df7724bf3d3dccdcd43e0833579"
+}

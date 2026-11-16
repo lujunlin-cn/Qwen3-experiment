@@ -1,0 +1,200 @@
+{
+  "status": "no_preference_signal",
+  "acceptance_version": "gravity-natural-language-v1.2",
+  "prompts": 26,
+  "rollouts": 312,
+  "official_final_correct": 32,
+  "format_valid": 98,
+  "proof_certified": 0,
+  "effective_pairs": 0,
+  "minimum_pairs": 16,
+  "truncated": 0,
+  "finish_stop": 312,
+  "response_tokens": 287099,
+  "mean_response_tokens": 920.1891025641025,
+  "mean_official_correct_tokens": 2734.875,
+  "all_behavior_logprobs_aligned_finite": true,
+  "pinned_eos_token_ids": [
+    151645,
+    151643
+  ],
+  "actual_last_token_counts": {
+    "151645": 311,
+    "151643": 1
+  },
+  "all_stopped_eos_included": true,
+  "by_source": {
+    "official_real_train": {
+      "prompts": 16,
+      "rollouts": 192,
+      "official_final_correct": 17,
+      "proof_certified": 0
+    },
+    "synthetic_train_prior": {
+      "prompts": 10,
+      "rollouts": 120,
+      "official_final_correct": 15,
+      "proof_certified": 0
+    }
+  },
+  "failure_reasons_nonexclusive": {
+    "official_final_answer_incorrect": 277,
+    "final_answer_not_rounded_public_ols": 305,
+    "full_trace_boxed_format_missing": 211,
+    "missing_verifiable_physical_relation": 158,
+    "all_example_ols_fit_not_demonstrated": 309,
+    "fitted_g_missing_or_inaccurate": 309,
+    "query_time_missing_or_incorrect": 159,
+    "unrounded_query_distance_missing_or_inaccurate": 309,
+    "incorrect_symbolic_arithmetic": 35,
+    "unsupported_arithmetic": 100,
+    "incorrect_intermediate_arithmetic": 122,
+    "incorrect_numeric_equality_in_prose": 120,
+    "altered_public_observation_in_proof": 49,
+    "missing_or_multiple_numeric_boxed_answer": 107,
+    "incorrect_reported_g_value": 77,
+    "incorrect_additional_physical_relation": 2,
+    "incorrect_or_unverifiable_optional_indexed_g": 3,
+    "unsupported_math_syntax": 2,
+    "empty_or_unclosed_final_section": 3
+  },
+  "per_prompt": {
+    "0ab3d1de": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "16b45644": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "2ce67ec9": {
+      "rollouts": 12,
+      "official_final_correct": 0,
+      "proof_certified": 0
+    },
+    "42fee270": {
+      "rollouts": 12,
+      "official_final_correct": 0,
+      "proof_certified": 0
+    },
+    "5fe169fc": {
+      "rollouts": 12,
+      "official_final_correct": 0,
+      "proof_certified": 0
+    },
+    "6cfb1f29": {
+      "rollouts": 12,
+      "official_final_correct": 0,
+      "proof_certified": 0
+    },
+    "736cdc47": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "76d51969": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "8eecb224": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "ae5e65cf": {
+      "rollouts": 12,
+      "official_final_correct": 5,
+      "proof_certified": 0
+    },
+    "bdcccbab": {
+      "rollouts": 12,
+      "official_final_correct": 0,
+      "proof_certified": 0
+    },
+    "c04634c0": {
+      "rollouts": 12,
+      "official_final_correct": 2,
+      "proof_certified": 0
+    },
+    "d54f5b26": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "eba1891f": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "f19b29c6": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "ff9540e2": {
+      "rollouts": 12,
+      "official_final_correct": 2,
+      "proof_certified": 0
+    },
+    "gravity-final-001": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "gravity-final-002": {
+      "rollouts": 12,
+      "official_final_correct": 0,
+      "proof_certified": 0
+    },
+    "gravity-final-003": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "gravity-final-004": {
+      "rollouts": 12,
+      "official_final_correct": 0,
+      "proof_certified": 0
+    },
+    "gravity-final-005": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "gravity-final-006": {
+      "rollouts": 12,
+      "official_final_correct": 1,
+      "proof_certified": 0
+    },
+    "gravity-final-007": {
+      "rollouts": 12,
+      "official_final_correct": 2,
+      "proof_certified": 0
+    },
+    "gravity-final-008": {
+      "rollouts": 12,
+      "official_final_correct": 3,
+      "proof_certified": 0
+    },
+    "gravity-final-009": {
+      "rollouts": 12,
+      "official_final_correct": 3,
+      "proof_certified": 0
+    },
+    "gravity-final-010": {
+      "rollouts": 12,
+      "official_final_correct": 3,
+      "proof_certified": 0
+    }
+  },
+  "generation_seconds": 3026.3826553011313,
+  "peak_reserved_bytes": 5771362304,
+  "optimizer_steps": 0,
+  "tune_evaluated": false,
+  "locked_final_evaluated": false,
+  "dpo_checkpoint_created": false,
+  "note": "Official answer extraction applies to final section only, independent of proof format. Zero certified proofs does not establish every free-language proof is wrong."
+}

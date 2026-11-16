@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "referenced_files_checked": 65,
+  "hash_mismatches": 0,
+  "protected_files_unchanged": {
+    "03_SFT.ipynb": true,
+    "05_PPO.ipynb": true,
+    "06_GRPO.ipynb": true,
+    "utils/low_memory_logprobs.py": true,
+    "utils/course_run.py": true,
+    "utils/course_protocol.py": true
+  },
+  "parent_adapter_unchanged": true,
+  "response_tokens": 287099,
+  "actual_eos_counts": {
+    "151645": 311,
+    "151643": 1
+  },
+  "hosted_api_calls": 0,
+  "gpu_rollouts": 312,
+  "dpo_optimizer_steps": 0,
+  "tune_final_evaluated": false
+}

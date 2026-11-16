@@ -1,0 +1,34 @@
+{
+  "status": "registered_before_gpu",
+  "config_sha256": "a3e7b027e648d030b887d43991b55262161ee63e8321f6f239534786845061ab",
+  "git_commit": "77af8b6f3d56c0cd7d3dfe559e27d1d803ed0e72",
+  "sources": {
+    "01_Synthetic_Data_Engineering.ipynb": "85faf05c85246328f5fd6916a7684b3cfe806078a0be320e2f6d5ca6a890b4b5",
+    "04_DPO.ipynb": "3221da00fbbc30dc5a3dbf09559b9eda6aeb5e2b0f9202d1eb63e42763f6fff5",
+    "utils/course_worker.py": "6316dfddbf30b0c9cddb2de8eb6958faf2250c9d1bfbaf5f5adec273561f4dc1",
+    "utils/low_memory_logprobs.py": "eb51145e7bf6ccb27d26484499e3a5bbf34ed2d9298f193f85dfad751789f619",
+    "utils/dpo_gravity_worker.py": "caa53f1fa943a4c802ac4a992ceee939c1e6f71234ab27ccca4550b6bdb68cb1",
+    "utils/run_dpo_gravity_sft_c.py": "ad16d25abe5548243ac8bc05622c5bf2acace141a22c41b6ac531bd5bf83d296",
+    "tests/test_dpo_gravity_sft_c.py": "ff3f102174cd7d22e1fbca91d62c021da135e5e48c167ccf88c618db81440642",
+    "configs/dpo_gravity_sft_c_20261116.json": "a3e7b027e648d030b887d43991b55262161ee63e8321f6f239534786845061ab"
+  },
+  "panels": {
+    "tune": {
+      "n": 48,
+      "sha256": "eb51e921ad39f02a64ba5f7607adb9db8fd04a71ed566bf834743fee89ba4717",
+      "historical_panel_sha256": "eed3c8423d38a227ecdb7afb0844b9e3a501c85a87644ed019923dfbc5120cab"
+    },
+    "locked_final": {
+      "n": 100,
+      "sha256": "8c7a8fe785405183294ce64fcef222ff940fe349e9b08b2f91986ce168067e83",
+      "historical_panel_sha256": "c7c9a713400bb91d6a34710f957ed746b1371c9254b5777b70fe58af9ae1405a"
+    }
+  },
+  "training_panel_sha256": "72068820f2a7f0472ecb1ba07cd9f54781f85ce6dd519f09c9252319e57fffd8",
+  "base_identity_sha256": "33cc80ed5a27bb67624f3875a7a0d64e33ffcd02f2cbd49954f880bec9d94ea8",
+  "evaluation_design": "Frozen48/100 Gravity subsets both from Validation, not Holdout Test. Historical SFT used some of these validation questions; this is not untouched test evidence.",
+  "formal_holdout_used": false,
+  "correct_short_threshold_tokens": 1024,
+  "decode": "Greedy, top_p1 top_k-1 Thinking enabled, cap16384, identical chat template and prompts for both models",
+  "created_unix": 1794822765.4349356
+}

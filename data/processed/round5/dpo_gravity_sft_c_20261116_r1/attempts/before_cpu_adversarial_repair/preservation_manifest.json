@@ -1,0 +1,30 @@
+{
+  "final_status.json": {
+    "sha256": "dbb1093e05b78dfe6c02d7339518bb34145077c0799cf10516c37aa57dbe57e8",
+    "archived_path": "attempts/before_cpu_adversarial_repair/final_status.json"
+  },
+  "artifact_manifest.json": {
+    "sha256": "ec36c17677260cd8918630c5a4155061e6afa3add24d9f20c189afde7df2b0fe",
+    "archived_path": "attempts/before_cpu_adversarial_repair/artifact_manifest.json"
+  },
+  "rollouts_audited_8.jsonl": {
+    "sha256": "c9627574150d4f478c3ba107d2f4505228b5dcc6f3744f85b1cf975dbafcf433",
+    "archived_path": "attempts/before_cpu_adversarial_repair/rollouts_audited_8.jsonl"
+  },
+  "preference_pairs_8.jsonl": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "archived_path": "attempts/before_cpu_adversarial_repair/preference_pairs_8.jsonl"
+  },
+  "rollout_quality_8.json": {
+    "sha256": "1f00f30e122783db455c74322b393cba6a7198994096663789a24ea5be12a658",
+    "archived_path": "attempts/before_cpu_adversarial_repair/rollout_quality_8.json"
+  },
+  "rollout4.log": {
+    "sha256": "aad2b9cd4a1d1db8a528793d717dd31f9add93bab5430370fb5673bbe287675c",
+    "archived_path": "attempts/before_cpu_adversarial_repair/rollout4.log"
+  },
+  "docs/DPO_GRAVITY_SFT_C_FINAL_REPORT.md": {
+    "sha256": "1ba2d55123b9d2d979f4c45a0148e719334f9a20d46b95014d08a44af0a2ad58",
+    "archived_path": "attempts/before_cpu_adversarial_repair/initial_chain_report.md"
+  }
+}

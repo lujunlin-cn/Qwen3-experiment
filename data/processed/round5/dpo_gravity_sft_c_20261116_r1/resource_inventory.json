@@ -1,0 +1,7 @@
+{
+  "time": 1794822721.0813015,
+  "gpu": "NVIDIA GB10, GPU-7b956982-d9bd-3853-5700-4a5594d8db29, [N/A]\n",
+  "existing_compute_apps": "1468381, python3, 82868 MiB\n",
+  "memory": "               total        used        free      shared  buff/cache   available\nMem:     130663165952 107202383872 19380457472   290013184  6305890304 23460782080\nSwap:              0           0           0\n",
+  "policy": "No existing GPU process is stopped. Own allocator cap 8000000000 bytes."
+}

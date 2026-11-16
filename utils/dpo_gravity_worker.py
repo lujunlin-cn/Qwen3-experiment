@@ -27,7 +27,8 @@ def append(p,v):
 
 def nl_api():
  from utils.benchmark_training import verifier
- ns={'gravity_nl_official_verify':verifier()['verify_answer']}
+ official=verifier()
+ ns={'gravity_nl_official_verify':official['verify_answer'],'gravity_nl_official_extract':official['extract_final_answer']}
  wanted={'gravity_nl_public_reference','gravity_nl_final_section','_gravity_nl_normalize','_gravity_nl_eval','verify_gravity_natural_language'}
  for c in read(ROOT/'01_Synthetic_Data_Engineering.ipynb')['cells']:
   if c['cell_type']!='code':continue

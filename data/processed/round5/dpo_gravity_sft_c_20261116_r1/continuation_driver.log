@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_dpo_gravity_sft_c.py", line 260, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_dpo_gravity_sft_c.py", line 258, in main
+    elif a.stage=='resume-after-cpu-repair':resume_after_cpu_repair(a.wait_pid)
+                                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_dpo_gravity_sft_c.py", line 210, in resume_after_cpu_repair
+    fd=os.pidfd_open(wait_pid)
+       ^^^^^^^^^^^^^
+AttributeError: module 'os' has no attribute 'pidfd_open'

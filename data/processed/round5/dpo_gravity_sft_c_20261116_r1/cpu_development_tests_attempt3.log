@@ -1,0 +1,46 @@
+test_actual_ten_gravity_teachers (tests.test_dpo_gravity_sft_c.NaturalGravity.test_actual_ten_gravity_teachers) ... ok
+test_canonical_sft_format_without_per_example_g (tests.test_dpo_gravity_sft_c.NaturalGravity.test_canonical_sft_format_without_per_example_g) ... ok
+test_correct_thinking_does_not_rescue_wrong_final (tests.test_dpo_gravity_sft_c.NaturalGravity.test_correct_thinking_does_not_rescue_wrong_final) ... ok
+test_final_only_not_proof (tests.test_dpo_gravity_sft_c.NaturalGravity.test_final_only_not_proof) ... ok
+test_incorrect_extra_arithmetic (tests.test_dpo_gravity_sft_c.NaturalGravity.test_incorrect_extra_arithmetic) ... ok
+test_length_finish_rejected (tests.test_dpo_gravity_sft_c.NaturalGravity.test_length_finish_rejected) ... ok
+test_missing_physics (tests.test_dpo_gravity_sft_c.NaturalGravity.test_missing_physics) ... ok
+test_missing_raw_is_unverifiable (tests.test_dpo_gravity_sft_c.NaturalGravity.test_missing_raw_is_unverifiable) ... ok
+test_multiple_boxes (tests.test_dpo_gravity_sft_c.NaturalGravity.test_multiple_boxes) ... ok
+test_no_answer_in_public_reference (tests.test_dpo_gravity_sft_c.NaturalGravity.test_no_answer_in_public_reference) ... ok
+test_one_percent_official_answer_does_not_certify_wrong_process (tests.test_dpo_gravity_sft_c.NaturalGravity.test_one_percent_official_answer_does_not_certify_wrong_process) ... ok
+test_paraphrase_is_not_full_string_equality (tests.test_dpo_gravity_sft_c.NaturalGravity.test_paraphrase_is_not_full_string_equality) ... ok
+test_safe_math_no_code_execution (tests.test_dpo_gravity_sft_c.NaturalGravity.test_safe_math_no_code_execution) ... ok
+test_solver_not_called (tests.test_dpo_gravity_sft_c.NaturalGravity.test_solver_not_called) ... ok
+test_synthetic_query_wording_supported (tests.test_dpo_gravity_sft_c.NaturalGravity.test_synthetic_query_wording_supported) ... ok
+test_thinking_ignored_and_not_certified (tests.test_dpo_gravity_sft_c.NaturalGravity.test_thinking_ignored_and_not_certified) ... ok
+test_unclosed_thinking_rejected (tests.test_dpo_gravity_sft_c.NaturalGravity.test_unclosed_thinking_rejected) ... ok
+test_valid_extra_arithmetic (tests.test_dpo_gravity_sft_c.NaturalGravity.test_valid_extra_arithmetic) ... FAIL
+test_wrong_fitted_g (tests.test_dpo_gravity_sft_c.NaturalGravity.test_wrong_fitted_g) ... ok
+test_wrong_query_time (tests.test_dpo_gravity_sft_c.NaturalGravity.test_wrong_query_time) ... ok
+test_wrong_unrounded_distance (tests.test_dpo_gravity_sft_c.NaturalGravity.test_wrong_unrounded_distance) ... ok
+test_config_matches_user (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_config_matches_user) ... ok
+test_fraction20 (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_fraction20) ... ok
+test_gap64 (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_gap64) ... ok
+test_gravity_only (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_gravity_only) ... ok
+test_no_hosted_api_or_legacy_entry (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_no_hosted_api_or_legacy_entry) ... ok
+test_no_wrong_or_truncated_rejected (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_no_wrong_or_truncated_rejected) ... ok
+test_policy_mismatch_raises (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_policy_mismatch_raises) ... ok
+test_prompt_mismatch_raises (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_prompt_mismatch_raises) ... ok
+test_real_parent_hash (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_real_parent_hash) ... ok
+test_response_tokens_include_thinking_and_eos (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_response_tokens_include_thinking_and_eos) ... ok
+test_shortest_and_longest_verified_only (tests.test_dpo_gravity_sft_c.PairsAndIsolation.test_shortest_and_longest_verified_only) ... ok
+
+======================================================================
+FAIL: test_valid_extra_arithmetic (tests.test_dpo_gravity_sft_c.NaturalGravity.test_valid_extra_arithmetic)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/hajimi2025/Qwen3-experiment/tests/test_dpo_gravity_sft_c.py", line 37, in test_valid_extra_arithmetic
+    def test_valid_extra_arithmetic(self):self.assertTrue(self.check(PROOF+'\n0.5*10*(3)^2=45')['verified'])
+                                          ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.127s
+
+FAILED (failures=1)
