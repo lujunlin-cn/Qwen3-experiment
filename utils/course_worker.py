@@ -45,7 +45,7 @@ def notebook_api(method, chunk_size=64, settings=None):
                'TOKEN_CHUNK_SIZE':chunk_size})
     wanted = {
         'sft':{'_format_trace','make_trace_record','encode_chat_example','collate_causal_examples','course_sft_loss_sum'},
-        'dpo':{'_completion_length','course_preference_pairs','course_dpo_backward','gravity_preference_pairs'},
+        'dpo':{'_completion_length','course_preference_pairs','course_dpo_backward','gravity_preference_pairs','gravity_nl_preference_pairs'},
         'ppo':{'PPORollout','validate_rollout_alignment','outcome_reward','_recompute','_effective_attention_mask',
                '_selected_logprob','_token_entropy','token_logprobs','entropy_from_logits','projected_policy_statistics',
                'masked_mean','compute_gae','normalize_masked','ppo_clip_loss','value_loss','approx_kl','explained_variance',
@@ -378,7 +378,13 @@ def train_dpo(job,c):
     from utils.low_memory_logprobs import causal_sequence_logprob
     settings=c['dpo']; ns=notebook_api('dpo',c['projection_chunk_size'],settings); output=Path(job['output'])
     rows=read_rows(job['rollout'])
-    if settings.get('preference_mode'):
+    if settings.get('proof_contract') == 'natural_language_gravity_v1':
+        from utils.dpo_gravity_worker import audit_nl_rows
+        rows= audit_nl_rows(rows)
+        pairs=ns['gravity_nl_preference_pairs'](rows)
+        if len(pairs) < settings.get('minimum_pairs',16):
+            raise ValueError('Natural-language DPO-B minimum preference gate failed')
+    elif settings.get('preference_mode'):
         rows=attach_proof_audits(rows)
         pairs=ns['gravity_preference_pairs'](rows,settings['preference_mode'])
     else:
@@ -409,23 +415,40 @@ def train_dpo(job,c):
     policy.set_adapter('default');training_mode(policy)
     for name,p in policy.named_parameters():
         if '.reference.' in name: p.requires_grad_(False)
+    reference_before={name:p.detach().cpu().clone() for name,p in policy.named_parameters() if '.reference.' in name}
     write(output/'reference_scores.json',{'reference_fingerprint':artifact_fingerprint(job['sft_adapter']),
         'reference_mode':settings['mode'],'rows':cached})
-    optimizer=optimizer_for(policy,job,settings); steps=0;losses=[];start=time.perf_counter()
+    optimizer=optimizer_for(policy,job,settings); steps=0;losses=[];start=time.perf_counter();curve=[];initial_scores=[]
     for epoch in range(settings.get('epochs',1)):
         for k in range(0,len(pairs),settings['gradient_accumulation']):
             window=pairs[k:k+settings['gradient_accumulation']];optimizer.zero_grad(set_to_none=True)
             for i,pair in enumerate(window,k):
                 with torch.no_grad(): values=[score(pair[s]) for s in ('chosen','rejected')]
                 refs=[values[0].new_tensor([v]) for v in cached[i]]
+                if epoch==0 and k==0:
+                    initial_scores.append({'pair_index':i,'policy_sequence_sums':[float(v) for v in values],
+                        'reference_sequence_sums':cached[i],'response_tokens':[len(pair[s]['completion_token_ids']) for s in ('chosen','rejected')]})
                 loss=ns['course_dpo_backward'](policy,values,refs,lambda side:score(pair[side]),
                     beta=settings.get('beta',0.1),scale=1/len(window))
                 if not __import__('math').isfinite(loss): raise ValueError('Nonfinite DPO')
                 losses.append(loss)
-            torch.nn.utils.clip_grad_norm_(policy.parameters(),1.0);optimizer.step();steps+=1
+            norm=float(torch.nn.utils.clip_grad_norm_(policy.parameters(),settings.get('gradient_clip',1.0)))
+            if not __import__('math').isfinite(norm): raise ValueError('Nonfinite DPO gradient')
+            optimizer.step();steps+=1
+            event={'optimizer_step':steps,'epoch':epoch,'pair_count':len(window),
+                'loss':sum(losses[-len(window):])/len(window),'gradient_norm_before_clip':norm,
+                'elapsed_seconds':time.perf_counter()-start,'peak_reserved_bytes':torch.cuda.max_memory_reserved()}
+            curve.append(event)
+            with (output/'training_curve.jsonl').open('a') as f:f.write(json.dumps(event)+'\n');f.flush()
+            if event['peak_reserved_bytes'] > c.get('device_limit_bytes',8_000_000_000):
+                raise RuntimeError('DPO own-process memory guard exceeded')
     # Save only the trainable default adapter; keep the immutable SFT reference separate.
+    reference_unchanged=all(torch.equal(p.detach().cpu(),reference_before[name]) for name,p in policy.named_parameters() if name in reference_before)
+    if not reference_unchanged:raise ValueError('Frozen DPO reference changed')
     result={'status':'completed','pairs':len(pairs),'optimizer_steps':steps,'epochs':settings.get('epochs',1),
-            'losses':losses,'training_seconds':time.perf_counter()-start,'reference':'same frozen SFT for all rounds',
+            'losses':losses,'training_curve':curve,'training_seconds':time.perf_counter()-start,'reference':'same frozen SFT for all rounds',
+            'reference_weights_unchanged':reference_unchanged,'initial_score_checks':initial_scores,
+            'sequence_reduction':'sum over all response tokens including Thinking and EOS; prompt masked',
             'logprob_backend':'sequential DPO backward; checkpointed full-vocabulary projection'}
     policy.delete_adapter('reference')
     return save_training(policy,tokenizer,optimizer,job,result)
