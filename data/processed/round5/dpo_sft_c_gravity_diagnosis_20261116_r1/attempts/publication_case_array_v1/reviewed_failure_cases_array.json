@@ -1,0 +1,198 @@
+[
+  {
+    "sample_id": "c04634c0",
+    "review": "历史R1已见Prompt；使用前两点并错误地声称g=12.34，独立全样本OLS为10.139445051441283；还将2.06^2写为4.2416（正确为4.2436）。",
+    "official_correct": false,
+    "predicted": "26.06",
+    "expected_answer": "21.51",
+    "independent_public_reference": {
+      "examples": [
+        [
+          "4.12",
+          "86.06"
+        ],
+        [
+          "4.92",
+          "122.72"
+        ],
+        [
+          "3.02",
+          "46.24"
+        ],
+        [
+          "4.42",
+          "99.04"
+        ],
+        [
+          "4.95",
+          "124.22"
+        ]
+      ],
+      "g_ols": 10.139445051441283,
+      "query_t": "2.06",
+      "query_raw": 21.513874510148117,
+      "answer": "21.51",
+      "method": "independent_fsum_ols_all_public_examples"
+    },
+    "finish_reason": "stop",
+    "final_section_only": "\n\nTo determine the falling distance at a specific time $ t = 2.06s $, we use the relationship between distance and time under the assumption of a constant gravitational acceleration:\n\n$$\nd = 0.5 g t^2\n$$\n\n---\n\n### Step 1: Analyze the given data\n\nWe are provided with the following observations:\n\n- $ t_1 = 4.12s $, $ d_1 = 86.06m $\n- $ t_2 = 4.92s $, $ d_2 = 122.72m $\n- $ t_3 = 3.02s $, $ d_3 = 46.24m $\n- $ t_4 = 4.42s $, $ d_4 = 99.04m $\n- $ t_5 = 4.95s $, $ d_5 = 124.22m $\n\n---\n\n### Step 2: Determine the gravitational constant $ g $\n\nWe use the first two data points to solve for $ g $:\n\n$$\ng = \\frac{2d_1}{t_1^2} = \\frac{2 \\times 86.06}{(4.12)^2} \\approx 12.34\n$$\n\n$$\ng = \\frac{2 \\times 122.72}{(4.92)^2} \\approx 12.34\n$$\n\nBoth values of $ g $ are consistent, so we use $ g = 12.34 $.\n\n---\n\n### Step 3: Compute the falling distance at $ t = 2.06s $\n\n$$\nd = 0.5 \\times 12.34 \\times (2.06)^2 = 0.5 \\times 12.34 \\times 4.2416 \\approx 26.06\n$$\n\n---\n\n### Final Answer\n\n$$\n\\boxed{26.06} \\text{ meters}\n$$",
+    "completion_tokens": 1260,
+    "thinking_used_as_verified_proof": false
+  },
+  {
+    "sample_id": "gravity-final-001",
+    "review": "直接使用地球g=9.81，而公开数据的OLS为13.09133128690559，最终12.53也不符16.97。",
+    "official_correct": false,
+    "predicted": "12.53",
+    "expected_answer": "16.97",
+    "independent_public_reference": {
+      "examples": [
+        [
+          "3.77",
+          "93.03"
+        ],
+        [
+          "2.87",
+          "53.92"
+        ],
+        [
+          "4.61",
+          "139.11"
+        ],
+        [
+          "3.29",
+          "70.85"
+        ]
+      ],
+      "g_ols": 13.09133128690559,
+      "query_t": "1.61",
+      "query_raw": 16.96701991439399,
+      "answer": "16.97",
+      "method": "independent_fsum_ols_all_public_examples"
+    },
+    "finish_reason": "stop",
+    "final_section_only": "\n\nThe falling distance for $ t = 1.61 \\, \\text{s} $ is calculated as follows:\n\n$$\n\\text{Distance} = 0.5 \\times g \\times t^2 = 0.5 \\times 9.81 \\times (1.61)^2 \\approx 0.5 \\times 9.81 \\times 2.5921 \\approx 12.53 \\, \\text{m}\n$$\n\n$$\n\\boxed{12.53}\n$$",
+    "completion_tokens": 182,
+    "thinking_used_as_verified_proof": false
+  },
+  {
+    "sample_id": "gravity-final-002",
+    "review": "16,384 Token达到上限，未关闭Thinking，没有可验收最终回答；不引用隐藏Thinking为证明。",
+    "official_correct": false,
+    "predicted": null,
+    "expected_answer": "49.53",
+    "independent_public_reference": {
+      "examples": [
+        [
+          "4.03",
+          "129.75"
+        ],
+        [
+          "4.51",
+          "162.49"
+        ],
+        [
+          "3.06",
+          "74.80"
+        ],
+        [
+          "4.72",
+          "177.98"
+        ],
+        [
+          "3.77",
+          "113.54"
+        ]
+      ],
+      "g_ols": 15.977563457330678,
+      "query_t": "2.49",
+      "query_raw": 49.53124559589798,
+      "answer": "49.53",
+      "method": "independent_fsum_ols_all_public_examples"
+    },
+    "finish_reason": "length",
+    "final_section_only": null,
+    "completion_tokens": 16384,
+    "thinking_used_as_verified_proof": false
+  },
+  {
+    "sample_id": "gravity-final-007",
+    "review": "用第一点粗略估g=7.29；最终20.47按官方容差答对，但全样本OLS为7.28142101139225、规范答案20.45，不构成完整OLS证明。",
+    "official_correct": true,
+    "predicted": "20.47",
+    "expected_answer": "20.45",
+    "independent_public_reference": {
+      "examples": [
+        [
+          "3.57",
+          "46.40"
+        ],
+        [
+          "1.51",
+          "8.30"
+        ],
+        [
+          "2.12",
+          "16.36"
+        ],
+        [
+          "4",
+          "58.25"
+        ],
+        [
+          "3.01",
+          "32.99"
+        ]
+      ],
+      "g_ols": 7.28142101139225,
+      "query_t": "2.37",
+      "query_raw": 20.449506839444563,
+      "answer": "20.45",
+      "method": "independent_fsum_ols_all_public_examples"
+    },
+    "finish_reason": "stop",
+    "final_section_only": "\n\nTo calculate the falling distance for $ t = 2.37\\, \\text{s} $, we use the given equation of motion:\n\n$$\n\\text{distance} = 0.5 \\cdot g \\cdot t^2\n$$\n\nFrom the problem, the distance is defined as $ \\text{distance} = 0.5 \\cdot g \\cdot t^2 $, which implies that the acceleration $ g $ is constant. Using the first data point $ t = 3.57\\, \\text{s} $, we can solve for $ g $:\n\n$$\n46.40 = 0.5 \\cdot g \\cdot (3.57)^2 \\Rightarrow g = \\frac{46.40}{0.5 \\cdot 12.7449} \\approx 7.29\\, \\text{m/s}^2\n$$\n\nNow, substitute $ t = 2.37\\, \\text{s} $ and $ g = 7.29\\, \\text{m/s}^2 $ into the equation:\n\n$$\n\\text{distance} = 0.5 \\cdot 7.29 \\cdot (2.37)^2 = 3.645 \\cdot 5.6169 \\approx 20.47\\, \\text{m}\n$$\n\n---\n\n**Final Answer:**\n\n$$\n\\boxed{20.47}\n$$",
+    "completion_tokens": 2851,
+    "thinking_used_as_verified_proof": false
+  },
+  {
+    "sample_id": "gravity-final-008",
+    "review": "漏掉公开的t=4.78,d=188.90，并把其余距离的算术平均115.09当作Query距离；标准OLS答案113.20。",
+    "official_correct": false,
+    "predicted": "115.09",
+    "expected_answer": "113.20",
+    "independent_public_reference": {
+      "examples": [
+        [
+          "3.11",
+          "79.98"
+        ],
+        [
+          "3.72",
+          "114.43"
+        ],
+        [
+          "3.99",
+          "131.65"
+        ],
+        [
+          "4.78",
+          "188.9"
+        ],
+        [
+          "4.03",
+          "134.30"
+        ]
+      ],
+      "g_ols": 16.537131978126514,
+      "query_t": "3.7",
+      "query_raw": 113.196668390276,
+      "answer": "113.20",
+      "method": "independent_fsum_ols_all_public_examples"
+    },
+    "finish_reason": "stop",
+    "final_section_only": "\n\nTo calculate the falling distance for $ t = 3.7 \\, \\text{s} $, we first determine the average distance from the given data points:\n\n- The times and corresponding distances are:\n  - $ t_1 = 3.11 \\, \\text{s} $, $ d_1 = 79.98 \\, \\text{m} $\n  - $ t_2 = 3.72 \\, \\text{s} $, $ d_2 = 114.43 \\, \\text{m} $\n  - $ t_3 = 3.99 \\, \\text{s} $, $ d_3 = 131.65 \\, \\text{m} $\n  - $ t_4 = 4.03 \\, \\text{s} $, $ d_4 = 134.30 \\, \\text{m} $\n\n- Sum of distances: $ 79.98 + 114.43 + 131.65 + 134.30 = 460.36 \\, \\text{m} $\n- Number of data points: 4\n- Average distance: $ \\frac{460.36}{4} = 115.09 \\, \\text{m} $\n\nSince the question asks for the falling distance at $ t = 3.7 \\, \\text{s} $, which is outside the provided data, the falling distance cannot be determined from the given information. However, if we assume the average distance is used for estimation, the falling distance would be approximately:\n\n$$\n\\boxed{115.09} \\, \\text{m}\n$$",
+    "completion_tokens": 1334,
+    "thinking_used_as_verified_proof": false
+  }
+]

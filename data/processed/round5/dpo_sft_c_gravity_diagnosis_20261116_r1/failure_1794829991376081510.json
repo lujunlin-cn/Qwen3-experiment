@@ -1,0 +1,5 @@
+{
+  "stage": "all",
+  "error": "ValueError('Original Verifier outcomes changed')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hajimi2025/Qwen3-experiment/utils/run_dpo_sft_c_gravity_diagnosis.py\", line 455, in main\n    analyze()\n    ~~~~~~~^^\n  File \"/home/hajimi2025/Qwen3-experiment/utils/run_dpo_sft_c_gravity_diagnosis.py\", line 395, in analyze\n    raise ValueError('Original Verifier outcomes changed')\nValueError: Original Verifier outcomes changed\n"
+}

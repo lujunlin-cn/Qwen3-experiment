@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "time": 1794829990.9694607,
+  "wait_mechanism": "blocking subprocess completion; no progress polling"
+}

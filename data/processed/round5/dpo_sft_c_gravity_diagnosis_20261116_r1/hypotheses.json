@@ -1,0 +1,27 @@
+[
+  {
+    "rank": 1,
+    "cause": "SFT channel contract differs from final-proof acceptance",
+    "prediction": "Actual serialized targets place OLS inside think, leaving only boxed answer after close"
+  },
+  {
+    "rank": 2,
+    "cause": "Sampling temperature amplifies numerical/format errors",
+    "prediction": "Greedy on the identical 26 prompts substantially improves official correctness"
+  },
+  {
+    "rank": 3,
+    "cause": "Teacher numerical defects or incomplete OLS supervision",
+    "prediction": "Independent public OLS disagrees with teacher g/raw/answer or omitted observations"
+  },
+  {
+    "rank": 4,
+    "cause": "Loss masking drops mathematical steps",
+    "prediction": "Real encoded OLS/g/raw tokens carry -100 or are lost by causal shifting"
+  },
+  {
+    "rank": 5,
+    "cause": "Small model has not mastered OLS computation/generalization",
+    "prediction": "Even greedy lacks independently certifiable OLS and gives wrong numerical answers"
+  }
+]

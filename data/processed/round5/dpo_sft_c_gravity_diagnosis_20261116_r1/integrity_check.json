@@ -1,0 +1,9 @@
+{
+  "protected_files": 212,
+  "all_unchanged": true,
+  "mismatches": [],
+  "adapter_unchanged": true,
+  "new_greedy": 26,
+  "sampling_reused_without_regeneration": 312,
+  "optimizer_steps": 0
+}

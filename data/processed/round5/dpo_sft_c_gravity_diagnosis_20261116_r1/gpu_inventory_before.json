@@ -1,0 +1,5 @@
+{
+  "compute_processes": "1468381, python3, 73780 MiB\n",
+  "host_mem_available_bytes": 24081125376,
+  "backend_image_id": "sha256:2c211a1273b48e8929f893b267aeb1509e6b84654cdbde1bad56d79e3964224d"
+}

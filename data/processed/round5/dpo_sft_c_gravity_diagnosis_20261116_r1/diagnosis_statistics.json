@@ -1,0 +1,25 @@
+{
+  "sampling_accuracy_prompt_cluster_bootstrap95": [
+    0.0673076923076923,
+    0.14423076923076922
+  ],
+  "greedy_accuracy_prompt_bootstrap95": [
+    0.11538461538461539,
+    0.46153846153846156
+  ],
+  "paired_delta": {
+    "n": 26,
+    "mean_after_minus_before": 0.16666666666666666,
+    "bootstrap95": [
+      0.0064102564102564066,
+      0.34294871794871795
+    ],
+    "sign_flip_pvalue": 0.08239176082391761,
+    "draws": 10000,
+    "seed": 42,
+    "note": "Exploratory with small n; sign-flip requires exchangeability/symmetry under null."
+  },
+  "draws": 10000,
+  "seed": 20261116,
+  "interpretation": "26 fixed Train prompts; exploratory conditional decoding comparison, not generalization or multiple-training-seed inference"
+}

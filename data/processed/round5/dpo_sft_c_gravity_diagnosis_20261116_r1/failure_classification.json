@@ -1,0 +1,37 @@
+{
+  "greedy_nonexclusive": {
+    "official_final_incorrect": 19,
+    "final_ols_evidence_missing_or_unparseable": 26,
+    "final_g_missing_or_inaccurate": 25,
+    "final_raw_distance_missing_or_inaccurate": 25,
+    "recognized_incorrect_math_claim": 23,
+    "unsupported_syntax_not_proven_false": 15,
+    "official_correct_but_strict_ols_answer_failed": 6
+  },
+  "sampling_nonexclusive": {
+    "official_final_answer_incorrect": 277,
+    "final_answer_not_rounded_public_ols": 305,
+    "full_trace_boxed_format_missing": 211,
+    "missing_verifiable_physical_relation": 158,
+    "all_example_ols_fit_not_demonstrated": 309,
+    "fitted_g_missing_or_inaccurate": 309,
+    "query_time_missing_or_incorrect": 159,
+    "unrounded_query_distance_missing_or_inaccurate": 309,
+    "incorrect_symbolic_arithmetic": 35,
+    "unsupported_arithmetic": 100,
+    "incorrect_intermediate_arithmetic": 122,
+    "incorrect_numeric_equality_in_prose": 120,
+    "altered_public_observation_in_proof": 49,
+    "missing_or_multiple_numeric_boxed_answer": 107,
+    "incorrect_reported_g_value": 77,
+    "incorrect_additional_physical_relation": 2,
+    "incorrect_or_unverifiable_optional_indexed_g": 3,
+    "unsupported_math_syntax": 2,
+    "empty_or_unclosed_final_section": 3
+  },
+  "not_all_unverifiable_proofs_are_wrong": true,
+  "teacher_contract_failure": {
+    "74_targets_put_ols_inside_thinking": true,
+    "74_final_channels_boxed_only": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "final_publication_check",
+  "initial_error": "JSONDecodeError: Expecting value: line 1 column 2 (char 1)",
+  "reason": "Reviewer cases were written as a JSON array to a .jsonl filename; preserved original array and wrote proper JSONL records",
+  "model_outputs_changed": false,
+  "verifier_changed": false,
+  "new_gpu_generations": 0
+}

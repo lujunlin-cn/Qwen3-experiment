@@ -1,0 +1,99 @@
+{
+  "report": "/home/hajimi2025/Qwen3-experiment/docs/DPO_SFT_C_GRAVITY_DIAGNOSIS.md",
+  "greedy": {
+    "n": 26,
+    "correct": 7,
+    "accuracy": 0.2692307692307692,
+    "accuracy_wilson95_descriptive": [
+      0.13704448322018375,
+      0.4608304037917617
+    ],
+    "proof_pass": 0,
+    "ols_final_certified": 0,
+    "format_valid": 16,
+    "truncated": 1,
+    "mean_tokens": 2060.653846153846,
+    "median_tokens": 1276.0,
+    "total_tokens": 53577,
+    "mean_correct_tokens": 1478.2857142857142,
+    "failure_reasons_nonexclusive": {
+      "official_final_answer_incorrect": 18,
+      "final_answer_not_rounded_public_ols": 24,
+      "altered_public_observation_in_proof": 13,
+      "all_example_ols_fit_not_demonstrated": 25,
+      "fitted_g_missing_or_inaccurate": 25,
+      "incorrect_reported_g_value": 11,
+      "query_time_missing_or_incorrect": 9,
+      "unrounded_query_distance_missing_or_inaccurate": 25,
+      "incorrect_intermediate_arithmetic": 23,
+      "incorrect_numeric_equality_in_prose": 22,
+      "unsupported_arithmetic": 15,
+      "missing_verifiable_physical_relation": 6,
+      "missing_or_multiple_numeric_boxed_answer": 3,
+      "full_trace_boxed_format_missing": 9,
+      "incorrect_symbolic_arithmetic": 7,
+      "not_complete_stop": 1,
+      "empty_or_unclosed_final_section": 1
+    },
+    "unverified_thinking_signals": {
+      "ols_or_least_squares_mention": 0,
+      "sum_mention": 1,
+      "single_example_language": 1
+    }
+  },
+  "sampling": {
+    "n": 312,
+    "correct": 32,
+    "accuracy": 0.10256410256410256,
+    "accuracy_wilson95_descriptive": [
+      0.07359159159511153,
+      0.14120433505113758
+    ],
+    "proof_pass": 0,
+    "ols_final_certified": 0,
+    "format_valid": 98,
+    "truncated": 0,
+    "mean_tokens": 920.1891025641025,
+    "median_tokens": 471.5,
+    "total_tokens": 287099,
+    "mean_correct_tokens": 2734.875,
+    "failure_reasons_nonexclusive": {
+      "official_final_answer_incorrect": 277,
+      "final_answer_not_rounded_public_ols": 305,
+      "full_trace_boxed_format_missing": 211,
+      "missing_verifiable_physical_relation": 158,
+      "all_example_ols_fit_not_demonstrated": 309,
+      "fitted_g_missing_or_inaccurate": 309,
+      "query_time_missing_or_incorrect": 159,
+      "unrounded_query_distance_missing_or_inaccurate": 309,
+      "incorrect_symbolic_arithmetic": 35,
+      "unsupported_arithmetic": 100,
+      "incorrect_intermediate_arithmetic": 122,
+      "incorrect_numeric_equality_in_prose": 120,
+      "altered_public_observation_in_proof": 49,
+      "missing_or_multiple_numeric_boxed_answer": 107,
+      "incorrect_reported_g_value": 77,
+      "incorrect_additional_physical_relation": 2,
+      "incorrect_or_unverifiable_optional_indexed_g": 3,
+      "unsupported_math_syntax": 2,
+      "empty_or_unclosed_final_section": 3
+    },
+    "unverified_thinking_signals": {
+      "ols_or_least_squares_mention": 7,
+      "sum_mention": 5,
+      "single_example_language": 18
+    }
+  },
+  "paired_accuracy_delta": {
+    "n": 26,
+    "mean_after_minus_before": 0.16666666666666666,
+    "bootstrap95": [
+      0.0064102564102564066,
+      0.34294871794871795
+    ],
+    "sign_flip_pvalue": 0.08239176082391761,
+    "draws": 10000,
+    "seed": 42,
+    "note": "Exploratory with small n; sign-flip requires exchangeability/symmetry under null."
+  }
+}

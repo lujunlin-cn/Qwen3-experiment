@@ -1,0 +1,369 @@
+{
+  "status": "completed",
+  "greedy": {
+    "n": 26,
+    "correct": 7,
+    "accuracy": 0.2692307692307692,
+    "accuracy_wilson95_descriptive": [
+      0.13704448322018375,
+      0.4608304037917617
+    ],
+    "proof_pass": 0,
+    "ols_final_certified": 0,
+    "format_valid": 16,
+    "truncated": 1,
+    "mean_tokens": 2060.653846153846,
+    "median_tokens": 1276.0,
+    "total_tokens": 53577,
+    "mean_correct_tokens": 1478.2857142857142,
+    "failure_reasons_nonexclusive": {
+      "official_final_answer_incorrect": 18,
+      "final_answer_not_rounded_public_ols": 24,
+      "altered_public_observation_in_proof": 13,
+      "all_example_ols_fit_not_demonstrated": 25,
+      "fitted_g_missing_or_inaccurate": 25,
+      "incorrect_reported_g_value": 11,
+      "query_time_missing_or_incorrect": 9,
+      "unrounded_query_distance_missing_or_inaccurate": 25,
+      "incorrect_intermediate_arithmetic": 23,
+      "incorrect_numeric_equality_in_prose": 22,
+      "unsupported_arithmetic": 15,
+      "missing_verifiable_physical_relation": 6,
+      "missing_or_multiple_numeric_boxed_answer": 3,
+      "full_trace_boxed_format_missing": 9,
+      "incorrect_symbolic_arithmetic": 7,
+      "not_complete_stop": 1,
+      "empty_or_unclosed_final_section": 1
+    },
+    "unverified_thinking_signals": {
+      "ols_or_least_squares_mention": 0,
+      "sum_mention": 1,
+      "single_example_language": 1
+    }
+  },
+  "sampling": {
+    "n": 312,
+    "correct": 32,
+    "accuracy": 0.10256410256410256,
+    "accuracy_wilson95_descriptive": [
+      0.07359159159511153,
+      0.14120433505113758
+    ],
+    "proof_pass": 0,
+    "ols_final_certified": 0,
+    "format_valid": 98,
+    "truncated": 0,
+    "mean_tokens": 920.1891025641025,
+    "median_tokens": 471.5,
+    "total_tokens": 287099,
+    "mean_correct_tokens": 2734.875,
+    "failure_reasons_nonexclusive": {
+      "official_final_answer_incorrect": 277,
+      "final_answer_not_rounded_public_ols": 305,
+      "full_trace_boxed_format_missing": 211,
+      "missing_verifiable_physical_relation": 158,
+      "all_example_ols_fit_not_demonstrated": 309,
+      "fitted_g_missing_or_inaccurate": 309,
+      "query_time_missing_or_incorrect": 159,
+      "unrounded_query_distance_missing_or_inaccurate": 309,
+      "incorrect_symbolic_arithmetic": 35,
+      "unsupported_arithmetic": 100,
+      "incorrect_intermediate_arithmetic": 122,
+      "incorrect_numeric_equality_in_prose": 120,
+      "altered_public_observation_in_proof": 49,
+      "missing_or_multiple_numeric_boxed_answer": 107,
+      "incorrect_reported_g_value": 77,
+      "incorrect_additional_physical_relation": 2,
+      "incorrect_or_unverifiable_optional_indexed_g": 3,
+      "unsupported_math_syntax": 2,
+      "empty_or_unclosed_final_section": 3
+    },
+    "unverified_thinking_signals": {
+      "ols_or_least_squares_mention": 7,
+      "sum_mention": 5,
+      "single_example_language": 18
+    }
+  },
+  "by_source": {
+    "official_real_train": {
+      "greedy": {
+        "n": 16,
+        "correct": 6,
+        "accuracy": 0.375,
+        "accuracy_wilson95_descriptive": [
+          0.18481232558863633,
+          0.6135895945449727
+        ],
+        "proof_pass": 0,
+        "ols_final_certified": 0,
+        "format_valid": 14,
+        "truncated": 0,
+        "mean_tokens": 1561.125,
+        "median_tokens": 1276.0,
+        "total_tokens": 24978,
+        "mean_correct_tokens": 1249.5,
+        "failure_reasons_nonexclusive": {
+          "official_final_answer_incorrect": 10,
+          "final_answer_not_rounded_public_ols": 15,
+          "altered_public_observation_in_proof": 13,
+          "all_example_ols_fit_not_demonstrated": 16,
+          "fitted_g_missing_or_inaccurate": 16,
+          "incorrect_reported_g_value": 7,
+          "query_time_missing_or_incorrect": 9,
+          "unrounded_query_distance_missing_or_inaccurate": 16,
+          "incorrect_intermediate_arithmetic": 16,
+          "incorrect_numeric_equality_in_prose": 15,
+          "unsupported_arithmetic": 13,
+          "missing_verifiable_physical_relation": 1,
+          "missing_or_multiple_numeric_boxed_answer": 2,
+          "full_trace_boxed_format_missing": 2,
+          "incorrect_symbolic_arithmetic": 6
+        },
+        "unverified_thinking_signals": {
+          "ols_or_least_squares_mention": 0,
+          "sum_mention": 0,
+          "single_example_language": 1
+        }
+      },
+      "sampling": {
+        "n": 192,
+        "correct": 17,
+        "accuracy": 0.08854166666666667,
+        "accuracy_wilson95_descriptive": [
+          0.05601543330346269,
+          0.13720953064730373
+        ],
+        "proof_pass": 0,
+        "ols_final_certified": 0,
+        "format_valid": 69,
+        "truncated": 0,
+        "mean_tokens": 742.8541666666666,
+        "median_tokens": 540.5,
+        "total_tokens": 142628,
+        "mean_correct_tokens": 1579.7058823529412,
+        "failure_reasons_nonexclusive": {
+          "official_final_answer_incorrect": 174,
+          "final_answer_not_rounded_public_ols": 187,
+          "full_trace_boxed_format_missing": 122,
+          "missing_verifiable_physical_relation": 90,
+          "all_example_ols_fit_not_demonstrated": 191,
+          "fitted_g_missing_or_inaccurate": 191,
+          "query_time_missing_or_incorrect": 108,
+          "unrounded_query_distance_missing_or_inaccurate": 191,
+          "incorrect_symbolic_arithmetic": 24,
+          "unsupported_arithmetic": 80,
+          "incorrect_intermediate_arithmetic": 77,
+          "incorrect_numeric_equality_in_prose": 71,
+          "altered_public_observation_in_proof": 35,
+          "missing_or_multiple_numeric_boxed_answer": 57,
+          "incorrect_reported_g_value": 46,
+          "incorrect_additional_physical_relation": 2,
+          "incorrect_or_unverifiable_optional_indexed_g": 3,
+          "unsupported_math_syntax": 2,
+          "empty_or_unclosed_final_section": 1
+        },
+        "unverified_thinking_signals": {
+          "ols_or_least_squares_mention": 5,
+          "sum_mention": 2,
+          "single_example_language": 14
+        }
+      }
+    },
+    "synthetic_train_prior": {
+      "greedy": {
+        "n": 10,
+        "correct": 1,
+        "accuracy": 0.1,
+        "accuracy_wilson95_descriptive": [
+          0.017876213095072896,
+          0.4041500267952385
+        ],
+        "proof_pass": 0,
+        "ols_final_certified": 0,
+        "format_valid": 2,
+        "truncated": 1,
+        "mean_tokens": 2859.9,
+        "median_tokens": 1022.0,
+        "total_tokens": 28599,
+        "mean_correct_tokens": 2851,
+        "failure_reasons_nonexclusive": {
+          "official_final_answer_incorrect": 8,
+          "final_answer_not_rounded_public_ols": 9,
+          "full_trace_boxed_format_missing": 7,
+          "all_example_ols_fit_not_demonstrated": 9,
+          "fitted_g_missing_or_inaccurate": 9,
+          "unrounded_query_distance_missing_or_inaccurate": 9,
+          "incorrect_intermediate_arithmetic": 7,
+          "incorrect_numeric_equality_in_prose": 7,
+          "incorrect_symbolic_arithmetic": 1,
+          "not_complete_stop": 1,
+          "empty_or_unclosed_final_section": 1,
+          "incorrect_reported_g_value": 4,
+          "missing_verifiable_physical_relation": 5,
+          "unsupported_arithmetic": 2,
+          "missing_or_multiple_numeric_boxed_answer": 1
+        },
+        "unverified_thinking_signals": {
+          "ols_or_least_squares_mention": 0,
+          "sum_mention": 1,
+          "single_example_language": 0
+        }
+      },
+      "sampling": {
+        "n": 120,
+        "correct": 15,
+        "accuracy": 0.125,
+        "accuracy_wilson95_descriptive": [
+          0.07723497273395374,
+          0.1960294020800739
+        ],
+        "proof_pass": 0,
+        "ols_final_certified": 0,
+        "format_valid": 29,
+        "truncated": 0,
+        "mean_tokens": 1203.925,
+        "median_tokens": 354.5,
+        "total_tokens": 144471,
+        "mean_correct_tokens": 4044.0666666666666,
+        "failure_reasons_nonexclusive": {
+          "official_final_answer_incorrect": 103,
+          "final_answer_not_rounded_public_ols": 118,
+          "full_trace_boxed_format_missing": 89,
+          "all_example_ols_fit_not_demonstrated": 118,
+          "fitted_g_missing_or_inaccurate": 118,
+          "incorrect_reported_g_value": 31,
+          "unrounded_query_distance_missing_or_inaccurate": 118,
+          "incorrect_intermediate_arithmetic": 45,
+          "incorrect_numeric_equality_in_prose": 49,
+          "missing_or_multiple_numeric_boxed_answer": 50,
+          "missing_verifiable_physical_relation": 68,
+          "query_time_missing_or_incorrect": 51,
+          "incorrect_symbolic_arithmetic": 11,
+          "unsupported_arithmetic": 20,
+          "altered_public_observation_in_proof": 14,
+          "empty_or_unclosed_final_section": 2
+        },
+        "unverified_thinking_signals": {
+          "ols_or_least_squares_mention": 2,
+          "sum_mention": 3,
+          "single_example_language": 4
+        }
+      }
+    }
+  },
+  "paired_prompt_cluster_accuracy_delta": {
+    "n": 26,
+    "mean_after_minus_before": 0.16666666666666666,
+    "bootstrap95": [
+      0.0064102564102564066,
+      0.34294871794871795
+    ],
+    "sign_flip_pvalue": 0.08239176082391761,
+    "draws": 10000,
+    "seed": 42,
+    "note": "Exploratory with small n; sign-flip requires exchangeability/symmetry under null."
+  },
+  "paired_prompt_cluster_mean_token_delta": {
+    "n": 26,
+    "mean_after_minus_before": 1140.4647435897436,
+    "bootstrap95": [
+      178.27243589743588,
+      2594.5320512820513
+    ],
+    "sign_flip_pvalue": 0.014698530146985302,
+    "draws": 10000,
+    "seed": 42,
+    "note": "Exploratory with small n; sign-flip requires exchangeability/symmetry under null."
+  },
+  "prompts_with_any_sampling_correct": 19,
+  "greedy_correct_sampling_all_wrong": [
+    "bdcccbab",
+    "5fe169fc"
+  ],
+  "greedy_wrong_sampling_some_correct": [
+    "c04634c0",
+    "8eecb224",
+    "eba1891f",
+    "0ab3d1de",
+    "736cdc47",
+    "76d51969",
+    "ff9540e2",
+    "gravity-final-001",
+    "gravity-final-003",
+    "gravity-final-005",
+    "gravity-final-006",
+    "gravity-final-008",
+    "gravity-final-009",
+    "gravity-final-010"
+  ],
+  "greedy_final_answers": [
+    "26.06",
+    "3.314904",
+    "22.64",
+    "0.5 \\times 1.46^2 \\times g",
+    "206.3",
+    "14.88",
+    "21.904",
+    "112.85",
+    "8.78 \\, m",
+    "67.69",
+    "112.30",
+    "19.81",
+    "6.73445",
+    "63.23",
+    "99.03",
+    "10.73",
+    "12.53",
+    null,
+    "45.04",
+    "99.33",
+    "1.664",
+    "212.36 \\, m",
+    "20.47",
+    "115.09",
+    "20.4",
+    "12.46"
+  ],
+  "sampling_wilson_limitation": "312 outputs share 26 prompts; Wilson here is descriptive only; inferential comparison resamples 26 prompt clusters",
+  "dataset_scope": "Frozen DPO Train panel, not Validation or Holdout; diagnostic only",
+  "teacher_audit": {
+    "groups": {
+      "historical_r1": {
+        "n": 64,
+        "all_observations_explicitly_printed_in_target": 0,
+        "all_observations_referenced_by_ols": 64,
+        "fitted_g_correct": 64,
+        "unrounded_query_distance_correct": 64,
+        "final_answer_exact_public_ols": 64,
+        "solver_independent_agreement": 64,
+        "metadata_proof_passed": 64,
+        "actual_final_proof_passed": 0,
+        "all_required_steps_supervised": 64
+      },
+      "added_real_c": {
+        "n": 10,
+        "all_observations_explicitly_printed_in_target": 0,
+        "all_observations_referenced_by_ols": 10,
+        "fitted_g_correct": 10,
+        "unrounded_query_distance_correct": 10,
+        "final_answer_exact_public_ols": 10,
+        "solver_independent_agreement": 10,
+        "metadata_proof_passed": 10,
+        "actual_final_proof_passed": 0,
+        "all_required_steps_supervised": 10
+      }
+    },
+    "reconstructed_all_task_supervised_tokens": {
+      "r1_192_once": 22082,
+      "c_110_twice": 77116,
+      "actual_training_logged_r1": 22082,
+      "actual_training_logged_c": 77116
+    },
+    "historical_notebook_commit": "57e409eb27c68717078fb188ddc10b892d0a2cfc",
+    "historical_worker_commit": "98787e25e16e0a6417c937f5398b4b564fb1ee48",
+    "source_hash_matched_historical_registration": true,
+    "weights_modified": false
+  },
+  "trained_or_saved_weights": false,
+  "hosted_api_calls": 0
+}

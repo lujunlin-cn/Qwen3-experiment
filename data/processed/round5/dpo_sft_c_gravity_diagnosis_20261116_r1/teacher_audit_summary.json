@@ -1,0 +1,38 @@
+{
+  "groups": {
+    "historical_r1": {
+      "n": 64,
+      "all_observations_explicitly_printed_in_target": 0,
+      "all_observations_referenced_by_ols": 64,
+      "fitted_g_correct": 64,
+      "unrounded_query_distance_correct": 64,
+      "final_answer_exact_public_ols": 64,
+      "solver_independent_agreement": 64,
+      "metadata_proof_passed": 64,
+      "actual_final_proof_passed": 0,
+      "all_required_steps_supervised": 64
+    },
+    "added_real_c": {
+      "n": 10,
+      "all_observations_explicitly_printed_in_target": 0,
+      "all_observations_referenced_by_ols": 10,
+      "fitted_g_correct": 10,
+      "unrounded_query_distance_correct": 10,
+      "final_answer_exact_public_ols": 10,
+      "solver_independent_agreement": 10,
+      "metadata_proof_passed": 10,
+      "actual_final_proof_passed": 0,
+      "all_required_steps_supervised": 10
+    }
+  },
+  "reconstructed_all_task_supervised_tokens": {
+    "r1_192_once": 22082,
+    "c_110_twice": 77116,
+    "actual_training_logged_r1": 22082,
+    "actual_training_logged_c": 77116
+  },
+  "historical_notebook_commit": "57e409eb27c68717078fb188ddc10b892d0a2cfc",
+  "historical_worker_commit": "98787e25e16e0a6417c937f5398b4b564fb1ee48",
+  "source_hash_matched_historical_registration": true,
+  "weights_modified": false
+}

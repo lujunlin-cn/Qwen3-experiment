@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_dpo_sft_c_gravity_diagnosis.py", line 463, in <module>
+    main()
+    ~~~~^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_dpo_sft_c_gravity_diagnosis.py", line 455, in main
+    analyze()
+    ~~~~~~~^^
+  File "/home/hajimi2025/Qwen3-experiment/utils/run_dpo_sft_c_gravity_diagnosis.py", line 395, in analyze
+    raise ValueError('Original Verifier outcomes changed')
+ValueError: Original Verifier outcomes changed

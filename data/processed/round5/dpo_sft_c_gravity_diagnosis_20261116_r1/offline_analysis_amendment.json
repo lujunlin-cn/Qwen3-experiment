@@ -1,0 +1,12 @@
+{
+  "stage": "offline_analysis_only",
+  "reason": "Python tuple versus JSON list caused false audit inequality; compare exact JSON-domain values and match response IDs",
+  "original_registered_runner_sha256": "221d08639c5d2139f203eb1853e5652a9186c3a7d2c304967843f06d29939b80",
+  "preserved_runner_v1_sha256": "221d08639c5d2139f203eb1853e5652a9186c3a7d2c304967843f06d29939b80",
+  "runner_sha256": "9e27150f4a0fab86fed3dad7be7dc3db3f7556b751e732678ff6f1b682aca775",
+  "tests_sha256": "95b0e98715cac434b5ee2b2a8a4424185eb255eeeab9946d1564a4438c28f667",
+  "final_cpu_log_sha256": "0060989f6f4a54c0ea6ec171cce498ababc67e380e6d3ac549ccbc6a945fbdef",
+  "gpu_raw_output_sha256": "a1f3c92987c691b6223a5da8c9951bedeac1d23745a8c4715cedf4700e31dc4b",
+  "gpu_regenerated": false,
+  "verifier_modified": false
+}
