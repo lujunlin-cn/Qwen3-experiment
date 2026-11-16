@@ -207,7 +207,18 @@ def resume_after_cpu_repair(wait_pid=None):
  if wait_pid:
   import select
   try:
-   fd=os.pidfd_open(wait_pid)
+   if hasattr(os,'pidfd_open'):fd=os.pidfd_open(wait_pid)
+   else:
+    # Some aarch64 CPython builds omit the wrapper although glibc/kernel
+    # provide pidfd_open. This still blocks on process completion, no polls.
+    import ctypes,errno
+    libc=ctypes.CDLL(None,use_errno=True);opener=libc.pidfd_open
+    opener.argtypes=[ctypes.c_int,ctypes.c_uint];opener.restype=ctypes.c_int
+    fd=opener(wait_pid,0)
+    if fd<0:
+     error=ctypes.get_errno()
+     if error==errno.ESRCH:raise ProcessLookupError(wait_pid)
+     raise OSError(error,os.strerror(error))
   except ProcessLookupError:fd=None
   if fd is not None:
    write(RUN/'cpu_repair_continuation_wait.json',{'waiting_pid':wait_pid,'mechanism':'pidfd/select completion hook; no periodic training monitoring','time':time.time()})
