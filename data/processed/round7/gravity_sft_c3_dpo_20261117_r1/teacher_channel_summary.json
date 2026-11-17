@@ -1,0 +1,13 @@
+{
+  "teachers": 74,
+  "historical_r1": 64,
+  "added_real_c": 10,
+  "dual_verified": 74,
+  "legacy_final_only_verified": 0,
+  "all_math_tokens_supervised": 74,
+  "supervised_tokens_per_epoch": 53975,
+  "max_full_chat_tokens": 1021,
+  "same_proof_as_C2": true,
+  "replay": false,
+  "train_source_and_validation_holdout_prompt_isolation_passed": true
+}

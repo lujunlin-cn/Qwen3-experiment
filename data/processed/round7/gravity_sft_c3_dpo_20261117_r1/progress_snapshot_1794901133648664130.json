@@ -1,0 +1,254 @@
+{
+  "status": "running_not_final",
+  "captured_at": "2026-11-17T15:38:53.645978+08:00",
+  "git_source_commit": "d2a9a8ec9196a0566af6c6ea47f6373a8c1ad4b8",
+  "teachers": {
+    "teachers": 74,
+    "historical_r1": 64,
+    "added_real_c": 10,
+    "dual_verified": 74,
+    "legacy_final_only_verified": 0,
+    "all_math_tokens_supervised": 74,
+    "supervised_tokens_per_epoch": 53975,
+    "max_full_chat_tokens": 1021,
+    "same_proof_as_C2": true,
+    "replay": false,
+    "train_source_and_validation_holdout_prompt_isolation_passed": true
+  },
+  "sft_training": {
+    "optimizer_steps": 20,
+    "supervised_tokens": 107950,
+    "training_seconds": 47.561467078048736,
+    "wall_seconds": 54.82420372962952,
+    "memory": {
+      "peak_allocated_bytes": 1478621184,
+      "peak_reserved_bytes": 1522532352,
+      "limit_bytes": 8000000000,
+      "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+    }
+  },
+  "selected_epoch": 1,
+  "selected_adapter_sha256": "604e75bc6d57748069cc4d5cc29f8ea8f3e446dcd45cf25d1ece031774472eb8",
+  "tune": {
+    "before": {
+      "n": 48,
+      "correct": 10,
+      "accuracy": 0.20833333333333334,
+      "wilson95": [
+        0.11730272957905595,
+        0.34258901272617925
+      ],
+      "proof_pass": 0,
+      "proof_rate": 0.0,
+      "ols_certified": 0,
+      "ols_rate": 0.0,
+      "format_valid": 0,
+      "truncated": 0,
+      "truncation_rate": 0.0,
+      "mean_tokens": 1183.0833333333333,
+      "median_tokens": 1181.0,
+      "official_correct_mean_tokens": 1189.1,
+      "correct_verified_mean_tokens": null,
+      "total_tokens": 56788,
+      "failure_reasons_nonexclusive": {
+        "final_not_unique_numeric_boxed_answer": 47,
+        "official_final_answer_incorrect": 37,
+        "final_answer_not_rounded_public_ols": 47,
+        "thinking:official_final_answer_incorrect": 37,
+        "thinking:final_answer_not_rounded_public_ols": 47,
+        "thinking:full_trace_boxed_format_missing": 4,
+        "thinking:all_example_ols_fit_not_demonstrated": 47,
+        "thinking:fitted_g_missing_or_inaccurate": 46,
+        "thinking:incorrect_reported_g_value": 29,
+        "thinking:query_time_missing_or_incorrect": 42,
+        "thinking:unrounded_query_distance_missing_or_inaccurate": 47,
+        "thinking:incorrect_intermediate_arithmetic": 43,
+        "thinking:incorrect_numeric_equality_in_prose": 44,
+        "all_observation_terms_missing_or_inaccurate": 47,
+        "weighted_data_sum_missing_or_inaccurate": 47,
+        "fourth_power_sum_missing_or_inaccurate": 47,
+        "numeric_ols_substitution_missing_or_inaccurate": 47,
+        "query_distance_substitution_missing_or_inaccurate": 47,
+        "incorrect_or_unsupported_numeric_arithmetic": 42,
+        "thinking:missing_or_multiple_numeric_boxed_answer": 44,
+        "thinking:altered_public_observation_in_proof": 39,
+        "thinking:unsupported_arithmetic": 42,
+        "boxed_answer_inside_thinking": 44,
+        "thinking:incorrect_additional_physical_relation": 1,
+        "thinking:incorrect_symbolic_arithmetic": 14,
+        "thinking:incorrect_query_substitution": 1,
+        "thinking:incorrect_or_unverifiable_optional_indexed_g": 1,
+        "missing_or_multiple_thinking_boundaries": 1
+      }
+    },
+    "after": {
+      "n": 48,
+      "correct": 3,
+      "accuracy": 0.0625,
+      "wilson95": [
+        0.021483232908389285,
+        0.1683543805494635
+      ],
+      "proof_pass": 0,
+      "proof_rate": 0.0,
+      "ols_certified": 0,
+      "ols_rate": 0.0,
+      "format_valid": 26,
+      "truncated": 1,
+      "truncation_rate": 0.020833333333333332,
+      "mean_tokens": 712.5416666666666,
+      "median_tokens": 399.0,
+      "official_correct_mean_tokens": 497.6666666666667,
+      "correct_verified_mean_tokens": null,
+      "total_tokens": 34202,
+      "failure_reasons_nonexclusive": {
+        "final_not_unique_numeric_boxed_answer": 22,
+        "official_final_answer_incorrect": 45,
+        "final_answer_not_rounded_public_ols": 48,
+        "thinking:official_final_answer_incorrect": 45,
+        "thinking:final_answer_not_rounded_public_ols": 48,
+        "thinking:full_trace_boxed_format_missing": 16,
+        "thinking:all_example_ols_fit_not_demonstrated": 48,
+        "thinking:fitted_g_missing_or_inaccurate": 48,
+        "thinking:incorrect_reported_g_value": 7,
+        "thinking:query_time_missing_or_incorrect": 12,
+        "thinking:unrounded_query_distance_missing_or_inaccurate": 48,
+        "thinking:incorrect_intermediate_arithmetic": 29,
+        "thinking:incorrect_numeric_equality_in_prose": 28,
+        "thinking:incorrect_symbolic_arithmetic": 14,
+        "thinking:unsupported_arithmetic": 12,
+        "all_observation_terms_missing_or_inaccurate": 48,
+        "weighted_data_sum_missing_or_inaccurate": 48,
+        "fourth_power_sum_missing_or_inaccurate": 48,
+        "numeric_ols_substitution_missing_or_inaccurate": 48,
+        "query_distance_substitution_missing_or_inaccurate": 48,
+        "incorrect_or_unsupported_numeric_arithmetic": 24,
+        "thinking:missing_or_multiple_numeric_boxed_answer": 7,
+        "thinking:altered_public_observation_in_proof": 5,
+        "thinking:contradictory_answer_claim": 3,
+        "thinking:incorrect_or_unverifiable_optional_indexed_g": 5,
+        "not_complete_stop": 1,
+        "thinking:not_complete_stop": 1,
+        "thinking:missing_verifiable_physical_relation": 2
+      }
+    }
+  },
+  "completed_inference_targets": {
+    "comparison/C3_diagnosis_result.json": {
+      "status": "completed",
+      "records": 26,
+      "generation_seconds": 1086.088137601968,
+      "adapter_sha256": "604e75bc6d57748069cc4d5cc29f8ea8f3e446dcd45cf25d1ece031774472eb8",
+      "memory": [
+        {
+          "peak_allocated_bytes": 5639714304,
+          "peak_reserved_bytes": 5771362304,
+          "limit_bytes": 8000000000,
+          "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+        }
+      ]
+    },
+    "comparison/C3_numeral_system_result.json": {
+      "status": "completed",
+      "records": 50,
+      "generation_seconds": 132.47227578470483,
+      "adapter_sha256": "604e75bc6d57748069cc4d5cc29f8ea8f3e446dcd45cf25d1ece031774472eb8",
+      "memory": [
+        {
+          "peak_allocated_bytes": 5639714304,
+          "peak_reserved_bytes": 5771362304,
+          "limit_bytes": 8000000000,
+          "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+        }
+      ]
+    },
+    "comparison/C_diagnosis_result.json": {
+      "status": "completed",
+      "records": 26,
+      "generation_seconds": 1489.7276934091933,
+      "adapter_sha256": "7033241d41efb086762df20789ce2b70764bb3a5c524e29b8d8f846d3254e3f4",
+      "memory": [
+        {
+          "peak_allocated_bytes": 5639714304,
+          "peak_reserved_bytes": 5771362304,
+          "limit_bytes": 8000000000,
+          "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+        }
+      ]
+    },
+    "comparison/C_equation_numeric_result.json": {
+      "status": "completed",
+      "records": 50,
+      "generation_seconds": 2988.424242375884,
+      "adapter_sha256": "7033241d41efb086762df20789ce2b70764bb3a5c524e29b8d8f846d3254e3f4",
+      "memory": [
+        {
+          "peak_allocated_bytes": 5639714304,
+          "peak_reserved_bytes": 5771362304,
+          "limit_bytes": 8000000000,
+          "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+        }
+      ]
+    },
+    "comparison/C_numeral_system_result.json": {
+      "status": "completed",
+      "records": 50,
+      "generation_seconds": 719.6937455479056,
+      "adapter_sha256": "7033241d41efb086762df20789ce2b70764bb3a5c524e29b8d8f846d3254e3f4",
+      "memory": [
+        {
+          "peak_allocated_bytes": 5639714304,
+          "peak_reserved_bytes": 5771362304,
+          "limit_bytes": 8000000000,
+          "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+        }
+      ]
+    },
+    "tune_epochs/C3_epoch1_tune_result.json": {
+      "status": "completed",
+      "records": 48,
+      "generation_seconds": 373.1375012542121,
+      "adapter_sha256": "604e75bc6d57748069cc4d5cc29f8ea8f3e446dcd45cf25d1ece031774472eb8",
+      "memory": [
+        {
+          "peak_allocated_bytes": 5639714304,
+          "peak_reserved_bytes": 5771362304,
+          "limit_bytes": 8000000000,
+          "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+        }
+      ]
+    },
+    "tune_epochs/C3_epoch2_tune_result.json": {
+      "status": "completed",
+      "records": 48,
+      "generation_seconds": 1738.8904129941948,
+      "adapter_sha256": "aebe31584f649fcf3354b979617fa424b73199048fcf587ffe42748d1583603a",
+      "memory": [
+        {
+          "peak_allocated_bytes": 5639714304,
+          "peak_reserved_bytes": 5771362304,
+          "limit_bytes": 8000000000,
+          "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+        }
+      ]
+    },
+    "tune_epochs/C_tune_result.json": {
+      "status": "completed",
+      "records": 48,
+      "generation_seconds": 118.2289612237364,
+      "adapter_sha256": "7033241d41efb086762df20789ce2b70764bb3a5c524e29b8d8f846d3254e3f4",
+      "memory": [
+        {
+          "peak_allocated_bytes": 5639714304,
+          "peak_reserved_bytes": 5771362304,
+          "limit_bytes": 8000000000,
+          "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+        }
+      ]
+    }
+  },
+  "dpo_readiness_completed": false,
+  "dpo_training_completed": false,
+  "locked_final_completed": false,
+  "note": "Live status requested by user; automatic chain continues. No parameter changes or new GPU instance."
+}

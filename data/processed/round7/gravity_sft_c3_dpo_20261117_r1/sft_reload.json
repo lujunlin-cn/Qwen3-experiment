@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "epochs": [
+    {
+      "epoch": 1,
+      "adapter_sha256": "604e75bc6d57748069cc4d5cc29f8ea8f3e446dcd45cf25d1ece031774472eb8",
+      "max_logprob_delta": 0.0,
+      "memory": {
+        "peak_allocated_bytes": 1224749568,
+        "peak_reserved_bytes": 1237319680,
+        "limit_bytes": 8000000000,
+        "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+      }
+    },
+    {
+      "epoch": 2,
+      "adapter_sha256": "aebe31584f649fcf3354b979617fa424b73199048fcf587ffe42748d1583603a",
+      "max_logprob_delta": 0.0,
+      "memory": {
+        "peak_allocated_bytes": 1224892416,
+        "peak_reserved_bytes": 1237319680,
+        "limit_bytes": 8000000000,
+        "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+      }
+    }
+  ]
+}

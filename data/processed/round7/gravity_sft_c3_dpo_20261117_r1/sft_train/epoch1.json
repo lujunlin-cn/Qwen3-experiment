@@ -1,0 +1,21 @@
+{
+  "epoch": 1,
+  "optimizer_steps": 10,
+  "adapter_path": "/home/hajimi2025/Qwen3-experiment/.autodl/gravity_sft_c3_dpo_20261117_r1/epoch1/adapter",
+  "adapter_sha256": "604e75bc6d57748069cc4d5cc29f8ea8f3e446dcd45cf25d1ece031774472eb8",
+  "optimizer_sha256": "f302137732c2f70004d6f89e0080739947c1c1bcdbedc39a24d90ecbdaebd03a",
+  "probe_logprobs": [
+    [
+      -12.844589233398438,
+      -5.381773948669434,
+      -4.71262788772583
+    ]
+  ],
+  "changed_tensor_count": 392,
+  "memory": {
+    "peak_allocated_bytes": 1477533696,
+    "peak_reserved_bytes": 1522532352,
+    "limit_bytes": 8000000000,
+    "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+  }
+}

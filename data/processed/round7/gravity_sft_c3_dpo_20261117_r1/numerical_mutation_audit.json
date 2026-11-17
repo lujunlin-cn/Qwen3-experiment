@@ -1,0 +1,14 @@
+{
+  "cases": 444,
+  "cases_by_type": {
+    "wrong_weighted_sum": 74,
+    "wrong_fourth_power_sum": 74,
+    "omitted_observation_term": 74,
+    "wrong_fitted_g": 74,
+    "wrong_query_raw": 74,
+    "conflicting_final": 74
+  },
+  "false_accepts": [],
+  "status": "passed",
+  "cuda_visible_devices": ""
+}
