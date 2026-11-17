@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "teachers": 74,
+  "final_proof_passed": 74,
+  "all_math_tokens_supervised": 74,
+  "max_full_chat_tokens": 1021,
+  "supervised_tokens_per_epoch": 53975,
+  "source": "solver_generated_rendered",
+  "old_teacher_answers_changed": false,
+  "format_preflight": "Observation labels avoid ambiguity with Query t; numerical sums have descriptive labels. The existing NL verifier was not modified."
+}

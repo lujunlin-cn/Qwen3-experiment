@@ -1,0 +1,545 @@
+{
+  "before": {
+    "n": 48,
+    "correct": 13,
+    "accuracy": 0.2708333333333333,
+    "wilson95": [
+      0.1656595762745644,
+      0.40996964982240613
+    ],
+    "proof_pass": 0,
+    "proof_rate": 0.0,
+    "ols_certified": 0,
+    "ols_rate": 0.0,
+    "format_valid": 38,
+    "truncated": 0,
+    "truncation_rate": 0.0,
+    "mean_tokens": 1154.3958333333333,
+    "median_tokens": 1173.5,
+    "official_correct_mean_tokens": 1216.3076923076924,
+    "correct_verified_mean_tokens": null,
+    "total_tokens": 55411,
+    "failure_reasons_nonexclusive": {
+      "final_answer_not_rounded_public_ols": 46,
+      "altered_public_observation_in_proof": 35,
+      "all_example_ols_fit_not_demonstrated": 46,
+      "fitted_g_missing_or_inaccurate": 45,
+      "incorrect_reported_g_value": 19,
+      "query_time_missing_or_incorrect": 31,
+      "unrounded_query_distance_missing_or_inaccurate": 46,
+      "incorrect_intermediate_arithmetic": 41,
+      "incorrect_numeric_equality_in_prose": 40,
+      "official_final_answer_incorrect": 33,
+      "missing_verifiable_physical_relation": 1,
+      "unsupported_arithmetic": 31,
+      "incorrect_symbolic_arithmetic": 20,
+      "missing_or_multiple_numeric_boxed_answer": 7,
+      "full_trace_boxed_format_missing": 8,
+      "empty_or_unclosed_final_section": 2,
+      "incorrect_or_unverifiable_optional_indexed_g": 1
+    }
+  },
+  "after": {
+    "n": 48,
+    "correct": 0,
+    "accuracy": 0.0,
+    "wilson95": [
+      6.938893903907228e-18,
+      0.07410012966611748
+    ],
+    "proof_pass": 0,
+    "proof_rate": 0.0,
+    "ols_certified": 0,
+    "ols_rate": 0.0,
+    "format_valid": 8,
+    "truncated": 8,
+    "truncation_rate": 0.16666666666666666,
+    "mean_tokens": 3071.3333333333335,
+    "median_tokens": 365.5,
+    "official_correct_mean_tokens": null,
+    "correct_verified_mean_tokens": null,
+    "total_tokens": 147424,
+    "failure_reasons_nonexclusive": {
+      "official_final_answer_incorrect": 47,
+      "final_answer_not_rounded_public_ols": 47,
+      "missing_verifiable_physical_relation": 33,
+      "all_example_ols_fit_not_demonstrated": 47,
+      "fitted_g_missing_or_inaccurate": 47,
+      "query_time_missing_or_incorrect": 34,
+      "unrounded_query_distance_missing_or_inaccurate": 47,
+      "not_complete_stop": 8,
+      "empty_or_unclosed_final_section": 1,
+      "missing_or_multiple_numeric_boxed_answer": 35,
+      "full_trace_boxed_format_missing": 39,
+      "incorrect_intermediate_arithmetic": 4,
+      "incorrect_numeric_equality_in_prose": 3,
+      "incorrect_reported_g_value": 2,
+      "incorrect_symbolic_arithmetic": 1,
+      "unsupported_arithmetic": 4,
+      "incorrect_or_unverifiable_optional_indexed_g": 1
+    }
+  },
+  "gained_correct": 0,
+  "lost_correct": 13,
+  "mcnemar_exact_pvalue": 0.000244140625,
+  "accuracy_delta_bootstrap": {
+    "n": 48,
+    "mean_after_minus_before": -0.2708333333333333,
+    "bootstrap95": [
+      -0.3958333333333333,
+      -0.14583333333333334
+    ],
+    "sign_flip_pvalue": 0.0004999500049995,
+    "draws": 10000,
+    "seed": 42,
+    "note": "Exploratory with small n; sign-flip requires exchangeability/symmetry under null."
+  },
+  "length_delta_bootstrap": {
+    "n": 48,
+    "mean_after_minus_before": 1916.9375,
+    "bootstrap95": [
+      288.3333333333333,
+      3622
+    ],
+    "sign_flip_pvalue": 0.03569643035696431,
+    "draws": 10000,
+    "seed": 42,
+    "note": "Exploratory with small n; sign-flip requires exchangeability/symmetry under null."
+  },
+  "both_correct_n": 0,
+  "both_correct_length_delta": null,
+  "per_question": [
+    {
+      "id": "4707a5ad",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1054,
+      "after_tokens": 348
+    },
+    {
+      "id": "cc716361",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1121,
+      "after_tokens": 16384
+    },
+    {
+      "id": "eaff1801",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1540,
+      "after_tokens": 338
+    },
+    {
+      "id": "9846834b",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1351,
+      "after_tokens": 497
+    },
+    {
+      "id": "ca7325ee",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1240,
+      "after_tokens": 411
+    },
+    {
+      "id": "177d60f2",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1448,
+      "after_tokens": 293
+    },
+    {
+      "id": "6b01cc50",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1077,
+      "after_tokens": 128
+    },
+    {
+      "id": "618c69cb",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 863,
+      "after_tokens": 16384
+    },
+    {
+      "id": "397d6282",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1176,
+      "after_tokens": 196
+    },
+    {
+      "id": "5a4be7fa",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1268,
+      "after_tokens": 368
+    },
+    {
+      "id": "7a895e9c",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 994,
+      "after_tokens": 381
+    },
+    {
+      "id": "c50cd56e",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1101,
+      "after_tokens": 275
+    },
+    {
+      "id": "ff039a4e",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1255,
+      "after_tokens": 446
+    },
+    {
+      "id": "58e63752",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1151,
+      "after_tokens": 340
+    },
+    {
+      "id": "4b9e883a",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1147,
+      "after_tokens": 201
+    },
+    {
+      "id": "1d9e08a8",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 990,
+      "after_tokens": 417
+    },
+    {
+      "id": "b7ebfc5a",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1399,
+      "after_tokens": 16384
+    },
+    {
+      "id": "7c30fc77",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1316,
+      "after_tokens": 259
+    },
+    {
+      "id": "02beaa05",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 917,
+      "after_tokens": 225
+    },
+    {
+      "id": "97d0bad8",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1188,
+      "after_tokens": 311
+    },
+    {
+      "id": "40ad5039",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1056,
+      "after_tokens": 148
+    },
+    {
+      "id": "b037cf33",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1506,
+      "after_tokens": 392
+    },
+    {
+      "id": "ce2df062",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 949,
+      "after_tokens": 393
+    },
+    {
+      "id": "06b3ee9d",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1729,
+      "after_tokens": 193
+    },
+    {
+      "id": "634ebedf",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 929,
+      "after_tokens": 1907
+    },
+    {
+      "id": "90e893ac",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 638,
+      "after_tokens": 363
+    },
+    {
+      "id": "b303bb5a",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1228,
+      "after_tokens": 611
+    },
+    {
+      "id": "2d1d1cea",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1289,
+      "after_tokens": 507
+    },
+    {
+      "id": "341252e5",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1422,
+      "after_tokens": 1585
+    },
+    {
+      "id": "f61f3d46",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 750,
+      "after_tokens": 349
+    },
+    {
+      "id": "cd42f555",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1210,
+      "after_tokens": 481
+    },
+    {
+      "id": "bfaa2811",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 911,
+      "after_tokens": 345
+    },
+    {
+      "id": "66df03f5",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1401,
+      "after_tokens": 16384
+    },
+    {
+      "id": "e2f56016",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1145,
+      "after_tokens": 239
+    },
+    {
+      "id": "f6eef71c",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 661,
+      "after_tokens": 304
+    },
+    {
+      "id": "9f380129",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1271,
+      "after_tokens": 335
+    },
+    {
+      "id": "8ec8d10c",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1185,
+      "after_tokens": 303
+    },
+    {
+      "id": "38d47621",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1316,
+      "after_tokens": 16384
+    },
+    {
+      "id": "ffe680c2",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1446,
+      "after_tokens": 16384
+    },
+    {
+      "id": "c2f263df",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1109,
+      "after_tokens": 583
+    },
+    {
+      "id": "3a1ae7b5",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 964,
+      "after_tokens": 16384
+    },
+    {
+      "id": "8ed96b4b",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 829,
+      "after_tokens": 202
+    },
+    {
+      "id": "0f17279e",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 923,
+      "after_tokens": 357
+    },
+    {
+      "id": "e62041e4",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 796,
+      "after_tokens": 501
+    },
+    {
+      "id": "e560f574",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1274,
+      "after_tokens": 232
+    },
+    {
+      "id": "d3f8c793",
+      "before_correct": true,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1427,
+      "after_tokens": 371
+    },
+    {
+      "id": "d29824cf",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1171,
+      "after_tokens": 16384
+    },
+    {
+      "id": "d26230fc",
+      "before_correct": false,
+      "after_correct": false,
+      "before_verified": false,
+      "after_verified": false,
+      "before_tokens": 1280,
+      "after_tokens": 217
+    }
+  ]
+}

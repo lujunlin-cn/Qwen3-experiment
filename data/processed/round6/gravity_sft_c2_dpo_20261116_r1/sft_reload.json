@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "max_logprob_delta": 0.0,
+  "adapter_sha256": "27bcd5e2082ed628c6be3a1a2819fb81681e12c492668c0ec388540249609b18",
+  "memory": {
+    "peak_allocated_bytes": 1224749568,
+    "peak_reserved_bytes": 1237319680,
+    "limit_bytes": 8000000000,
+    "scope": "own CUDA Torch allocator; UMA device-wide free memory not available"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "no_preference_signal",
+  "error": null,
+  "protected_files": 243,
+  "all_protected_unchanged": true,
+  "protected_mismatches": [],
+  "original_C_sha256": "7033241d41efb086762df20789ce2b70764bb3a5c524e29b8d8f846d3254e3f4",
+  "sft_training_completed": true,
+  "dpo_training_completed": false,
+  "locked_final_completed": false,
+  "hosted_api_calls": 0,
+  "time": 1794842678.1589365
+}

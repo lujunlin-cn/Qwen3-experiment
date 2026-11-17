@@ -1,0 +1,33 @@
+{
+  "files": {
+    ".autodl/gravity_sft_c2_dpo_20261116_r1/C2/adapter/README.md": {
+      "sha256": "a902c0961085aa798187f347a718700f3014076758afc676906a0ff5fcd5aa8b",
+      "bytes": 5288
+    },
+    ".autodl/gravity_sft_c2_dpo_20261116_r1/C2/adapter/adapter_config.json": {
+      "sha256": "ff35a793b0cd19ce366a254c63edce99cd1255fb71587affdb4c4ecadc784987",
+      "bytes": 1258
+    },
+    ".autodl/gravity_sft_c2_dpo_20261116_r1/C2/adapter/adapter_model.safetensors": {
+      "sha256": "27bcd5e2082ed628c6be3a1a2819fb81681e12c492668c0ec388540249609b18",
+      "bytes": 20236472
+    },
+    ".autodl/gravity_sft_c2_dpo_20261116_r1/C2/adapter/chat_template.jinja": {
+      "sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+      "bytes": 4168
+    },
+    ".autodl/gravity_sft_c2_dpo_20261116_r1/C2/adapter/tokenizer.json": {
+      "sha256": "be75606093db2094d7cd20f3c2f385c212750648bd6ea4fb2bf507a6a4c55506",
+      "bytes": 11422650
+    },
+    ".autodl/gravity_sft_c2_dpo_20261116_r1/C2/adapter/tokenizer_config.json": {
+      "sha256": "1cc816812993bff176eb4f7495433b736f06fba9b6e7b05cac7b4a1780650c95",
+      "bytes": 692
+    },
+    ".autodl/gravity_sft_c2_dpo_20261116_r1/C2/optimizer.pt": {
+      "sha256": "518758f50174462dbe2f847053488a89abe63fea414fa67556e05c835d5c0b4a",
+      "bytes": 40699707
+    }
+  },
+  "original_C_overwritten": false
+}

@@ -1,0 +1,26 @@
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+<frozen importlib._bootstrap>:488: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+test_all_mathematical_tokens_are_supervised (tests.test_gravity_sft_c2.GravityC2.test_all_mathematical_tokens_are_supervised) ... ok
+test_dpo_config_gate_and_original_preferences (tests.test_gravity_sft_c2.GravityC2.test_dpo_config_gate_and_original_preferences) ... ok
+test_dpo_loss_and_ppo_grpo_files_unchanged (tests.test_gravity_sft_c2.GravityC2.test_dpo_loss_and_ppo_grpo_files_unchanged) ... ok
+test_each_observation_and_numerical_ols_terms_shown (tests.test_gravity_sft_c2.GravityC2.test_each_observation_and_numerical_ols_terms_shown) ... ok
+test_every_rich_target_passes_unchanged_verifier (tests.test_gravity_sft_c2.GravityC2.test_every_rich_target_passes_unchanged_verifier) ... ok
+test_exactly_74_actual_train_inputs (tests.test_gravity_sft_c2.GravityC2.test_exactly_74_actual_train_inputs) ... ok
+test_final_box_matches_original_teacher (tests.test_gravity_sft_c2.GravityC2.test_final_box_matches_original_teacher) ... ok
+test_final_channel_contains_entire_proof (tests.test_gravity_sft_c2.GravityC2.test_final_channel_contains_entire_proof) ... ok
+test_independent_nl_verifier_functions_unchanged (tests.test_gravity_sft_c2.GravityC2.test_independent_nl_verifier_functions_unchanged) ... ok
+test_legacy_default_encoder_and_math_loss_unchanged (tests.test_gravity_sft_c2.GravityC2.test_legacy_default_encoder_and_math_loss_unchanged) ... ok
+test_no_truncation_fallback (tests.test_gravity_sft_c2.GravityC2.test_no_truncation_fallback) ... ok
+test_only_74_gravity_data_allowed_by_sft_wrapper (tests.test_gravity_sft_c2.GravityC2.test_only_74_gravity_data_allowed_by_sft_wrapper) ... ok
+test_renderer_is_deterministic_and_uses_no_hidden_rule (tests.test_gravity_sft_c2.GravityC2.test_renderer_is_deterministic_and_uses_no_hidden_rule) ... ok
+test_serializer_never_sends_reasoning_content (tests.test_gravity_sft_c2.GravityC2.test_serializer_never_sends_reasoning_content) ... ok
+test_thinking_cannot_rescue_final_only_answer (tests.test_gravity_sft_c2.GravityC2.test_thinking_cannot_rescue_final_only_answer) ... ok
+test_training_settings_match_existing_sft_c (tests.test_gravity_sft_c2.GravityC2.test_training_settings_match_existing_sft_c) ... ok
+test_wrong_fitted_g_rejected (tests.test_gravity_sft_c2.GravityC2.test_wrong_fitted_g_rejected) ... ok
+test_wrong_numeric_ols_sum_rejected (tests.test_gravity_sft_c2.GravityC2.test_wrong_numeric_ols_sum_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 2.717s
+
+OK
+<sys>:0: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

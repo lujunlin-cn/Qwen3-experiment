@@ -1,0 +1,5 @@
+{"stage": "sft_train", "exit_code": 0, "start": 1794832995.8949707, "end": 1794833114.82291, "mechanism": "blocking child completion; no metric polling"}
+{"stage": "sft_reload", "exit_code": 0, "start": 1794833114.8347929, "end": 1794833126.663602, "mechanism": "blocking child completion; no metric polling"}
+{"stage": "comparison", "exit_code": 0, "start": 1794833126.701105, "end": 1794838549.8841786, "mechanism": "blocking child completion; no metric polling"}
+{"stage": "rollout8", "exit_code": 0, "start": 1794838550.8670552, "end": 1794841691.0076144, "mechanism": "blocking child completion; no metric polling"}
+{"stage": "rollout4", "exit_code": 0, "start": 1794841691.600789, "end": 1794842677.3888788, "mechanism": "blocking child completion; no metric polling"}
