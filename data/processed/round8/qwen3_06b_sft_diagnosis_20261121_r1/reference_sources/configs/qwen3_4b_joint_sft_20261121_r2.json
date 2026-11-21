@@ -1,0 +1,90 @@
+{
+  "schema": "qwen3-4b-joint-sft/v1",
+  "run_id": "qwen3_4b_joint_sft_20261121_r2",
+  "base_model_id": "Qwen/Qwen3-4B-Thinking-2507",
+  "base_revision": "768f209d9ea81521153ed38c47d515654e938aea",
+  "seed": 20261121,
+  "tasks": ["numeral_system", "gravity", "equation_numeric"],
+  "teacher_pool": "data/processed/tasksets/roman_gravity_equation_v1/real_train_traces.jsonl",
+  "train_split": "data/processed/tasksets/roman_gravity_equation_v1/splits/train.csv",
+  "validation_panel": "data/processed/round4/equation_sft_augmentation_20261116_r2/augmentation_validation_panel.jsonl",
+  "teachers_per_task": 256,
+  "teacher_contract": "native_thinking_compact_full_trace_v1",
+  "method_roles": {
+    "sft": {
+      "primary_tasks": ["numeral_system", "gravity"],
+      "primary_objective": "official_correctness",
+      "equation_role": "build_initial_correctness_and_reduce_truncation_for_ppo_grpo_readiness"
+    },
+    "dpo": {
+      "task": "gravity",
+      "objective": "correct_complete_short_over_correct_complete_long"
+    },
+    "ppo": {
+      "task": "equation_numeric",
+      "objective": "official_correctness",
+      "initialization": "selected_sft_independent_arm"
+    },
+    "grpo": {
+      "task": "equation_numeric",
+      "objective": "official_correctness",
+      "initialization": "selected_sft_independent_arm"
+    }
+  },
+  "equation_teacher_policy": "exact_string_numeric24_v6",
+  "holdout_used": false,
+  "training": {
+    "mode": "bf16_lora",
+    "ranks": [8, 32],
+    "lora_alpha_multiplier": 2,
+    "lora_dropout": 0.0,
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+    "epochs": 1,
+    "learning_rate": 0.00002,
+    "weight_decay": 0.01,
+    "adam_epsilon": 1e-8,
+    "micro_batch_size": 1,
+    "gradient_accumulation": 8,
+    "max_grad_norm": 1.0,
+    "max_length": 4096,
+    "projection_chunk_size": 64,
+    "device_limit_bytes": 30000000000
+  },
+  "smoke": {
+    "rank": 32,
+    "longest_per_task": 8
+  },
+  "evaluation": {
+    "arms": ["base", "r8", "r32"],
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": -1,
+    "enable_thinking": true,
+    "caps": {
+      "numeral_system": 4096,
+      "gravity": 8192,
+      "equation_numeric": 16384
+    },
+    "batch_size": 4,
+    "max_model_len": 20480,
+    "max_num_seqs": 4,
+    "max_num_batched_tokens": 1024,
+    "kv_cache_gib": 6.0,
+    "gpu_memory_utilization": 0.85,
+    "enforce_eager": false,
+    "short_wrong_max_tokens": 512,
+    "repetition_window_tokens": 2048,
+    "repetition_ngram": 32
+  },
+  "rl_autostart": false,
+  "sft_selection": {
+    "roman_gravity_accuracy_not_below_base": true,
+    "roman_gravity_primary_macro_strictly_above_base": true,
+    "equation_min_correct_on_tune": 5,
+    "equation_accuracy_not_below_base": true,
+    "equation_max_truncation_rate": 0.10,
+    "dpo_minimum_preference_pairs": 16,
+    "grpo_minimum_effective_group_ratio": 0.25,
+    "ppo_minimum_nonzero_reward_rollouts": 1
+  }
+}

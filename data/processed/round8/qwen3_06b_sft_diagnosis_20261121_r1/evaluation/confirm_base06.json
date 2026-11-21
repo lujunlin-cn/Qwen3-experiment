@@ -1,0 +1,36 @@
+{
+  "numeral_system": {
+    "n": 40,
+    "correct": 14,
+    "accuracy": 0.35,
+    "final_only_correct": 14,
+    "teacher_opening": 0,
+    "truncated": 19,
+    "strict_proof": null,
+    "mean_tokens": 2829.9,
+    "correct_mean_tokens": 1703.7857142857142
+  },
+  "gravity": {
+    "n": 40,
+    "correct": 25,
+    "accuracy": 0.625,
+    "final_only_correct": 25,
+    "teacher_opening": 0,
+    "truncated": 14,
+    "strict_proof": 0,
+    "mean_tokens": 6867.325,
+    "correct_mean_tokens": 6210.52
+  },
+  "equation_numeric": {
+    "n": 40,
+    "correct": 1,
+    "accuracy": 0.025,
+    "final_only_correct": 1,
+    "teacher_opening": 0,
+    "truncated": 38,
+    "strict_proof": null,
+    "mean_tokens": 15863.7,
+    "correct_mean_tokens": 3358
+  },
+  "macro": 0.3333333333333333
+}

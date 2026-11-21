@@ -1,0 +1,7 @@
+{
+  "previous_pid": 68956,
+  "reason": "per-task queue drained before submitting other tasks and LoRAs",
+  "strategy": "continuous batching (32 sequences, 4 active adapters), 20 GiB KV, CUDA graphs",
+  "same_checkpoints_prompt_caps_and_sampling": true,
+  "rerun_all_primary_arms_consistently": true
+}

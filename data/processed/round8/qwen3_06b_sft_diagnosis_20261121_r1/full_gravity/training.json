@@ -1,0 +1,74 @@
+{
+  "status": "completed",
+  "optimizer_steps": 96,
+  "supervised_tokens": 303861,
+  "records": 768,
+  "epochs": 1,
+  "training_seconds": 278.6613455694169,
+  "checkpoints": [
+    {
+      "step": 4,
+      "sha256": "a4a3f7a555c5f402022e7e1a57054b1c1710ccaac6e0309da92658194f86ac00",
+      "path": "/root/autodl-tmp/Qwen3-experiment-4b-20261121/.autodl/qwen3_06b_sft_diagnosis_20261121_r1/full_gravity/step4",
+      "probe": [
+        [
+          -12.590503692626953,
+          -5.436354637145996,
+          -4.906036376953125
+        ]
+      ]
+    },
+    {
+      "step": 12,
+      "sha256": "94cbbfab9996ceecf1cdc137840275a931c8799d18d1683953c94e86620cba67",
+      "path": "/root/autodl-tmp/Qwen3-experiment-4b-20261121/.autodl/qwen3_06b_sft_diagnosis_20261121_r1/full_gravity/step12",
+      "probe": [
+        [
+          -12.46347713470459,
+          -5.383077144622803,
+          -4.968001365661621
+        ]
+      ]
+    },
+    {
+      "step": 24,
+      "sha256": "153200f08900875eaeebcdc816286ce58f074271995161480761b5944d09a804",
+      "path": "/root/autodl-tmp/Qwen3-experiment-4b-20261121/.autodl/qwen3_06b_sft_diagnosis_20261121_r1/full_gravity/step24",
+      "probe": [
+        [
+          -12.619165420532227,
+          -5.4028167724609375,
+          -4.937750816345215
+        ]
+      ]
+    },
+    {
+      "step": 48,
+      "sha256": "f4342455c1bab2d849caa4fd0f00911519736f90a4fd5bb263482bc2c31b8b4d",
+      "path": "/root/autodl-tmp/Qwen3-experiment-4b-20261121/.autodl/qwen3_06b_sft_diagnosis_20261121_r1/full_gravity/step48",
+      "probe": [
+        [
+          -12.921238899230957,
+          -5.424775123596191,
+          -4.870720386505127
+        ]
+      ]
+    },
+    {
+      "step": 96,
+      "sha256": "0497b856ac5cb56dba339fc94cfec7fbfd455b73468941847c19f223a5bf540c",
+      "path": "/root/autodl-tmp/Qwen3-experiment-4b-20261121/.autodl/qwen3_06b_sft_diagnosis_20261121_r1/full_gravity/step96",
+      "probe": [
+        [
+          -13.048463821411133,
+          -5.407284259796143,
+          -4.800954818725586
+        ]
+      ]
+    }
+  ],
+  "rank": 8,
+  "alpha": 16,
+  "learning_rate": 2e-05,
+  "peak_reserved_bytes": 2990538752
+}

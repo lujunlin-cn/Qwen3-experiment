@@ -1,0 +1,331 @@
+{
+  "status": "passed",
+  "panel_sizes": {
+    "screen": 30,
+    "confirm": 120
+  },
+  "output_counts": {
+    "screen": 360,
+    "confirm": 480
+  },
+  "comparisons": {
+    "base06": {
+      "macro_delta_vs_4b": {
+        "n": 120,
+        "mean_after_minus_before": -0.425,
+        "bootstrap95": [
+          -0.525,
+          -0.31666666666666665
+        ],
+        "sign_flip_pvalue": 9.999000099990002e-05,
+        "draws": 10000,
+        "seed": 42,
+        "note": "Exploratory with small n; sign-flip requires exchangeability/symmetry under null."
+      },
+      "gravity_fails": {
+        "final_not_unique_numeric_boxed_answer": 26,
+        "official_final_answer_incorrect": 2,
+        "final_answer_not_rounded_public_ols": 15,
+        "thinking:missing_or_multiple_numeric_boxed_answer": 25,
+        "thinking:official_final_answer_incorrect": 1,
+        "thinking:final_answer_not_rounded_public_ols": 15,
+        "thinking:all_example_ols_fit_not_demonstrated": 26,
+        "thinking:query_time_missing_or_incorrect": 26,
+        "thinking:unrounded_query_distance_missing_or_inaccurate": 25,
+        "thinking:incorrect_intermediate_arithmetic": 23,
+        "thinking:incorrect_numeric_equality_in_prose": 26,
+        "thinking:incorrect_symbolic_arithmetic": 24,
+        "thinking:unsupported_arithmetic": 26,
+        "boxed_answer_inside_thinking": 25,
+        "all_observation_terms_missing_or_inaccurate": 26,
+        "weighted_data_sum_missing_or_inaccurate": 26,
+        "fourth_power_sum_missing_or_inaccurate": 26,
+        "numeric_ols_substitution_missing_or_inaccurate": 26,
+        "query_distance_substitution_missing_or_inaccurate": 24,
+        "incorrect_or_unsupported_numeric_arithmetic": 25,
+        "thinking:altered_public_observation_in_proof": 15,
+        "thinking:incorrect_reported_g_value": 19,
+        "thinking:incorrect_or_unverifiable_optional_indexed_g": 1,
+        "thinking:fitted_g_missing_or_inaccurate": 8,
+        "not_complete_stop": 14,
+        "missing_or_multiple_thinking_boundaries": 14,
+        "thinking:incorrect_query_substitution": 1
+      },
+      "confirmed_metrics": {
+        "numeral_system": {
+          "n": 40,
+          "correct": 14,
+          "accuracy": 0.35,
+          "final_only_correct": 14,
+          "teacher_opening": 0,
+          "truncated": 19,
+          "strict_proof": null,
+          "mean_tokens": 2829.9,
+          "correct_mean_tokens": 1703.7857142857142
+        },
+        "gravity": {
+          "n": 40,
+          "correct": 25,
+          "accuracy": 0.625,
+          "final_only_correct": 25,
+          "teacher_opening": 0,
+          "truncated": 14,
+          "strict_proof": 0,
+          "mean_tokens": 6867.325,
+          "correct_mean_tokens": 6210.52
+        },
+        "equation_numeric": {
+          "n": 40,
+          "correct": 1,
+          "accuracy": 0.025,
+          "final_only_correct": 1,
+          "teacher_opening": 0,
+          "truncated": 38,
+          "strict_proof": null,
+          "mean_tokens": 15863.7,
+          "correct_mean_tokens": 3358
+        },
+        "macro": 0.3333333333333333
+      }
+    },
+    "historical_r1": {
+      "macro_delta_vs_4b": {
+        "n": 120,
+        "mean_after_minus_before": -0.36666666666666664,
+        "bootstrap95": [
+          -0.475,
+          -0.25833333333333336
+        ],
+        "sign_flip_pvalue": 9.999000099990002e-05,
+        "draws": 10000,
+        "seed": 42,
+        "note": "Exploratory with small n; sign-flip requires exchangeability/symmetry under null."
+      },
+      "gravity_fails": {
+        "final_not_unique_numeric_boxed_answer": 31,
+        "final_answer_not_rounded_public_ols": 23,
+        "thinking:missing_or_multiple_numeric_boxed_answer": 30,
+        "thinking:final_answer_not_rounded_public_ols": 23,
+        "thinking:altered_public_observation_in_proof": 19,
+        "thinking:all_example_ols_fit_not_demonstrated": 31,
+        "thinking:fitted_g_missing_or_inaccurate": 16,
+        "thinking:incorrect_reported_g_value": 27,
+        "thinking:query_time_missing_or_incorrect": 24,
+        "thinking:unrounded_query_distance_missing_or_inaccurate": 31,
+        "thinking:incorrect_intermediate_arithmetic": 30,
+        "thinking:incorrect_numeric_equality_in_prose": 31,
+        "thinking:incorrect_symbolic_arithmetic": 24,
+        "thinking:unsupported_arithmetic": 31,
+        "boxed_answer_inside_thinking": 30,
+        "all_observation_terms_missing_or_inaccurate": 31,
+        "weighted_data_sum_missing_or_inaccurate": 31,
+        "fourth_power_sum_missing_or_inaccurate": 31,
+        "numeric_ols_substitution_missing_or_inaccurate": 31,
+        "query_distance_substitution_missing_or_inaccurate": 29,
+        "incorrect_or_unsupported_numeric_arithmetic": 29,
+        "thinking:incorrect_query_substitution": 3,
+        "not_complete_stop": 10,
+        "missing_or_multiple_thinking_boundaries": 9,
+        "official_final_answer_incorrect": 4,
+        "thinking:official_final_answer_incorrect": 1,
+        "thinking:incorrect_additional_physical_relation": 1,
+        "thinking:incorrect_or_unverifiable_optional_indexed_g": 7,
+        "thinking:not_complete_stop": 1
+      },
+      "confirmed_metrics": {
+        "numeral_system": {
+          "n": 40,
+          "correct": 16,
+          "accuracy": 0.4,
+          "final_only_correct": 16,
+          "teacher_opening": 0,
+          "truncated": 18,
+          "strict_proof": null,
+          "mean_tokens": 2797.4,
+          "correct_mean_tokens": 1679.6875
+        },
+        "gravity": {
+          "n": 40,
+          "correct": 29,
+          "accuracy": 0.725,
+          "final_only_correct": 29,
+          "teacher_opening": 0,
+          "truncated": 10,
+          "strict_proof": 0,
+          "mean_tokens": 6621.325,
+          "correct_mean_tokens": 6136.137931034483
+        },
+        "equation_numeric": {
+          "n": 40,
+          "correct": 2,
+          "accuracy": 0.05,
+          "final_only_correct": 2,
+          "teacher_opening": 0,
+          "truncated": 34,
+          "strict_proof": null,
+          "mean_tokens": 14888.175,
+          "correct_mean_tokens": 6646.5
+        },
+        "macro": 0.39166666666666666
+      }
+    },
+    "compact_012": {
+      "macro_delta_vs_4b": {
+        "n": 120,
+        "mean_after_minus_before": -0.425,
+        "bootstrap95": [
+          -0.525,
+          -0.31666666666666665
+        ],
+        "sign_flip_pvalue": 9.999000099990002e-05,
+        "draws": 10000,
+        "seed": 42,
+        "note": "Exploratory with small n; sign-flip requires exchangeability/symmetry under null."
+      },
+      "gravity_fails": {
+        "not_complete_stop": 13,
+        "missing_or_multiple_thinking_boundaries": 13,
+        "final_not_unique_numeric_boxed_answer": 27,
+        "thinking:missing_or_multiple_numeric_boxed_answer": 27,
+        "thinking:all_example_ols_fit_not_demonstrated": 27,
+        "thinking:incorrect_reported_g_value": 21,
+        "thinking:query_time_missing_or_incorrect": 27,
+        "thinking:unrounded_query_distance_missing_or_inaccurate": 27,
+        "thinking:incorrect_intermediate_arithmetic": 27,
+        "thinking:incorrect_numeric_equality_in_prose": 27,
+        "thinking:incorrect_symbolic_arithmetic": 26,
+        "thinking:unsupported_arithmetic": 27,
+        "boxed_answer_inside_thinking": 27,
+        "all_observation_terms_missing_or_inaccurate": 27,
+        "weighted_data_sum_missing_or_inaccurate": 27,
+        "fourth_power_sum_missing_or_inaccurate": 27,
+        "numeric_ols_substitution_missing_or_inaccurate": 27,
+        "query_distance_substitution_missing_or_inaccurate": 24,
+        "incorrect_or_unsupported_numeric_arithmetic": 25,
+        "final_answer_not_rounded_public_ols": 16,
+        "thinking:final_answer_not_rounded_public_ols": 16,
+        "thinking:fitted_g_missing_or_inaccurate": 9,
+        "thinking:altered_public_observation_in_proof": 13,
+        "thinking:incorrect_query_substitution": 4,
+        "thinking:incorrect_additional_physical_relation": 1
+      },
+      "confirmed_metrics": {
+        "numeral_system": {
+          "n": 40,
+          "correct": 13,
+          "accuracy": 0.325,
+          "final_only_correct": 13,
+          "teacher_opening": 0,
+          "truncated": 20,
+          "strict_proof": null,
+          "mean_tokens": 3006.85,
+          "correct_mean_tokens": 1740.8461538461538
+        },
+        "gravity": {
+          "n": 40,
+          "correct": 27,
+          "accuracy": 0.675,
+          "final_only_correct": 27,
+          "teacher_opening": 0,
+          "truncated": 13,
+          "strict_proof": 0,
+          "mean_tokens": 6889.375,
+          "correct_mean_tokens": 6262.185185185185
+        },
+        "equation_numeric": {
+          "n": 40,
+          "correct": 0,
+          "accuracy": 0.0,
+          "final_only_correct": 0,
+          "teacher_opening": 0,
+          "truncated": 37,
+          "strict_proof": null,
+          "mean_tokens": 15491.225,
+          "correct_mean_tokens": null
+        },
+        "macro": 0.33333333333333337
+      }
+    },
+    "full_gravity_024": {
+      "macro_delta_vs_4b": {
+        "n": 120,
+        "mean_after_minus_before": -0.4083333333333333,
+        "bootstrap95": [
+          -0.5166666666666667,
+          -0.2916666666666667
+        ],
+        "sign_flip_pvalue": 9.999000099990002e-05,
+        "draws": 10000,
+        "seed": 42,
+        "note": "Exploratory with small n; sign-flip requires exchangeability/symmetry under null."
+      },
+      "gravity_fails": {
+        "final_not_unique_numeric_boxed_answer": 32,
+        "final_answer_not_rounded_public_ols": 20,
+        "thinking:missing_or_multiple_numeric_boxed_answer": 30,
+        "thinking:final_answer_not_rounded_public_ols": 20,
+        "thinking:altered_public_observation_in_proof": 24,
+        "thinking:all_example_ols_fit_not_demonstrated": 32,
+        "thinking:fitted_g_missing_or_inaccurate": 19,
+        "thinking:incorrect_reported_g_value": 25,
+        "thinking:unrounded_query_distance_missing_or_inaccurate": 32,
+        "thinking:incorrect_intermediate_arithmetic": 30,
+        "thinking:incorrect_numeric_equality_in_prose": 32,
+        "thinking:incorrect_symbolic_arithmetic": 29,
+        "thinking:unsupported_arithmetic": 31,
+        "boxed_answer_inside_thinking": 32,
+        "all_observation_terms_missing_or_inaccurate": 32,
+        "weighted_data_sum_missing_or_inaccurate": 32,
+        "fourth_power_sum_missing_or_inaccurate": 32,
+        "numeric_ols_substitution_missing_or_inaccurate": 32,
+        "query_distance_substitution_missing_or_inaccurate": 29,
+        "incorrect_or_unsupported_numeric_arithmetic": 32,
+        "thinking:query_time_missing_or_incorrect": 30,
+        "thinking:incorrect_query_substitution": 5,
+        "official_final_answer_incorrect": 4,
+        "thinking:incorrect_additional_physical_relation": 1,
+        "thinking:incorrect_or_unverifiable_optional_indexed_g": 5,
+        "not_complete_stop": 10,
+        "thinking:not_complete_stop": 2,
+        "missing_or_multiple_thinking_boundaries": 8,
+        "thinking:unsupported_math_syntax": 1
+      },
+      "confirmed_metrics": {
+        "numeral_system": {
+          "n": 40,
+          "correct": 10,
+          "accuracy": 0.25,
+          "final_only_correct": 10,
+          "teacher_opening": 0,
+          "truncated": 23,
+          "strict_proof": null,
+          "mean_tokens": 3165,
+          "correct_mean_tokens": 1700.9
+        },
+        "gravity": {
+          "n": 40,
+          "correct": 30,
+          "accuracy": 0.75,
+          "final_only_correct": 30,
+          "teacher_opening": 0,
+          "truncated": 10,
+          "strict_proof": 0,
+          "mean_tokens": 6513.25,
+          "correct_mean_tokens": 5953.666666666667
+        },
+        "equation_numeric": {
+          "n": 40,
+          "correct": 2,
+          "accuracy": 0.05,
+          "final_only_correct": 2,
+          "teacher_opening": 0,
+          "truncated": 36,
+          "strict_proof": null,
+          "mean_tokens": 15488.45,
+          "correct_mean_tokens": 9143
+        },
+        "macro": 0.35
+      }
+    }
+  }
+}

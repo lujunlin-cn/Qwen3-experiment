@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "matched_train_ids": 768,
+  "evaluation_normalized_prompt_overlaps": 0,
+  "train_split_sha256": "39f636ee4597f2851a69c959c1d078636eb1c10cc4823e36760152b488acdea7",
+  "teacher_counts": {
+    "numeral_system": 256,
+    "gravity": 256,
+    "equation_numeric": 256
+  },
+  "changes": {
+    "other_teacher_unchanged": 512,
+    "changed_gravity_render": 256
+  },
+  "heldout_read": false
+}

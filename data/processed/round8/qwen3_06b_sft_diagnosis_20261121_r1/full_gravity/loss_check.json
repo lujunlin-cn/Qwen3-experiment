@@ -1,0 +1,20 @@
+[
+  {
+    "task_type": "numeral_system",
+    "n": 96,
+    "chunked": 1.9794400930404663,
+    "dense": 1.9794400930404663
+  },
+  {
+    "task_type": "gravity",
+    "n": 714,
+    "chunked": 1.1697436571121216,
+    "dense": 1.169743537902832
+  },
+  {
+    "task_type": "equation_numeric",
+    "n": 347,
+    "chunked": 2.4981582164764404,
+    "dense": 2.4981584548950195
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "stage": "evaluate",
+  "status": "failed",
+  "pid": 68194,
+  "log": "data/processed/round8/qwen3_06b_sft_diagnosis_20261121_r1/gpu_chain.log",
+  "mechanism": "pidfd exit event"
+}

@@ -1,0 +1,7 @@
+{
+  "reason": "first arm still incomplete after >8 minutes; vLLM log confirms compilation level 0 disabled CUDA graphs",
+  "owned_pid": 68194,
+  "training_unchanged": true,
+  "same_panel_and_decode": true,
+  "action": "archive incomplete eager output and rerun evaluation with graph capture and 16 GiB cache"
+}

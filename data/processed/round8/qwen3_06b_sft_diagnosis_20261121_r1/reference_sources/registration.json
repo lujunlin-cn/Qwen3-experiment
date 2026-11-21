@@ -1,0 +1,134 @@
+{
+  "status": "registered_before_training",
+  "created_unix": 1795234766.2729304,
+  "config": {
+    "schema": "qwen3-4b-joint-sft/v1",
+    "run_id": "qwen3_4b_joint_sft_20261121_r2",
+    "base_model_id": "Qwen/Qwen3-4B-Thinking-2507",
+    "base_revision": "768f209d9ea81521153ed38c47d515654e938aea",
+    "seed": 20261121,
+    "tasks": [
+      "numeral_system",
+      "gravity",
+      "equation_numeric"
+    ],
+    "teacher_pool": "data/processed/tasksets/roman_gravity_equation_v1/real_train_traces.jsonl",
+    "train_split": "data/processed/tasksets/roman_gravity_equation_v1/splits/train.csv",
+    "validation_panel": "data/processed/round4/equation_sft_augmentation_20261116_r2/augmentation_validation_panel.jsonl",
+    "teachers_per_task": 256,
+    "teacher_contract": "native_thinking_compact_full_trace_v1",
+    "method_roles": {
+      "sft": {
+        "primary_tasks": [
+          "numeral_system",
+          "gravity"
+        ],
+        "primary_objective": "official_correctness",
+        "equation_role": "build_initial_correctness_and_reduce_truncation_for_ppo_grpo_readiness"
+      },
+      "dpo": {
+        "task": "gravity",
+        "objective": "correct_complete_short_over_correct_complete_long"
+      },
+      "ppo": {
+        "task": "equation_numeric",
+        "objective": "official_correctness",
+        "initialization": "selected_sft_independent_arm"
+      },
+      "grpo": {
+        "task": "equation_numeric",
+        "objective": "official_correctness",
+        "initialization": "selected_sft_independent_arm"
+      }
+    },
+    "equation_teacher_policy": "exact_string_numeric24_v6",
+    "holdout_used": false,
+    "training": {
+      "mode": "bf16_lora",
+      "ranks": [
+        8,
+        32
+      ],
+      "lora_alpha_multiplier": 2,
+      "lora_dropout": 0.0,
+      "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj"
+      ],
+      "epochs": 1,
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "adam_epsilon": 1e-08,
+      "micro_batch_size": 1,
+      "gradient_accumulation": 8,
+      "max_grad_norm": 1.0,
+      "max_length": 4096,
+      "projection_chunk_size": 64,
+      "device_limit_bytes": 30000000000
+    },
+    "smoke": {
+      "rank": 32,
+      "longest_per_task": 8
+    },
+    "evaluation": {
+      "arms": [
+        "base",
+        "r8",
+        "r32"
+      ],
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": -1,
+      "enable_thinking": true,
+      "caps": {
+        "numeral_system": 4096,
+        "gravity": 8192,
+        "equation_numeric": 16384
+      },
+      "batch_size": 4,
+      "max_model_len": 20480,
+      "max_num_seqs": 4,
+      "max_num_batched_tokens": 1024,
+      "kv_cache_gib": 6.0,
+      "gpu_memory_utilization": 0.85,
+      "enforce_eager": false,
+      "short_wrong_max_tokens": 512,
+      "repetition_window_tokens": 2048,
+      "repetition_ngram": 32
+    },
+    "rl_autostart": false,
+    "sft_selection": {
+      "roman_gravity_accuracy_not_below_base": true,
+      "roman_gravity_primary_macro_strictly_above_base": true,
+      "equation_min_correct_on_tune": 5,
+      "equation_accuracy_not_below_base": true,
+      "equation_max_truncation_rate": 0.1,
+      "dpo_minimum_preference_pairs": 16,
+      "grpo_minimum_effective_group_ratio": 0.25,
+      "ppo_minimum_nonzero_reward_rollouts": 1
+    }
+  },
+  "config_sha256": "c0daa9faea62a606effb986a58cb2b16c8bbeac3ecdfea0d5704714dc7338222",
+  "base_path": "/root/autodl-tmp/huggingface/models/Qwen3-4B-Thinking-2507",
+  "base_manifest_sha256": "62a7187002c6f95c4d6efc187cad3337336676ab28331e396cec43dd59197e95",
+  "source_sha256": {
+    "01_Synthetic_Data_Engineering.ipynb": "565f1f5f4662190c93d3da21a10b76b1d15a588bb999426707829ad83dbe5f6a",
+    "03_SFT.ipynb": "0f5e83e852e4ec4b5cd9219df8b1f9c8ff689bc0c10726a94661d8cbca945a51",
+    "utils/run_qwen3_4b_joint_sft.py": "d265815ae753b4d6041b2f11976f4a3296ec7e7ce4e335f664988c8b2d64b877",
+    "utils/run_nvidia_final_synthetic.py": "ec6f0e9340c63abe91f884bbc79d150054b3a840437ac86b508d5a24516cc83c",
+    "utils/run_nvidia_v2.py": "491f0f1c746580b181ed3bbfe54d54138497529ce685fed319c97d8d74696bb1",
+    "utils/low_memory_logprobs.py": "eb51145e7bf6ccb27d26484499e3a5bbf34ed2d9298f193f85dfad751789f619",
+    "utils/benchmark_training.py": "4155aca95e3eb08ea1e645ac74a265dbc970df2f3df2053ceb04a953c9835e29",
+    "configs/qwen3_4b_joint_sft_20261121_r2.json": "c0daa9faea62a606effb986a58cb2b16c8bbeac3ecdfea0d5704714dc7338222"
+  },
+  "teachers_sha256": "e2733510854817ca40aef8d06dcdb5d85e4ce15d5118ad4813f4cb4d9ec05608",
+  "panel_sha256": "9b756cf0a8c636f728dae5bd9c66270a61a43a4026401542f029b962145f6819",
+  "selection_policy": "fixed Train-only RNG before validation outcomes; no Holdout access",
+  "rank_comparison": "r8 versus r32; identical data, order, epochs, LR and supervised token budget",
+  "rl_autostart": false
+}

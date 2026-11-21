@@ -1,0 +1,78 @@
+INFO 11-21 16:18:04 [__init__.py:216] Automatically detected platform cuda.
+INFO 11-21 16:18:08 [arg_utils.py:504] HF_HUB_OFFLINE is True, replace model_id [/root/autodl-tmp/huggingface/models/Qwen3-0.6B] to model_path [/root/autodl-tmp/huggingface/models/Qwen3-0.6B]
+INFO 11-21 16:18:08 [arg_utils.py:504] HF_HUB_OFFLINE is True, replace model_id [/root/autodl-tmp/huggingface/models/Qwen3-0.6B] to model_path [/root/autodl-tmp/huggingface/models/Qwen3-0.6B]
+INFO 11-21 16:18:08 [utils.py:233] non-default args: {'tokenizer': '/root/autodl-tmp/huggingface/models/Qwen3-0.6B', 'dtype': 'bfloat16', 'max_model_len': 20480, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.75, 'kv_cache_memory_bytes': 21474836480, 'max_num_batched_tokens': 4096, 'max_num_seqs': 32, 'disable_log_stats': True, 'enable_lora': True, 'max_loras': 4, 'max_lora_rank': 8, 'max_cpu_loras': 12, 'compilation_config': {"level":null,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":null,"use_inductor":true,"compile_sizes":null,"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":null,"use_cudagraph":true,"cudagraph_num_of_warmups":0,"cudagraph_capture_sizes":[1,2,4,8,16,24,32],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"use_inductor_graph_partition":false,"pass_config":{},"max_capture_size":null,"local_cache_dir":null}, 'generation_config': 'vllm', 'model': '/root/autodl-tmp/huggingface/models/Qwen3-0.6B'}
+WARNING 11-21 16:18:08 [model.py:371] The global random seed is set to 0. Since VLLM_ENABLE_V1_MULTIPROCESSING is set to False, this may affect the random state of the Python process that launched vLLM.
+INFO 11-21 16:18:08 [model.py:547] Resolved architecture: Qwen3ForCausalLM
+`torch_dtype` is deprecated! Use `dtype` instead!
+INFO 11-21 16:18:08 [model.py:1510] Using max model len 20480
+INFO 11-21 16:18:10 [scheduler.py:205] Chunked prefill is enabled with max_num_batched_tokens=4096.
+WARNING 11-21 16:18:10 [lora.py:92] `lora_extra_vocab_size` is deprecated and will be removed in v0.12.0. Additional vocabulary support for LoRA adapters is being phased out.
+INFO 11-21 16:18:11 [core.py:77] Initializing a V1 LLM engine (v0.11.0) with config: model='/root/autodl-tmp/huggingface/models/Qwen3-0.6B', speculative_config=None, tokenizer='/root/autodl-tmp/huggingface/models/Qwen3-0.6B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=20480, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser=''), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None), seed=0, served_model_name=/root/autodl-tmp/huggingface/models/Qwen3-0.6B, enable_prefix_caching=False, chunked_prefill_enabled=True, pooler_config=None, compilation_config={"level":3,"debug_dump_path":"","cache_dir":"","backend":"","custom_ops":[],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output","vllm.mamba_mixer2","vllm.mamba_mixer","vllm.short_conv","vllm.linear_attention","vllm.plamo2_mamba_mixer","vllm.gdn_attention","vllm.sparse_attn_indexer"],"use_inductor":true,"compile_sizes":[],"inductor_compile_config":{"enable_auto_functionalized_v2":false},"inductor_passes":{},"cudagraph_mode":[2,1],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[32,24,16,8,4,2,1],"cudagraph_copy_inputs":false,"full_cuda_graph":false,"use_inductor_graph_partition":false,"pass_config":{},"max_capture_size":32,"local_cache_dir":null}
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+INFO 11-21 16:18:14 [parallel_state.py:1208] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0, EP rank 0
+WARNING 11-21 16:18:14 [topk_topp_sampler.py:66] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 11-21 16:18:14 [gpu_model_runner.py:2602] Starting to load model /root/autodl-tmp/huggingface/models/Qwen3-0.6B...
+INFO 11-21 16:18:15 [gpu_model_runner.py:2634] Loading model from scratch...
+INFO 11-21 16:18:15 [cuda.py:366] Using Flash Attention backend on V1 engine.
+Loading safetensors checkpoint shards:   0% Completed | 0/1 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  4.97it/s]
+Loading safetensors checkpoint shards: 100% Completed | 1/1 [00:00<00:00,  4.96it/s]
+
+INFO 11-21 16:18:15 [default_loader.py:267] Loading weights took 0.22 seconds
+INFO 11-21 16:18:15 [punica_selector.py:19] Using PunicaWrapperGPU.
+INFO 11-21 16:18:16 [gpu_model_runner.py:2653] Model loading took 1.1579 GiB and 0.432394 seconds
+INFO 11-21 16:18:25 [backends.py:548] Using cache directory: /root/.cache/vllm/torch_compile_cache/6ba2b4dd1f/rank_0_0/backbone for vLLM's torch.compile
+INFO 11-21 16:18:25 [backends.py:559] Dynamo bytecode transform time: 8.94 s
+INFO 11-21 16:18:31 [backends.py:164] Directly load the compiled graph(s) for dynamic shape from the cache, took 5.072 s
+INFO 11-21 16:18:33 [monitor.py:34] torch.compile takes 8.94 s in total
+INFO 11-21 16:18:33 [gpu_worker.py:251] Initial free memory 31.18524169921875 GiB, reserved 20.00GiB memory for KV Cache as specified by kv_cache_memory_bytes config and skipped memory profiling. This does does not respect the gpu_memory_utilization config. Only use kv_cache_memory_bytes config when you want manual control of KV cache memory size. If OOM'ed, check the difference of initial free memory between the current run and the previous run where kv_cache_memory_bytes is suggested and update it correspondingly.
+INFO 11-21 16:18:33 [kv_cache_utils.py:1087] GPU KV cache size: 187,232 tokens
+INFO 11-21 16:18:33 [kv_cache_utils.py:1091] Maximum concurrency for 20,480 tokens per request: 9.14x
+Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/7 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  14%|█▍        | 1/7 [00:00<00:01,  5.55it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  29%|██▊       | 2/7 [00:00<00:00,  7.36it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  57%|█████▋    | 4/7 [00:00<00:00,  9.33it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  86%|████████▌ | 6/7 [00:00<00:00, 10.03it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 7/7 [00:00<00:00,  9.37it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 7/7 [00:00<00:00,  9.03it/s]
+Capturing CUDA graphs (decode, FULL):   0%|          | 0/7 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):  14%|█▍        | 1/7 [00:00<00:00,  6.08it/s]Capturing CUDA graphs (decode, FULL):  43%|████▎     | 3/7 [00:00<00:00,  8.96it/s]Capturing CUDA graphs (decode, FULL):  71%|███████▏  | 5/7 [00:00<00:00,  9.72it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 7/7 [00:00<00:00, 10.16it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 7/7 [00:00<00:00,  9.66it/s]
+INFO 11-21 16:18:35 [gpu_model_runner.py:3480] Graph capturing finished in 2 secs, took -0.15 GiB
+INFO 11-21 16:18:35 [core.py:210] init engine (profile, create kv cache, warmup model) took 19.68 seconds
+INFO 11-21 16:18:36 [llm.py:306] Supported_tasks: ('generate',)
+WARNING 11-21 16:18:36 [processor.py:215] vLLM has deprecated support for supporting different tokenizers for different LoRAs. By default, vLLM uses base model's tokenizer. If you are using a LoRA with its own tokenizer, consider specifying `--tokenizer [lora_path]` to use the LoRA tokenizer.
+screen generated 25 new responses in 189.9s
+screen generated 50 new responses in 556.5s
+screen generated 75 new responses in 808.4s
+screen generated 100 new responses in 1157.4s
+screen generated 125 new responses in 1550.3s
+screen generated 150 new responses in 1953.5s
+screen generated 175 new responses in 2053.6s
+screen generated 200 new responses in 2071.3s
+screen generated 225 new responses in 2366.5s
+screen generated 250 new responses in 2771.9s
+screen generated 275 new responses in 3145.2s
+screen generated 300 new responses in 3329.5s
+screen generated 325 new responses in 3380.2s
+screen generated 350 new responses in 3513.6s
+screen group: 12 arms, 360 responses in 3559.8s
+confirm generated 25 new responses in 243.7s
+confirm generated 50 new responses in 571.0s
+confirm generated 75 new responses in 956.5s
+confirm generated 100 new responses in 1323.0s
+confirm generated 125 new responses in 1718.7s
+confirm generated 150 new responses in 2011.7s
+confirm generated 175 new responses in 2361.1s
+confirm generated 200 new responses in 2709.1s
+confirm generated 225 new responses in 3068.0s
+confirm generated 250 new responses in 3465.2s
+confirm generated 275 new responses in 3809.3s
+confirm generated 300 new responses in 4203.7s
+confirm generated 325 new responses in 4591.1s
+confirm generated 350 new responses in 4922.3s
+confirm generated 375 new responses in 5320.7s
+confirm generated 400 new responses in 5678.2s
+confirm generated 425 new responses in 6042.8s
+confirm generated 450 new responses in 6462.2s
+confirm generated 475 new responses in 6796.4s
+confirm group: 4 arms, 480 responses in 6901.5s
+[rank0]:[W1121 19:13:03.363976041 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())

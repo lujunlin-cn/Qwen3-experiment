@@ -1,0 +1,441 @@
+{
+  "screen": {
+    "base06": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 1,
+        "accuracy": 0.1,
+        "final_only_correct": 1,
+        "teacher_opening": 0,
+        "truncated": 6,
+        "strict_proof": null,
+        "mean_tokens": 3377.1,
+        "correct_mean_tokens": 840
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 6,
+        "accuracy": 0.6,
+        "final_only_correct": 6,
+        "teacher_opening": 0,
+        "truncated": 4,
+        "strict_proof": 0,
+        "mean_tokens": 6854.2,
+        "correct_mean_tokens": 5962.333333333333
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 0,
+        "truncated": 10,
+        "strict_proof": null,
+        "mean_tokens": 16384,
+        "correct_mean_tokens": null
+      },
+      "macro": 0.23333333333333334
+    },
+    "historical_r1": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 6,
+        "accuracy": 0.6,
+        "final_only_correct": 6,
+        "teacher_opening": 0,
+        "truncated": 2,
+        "strict_proof": null,
+        "mean_tokens": 2609.8,
+        "correct_mean_tokens": 2145.3333333333335
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 5,
+        "accuracy": 0.5,
+        "final_only_correct": 5,
+        "teacher_opening": 0,
+        "truncated": 5,
+        "strict_proof": 0,
+        "mean_tokens": 7445.5,
+        "correct_mean_tokens": 6699
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 0,
+        "truncated": 8,
+        "strict_proof": null,
+        "mean_tokens": 13756.3,
+        "correct_mean_tokens": null
+      },
+      "macro": 0.36666666666666664
+    },
+    "compact_004": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 2,
+        "accuracy": 0.2,
+        "final_only_correct": 2,
+        "teacher_opening": 0,
+        "truncated": 4,
+        "strict_proof": null,
+        "mean_tokens": 2729.6,
+        "correct_mean_tokens": 1322
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 7,
+        "accuracy": 0.7,
+        "final_only_correct": 7,
+        "teacher_opening": 0,
+        "truncated": 2,
+        "strict_proof": 0,
+        "mean_tokens": 5890.2,
+        "correct_mean_tokens": 5340.428571428572
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 0,
+        "truncated": 8,
+        "strict_proof": null,
+        "mean_tokens": 14934.9,
+        "correct_mean_tokens": null
+      },
+      "macro": 0.3
+    },
+    "compact_012": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 3,
+        "accuracy": 0.3,
+        "final_only_correct": 3,
+        "teacher_opening": 0,
+        "truncated": 4,
+        "strict_proof": null,
+        "mean_tokens": 2655.8,
+        "correct_mean_tokens": 1935.3333333333333
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 8,
+        "accuracy": 0.8,
+        "final_only_correct": 8,
+        "teacher_opening": 0,
+        "truncated": 2,
+        "strict_proof": 0,
+        "mean_tokens": 6700.6,
+        "correct_mean_tokens": 6327.75
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 0,
+        "truncated": 10,
+        "strict_proof": null,
+        "mean_tokens": 16384,
+        "correct_mean_tokens": null
+      },
+      "macro": 0.3666666666666667
+    },
+    "compact_024": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 5,
+        "accuracy": 0.5,
+        "final_only_correct": 5,
+        "teacher_opening": 0,
+        "truncated": 4,
+        "strict_proof": null,
+        "mean_tokens": 2561.2,
+        "correct_mean_tokens": 1477.4
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 5,
+        "accuracy": 0.5,
+        "final_only_correct": 5,
+        "teacher_opening": 0,
+        "truncated": 4,
+        "strict_proof": 0,
+        "mean_tokens": 6847,
+        "correct_mean_tokens": 6291
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 0,
+        "truncated": 10,
+        "strict_proof": null,
+        "mean_tokens": 16384,
+        "correct_mean_tokens": null
+      },
+      "macro": 0.3333333333333333
+    },
+    "compact_048": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 4,
+        "accuracy": 0.4,
+        "final_only_correct": 4,
+        "teacher_opening": 2,
+        "truncated": 0,
+        "strict_proof": null,
+        "mean_tokens": 664.6,
+        "correct_mean_tokens": 122.25
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 3,
+        "accuracy": 0.3,
+        "final_only_correct": 3,
+        "teacher_opening": 0,
+        "truncated": 0,
+        "strict_proof": 0,
+        "mean_tokens": 610.9,
+        "correct_mean_tokens": 596.6666666666666
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 9,
+        "truncated": 0,
+        "strict_proof": null,
+        "mean_tokens": 1064.8,
+        "correct_mean_tokens": null
+      },
+      "macro": 0.23333333333333334
+    },
+    "compact_096": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 6,
+        "accuracy": 0.6,
+        "final_only_correct": 6,
+        "teacher_opening": 0,
+        "truncated": 0,
+        "strict_proof": null,
+        "mean_tokens": 122.1,
+        "correct_mean_tokens": 119.83333333333333
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 10,
+        "truncated": 0,
+        "strict_proof": 0,
+        "mean_tokens": 125.8,
+        "correct_mean_tokens": null
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 1,
+        "accuracy": 0.1,
+        "final_only_correct": 1,
+        "teacher_opening": 10,
+        "truncated": 0,
+        "strict_proof": null,
+        "mean_tokens": 135.9,
+        "correct_mean_tokens": 307
+      },
+      "macro": 0.23333333333333334
+    },
+    "full_gravity_004": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 2,
+        "accuracy": 0.2,
+        "final_only_correct": 2,
+        "teacher_opening": 0,
+        "truncated": 6,
+        "strict_proof": null,
+        "mean_tokens": 3037,
+        "correct_mean_tokens": 1306
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 6,
+        "accuracy": 0.6,
+        "final_only_correct": 6,
+        "teacher_opening": 0,
+        "truncated": 4,
+        "strict_proof": 0,
+        "mean_tokens": 6976.2,
+        "correct_mean_tokens": 6165.666666666667
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 0,
+        "truncated": 8,
+        "strict_proof": null,
+        "mean_tokens": 15695.8,
+        "correct_mean_tokens": null
+      },
+      "macro": 0.26666666666666666
+    },
+    "full_gravity_012": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 4,
+        "accuracy": 0.4,
+        "final_only_correct": 4,
+        "teacher_opening": 0,
+        "truncated": 4,
+        "strict_proof": null,
+        "mean_tokens": 2609,
+        "correct_mean_tokens": 1619.5
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 6,
+        "accuracy": 0.6,
+        "final_only_correct": 6,
+        "teacher_opening": 0,
+        "truncated": 3,
+        "strict_proof": 0,
+        "mean_tokens": 6072.6,
+        "correct_mean_tokens": 5526.833333333333
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 0,
+        "truncated": 10,
+        "strict_proof": null,
+        "mean_tokens": 16384,
+        "correct_mean_tokens": null
+      },
+      "macro": 0.3333333333333333
+    },
+    "full_gravity_024": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 3,
+        "accuracy": 0.3,
+        "final_only_correct": 3,
+        "teacher_opening": 0,
+        "truncated": 4,
+        "strict_proof": null,
+        "mean_tokens": 2697.7,
+        "correct_mean_tokens": 1730
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 9,
+        "accuracy": 0.9,
+        "final_only_correct": 9,
+        "teacher_opening": 0,
+        "truncated": 1,
+        "strict_proof": 0,
+        "mean_tokens": 6024.3,
+        "correct_mean_tokens": 5783.444444444444
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 0,
+        "truncated": 10,
+        "strict_proof": null,
+        "mean_tokens": 16384,
+        "correct_mean_tokens": null
+      },
+      "macro": 0.4
+    },
+    "full_gravity_048": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 2,
+        "accuracy": 0.2,
+        "final_only_correct": 2,
+        "teacher_opening": 0,
+        "truncated": 1,
+        "strict_proof": null,
+        "mean_tokens": 857.7,
+        "correct_mean_tokens": 352
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 0,
+        "truncated": 0,
+        "strict_proof": 0,
+        "mean_tokens": 715.5,
+        "correct_mean_tokens": null
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 2,
+        "accuracy": 0.2,
+        "final_only_correct": 2,
+        "teacher_opening": 3,
+        "truncated": 1,
+        "strict_proof": null,
+        "mean_tokens": 2019.6,
+        "correct_mean_tokens": 852
+      },
+      "macro": 0.13333333333333333
+    },
+    "full_gravity_096": {
+      "numeral_system": {
+        "n": 10,
+        "correct": 6,
+        "accuracy": 0.6,
+        "final_only_correct": 6,
+        "teacher_opening": 0,
+        "truncated": 0,
+        "strict_proof": null,
+        "mean_tokens": 108.7,
+        "correct_mean_tokens": 111.83333333333333
+      },
+      "gravity": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 3,
+        "truncated": 1,
+        "strict_proof": 0,
+        "mean_tokens": 1071.5,
+        "correct_mean_tokens": null
+      },
+      "equation_numeric": {
+        "n": 10,
+        "correct": 0,
+        "accuracy": 0.0,
+        "final_only_correct": 0,
+        "teacher_opening": 10,
+        "truncated": 0,
+        "strict_proof": null,
+        "mean_tokens": 114.6,
+        "correct_mean_tokens": null
+      },
+      "macro": 0.19999999999999998
+    }
+  },
+  "chosen": [
+    "compact_012",
+    "full_gravity_024"
+  ],
+  "primary_candidate": "full_gravity_024"
+}

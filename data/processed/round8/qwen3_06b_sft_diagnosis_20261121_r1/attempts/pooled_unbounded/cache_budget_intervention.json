@@ -1,0 +1,8 @@
+{
+  "owned_pid": 70627,
+  "reason": "unbounded admission of long queries exceeds KV capacity in worst case",
+  "cache_tokens_reported": 187232,
+  "reservation_tokens": 170000,
+  "preserve_completed_rows": true,
+  "checkpoints_and_decode_changed": false
+}
